@@ -20,6 +20,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import urllib.robotparser
+import xml.etree.ElementTree as ET
 from collections import deque
 from typing import Iterable
 
@@ -62,6 +63,20 @@ class Page:
     title: str
     text_blocks: list[str]
     links: list[str]
+
+
+@dataclasses.dataclass
+class RobotPolicy:
+    parser: urllib.robotparser.RobotFileParser
+    robots_url: str
+    status: str
+    error: str | None = None
+    sitemaps: list[str] = dataclasses.field(default_factory=list)
+
+    def can_fetch(self, user_agent: str, url: str) -> bool:
+        if self.status != "available":
+            return False
+        return self.parser.can_fetch(user_agent, url)
 
 
 class TextLinkParser(html.parser.HTMLParser):
@@ -145,18 +160,30 @@ def looks_relevant(url: str, text: str = "") -> bool:
     return any(hint in haystack for hint in PROGRAM_HINTS)
 
 
-def build_robot_parser(root_url: str, user_agent: str) -> urllib.robotparser.RobotFileParser:
+def build_robot_policy(root_url: str, user_agent: str, timeout: float) -> RobotPolicy:
     parsed = urllib.parse.urlsplit(root_url)
     robots_url = urllib.parse.urlunsplit((parsed.scheme, parsed.netloc, "/robots.txt", "", ""))
     robot_parser = urllib.robotparser.RobotFileParser()
-    robot_parser.set_url(robots_url)
     try:
-        robot_parser.read()
-    except Exception:
-        # If robots.txt cannot be fetched, urllib's parser treats rules as empty.
-        # We keep the crawl narrow through same-host and max-page controls.
-        pass
-    return robot_parser
+        request = urllib.request.Request(robots_url, headers={"User-Agent": user_agent})
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            content = response.read().decode("utf-8", errors="replace")
+    except Exception as exc:
+        robot_parser.parse([])
+        return RobotPolicy(
+            parser=robot_parser,
+            robots_url=robots_url,
+            status="unavailable",
+            error=f"{type(exc).__name__}: {str(exc)[:200]}",
+        )
+    lines = content.splitlines()
+    robot_parser.parse(lines)
+    sitemaps = [
+        normalize_space(line.split(":", 1)[1])
+        for line in lines
+        if line.lower().startswith("sitemap:") and ":" in line
+    ]
+    return RobotPolicy(parser=robot_parser, robots_url=robots_url, status="available", sitemaps=sitemaps)
 
 
 def fetch_page(url: str, user_agent: str, timeout: float) -> Page:
@@ -174,13 +201,26 @@ def fetch_page(url: str, user_agent: str, timeout: float) -> Page:
     return Page(url=url, title=title, text_blocks=parser.blocks, links=parser.links)
 
 
-def crawl(root_url: str, max_pages: int, delay: float, user_agent: str, timeout: float) -> tuple[list[Page], list[dict]]:
+def crawl(
+    root_url: str,
+    seed_urls: list[str],
+    max_pages: int,
+    delay: float,
+    user_agent: str,
+    timeout: float,
+) -> tuple[list[Page], list[dict], RobotPolicy]:
     root_url = canonicalize_url(root_url)
-    robot_parser = build_robot_parser(root_url, user_agent)
-    queue: deque[str] = deque([root_url])
+    robot_policy = build_robot_policy(root_url, user_agent, timeout=timeout)
+    initial_urls = [root_url] + [canonicalize_url(url) for url in seed_urls]
+    queue: deque[str] = deque(initial_urls)
     seen: set[str] = set()
     pages: list[Page] = []
     skipped: list[dict] = []
+
+    for sitemap_url in robot_policy.sitemaps:
+        for sitemap_page in discover_sitemap_urls(sitemap_url, root_url, robot_policy, user_agent, timeout):
+            if looks_relevant(sitemap_page):
+                queue.append(canonicalize_url(sitemap_page))
 
     while queue and len(pages) < max_pages:
         url = canonicalize_url(queue.popleft())
@@ -190,8 +230,10 @@ def crawl(root_url: str, max_pages: int, delay: float, user_agent: str, timeout:
         if not same_host(url, root_url):
             skipped.append({"url": url, "reason": "different_host"})
             continue
-        if not robot_parser.can_fetch(user_agent, url):
-            skipped.append({"url": url, "reason": "blocked_by_robots"})
+        if not robot_policy.can_fetch(user_agent, url):
+            reason = "blocked_by_robots" if robot_policy.status == "available" else "robots_unavailable"
+            detail = None if robot_policy.status == "available" else robot_policy.error
+            skipped.append({"url": url, "reason": reason, "detail": detail})
             continue
         if pages:
             time.sleep(delay)
@@ -209,7 +251,36 @@ def crawl(root_url: str, max_pages: int, delay: float, user_agent: str, timeout:
             if looks_relevant(normalized):
                 queue.append(normalized)
 
-    return pages, skipped
+    return pages, skipped, robot_policy
+
+
+def discover_sitemap_urls(
+    sitemap_url: str,
+    root_url: str,
+    robot_policy: RobotPolicy,
+    user_agent: str,
+    timeout: float,
+) -> list[str]:
+    sitemap_url = canonicalize_url(sitemap_url)
+    if not same_host(sitemap_url, root_url) or not robot_policy.can_fetch(user_agent, sitemap_url):
+        return []
+    try:
+        request = urllib.request.Request(sitemap_url, headers={"User-Agent": user_agent})
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            content = response.read()
+    except Exception:
+        return []
+    try:
+        root = ET.fromstring(content)
+    except ET.ParseError:
+        return []
+    urls: list[str] = []
+    for loc in root.iter():
+        if loc.tag.endswith("loc") and loc.text:
+            value = normalize_space(loc.text)
+            if same_host(value, root_url):
+                urls.append(value)
+    return urls
 
 
 def page_to_program(page: Page) -> dict | None:
@@ -288,7 +359,13 @@ def unique_matches(pattern: re.Pattern[str], text: str, limit: int = 10) -> list
     return values
 
 
-def build_output(root_url: str, pages: list[Page], skipped: list[dict], args: argparse.Namespace) -> dict:
+def build_output(
+    root_url: str,
+    pages: list[Page],
+    skipped: list[dict],
+    robot_policy: RobotPolicy,
+    args: argparse.Namespace,
+) -> dict:
     programs = [program for page in pages if (program := page_to_program(page))]
     return {
         "schema_version": "0.1",
@@ -302,6 +379,10 @@ def build_output(root_url: str, pages: list[Page], skipped: list[dict], args: ar
             "timeout_seconds": args.timeout,
             "user_agent": args.user_agent,
             "no_login_captcha_paywall_bypass": True,
+            "robots_url": robot_policy.robots_url,
+            "robots_status": robot_policy.status,
+            "robots_error": robot_policy.error,
+            "sitemaps_discovered": robot_policy.sitemaps,
         },
         "crawl_summary": {
             "pages_fetched": len(pages),
@@ -316,6 +397,12 @@ def build_output(root_url: str, pages: list[Page], skipped: list[dict], args: ar
 def parse_args(argv: Iterable[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Extract school program admission requirements to JSON.")
     parser.add_argument("school_url", help="Official school URL or program listing URL to crawl.")
+    parser.add_argument(
+        "--seed-url",
+        action="append",
+        default=[],
+        help="Additional same-host page to crawl first, such as a manually reviewed program listing URL.",
+    )
     parser.add_argument("--out", default="-", help="Output JSON path. Use '-' for stdout.")
     parser.add_argument("--max-pages", type=int, default=25, help="Hard crawl limit.")
     parser.add_argument("--delay", type=float, default=1.0, help="Delay between successful requests.")
@@ -326,14 +413,15 @@ def parse_args(argv: Iterable[str] | None = None) -> argparse.Namespace:
 
 def main(argv: Iterable[str] | None = None) -> int:
     args = parse_args(argv)
-    pages, skipped = crawl(
+    pages, skipped, robot_policy = crawl(
         root_url=args.school_url,
+        seed_urls=args.seed_url,
         max_pages=args.max_pages,
         delay=args.delay,
         user_agent=args.user_agent,
         timeout=args.timeout,
     )
-    output = build_output(args.school_url, pages, skipped, args)
+    output = build_output(args.school_url, pages, skipped, robot_policy, args)
     payload = json.dumps(output, ensure_ascii=False, indent=2)
     if args.out == "-":
         print(payload)

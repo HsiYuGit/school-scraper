@@ -1,6 +1,7 @@
 import unittest
+import urllib.robotparser
 
-from scripts.scrape_admissions import Page, page_to_program
+from scripts.scrape_admissions import Page, RobotPolicy, page_to_program
 
 
 class AdmissionExtractionTest(unittest.TestCase):
@@ -26,6 +27,19 @@ class AdmissionExtractionTest(unittest.TestCase):
         self.assertIn("English", program["language"])
         self.assertEqual(program["admission_requirements"][0]["heading"], "Admission requirements")
         self.assertIn("180 ECTS", program["admission_requirements"][0]["text"])
+
+    def test_unavailable_robots_policy_does_not_look_like_block(self):
+        parser = urllib.robotparser.RobotFileParser()
+        parser.parse([])
+        policy = RobotPolicy(
+            parser=parser,
+            robots_url="https://example.edu/robots.txt",
+            status="unavailable",
+            error="URLError: connection refused",
+        )
+
+        self.assertFalse(policy.can_fetch("study-admissions-poc/0.1", "https://example.edu/"))
+        self.assertEqual(policy.status, "unavailable")
 
 
 if __name__ == "__main__":

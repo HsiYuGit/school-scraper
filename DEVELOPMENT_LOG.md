@@ -20,12 +20,14 @@
 - 新增 `scripts/scrape_admissions.py`，作為輸入學校 URL、輸出入學條件 JSON 的 POC 爬蟲。
 - 新增離線單元測試，先驗證入學條件區塊抽取邏輯。
 - 加入爬蟲合規原則：遵守 `robots.txt`、同網域限制、低頻率請求、不繞過登入/CAPTCHA/付費牆、輸出來源追溯 metadata。
+- 強化 crawler robustness：區分 `robots_unavailable` 與 `blocked_by_robots`，讀取 robots 內 sitemap，並支援 `--seed-url` 餵入人工 review 找到的學程列表頁。
 
 ### 驗證紀錄
 
 - `python -m json.tool data\partner_schools.json`：通過。
 - `python -m unittest tests.test_scrape_admissions`：通過。
 - `python -m py_compile scripts\scrape_admissions.py tests\test_scrape_admissions.py`：通過。
+- 本機 sandbox 對多個官方站的 HTTPS 連線回傳 connection refused；已修正程式避免將環境問題誤判為 robots 封鎖。
 
 ### 待做
 

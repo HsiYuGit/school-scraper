@@ -24,13 +24,15 @@
 - 不繞過登入、CAPTCHA、付費牆、封鎖規則或技術性限制。
 - 預設每次成功請求間隔 1 秒，且用 `--max-pages` 設定硬上限。
 - 輸出 JSON 保留來源 URL、抓取時間、User-Agent、robots 設定與 skipped reason，方便後續追溯。
+- 若本機環境抓不到 `robots.txt`，輸出會標記 `robots_unavailable`，不會把它誤記成學校明確封鎖。
+- 若人工 review 發現學程列表頁不在首頁導覽，可用 `--seed-url` 加入同網域起始頁；程式仍會套用 robots 與同網域限制。
 
 若要進入正式產品，建議再做一次法律/合規確認，尤其是各校網站 terms of use、資料庫權利、個資與商業用途限制。
 
 ## 使用方式
 
 ```powershell
-python scripts\scrape_admissions.py "https://www.klu.org/" --out outputs\klu_admissions.json --max-pages 30 --delay 1
+python scripts\scrape_admissions.py "https://www.klu.org/" --seed-url "https://www.klu.org/degree-programs/choose-your-program/master-management/" --out outputs\klu_admissions.json --max-pages 30 --delay 1
 ```
 
 輸出 schema 目前包含：
