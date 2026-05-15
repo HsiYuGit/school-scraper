@@ -14,6 +14,8 @@
 - 建立 `data/partner_schools.json`，收錄好德首頁明確列出的合作學校與官方連結。
 - 將只在好德合作夥伴 logo 區出現的教育機構標成候選，避免把非學校服務夥伴混入學校條件資料。
 - 已完成第一個原子提交：`808a225 Add partner school source list`。
+- 已完成第二部分爬蟲程式提交：`30aa0be Add admissions scraper POC`、`1ca0031 Improve admissions crawler discovery`、`87c7a6e Filter admissions extraction to program pages`、`5017221 Deduplicate redirected program pages`。
+- 已產出 MBS POC JSON：`outputs/munich_business_school_admissions.json`。
 
 ### 進行中
 
@@ -30,6 +32,16 @@
 - `python -m unittest tests.test_scrape_admissions`：通過。
 - `python -m py_compile scripts\scrape_admissions.py tests\test_scrape_admissions.py`：通過。
 - 本機 sandbox 對多個官方站的 HTTPS 連線回傳 connection refused；已修正程式避免將環境問題誤判為 robots 封鎖。
+- 人工 review `https://www.munich-business-school.de/en/master`：頁面公開列出 Master International Business、Master Innovation & Entrepreneurship、Master International Marketing and Brand Management、Master Sports Management and Media、Master in Finance、Pre-Master；爬蟲輸出包含上述頁面。
+- MBS sitemap 另帶出 Master International Business 底下 7 個 specialization 頁；目前保留為獨立 program record，後續 schema 可再決定要當 program 或 specialization。
+- 實際產出命令：
+
+```powershell
+python scripts\scrape_admissions.py "https://www.munich-business-school.de/en/" --seed-url "https://www.munich-business-school.de/en/master" --seed-url "https://www.munich-business-school.de/en/l/study-finder/master-of-business-administration" --out outputs\munich_business_school_admissions.json --max-pages 40 --delay 1 --timeout 15
+```
+
+- `python -m json.tool outputs\munich_business_school_admissions.json`：通過。
+- `outputs/munich_business_school_admissions.json` 摘要：`pages_fetched=19`、`pages_skipped=1`、`programs_extracted=16`，skipped reason 為 `duplicate_after_redirect`。
 
 ### 待做
 

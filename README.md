@@ -14,6 +14,7 @@
 - `DEVELOPMENT_LOG.md`：開發規劃、已完成工作、驗證紀錄與待辦。
 - `scripts/scrape_admissions.py`：輸入學校官方連結或學程列表頁，保守爬取同網域公開頁面，輸出各學程入學條件 JSON。
 - `tests/test_scrape_admissions.py`：入學條件區塊抽取的最小單元測試。
+- `outputs/munich_business_school_admissions.json`：用同一支 scraper 產出的 Munich Business School POC 入學條件 JSON。
 
 ## 爬蟲合規原則
 
@@ -51,4 +52,6 @@ python scripts\scrape_admissions.py "https://www.klu.org/" --seed-url "https://w
 
 ## 後續 POC 目標
 
-- 產出 `outputs/` 下的學程入學條件 JSON。
+- 擴充更多合作學校的人工 reviewed seed URL。
+- 將 `program` 與 `specialization` 的資料層級拆得更清楚。
+- 將 admission requirement 文字再拆成學歷、語言、文件、期限、費用等欄位。
