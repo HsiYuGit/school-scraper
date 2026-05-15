@@ -3,6 +3,7 @@ import urllib.robotparser
 import json
 from pathlib import Path
 
+from scripts.crawl_partner_schools import slugify
 from scripts.scrape_admissions import (
     Page,
     RobotPolicy,
@@ -26,6 +27,15 @@ class AdmissionExtractionTest(unittest.TestCase):
         self.assertIn("subject_prerequisites", program["requirements"])
         self.assertIn("language_requirements", program["requirements"])
         self.assertIn("international_requirements", program["requirements"])
+
+    def test_reviewed_seed_config_covers_all_partner_schools(self):
+        root = Path(__file__).parents[1]
+        partners = json.loads((root / "data" / "partner_schools.json").read_text(encoding="utf-8"))["schools"]
+        seeds = json.loads((root / "data" / "partner_school_crawl_seeds.json").read_text(encoding="utf-8"))["schools"]
+
+        self.assertEqual({item["name"] for item in partners}, {item["name"] for item in seeds})
+        self.assertEqual(len(seeds), 12)
+        self.assertEqual(slugify("Kühne Logistics University (KLU)"), "kuhne_logistics_university_klu")
 
     def test_extracts_requirement_section_from_program_page(self):
         page = Page(

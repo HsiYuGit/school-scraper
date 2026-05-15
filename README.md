@@ -42,6 +42,14 @@ python scripts\scrape_admissions.py "https://www.klu.org/" --seed-url "https://w
 python scripts\scrape_admissions.py "https://www.munich-business-school.de/en/" --school-name "Munich Business School" --country Germany --partner-status confirmed_from_offer_text --school-type university --seed-url "https://www.munich-business-school.de/en/master" --out outputs\munich_business_school_admissions.json --max-pages 40 --delay 1 --timeout 15
 ```
 
+批次跑好德清單內 12 所學校時，使用 reviewed seed config：
+
+```powershell
+python scripts\crawl_partner_schools.py --max-pages 30 --delay 1 --timeout 15
+```
+
+批次腳本會讀取 `data/partner_schools.json` 與 `data/partner_school_crawl_seeds.json`，為每所學校輸出 `outputs/<school_slug>_admissions.json`，並產生 `outputs/partner_school_crawl_manifest.json`。每校 seed config 可獨立調整，因為不同學校的 program list、admissions page、application portal 與 robots 規則都不相同。
+
 輸出 schema 目前升級目標為 v0.2，主體不再只是 admission requirement 原文區塊，而是固定 taxonomy：
 
 - `school`：學校名稱、官方 URL、國家、好德合作狀態。
