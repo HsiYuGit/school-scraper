@@ -75,6 +75,7 @@ NON_PROGRAM_PATHS = (
     "/university/",
     "/services/",
     "/international/",
+    "/en/bachelor/mbs-school",
     "/en/l/bachelor-in-english",
     "/en/l/english-taught",
     "/en/l/master-program-in-english",
@@ -225,11 +226,12 @@ def fetch_page(url: str, user_agent: str, timeout: float) -> Page:
             raise ValueError(f"Skipping non-HTML content: {content_type}")
         charset = response.headers.get_content_charset() or "utf-8"
         html = response.read().decode(charset, errors="replace")
-    parser = TextLinkParser(url)
+        final_url = canonicalize_url(response.geturl())
+    parser = TextLinkParser(final_url)
     parser.feed(html)
     parser.close()
     title = normalize_space(" ".join(parser.title_parts))
-    return Page(url=url, title=title, text_blocks=parser.blocks, links=parser.links)
+    return Page(url=final_url, title=title, text_blocks=parser.blocks, links=parser.links)
 
 
 def crawl(
@@ -245,6 +247,7 @@ def crawl(
     initial_urls = [root_url] + [canonicalize_url(url) for url in seed_urls]
     queue: deque[str] = deque(initial_urls)
     seen: set[str] = set()
+    fetched_final_urls: set[str] = set()
     pages: list[Page] = []
     skipped: list[dict] = []
 
@@ -273,6 +276,10 @@ def crawl(
         except (urllib.error.URLError, TimeoutError, ValueError, UnicodeDecodeError) as exc:
             skipped.append({"url": url, "reason": type(exc).__name__, "detail": str(exc)[:200]})
             continue
+        if page.url in fetched_final_urls:
+            skipped.append({"url": url, "reason": "duplicate_after_redirect", "detail": page.url})
+            continue
+        fetched_final_urls.add(page.url)
         pages.append(page)
 
         for link in page.links:
@@ -399,7 +406,7 @@ def build_output(
     robot_policy: RobotPolicy,
     args: argparse.Namespace,
 ) -> dict:
-    programs = [program for page in pages if (program := page_to_program(page))]
+    programs = dedupe_programs([program for page in pages if (program := page_to_program(page))])
     return {
         "schema_version": "0.1",
         "school_url": root_url,
@@ -425,6 +432,18 @@ def build_output(
         "programs": programs,
         "skipped": skipped[:50],
     }
+
+
+def dedupe_programs(programs: list[dict]) -> list[dict]:
+    seen_urls: set[str] = set()
+    deduped: list[dict] = []
+    for program in programs:
+        url = program["url"]
+        if url in seen_urls:
+            continue
+        seen_urls.add(url)
+        deduped.append(program)
+    return deduped
 
 
 def parse_args(argv: Iterable[str] | None = None) -> argparse.Namespace:

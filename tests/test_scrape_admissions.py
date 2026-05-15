@@ -52,6 +52,9 @@ class AdmissionExtractionTest(unittest.TestCase):
             looks_like_program_page("https://www.munich-business-school.de/en/events/event-detail/event/mba-info-session")
         )
         self.assertFalse(
+            looks_like_program_page("https://www.munich-business-school.de/en/bachelor/mbs-school")
+        )
+        self.assertFalse(
             looks_like_program_page("https://www.munich-business-school.de/en/l/english-taught-masters-in-germany")
         )
 
