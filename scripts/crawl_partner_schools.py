@@ -92,6 +92,25 @@ def crawl_school(batch_args: argparse.Namespace, school: dict, seed_config: dict
     }
 
 
+def build_manifest(args: argparse.Namespace, manifest_entries: list[dict]) -> dict:
+    return {
+        "generated_at": dt.datetime.now(dt.UTC).isoformat(),
+        "school_count": len(manifest_entries),
+        "max_pages": args.max_pages,
+        "delay_seconds": args.delay,
+        "timeout_seconds": args.timeout,
+        "schools": manifest_entries,
+    }
+
+
+def write_manifest(args: argparse.Namespace, manifest_entries: list[dict]) -> dict:
+    manifest = build_manifest(args, manifest_entries)
+    manifest_path = Path(args.manifest)
+    manifest_path.parent.mkdir(parents=True, exist_ok=True)
+    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return manifest
+
+
 def parse_args(argv: Iterable[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Batch crawl all configured Gut-Haode partner schools.")
     parser.add_argument("--partners", default=str(DEFAULT_PARTNERS_PATH), help="Path to partner_schools.json.")
@@ -117,18 +136,10 @@ def main(argv: Iterable[str] | None = None) -> int:
             continue
         seed_config = seeds.get(school["name"], {"crawl_root_url": school["official_url"], "seed_urls": []})
         manifest_entries.append(crawl_school(args, school, seed_config))
+        manifest = write_manifest(args, manifest_entries)
 
-    manifest = {
-        "generated_at": dt.datetime.now(dt.UTC).isoformat(),
-        "school_count": len(manifest_entries),
-        "max_pages": args.max_pages,
-        "delay_seconds": args.delay,
-        "timeout_seconds": args.timeout,
-        "schools": manifest_entries,
-    }
-    manifest_path = Path(args.manifest)
-    manifest_path.parent.mkdir(parents=True, exist_ok=True)
-    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    if not manifest_entries:
+        manifest = write_manifest(args, manifest_entries)
     sys.stdout.buffer.write(json.dumps(manifest, ensure_ascii=False, indent=2).encode("utf-8"))
     sys.stdout.buffer.write(b"\n")
     return 0
