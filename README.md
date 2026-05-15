@@ -11,8 +11,42 @@
 ## 目前檔案
 
 - `data/partner_schools.json`：合作學校清單、官方連結、來源註記。
+- `DEVELOPMENT_LOG.md`：開發規劃、已完成工作、驗證紀錄與待辦。
+- `scripts/scrape_admissions.py`：輸入學校官方連結或學程列表頁，保守爬取同網域公開頁面，輸出各學程入學條件 JSON。
+- `tests/test_scrape_admissions.py`：入學條件區塊抽取的最小單元測試。
+
+## 爬蟲合規原則
+
+本 POC 預設採取保守做法，避免違反德國/歐洲網站規範或一般網路爬取禮儀：
+
+- 先讀取並遵守目標網域的 `robots.txt`。
+- 只抓取輸入網址同一 host 下的公開 HTML 頁面。
+- 不繞過登入、CAPTCHA、付費牆、封鎖規則或技術性限制。
+- 預設每次成功請求間隔 1 秒，且用 `--max-pages` 設定硬上限。
+- 輸出 JSON 保留來源 URL、抓取時間、User-Agent、robots 設定與 skipped reason，方便後續追溯。
+
+若要進入正式產品，建議再做一次法律/合規確認，尤其是各校網站 terms of use、資料庫權利、個資與商業用途限制。
+
+## 使用方式
+
+```powershell
+python scripts\scrape_admissions.py "https://www.klu.org/" --out outputs\klu_admissions.json --max-pages 30 --delay 1
+```
+
+輸出 schema 目前包含：
+
+- `school_url`
+- `retrieved_at`
+- `crawler_policy`
+- `crawl_summary`
+- `programs[].program_name`
+- `programs[].url`
+- `programs[].degree`
+- `programs[].language`
+- `programs[].application_deadline_evidence`
+- `programs[].tuition_evidence`
+- `programs[].admission_requirements[]`
 
 ## 後續 POC 目標
 
-- 新增可輸入學校連結的 scraper。
 - 產出 `outputs/` 下的學程入學條件 JSON。
