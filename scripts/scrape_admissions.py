@@ -63,13 +63,14 @@ ECTS_RE = re.compile(
 )
 GRADE_RE = re.compile(r"\b(?:grade|gpa|average)[^.\n]{0,50}?(?:at least|minimum|min\.?|of)?\s*(?P<grade>\d+(?:[.,]\d+)?)", re.IGNORECASE)
 LANGUAGE_TEST_PATTERNS = {
-    "IELTS": re.compile(r"\bIELTS\b[^\n]{0,80}?(?P<score>\d+(?:[.,]\d+)?)", re.IGNORECASE),
-    "TOEFL iBT": re.compile(r"\bTOEFL(?:\s+iBT|\s+IBT)?(?:\s*&\s*Home Edition)?\b[^\n]{0,80}?(?P<score>\d{2,3})", re.IGNORECASE),
-    "Duolingo": re.compile(r"\bDuolingo\b[^\n]{0,80}?(?P<score>\d{2,3})", re.IGNORECASE),
-    "Cambridge": re.compile(r"\bCambridge\b[^\n]{0,80}?(?P<score>[A-C][12]?|\d{2,3})", re.IGNORECASE),
-    "ELS": re.compile(r"\bELS\b[^\n]{0,80}?(?P<score>\d{2,3})", re.IGNORECASE),
-    "German": re.compile(r"\b(?:German|Deutsch)\b[^\n]{0,80}?(?P<score>A1|A2|B1|B2|C1|C2|TestDaF|DSH)", re.IGNORECASE),
+    "IELTS": re.compile(r"\bIELTS\b", re.IGNORECASE),
+    "TOEFL iBT": re.compile(r"\bTOEFL(?:\s+iBT|\s+IBT)?(?:\s*&\s*Home Edition)?\b", re.IGNORECASE),
+    "Duolingo": re.compile(r"\bDuolingo\b", re.IGNORECASE),
+    "Cambridge": re.compile(r"\bCambridge\b", re.IGNORECASE),
+    "ELS": re.compile(r"\bELS\b", re.IGNORECASE),
+    "German": re.compile(r"\b(?:German|Deutsch)\b", re.IGNORECASE),
 }
+LANGUAGE_SCORE_RE = re.compile(r"\b(?P<score>A1|A2|B1|B2|C1|C2|TestDaF|DSH|\d{1,3}(?:[.,]\d+)?)\b", re.IGNORECASE)
 SUBJECT_KEYWORDS = {
     "economics": ("economics", "economy"),
     "accounting": ("accounting",),
@@ -566,7 +567,11 @@ def extract_language_requirements(text: str, source_url: str, retrieved_at: str,
     waiver = extract_waivers(text)
     for test_name, pattern in LANGUAGE_TEST_PATTERNS.items():
         for match in pattern.finditer(text):
-            score = match.group("score").replace(",", ".")
+            segment = language_score_segment(text, match, test_name)
+            score = extract_language_score(segment)
+            if not score:
+                continue
+            score = score.replace(",", ".")
             key = f"{test_name}:{score}"
             if key in seen:
                 continue
@@ -575,13 +580,45 @@ def extract_language_requirements(text: str, source_url: str, retrieved_at: str,
                 {
                     "test": test_name,
                     "minimum_score": score,
-                    "component_scores": extract_component_scores(match.group(0)),
+                    "component_scores": extract_component_scores(segment),
                     "validity": validity,
                     "waiver": waiver,
                 }
             )
-            add_evidence(evidence, "language_requirements", source_url, match.group(0), retrieved_at, "high", "Direct language-test score extraction.")
+            add_evidence(evidence, "language_requirements", source_url, segment, retrieved_at, "high", "Direct language-test score extraction.")
     return requirements
+
+
+def language_score_segment(text: str, match: re.Match[str], test_name: str) -> str:
+    start = match.start()
+    end = min(len(text), match.end() + 120)
+    segment = text[start:end]
+    for other_name, other_pattern in LANGUAGE_TEST_PATTERNS.items():
+        if other_name == test_name:
+            continue
+        other_match = other_pattern.search(segment, pos=max(1, match.end() - start))
+        if other_match:
+            segment = segment[: other_match.start()]
+            break
+    for marker in ("Institution Code", "institution code", "MBS TOEFL Institution Code"):
+        index = segment.find(marker)
+        if index > -1:
+            segment = segment[:index]
+    return normalize_space(segment)
+
+
+def extract_language_score(segment: str) -> str | None:
+    if not segment:
+        return None
+    for pattern in (
+        r"(?:min\.?|minimum|at least|score of|overall score of)\s*(?:of\s*)?(?P<score>A1|A2|B1|B2|C1|C2|TestDaF|DSH|\d{1,3}(?:[.,]\d+)?)",
+        r"[:/-]\s*(?P<score>A1|A2|B1|B2|C1|C2|TestDaF|DSH|\d{1,3}(?:[.,]\d+)?)",
+    ):
+        match = re.search(pattern, segment, re.IGNORECASE)
+        if match:
+            return match.group("score")
+    values = [match.group("score") for match in LANGUAGE_SCORE_RE.finditer(segment)]
+    return values[0] if values else None
 
 
 def extract_work_experience(text: str, source_url: str, retrieved_at: str, evidence: dict) -> dict:

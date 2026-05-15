@@ -97,6 +97,26 @@ class AdmissionExtractionTest(unittest.TestCase):
         self.assertIn("Uni-assist/VPD", requirements["international_requirements"])
         self.assertIn("language_requirements", evidence)
 
+    def test_language_scores_do_not_cross_contaminate_between_tests(self):
+        text = (
+            "Proof of English proficiency (TOEFL 85, IELTS 6.5, ELS 112). "
+            "TOEFL iBT & Home Edition: min. 85 (MBS TOEFL Institution Code: 5772). "
+            "IELTS or ELS 112 is also mentioned in a compact list."
+        )
+
+        requirements, _ = normalize_requirements(
+            text,
+            "https://example.edu/programs/mba",
+            "2026-05-15T00:00:00+00:00",
+        )
+        scores = {(item["test"], item["minimum_score"]) for item in requirements["language_requirements"]}
+
+        self.assertIn(("TOEFL iBT", "85"), scores)
+        self.assertIn(("IELTS", "6.5"), scores)
+        self.assertIn(("ELS", "112"), scores)
+        self.assertNotIn(("IELTS", "112"), scores)
+        self.assertNotIn(("TOEFL iBT", "5772"), scores)
+
     def test_unavailable_robots_policy_does_not_look_like_block(self):
         parser = urllib.robotparser.RobotFileParser()
         parser.parse([])
