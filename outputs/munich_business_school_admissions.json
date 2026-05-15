@@ -1,13 +1,20 @@
 {
-  "schema_version": "0.1",
-  "school_url": "https://www.munich-business-school.de/en/",
-  "retrieved_at": "2026-05-15T08:21:43.363408+00:00",
+  "schema_version": "0.2",
+  "school": {
+    "name": "Munich Business School",
+    "url": "https://www.munich-business-school.de/en/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university",
+    "source_official_url": "https://www.munich-business-school.de/en/"
+  },
+  "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
   "crawler_policy": {
     "respects_robots_txt": true,
     "same_host_only": true,
-    "max_pages": 40,
-    "delay_seconds": 1.0,
-    "timeout_seconds": 15.0,
+    "max_pages": 8,
+    "delay_seconds": 0.2,
+    "timeout_seconds": 12.0,
     "user_agent": "study-admissions-poc/0.1 (+https://www.gut-haode.com/ partner-school research)",
     "no_login_captcha_paywall_bypass": true,
     "robots_url": "https://www.munich-business-school.de/robots.txt",
@@ -20,75 +27,322 @@
     ]
   },
   "crawl_summary": {
-    "pages_fetched": 19,
-    "pages_skipped": 1,
-    "programs_extracted": 16
+    "pages_fetched": 8,
+    "pages_skipped": 0,
+    "programs_extracted": 4,
+    "programs_needing_human_review": 0
   },
   "programs": [
     {
-      "program_name": "MBA General Management – Full-Time Program for Your Career",
-      "url": "https://www.munich-business-school.de/en/mba/mba-full-time",
-      "degree": "MBA",
-      "language": [
-        "German",
-        "English"
-      ],
-      "application_deadline_evidence": [
-        "Intake 2026 by July 31, 2026 and recieve a EUR 2,000 discount on the first semester rate",
-        "Intake: October 15 – € 2,000 discount Fall Intake: April 30 – € 4,000 discount | July 31 – € 2,000 discount",
-        "deadline in detail"
-      ],
-      "tuition_evidence": [
-        "Tuition Fees",
-        "tuition fees in two semester installments or 12 monthly installments",
-        "fee of 690 Euro (EU/EFTA) respectively 1,490 Euro (non-EU) and deposit of 1"
-      ],
-      "admission_requirements": [
-        {
-          "heading": "In order to be admitted to a study program at Munich Business School, you must fulfill academic, linguistic, and professional requirements. The required applica",
-          "text": "Tuition Fees The quality of teaching and the training of sought-after specialists and managers are at the heart of Munich Business School. By studying at MBS, you are making an investment in your future. You can conveniently pay your tuition fees in two semester installments or 12 monthly installments. Early Bird Special - Deadlines Spring Intake: October 15 – € 2,000 discount Fall Intake: April 30 – € 4,000 discount | July 31 – € 2,000 discount"
+      "school": {
+        "name": "Munich Business School",
+        "url": "https://www.munich-business-school.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Bachelor International Business – Study International Business at MBS",
+        "degree": null,
+        "level": "bachelor",
+        "url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+        "campus": "campus, stays abroad and languages",
+        "language_of_instruction": [
+          "German",
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": 60,
+          "recognized_institution": "recognized or accredited institution",
+          "minimum_grade": "2.5",
+          "notes": [
+            "Found 60 ECTS requirement."
+          ]
         },
-        {
-          "heading": "Academic requirements You must present proof that you have successfully completed a recognized degree in any subject.",
-          "text": "Work experience You will be required to present evidence of at least two years of pertinent work experience after your first degree. Personal qualities You should have management and leadership potential, excellent interpersonal and communicative skills and a high degree of personal maturity and motivation. You should also be in a position to contribute to the community’s learning process. English language skills You must present proof of your command of the English language by passing one of the following test procedures. TOEFL iBT & Home Edition: min. 85 (min. of 22 in writing band, min. of 20 in all other bands; MBS TOEFL Institution Code: 5772)"
+        "subject_prerequisites": [
+          {
+            "subject": "economics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "accounting",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "mathematics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business law",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "85",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": [
+              "Schooling completed in English"
+            ]
+          },
+          {
+            "test": "ELS",
+            "minimum_score": "112",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": [
+              "Schooling completed in English"
+            ]
+          }
+        ],
+        "test_requirements": [
+          "Personal interview"
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
         },
-        {
-          "heading": "Note : If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance.",
-          "text": "Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test results before handing in your MBS application, please advise us of your planned test date. Exceptions The English proficiency test can be waived by the following candidates: Applicants having completed their schooling in English (i.e., High School Diploma, IB) Applicants having completed their first academic degree in English English is the official language in daily business communication in your current position and company (we require a confirmation letter from your employer) for at least 2 years Application deadline in detail We accept applications all year round. However, we recommend that you apply as early as possible, as the number of places is limited. Spring semester Application deadline for Europeans (no visa): January 31 Application deadline for non-Europeans (visa required): October 31 Winter semester Application deadline for Europeans (no visa): July 15 Application deadline for non-Europeans (visa required): April 30 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Compensation for Disadvantages Munich Business School places great importance on diversity and equal opportunities. Against this background, applicants with disabilities or impairments are expressly welcome. The aim is to ensure equal participation in academic studies for all students and to adequately take individual circumstances into account. The regulations on compensation for disadvantages are set out in Section 22 of the General Examination Regulations . Application process Step 1: Written Application"
-        },
-        {
-          "heading": "Application documents When submitting your application, you must provide the following mandatory documents for your application to be considered:",
-          "text": "Letter of motivation (1-2 pages) Current curriculum vitae A copy of your official academic transcript stating your final grade* Two references of your current or previous employers Proof of English proficiency (TOEFL 85, IELTS 6.5, ELS 112) A copy of your passport details page (the one with the photo) A recent passport size photo Completed application form"
-        },
-        {
-          "heading": "* Original or certified copies of these documents will need to be provided if you are successful in gaining admission to the program.",
-          "text": "Optional supporting materials You are welcome to supply any additional information that you believe will strengthen your application. Similarly, Munich Business School reserves the right to request any additional information that the Selection Committee believes will assist its admission decision. Step 2: Personal Interview Application Deadlines The following application deadlines exist for the two start dates in March and September: September study start: Application deadline May 31 for international students. Application deadline July 15 for EU/EFTA students March study start: Application deadline November 15 for international students. Application deadline January 31 for EU/EFTA students Personal Interview The interview will last approximately 30-45 minutes and is intended to help both you as well as MBS to determine whether your profile will match the study program and the class being formed. Of course, this interview will also present you with the opportunity to ask any questions you may have. If you are from Germany or close enough to travel, you can attend the personal interview at Munich Business School with the Admissions Manager and the Academic Program Director. If you cannot attend a personal interview, you will be interviewed via video conference. Step 3: Study Contract The Admissions Office informs you about the outcome of the application process within 10 working days. In case of acceptance, Munich Business School will provide you with an acceptance letter as well as two copies of your study contract. One copy needs to be signed and returned within two weeks to secure your spot in the program. The other copy needs to be kept for your own records."
-        },
-        {
-          "heading": "In order to apply for one of our MBA scholarships, please pick one option and answer the corresponding question in a personal statement. Please upload the docum",
-          "text": "Due to the limited number of scholarships an early application is recommended. Applicants who convince us of their suitability will be granted up to EUR 4,000 on the overall tuition fee . The application for one of the scholarships is made together with the application for a place at university. Further information can be found under \" Scholarships and financing \". Apartments for MBS students Our fully equipped apartments offer everything you need to focus entirely on your studies: modern design, comfort, and premium extras. You don’t have to worry about annoying things like a washing machine, electricity, heating, or Wi-Fi. We have already taken care of everything for you. MBS Insights: The university blog with news on studying, research, and business administration Germany's Best Universities: Munich Business School Achieves Top Results in the CHE University Ranking Read more The Elite of Private Business Schools: Munich Business School Ranks Among Germany's Top Five Read more Munich Business School Makes Its Debut in the QS World University Rankings Read more The Tragedy of the Easter Lawn Read more Elsenheimerstraße 61 80687 München Germany +49(0)89 547678-0 Chat now on WhatsApp info@munich-business-school.de Virtual Campus University Blog - MBS Insights Study Abroad Portal Webmail LMS China Website MBS Shop Imprint Data Privacy Statement Declaration of Accessibility Cookie settings"
-        }
-      ]
-    },
-    {
-      "program_name": "Bachelor International Business – Study International Business at MBS",
-      "url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
-      "degree": null,
-      "language": [
-        "German",
-        "English"
-      ],
-      "application_deadline_evidence": [
-        "Intake: October 15 – € 1,000 discount Fall Intake: February 15 – € 1,000 discount",
-        "deadline January 15 with online interview in January/February",
-        "deadline February 15 with online interview in February/March – Early Bird Deadline"
-      ],
-      "tuition_evidence": [
-        "Tuition Fees",
-        "tuition fees in seven semester installments or 42 monthly installments",
-        "fee for the Pre-Check is 60 euros"
-      ],
-      "admission_requirements": [
+        "documents": [
+          "CV",
+          "Motivation letter",
+          "Degree certificate",
+          "Proof of English proficiency",
+          "Photo"
+        ],
+        "conditional_paths": [
+          "Transfer/lateral entry"
+        ],
+        "international_requirements": [
+          "Uni-assist/VPD",
+          "Visa-sensitive deadline"
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Intake: October 15 – € 1,000 discount Fall Intake: February 15 – € 1,000 discount",
+          "deadline January 15 with online interview in January/February",
+          "deadline February 15 with online interview in February/March – Early Bird Deadline",
+          "deadline March 15 with online interview in March/April",
+          "deadline April 15 with online interview in April/May",
+          "deadline May 15 with online interview in May/June",
+          "deadline June 15 with online interview in June/July",
+          "deadline July 15 with online interview in July/August"
+        ],
+        "intakes": [
+          "Spring Intake",
+          "Fall Intake",
+          "spring term",
+          "fall term"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": "hool-leaving certificate before applying. Do I meet the criteria for universities in Germany? Find out now: https://www.uni-assist.de/en/tools/check-university-admission Completing a vocational training program in Germany and a) passing a mastership examination ( Meisterprüfung ) or equivalent vocational trai",
+        "fees": [
+          "Tuition Fees",
+          "tuition fees in seven semester installments or 42 monthly installments",
+          "fee for the Pre-Check is 60 euros",
+          "fee is waived",
+          "Fee"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "60 ECTS",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "high",
+            "review_note": "Direct ECTS extraction."
+          }
+        ],
+        "subject_prerequisites": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": ". Previous knowledge in the fields of business administration and management, business law, accounting, mathematics and economics is required. Equivalent study and examination achievements, which have been acquired in an economics program in the basic studies, are counted towards the first two semesters of t",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "r to the 2nd or 3rd semester. Previous knowledge in the fields of business administration and management, business law, accounting, mathematics and economics is required. Equivalent study and examination achievements, which have been acquired in an economics program in the basic studies, are counted towards t",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "or 3rd semester. Previous knowledge in the fields of business administration and management, business law, accounting, mathematics and economics is required. Equivalent study and examination achievements, which have been acquired in an economics program in the basic studies, are counted towards the first two",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "entry into the 2nd semester) or 60 ECTS (lateral entry into the 3rd semester) Recognition of achievements from previous business studies at a state-recognized university in Germany or abroad Proof of English language proficiency with TOEFL, IELTS or 100% English Schooling Proof of advanced knowledge in a 2nd foreig",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "y of a transfer to the 2nd or 3rd semester. Previous knowledge in the fields of business administration and management, business law, accounting, mathematics and economics is required. Equivalent study and examination achievements, which have been acquired in an economics program in the basic studies, are count",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "TOEFL 85/IBT (MBS TOEFL",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "ELS 112) by the start of studies at the latest Upon receipt of the application fee, the Admission Office checks your docume",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "dies at the latest Upon receipt of the application fee, the Admission Office checks your documents and invites you to a personal interview. You will receive your feedback within t Scholarships MBS offers partial scholarships to committed prospective students. In order to apply for one of the limited scholarships, ple",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Personal interview keyword found."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "ester) Recognition of achievements from previous business studies at a state-recognized university in Germany or abroad Proof of English language proficiency with TOEFL, IELTS or 100% English Schooling Proof of advanced knowledge in a 2nd foreign language depending on the choice of International Focus (Spanish, Fre",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "s Authenticated copy of school leaving certificate, alternatively last 3 school reports Letter of Motivation Resume and photo Proof of English language skills B2 (TOEFL, IELTS, Duolingo, Cambridge, ELS 112) by the start of studies at the latest Upon receipt of the application fee, the Admission Office ch",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Photo keyword found."
+          }
+        ],
+        "conditional_paths": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "test can be waived by applicants having completed their schooling in English (i.e. US High School Diploma, IB Diploma). Transfer to MBS You would like to change university and continue your studies at Munich Business School? We offer Bachelor students the possibility of a transfer to the 2nd or 3rd semester",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Transfer/lateral entry keyword found."
+          }
+        ],
+        "international_requirements": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "hool-leaving certificate before applying. Do I meet the criteria for universities in Germany? Find out now: https://www.uni-assist.de/en/tools/check-university-admission Completing a vocational training program in Germany and a) passing a mastership examination ( Meisterprüfung ) or equivalent vocational trai",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Uni-assist/VPD keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "for bachelor’s-level study. English Proficiency Bilingual Track (70% Ger Note: If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance. Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Visa-sensitive deadline keyword found."
+          }
+        ],
+        "uni_assist_or_vpd": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "hool-leaving certificate before applying. Do I meet the criteria for universities in Germany? Find out now: https://www.uni-assist.de/en/tools/check-university-admission Completing a vocational training program in Germany and a) passing a mastership examination ( Meisterprüfung ) or equivalent vocational trai",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Uni-assist or VPD keyword found."
+          }
+        ],
+        "deadlines": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "Intake: October 15 – € 1,000 discount Fall Intake: February 15 – € 1,000 discount",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "deadline January 15 with online interview in January/February",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "deadline February 15 with online interview in February/March – Early Bird Deadline",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "deadline March 15 with online interview in March/April",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "deadline April 15 with online interview in April/May",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "deadline May 15 with online interview in May/June",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "deadline June 15 with online interview in June/July",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "deadline July 15 with online interview in July/August",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
         {
           "heading": "In this focus, you will learn the basics of the Chinese language (Mandarin Chinese) and will simultaneously acquaint yourself with the economy, politics, law, a",
           "text": "Arabic Countries and the Middle East Within the focus on Arabic countries and the Middle East, you will learn the Arabic language and discover the multifaceted culture of this economic region. The lectures provide a deeper understanding of the specific economic practices and business customs as well as historical and religious background information. No previous knowledge of the Arabic language is required as the Arabic language courses are aimed at absolute beginners. Russia and Eastern Europe Within the International Focus on Russia and Eastern Europe, you will acquire the basics of the Russian language and at the same time work intensively on the economy, politics, law, and history of the region. Understanding these backgrounds will provide wide access to these attractive economic regions. For the Russian language training, no previous knowledge is required. Spain and Latin America"
@@ -129,27 +383,938 @@
           "heading": "Upon receipt of the application fee, the Admission Office checks your documents and invites you to a personal interview. You will receive your feedback within t",
           "text": "Scholarships MBS offers partial scholarships to committed prospective students. In order to apply for one of the limited scholarships, please submit a personal statement with your application for a study place. In this statement, you convincingly justify your interest in the scholarship program. You can find further information at Scholarships and Financing . Application Rounds and Personal Interview MBS offers application rounds on a monthly basis. You pick one round for your application. Here are our deadlines and admission rounds for starting your studies in February or September: January round: Application deadline January 15 with online interview in January/February February round: Application deadline February 15 with online interview in February/March – Early Bird Deadline March round: Application deadline March 15 with online interview in March/April April round: Application deadline April 15 with online interview in April/May May round: Application deadline May 15 with online interview in May/June June round: Application deadline June 15 with online interview in June/July July round: Application deadline July 15 with online interview in July/August August round: Application deadline August 15 with online interview in August/September September round: Application deadline September 15 with online interview in September/October October round: Application deadline October 15 with online interview in October/November – Early Bird Deadline November round: Application deadline November 15 with online interview in November/December December round: Application deadline December 15 with online interview in December/January The personal interview (approx. 45 minutes) consists of three parts: Your study motivation Short presentation and discussion Your personal questions "
         }
-      ]
+      ],
+      "needs_human_review": false
     },
     {
-      "program_name": "Pre-Bachelor International Business – Your Start into Business Studies",
-      "url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
-      "degree": null,
-      "language": [
-        "English",
-        "German"
+      "school": {
+        "name": "Munich Business School",
+        "url": "https://www.munich-business-school.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master International Business – Study Globally at MBS",
+        "degree": null,
+        "level": "master",
+        "url": "https://www.munich-business-school.de/en/master/master-international-business",
+        "campus": "campus in munich",
+        "language_of_instruction": [
+          "German",
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": 180,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Found 180 ECTS requirement."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "economics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "85",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": [
+              "Schooling completed in English",
+              "Academic degree completed in English"
+            ]
+          }
+        ],
+        "test_requirements": [
+          "GRE",
+          "Personal interview",
+          "Case study"
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "CV",
+          "Transcript",
+          "Degree certificate",
+          "Reference letter",
+          "Proof of English proficiency",
+          "Photo"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "Visa-sensitive deadline",
+          "Country-specific reminder"
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "intake) or third (September intake) semester abroad at one of our numerous international partner universities",
+          "Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
+        ],
+        "intakes": [
+          "spring semester",
+          "Spring Intake",
+          "Fall Intake",
+          "Spring semester",
+          "Winter semester"
+        ],
+        "application_channel": "Online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Tuition Fees",
+          "tuition fees in three semester installments or 18 monthly installments",
+          "fee of 690 Euro (EU/EFTA) respectively 1,490 Euro (non-EU) and a deposit of 1",
+          "tuition fee installment",
+          "tuition fee"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
+            "source_text": "180 ECTS",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "high",
+            "review_note": "Direct ECTS extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
+            "source_text": "5 February – € 1,000 discount The main requirement for admission to the Master study program is a successful Bachelor's degree (180 ECTS or more). Applicants with a degree in Business Studie English Proficiency Applicants must proof their English language skills by passing one of the following language te",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
+            "source_text": "TOEFL iBT & Home Edition: min. 85 (min. of 22 in writing band, min. of 20 in all other bands; MBS TOEFL",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
+            "source_text": "February – € 1,000 discount The main requirement for admission to the Master study program is a successful Bachelor's degree (180 ECTS or more). Applicants with a degree in Business Studie English Proficiency Applicants must proof their English language skills by passing one of the following language t",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "GRE keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
+            "source_text": "mission and matriculate to the program. Online Application Step 2: Admission Qualified applicants will be invited for a personal interview on site in Munich or online via Microsoft Teams (approx. 30 - 45 minutes). The interview may include the processing of a case study. As soon as you are an admitted student, you ha",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Personal interview keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
+            "source_text": "ng a new company. Teaching and Learning Methods Seminar-type lectures and group work Hands-on prototyping workshops and case study workshops for testing market work Supervisory coaching of the founding teams Presentations Business Projects In the Business Project, which lasts two semesters, you work with othe",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Case study keyword found."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
+            "source_text": "ng questions of motivation (various questions are available for selection during the online application process) Résumé/CV Copies of your graduation certificates* and/or current university transcripts* You may also upload the following additional documents: recent photo of yourself (professional, in c",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "CV keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
+            "source_text": "tion during the online application process) Résumé/CV Copies of your graduation certificates* and/or current university transcripts* You may also upload the following additional documents: recent photo of yourself (professional, in color with bright background) Copy of the school leaving certificate (e.g., Hi",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Transcript keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
+            "source_text": "leaving certificate (e.g., Highschool Diploma, IB, Abitur)* Proof of English language proficiency (TOEFL, IELTS or ELS) Reference letters (if available) *Please provide the original documents or certified copies when you gain admission and matriculate to the program. Online Application Step 2: Admission Qual",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
+            "source_text": "sional, in color with bright background) Copy of the school leaving certificate (e.g., Highschool Diploma, IB, Abitur)* Proof of English language proficiency (TOEFL, IELTS or ELS) Reference letters (if available) *Please provide the original documents or certified copies when you gain admission and matriculate to t",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
+            "source_text": "ion certificates* and/or current university transcripts* You may also upload the following additional documents: recent photo of yourself (professional, in color with bright background) Copy of the school leaving certificate (e.g., Highschool Diploma, IB, Abitur)* Proof of English language proficiency (T",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Photo keyword found."
+          }
+        ],
+        "international_requirements": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
+            "source_text": "g band, min. of 20 in all other bands; MBS TOEFL Institution Code: 5772) Note : If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance. Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Visa-sensitive deadline keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
+            "source_text": "ans (no visa): December 10 Application guideline for non-Europeans (visa required): October 31 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Winter semester Application guideline for Europeans (no visa): July 15 Application guideline for non-Europea",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          }
+        ],
+        "application_channel": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
+            "source_text": "ow an extra month to apply for the relevant visas. Application Process Step 1: Written Application When submitting your online application, please provide the following mandatory documents: Answering questions of motivation (various questions are available for selection during the online application process) Résumé/C",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Application channel keyword found."
+          }
+        ],
+        "deadlines": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
+            "source_text": "intake) or third (September intake) semester abroad at one of our numerous international partner universities",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
+            "source_text": "Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "The business concentration Innovation & Digital Business perfectly prepares you to the requirements of the digital business economy. During the course, experien",
+          "text": "Teaching and Learning Methods Interactive lectures and group discussions Case studies and workshops Guest lecturers from the industry International Entrepreneurship The business concentration International Entrepreneurship prepares you for the complete array of topics regarding the formation of a new company and bringing an innovation to market. The scope extends from finding an initial idea and the development of the business model through looking for investors and pitching the concept to founding and building a new company. Teaching and Learning Methods Seminar-type lectures and group work Hands-on prototyping workshops and case study workshops for testing market work Supervisory coaching of the founding teams Presentations Business Projects In the Business Project, which lasts two semesters, you work with other students on specific projects on behalf of a company. These live cases are as varied as the companies that provide them: A start-up needs a market entry strategy for a new target country, the hidden champion from the Bavarian region needs ideas for a brand awareness campaign. Within the framework of this project, you will apply and deepen your acquired business knowledge in a small group. All groups receive coaching from an MBS professor throughout the entire project duration. It is not uncommon for business projects to result in concrete and directly on-site, first job opportunities for the respective student groups, because the region around Munich is one of the strongest economic regions in Germany – just one of the many advantages of studying business administration in Munich. What our students and alumni say about us Contents"
+        },
+        {
+          "heading": "In order to qualify for the Master International Business study program, you must fulfill academic, linguistic, and to some extent professional requirements. Yo",
+          "text": "Tuition Fees The quality of teaching and the training of sought-after specialists and managers are at the heart of Munich Business School. By studying at MBS, you are making an investment in your future. You can conveniently pay your tuition fees in three semester installments or 18 monthly installments. Early Bird Special - Deadlines Spring Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
+        },
+        {
+          "heading": "The main requirement for admission to the Master study program is a successful Bachelor's degree (180 ECTS or more). Applicants with a degree in Business Studie",
+          "text": "English Proficiency Applicants must proof their English language skills by passing one of the following language tests: TOEFL iBT & Home Edition: min. 85 (min. of 22 in writing band, min. of 20 in all other bands; MBS TOEFL Institution Code: 5772)"
+        },
+        {
+          "heading": "Note : If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance.",
+          "text": "Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test results before handing in your MBS application, please inform us about your planned test date. The English proficiency test can be waived by the following candidates: Applicants having completed their schooling in English (i.e., High School Diploma, IB) Applicants having completed their first academic degree in English Application deadlines in detail We accept applications all year round. However, we recommend that you apply as early as possible, as the number of places is limited. Spring semester (Master International Business only) Application guideline for Europeans (no visa): December 10 Application guideline for non-Europeans (visa required): October 31 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Winter semester Application guideline for Europeans (no visa): July 15 Application guideline for non-Europeans (visa required): April 30 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Application Process Step 1: Written Application"
+        },
+        {
+          "heading": "When submitting your online application, please provide the following mandatory documents:",
+          "text": "Answering questions of motivation (various questions are available for selection during the online application process) Résumé/CV Copies of your graduation certificates* and/or current university transcripts*"
+        },
+        {
+          "heading": "You may also upload the following additional documents:",
+          "text": "recent photo of yourself (professional, in color with bright background) Copy of the school leaving certificate (e.g., Highschool Diploma, IB, Abitur)* Proof of English language proficiency (TOEFL, IELTS or ELS) Reference letters (if available)"
+        },
+        {
+          "heading": "*Please provide the original documents or certified copies when you gain admission and matriculate to the program.",
+          "text": "Online Application Step 2: Admission Qualified applicants will be invited for a personal interview on site in Munich or online via Microsoft Teams (approx. 30 - 45 minutes). The interview may include the processing of a case study. As soon as you are an admitted student, you have the opportunity to get to know MBS even better – before making your final decision whether to join Munich Business School. Our study advisors will of course be available for all kinds of potential questions and personal consultations. Step 3: Study Contract Once you have successfully completed the application process, Munich Business School will provide you with an acceptance letter as well as two copies of your study contract. Please sign one copy and return it within two weeks to secure your spot in the program. The other copy needs to be kept for your own records."
+        }
       ],
-      "application_deadline_evidence": [
-        "Intake: October 15 – € 1,000 discount Fall Intake: February 15 – € 1,000 discount",
-        "deadline January 15 with online interview in January/February",
-        "deadline February 15 with online interview in February/March – Early Bird Deadline"
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Munich Business School",
+        "url": "https://www.munich-business-school.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "MBA General Management – Full-Time Program for Your Career",
+        "degree": "MBA",
+        "level": "master",
+        "url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+        "campus": "CAMPUS TO CAREER",
+        "language_of_instruction": [
+          "German",
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business law",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.5",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": [
+              "Schooling completed in English",
+              "Academic degree completed in English",
+              "English used in daily business communication"
+            ]
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "85",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": [
+              "Schooling completed in English",
+              "Academic degree completed in English",
+              "English used in daily business communication"
+            ]
+          },
+          {
+            "test": "ELS",
+            "minimum_score": "112",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": [
+              "Schooling completed in English",
+              "Academic degree completed in English",
+              "English used in daily business communication"
+            ]
+          }
+        ],
+        "test_requirements": [
+          "GRE",
+          "Personal interview"
+        ],
+        "work_experience": {
+          "minimum_years": 2,
+          "relevance": "at least two years of pertinent work",
+          "notes": []
+        },
+        "documents": [
+          "CV",
+          "Motivation letter",
+          "Transcript",
+          "Degree certificate",
+          "Passport",
+          "Reference letter",
+          "Proof of English proficiency",
+          "Photo",
+          "Application form"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "Visa-sensitive deadline",
+          "Country-specific reminder"
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Intake 2026 by July 31, 2026 and recieve a EUR 2,000 discount on the first semester rate",
+          "Intake: October 15 – € 2,000 discount Fall Intake: April 30 – € 4,000 discount | July 31 – € 2,000 discount",
+          "deadline in detail",
+          "deadline for Europeans (no visa): January 31",
+          "deadline for non-Europeans (visa required): October 31",
+          "deadline for Europeans (no visa): July 15",
+          "deadline for non-Europeans (visa required): April 30",
+          "deadline May 31 for international students"
+        ],
+        "intakes": [
+          "Fall Intake",
+          "Spring Intake",
+          "Spring semester",
+          "Winter semester"
+        ],
+        "application_channel": "Online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Tuition Fees",
+          "tuition fees in two semester installments or 12 monthly installments",
+          "fee of 690 Euro (EU/EFTA) respectively 1,490 Euro (non-EU) and deposit of 1",
+          "tuition fee installment",
+          "tuition installment"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "ly 31 – € 2,000 discount Academic requirements You must present proof that you have successfully completed a recognized degree in any subject. Work experience You will be required to present evidence of at least two years of pertinent work experience after your first degree. Personal qualities You should",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "IELTS 6.5,",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "TOEFL iBT & Home Edition: min. 85 (min. of 22 in writing band, min. of 20 in all other bands; MBS TOEFL",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "ELS 112) A copy of your passport details page (the one with the photo) A recent passport size photo Completed application f",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "31 – € 2,000 discount Academic requirements You must present proof that you have successfully completed a recognized degree in any subject. Work experience You will be required to present evidence of at least two years of pertinent work experience after your first degree. Personal qualities You should",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "GRE keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "to request any additional information that the Selection Committee believes will assist its admission decision. Step 2: Personal Interview Application Deadlines The following application deadlines exist for the two start dates in March and September: September study start: Application deadline May 31 for internationa",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Personal interview keyword found."
+          }
+        ],
+        "work_experience": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "at least two years of pertinent work",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "high",
+            "review_note": "Work-experience requirement found."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "pplication to be considered: Letter of motivation (1-2 pages) Current curriculum vitae A copy of your official academic transcript stating your final grade* Two references of your current or previous employers Proof of English proficiency (TOEFL 85, IELTS 6.5, ELS 112) A copy of your passport details page (th",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Transcript keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "rences of your current or previous employers Proof of English proficiency (TOEFL 85, IELTS 6.5, ELS 112) A copy of your passport details page (the one with the photo) A recent passport size photo Completed application form * Original or certified copies of these documents will need to be provided if you are",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Passport keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "tivation (1-2 pages) Current curriculum vitae A copy of your official academic transcript stating your final grade* Two references of your current or previous employers Proof of English proficiency (TOEFL 85, IELTS 6.5, ELS 112) A copy of your passport details page (the one with the photo) A recent passport",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "opy of your official academic transcript stating your final grade* Two references of your current or previous employers Proof of English proficiency (TOEFL 85, IELTS 6.5, ELS 112) A copy of your passport details page (the one with the photo) A recent passport size photo Completed application form * Original or cert",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "yers Proof of English proficiency (TOEFL 85, IELTS 6.5, ELS 112) A copy of your passport details page (the one with the photo) A recent passport size photo Completed application form * Original or certified copies of these documents will need to be provided if you are successful in gaining admission to t",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Photo keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "ELTS 6.5, ELS 112) A copy of your passport details page (the one with the photo) A recent passport size photo Completed application form * Original or certified copies of these documents will need to be provided if you are successful in gaining admission to the program. Optional supporting materials You are welcome",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Application form keyword found."
+          }
+        ],
+        "international_requirements": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "g band, min. of 20 in all other bands; MBS TOEFL Institution Code: 5772) Note : If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance. Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Visa-sensitive deadline keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "Europeans (no visa): July 15 Application deadline for non-Europeans (visa required): April 30 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Compensation for Disadvantages Munich Business School places great importance on diversity and equal opportu",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          }
+        ],
+        "application_channel": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "ength of application, experience and interview performance - contact your study advisor for more info. Submit your full online application for the Fall Intake 2026 by July 31, 2026 and recieve a EUR 2,000 discount on the first semester rate. Meet your Academic Director You know where you want to go. What separates th",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Application channel keyword found."
+          }
+        ],
+        "deadlines": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "Intake 2026 by July 31, 2026 and recieve a EUR 2,000 discount on the first semester rate",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "Intake: October 15 – € 2,000 discount Fall Intake: April 30 – € 4,000 discount | July 31 – € 2,000 discount",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "deadline in detail",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "deadline for Europeans (no visa): January 31",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "deadline for non-Europeans (visa required): October 31",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "deadline for Europeans (no visa): July 15",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "deadline for non-Europeans (visa required): April 30",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "deadline May 31 for international students",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "In order to be admitted to a study program at Munich Business School, you must fulfill academic, linguistic, and professional requirements. The required applica",
+          "text": "Tuition Fees The quality of teaching and the training of sought-after specialists and managers are at the heart of Munich Business School. By studying at MBS, you are making an investment in your future. You can conveniently pay your tuition fees in two semester installments or 12 monthly installments. Early Bird Special - Deadlines Spring Intake: October 15 – € 2,000 discount Fall Intake: April 30 – € 4,000 discount | July 31 – € 2,000 discount"
+        },
+        {
+          "heading": "Academic requirements You must present proof that you have successfully completed a recognized degree in any subject.",
+          "text": "Work experience You will be required to present evidence of at least two years of pertinent work experience after your first degree. Personal qualities You should have management and leadership potential, excellent interpersonal and communicative skills and a high degree of personal maturity and motivation. You should also be in a position to contribute to the community’s learning process. English language skills You must present proof of your command of the English language by passing one of the following test procedures. TOEFL iBT & Home Edition: min. 85 (min. of 22 in writing band, min. of 20 in all other bands; MBS TOEFL Institution Code: 5772)"
+        },
+        {
+          "heading": "Note : If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance.",
+          "text": "Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test results before handing in your MBS application, please advise us of your planned test date. Exceptions The English proficiency test can be waived by the following candidates: Applicants having completed their schooling in English (i.e., High School Diploma, IB) Applicants having completed their first academic degree in English English is the official language in daily business communication in your current position and company (we require a confirmation letter from your employer) for at least 2 years Application deadline in detail We accept applications all year round. However, we recommend that you apply as early as possible, as the number of places is limited. Spring semester Application deadline for Europeans (no visa): January 31 Application deadline for non-Europeans (visa required): October 31 Winter semester Application deadline for Europeans (no visa): July 15 Application deadline for non-Europeans (visa required): April 30 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Compensation for Disadvantages Munich Business School places great importance on diversity and equal opportunities. Against this background, applicants with disabilities or impairments are expressly welcome. The aim is to ensure equal participation in academic studies for all students and to adequately take individual circumstances into account. The regulations on compensation for disadvantages are set out in Section 22 of the General Examination Regulations . Application process Step 1: Written Application"
+        },
+        {
+          "heading": "Application documents When submitting your application, you must provide the following mandatory documents for your application to be considered:",
+          "text": "Letter of motivation (1-2 pages) Current curriculum vitae A copy of your official academic transcript stating your final grade* Two references of your current or previous employers Proof of English proficiency (TOEFL 85, IELTS 6.5, ELS 112) A copy of your passport details page (the one with the photo) A recent passport size photo Completed application form"
+        },
+        {
+          "heading": "* Original or certified copies of these documents will need to be provided if you are successful in gaining admission to the program.",
+          "text": "Optional supporting materials You are welcome to supply any additional information that you believe will strengthen your application. Similarly, Munich Business School reserves the right to request any additional information that the Selection Committee believes will assist its admission decision. Step 2: Personal Interview Application Deadlines The following application deadlines exist for the two start dates in March and September: September study start: Application deadline May 31 for international students. Application deadline July 15 for EU/EFTA students March study start: Application deadline November 15 for international students. Application deadline January 31 for EU/EFTA students Personal Interview The interview will last approximately 30-45 minutes and is intended to help both you as well as MBS to determine whether your profile will match the study program and the class being formed. Of course, this interview will also present you with the opportunity to ask any questions you may have. If you are from Germany or close enough to travel, you can attend the personal interview at Munich Business School with the Admissions Manager and the Academic Program Director. If you cannot attend a personal interview, you will be interviewed via video conference. Step 3: Study Contract The Admissions Office informs you about the outcome of the application process within 10 working days. In case of acceptance, Munich Business School will provide you with an acceptance letter as well as two copies of your study contract. One copy needs to be signed and returned within two weeks to secure your spot in the program. The other copy needs to be kept for your own records."
+        },
+        {
+          "heading": "In order to apply for one of our MBA scholarships, please pick one option and answer the corresponding question in a personal statement. Please upload the docum",
+          "text": "Due to the limited number of scholarships an early application is recommended. Applicants who convince us of their suitability will be granted up to EUR 4,000 on the overall tuition fee . The application for one of the scholarships is made together with the application for a place at university. Further information can be found under \" Scholarships and financing \". Apartments for MBS students Our fully equipped apartments offer everything you need to focus entirely on your studies: modern design, comfort, and premium extras. You don’t have to worry about annoying things like a washing machine, electricity, heating, or Wi-Fi. We have already taken care of everything for you. MBS Insights: The university blog with news on studying, research, and business administration Germany's Best Universities: Munich Business School Achieves Top Results in the CHE University Ranking Read more The Elite of Private Business Schools: Munich Business School Ranks Among Germany's Top Five Read more Munich Business School Makes Its Debut in the QS World University Rankings Read more The Tragedy of the Easter Lawn Read more Elsenheimerstraße 61 80687 München Germany +49(0)89 547678-0 Chat now on WhatsApp info@munich-business-school.de Virtual Campus University Blog - MBS Insights Study Abroad Portal Webmail LMS China Website MBS Shop Imprint Data Privacy Statement Declaration of Accessibility Cookie settings"
+        }
       ],
-      "tuition_evidence": [
-        "Tuition Fees",
-        "tuition fees in seven semester installments or 42 monthly installments",
-        "fee for the Pre-Check is 60 euros"
-      ],
-      "admission_requirements": [
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Munich Business School",
+        "url": "https://www.munich-business-school.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Pre-Bachelor International Business – Your Start into Business Studies",
+        "degree": null,
+        "level": "bachelor",
+        "url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+        "campus": "campus in munich",
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": 60,
+          "recognized_institution": "recognized or accredited institution",
+          "minimum_grade": "2.5",
+          "notes": [
+            "Found 60 ECTS requirement."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "economics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "accounting",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "mathematics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business law",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "85",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": [
+              "Schooling completed in English"
+            ]
+          },
+          {
+            "test": "ELS",
+            "minimum_score": "112",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": [
+              "Schooling completed in English"
+            ]
+          }
+        ],
+        "test_requirements": [
+          "GRE",
+          "Personal interview"
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "CV",
+          "Motivation letter",
+          "Degree certificate",
+          "Proof of English proficiency",
+          "Photo"
+        ],
+        "conditional_paths": [
+          "Transfer/lateral entry"
+        ],
+        "international_requirements": [
+          "Uni-assist/VPD",
+          "Visa-sensitive deadline"
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Intake: October 15 – € 1,000 discount Fall Intake: February 15 – € 1,000 discount",
+          "deadline January 15 with online interview in January/February",
+          "deadline February 15 with online interview in February/March – Early Bird Deadline",
+          "deadline March 15 with online interview in March/April",
+          "deadline April 15 with online interview in April/May",
+          "deadline May 15 with online interview in May/June",
+          "deadline June 15 with online interview in June/July",
+          "deadline July 15 with online interview in July/August"
+        ],
+        "intakes": [
+          "Spring Intake",
+          "Fall Intake",
+          "spring term",
+          "fall term"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": "hool-leaving certificate before applying. Do I meet the criteria for universities in Germany? Find out now: https://www.uni-assist.de/en/tools/check-university-admission Completing a vocational training program in Germany and a) passing a mastership examination ( Meisterprüfung ) or equivalent vocational trai",
+        "fees": [
+          "Tuition Fees",
+          "tuition fees in seven semester installments or 42 monthly installments",
+          "fee for the Pre-Check is 60 euros",
+          "fee is waived",
+          "Fee"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "60 ECTS",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "high",
+            "review_note": "Direct ECTS extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "icity, heating, or Wi-Fi. We have already taken care of everything for you. Application The application process for our degree programs consists of two consecutive steps: an application and a personal interview. To apply for the Pre-Bachelor’s prog Tuition Fees The quality of teaching and the training of",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "subject_prerequisites": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": ". Previous knowledge in the fields of business administration and management, business law, accounting, mathematics and economics is required. Equivalent study and examination achievements, which have been acquired in an economics program in the basic studies, are counted towards the first two semesters of t",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "r to the 2nd or 3rd semester. Previous knowledge in the fields of business administration and management, business law, accounting, mathematics and economics is required. Equivalent study and examination achievements, which have been acquired in an economics program in the basic studies, are counted towards t",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "or 3rd semester. Previous knowledge in the fields of business administration and management, business law, accounting, mathematics and economics is required. Equivalent study and examination achievements, which have been acquired in an economics program in the basic studies, are counted towards the first two",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "entry into the 2nd semester) or 60 ECTS (lateral entry into the 3rd semester) Recognition of achievements from previous business studies at a state-recognized university in Germany or abroad Proof of English language proficiency with TOEFL, IELTS or 100% English Schooling Proof of advanced knowledge in a 2nd foreig",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "y of a transfer to the 2nd or 3rd semester. Previous knowledge in the fields of business administration and management, business law, accounting, mathematics and economics is required. Equivalent study and examination achievements, which have been acquired in an economics program in the basic studies, are count",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "TOEFL 85/IBT (MBS TOEFL",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "ELS 112) by the start of studies at the latest Upon receipt of the application fee, the Admission Office checks your docume",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "ity, heating, or Wi-Fi. We have already taken care of everything for you. Application The application process for our degree programs consists of two consecutive steps: an application and a personal interview. To apply for the Pre-Bachelor’s prog Tuition Fees The quality of teaching and the training of",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "GRE keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "ou. Application The application process for our degree programs consists of two consecutive steps: an application and a personal interview. To apply for the Pre-Bachelor’s prog Tuition Fees The quality of teaching and the training of sought-after specialists and managers are at the heart of Munich Business School. By",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Personal interview keyword found."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "fication (e.g. Abitur, Fachhochschulreife, Matura, IB Diploma, A-levels, etc.) as well as good English language skills. Proof of English language skills at least at B2 level is sufficient for the application. Application Process You apply for the Pre-Bachelor study program in combination with the Bachelor Internati",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "s Authenticated copy of school leaving certificate, alternatively last 3 school reports Letter of Motivation Resume and photo Proof of English language skills B2 (TOEFL, IELTS, Duolingo, Cambridge, ELS 112) by the start of studies at the latest Upon receipt of the application fee, the Admission Office ch",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Photo keyword found."
+          }
+        ],
+        "conditional_paths": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "test can be waived by applicants having completed their schooling in English (i.e. US High School Diploma, IB Diploma). Transfer to MBS You would like to change university and continue your studies at Munich Business School? We offer Bachelor students the possibility of a transfer to the 2nd or 3rd semester",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Transfer/lateral entry keyword found."
+          }
+        ],
+        "international_requirements": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "hool-leaving certificate before applying. Do I meet the criteria for universities in Germany? Find out now: https://www.uni-assist.de/en/tools/check-university-admission Completing a vocational training program in Germany and a) passing a mastership examination ( Meisterprüfung ) or equivalent vocational trai",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Uni-assist/VPD keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "for bachelor’s-level study. English Proficiency Bilingual Track (70% Ger Note: If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance. Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Visa-sensitive deadline keyword found."
+          }
+        ],
+        "uni_assist_or_vpd": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "hool-leaving certificate before applying. Do I meet the criteria for universities in Germany? Find out now: https://www.uni-assist.de/en/tools/check-university-admission Completing a vocational training program in Germany and a) passing a mastership examination ( Meisterprüfung ) or equivalent vocational trai",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Uni-assist or VPD keyword found."
+          }
+        ],
+        "deadlines": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "Intake: October 15 – € 1,000 discount Fall Intake: February 15 – € 1,000 discount",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "deadline January 15 with online interview in January/February",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "deadline February 15 with online interview in February/March – Early Bird Deadline",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "deadline March 15 with online interview in March/April",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "deadline April 15 with online interview in April/May",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "deadline May 15 with online interview in May/June",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "deadline June 15 with online interview in June/July",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "deadline July 15 with online interview in July/August",
+            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
         {
           "heading": "Admission Requirements",
           "text": "The Pre-Bachelor study program requires a university entrance qualification (e.g. Abitur, Fachhochschulreife, Matura, IB Diploma, A-levels, etc.) as well as good English language skills. Proof of English language skills at least at B2 level is sufficient for the application. Application Process You apply for the Pre-Bachelor study program in combination with the Bachelor International Business program. The two-step admission process consists of a written application, and an online interview via Microsoft Teams. What Pre-Bachelor's students say about the program Get to know us. Online or at our campus in munich. Apartments for MBS students Our fully equipped apartments offer everything you need to focus entirely on your studies: modern design, comfort, and premium extras. You don’t have to worry about annoying things like a washing machine, electricity, heating, or Wi-Fi. We have already taken care of everything for you. Application"
@@ -186,606 +1351,25 @@
           "heading": "Upon receipt of the application fee, the Admission Office checks your documents and invites you to a personal interview. You will receive your feedback within t",
           "text": "Scholarships MBS offers partial scholarships to committed prospective students. In order to apply for one of the limited scholarships, please submit a personal statement with your application for a study place. In this statement, you convincingly justify your interest in the scholarship program. You can find further information at Scholarships and Financing . Application Rounds and Personal Interview MBS offers application rounds on a monthly basis. You pick one round for your application. Here are our deadlines and admission rounds for starting your studies in February or September: January round: Application deadline January 15 with online interview in January/February February round: Application deadline February 15 with online interview in February/March – Early Bird Deadline March round: Application deadline March 15 with online interview in March/April April round: Application deadline April 15 with online interview in April/May May round: Application deadline May 15 with online interview in May/June June round: Application deadline June 15 with online interview in June/July July round: Application deadline July 15 with online interview in July/August August round: Application deadline August 15 with online interview in August/September September round: Application deadline September 15 with online interview in September/October October round: Application deadline October 15 with online interview in October/November – Early Bird Deadline November round: Application deadline November 15 with online interview in November/December December round: Application deadline December 15 with online interview in December/January The personal interview (approx. 45 minutes) consists of three parts: Your study motivation Short presentation and discussion Your personal questions "
         }
-      ]
-    },
-    {
-      "program_name": "Master International Business – Study Globally at MBS",
-      "url": "https://www.munich-business-school.de/en/master/master-international-business",
-      "degree": null,
-      "language": [
-        "German",
-        "English"
       ],
-      "application_deadline_evidence": [
-        "intake) or third (September intake) semester abroad at one of our numerous international partner universities",
-        "Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-      ],
-      "tuition_evidence": [
-        "Tuition Fees",
-        "tuition fees in three semester installments or 18 monthly installments",
-        "fee of 690 Euro (EU/EFTA) respectively 1,490 Euro (non-EU) and a deposit of 1"
-      ],
-      "admission_requirements": [
-        {
-          "heading": "The business concentration Innovation & Digital Business perfectly prepares you to the requirements of the digital business economy. During the course, experien",
-          "text": "Teaching and Learning Methods Interactive lectures and group discussions Case studies and workshops Guest lecturers from the industry International Entrepreneurship The business concentration International Entrepreneurship prepares you for the complete array of topics regarding the formation of a new company and bringing an innovation to market. The scope extends from finding an initial idea and the development of the business model through looking for investors and pitching the concept to founding and building a new company. Teaching and Learning Methods Seminar-type lectures and group work Hands-on prototyping workshops and case study workshops for testing market work Supervisory coaching of the founding teams Presentations Business Projects In the Business Project, which lasts two semesters, you work with other students on specific projects on behalf of a company. These live cases are as varied as the companies that provide them: A start-up needs a market entry strategy for a new target country, the hidden champion from the Bavarian region needs ideas for a brand awareness campaign. Within the framework of this project, you will apply and deepen your acquired business knowledge in a small group. All groups receive coaching from an MBS professor throughout the entire project duration. It is not uncommon for business projects to result in concrete and directly on-site, first job opportunities for the respective student groups, because the region around Munich is one of the strongest economic regions in Germany – just one of the many advantages of studying business administration in Munich. What our students and alumni say about us Contents"
-        },
-        {
-          "heading": "In order to qualify for the Master International Business study program, you must fulfill academic, linguistic, and to some extent professional requirements. Yo",
-          "text": "Tuition Fees The quality of teaching and the training of sought-after specialists and managers are at the heart of Munich Business School. By studying at MBS, you are making an investment in your future. You can conveniently pay your tuition fees in three semester installments or 18 monthly installments. Early Bird Special - Deadlines Spring Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-        },
-        {
-          "heading": "The main requirement for admission to the Master study program is a successful Bachelor's degree (180 ECTS or more). Applicants with a degree in Business Studie",
-          "text": "English Proficiency Applicants must proof their English language skills by passing one of the following language tests: TOEFL iBT & Home Edition: min. 85 (min. of 22 in writing band, min. of 20 in all other bands; MBS TOEFL Institution Code: 5772)"
-        },
-        {
-          "heading": "Note : If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance.",
-          "text": "Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test results before handing in your MBS application, please inform us about your planned test date. The English proficiency test can be waived by the following candidates: Applicants having completed their schooling in English (i.e., High School Diploma, IB) Applicants having completed their first academic degree in English Application deadlines in detail We accept applications all year round. However, we recommend that you apply as early as possible, as the number of places is limited. Spring semester (Master International Business only) Application guideline for Europeans (no visa): December 10 Application guideline for non-Europeans (visa required): October 31 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Winter semester Application guideline for Europeans (no visa): July 15 Application guideline for non-Europeans (visa required): April 30 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Application Process Step 1: Written Application"
-        },
-        {
-          "heading": "When submitting your online application, please provide the following mandatory documents:",
-          "text": "Answering questions of motivation (various questions are available for selection during the online application process) Résumé/CV Copies of your graduation certificates* and/or current university transcripts*"
-        },
-        {
-          "heading": "You may also upload the following additional documents:",
-          "text": "recent photo of yourself (professional, in color with bright background) Copy of the school leaving certificate (e.g., Highschool Diploma, IB, Abitur)* Proof of English language proficiency (TOEFL, IELTS or ELS) Reference letters (if available)"
-        },
-        {
-          "heading": "*Please provide the original documents or certified copies when you gain admission and matriculate to the program.",
-          "text": "Online Application Step 2: Admission Qualified applicants will be invited for a personal interview on site in Munich or online via Microsoft Teams (approx. 30 - 45 minutes). The interview may include the processing of a case study. As soon as you are an admitted student, you have the opportunity to get to know MBS even better – before making your final decision whether to join Munich Business School. Our study advisors will of course be available for all kinds of potential questions and personal consultations. Step 3: Study Contract Once you have successfully completed the application process, Munich Business School will provide you with an acceptance letter as well as two copies of your study contract. Please sign one copy and return it within two weeks to secure your spot in the program. The other copy needs to be kept for your own records."
-        }
-      ]
-    },
-    {
-      "program_name": "Master's in Sustainable Business",
-      "url": "https://www.munich-business-school.de/en/master/master-international-business/sustainable-business",
-      "degree": null,
-      "language": [
-        "English",
-        "German"
-      ],
-      "application_deadline_evidence": [
-        "intake) or third (September intake) semester abroad at one of our numerous international partner universities",
-        "Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-      ],
-      "tuition_evidence": [
-        "Tuition Fees",
-        "tuition fees in three semester installments or 18 monthly installments",
-        "fee of 690 Euro (EU/EFTA) respectively 1,490 Euro (non-EU) and a deposit of 1"
-      ],
-      "admission_requirements": [
-        {
-          "heading": "Apply now for the Master in International Business and secure your place in the Sustainable Business specialization. Admission is based on academic and language",
-          "text": "Tuition Fees The quality of teaching and the training of sought-after specialists and managers are at the heart of Munich Business School. By studying at MBS, you are making an investment in your future. You can conveniently pay your tuition fees in three semester installments or 18 monthly installments. Early Bird Special - Deadlines Spring Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-        },
-        {
-          "heading": "The main requirement for admission to the Master study program is a successful Bachelor's degree (180 ECTS or more). Applicants with a degree in Business Studie",
-          "text": "English Proficiency Applicants must proof their English language skills by passing one of the following language tests: TOEFL iBT & Home Edition: min. 85 (min. of 22 in writing band, min. of 20 in all other bands; MBS TOEFL Institution Code: 5772)"
-        },
-        {
-          "heading": "Note : If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance.",
-          "text": "Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test results before handing in your MBS application, please inform us about your planned test date. The English proficiency test can be waived by the following candidates: Applicants having completed their schooling in English (i.e., High School Diploma, IB) Applicants having completed their first academic degree in English Application deadlines in detail We accept applications all year round. However, we recommend that you apply as early as possible, as the number of places is limited. Spring semester (Master International Business only) Application guideline for Europeans (no visa): December 10 Application guideline for non-Europeans (visa required): October 31 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Winter semester Application guideline for Europeans (no visa): July 15 Application guideline for non-Europeans (visa required): April 30 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Application Process Step 1: Written Application"
-        },
-        {
-          "heading": "When submitting your online application, please provide the following mandatory documents:",
-          "text": "Answering questions of motivation (various questions are available for selection during the online application process) Résumé/CV Copies of your graduation certificates* and/or current university transcripts*"
-        },
-        {
-          "heading": "You may also upload the following additional documents:",
-          "text": "recent photo of yourself (professional, in color with bright background) Copy of the school leaving certificate (e.g., Highschool Diploma, IB, Abitur)* Proof of English language proficiency (TOEFL, IELTS or ELS) Reference letters (if available)"
-        },
-        {
-          "heading": "*Please provide the original documents or certified copies when you gain admission and matriculate to the program.",
-          "text": "Online Application Step 2: Admission Qualified applicants will be invited for a personal interview on site in Munich or online via Microsoft Teams (approx. 30 - 45 minutes). The interview may include the processing of a case study. As soon as you are an admitted student, you have the opportunity to get to know MBS even better – before making your final decision whether to join Munich Business School. Our study advisors will of course be available for all kinds of potential questions and personal consultations. Step 3: Study Contract Once you have successfully completed the application process, Munich Business School will provide you with an acceptance letter as well as two copies of your study contract. Please sign one copy and return it within two weeks to secure your spot in the program. The other copy needs to be kept for your own records."
-        }
-      ]
-    },
-    {
-      "program_name": "Master's in Luxury Management",
-      "url": "https://www.munich-business-school.de/en/master/master-international-business/luxury-management",
-      "degree": null,
-      "language": [
-        "German",
-        "English"
-      ],
-      "application_deadline_evidence": [
-        "intake) or third (September intake) semester abroad at one of our numerous international partner universities",
-        "Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-      ],
-      "tuition_evidence": [
-        "Tuition Fees",
-        "tuition fees in three semester installments or 18 monthly installments",
-        "fee of 690 Euro (EU/EFTA) respectively 1,490 Euro (non-EU) and a deposit of 1"
-      ],
-      "admission_requirements": [
-        {
-          "heading": "Apply now for the Master in International Business and secure your place in the Luxury Management specialization. Admission is based on academic and language re",
-          "text": "Tuition Fees The quality of teaching and the training of sought-after specialists and managers are at the heart of Munich Business School. By studying at MBS, you are making an investment in your future. You can conveniently pay your tuition fees in three semester installments or 18 monthly installments. Early Bird Special - Deadlines Spring Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-        },
-        {
-          "heading": "The main requirement for admission to the Master study program is a successful Bachelor's degree (180 ECTS or more). Applicants with a degree in Business Studie",
-          "text": "English Proficiency Applicants must proof their English language skills by passing one of the following language tests: TOEFL iBT & Home Edition: min. 85 (min. of 22 in writing band, min. of 20 in all other bands; MBS TOEFL Institution Code: 5772)"
-        },
-        {
-          "heading": "Note : If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance.",
-          "text": "Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test results before handing in your MBS application, please inform us about your planned test date. The English proficiency test can be waived by the following candidates: Applicants having completed their schooling in English (i.e., High School Diploma, IB) Applicants having completed their first academic degree in English Application deadlines in detail We accept applications all year round. However, we recommend that you apply as early as possible, as the number of places is limited. Spring semester (Master International Business only) Application guideline for Europeans (no visa): December 10 Application guideline for non-Europeans (visa required): October 31 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Winter semester Application guideline for Europeans (no visa): July 15 Application guideline for non-Europeans (visa required): April 30 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Application Process Step 1: Written Application"
-        },
-        {
-          "heading": "When submitting your online application, please provide the following mandatory documents:",
-          "text": "Answering questions of motivation (various questions are available for selection during the online application process) Résumé/CV Copies of your graduation certificates* and/or current university transcripts*"
-        },
-        {
-          "heading": "You may also upload the following additional documents:",
-          "text": "recent photo of yourself (professional, in color with bright background) Copy of the school leaving certificate (e.g., Highschool Diploma, IB, Abitur)* Proof of English language proficiency (TOEFL, IELTS or ELS) Reference letters (if available)"
-        },
-        {
-          "heading": "*Please provide the original documents or certified copies when you gain admission and matriculate to the program.",
-          "text": "Online Application Step 2: Admission Qualified applicants will be invited for a personal interview on site in Munich or online via Microsoft Teams (approx. 30 - 45 minutes). The interview may include the processing of a case study. As soon as you are an admitted student, you have the opportunity to get to know MBS even better – before making your final decision whether to join Munich Business School. Our study advisors will of course be available for all kinds of potential questions and personal consultations. Step 3: Study Contract Once you have successfully completed the application process, Munich Business School will provide you with an acceptance letter as well as two copies of your study contract. Please sign one copy and return it within two weeks to secure your spot in the program. The other copy needs to be kept for your own records."
-        }
-      ]
-    },
-    {
-      "program_name": "Master's in Corporate Finance",
-      "url": "https://www.munich-business-school.de/en/master/master-international-business/corporate-finance",
-      "degree": null,
-      "language": [
-        "English",
-        "German"
-      ],
-      "application_deadline_evidence": [
-        "intake) or third (September intake) semester abroad at one of our numerous international partner universities",
-        "Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-      ],
-      "tuition_evidence": [
-        "Tuition Fees",
-        "tuition fees in three semester installments or 18 monthly installments",
-        "fee of 690 Euro (EU/EFTA) respectively 1,490 Euro (non-EU) and a deposit of 1"
-      ],
-      "admission_requirements": [
-        {
-          "heading": "Apply now for the Master in International Business and secure your place in the Corporate Finance specialization. Admission is based on academic and language re",
-          "text": "Tuition Fees The quality of teaching and the training of sought-after specialists and managers are at the heart of Munich Business School. By studying at MBS, you are making an investment in your future. You can conveniently pay your tuition fees in three semester installments or 18 monthly installments. Early Bird Special - Deadlines Spring Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-        },
-        {
-          "heading": "The main requirement for admission to the Master study program is a successful Bachelor's degree (180 ECTS or more). Applicants with a degree in Business Studie",
-          "text": "English Proficiency Applicants must proof their English language skills by passing one of the following language tests: TOEFL iBT & Home Edition: min. 85 (min. of 22 in writing band, min. of 20 in all other bands; MBS TOEFL Institution Code: 5772)"
-        },
-        {
-          "heading": "Note : If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance.",
-          "text": "Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test results before handing in your MBS application, please inform us about your planned test date. The English proficiency test can be waived by the following candidates: Applicants having completed their schooling in English (i.e., High School Diploma, IB) Applicants having completed their first academic degree in English Application deadlines in detail We accept applications all year round. However, we recommend that you apply as early as possible, as the number of places is limited. Spring semester (Master International Business only) Application guideline for Europeans (no visa): December 10 Application guideline for non-Europeans (visa required): October 31 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Winter semester Application guideline for Europeans (no visa): July 15 Application guideline for non-Europeans (visa required): April 30 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Application Process Step 1: Written Application"
-        },
-        {
-          "heading": "When submitting your online application, please provide the following mandatory documents:",
-          "text": "Answering questions of motivation (various questions are available for selection during the online application process) Résumé/CV Copies of your graduation certificates* and/or current university transcripts*"
-        },
-        {
-          "heading": "You may also upload the following additional documents:",
-          "text": "recent photo of yourself (professional, in color with bright background) Copy of the school leaving certificate (e.g., Highschool Diploma, IB, Abitur)* Proof of English language proficiency (TOEFL, IELTS or ELS) Reference letters (if available)"
-        },
-        {
-          "heading": "*Please provide the original documents or certified copies when you gain admission and matriculate to the program.",
-          "text": "Online Application Step 2: Admission Qualified applicants will be invited for a personal interview on site in Munich or online via Microsoft Teams (approx. 30 - 45 minutes). The interview may include the processing of a case study. As soon as you are an admitted student, you have the opportunity to get to know MBS even better – before making your final decision whether to join Munich Business School. Our study advisors will of course be available for all kinds of potential questions and personal consultations. Step 3: Study Contract Once you have successfully completed the application process, Munich Business School will provide you with an acceptance letter as well as two copies of your study contract. Please sign one copy and return it within two weeks to secure your spot in the program. The other copy needs to be kept for your own records."
-        }
-      ]
-    },
-    {
-      "program_name": "Master's in Global Family Business",
-      "url": "https://www.munich-business-school.de/en/master/master-international-business/global-family-business",
-      "degree": null,
-      "language": [
-        "German",
-        "English"
-      ],
-      "application_deadline_evidence": [
-        "intake) or third (September intake) semester abroad at one of our numerous international partner universities",
-        "Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-      ],
-      "tuition_evidence": [
-        "Tuition Fees",
-        "tuition fees in three semester installments or 18 monthly installments",
-        "fee of 690 Euro (EU/EFTA) respectively 1,490 Euro (non-EU) and a deposit of 1"
-      ],
-      "admission_requirements": [
-        {
-          "heading": "Apply now for the Master in International Business and secure your place in the Global Family Business specialization. Admission is based on academic and langua",
-          "text": "Tuition Fees The quality of teaching and the training of sought-after specialists and managers are at the heart of Munich Business School. By studying at MBS, you are making an investment in your future. You can conveniently pay your tuition fees in three semester installments or 18 monthly installments. Early Bird Special - Deadlines Spring Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-        },
-        {
-          "heading": "The main requirement for admission to the Master study program is a successful Bachelor's degree (180 ECTS or more). Applicants with a degree in Business Studie",
-          "text": "English Proficiency Applicants must proof their English language skills by passing one of the following language tests: TOEFL iBT & Home Edition: min. 85 (min. of 22 in writing band, min. of 20 in all other bands; MBS TOEFL Institution Code: 5772)"
-        },
-        {
-          "heading": "Note : If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance.",
-          "text": "Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test results before handing in your MBS application, please inform us about your planned test date. The English proficiency test can be waived by the following candidates: Applicants having completed their schooling in English (i.e., High School Diploma, IB) Applicants having completed their first academic degree in English Application deadlines in detail We accept applications all year round. However, we recommend that you apply as early as possible, as the number of places is limited. Spring semester (Master International Business only) Application guideline for Europeans (no visa): December 10 Application guideline for non-Europeans (visa required): October 31 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Winter semester Application guideline for Europeans (no visa): July 15 Application guideline for non-Europeans (visa required): April 30 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Application Process Step 1: Written Application"
-        },
-        {
-          "heading": "When submitting your online application, please provide the following mandatory documents:",
-          "text": "Answering questions of motivation (various questions are available for selection during the online application process) Résumé/CV Copies of your graduation certificates* and/or current university transcripts*"
-        },
-        {
-          "heading": "You may also upload the following additional documents:",
-          "text": "recent photo of yourself (professional, in color with bright background) Copy of the school leaving certificate (e.g., Highschool Diploma, IB, Abitur)* Proof of English language proficiency (TOEFL, IELTS or ELS) Reference letters (if available)"
-        },
-        {
-          "heading": "*Please provide the original documents or certified copies when you gain admission and matriculate to the program.",
-          "text": "Online Application Step 2: Admission Qualified applicants will be invited for a personal interview on site in Munich or online via Microsoft Teams (approx. 30 - 45 minutes). The interview may include the processing of a case study. As soon as you are an admitted student, you have the opportunity to get to know MBS even better – before making your final decision whether to join Munich Business School. Our study advisors will of course be available for all kinds of potential questions and personal consultations. Step 3: Study Contract Once you have successfully completed the application process, Munich Business School will provide you with an acceptance letter as well as two copies of your study contract. Please sign one copy and return it within two weeks to secure your spot in the program. The other copy needs to be kept for your own records."
-        }
-      ]
-    },
-    {
-      "program_name": "Master's in Innovation and Digital Business",
-      "url": "https://www.munich-business-school.de/en/master/master-international-business/innovation-digital-business",
-      "degree": null,
-      "language": [
-        "English",
-        "German"
-      ],
-      "application_deadline_evidence": [
-        "intake) or third (September intake) semester abroad at one of our numerous international partner universities",
-        "Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-      ],
-      "tuition_evidence": [
-        "Tuition Fees",
-        "tuition fees in three semester installments or 18 monthly installments",
-        "fee of 690 Euro (EU/EFTA) respectively 1,490 Euro (non-EU) and a deposit of 1"
-      ],
-      "admission_requirements": [
-        {
-          "heading": "Apply now for the Master in International Business and secure your place in the Innovation and Digital Business specialization. Admission is based on academic a",
-          "text": "Tuition Fees The quality of teaching and the training of sought-after specialists and managers are at the heart of Munich Business School. By studying at MBS, you are making an investment in your future. You can conveniently pay your tuition fees in three semester installments or 18 monthly installments. Early Bird Special - Deadlines Spring Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-        },
-        {
-          "heading": "The main requirement for admission to the Master study program is a successful Bachelor's degree (180 ECTS or more). Applicants with a degree in Business Studie",
-          "text": "English Proficiency Applicants must proof their English language skills by passing one of the following language tests: TOEFL iBT & Home Edition: min. 85 (min. of 22 in writing band, min. of 20 in all other bands; MBS TOEFL Institution Code: 5772)"
-        },
-        {
-          "heading": "Note : If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance.",
-          "text": "Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test results before handing in your MBS application, please inform us about your planned test date. The English proficiency test can be waived by the following candidates: Applicants having completed their schooling in English (i.e., High School Diploma, IB) Applicants having completed their first academic degree in English Application deadlines in detail We accept applications all year round. However, we recommend that you apply as early as possible, as the number of places is limited. Spring semester (Master International Business only) Application guideline for Europeans (no visa): December 10 Application guideline for non-Europeans (visa required): October 31 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Winter semester Application guideline for Europeans (no visa): July 15 Application guideline for non-Europeans (visa required): April 30 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Application Process Step 1: Written Application"
-        },
-        {
-          "heading": "When submitting your online application, please provide the following mandatory documents:",
-          "text": "Answering questions of motivation (various questions are available for selection during the online application process) Résumé/CV Copies of your graduation certificates* and/or current university transcripts*"
-        },
-        {
-          "heading": "You may also upload the following additional documents:",
-          "text": "recent photo of yourself (professional, in color with bright background) Copy of the school leaving certificate (e.g., Highschool Diploma, IB, Abitur)* Proof of English language proficiency (TOEFL, IELTS or ELS) Reference letters (if available)"
-        },
-        {
-          "heading": "*Please provide the original documents or certified copies when you gain admission and matriculate to the program.",
-          "text": "Online Application Step 2: Admission Qualified applicants will be invited for a personal interview on site in Munich or online via Microsoft Teams (approx. 30 - 45 minutes). The interview may include the processing of a case study. As soon as you are an admitted student, you have the opportunity to get to know MBS even better – before making your final decision whether to join Munich Business School. Our study advisors will of course be available for all kinds of potential questions and personal consultations. Step 3: Study Contract Once you have successfully completed the application process, Munich Business School will provide you with an acceptance letter as well as two copies of your study contract. Please sign one copy and return it within two weeks to secure your spot in the program. The other copy needs to be kept for your own records."
-        }
-      ]
-    },
-    {
-      "program_name": "Master's in International Marketing",
-      "url": "https://www.munich-business-school.de/en/master/master-international-business/international-marketing",
-      "degree": null,
-      "language": [
-        "English",
-        "German"
-      ],
-      "application_deadline_evidence": [
-        "intake) or third (September intake) semester abroad at one of our numerous international partner universities",
-        "Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-      ],
-      "tuition_evidence": [
-        "Tuition Fees",
-        "tuition fees in three semester installments or 18 monthly installments",
-        "fee of 690 Euro (EU/EFTA) respectively 1,490 Euro (non-EU) and a deposit of 1"
-      ],
-      "admission_requirements": [
-        {
-          "heading": "The International Marketing concentration is ideal for creative, discerning people with an interest in online media, advertising campaigns, product design and p",
-          "text": "You should be interested in: Communication Psychology Consumer research Advertising Your strengths are: Creativity Ability to express yourself effectively Analytical thinking Other possible concentrations for your master’s studies Luxury Management, International Finance, Global Family Business and Wealth Management, Corporate Strategy and Innovation, International Entrepreneurship, Digital Business Management Business Projects In the Business Project, which lasts two semesters, you work with other students on specific projects on behalf of a company. These live cases are as varied as the companies that provide them: A start-up needs a market entry strategy for a new target country, the hidden champion from the Bavarian region needs ideas for a brand awareness campaign. Within the framework of this project, you will apply and deepen your acquired business knowledge in a small group. All groups receive coaching from an MBS professor throughout the entire project duration. It is not uncommon for business projects to result in concrete and directly on-site, first job opportunities for the respective student groups, because the region around Munich is one of the strongest economic regions in Germany – just one of the many advantages of studying business administration in Munich. What our students and alumni say about us Master Study Program in Numbers Course of study Master's in International Business Learn how to apply project management tools and methods to a real business problem. Plan, organize, implement, and control a project for a business partner and gain insights into the company. Assess the quality and reliability of existing data or research results based on their source, the method of data collection, and the analysis or interpretation of the results."
-        },
-        {
-          "heading": "Apply now for the Master in International Business and secure your place in the International Marketing specialization. Admission is based on academic and langu",
-          "text": "Tuition Fees The quality of teaching and the training of sought-after specialists and managers are at the heart of Munich Business School. By studying at MBS, you are making an investment in your future. You can conveniently pay your tuition fees in three semester installments or 18 monthly installments. Early Bird Special - Deadlines Spring Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-        },
-        {
-          "heading": "The main requirement for admission to the Master study program is a successful Bachelor's degree (180 ECTS or more). Applicants with a degree in Business Studie",
-          "text": "English Proficiency Applicants must proof their English language skills by passing one of the following language tests: TOEFL iBT & Home Edition: min. 85 (min. of 22 in writing band, min. of 20 in all other bands; MBS TOEFL Institution Code: 5772)"
-        },
-        {
-          "heading": "Note : If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance.",
-          "text": "Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test results before handing in your MBS application, please inform us about your planned test date. The English proficiency test can be waived by the following candidates: Applicants having completed their schooling in English (i.e., High School Diploma, IB) Applicants having completed their first academic degree in English Application deadlines in detail We accept applications all year round. However, we recommend that you apply as early as possible, as the number of places is limited. Spring semester (Master International Business only) Application guideline for Europeans (no visa): December 10 Application guideline for non-Europeans (visa required): October 31 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Winter semester Application guideline for Europeans (no visa): July 15 Application guideline for non-Europeans (visa required): April 30 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Application Process Step 1: Written Application"
-        },
-        {
-          "heading": "When submitting your online application, please provide the following mandatory documents:",
-          "text": "Answering questions of motivation (various questions are available for selection during the online application process) Résumé/CV Copies of your graduation certificates* and/or current university transcripts*"
-        },
-        {
-          "heading": "You may also upload the following additional documents:",
-          "text": "recent photo of yourself (professional, in color with bright background) Copy of the school leaving certificate (e.g., Highschool Diploma, IB, Abitur)* Proof of English language proficiency (TOEFL, IELTS or ELS) Reference letters (if available)"
-        },
-        {
-          "heading": "*Please provide the original documents or certified copies when you gain admission and matriculate to the program.",
-          "text": "Online Application Step 2: Admission Qualified applicants will be invited for a personal interview on site in Munich or online via Microsoft Teams (approx. 30 - 45 minutes). The interview may include the processing of a case study. As soon as you are an admitted student, you have the opportunity to get to know MBS even better – before making your final decision whether to join Munich Business School. Our study advisors will of course be available for all kinds of potential questions and personal consultations. Step 3: Study Contract Once you have successfully completed the application process, Munich Business School will provide you with an acceptance letter as well as two copies of your study contract. Please sign one copy and return it within two weeks to secure your spot in the program. The other copy needs to be kept for your own records."
-        }
-      ]
-    },
-    {
-      "program_name": "Master's in International Entrepreneurship",
-      "url": "https://www.munich-business-school.de/en/master/master-international-business/international-entrepreneurship",
-      "degree": null,
-      "language": [
-        "German",
-        "English"
-      ],
-      "application_deadline_evidence": [
-        "intake) or third (September intake) semester abroad at one of our numerous international partner universities",
-        "Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-      ],
-      "tuition_evidence": [
-        "Tuition Fees",
-        "tuition fees in three semester installments or 18 monthly installments",
-        "fee of 690 Euro (EU/EFTA) respectively 1,490 Euro (non-EU) and a deposit of 1"
-      ],
-      "admission_requirements": [
-        {
-          "heading": "Apply now for the Master in International Business and secure your place in the International Entrepreneurship specialization. Admission is based on academic an",
-          "text": "Tuition Fees The quality of teaching and the training of sought-after specialists and managers are at the heart of Munich Business School. By studying at MBS, you are making an investment in your future. You can conveniently pay your tuition fees in three semester installments or 18 monthly installments. Early Bird Special - Deadlines Spring Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-        },
-        {
-          "heading": "The main requirement for admission to the Master study program is a successful Bachelor's degree (180 ECTS or more). Applicants with a degree in Business Studie",
-          "text": "English Proficiency Applicants must proof their English language skills by passing one of the following language tests: TOEFL iBT & Home Edition: min. 85 (min. of 22 in writing band, min. of 20 in all other bands; MBS TOEFL Institution Code: 5772)"
-        },
-        {
-          "heading": "Note : If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance.",
-          "text": "Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test results before handing in your MBS application, please inform us about your planned test date. The English proficiency test can be waived by the following candidates: Applicants having completed their schooling in English (i.e., High School Diploma, IB) Applicants having completed their first academic degree in English Application deadlines in detail We accept applications all year round. However, we recommend that you apply as early as possible, as the number of places is limited. Spring semester (Master International Business only) Application guideline for Europeans (no visa): December 10 Application guideline for non-Europeans (visa required): October 31 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Winter semester Application guideline for Europeans (no visa): July 15 Application guideline for non-Europeans (visa required): April 30 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Application Process Step 1: Written Application"
-        },
-        {
-          "heading": "When submitting your online application, please provide the following mandatory documents:",
-          "text": "Answering questions of motivation (various questions are available for selection during the online application process) Résumé/CV Copies of your graduation certificates* and/or current university transcripts*"
-        },
-        {
-          "heading": "You may also upload the following additional documents:",
-          "text": "recent photo of yourself (professional, in color with bright background) Copy of the school leaving certificate (e.g., Highschool Diploma, IB, Abitur)* Proof of English language proficiency (TOEFL, IELTS or ELS) Reference letters (if available)"
-        },
-        {
-          "heading": "*Please provide the original documents or certified copies when you gain admission and matriculate to the program.",
-          "text": "Online Application Step 2: Admission Qualified applicants will be invited for a personal interview on site in Munich or online via Microsoft Teams (approx. 30 - 45 minutes). The interview may include the processing of a case study. As soon as you are an admitted student, you have the opportunity to get to know MBS even better – before making your final decision whether to join Munich Business School. Our study advisors will of course be available for all kinds of potential questions and personal consultations. Step 3: Study Contract Once you have successfully completed the application process, Munich Business School will provide you with an acceptance letter as well as two copies of your study contract. Please sign one copy and return it within two weeks to secure your spot in the program. The other copy needs to be kept for your own records."
-        }
-      ]
-    },
-    {
-      "program_name": "Master Innovation and Entrepreneurship – Turn Ideas into Impact",
-      "url": "https://www.munich-business-school.de/en/master/master-innovation-and-entrepreneurship",
-      "degree": null,
-      "language": [
-        "German",
-        "English"
-      ],
-      "application_deadline_evidence": [
-        "Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-      ],
-      "tuition_evidence": [
-        "Tuition Fees",
-        "tuition fees in three semester installments or 18 monthly installments",
-        "fee of 690 Euro (EU/EFTA) respectively 1,490 Euro (non-EU) and a deposit of 1"
-      ],
-      "admission_requirements": [
-        {
-          "heading": "In order to qualify for the Master Innovation and Entrepreneurship study program, you must fulfill academic, linguistic, and to some extent professional require",
-          "text": "Tuition Fees The quality of teaching and the training of sought-after specialists and managers are at the heart of Munich Business School. By studying at MBS, you are making an investment in your future. You can conveniently pay your tuition fees in three semester installments or 18 monthly installments. Early Bird Special - Deadlines Spring Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-        },
-        {
-          "heading": "The main requirement for admission to the Master study program is a successful Bachelor's degree (180 ECTS or more). Applicants with a degree in Business Studie",
-          "text": "English Proficiency Applicants must proof their English language skills by passing one of the following language tests: TOEFL iBT & Home Edition: min. 85 (min. of 22 in writing band, min. of 20 in all other bands; MBS TOEFL Institution Code: 5772)"
-        },
-        {
-          "heading": "Note : If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance.",
-          "text": "Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test results before handing in your MBS application, please inform us about your planned test date. The English proficiency test can be waived by the following candidates: Applicants having completed their schooling in English (i.e., High School Diploma, IB) Applicants having completed their first academic degree in English Application deadlines in detail We accept applications all year round. However, we recommend that you apply as early as possible, as the number of places is limited. Spring semester (Master International Business only) Application guideline for Europeans (no visa): December 10 Application guideline for non-Europeans (visa required): October 31 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Winter semester Application guideline for Europeans (no visa): July 15 Application guideline for non-Europeans (visa required): April 30 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Application Process Step 1: Written Application"
-        },
-        {
-          "heading": "When submitting your online application, please provide the following mandatory documents:",
-          "text": "Answering questions of motivation (various questions are available for selection during the online application process) Résumé/CV Copies of your graduation certificates* and/or current university transcripts*"
-        },
-        {
-          "heading": "You may also upload the following additional documents:",
-          "text": "recent photo of yourself (professional, in color with bright background) Copy of the school leaving certificate (e.g., Highschool Diploma, IB, Abitur)* Proof of English language proficiency (TOEFL, IELTS or ELS) Reference letters (if available)"
-        },
-        {
-          "heading": "*Please provide the original documents or certified copies when you gain admission and matriculate to the program.",
-          "text": "Online Application Step 2: Admission Qualified applicants will be invited for a personal interview on site in Munich or online via Microsoft Teams (approx. 30 - 45 minutes). The interview may include the processing of a case study. As soon as you are an admitted student, you have the opportunity to get to know MBS even better – before making your final decision whether to join Munich Business School. Our study advisors will of course be available for all kinds of potential questions and personal consultations. Step 3: Study Contract Once you have successfully completed the application process, Munich Business School will provide you with an acceptance letter as well as two copies of your study contract. Please sign one copy and return it within two weeks to secure your spot in the program. The other copy needs to be kept for your own records."
-        }
-      ]
-    },
-    {
-      "program_name": "Master International Marketing and Brand Management – Lead Global Brands",
-      "url": "https://www.munich-business-school.de/en/master/master-international-marketing-and-brand-management",
-      "degree": null,
-      "language": [
-        "German",
-        "English"
-      ],
-      "application_deadline_evidence": [
-        "Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-      ],
-      "tuition_evidence": [
-        "Tuition Fees",
-        "tuition fees in three semester installments or 18 monthly installments",
-        "fee of 690 Euro (EU/EFTA) respectively 1,490 Euro (non-EU) and a deposit of 1"
-      ],
-      "admission_requirements": [
-        {
-          "heading": "In order to qualify for the Master International Marketing and Brand Management study program, you must fulfill academic, linguistic, and to some extent profess",
-          "text": "Tuition Fees The quality of teaching and the training of sought-after specialists and managers are at the heart of Munich Business School. By studying at MBS, you are making an investment in your future. You can conveniently pay your tuition fees in three semester installments or 18 monthly installments. Early Bird Special - Deadlines Spring Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-        },
-        {
-          "heading": "The main requirement for admission to the Master study program is a successful Bachelor's degree (180 ECTS or more). Applicants with a degree in Business Studie",
-          "text": "English Proficiency Applicants must proof their English language skills by passing one of the following language tests: TOEFL iBT & Home Edition: min. 85 (min. of 22 in writing band, min. of 20 in all other bands; MBS TOEFL Institution Code: 5772)"
-        },
-        {
-          "heading": "Note : If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance.",
-          "text": "Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test results before handing in your MBS application, please inform us about your planned test date. The English proficiency test can be waived by the following candidates: Applicants having completed their schooling in English (i.e., High School Diploma, IB) Applicants having completed their first academic degree in English Application deadlines in detail We accept applications all year round. However, we recommend that you apply as early as possible, as the number of places is limited. Spring semester (Master International Business only) Application guideline for Europeans (no visa): December 10 Application guideline for non-Europeans (visa required): October 31 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Winter semester Application guideline for Europeans (no visa): July 15 Application guideline for non-Europeans (visa required): April 30 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Application Process Step 1: Written Application"
-        },
-        {
-          "heading": "When submitting your online application, please provide the following mandatory documents:",
-          "text": "Answering questions of motivation (various questions are available for selection during the online application process) Résumé/CV Copies of your graduation certificates* and/or current university transcripts*"
-        },
-        {
-          "heading": "You may also upload the following additional documents:",
-          "text": "recent photo of yourself (professional, in color with bright background) Copy of the school leaving certificate (e.g., Highschool Diploma, IB, Abitur)* Proof of English language proficiency (TOEFL, IELTS or ELS) Reference letters (if available)"
-        },
-        {
-          "heading": "*Please provide the original documents or certified copies when you gain admission and matriculate to the program.",
-          "text": "Online Application Step 2: Admission Qualified applicants will be invited for a personal interview on site in Munich or online via Microsoft Teams (approx. 30 - 45 minutes). The interview may include the processing of a case study. As soon as you are an admitted student, you have the opportunity to get to know MBS even better – before making your final decision whether to join Munich Business School. Our study advisors will of course be available for all kinds of potential questions and personal consultations. Step 3: Study Contract Once you have successfully completed the application process, Munich Business School will provide you with an acceptance letter as well as two copies of your study contract. Please sign one copy and return it within two weeks to secure your spot in the program. The other copy needs to be kept for your own records."
-        }
-      ]
-    },
-    {
-      "program_name": "Master Sports Management and Media – Your Career in Sports",
-      "url": "https://www.munich-business-school.de/en/master/master-sports-management-and-media",
-      "degree": "M.A",
-      "language": [
-        "German",
-        "English"
-      ],
-      "application_deadline_evidence": [
-        "Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-      ],
-      "tuition_evidence": [
-        "Tuition Fees",
-        "tuition fees in three semester installments or 18 monthly installments",
-        "fee of 690 Euro (EU/EFTA) respectively 1,490 Euro (non-EU) and a deposit of 1"
-      ],
-      "admission_requirements": [
-        {
-          "heading": "Learn all about the various skills and requirements of a sports marketer or sponsorship manager, including communication, sales and negotiation skills.",
-          "text": "Learn to understand and apply the various techniques of sports marketing and sponsorship, including analyzing, conceptualizing, executing, and reviewing marketing and sales activities. Discover how the individual elements of sports marketing work, with a focus on sponsorship and advertising in sports. Discuss the international nature of sports marketing and sponsorship and learn how to create marketing and sponsorship plans in an international context. Choose 2 of 4: Media Rights Learn about the characteristics and particularities of the multidisciplinary sports rights industry with all players involved, such as agencies, media companies, leagues and clubs/associations. Evaluate promising ideas and problem-solving approaches and create and develop them autonomously. Study all important trends of the industry and critically evaluate them and assess their significance. Sports Event Management Get to know the nature of event marketing and its relation to the sports business. Discuss the theoretical frameworks and concepts which have been developed to explain event marketing and management in sports. Study the various skills and demands on an event manager in sports including the technical and soft skills required. Learn how to plan and execute an event, following the process from analysis, concept, execution to review. Evaluate and apply various techniques and tools for event marketing. Transfer the knowledge regarding event marketing and management into an international context. Learn to understand the characteristics and nature of mega events including important elements in review of impact of mega events. Get to know crucial elements in engaging fans as well as the relationship of events management with media rights, merchandising and sponsorship. Brand Story Telling: L"
-        },
-        {
-          "heading": "In order to qualify for the Master International Business | Sports Management and Media study program, you must fulfill academic, linguistic, and to some extent",
-          "text": "Tuition Fees The quality of teaching and the training of sought-after specialists and managers are at the heart of Munich Business School. By studying at MBS, you are making an investment in your future. You can conveniently pay your tuition fees in three semester installments or 18 monthly installments. Early Bird Special - Deadlines Spring Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-        },
-        {
-          "heading": "The main requirement for admission to the Master study program is a successful Bachelor's degree (180 ECTS or more). Applicants with a degree in Business Studie",
-          "text": "English Proficiency Applicants must proof their English language skills by passing one of the following language tests: TOEFL iBT & Home Edition: min. 85 (min. of 22 in writing band, min. of 20 in all other bands; MBS TOEFL Institution Code: 5772)"
-        },
-        {
-          "heading": "Note : If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance.",
-          "text": "Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test results before handing in your MBS application, please inform us about your planned test date. The English proficiency test can be waived by the following candidates: Applicants having completed their schooling in English (i.e., High School Diploma, IB) Applicants having completed their first academic degree in English Application deadlines in detail We accept applications all year round. However, we recommend that you apply as early as possible, as the number of places is limited. Spring semester (Master International Business only) Application guideline for Europeans (no visa): December 10 Application guideline for non-Europeans (visa required): October 31 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Winter semester Application guideline for Europeans (no visa): July 15 Application guideline for non-Europeans (visa required): April 30 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Application Process Step 1: Written Application"
-        },
-        {
-          "heading": "When submitting your online application, please provide the following mandatory documents:",
-          "text": "Answering questions of motivation (various questions are available for selection during the online application process) Résumé/CV Copies of your graduation certificates* and/or current university transcripts*"
-        },
-        {
-          "heading": "You may also upload the following additional documents:",
-          "text": "recent photo of yourself (professional, in color with bright background) Copy of the school leaving certificate (e.g., Highschool Diploma, IB, Abitur)* Proof of English language proficiency (TOEFL, IELTS or ELS) Reference letters (if available)"
-        },
-        {
-          "heading": "*Please provide the original documents or certified copies when you gain admission and matriculate to the program.",
-          "text": "Online Application Step 2: Admission Qualified applicants will be invited for a personal interview on site in Munich or online via Microsoft Teams (approx. 30 - 45 minutes). The interview may include the processing of a case study. As soon as you are an admitted student, you have the opportunity to get to know MBS even better – before making your final decision whether to join Munich Business School. Our study advisors will of course be available for all kinds of potential questions and personal consultations. Step 3: Study Contract Once you have successfully completed the application process, Munich Business School will provide you with an acceptance letter as well as two copies of your study contract. Please sign one copy and return it within two weeks to secure your spot in the program. The other copy needs to be kept for your own records."
-        }
-      ]
-    },
-    {
-      "program_name": "Master in Finance – Understand Finance, Shape the Future",
-      "url": "https://www.munich-business-school.de/en/master/master-in-finance",
-      "degree": null,
-      "language": [
-        "German",
-        "English"
-      ],
-      "application_deadline_evidence": [
-        "Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-      ],
-      "tuition_evidence": [
-        "fees/carried interest",
-        "Tuition Fees",
-        "tuition fees in three semester installments or 18 monthly installments"
-      ],
-      "admission_requirements": [
-        {
-          "heading": "You must meet certain academic, linguistic and, in some cases, professional requirements to be eligible for our Master’s in Finance. You can submit your applica",
-          "text": "Tuition Fees The quality of teaching and the training of sought-after specialists and managers are at the heart of Munich Business School. By studying at MBS, you are making an investment in your future. You can conveniently pay your tuition fees in three semester installments or 18 monthly installments. Early Bird Special - Deadlines Spring Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-        },
-        {
-          "heading": "The main requirement for admission to the Master study program is a successful Bachelor's degree (180 ECTS or more). Applicants with a degree in Business Studie",
-          "text": "English Proficiency Applicants must proof their English language skills by passing one of the following language tests: TOEFL iBT & Home Edition: min. 85 (min. of 22 in writing band, min. of 20 in all other bands; MBS TOEFL Institution Code: 5772)"
-        },
-        {
-          "heading": "Note : If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance.",
-          "text": "Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test results before handing in your MBS application, please inform us about your planned test date. The English proficiency test can be waived by the following candidates: Applicants having completed their schooling in English (i.e., High School Diploma, IB) Applicants having completed their first academic degree in English Application deadlines in detail We accept applications all year round. However, we recommend that you apply as early as possible, as the number of places is limited. Spring semester (Master International Business only) Application guideline for Europeans (no visa): December 10 Application guideline for non-Europeans (visa required): October 31 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Winter semester Application guideline for Europeans (no visa): July 15 Application guideline for non-Europeans (visa required): April 30 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Application Process Step 1: Written Application"
-        },
-        {
-          "heading": "When submitting your online application, please provide the following mandatory documents:",
-          "text": "Answering questions of motivation (various questions are available for selection during the online application process) Résumé/CV Copies of your graduation certificates* and/or current university transcripts*"
-        },
-        {
-          "heading": "You may also upload the following additional documents:",
-          "text": "recent photo of yourself (professional, in color with bright background) Copy of the school leaving certificate (e.g., Highschool Diploma, IB, Abitur)* Proof of English language proficiency (TOEFL, IELTS or ELS) Reference letters (if available)"
-        },
-        {
-          "heading": "*Please provide the original documents or certified copies when you gain admission and matriculate to the program.",
-          "text": "Online Application Step 2: Admission Qualified applicants will be invited for a personal interview on site in Munich or online via Microsoft Teams (approx. 30 - 45 minutes). The interview may include the processing of a case study. As soon as you are an admitted student, you have the opportunity to get to know MBS even better – before making your final decision whether to join Munich Business School. Our study advisors will of course be available for all kinds of potential questions and personal consultations. Step 3: Study Contract Once you have successfully completed the application process, Munich Business School will provide you with an acceptance letter as well as two copies of your study contract. Please sign one copy and return it within two weeks to secure your spot in the program. The other copy needs to be kept for your own records."
-        }
-      ]
-    },
-    {
-      "program_name": "Pre-Master – Your Pathway to a Business Master at MBS",
-      "url": "https://www.munich-business-school.de/en/master/pre-master",
-      "degree": null,
-      "language": [
-        "English",
-        "German"
-      ],
-      "application_deadline_evidence": [
-        "intake",
-        "Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-      ],
-      "tuition_evidence": [
-        "Tuition Fees",
-        "tuition fees in three semester installments or 18 monthly installments",
-        "fee of 690 Euro (EU/EFTA) respectively 1,490 Euro (non-EU) and a deposit of 1"
-      ],
-      "admission_requirements": [
-        {
-          "heading": "Are you looking to enroll on a business-related master’s program – but don’t have a bachelor’s degree in business or economics? The Pre-Master’s course at Munic",
-          "text": "Make the Grade for a Business Master’s Without a Related Bachelor’s On the Pre-Master’s course, we prepare students without a business-related undergraduate degree for master’s-level study at Munich Business School. We also refer to this as non-consecutive study. It makes no difference whether your bachelor’s degree is in psychology, IT, law or engineering – this course is suitable for everyone. It is a highly intensive preparatory course, covering the fundamentals of business and economics in a very short period. This includes content relating to management, finance, accounting, marketing and communications. Our Pre-Master’s program runs from May to August each year. After passing the final exam, you can move straight onto your master’s studies at MBS as part of the September intake. Three Key Benefits of Choosing to Study at Munich Business School This program gives you the opportunity to earn admission to a master’s program in business despite holding an unrelated undergraduate degree. The Pre-Master’s program is ideally tailored to the master’s programs at MBS. You will finish your Pre-Master’s program in August, so you can start your master’s studies straight after in September. The Pre-Master's program qualifies you for a Master's degree in one of the many Master's programs at Munich Business School. Key Facts Pre-Master Things to know about the pre-master's program In a non-consecutive master’s program, you study a different subject than your bachelor’s degree. The subject you studied for your bachelor’s does not matter when it comes to choosing a non-consecutive master’s program. A non-consecutive master’s in business could be particularly attractive for graduates looking to expand the range of fields they could work in and who would like to supplement their und"
-        },
-        {
-          "heading": "A consecutive master’s program is a course of study that follows on from a related bachelor’s degree, exploring the subject in more detail. It builds on the con",
-          "text": "Example : You studied business at undergraduate level, earned your bachelor’s degree, and would now like to enroll on the master’s program in International Marketing and Brand Management at MBS. What is a non-consecutive master’s? A non-consecutive master’s program is a course of study that does not directly follow on from a related bachelor’s degree and instead covers other, unrelated topics. It does not build on the content of the bachelor’s degree. Admission to a non-consecutive master’s therefore only requires a bachelor’s degree; the subject does not matter. Example : You studied IT at undergraduate level, earned your bachelor’s degree, and would now like to enroll on the master’s program in International Business at MBS. What is a Pre-Master’s?"
-        },
-        {
-          "heading": "What are the admission requirements for the Pre-Master’s program?",
-          "text": "Applicants to the Pre-Master’s program must have an above-average university degree in any subject area, awarded by a state-recognized university. In addition, applicants must have excellent English skills (TOEFL iBT min. 85/IELTS 6.5/ELS 112) as the program is taught entirely in English. What is the application process for the Pre-Master’s? The two-stage application process for the Pre-Master’s program at Munich Business School comprises a written application and a face-to-face interview. Applications for the Pre-Master’s program are only accepted in conjunction with an application for a master’s program at MBS. What Pre-Master's students say about the program"
-        },
-        {
-          "heading": "The application process for our study programs consists of two consecutive steps: a written application and a personal interview. To apply for the Pre-Master pr",
-          "text": "Tuition Fees The quality of teaching and the training of sought-after specialists and managers are at the heart of Munich Business School. By studying at MBS, you are making an investment in your future. You can conveniently pay your tuition fees in three semester installments or 18 monthly installments. Early Bird Special - Deadlines Spring Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount"
-        },
-        {
-          "heading": "The main requirement for admission to the Master study program is a successful Bachelor's degree (180 ECTS or more). Applicants with a degree in Business Studie",
-          "text": "English Proficiency Applicants must proof their English language skills by passing one of the following language tests: TOEFL iBT & Home Edition: min. 85 (min. of 22 in writing band, min. of 20 in all other bands; MBS TOEFL Institution Code: 5772)"
-        },
-        {
-          "heading": "Note : If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance.",
-          "text": "Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test results before handing in your MBS application, please inform us about your planned test date. The English proficiency test can be waived by the following candidates: Applicants having completed their schooling in English (i.e., High School Diploma, IB) Applicants having completed their first academic degree in English Application deadlines in detail We accept applications all year round. However, we recommend that you apply as early as possible, as the number of places is limited. Spring semester (Master International Business only) Application guideline for Europeans (no visa): December 10 Application guideline for non-Europeans (visa required): October 31 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Winter semester Application guideline for Europeans (no visa): July 15 Application guideline for non-Europeans (visa required): April 30 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Application Process Step 1: Written Application"
-        },
-        {
-          "heading": "When submitting your online application, please provide the following mandatory documents:",
-          "text": "Answering questions of motivation (various questions are available for selection during the online application process) Résumé/CV Copies of your graduation certificates* and/or current university transcripts*"
-        },
-        {
-          "heading": "You may also upload the following additional documents:",
-          "text": "recent photo of yourself (professional, in color with bright background) Copy of the school leaving certificate (e.g., Highschool Diploma, IB, Abitur)* Proof of English language proficiency (TOEFL, IELTS or ELS) Reference letters (if available)"
-        },
-        {
-          "heading": "*Please provide the original documents or certified copies when you gain admission and matriculate to the program.",
-          "text": "Online Application Step 2: Admission Qualified applicants will be invited for a personal interview on site in Munich or online via Microsoft Teams (approx. 30 - 45 minutes). The interview may include the processing of a case study. As soon as you are an admitted student, you have the opportunity to get to know MBS even better – before making your final decision whether to join Munich Business School. Our study advisors will of course be available for all kinds of potential questions and personal consultations. Step 3: Study Contract Once you have successfully completed the application process, Munich Business School will provide you with an acceptance letter as well as two copies of your study contract. Please sign one copy and return it within two weeks to secure your spot in the program. The other copy needs to be kept for your own records."
-        }
-      ]
+      "needs_human_review": false
     }
   ],
-  "skipped": [
-    {
-      "url": "https://www.munich-business-school.de/en/mba/mba-full-time",
-      "reason": "duplicate_after_redirect",
-      "detail": "https://www.munich-business-school.de/en/mba/mba-full-time"
-    }
-  ]
+  "skipped": [],
+  "review_seed_config": {
+    "seed_urls": [
+      "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+      "https://www.munich-business-school.de/en/master",
+      "https://www.munich-business-school.de/en/master/master-international-business",
+      "https://www.munich-business-school.de/en/mba/mba-full-time",
+      "https://www.munich-business-school.de/en/online-application"
+    ],
+    "review_notes": [
+      "Programme pages use /en/bachelor/{slug}, /en/master/{slug}, and /en/mba/{slug}.",
+      "Master overview links individual MSc/MA pages and application details."
+    ],
+    "crawl_cautions": [
+      "Avoid form submission endpoints."
+    ]
+  }
 }

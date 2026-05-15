@@ -1,0 +1,57 @@
+{
+  "schema_version": "0.2",
+  "school": {
+    "name": "Hochschule Bremen",
+    "url": "https://www.hs-bremen.de/en/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university",
+    "source_official_url": "https://www.hs-bremen.de/en/"
+  },
+  "retrieved_at": "2026-05-15T09:36:30.159679+00:00",
+  "crawler_policy": {
+    "respects_robots_txt": true,
+    "same_host_only": true,
+    "max_pages": 8,
+    "delay_seconds": 0.2,
+    "timeout_seconds": 12.0,
+    "user_agent": "study-admissions-poc/0.1 (+https://www.gut-haode.com/ partner-school research)",
+    "no_login_captcha_paywall_bypass": true,
+    "robots_url": "https://www.hs-bremen.de/robots.txt",
+    "robots_status": "available",
+    "robots_error": null,
+    "sitemaps_discovered": [
+      "/sitemap.xml"
+    ]
+  },
+  "crawl_summary": {
+    "pages_fetched": 4,
+    "pages_skipped": 1,
+    "programs_extracted": 0,
+    "programs_needing_human_review": 0
+  },
+  "programs": [],
+  "skipped": [
+    {
+      "url": "https://www.hs-bremen.de/en/study/degree-programme/",
+      "reason": "HTTPError",
+      "detail": "HTTP Error 404: Not Found"
+    }
+  ],
+  "review_seed_config": {
+    "seed_urls": [
+      "https://www.hs-bremen.de/en/study/programmes/",
+      "https://www.hs-bremen.de/en/study/before/application-and-admission/",
+      "https://www.hs-bremen.de/en/study/before/application-and-admission/admission-requirements/",
+      "https://www.hs-bremen.de/en/study/degree-programme/"
+    ],
+    "review_notes": [
+      "Best pattern is /en/study/degree-programme/{slug}/.",
+      "Individual pages often contain application period, admission restriction, requirements, language, and institution."
+    ],
+    "crawl_cautions": [
+      "Respect robots exclusions for query variants, TYPO3 paths, uploads, and SQL files.",
+      "IGC programmes are linked out and handled separately."
+    ]
+  }
+}

@@ -1,0 +1,800 @@
+{
+  "schema_version": "0.2",
+  "school": {
+    "name": "EBS Universität",
+    "url": "https://www.ebs.edu/en/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university",
+    "source_official_url": "https://www.ebs.edu/en/"
+  },
+  "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+  "crawler_policy": {
+    "respects_robots_txt": true,
+    "same_host_only": true,
+    "max_pages": 8,
+    "delay_seconds": 0.2,
+    "timeout_seconds": 12.0,
+    "user_agent": "study-admissions-poc/0.1 (+https://www.gut-haode.com/ partner-school research)",
+    "no_login_captcha_paywall_bypass": true,
+    "robots_url": "https://www.ebs.edu/robots.txt",
+    "robots_status": "available",
+    "robots_error": null,
+    "sitemaps_discovered": [
+      "https://www.ebs.edu/sitemap.xml",
+      "https://www.ebs.edu/en/sitemap.xml"
+    ]
+  },
+  "crawl_summary": {
+    "pages_fetched": 8,
+    "pages_skipped": 0,
+    "programs_extracted": 5,
+    "programs_needing_human_review": 2
+  },
+  "programs": [
+    {
+      "school": {
+        "name": "EBS Universität",
+        "url": "https://www.ebs.edu/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "MBA Programmes | EBS",
+        "degree": "MBA",
+        "level": "master",
+        "url": "https://www.ebs.edu/en/mba-programmes",
+        "campus": "Campus life",
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": "MBA Programmes",
+        "specialization": "EBS"
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business law",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [
+          "Fall term"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "subject_prerequisites": [
+          {
+            "source_url": "https://www.ebs.edu/en/mba-programmes",
+            "source_text": "vitations and personalised consultation info(at)ebs.edu +49 6723 9168 0 EBS Universität Oestrich-Winkel Quicklinks Home Business Studies Law Studies Executive Education International Affairs Events Application About EBS About EBS Network Research Public Relations Corporate sustainability Become an EBS representativ",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements, costs and career prospects",
+          "text": "Information about EBS Universität Event invitations and personalised consultation info(at)ebs.edu +49 6723 9168 0 EBS Universität Oestrich-Winkel Quicklinks Home Business Studies Law Studies Executive Education International Affairs Events Application About EBS About EBS Network Research Public Relations Corporate sustainability Become an EBS representative Corporate Solutions Service Student Services Housing for students & landlords Student Advisory Service"
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "EBS Universität",
+        "url": "https://www.ebs.edu/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Law programmes | EBS",
+        "degree": null,
+        "level": null,
+        "url": "https://www.ebs.edu/en/ebs-law-school/programmes/study-law",
+        "campus": "Campus life",
+        "language_of_instruction": [],
+        "parent_program": "Law programmes",
+        "specialization": "EBS"
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "finance",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business law",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "subject_prerequisites": [
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-law-school/programmes/study-law",
+            "source_text": "vitations and personalised consultation info(at)ebs.edu +49 6723 9168 0 EBS Universität Oestrich-Winkel Quicklinks Home Business Studies Law Studies Executive Education International Affairs Events Application About EBS About EBS Network Research Public Relations Corporate sustainability Become an EBS representativ",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-law-school/programmes/study-law",
+            "source_text": "about the application process? We will advise you personally on all questions relating to the study programme, student finance and studying at EBS in general. Events Admission requirements, costs and career prospects Information about EBS Universität Event invitations and personalised consultation info(at",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Boldly breaking new ground and rigorously pursuing goals is the vision that has allowed us to revolutionise the study of law in Germany. Since we were founded, ",
+          "text": "Siri Pommer Student Recruitment Manager Study Law You have questions about the application process? We will advise you personally on all questions relating to the study programme, student finance and studying at EBS in general. Events"
+        },
+        {
+          "heading": "Admission requirements, costs and career prospects",
+          "text": "Information about EBS Universität Event invitations and personalised consultation info(at)ebs.edu +49 6723 9168 0 EBS Universität Oestrich-Winkel Quicklinks Home Business Studies Law Studies Executive Education International Affairs Events Application About EBS About EBS Network Research Public Relations Corporate sustainability Become an EBS representative Corporate Solutions Service Student Services Housing for students & landlords Student Advisory Service"
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "EBS Universität",
+        "url": "https://www.ebs.edu/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Bachelor in Business Studies | EBS",
+        "degree": "MBA",
+        "level": "bachelor",
+        "url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/bachelor-in-business-studies",
+        "campus": "Campus life",
+        "language_of_instruction": [
+          "English",
+          "German",
+          "Deutsch"
+        ],
+        "parent_program": "Bachelor in Business Studies",
+        "specialization": "EBS"
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "economics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business law",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "German",
+            "minimum_score": "120",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "CV",
+          "Transcript",
+          "Degree certificate"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "deadline"
+        ],
+        "intakes": [
+          "fall term",
+          "spring term",
+          "Fall Term",
+          "Spring Term",
+          "Fall term"
+        ],
+        "application_channel": "Online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Tuition fees in total: 54,480 euros (for 6 semesters, including all fees) Early enrolment bonus: Tuition fee reduction of 500 euros* - for enrolmen"
+        ]
+      },
+      "evidence": {
+        "subject_prerequisites": [
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/bachelor-in-business-studies",
+            "source_text": "Admission requirements & application Funding Be part of a better future Admission requirements and application The Business Studies programme at EBS Universität trains future managers who shape and drive the economy. This process begins by finding the right people for our management study programme. Start your",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/bachelor-in-business-studies",
+            "source_text": "German higher education standards need to complete a 120-minute EBS online assessment instead of the regular tests. If you hav",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/bachelor-in-business-studies",
+            "source_text": "r form Proof of general higher education entrance qualification. An application can also be submitted with your current transcripts if the school-leaving certificate is not yet available. International applicants who have a secondary school diploma that does not follow the German higher education standards ne",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "medium",
+            "review_note": "Transcript keyword found."
+          }
+        ],
+        "application_channel": [
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/bachelor-in-business-studies",
+            "source_text": "visa, we recommend that you submit your application before 30 May (start fall term) or 15 October (start spring term). Online application You can submit your application documents in just a few steps on our online application platform, thus initiating your application process. Knowledge and personality test We use t",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "medium",
+            "review_note": "Application channel keyword found."
+          }
+        ],
+        "deadlines": [
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/bachelor-in-business-studies",
+            "source_text": "deadline",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements & application",
+          "text": "Funding Be part of a better future"
+        },
+        {
+          "heading": "Admission requirements and application",
+          "text": "The Business Studies programme at EBS Universität trains future managers who shape and drive the economy. This process begins by finding the right people for our management study programme."
+        },
+        {
+          "heading": "Start your application by submitting the following documents on our online platform:",
+          "text": "Curriculum vitae in tabular form Proof of general higher education entrance qualification. An application can also be submitted with your current transcripts if the school-leaving certificate is not yet available. International applicants who have a secondary school diploma that does not follow the German higher education standards need to complete a 120-minute EBS online assessment instead of the regular tests. If you have taken the SAT, ACT or Gaokao, we will recognise this exam in conjunction with your secondary school diploma instead of the EBS online assessment."
+        },
+        {
+          "heading": "Admission requirements, costs and career prospects",
+          "text": "Information about EBS Universität Event invitations and personalised consultation Register quickly and easily Register on the application platform"
+        },
+        {
+          "heading": "Fill in your application and attach the documents",
+          "text": "We will contact you for all further steps Harshita Anindya Werneke Student Recruitment Manager info(at)ebs.edu +49 6723 9168 0 EBS Universität Oestrich-Winkel Quicklinks Home Business Studies Law Studies Executive Education International Affairs Events Application About EBS About EBS Network Research Public Relations Corporate sustainability Become an EBS representative Corporate Solutions Service Student Services Housing for students & landlords Student Advisory Service"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "EBS Universität",
+        "url": "https://www.ebs.edu/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Bachelor in Law, Politics and Economics | EBS",
+        "degree": "B.A",
+        "level": "bachelor",
+        "url": "https://www.ebs.edu/en/ebs-law-school/programmes/study-law/bachelor-in-law-politics-and-economics",
+        "campus": "Campus life",
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": "Bachelor in Law, Politics and Economics",
+        "specialization": "EBS"
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "economics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business law",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "German",
+            "minimum_score": "120",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "CV",
+          "Transcript",
+          "Degree certificate"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "deadline"
+        ],
+        "intakes": [
+          "fall term",
+          "spring term",
+          "Fall Term",
+          "Spring Term",
+          "Fall term"
+        ],
+        "application_channel": "Online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Tuition fees in total: 54,480 euros (for 6 semesters, including all fees) Early enrolment bonus: Tuition fee reduction of 500 euros* - for enrolmen"
+        ]
+      },
+      "evidence": {
+        "subject_prerequisites": [
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-law-school/programmes/study-law/bachelor-in-law-politics-and-economics",
+            "source_text": "ape and drive business, politics and society. This process begins by finding the right people for our Law, Politics and Economics programme. Start your application by submitting the following documents on our online platform: Curriculum vitae in tabular form Proof of general higher education entrance qualifi",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-law-school/programmes/study-law/bachelor-in-law-politics-and-economics",
+            "source_text": "dya Werneke Student Recruitment Manager info(at)ebs.edu +49 6723 9168 0 EBS Universität Oestrich-Winkel Quicklinks Home Business Studies Law Studies Executive Education International Affairs Events Application About EBS About EBS Network Research Public Relations Corporate sustainability Become an EBS representativ",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-law-school/programmes/study-law/bachelor-in-law-politics-and-economics",
+            "source_text": "German higher education standards need to complete a 120-minute EBS online assessment instead of the regular tests. If you hav",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-law-school/programmes/study-law/bachelor-in-law-politics-and-economics",
+            "source_text": "r form Proof of general higher education entrance qualification. An application can also be submitted with your current transcripts if the school-leaving certificate is not yet available. International applicants who have a secondary school diploma that does not follow the German higher education standards ne",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "medium",
+            "review_note": "Transcript keyword found."
+          }
+        ],
+        "application_channel": [
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-law-school/programmes/study-law/bachelor-in-law-politics-and-economics",
+            "source_text": "visa, we recommend that you submit your application before 30 May (start fall term) or 15 October (start spring term). Online application You can submit your application documents in just a few steps on our online application platform, thus initiating your application process. Knowledge and personality test We use t",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "medium",
+            "review_note": "Application channel keyword found."
+          }
+        ],
+        "deadlines": [
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-law-school/programmes/study-law/bachelor-in-law-politics-and-economics",
+            "source_text": "deadline",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements & application",
+          "text": "Funding You can only have vision when you are at the top You don’t have vision in the free economy if you put on blinkers. Now and in the future, well-educated generalists will be pioneers. Personalities who shine in many disciplines and easily combine them. With a distinctive international and interdisciplinary approach, EBS Universität trains the leaders of the future."
+        },
+        {
+          "heading": "Admission requirements and application",
+          "text": "The study programme at EBS Universität trains leaders who shape and drive business, politics and society. This process begins by finding the right people for our Law, Politics and Economics programme."
+        },
+        {
+          "heading": "Start your application by submitting the following documents on our online platform:",
+          "text": "Curriculum vitae in tabular form Proof of general higher education entrance qualification. An application can also be submitted with your current transcripts if the school-leaving certificate is not yet available. International applicants who have a secondary school diploma that does not follow the German higher education standards need to complete a 120-minute EBS online assessment instead of the regular tests. If you have taken the SAT, ACT or Gaokao, we will recognise this exam in conjunction with your secondary school diploma instead of the EBS online assessment."
+        },
+        {
+          "heading": "Admission requirements, costs and career prospects",
+          "text": "Information about EBS Universität Event invitations and personalised consultation Register quickly and easily Register on the application platform"
+        },
+        {
+          "heading": "Fill in your application and attach the documents",
+          "text": "We will contact you for all further steps Harshita Anindya Werneke Student Recruitment Manager info(at)ebs.edu +49 6723 9168 0 EBS Universität Oestrich-Winkel Quicklinks Home Business Studies Law Studies Executive Education International Affairs Events Application About EBS About EBS Network Research Public Relations Corporate sustainability Become an EBS representative Corporate Solutions Service Student Services Housing for students & landlords Student Advisory Service"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "EBS Universität",
+        "url": "https://www.ebs.edu/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master in Finance: Start a career in the financial sector | EBS",
+        "degree": "MBA",
+        "level": "master",
+        "url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-finance",
+        "campus": "Campus life",
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": "Master in Finance: Start a career in the financial sector",
+        "specialization": "EBS"
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": 180,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Found 180 ECTS requirement."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "economics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "finance",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business law",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "7",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": [
+              "Academic degree completed in English"
+            ]
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "95",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": [
+              "Academic degree completed in English"
+            ]
+          },
+          {
+            "test": "Duolingo",
+            "minimum_score": "125",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": [
+              "Academic degree completed in English"
+            ]
+          }
+        ],
+        "test_requirements": [
+          "GMAT",
+          "GRE"
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": "work experience must be related to the content of the intended degree programme and must have been completed by the start of the degree programme at the la",
+          "notes": []
+        },
+        "documents": [
+          "Transcript"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "Country-specific reminder"
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "deadline"
+        ],
+        "intakes": [
+          "fall term",
+          "spring term",
+          "Fall term"
+        ],
+        "application_channel": "Online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Tuition fees in total (including all fees): Semester Abroad or Practice Track (for 4 semesters): 37,780 euros Accelerated Track (for 2 semesters):",
+          "tuition fees by a total of 3,000 euros* - for enrolment by 31 July for the spring term of the following year - for enrolment by 28 February for the"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-finance",
+            "source_text": "180 ECTS",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "high",
+            "review_note": "Direct ECTS extraction."
+          },
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-finance",
+            "source_text": "ith the Accelerated Track , you have the opportunity to shorten the duration of your studies and complete your Master's degree programme in two semesters (60 E During your studies, you will acquire key competences for your future job in Professional Development Workshops and will be prepared for a career",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "subject_prerequisites": [
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-finance",
+            "source_text": "Astha Bhatt Student Recruitment Manager info(at)ebs.edu +49 6723 9168 0 EBS Universität Oestrich-Winkel Quicklinks Home Business Studies Law Studies Executive Education International Affairs Events Application About EBS About EBS Network Research Public Relations Corporate sustainability Become an EBS representativ",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-finance",
+            "source_text": "Admission requirements & application Funding This makes the Master in Finance special The financial industry is one of the most important sectors of the economy. It is also an industry with a particular need for values and a responsibility towards people. A",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-finance",
+            "source_text": "IELTS: 7;",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-finance",
+            "source_text": "TOEFL® iBT/MyBest TOEFL: minimum 95;",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-finance",
+            "source_text": "Duolingo English Test: minimum 125 or an equivalent certificate). Upon proof, if you have completed an undergraduate degree in E",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-finance",
+            "source_text": "native speaker, or have worked for at least 2 years in an English-speaking country, no certificate is required. A valid GMAT (either classic or new Focus edition - scores will be based on GMAC's percentile tables), GRE, Business Admissions Test (BAT) , EBSgrad Test, Common Admissions Test (CAT), or CFA",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "medium",
+            "review_note": "GMAT keyword found."
+          },
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-finance",
+            "source_text": "gers but with friends, with like-minded people. We want to achieve remarkable things together. Our students organise congresses, cultural events or run their own real investment fund. Knowledge has no value without values. We know just how important it is, especially in business management, to work wit",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "medium",
+            "review_note": "GRE keyword found."
+          }
+        ],
+        "work_experience": [
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-finance",
+            "source_text": "work experience must be related to the content of the intended degree programme and must have been completed by the start of the degree programme at the la",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "medium",
+            "review_note": "Work-experience requirement found."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-finance",
+            "source_text": "he above minimum scores in the context of your overall profile, professional experience and bac A bachelor’s degree and transcripts in any field of study with at least 180 ECTS or an equivalent recognised qualification from an equally recognised institution. An application can also be submitted with a current",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "medium",
+            "review_note": "Transcript keyword found."
+          }
+        ],
+        "application_channel": [
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-finance",
+            "source_text": "start fall term) or 15 October (start spring term). Start your application by submitting the following documents on our online application platform: A bachelor’s degree and transcripts in any field of study with at least 180 ECTS or an equivalent recognised qualification from an equally recognised institution. An app",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "medium",
+            "review_note": "Application channel keyword found."
+          }
+        ],
+        "deadlines": [
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-finance",
+            "source_text": "deadline",
+            "retrieved_at": "2026-05-15T09:35:27.733129+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements & application",
+          "text": "Funding This makes the Master in Finance special The financial industry is one of the most important sectors of the economy. It is also an industry with a particular need for values and a responsibility towards people. At EBS Universität, we offer you state-of-the-art teaching content, individual personal development and practical work with the big names from the finance industry. So you are perfectly prepared for an exciting future. Welcome to the EBS family. The most important part of your studies is not only 'what', but especially 'with whom'. The EBS family is an exceptional community. International, inspiring, innovative. You are not studying with strangers but with friends, with like-minded people. We want to achieve remarkable things together. Our students organise congresses, cultural events or run their own real investment fund. Knowledge has no value without values. We know just how important it is, especially in business management, to work with diverse stakeholders, i.e. other people, so that empathy and values make the decisive difference. They shape future leaders who drive things forward and engage others. We teach our values courage, responsibility, consideration and a strong backbone in our classes and our Coaching & Leadership Hub. Challenge-based learning with state-of-the-art content: Studying at EBS must keep up with the pace of the international financial markets. Blockchain, AI, Roboadvisory or FinTech are part of everyday life at EBS."
+        },
+        {
+          "heading": "With the Accelerated Track , you have the opportunity to shorten the duration of your studies and complete your Master's degree programme in two semesters (60 E",
+          "text": "During your studies, you will acquire key competences for your future job in Professional Development Workshops and will be prepared for a career as a leadership personality through individual coaching from the EBS Coaching & Leadership Hub . In addition, you will have the opportunity to further develop your international language skills through foreign language courses at the EBS Language Centre . This is what you learn in the Master in Finance The Master in Finance programme teaches General Content, which helps you to place subject knowledge in a wider context, and then goes further and further in depth with Advanced Content to build expertise in the relevant subject area."
+        },
+        {
+          "heading": "Accelerate your career. The Accelerated Track gives you the opportunity to shorten the duration of your studies to two semesters. The prerequisite for this trac",
+          "text": "Dual Degree In addition to your degree at EBS Universität, you can obtain a second international degree (MBA or Master). Extend your studies abroad at one of our partner universities by one semester in the Semester Abroad Track and receive a double degree . This will give you more specialised knowledge in a broader international context and increase your international market value. Challenged-based Learning Experience top-class expert lectures and a strong practical orientation. In addition to interactive lectures, there is an emphasis on case studies and real-world projects, so the degree programme reflects cutting-edge management practices. In addition, close collaboration with industry leaders and practitioners is encouraged to equip students with the skills, competencies and mindsets required in today's global economy. Many possibilities. One language. At EBS Universität you will study at an international level and in an international environment. That's why all lectures and events are, of course, held in English. It could hardly be more international."
+        },
+        {
+          "heading": "Admission requirements and application",
+          "text": "The master’s programme at EBS Universität trains future managers who shape and drive the economy. This process begins by finding the right people for our Master in Finance study programme."
+        },
+        {
+          "heading": "EBS Universität follows a holistic selection process. We assess the above minimum scores in the context of your overall profile, professional experience and bac",
+          "text": "A bachelor’s degree and transcripts in any field of study with at least 180 ECTS or an equivalent recognised qualification from an equally recognised institution. An application can also be submitted with a current transcript of records if the bachelor's degree is not yet available. Accelerated Track (60 ECTS): A bachelor’s degree and transcripts with at least 240 ECTS or an equivalent recognised qualification. Bachelor's degrees with 180 or 210 ECTS can be considered for the Accelerated Track if they have at least 12 or 6 months of professional experience (full-time) after the Bachelor's degree programme. This work experience must be related to the content of the intended degree programme and must have been completed by the start of the degree programme at the latest. English language certificate (TOEFL® iBT/MyBest TOEFL: minimum 95; IELTS: 7; Duolingo English Test: minimum 125 or an equivalent certificate). Upon proof, if you have completed an undergraduate degree in English, are a native speaker, or have worked for at least 2 years in an English-speaking country, no certificate is required. A valid GMAT (either classic or new Focus edition - scores will be based on GMAC's percentile tables), GRE, Business Admissions Test (BAT) , EBSgrad Test, Common Admissions Test (CAT), or CFA Level 1 score. For candidates interested in the Semester Abroad Track , CFA Level 1 unfortunately does not apply due to the regulations of our partner universities. Learn more about the online application Special admission route: SPJIMR If you study on the Global Management Programme of SPJIMR in Mumbai, India, you can complete the EBS Master of Science programme in 12 months. You will spend the first six months on the SPJIMR programme before joining the Master's programme at EBS. In the inte"
+        },
+        {
+          "heading": "Admission requirements, costs and career prospects",
+          "text": "Information about EBS Universität Event invitations and personalised consultation Register quickly and easily Register on the application platform"
+        },
+        {
+          "heading": "Fill in your application and attach the documents",
+          "text": "We will contact you for all further steps Astha Bhatt Student Recruitment Manager info(at)ebs.edu +49 6723 9168 0 EBS Universität Oestrich-Winkel Quicklinks Home Business Studies Law Studies Executive Education International Affairs Events Application About EBS About EBS Network Research Public Relations Corporate sustainability Become an EBS representative Corporate Solutions Service Student Services Housing for students & landlords Student Advisory Service"
+        }
+      ],
+      "needs_human_review": false
+    }
+  ],
+  "skipped": [],
+  "review_seed_config": {
+    "seed_urls": [
+      "https://www.ebs.edu/en/ebs-business-school/study-programmes",
+      "https://www.ebs.edu/en/mba-programmes",
+      "https://www.ebs.edu/en/the-applicationprocess-of-ebs-universitaet"
+    ],
+    "review_notes": [
+      "Official content uses programme-list pages plus individual study programme pages.",
+      "Application portal is useful for human review but higher sensitivity for crawling."
+    ],
+    "crawl_cautions": [
+      "Crawl application portal lightly or skip it until explicitly reviewed."
+    ]
+  }
+}

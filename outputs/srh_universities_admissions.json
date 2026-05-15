@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.2",
+  "school": {
+    "name": "SRH Universities",
+    "url": "https://www.srh-university.de/en/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university_group",
+    "source_official_url": "https://www.srh-universities.de/en/"
+  },
+  "retrieved_at": "2026-05-15T09:35:32.620596+00:00",
+  "crawler_policy": {
+    "respects_robots_txt": true,
+    "same_host_only": true,
+    "max_pages": 8,
+    "delay_seconds": 0.2,
+    "timeout_seconds": 12.0,
+    "user_agent": "study-admissions-poc/0.1 (+https://www.gut-haode.com/ partner-school research)",
+    "no_login_captcha_paywall_bypass": true,
+    "robots_url": "https://www.srh-university.de/robots.txt",
+    "robots_status": "available",
+    "robots_error": null,
+    "sitemaps_discovered": [
+      "https://www.srh-university.de/sitemap.xml",
+      "https://www.srh-university.de/en/sitemap.xml"
+    ]
+  },
+  "crawl_summary": {
+    "pages_fetched": 5,
+    "pages_skipped": 0,
+    "programs_extracted": 0,
+    "programs_needing_human_review": 0
+  },
+  "programs": [],
+  "skipped": [],
+  "review_seed_config": {
+    "seed_urls": [
+      "https://www.srh-university.de/en/bachelor/",
+      "https://www.srh-university.de/en/master/",
+      "https://www.srh-university.de/en/you-want-to-study/applications-and-admissions/"
+    ],
+    "review_notes": [
+      "Current official programme surface appears to be srh-university.de.",
+      "Degree landing pages lead to a programme finder and application details."
+    ],
+    "crawl_cautions": [
+      "Avoid aggressive crawling of apply.srh.de."
+    ]
+  }
+}

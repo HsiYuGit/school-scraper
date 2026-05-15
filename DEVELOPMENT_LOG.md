@@ -49,6 +49,34 @@
 - 全量 12 校、每校 20 頁的批次在本機超過 7 分鐘 timeout；後續不要只依賴一次性全量命令，應以每校或小批次重跑，並靠 incrementally written manifest 判斷完成狀態。
 - 抽查 MBS/ESMT 輸出時發現 regex 若跨過下一個考試名稱，會產生看似完整但錯誤的語言分數；之後新增 normalization 規則時要優先做 false-positive 測試，不只測 happy path。
 - 語言分數不能只靠鄰近文字判斷，還要檢查各考試自己的分數量尺；這種 domain constraint 比單純加長/縮短 regex window 更可靠。
+
+### v0.2 12 校批次產出
+
+實際產出命令：
+
+```powershell
+python scripts\crawl_partner_schools.py --max-pages 8 --delay 0.2 --timeout 12
+```
+
+本次 bounded batch 已產出 12 份 `outputs/*_admissions.json` 與 `outputs/partner_school_crawl_manifest.json`。摘要如下：
+
+- TUM Asia：抓 8 頁，抽出 7 個 records，其中 6 個需人工 review。
+- Munich Business School：抓 8 頁，抽出 4 個 records，0 個需人工 review。
+- International School of Management (ISM)：抓 8 頁，抽出 6 個 records，其中 1 個需人工 review。
+- CBS International Business School：抓 8 頁，抽出 2 個 records，0 個需人工 review。
+- EBS Universität：抓 8 頁，抽出 5 個 records，其中 2 個需人工 review。
+- SRH Universities：抓 5 頁，抽出 0 個 records；需下一輪針對 program finder 或 seed pattern 迭代。
+- Kühne Logistics University (KLU)：抓 8 頁，抽出 4 個 records，其中 1 個需人工 review。
+- Hochschule Fresenius：抓 8 頁，抽出 3 個 records，0 個需人工 review。
+- NIT Northern Institute of Technology Management：抓 6 頁，抽出 2 個 records，0 個需人工 review。
+- Hochschule Bremen：抓 4 頁，抽出 0 個 records，另有 1 個 reviewed seed URL 回 404；需下一輪找實際 degree-programme slug 或改用 sitemap/頁面結構。
+- ESMT Berlin：抓 8 頁，抽出 4 個 records，0 個需人工 review。
+- International Graduate Center, Hochschule Bremen：抓 8 頁，抽出 5 個 records，其中 1 個需人工 review。
+
+人工抽查：
+
+- MBS 與 ESMT 的語言分數曾出現 false positive，已用 test-specific score scale 修正並重跑。
+- SRH 與 Hochschule Bremen 目前不是 robots 問題，而是 discovery/extraction 規則尚未抓到可轉成 program record 的頁面；下一輪應針對這兩校開小批次調整，不要全量重跑所有學校。
 - 本機 sandbox 對多個官方站的 HTTPS 連線回傳 connection refused；已修正程式避免將環境問題誤判為 robots 封鎖。
 - 人工 review `https://www.munich-business-school.de/en/master`：頁面公開列出 Master International Business、Master Innovation & Entrepreneurship、Master International Marketing and Brand Management、Master Sports Management and Media、Master in Finance、Pre-Master；爬蟲輸出包含上述頁面。
 - MBS sitemap 另帶出 Master International Business 底下 7 個 specialization 頁；目前保留為獨立 program record，後續 schema 可再決定要當 program 或 specialization。

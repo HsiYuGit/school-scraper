@@ -1,0 +1,497 @@
+{
+  "schema_version": "0.2",
+  "school": {
+    "name": "CBS International Business School",
+    "url": "https://www.cbs.de/en/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university",
+    "source_official_url": "https://www.cbs.de/en/"
+  },
+  "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+  "crawler_policy": {
+    "respects_robots_txt": true,
+    "same_host_only": true,
+    "max_pages": 8,
+    "delay_seconds": 0.2,
+    "timeout_seconds": 12.0,
+    "user_agent": "study-admissions-poc/0.1 (+https://www.gut-haode.com/ partner-school research)",
+    "no_login_captcha_paywall_bypass": true,
+    "robots_url": "https://www.cbs.de/robots.txt",
+    "robots_status": "available",
+    "robots_error": null,
+    "sitemaps_discovered": [
+      "https://www.cbs.de/sitemap.xml"
+    ]
+  },
+  "crawl_summary": {
+    "pages_fetched": 8,
+    "pages_skipped": 0,
+    "programs_extracted": 2,
+    "programs_needing_human_review": 0
+  },
+  "programs": [
+    {
+      "school": {
+        "name": "CBS International Business School",
+        "url": "https://www.cbs.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International Management Full-Time MBA degree in Germany | CBS",
+        "degree": "MBA",
+        "level": "master",
+        "url": "https://www.cbs.de/en/mba-germany/master-business-administration",
+        "campus": "CAMPUS LIFE: PERSONAL",
+        "language_of_instruction": [
+          "english",
+          "German",
+          "English"
+        ],
+        "parent_program": "International Management Full-Time MBA degree in Germany",
+        "specialization": "CBS"
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "economics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "accounting",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "mathematics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "finance",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [
+          "GRE",
+          "Personal interview"
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Transcript",
+          "Degree certificate",
+          "Reference letter"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "Visa-sensitive deadline"
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Deadline",
+          "deadline is year round open, even before you graduate from high school",
+          "deadline"
+        ],
+        "intakes": [
+          "winter semester",
+          "summer semester"
+        ],
+        "application_channel": "Online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Tuition Fees",
+          "Tuition fees differ for EU and non-EU students",
+          "fees please check the tuition fees information page"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/master-business-administration",
+            "source_text": "programme – online, flexibly, and without long waiting times. Online Application The first step to starting a master's degree at CBS is a simple online application. You can conveniently apply from the comfort of your home using the provided online form. Assessment To ensure your application is successful",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "subject_prerequisites": [
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/master-business-administration",
+            "source_text": "lisation ECTS Design attra Develop strategies to further develop business models towards future requirements Managerial Economics ECTS Learn how to analyse markets and make predictions, developing a comprehension of economic systems Set up projects to solve real problems and use project reviews Master verbal",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/master-business-administration",
+            "source_text": "ital Market a company as Investors Relations to attract capital Analyse different Risk Management strategies Management Accounting & Reporting ECTS Gain profound knowledge in strategic and operational decision support Learn and apply performance measurement and management control concepts Analyse financial an",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/master-business-administration",
+            "source_text": "mise procurement, distribution, production, and warehouse logistics Global HR & Developing Organisations ECTS Corporate Finance & Investor Relations ECTS Understand the global financial markets and cross-border investments Study capital structure (debt and equity) and cost of capital Market a company as In",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/master-business-administration",
+            "source_text": "rogramme – online, flexibly, and without long waiting times. Online Application The first step to starting a master's degree at CBS is a simple online application. You can conveniently apply from the comfort of your home using the provided online form. Assessment To ensure your application is successfu",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "GRE keyword found."
+          },
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/master-business-administration",
+            "source_text": "submit your most recent transcript. Admission Interview Once we have received your application, we will invite you to a personal interview. Depending on the programme, the interview will b After successfully reviewing your documents and completing the interview, we will send you a study offer. To secure your place at",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "Personal interview keyword found."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/master-business-administration",
+            "source_text": "niversity entrance qualification. If your final diploma is not yet available, you can initially submit your most recent transcript. Admission Interview Once we have received your application, we will invite you to a personal interview. Depending on the programme, the interview will b After successfully review",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "Transcript keyword found."
+          }
+        ],
+        "international_requirements": [
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/master-business-administration",
+            "source_text": "r semester. One early candidature is particularly important for limited study places secure and apply for any necessary visas in good time. Bewirb dich jetzt funding A dual or part-time study Is often used by the Practice partner financed , which is also a valuable occupational provides accompaniment. A",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "Visa-sensitive deadline keyword found."
+          }
+        ],
+        "application_channel": [
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/master-business-administration",
+            "source_text": "Applied Sciences are so individually Like yourself — and at the same time uncomplicated designed. With our easy to use Online application process Can you yourself cushy of everywhere From apply, completely without Numerus clausus . Instead of staring Admission requirements Waiting for you with us is a personal selec",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "Application channel keyword found."
+          }
+        ],
+        "deadlines": [
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/master-business-administration",
+            "source_text": "Deadline",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/master-business-administration",
+            "source_text": "deadline is year round open, even before you graduate from high school",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/master-business-administration",
+            "source_text": "deadline",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission Requirements",
+          "text": "Financial Matters Tuition Fees Financial Aid"
+        },
+        {
+          "heading": "Learn about distribution networks that balance cost efficiency with customer service requirements",
+          "text": "Optimise procurement, distribution, production, and warehouse logistics Global HR & Developing Organisations ECTS Corporate Finance & Investor Relations ECTS Understand the global financial markets and cross-border investments Study capital structure (debt and equity) and cost of capital Market a company as Investors Relations to attract capital Analyse different Risk Management strategies Management Accounting & Reporting ECTS Gain profound knowledge in strategic and operational decision support Learn and apply performance measurement and management control concepts Analyse financial and non-financial key performance indicators Explore management reporting, data visualisation, and dashboarding tools Project: Consulting a Company ECTS Receive a consulting challenge from a real client company Define and scope a real consulting project in a team Develop evidence-based solutions and actionable recommendations Present these recommendations to the client company Event Lab ECTS Develop an event (TedX, leadership, team building, company, or else) Design and carry out the event marketing to potential participants Organise the event and carry it out in concrete terms Perform the event review & retrospective Modern Leadership Concepts ECTS Discover contemporary leadership approaches Learn about leading with agility, empathy and strategic vision Apply modern tools to foster collaboration, innovation and high performance Develop a future-focused mindset including diversity and sustainability Agile Project Delivery ECTS Use value-based project management for strategic development Use agility to ensure project delivery Know the difference to traditional projects and where AI comes in Manage the allocation of tasks and work in teams Empirical Research & Visualisation ECTS Design attra"
+        },
+        {
+          "heading": "Develop strategies to further develop business models towards future requirements",
+          "text": "Managerial Economics ECTS Learn how to analyse markets and make predictions, developing a comprehension of economic systems Set up projects to solve real problems and use project reviews Master verbal, graphical, and mathematical ways to address economic and managerial problems Understand economic tools and theoretical approaches such as supply and demand, market structures, and game theory Master Thesis ECTS Demonstrate mastery of your field by conducting independent research that addresses a relevant business topic Apply strategic frameworks and methodologies to analyse complex problems and develop evidence-based solutions Synthesise knowledge from multiple disciplines to generate insights and recommendations Communicate findings professionally through rigorous academic writing Advanced Business Strategy ECTS Define strategic purpose and goals Evaluate feasibility of achieving strategic goals through internal and external analysis Formulate competitive strategies Design corporate growth strategies to achieve long-term profitability Why CBS UNIVERSITY Your path to CBS The Getting started Your studies at CBS University of Applied Sciences are so individually Like yourself — and at the same time uncomplicated designed. With our easy to use Online application process Can you yourself cushy of everywhere From apply, completely without Numerus clausus ."
+        },
+        {
+          "heading": "Admission requirements",
+          "text": "Deadline Funding"
+        },
+        {
+          "heading": "Admission requirements",
+          "text": "Die Zugangsvoraussetzungen für dein MBA-Studium an der CBS University of Applied Sciences variieren je nach Studiengang . Deadlines The application deadline is year round open, even before you graduate from high school. For dual study programs, you should sufficient lead time Plan so that we can find your suitable practice partner. The start of studies is flexible: in the winter semester or, for selected programs, also in the summer semester. One early candidature is particularly important for limited study places secure and apply for any necessary visas in good time. Bewirb dich jetzt funding A dual or part-time study Is often used by the Practice partner financed , which is also a valuable occupational provides accompaniment. A full-time study On the other hand, can be achieved by numerous Funding opportunities like BAföG or stipends Personalize to give you an optimal connection of personal Development and academic To make the future possible. Erfahre mehr über deine Finanzierungsmöglichkeiten YOUR APPLICATION PROCESS To ensure a quick and straightforward application process , we have made it as simple as possible! In just a few steps, you can apply for your MBA programme – online, flexibly, and without long waiting times. Online Application The first step to starting a master's degree at CBS is a simple online application. You can conveniently apply from the comfort of your home using the provided online form. Assessment To ensure your application is successful, we require proof of your university entrance qualification. If your final diploma is not yet available, you can initially submit your most recent transcript. Admission Interview Once we have received your application, we will invite you to a personal interview. Depending on the programme, the interview will b"
+        },
+        {
+          "heading": "After successfully reviewing your documents and completing the interview, we will send you a study offer. To secure your place at CBS, you must accept the offer",
+          "text": "Maximal Praxisah Through our approach, theory and practice to connect, you can use the knowledge you have learned during your studies upfront apply and gain valuable insights into the real world of work. Business Projects Business cooperation Internship/professional experience Business Projects As part of the business projects at CBS International Business School, students have the opportunity to work together with renowned undertakings at realistic projects to work. This practice-oriented Form of teaching combines theoretical knowledge with specific economic issues and provides deep insights into professional processes. Business cooperation"
+        },
+        {
+          "heading": "What are the admission requirements for the MBA?",
+          "text": "Where can I study the Master of Business Administration (MBA)? How long does an MBA programme take? What content is taught in the International MBA? What are the benefits of studying for an MBA? request a brochure now! Get your free brochure and learn more about:"
+        },
+        {
+          "heading": "Admission requirements",
+          "text": "Application process Study formats and time models Study programmes and course content Semester abroad opportunities Financial aid options Success! Noch Fragen? Du hast Fragen zu unseren Bachelor- oder Master-Studiengängen ? Vereinbare jetzt ganz unkompliziert deinen persönlichen Beratungstermin – online oder vor Ort! Unser Team unterstützt dich individuell und unverbindlich auf deinem Weg zum passenden Studium ."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "CBS International Business School",
+        "url": "https://www.cbs.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "One year MBA International Management in Germany | CBS",
+        "degree": "MBA",
+        "level": "master",
+        "url": "https://www.cbs.de/en/mba-germany/one-year-mba-international-management",
+        "campus": "CAMPUS LIFE: PERSONAL",
+        "language_of_instruction": [
+          "German",
+          "English"
+        ],
+        "parent_program": "One year MBA International Management in Germany",
+        "specialization": "CBS"
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "economics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "mathematics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "finance",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [
+          "GRE",
+          "Personal interview"
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Transcript",
+          "Degree certificate",
+          "Reference letter"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "Visa-sensitive deadline"
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Deadline",
+          "deadline is year round open, even before you graduate from high school",
+          "deadline"
+        ],
+        "intakes": [
+          "winter semester",
+          "summer semester"
+        ],
+        "application_channel": "Online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Tuition Fees",
+          "Tuition fees differ for EU and non-EU students",
+          "fees please check the tuition fees information page"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/one-year-mba-international-management",
+            "source_text": "rocess, we have made it as simple as possible! In just a few steps, you canapply for your business administration (MBA) degree – online, flexibly,and without long waiting times. Online Application The first step to starting a master's degree at CBS is a simple online application. You can conveniently appl",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "subject_prerequisites": [
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/one-year-mba-international-management",
+            "source_text": "Tuition Fees Financial Aid Develop strategies to further develop business models towards future requirements Managerial Economics ECTS Learn how to analyse markets and make predictions, developing a comprehension of economic systems Set up projects to solve real problems and use project reviews Master verbal",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/one-year-mba-international-management",
+            "source_text": "necessary visas in good time. Bewirb dich jetzt funding A dual or part-time study Is often used by the Practice partner financed , which is also a valuable occupational provides accompaniment. A full-time study On the other hand, can be achieved by numerous Funding opportunities like BAföG or stipends Pers",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/one-year-mba-international-management",
+            "source_text": "cess, we have made it as simple as possible! In just a few steps, you canapply for your business administration (MBA) degree – online, flexibly,and without long waiting times. Online Application The first step to starting a master's degree at CBS is a simple online application. You can conveniently app",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "GRE keyword found."
+          },
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/one-year-mba-international-management",
+            "source_text": "submit your most recent transcript. Admission Interview Once we have received your application, we will invite you to a personal interview. Depending on the programme, t After successfully reviewing your documents and completing the interview, we will send you a study offer. To secure your place at CBS, you must acce",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "Personal interview keyword found."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/one-year-mba-international-management",
+            "source_text": "niversity entrance qualification. If your final diploma is not yet available, you can initially submit your most recent transcript. Admission Interview Once we have received your application, we will invite you to a personal interview. Depending on the programme, t After successfully reviewing your documents",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "Transcript keyword found."
+          }
+        ],
+        "international_requirements": [
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/one-year-mba-international-management",
+            "source_text": "r semester. One early candidature is particularly important for limited study places secure and apply for any necessary visas in good time. Bewirb dich jetzt funding A dual or part-time study Is often used by the Practice partner financed , which is also a valuable occupational provides accompaniment. A",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "Visa-sensitive deadline keyword found."
+          }
+        ],
+        "application_channel": [
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/one-year-mba-international-management",
+            "source_text": "Applied Sciences are so individually Like yourself — and at the same time uncomplicated designed. With our easy to use Online application process Can you yourself cushy of everywhere From apply, completely without Numerus clausus . Instead of staring Admission requirements Waiting for you with us is a personal selec",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "Application channel keyword found."
+          }
+        ],
+        "deadlines": [
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/one-year-mba-international-management",
+            "source_text": "Deadline",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/one-year-mba-international-management",
+            "source_text": "deadline is year round open, even before you graduate from high school",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/one-year-mba-international-management",
+            "source_text": "deadline",
+            "retrieved_at": "2026-05-15T09:35:08.029349+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission Requirements",
+          "text": "Financial Matters Tuition Fees Financial Aid"
+        },
+        {
+          "heading": "Develop strategies to further develop business models towards future requirements",
+          "text": "Managerial Economics ECTS Learn how to analyse markets and make predictions, developing a comprehension of economic systems Set up projects to solve real problems and use project reviews Master verbal, graphical, and mathematical ways to address economic and managerial problems Understand economic tools and theoretical approaches such as supply and demand, market structures, and game theory Master Thesis (compact) ECTS Demonstrate mastery of your field by conducting independent research that addresses a relevant business topic Apply strategic frameworks and methodologies to analyse complex problems and develop evidence-based solutions Synthesise knowledge from multiple disciplines to generate insights and recommendations Communicate findings professionally through rigorous academic writing Advanced Business Strategy ECTS Define strategic purpose and goals Evaluate feasibility of achieving strategic goals through internal and external analysis Formulate competitive strategies Design corporate growth strategies to achieve long-term profitability Why CBS UNIVERSITY Your path to CBS The Getting started Your studies at CBS University of Applied Sciences are so individually Like yourself — and at the same time uncomplicated designed. With our easy to use Online application process Can you yourself cushy of everywhere From apply, completely without Numerus clausus ."
+        },
+        {
+          "heading": "Admission requirements",
+          "text": "Deadline Funding"
+        },
+        {
+          "heading": "Admission requirements",
+          "text": "Die Zugangsvoraussetzungen für dein MBA-Studium an der CBS University of Applied Sciences variieren je nach Studiengang . Deadlines The application deadline is year round open, even before you graduate from high school. For dual study programs, you should sufficient lead time Plan so that we can find your suitable practice partner. The start of studies is flexible: in the winter semester or, for selected programs, also in the summer semester. One early candidature is particularly important for limited study places secure and apply for any necessary visas in good time. Bewirb dich jetzt funding A dual or part-time study Is often used by the Practice partner financed , which is also a valuable occupational provides accompaniment. A full-time study On the other hand, can be achieved by numerous Funding opportunities like BAföG or stipends Personalize to give you an optimal connection of personal Development and academic To make the future possible. Erfahre mehr über deine Finanzierungsmöglichkeiten YOUR APPLICATION PROCESS To ensure a quick and straightforward applicationprocess, we have made it as simple as possible! In just a few steps, you canapply for your business administration (MBA) degree – online, flexibly,and without long waiting times. Online Application The first step to starting a master's degree at CBS is a simple online application. You can conveniently apply from the comfort of your home using the provided online form. Assessment To ensure your application is successful, we require proof of your university entrance qualification. If your final diploma is not yet available, you can initially submit your most recent transcript. Admission Interview Once we have received your application, we will invite you to a personal interview. Depending on the programme, t"
+        },
+        {
+          "heading": "After successfully reviewing your documents and completing the interview, we will send you a study offer. To secure your place at CBS, you must accept the offer",
+          "text": "Maximal Praxisah Through our approach, theory and practice to connect, you can use the knowledge you have learned during your studies upfront apply and gain valuable insights into the real world of work. Business Projects Business cooperation Internship/professional experience Business Projects As part of the business projects at CBS International Business School, students have the opportunity to work together with renowned undertakings at realistic projects to work. This practice-oriented Form of teaching combines theoretical knowledge with specific economic issues and provides deep insights into professional processes. Business cooperation"
+        },
+        {
+          "heading": "What are the admission requirements for the Fast Track MBA?",
+          "text": "Where can I study the Master of Business Administration (MBA)? How long does an MBA Fast Track programme take? request a brochure now! Get your free brochure and learn more about:"
+        },
+        {
+          "heading": "Admission requirements",
+          "text": "Application process Study formats and time models Study programmes and course content Semester abroad opportunities Financial aid options Success! Noch Fragen? Du hast Fragen zu unseren Bachelor- oder Master-Studiengängen ? Vereinbare jetzt ganz unkompliziert deinen persönlichen Beratungstermin – online oder vor Ort! Unser Team unterstützt dich individuell und unverbindlich auf deinem Weg zum passenden Studium ."
+        }
+      ],
+      "needs_human_review": false
+    }
+  ],
+  "skipped": [],
+  "review_seed_config": {
+    "seed_urls": [
+      "https://www.cbs.de/en/international-business-school",
+      "https://www.cbs.de/en/full-time-study-programmes-germany",
+      "https://www.cbs.de/en/part-time-degree-programmes-germany",
+      "https://www.cbs.de/en/bachelors-degree-germany/international-business",
+      "https://www.cbs.de/en/international/exchange-students"
+    ],
+    "review_notes": [
+      "Listing pages expose many programme cards.",
+      "Programme pages use English paths such as /en/bachelors-degree-germany/{slug}."
+    ],
+    "crawl_cautions": [
+      "Avoid HubSpot forms, preview URLs, preference endpoints, and reCAPTCHA surfaces."
+    ]
+  }
+}

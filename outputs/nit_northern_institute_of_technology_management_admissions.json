@@ -1,0 +1,288 @@
+{
+  "schema_version": "0.2",
+  "school": {
+    "name": "NIT Northern Institute of Technology Management",
+    "url": "https://www.nithh.org/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "institute",
+    "source_official_url": "https://www.nithh.de/"
+  },
+  "retrieved_at": "2026-05-15T09:36:20.104043+00:00",
+  "crawler_policy": {
+    "respects_robots_txt": true,
+    "same_host_only": true,
+    "max_pages": 8,
+    "delay_seconds": 0.2,
+    "timeout_seconds": 12.0,
+    "user_agent": "study-admissions-poc/0.1 (+https://www.gut-haode.com/ partner-school research)",
+    "no_login_captcha_paywall_bypass": true,
+    "robots_url": "https://www.nithh.org/robots.txt",
+    "robots_status": "available",
+    "robots_error": null,
+    "sitemaps_discovered": []
+  },
+  "crawl_summary": {
+    "pages_fetched": 6,
+    "pages_skipped": 0,
+    "programs_extracted": 2,
+    "programs_needing_human_review": 0
+  },
+  "programs": [
+    {
+      "school": {
+        "name": "NIT Northern Institute of Technology Management",
+        "url": "https://www.nithh.org/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "institute"
+      },
+      "program": {
+        "name": "Study MBA in Technology Management MBA/M.A. | NIT Hamburg",
+        "degree": "MBA",
+        "level": "master",
+        "url": "https://www.nithh.org/study-technology-management",
+        "campus": "campus: modern apartments in the NIT Building",
+        "language_of_instruction": [
+          "German",
+          "English"
+        ],
+        "parent_program": "Study MBA in Technology Management MBA/M.A.",
+        "specialization": "NIT Hamburg"
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [
+          "GRE"
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Application period October 1, 2024 until September 31, 2025 > learn how to apply here"
+        ],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Fees & Payment Options"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.nithh.org/study-technology-management",
+            "source_text": "ccept applications from outstanding international and German students, in particular students must have: For the Double Degree : Bachelor’s degree in Engineering, Natural Science, Information or Computer Science For the Single Degree : Bachelor’s degree in Engineering, Natural Science, Information or Comp",
+            "retrieved_at": "2026-05-15T09:36:20.104043+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.nithh.org/study-technology-management",
+            "source_text": "ept applications from outstanding international and German students, in particular students must have: For the Double Degree : Bachelor’s degree in Engineering, Natural Science, Information or Computer Science For the Single Degree : Bachelor’s degree in Engineering, Natural Science, Information or Com",
+            "retrieved_at": "2026-05-15T09:36:20.104043+00:00",
+            "confidence": "medium",
+            "review_note": "GRE keyword found."
+          }
+        ],
+        "deadlines": [
+          {
+            "source_url": "https://www.nithh.org/study-technology-management",
+            "source_text": "Application period October 1, 2024 until September 31, 2025 > learn how to apply here",
+            "retrieved_at": "2026-05-15T09:36:20.104043+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "The requirements to study at the NIT",
+          "text": "We accept applications from outstanding international and German students, in particular students must have: For the Double Degree : Bachelor’s degree in Engineering, Natural Science, Information or Computer Science For the Single Degree : Bachelor’s degree in Engineering, Natural Science, Information or Computer Science or in a business related field Good grades (in the upper third to quarter) Proven record of personal and academic achievement High level of proficiency in English"
+        },
+        {
+          "heading": "Initial professional experience is a plus but not a requirement for admission",
+          "text": "Our Flying Faculty Professors and Practioneers from all over the world Interested? Lets get in touch! Never miss an update. If you want to stay tuned with our latest innovations and happenings then subscribe to our newsletter. Get all our updates delivered straight into your inbox."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "NIT Northern Institute of Technology Management",
+        "url": "https://www.nithh.org/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "institute"
+      },
+      "program": {
+        "name": "Your Single Degree at the NIT and Technology University Hamburg",
+        "degree": "MBA",
+        "level": null,
+        "url": "https://www.nithh.org/your-single-degree-24m",
+        "campus": "campus: Modern apartments in the NIT Building",
+        "language_of_instruction": [
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": 120,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Found 120 ECTS requirement."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "German",
+            "minimum_score": "1",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          "GRE"
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": "Work experience < 1 years) Degree conferred by Hamburg University of Technology (TUHH) 90 or 120 ECTS FIBAA Master 90 ECTS: 26,750 € + 150 € Master 120 ECT",
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": [
+          "Visa-sensitive deadline"
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Application period October 1, 2024 until September 15, 2025 > learn how to apply here"
+        ],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Fees & Payment Options"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.nithh.org/your-single-degree-24m",
+            "source_text": "120 ECTS",
+            "retrieved_at": "2026-05-15T09:36:20.104043+00:00",
+            "confidence": "high",
+            "review_note": "Direct ECTS extraction."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.nithh.org/your-single-degree-24m",
+            "source_text": "German-language course September 2025 Application period October 1, 2024 until September 15, 2025 > learn how to apply here Ma",
+            "retrieved_at": "2026-05-15T09:36:20.104043+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.nithh.org/your-single-degree-24m",
+            "source_text": "90 or 120 ECTS . Depending on your previous studies and your personal goals and requirements, you can For a Master's degree with 120 ECTS you will participate in additional modules (complementary modules) and thus collect additional credit points. The 120 ECTS study option is particularly attractive f",
+            "retrieved_at": "2026-05-15T09:36:20.104043+00:00",
+            "confidence": "medium",
+            "review_note": "GRE keyword found."
+          }
+        ],
+        "work_experience": [
+          {
+            "source_url": "https://www.nithh.org/your-single-degree-24m",
+            "source_text": "Work experience < 1 years) Degree conferred by Hamburg University of Technology (TUHH) 90 or 120 ECTS FIBAA Master 90 ECTS: 26,750 € + 150 € Master 120 ECT",
+            "retrieved_at": "2026-05-15T09:36:20.104043+00:00",
+            "confidence": "medium",
+            "review_note": "Work-experience requirement found."
+          }
+        ],
+        "international_requirements": [
+          {
+            "source_url": "https://www.nithh.org/your-single-degree-24m",
+            "source_text": "redit points. The 120 ECTS study option is particularly attractive for foreign students who wish to apply for a student visa for Germany. YOUR MBA/M.A. IN 24 MONTHS: OVERVIEW 24 months including Master Thesis and internship Recommended course of studies: Master/MBA, 90 ECTS part-time: Volume approx. 30",
+            "retrieved_at": "2026-05-15T09:36:20.104043+00:00",
+            "confidence": "medium",
+            "review_note": "Visa-sensitive deadline keyword found."
+          }
+        ],
+        "deadlines": [
+          {
+            "source_url": "https://www.nithh.org/your-single-degree-24m",
+            "source_text": "Application period October 1, 2024 until September 15, 2025 > learn how to apply here",
+            "retrieved_at": "2026-05-15T09:36:20.104043+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Take the next step in your career! The NIT Master’s Program (MBA/M.A.) in Technology Management prepares you for responsible leadership and management tasks. Th",
+          "text": "Together with fellow students you will learn to plan and implement complex projects and innovative ideas independently. Our international community of students and lecturers creates an intercultural atmosphere in which individual learning is made possible through freedom and intensive learning support. Flexible studies – alongside your doctorate or career!"
+        },
+        {
+          "heading": "You decide whether you complete our Master's program with 90 or 120 ECTS . Depending on your previous studies and your personal goals and requirements, you can ",
+          "text": "For a Master's degree with 120 ECTS you will participate in additional modules (complementary modules) and thus collect additional credit points. The 120 ECTS study option is particularly attractive for foreign students who wish to apply for a student visa for Germany. YOUR MBA/M.A. IN 24 MONTHS: OVERVIEW 24 months including Master Thesis and internship Recommended course of studies: Master/MBA, 90 ECTS part-time: Volume approx. 30 hours/week = 3 semesters + 1 semester for the thesis Master/MBA, 120 ECTS part-time: Volume approx. 30 hours/week = 3 semesters + 1 semester for the thesis Master/MBA, 120 ECTS full-time: Volume approx. 40 hours/week = 3 semesters + 1 semester for the thesis 25 to 35 students Start of study program October 2025 Start of German-language course September 2025 Application period October 1, 2024 until September 15, 2025 > learn how to apply here Master of Business Administration (MBA) Master of Arts (Work experience < 1 years) Degree conferred by Hamburg University of Technology (TUHH) 90 or 120 ECTS FIBAA Master 90 ECTS: 26,750 € + 150 € Master 120 ECTS: + 9.750 EUR A practical and project-oriented learning concept that promotes future-oriented competencies International and intercultural community"
+        },
+        {
+          "heading": "The Technology Management program is specially designed for engineers, scientists and graduates of business-related studies with a first university degree and e",
+          "text": "I am gladly at your disposal Admissions & Company Relations Manager wolfgang.hoell@nithh.de +49 40 42878 3789 +49 176 55058945 NIT Northern Institute of Technology Management gGmbH – the Business School at the Hamburg University of Technology TUHH +49 40 30601 3787 info@nithh.de TUHH Campus, Building F Kasernenstr. 12, D-21073 Hamburg"
+        }
+      ],
+      "needs_human_review": false
+    }
+  ],
+  "skipped": [],
+  "review_seed_config": {
+    "seed_urls": [
+      "https://www.nithh.org/study-technology-management",
+      "https://www.nithh.org/your-double-degree",
+      "https://www.nithh.org/your-single-degree-24m",
+      "https://www.nithh.org/business-analytics-and-ai",
+      "https://www.nithh.org/admissions"
+    ],
+    "review_notes": [
+      "Partner list URL nithh.de redirects to nithh.org.",
+      "Programme pages expose overview, application period, and requirements."
+    ],
+    "crawl_cautions": [
+      "Avoid apply and HubSpot form endpoints."
+    ]
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "generated_at": "2026-05-15T09:36:56.748097+00:00",
+  "school_count": 12,
+  "max_pages": 8,
+  "delay_seconds": 0.2,
+  "timeout_seconds": 12.0,
+  "schools": [
+    {
+      "school": "TUM Asia",
+      "partner_status": "confirmed_from_offer_text",
+      "crawl_root_url": "https://tum-asia.edu.sg/",
+      "output_path": "outputs\\tum_asia_admissions.json",
+      "robots_status": "available",
+      "robots_error": null,
+      "crawl_summary": {
+        "pages_fetched": 8,
+        "pages_skipped": 0,
+        "programs_extracted": 7,
+        "programs_needing_human_review": 6
+      },
+      "review_notes": [
+        "Likely MSc programme pattern is /graduate-studies/master-{program-slug}/.",
+        "Undergraduate admissions may route through SIT, so keep graduate and undergraduate review separate."
+      ],
+      "crawl_cautions": [
+        "Verify robots before crawling PDFs/pages.",
+        "Skip application forms and PDF scraping in this POC."
+      ]
+    },
+    {
+      "school": "Munich Business School",
+      "partner_status": "confirmed_from_offer_text",
+      "crawl_root_url": "https://www.munich-business-school.de/en/",
+      "output_path": "outputs\\munich_business_school_admissions.json",
+      "robots_status": "available",
+      "robots_error": null,
+      "crawl_summary": {
+        "pages_fetched": 8,
+        "pages_skipped": 0,
+        "programs_extracted": 4,
+        "programs_needing_human_review": 0
+      },
+      "review_notes": [
+        "Programme pages use /en/bachelor/{slug}, /en/master/{slug}, and /en/mba/{slug}.",
+        "Master overview links individual MSc/MA pages and application details."
+      ],
+      "crawl_cautions": [
+        "Avoid form submission endpoints."
+      ]
+    },
+    {
+      "school": "International School of Management (ISM)",
+      "partner_status": "confirmed_from_offer_text",
+      "crawl_root_url": "https://en.ism.de/",
+      "output_path": "outputs\\international_school_of_management_ism_admissions.json",
+      "robots_status": "available",
+      "robots_error": null,
+      "crawl_summary": {
+        "pages_fetched": 8,
+        "pages_skipped": 0,
+        "programs_extracted": 6,
+        "programs_needing_human_review": 1
+      },
+      "review_notes": [
+        "Programme detail pattern commonly uses /full-degree-students/{bachelor|master}-programs/{program-slug}/overview.",
+        "Sibling tabs may include application, programme content, and financing."
+      ],
+      "crawl_cautions": [
+        "Only fetch public content; do not enter admission forms."
+      ]
+    },
+    {
+      "school": "CBS International Business School",
+      "partner_status": "confirmed_from_offer_text",
+      "crawl_root_url": "https://www.cbs.de/en/",
+      "output_path": "outputs\\cbs_international_business_school_admissions.json",
+      "robots_status": "available",
+      "robots_error": null,
+      "crawl_summary": {
+        "pages_fetched": 8,
+        "pages_skipped": 0,
+        "programs_extracted": 2,
+        "programs_needing_human_review": 0
+      },
+      "review_notes": [
+        "Listing pages expose many programme cards.",
+        "Programme pages use English paths such as /en/bachelors-degree-germany/{slug}."
+      ],
+      "crawl_cautions": [
+        "Avoid HubSpot forms, preview URLs, preference endpoints, and reCAPTCHA surfaces."
+      ]
+    },
+    {
+      "school": "EBS Universität",
+      "partner_status": "confirmed_from_offer_text",
+      "crawl_root_url": "https://www.ebs.edu/en/",
+      "output_path": "outputs\\ebs_universitat_admissions.json",
+      "robots_status": "available",
+      "robots_error": null,
+      "crawl_summary": {
+        "pages_fetched": 8,
+        "pages_skipped": 0,
+        "programs_extracted": 5,
+        "programs_needing_human_review": 2
+      },
+      "review_notes": [
+        "Official content uses programme-list pages plus individual study programme pages.",
+        "Application portal is useful for human review but higher sensitivity for crawling."
+      ],
+      "crawl_cautions": [
+        "Crawl application portal lightly or skip it until explicitly reviewed."
+      ]
+    },
+    {
+      "school": "SRH Universities",
+      "partner_status": "confirmed_from_offer_text",
+      "crawl_root_url": "https://www.srh-university.de/en/",
+      "output_path": "outputs\\srh_universities_admissions.json",
+      "robots_status": "available",
+      "robots_error": null,
+      "crawl_summary": {
+        "pages_fetched": 5,
+        "pages_skipped": 0,
+        "programs_extracted": 0,
+        "programs_needing_human_review": 0
+      },
+      "review_notes": [
+        "Current official programme surface appears to be srh-university.de.",
+        "Degree landing pages lead to a programme finder and application details."
+      ],
+      "crawl_cautions": [
+        "Avoid aggressive crawling of apply.srh.de."
+      ]
+    },
+    {
+      "school": "Kühne Logistics University (KLU)",
+      "partner_status": "confirmed_from_offer_text",
+      "crawl_root_url": "https://www.klu.org/",
+      "output_path": "outputs\\kuhne_logistics_university_klu_admissions.json",
+      "robots_status": "available",
+      "robots_error": null,
+      "crawl_summary": {
+        "pages_fetched": 8,
+        "pages_skipped": 0,
+        "programs_extracted": 4,
+        "programs_needing_human_review": 1
+      },
+      "review_notes": [
+        "Best crawl seed is the choose-your-program page.",
+        "FAQ pages contain reusable admissions and language evidence."
+      ],
+      "crawl_cautions": [
+        "Skip application portals unless needed."
+      ]
+    },
+    {
+      "school": "Hochschule Fresenius",
+      "partner_status": "confirmed_from_offer_text",
+      "crawl_root_url": "https://www.hs-fresenius.com/",
+      "output_path": "outputs\\hochschule_fresenius_admissions.json",
+      "robots_status": "available",
+      "robots_error": null,
+      "crawl_summary": {
+        "pages_fetched": 8,
+        "pages_skipped": 0,
+        "programs_extracted": 3,
+        "programs_needing_human_review": 0
+      },
+      "review_notes": [
+        "Degree landing pages list programme links under /study-programs/.",
+        "Central admission-requirements page is a strong reusable seed."
+      ],
+      "crawl_cautions": [
+        "Prefer programme/admission pages over lead-form application pages."
+      ]
+    },
+    {
+      "school": "NIT Northern Institute of Technology Management",
+      "partner_status": "confirmed_from_offer_text",
+      "crawl_root_url": "https://www.nithh.org/",
+      "output_path": "outputs\\nit_northern_institute_of_technology_management_admissions.json",
+      "robots_status": "available",
+      "robots_error": null,
+      "crawl_summary": {
+        "pages_fetched": 6,
+        "pages_skipped": 0,
+        "programs_extracted": 2,
+        "programs_needing_human_review": 0
+      },
+      "review_notes": [
+        "Partner list URL nithh.de redirects to nithh.org.",
+        "Programme pages expose overview, application period, and requirements."
+      ],
+      "crawl_cautions": [
+        "Avoid apply and HubSpot form endpoints."
+      ]
+    },
+    {
+      "school": "Hochschule Bremen",
+      "partner_status": "confirmed_from_offer_text",
+      "crawl_root_url": "https://www.hs-bremen.de/en/",
+      "output_path": "outputs\\hochschule_bremen_admissions.json",
+      "robots_status": "available",
+      "robots_error": null,
+      "crawl_summary": {
+        "pages_fetched": 4,
+        "pages_skipped": 1,
+        "programs_extracted": 0,
+        "programs_needing_human_review": 0
+      },
+      "review_notes": [
+        "Best pattern is /en/study/degree-programme/{slug}/.",
+        "Individual pages often contain application period, admission restriction, requirements, language, and institution."
+      ],
+      "crawl_cautions": [
+        "Respect robots exclusions for query variants, TYPO3 paths, uploads, and SQL files.",
+        "IGC programmes are linked out and handled separately."
+      ]
+    },
+    {
+      "school": "ESMT Berlin",
+      "partner_status": "candidate_from_partner_logo",
+      "crawl_root_url": "https://esmt.berlin/",
+      "output_path": "outputs\\esmt_berlin_admissions.json",
+      "robots_status": "available",
+      "robots_error": null,
+      "crawl_summary": {
+        "pages_fetched": 8,
+        "pages_skipped": 0,
+        "programs_extracted": 4,
+        "programs_needing_human_review": 0
+      },
+      "review_notes": [
+        "Admissions pages are nested under each programme and include requirements, process, deadlines, and apply links."
+      ],
+      "crawl_cautions": [
+        "Robots disallow PDFs, search, login, node, and media oembed paths.",
+        "Avoid PDFs and apply portal."
+      ]
+    },
+    {
+      "school": "International Graduate Center, Hochschule Bremen",
+      "partner_status": "candidate_from_partner_logo",
+      "crawl_root_url": "https://www.graduatecenter.org/en/",
+      "output_path": "outputs\\international_graduate_center_hochschule_bremen_admissions.json",
+      "robots_status": "available",
+      "robots_error": null,
+      "crawl_summary": {
+        "pages_fetched": 8,
+        "pages_skipped": 1,
+        "programs_extracted": 5,
+        "programs_needing_human_review": 1
+      },
+      "review_notes": [
+        "Separate programme pages live under /en/mba-master/.",
+        "Central requirements page contains general and programme-specific requirements."
+      ],
+      "crawl_cautions": [
+        "Respect robots exclusions for TYPO3 paths and selected query parameters."
+      ]
+    }
+  ]
+}
