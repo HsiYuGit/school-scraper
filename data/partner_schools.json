@@ -1,0 +1,98 @@
+{
+  "source": {
+    "consultancy": "Gut! 好德",
+    "homepage_url": "https://www.gut-haode.com/",
+    "about_url": "https://www.gut-haode.com/about-us/",
+    "retrieved_date": "2026-05-15",
+    "notes": [
+      "首頁優惠區明確列出適用學校：TUM Asia, Munich Business School, ISM, CBS, EBS, SRH, KLU, Hochschule Fresenius, NIT, Hochschule Bremen 等。",
+      "about-us 合作夥伴 logo 區另出現 ESMT、IGC 等教育機構；非學校服務夥伴如 TSMC、Expatrio、Fintiba、Dr. Walter、AIESEC 未列入學校條件 POC。"
+    ]
+  },
+  "schools": [
+    {
+      "name": "TUM Asia",
+      "official_url": "https://tum-asia.edu.sg/",
+      "country": "Singapore",
+      "partner_status": "confirmed_from_offer_text",
+      "school_type": "university_partner"
+    },
+    {
+      "name": "Munich Business School",
+      "official_url": "https://www.munich-business-school.de/en/",
+      "country": "Germany",
+      "partner_status": "confirmed_from_offer_text",
+      "school_type": "university"
+    },
+    {
+      "name": "International School of Management (ISM)",
+      "official_url": "https://en.ism.de/",
+      "country": "Germany",
+      "partner_status": "confirmed_from_offer_text",
+      "school_type": "university"
+    },
+    {
+      "name": "CBS International Business School",
+      "official_url": "https://www.cbs.de/en/",
+      "country": "Germany",
+      "partner_status": "confirmed_from_offer_text",
+      "school_type": "university"
+    },
+    {
+      "name": "EBS Universität",
+      "official_url": "https://www.ebs.edu/en/",
+      "country": "Germany",
+      "partner_status": "confirmed_from_offer_text",
+      "school_type": "university"
+    },
+    {
+      "name": "SRH Universities",
+      "official_url": "https://www.srh-universities.de/en/",
+      "country": "Germany",
+      "partner_status": "confirmed_from_offer_text",
+      "school_type": "university_group"
+    },
+    {
+      "name": "Kühne Logistics University (KLU)",
+      "official_url": "https://www.klu.org/",
+      "country": "Germany",
+      "partner_status": "confirmed_from_offer_text",
+      "school_type": "university"
+    },
+    {
+      "name": "Hochschule Fresenius",
+      "official_url": "https://www.hs-fresenius.com/",
+      "country": "Germany",
+      "partner_status": "confirmed_from_offer_text",
+      "school_type": "university"
+    },
+    {
+      "name": "NIT Northern Institute of Technology Management",
+      "official_url": "https://www.nithh.de/",
+      "country": "Germany",
+      "partner_status": "confirmed_from_offer_text",
+      "school_type": "institute"
+    },
+    {
+      "name": "Hochschule Bremen",
+      "official_url": "https://www.hs-bremen.de/en/",
+      "country": "Germany",
+      "partner_status": "confirmed_from_offer_text",
+      "school_type": "university"
+    },
+    {
+      "name": "ESMT Berlin",
+      "official_url": "https://esmt.berlin/",
+      "country": "Germany",
+      "partner_status": "candidate_from_partner_logo",
+      "school_type": "university"
+    },
+    {
+      "name": "International Graduate Center, Hochschule Bremen",
+      "official_url": "https://www.graduatecenter.org/en/",
+      "country": "Germany",
+      "partner_status": "candidate_from_partner_logo",
+      "school_type": "graduate_center"
+    }
+  ]
+}
