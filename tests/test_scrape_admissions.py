@@ -1,10 +1,26 @@
 import unittest
 import urllib.robotparser
+import json
+from pathlib import Path
 
 from scripts.scrape_admissions import Page, RobotPolicy, looks_like_program_page, page_to_program
 
 
 class AdmissionExtractionTest(unittest.TestCase):
+    def test_v0_2_fixture_has_fixed_requirement_taxonomy(self):
+        fixture_path = Path(__file__).parent / "fixtures" / "mbs_v0_2_sample.json"
+        payload = json.loads(fixture_path.read_text(encoding="utf-8"))
+        program = payload["programs"][0]
+
+        self.assertEqual(payload["schema_version"], "0.2")
+        self.assertEqual(program["school"]["partner_status"], "confirmed_from_offer_text")
+        self.assertIn("requirements", program)
+        self.assertIn("raw_evidence_sections", program)
+        self.assertIn("academic_background", program["requirements"])
+        self.assertIn("subject_prerequisites", program["requirements"])
+        self.assertIn("language_requirements", program["requirements"])
+        self.assertIn("international_requirements", program["requirements"])
+
     def test_extracts_requirement_section_from_program_page(self):
         page = Page(
             url="https://example.edu/programs/msc-management",

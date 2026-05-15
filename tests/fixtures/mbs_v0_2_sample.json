@@ -1,0 +1,146 @@
+{
+  "schema_version": "0.2",
+  "school": {
+    "name": "Munich Business School",
+    "url": "https://www.munich-business-school.de/en/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university"
+  },
+  "retrieved_at": "2026-05-15T00:00:00+00:00",
+  "crawler_policy": {
+    "respects_robots_txt": true,
+    "same_host_only": true,
+    "max_pages": 40,
+    "delay_seconds": 1.0,
+    "timeout_seconds": 15.0,
+    "user_agent": "study-admissions-poc/0.1 (+https://www.gut-haode.com/ partner-school research)",
+    "no_login_captcha_paywall_bypass": true,
+    "robots_url": "https://www.munich-business-school.de/robots.txt",
+    "robots_status": "available",
+    "robots_error": null,
+    "sitemaps_discovered": []
+  },
+  "crawl_summary": {
+    "pages_fetched": 1,
+    "pages_skipped": 0,
+    "programs_extracted": 1,
+    "programs_needing_human_review": 0
+  },
+  "programs": [
+    {
+      "school": {
+        "name": "Munich Business School",
+        "url": "https://www.munich-business-school.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "MBA General Management",
+        "degree": "MBA",
+        "level": "master",
+        "url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+        "campus": null,
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "recognized degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Recognized degree in any subject."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "85",
+            "component_scores": [
+              "22 writing",
+              "20 all other bands"
+            ],
+            "validity": "2 years",
+            "waiver": [
+              "Schooling completed in English",
+              "First academic degree completed in English"
+            ]
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "6.5",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          "Personal interview"
+        ],
+        "work_experience": {
+          "minimum_years": 2,
+          "relevance": "pertinent work experience after first degree",
+          "notes": []
+        },
+        "documents": [
+          "Letter of motivation",
+          "Current curriculum vitae",
+          "Official academic transcript",
+          "Employer references",
+          "Proof of English proficiency",
+          "Passport details page",
+          "Passport size photo",
+          "Completed application form"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "Earlier application deadlines may apply for non-Europeans requiring a visa."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "January 31",
+          "October 31",
+          "July 15",
+          "April 30"
+        ],
+        "intakes": [
+          "Spring semester",
+          "Winter semester"
+        ],
+        "application_channel": "Online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "application fee",
+          "tuition fees"
+        ]
+      },
+      "evidence": {
+        "language_requirements": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "TOEFL iBT & Home Edition: min. 85 ... IELTS 6.5",
+            "retrieved_at": "2026-05-15T00:00:00+00:00",
+            "confidence": "high",
+            "review_note": "Direct score extraction from admissions text."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Academic requirements",
+          "text": "Recognized degree, work experience, English language skills, and application documents."
+        }
+      ],
+      "needs_human_review": false
+    }
+  ],
+  "skipped": []
+}

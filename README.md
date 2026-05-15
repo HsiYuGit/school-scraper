@@ -36,22 +36,20 @@
 python scripts\scrape_admissions.py "https://www.klu.org/" --seed-url "https://www.klu.org/degree-programs/choose-your-program/master-management/" --out outputs\klu_admissions.json --max-pages 30 --delay 1
 ```
 
-輸出 schema 目前包含：
+輸出 schema 目前升級目標為 v0.2，主體不再只是 admission requirement 原文區塊，而是固定 taxonomy：
 
-- `school_url`
-- `retrieved_at`
-- `crawler_policy`
-- `crawl_summary`
-- `programs[].program_name`
-- `programs[].url`
-- `programs[].degree`
-- `programs[].language`
-- `programs[].application_deadline_evidence`
-- `programs[].tuition_evidence`
-- `programs[].admission_requirements[]`
+- `school`：學校名稱、官方 URL、國家、好德合作狀態。
+- `program`：學程名稱、degree、level、URL、campus、授課語言、parent/specialization。
+- `requirements`：academic background、subject prerequisites、language、tests、work experience、documents、conditional paths、international requirements。
+- `application`：deadline、intake、application channel、Uni-assist/VPD、fees。
+- `evidence`：每個結構化欄位的官方頁面來源、原文、信心與人工備註。
+- `raw_evidence_sections`：保留爬蟲原始區塊以利追溯，但不作為主要資料模型。
+
+詳細欄位定義見 `docs/admissions_schema_v0_2.md`；固定範例見 `tests/fixtures/mbs_v0_2_sample.json`。
 
 ## 後續 POC 目標
 
 - 擴充更多合作學校的人工 reviewed seed URL。
 - 將 `program` 與 `specialization` 的資料層級拆得更清楚。
 - 將 admission requirement 文字再拆成學歷、語言、文件、期限、費用等欄位。
+- 為好德清單內 12 所學校建立可重跑 seed config 與批次輸出 manifest。

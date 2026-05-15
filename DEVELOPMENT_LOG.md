@@ -16,6 +16,8 @@
 - 已完成第一個原子提交：`808a225 Add partner school source list`。
 - 已完成第二部分爬蟲程式提交：`30aa0be Add admissions scraper POC`、`1ca0031 Improve admissions crawler discovery`、`87c7a6e Filter admissions extraction to program pages`、`5017221 Deduplicate redirected program pages`。
 - 已產出 MBS POC JSON：`outputs/munich_business_school_admissions.json`。
+- 定義 v0.2 admissions schema，將輸出目標改為可比對學生條件的 structured requirements taxonomy。
+- 新增 `docs/admissions_schema_v0_2.md` 與 `tests/fixtures/mbs_v0_2_sample.json`，作為後續爬蟲重構的固定靶心。
 
 ### 進行中
 
@@ -45,6 +47,7 @@ python scripts\scrape_admissions.py "https://www.munich-business-school.de/en/" 
 
 ### 待做
 
-- 對至少一所合作學校執行實際抓取，產出 `outputs/*.json`。
-- 檢查實際 JSON 內容是否可讀、可追溯，並記錄命令。
+- 重構 scraper，使輸出符合 v0.2 schema，並保留 raw evidence sections 作追溯。
+- 對好德清單 12 所學校執行實際抓取，產出 `outputs/*.json` 與 summary manifest。
+- 檢查實際 JSON 內容是否可讀、可追溯，並記錄命令與人工 review 摘要。
 - 若正式化，需進一步確認各學校網站 terms of use、資料庫權利、商業用途與個資風險。
