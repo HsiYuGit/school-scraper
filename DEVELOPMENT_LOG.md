@@ -18,6 +18,8 @@
 - 已產出 MBS POC JSON：`outputs/munich_business_school_admissions.json`。
 - 定義 v0.2 admissions schema，將輸出目標改為可比對學生條件的 structured requirements taxonomy。
 - 新增 `docs/admissions_schema_v0_2.md` 與 `tests/fixtures/mbs_v0_2_sample.json`，作為後續爬蟲重構的固定靶心。
+- 重構 `scripts/scrape_admissions.py` 的 program 輸出：新增 `SchoolMetadata`、v0.2 `program`/`requirements`/`application`/`evidence`/`raw_evidence_sections` 結構，並加入 `needs_human_review` 以支援跨校 iteration。
+- 新增 normalization 規則，先抽 ECTS、先修科目、語言測驗分數、文件、工作經驗、面試/case study、Uni-assist/VPD 與簽證相關提醒。
 
 ### 進行中
 
@@ -33,6 +35,8 @@
 - `python -m json.tool data\partner_schools.json`：通過。
 - `python -m unittest tests.test_scrape_admissions`：通過。
 - `python -m py_compile scripts\scrape_admissions.py tests\test_scrape_admissions.py`：通過。
+- `python -m unittest tests.test_scrape_admissions`：v0.2 schema fixture 與 structured normalization 測試通過。
+- `$env:PYTHONDONTWRITEBYTECODE='1'; python -m py_compile scripts\scrape_admissions.py tests\test_scrape_admissions.py`：通過；使用 `PYTHONDONTWRITEBYTECODE` 避免 Windows 上既有 `__pycache__` lock 造成誤報。
 - 本機 sandbox 對多個官方站的 HTTPS 連線回傳 connection refused；已修正程式避免將環境問題誤判為 robots 封鎖。
 - 人工 review `https://www.munich-business-school.de/en/master`：頁面公開列出 Master International Business、Master Innovation & Entrepreneurship、Master International Marketing and Brand Management、Master Sports Management and Media、Master in Finance、Pre-Master；爬蟲輸出包含上述頁面。
 - MBS sitemap 另帶出 Master International Business 底下 7 個 specialization 頁；目前保留為獨立 program record，後續 schema 可再決定要當 program 或 specialization。

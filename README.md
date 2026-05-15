@@ -36,6 +36,12 @@
 python scripts\scrape_admissions.py "https://www.klu.org/" --seed-url "https://www.klu.org/degree-programs/choose-your-program/master-management/" --out outputs\klu_admissions.json --max-pages 30 --delay 1
 ```
 
+可用 metadata 參數把好德合作狀態寫進輸出：
+
+```powershell
+python scripts\scrape_admissions.py "https://www.munich-business-school.de/en/" --school-name "Munich Business School" --country Germany --partner-status confirmed_from_offer_text --school-type university --seed-url "https://www.munich-business-school.de/en/master" --out outputs\munich_business_school_admissions.json --max-pages 40 --delay 1 --timeout 15
+```
+
 輸出 schema 目前升級目標為 v0.2，主體不再只是 admission requirement 原文區塊，而是固定 taxonomy：
 
 - `school`：學校名稱、官方 URL、國家、好德合作狀態。
@@ -46,6 +52,8 @@ python scripts\scrape_admissions.py "https://www.klu.org/" --seed-url "https://w
 - `raw_evidence_sections`：保留爬蟲原始區塊以利追溯，但不作為主要資料模型。
 
 詳細欄位定義見 `docs/admissions_schema_v0_2.md`；固定範例見 `tests/fixtures/mbs_v0_2_sample.json`。
+
+因為各校網站版面差異很大，v0.2 採 evidence-first 策略：能明確抽出的 ECTS、語言分數、文件、工作經驗等會進入 structured fields；抽不出或信心不足時會保留 raw evidence 並標記 `needs_human_review`，避免把某一所學校的模板硬套到其他學校。
 
 ## 後續 POC 目標
 

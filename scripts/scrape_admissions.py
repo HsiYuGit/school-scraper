@@ -55,6 +55,61 @@ DEGREE_RE = re.compile(r"\b(M\.?Sc\.?|MSc|MBA|M\.?A\.?|MA|B\.?Sc\.?|BSc|B\.?A\.?
 LANGUAGE_RE = re.compile(r"\b(English|German|Deutsch)\b", re.IGNORECASE)
 DEADLINE_RE = re.compile(r"\b(deadline|application period|apply by|intake)\b[^.\n]{0,140}", re.IGNORECASE)
 TUITION_RE = re.compile(r"\b(tuition|fees?)\b[^.\n]{0,140}", re.IGNORECASE)
+ECTS_RE = re.compile(
+    r"\b(?P<credits>\d{1,3})\s*ECTS(?:\s+credits?)?"
+    r"(?:\s+(?:in|of|from)\s+(?P<subject>[A-Za-z][A-Za-z &/\-]{1,60}))?",
+    re.IGNORECASE,
+)
+GRADE_RE = re.compile(r"\b(?:grade|gpa|average)[^.\n]{0,50}?(?:at least|minimum|min\.?|of)?\s*(?P<grade>\d+(?:[.,]\d+)?)", re.IGNORECASE)
+LANGUAGE_TEST_PATTERNS = {
+    "IELTS": re.compile(r"\bIELTS\b[^\n]{0,80}?(?P<score>\d+(?:[.,]\d+)?)", re.IGNORECASE),
+    "TOEFL iBT": re.compile(r"\bTOEFL(?:\s+iBT|\s+IBT)?(?:\s*&\s*Home Edition)?\b[^\n]{0,80}?(?P<score>\d{2,3})", re.IGNORECASE),
+    "Duolingo": re.compile(r"\bDuolingo\b[^\n]{0,80}?(?P<score>\d{2,3})", re.IGNORECASE),
+    "Cambridge": re.compile(r"\bCambridge\b[^\n]{0,80}?(?P<score>[A-C][12]?|\d{2,3})", re.IGNORECASE),
+    "ELS": re.compile(r"\bELS\b[^\n]{0,80}?(?P<score>\d{2,3})", re.IGNORECASE),
+    "German": re.compile(r"\b(?:German|Deutsch)\b[^\n]{0,80}?(?P<score>A1|A2|B1|B2|C1|C2|TestDaF|DSH)", re.IGNORECASE),
+}
+SUBJECT_KEYWORDS = {
+    "economics": ("economics", "economy"),
+    "accounting": ("accounting",),
+    "mathematics": ("mathematics", "maths", "math"),
+    "statistics": ("statistics", "statistical"),
+    "business studies": ("business studies", "business administration", "management"),
+    "finance": ("finance",),
+    "business law": ("business law", "law"),
+}
+DOCUMENT_KEYWORDS = {
+    "CV": ("cv", "curriculum vitae", "resume", "résumé"),
+    "Motivation letter": ("motivation letter", "letter of motivation", "personal statement"),
+    "Transcript": ("transcript", "academic record"),
+    "Degree certificate": ("degree certificate", "graduation certificate", "diploma"),
+    "Passport": ("passport",),
+    "Reference letter": ("reference", "recommendation"),
+    "Proof of English proficiency": ("proof of english", "english proficiency"),
+    "Photo": ("photo",),
+    "Application form": ("application form",),
+    "Portfolio": ("portfolio",),
+}
+TEST_KEYWORDS = {
+    "GMAT": ("gmat",),
+    "GRE": ("gre",),
+    "TM-WISO": ("tm-wiso", "tm wiso"),
+    "Aptitude test": ("aptitude test",),
+    "Personal interview": ("personal interview", "admission interview", "online interview"),
+    "Case study": ("case study",),
+}
+CONDITIONAL_PATH_KEYWORDS = {
+    "Pre-master": ("pre-master", "premaster"),
+    "Bridge course": ("bridge course", "preparatory course"),
+    "Transfer/lateral entry": ("transfer", "lateral entry"),
+    "Non-consecutive admission": ("non-consecutive",),
+}
+INTERNATIONAL_KEYWORDS = {
+    "Uni-assist/VPD": ("uni-assist", "vpd"),
+    "Visa-sensitive deadline": ("visa", "non-european", "non-eu"),
+    "APS": ("aps",),
+    "Country-specific reminder": ("china", "india", "vietnam"),
+}
 ACADEMIC_PROGRAM_PATHS = (
     "/program/",
     "/programs/",
@@ -102,6 +157,24 @@ class RobotPolicy:
         if self.status != "available":
             return False
         return self.parser.can_fetch(user_agent, url)
+
+
+@dataclasses.dataclass(frozen=True)
+class SchoolMetadata:
+    name: str | None
+    url: str
+    country: str | None
+    partner_status: str | None
+    school_type: str | None
+
+    def as_dict(self) -> dict:
+        return {
+            "name": self.name,
+            "url": self.url,
+            "country": self.country,
+            "partner_status": self.partner_status,
+            "school_type": self.school_type,
+        }
 
 
 class TextLinkParser(html.parser.HTMLParser):
@@ -321,7 +394,11 @@ def discover_sitemap_urls(
     return urls
 
 
-def page_to_program(page: Page) -> dict | None:
+def page_to_program(
+    page: Page,
+    school: SchoolMetadata | None = None,
+    retrieved_at: str | None = None,
+) -> dict | None:
     if not looks_like_program_page(page.url):
         return None
     full_text = "\n".join(page.text_blocks)
@@ -333,14 +410,33 @@ def page_to_program(page: Page) -> dict | None:
         return None
 
     title = clean_program_title(page.title, page.text_blocks)
+    retrieved_at = retrieved_at or dt.datetime.now(dt.UTC).isoformat()
+    school = school or SchoolMetadata(name=None, url="", country=None, partner_status=None, school_type=None)
+    raw_sections = [{"heading": item["heading"], "text": item["text"]} for item in requirements]
+    evidence_text = "\n".join(f"{item['heading']} {item['text']}" for item in requirements)
+    structured_requirements, evidence = normalize_requirements(evidence_text, page.url, retrieved_at)
+    application, application_evidence = normalize_application(full_text, page.url, retrieved_at)
+    evidence.update(application_evidence)
+    languages = unique_matches(LANGUAGE_RE, full_text)
+    needs_human_review = needs_review(structured_requirements, application, raw_sections)
+
     return {
-        "program_name": title,
-        "url": page.url,
-        "degree": first_match(DEGREE_RE, f"{title}\n{full_text}"),
-        "language": unique_matches(LANGUAGE_RE, full_text),
-        "application_deadline_evidence": unique_matches(DEADLINE_RE, full_text, limit=3),
-        "tuition_evidence": unique_matches(TUITION_RE, full_text, limit=3),
-        "admission_requirements": requirements,
+        "school": school.as_dict(),
+        "program": {
+            "name": title,
+            "degree": first_match(DEGREE_RE, f"{title}\n{full_text}"),
+            "level": infer_program_level(title, page.url),
+            "url": page.url,
+            "campus": infer_campus(full_text),
+            "language_of_instruction": languages,
+            "parent_program": infer_parent_program(title, page.url),
+            "specialization": infer_specialization(title, page.url),
+        },
+        "requirements": structured_requirements,
+        "application": application,
+        "evidence": evidence,
+        "raw_evidence_sections": raw_sections,
+        "needs_human_review": needs_human_review,
     }
 
 
@@ -383,6 +479,291 @@ def extract_requirement_sections(blocks: list[str]) -> list[dict]:
     return sections
 
 
+def normalize_requirements(text: str, source_url: str, retrieved_at: str) -> tuple[dict, dict]:
+    requirements = empty_requirements()
+    evidence: dict[str, list[dict]] = {}
+
+    ects_matches = list(ECTS_RE.finditer(text))
+    if ects_matches:
+        first_ects = int(ects_matches[0].group("credits"))
+        requirements["academic_background"]["minimum_ects"] = first_ects
+        requirements["academic_background"]["notes"].append(f"Found {first_ects} ECTS requirement.")
+        add_evidence(evidence, "academic_background", source_url, ects_matches[0].group(0), retrieved_at, "high", "Direct ECTS extraction.")
+    if re.search(r"\b(bachelor'?s?|undergraduate|first academic degree|recognized degree)\b", text, re.IGNORECASE):
+        requirements["academic_background"]["degree_level"] = "bachelor or recognized first degree"
+        add_evidence(evidence, "academic_background", source_url, sentence_around(text, "degree"), retrieved_at, "medium", "Degree-level requirement inferred from admissions text.")
+    if re.search(r"\bstate-recognized|recognized university|accredited\b", text, re.IGNORECASE):
+        requirements["academic_background"]["recognized_institution"] = "recognized or accredited institution"
+    if grade := first_named_match(GRADE_RE, text, "grade"):
+        requirements["academic_background"]["minimum_grade"] = grade.replace(",", ".")
+
+    requirements["subject_prerequisites"] = extract_subject_prerequisites(text, source_url, retrieved_at, evidence)
+    requirements["language_requirements"] = extract_language_requirements(text, source_url, retrieved_at, evidence)
+    requirements["test_requirements"] = extract_keyword_list(text, TEST_KEYWORDS, "test_requirements", source_url, retrieved_at, evidence)
+    requirements["work_experience"] = extract_work_experience(text, source_url, retrieved_at, evidence)
+    requirements["documents"] = extract_keyword_list(text, DOCUMENT_KEYWORDS, "documents", source_url, retrieved_at, evidence)
+    requirements["conditional_paths"] = extract_keyword_list(text, CONDITIONAL_PATH_KEYWORDS, "conditional_paths", source_url, retrieved_at, evidence)
+    requirements["international_requirements"] = extract_keyword_list(text, INTERNATIONAL_KEYWORDS, "international_requirements", source_url, retrieved_at, evidence)
+
+    return requirements, evidence
+
+
+def empty_requirements() -> dict:
+    return {
+        "academic_background": {
+            "degree_level": None,
+            "minimum_ects": None,
+            "recognized_institution": None,
+            "minimum_grade": None,
+            "notes": [],
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+            "minimum_years": None,
+            "relevance": None,
+            "notes": [],
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": [],
+    }
+
+
+def extract_subject_prerequisites(text: str, source_url: str, retrieved_at: str, evidence: dict) -> list[dict]:
+    prerequisites: list[dict] = []
+    lower = text.lower()
+    for subject, keywords in SUBJECT_KEYWORDS.items():
+        if not any(keyword in lower for keyword in keywords):
+            continue
+        ects = None
+        for match in ECTS_RE.finditer(text):
+            subject_text = (match.group("subject") or "").lower()
+            if subject_text and any(keyword in subject_text for keyword in keywords):
+                ects = int(match.group("credits"))
+                break
+        prerequisites.append({"subject": subject, "minimum_ects": ects, "notes": []})
+        add_evidence(evidence, "subject_prerequisites", source_url, sentence_around(text, keywords[0]), retrieved_at, "medium", "Subject prerequisite keyword found.")
+    return prerequisites
+
+
+def extract_language_requirements(text: str, source_url: str, retrieved_at: str, evidence: dict) -> list[dict]:
+    requirements: list[dict] = []
+    seen: set[str] = set()
+    validity = "2 years" if re.search(r"\b(two|2)\s+years?\b", text, re.IGNORECASE) else None
+    waiver = extract_waivers(text)
+    for test_name, pattern in LANGUAGE_TEST_PATTERNS.items():
+        for match in pattern.finditer(text):
+            score = match.group("score").replace(",", ".")
+            key = f"{test_name}:{score}"
+            if key in seen:
+                continue
+            seen.add(key)
+            requirements.append(
+                {
+                    "test": test_name,
+                    "minimum_score": score,
+                    "component_scores": extract_component_scores(match.group(0)),
+                    "validity": validity,
+                    "waiver": waiver,
+                }
+            )
+            add_evidence(evidence, "language_requirements", source_url, match.group(0), retrieved_at, "high", "Direct language-test score extraction.")
+    return requirements
+
+
+def extract_work_experience(text: str, source_url: str, retrieved_at: str, evidence: dict) -> dict:
+    result = {"minimum_years": None, "relevance": None, "notes": []}
+    pattern = re.compile(
+        r"\b(?:at least|minimum|min\.?)?\s*(?P<years>\d+|one|two|three|four|five)\s+years?\b[^.\n]{0,100}?(?:work|professional|experience)",
+        re.IGNORECASE,
+    )
+    match = pattern.search(text)
+    if not match:
+        match = re.search(r"\bwork experience\b[^.\n]{0,140}", text, re.IGNORECASE)
+    if match:
+        years = number_from_word(match.groupdict().get("years"))
+        result["minimum_years"] = years
+        result["relevance"] = normalize_space(match.group(0))
+        add_evidence(evidence, "work_experience", source_url, match.group(0), retrieved_at, "high" if years else "medium", "Work-experience requirement found.")
+    return result
+
+
+def normalize_application(text: str, source_url: str, retrieved_at: str) -> tuple[dict, dict]:
+    evidence: dict[str, list[dict]] = {}
+    deadlines = unique_matches(DEADLINE_RE, text, limit=8)
+    fees = unique_matches(TUITION_RE, text, limit=5)
+    intakes = unique_list(re.findall(r"\b(?:spring|summer|fall|winter)\s+(?:semester|intake|term)\b", text, flags=re.IGNORECASE))
+    channel = None
+    if re.search(r"\bonline application\b", text, re.IGNORECASE):
+        channel = "Online application"
+        add_evidence(evidence, "application_channel", source_url, sentence_around(text, "online application"), retrieved_at, "medium", "Application channel keyword found.")
+    uni_assist = None
+    if re.search(r"\buni-assist|VPD\b", text, re.IGNORECASE):
+        uni_assist = sentence_around(text, "uni-assist") if "uni-assist" in text.lower() else sentence_around(text, "VPD")
+        add_evidence(evidence, "uni_assist_or_vpd", source_url, uni_assist, retrieved_at, "medium", "Uni-assist or VPD keyword found.")
+    for deadline in deadlines:
+        add_evidence(evidence, "deadlines", source_url, deadline, retrieved_at, "medium", "Deadline keyword extraction.")
+    return (
+        {
+            "deadlines": deadlines,
+            "intakes": intakes,
+            "application_channel": channel,
+            "uni_assist_or_vpd": uni_assist,
+            "fees": fees,
+        },
+        evidence,
+    )
+
+
+def extract_keyword_list(
+    text: str,
+    keyword_map: dict[str, tuple[str, ...]],
+    evidence_key: str,
+    source_url: str,
+    retrieved_at: str,
+    evidence: dict,
+) -> list[str]:
+    values: list[str] = []
+    lower = text.lower()
+    for label, keywords in keyword_map.items():
+        if not any(keyword in lower for keyword in keywords):
+            continue
+        values.append(label)
+        add_evidence(evidence, evidence_key, source_url, sentence_around(text, keywords[0]), retrieved_at, "medium", f"{label} keyword found.")
+    return values
+
+
+def extract_waivers(text: str) -> list[str]:
+    waivers: list[str] = []
+    lower = text.lower()
+    if "schooling in english" in lower:
+        waivers.append("Schooling completed in English")
+    if "degree in english" in lower or "academic degree in english" in lower:
+        waivers.append("Academic degree completed in English")
+    if "daily business communication" in lower:
+        waivers.append("English used in daily business communication")
+    return waivers
+
+
+def extract_component_scores(text: str) -> list[str]:
+    scores: list[str] = []
+    for match in re.finditer(r"\b(?:min\.?|minimum)?\s*(?:of\s*)?(?P<score>\d{1,3})\s+(?P<component>writing|reading|listening|speaking|all other bands)\b", text, re.IGNORECASE):
+        scores.append(f"{match.group('score')} {match.group('component').lower()}")
+    return scores
+
+
+def needs_review(requirements: dict, application: dict, raw_sections: list[dict]) -> bool:
+    structured_hits = 0
+    if requirements["academic_background"]["degree_level"] or requirements["academic_background"]["minimum_ects"]:
+        structured_hits += 1
+    if requirements["subject_prerequisites"]:
+        structured_hits += 1
+    if requirements["language_requirements"]:
+        structured_hits += 1
+    if requirements["documents"]:
+        structured_hits += 1
+    if requirements["work_experience"]["minimum_years"] is not None:
+        structured_hits += 1
+    if application["deadlines"] or application["application_channel"]:
+        structured_hits += 1
+    return not raw_sections or structured_hits < 2
+
+
+def add_evidence(
+    evidence: dict[str, list[dict]],
+    key: str,
+    source_url: str,
+    source_text: str,
+    retrieved_at: str,
+    confidence: str,
+    review_note: str,
+) -> None:
+    source_text = normalize_space(source_text)
+    if not source_text:
+        return
+    evidence.setdefault(key, [])
+    item = {
+        "source_url": source_url,
+        "source_text": source_text[:500],
+        "retrieved_at": retrieved_at,
+        "confidence": confidence,
+        "review_note": review_note,
+    }
+    if item not in evidence[key]:
+        evidence[key].append(item)
+
+
+def sentence_around(text: str, keyword: str) -> str:
+    if not keyword:
+        return ""
+    match = re.search(re.escape(keyword), text, re.IGNORECASE)
+    if not match:
+        return ""
+    start = max(0, match.start() - 120)
+    end = min(len(text), match.end() + 180)
+    return normalize_space(text[start:end])
+
+
+def first_named_match(pattern: re.Pattern[str], text: str, group_name: str) -> str | None:
+    match = pattern.search(text)
+    return match.group(group_name) if match else None
+
+
+def number_from_word(value: str | None) -> int | None:
+    if not value:
+        return None
+    mapping = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5}
+    value = value.lower()
+    if value.isdigit():
+        return int(value)
+    return mapping.get(value)
+
+
+def infer_program_level(title: str, url: str) -> str | None:
+    haystack = f"{title} {url}".lower()
+    if any(value in haystack for value in ("master", "msc", "m.sc", "mba", "ma", "m.a")):
+        return "master"
+    if any(value in haystack for value in ("bachelor", "bsc", "b.sc", "ba", "b.a")):
+        return "bachelor"
+    if "phd" in haystack or "doctor" in haystack:
+        return "doctoral"
+    return None
+
+
+def infer_campus(text: str) -> str | None:
+    match = re.search(r"\b(?:campus|location)\b[^.\n]{0,80}", text, re.IGNORECASE)
+    return normalize_space(match.group(0)) if match else None
+
+
+def infer_parent_program(title: str, url: str) -> str | None:
+    if "|" in title:
+        return normalize_space(title.split("|", 1)[0])
+    path_parts = [part for part in urllib.parse.urlsplit(url).path.split("/") if part]
+    if len(path_parts) >= 3 and path_parts[-2] in {"international-business", "master-international-business"}:
+        return path_parts[-2].replace("-", " ").title()
+    return None
+
+
+def infer_specialization(title: str, url: str) -> str | None:
+    if "|" in title:
+        return normalize_space(title.split("|", 1)[1])
+    path_parts = [part for part in urllib.parse.urlsplit(url).path.split("/") if part]
+    if len(path_parts) >= 4 and "master" in path_parts:
+        return path_parts[-1].replace("-", " ").title()
+    return None
+
+
+def unique_list(values: Iterable[str]) -> list[str]:
+    result: list[str] = []
+    for value in values:
+        clean = normalize_space(value)
+        if clean and clean not in result:
+            result.append(clean)
+    return result
+
+
 def first_match(pattern: re.Pattern[str], text: str) -> str | None:
     match = pattern.search(text)
     return match.group(0) if match else None
@@ -406,11 +787,25 @@ def build_output(
     robot_policy: RobotPolicy,
     args: argparse.Namespace,
 ) -> dict:
-    programs = dedupe_programs([program for page in pages if (program := page_to_program(page))])
+    retrieved_at = dt.datetime.now(dt.UTC).isoformat()
+    school = SchoolMetadata(
+        name=args.school_name,
+        url=root_url,
+        country=args.country,
+        partner_status=args.partner_status,
+        school_type=args.school_type,
+    )
+    programs = dedupe_programs(
+        [
+            program
+            for page in pages
+            if (program := page_to_program(page, school=school, retrieved_at=retrieved_at))
+        ]
+    )
     return {
-        "schema_version": "0.1",
-        "school_url": root_url,
-        "retrieved_at": dt.datetime.now(dt.UTC).isoformat(),
+        "schema_version": "0.2",
+        "school": school.as_dict(),
+        "retrieved_at": retrieved_at,
         "crawler_policy": {
             "respects_robots_txt": True,
             "same_host_only": True,
@@ -428,6 +823,7 @@ def build_output(
             "pages_fetched": len(pages),
             "pages_skipped": len(skipped),
             "programs_extracted": len(programs),
+            "programs_needing_human_review": sum(1 for program in programs if program["needs_human_review"]),
         },
         "programs": programs,
         "skipped": skipped[:50],
@@ -438,7 +834,7 @@ def dedupe_programs(programs: list[dict]) -> list[dict]:
     seen_urls: set[str] = set()
     deduped: list[dict] = []
     for program in programs:
-        url = program["url"]
+        url = program["program"]["url"]
         if url in seen_urls:
             continue
         seen_urls.add(url)
@@ -456,6 +852,10 @@ def parse_args(argv: Iterable[str] | None = None) -> argparse.Namespace:
         help="Additional same-host page to crawl first, such as a manually reviewed program listing URL.",
     )
     parser.add_argument("--out", default="-", help="Output JSON path. Use '-' for stdout.")
+    parser.add_argument("--school-name", default=None, help="School name to include in v0.2 output metadata.")
+    parser.add_argument("--country", default=None, help="School country to include in v0.2 output metadata.")
+    parser.add_argument("--partner-status", default=None, help="Gut-Haode partner status for this school.")
+    parser.add_argument("--school-type", default=None, help="School type from the partner-school list.")
     parser.add_argument("--max-pages", type=int, default=25, help="Hard crawl limit.")
     parser.add_argument("--delay", type=float, default=1.0, help="Delay between successful requests.")
     parser.add_argument("--timeout", type=float, default=15.0, help="HTTP timeout per request.")
