@@ -1,7 +1,7 @@
 import unittest
 import urllib.robotparser
 
-from scripts.scrape_admissions import Page, RobotPolicy, page_to_program
+from scripts.scrape_admissions import Page, RobotPolicy, looks_like_program_page, page_to_program
 
 
 class AdmissionExtractionTest(unittest.TestCase):
@@ -40,6 +40,20 @@ class AdmissionExtractionTest(unittest.TestCase):
 
         self.assertFalse(policy.can_fetch("study-admissions-poc/0.1", "https://example.edu/"))
         self.assertEqual(policy.status, "unavailable")
+
+    def test_program_url_filter_excludes_events_and_marketing_pages(self):
+        self.assertTrue(
+            looks_like_program_page("https://www.munich-business-school.de/en/master/international-business")
+        )
+        self.assertTrue(
+            looks_like_program_page("https://www.munich-business-school.de/en/mba/mba-full-time")
+        )
+        self.assertFalse(
+            looks_like_program_page("https://www.munich-business-school.de/en/events/event-detail/event/mba-info-session")
+        )
+        self.assertFalse(
+            looks_like_program_page("https://www.munich-business-school.de/en/l/english-taught-masters-in-germany")
+        )
 
 
 if __name__ == "__main__":

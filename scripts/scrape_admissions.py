@@ -55,6 +55,30 @@ DEGREE_RE = re.compile(r"\b(M\.?Sc\.?|MSc|MBA|M\.?A\.?|MA|B\.?Sc\.?|BSc|B\.?A\.?
 LANGUAGE_RE = re.compile(r"\b(English|German|Deutsch)\b", re.IGNORECASE)
 DEADLINE_RE = re.compile(r"\b(deadline|application period|apply by|intake)\b[^.\n]{0,140}", re.IGNORECASE)
 TUITION_RE = re.compile(r"\b(tuition|fees?)\b[^.\n]{0,140}", re.IGNORECASE)
+ACADEMIC_PROGRAM_PATHS = (
+    "/program/",
+    "/programs/",
+    "/programme/",
+    "/programmes/",
+    "/degree-programs/",
+    "/study-programs/",
+    "/en/bachelor/",
+    "/en/master/",
+    "/en/mba",
+    "/en/dba",
+    "/en/l/study-finder/",
+)
+NON_PROGRAM_PATHS = (
+    "/events/",
+    "/event-detail/",
+    "/faqs",
+    "/university/",
+    "/services/",
+    "/international/",
+    "/en/l/bachelor-in-english",
+    "/en/l/english-taught",
+    "/en/l/master-program-in-english",
+)
 
 
 @dataclasses.dataclass
@@ -160,6 +184,13 @@ def looks_relevant(url: str, text: str = "") -> bool:
     return any(hint in haystack for hint in PROGRAM_HINTS)
 
 
+def looks_like_program_page(url: str) -> bool:
+    path = urllib.parse.urlsplit(url).path.lower()
+    if any(blocked in path for blocked in NON_PROGRAM_PATHS):
+        return False
+    return any(allowed in path for allowed in ACADEMIC_PROGRAM_PATHS)
+
+
 def build_robot_policy(root_url: str, user_agent: str, timeout: float) -> RobotPolicy:
     parsed = urllib.parse.urlsplit(root_url)
     robots_url = urllib.parse.urlunsplit((parsed.scheme, parsed.netloc, "/robots.txt", "", ""))
@@ -219,7 +250,7 @@ def crawl(
 
     for sitemap_url in robot_policy.sitemaps:
         for sitemap_page in discover_sitemap_urls(sitemap_url, root_url, robot_policy, user_agent, timeout):
-            if looks_relevant(sitemap_page):
+            if looks_relevant(sitemap_page) and looks_like_program_page(sitemap_page):
                 queue.append(canonicalize_url(sitemap_page))
 
     while queue and len(pages) < max_pages:
@@ -248,7 +279,7 @@ def crawl(
             normalized = canonicalize_url(link)
             if normalized in seen or not same_host(normalized, root_url):
                 continue
-            if looks_relevant(normalized):
+            if looks_relevant(normalized) and looks_like_program_page(normalized):
                 queue.append(normalized)
 
     return pages, skipped, robot_policy
@@ -284,6 +315,8 @@ def discover_sitemap_urls(
 
 
 def page_to_program(page: Page) -> dict | None:
+    if not looks_like_program_page(page.url):
+        return None
     full_text = "\n".join(page.text_blocks)
     if not REQUIREMENT_HEADINGS.search(full_text) and not looks_relevant(page.url, page.title):
         return None
