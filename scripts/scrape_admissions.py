@@ -13,6 +13,7 @@ import argparse
 import dataclasses
 import datetime as dt
 import html.parser
+import http.client
 import json
 import re
 import time
@@ -356,7 +357,7 @@ def crawl(
             time.sleep(delay)
         try:
             page = fetch_page(url, user_agent=user_agent, timeout=timeout)
-        except (urllib.error.URLError, TimeoutError, ValueError, UnicodeDecodeError) as exc:
+        except (urllib.error.URLError, TimeoutError, ValueError, UnicodeDecodeError, http.client.IncompleteRead) as exc:
             skipped.append({"url": url, "reason": type(exc).__name__, "detail": str(exc)[:200]})
             continue
         if page.url in fetched_final_urls:

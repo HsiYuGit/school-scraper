@@ -22,6 +22,8 @@
 - 新增 normalization 規則，先抽 ECTS、先修科目、語言測驗分數、文件、工作經驗、面試/case study、Uni-assist/VPD 與簽證相關提醒。
 - 新增 `data/partner_school_crawl_seeds.json`，用 subagent 人工 review 的結果為 12 所學校建立 per-school root URL、seed URLs、review notes 與 crawl cautions。
 - 新增 `scripts/crawl_partner_schools.py`，可批次讀取 partner list 與 seed config，輸出每校 v0.2 JSON 與 manifest。
+- 修正批次 workflow 的 Windows console UTF-8 輸出，避免 manifest 已寫入後因 CP950 無法列印德文/中文字元而失敗。
+- 將 chunked HTTP `IncompleteRead` 視為單頁 skipped reason，避免單一學校頁面傳輸不完整時中斷整批 12 校抓取。
 
 ### 進行中
 
@@ -40,6 +42,7 @@
 - `python -m unittest tests.test_scrape_admissions`：v0.2 schema fixture 與 structured normalization 測試通過。
 - `$env:PYTHONDONTWRITEBYTECODE='1'; python -m py_compile scripts\scrape_admissions.py tests\test_scrape_admissions.py`：通過；使用 `PYTHONDONTWRITEBYTECODE` 避免 Windows 上既有 `__pycache__` lock 造成誤報。
 - reviewed seed config 測試確認 12 所 partner schools 都有對應 seed 設定，並驗證 output slug 產生規則。
+- 首次 sandbox 批次抓取因本機連線限制全部回傳 `robots_unavailable`；授權網路後發現部分頁面會出現 `IncompleteRead`，已改成可追溯 skipped reason。
 - 本機 sandbox 對多個官方站的 HTTPS 連線回傳 connection refused；已修正程式避免將環境問題誤判為 robots 封鎖。
 - 人工 review `https://www.munich-business-school.de/en/master`：頁面公開列出 Master International Business、Master Innovation & Entrepreneurship、Master International Marketing and Brand Management、Master Sports Management and Media、Master in Finance、Pre-Master；爬蟲輸出包含上述頁面。
 - MBS sitemap 另帶出 Master International Business 底下 7 個 specialization 頁；目前保留為獨立 program record，後續 schema 可再決定要當 program 或 specialization。

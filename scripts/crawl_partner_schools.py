@@ -11,6 +11,7 @@ import argparse
 import datetime as dt
 import json
 import re
+import sys
 import unicodedata
 from pathlib import Path
 from types import SimpleNamespace
@@ -128,7 +129,8 @@ def main(argv: Iterable[str] | None = None) -> int:
     manifest_path = Path(args.manifest)
     manifest_path.parent.mkdir(parents=True, exist_ok=True)
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps(manifest, ensure_ascii=False, indent=2))
+    sys.stdout.buffer.write(json.dumps(manifest, ensure_ascii=False, indent=2).encode("utf-8"))
+    sys.stdout.buffer.write(b"\n")
     return 0
 
 
