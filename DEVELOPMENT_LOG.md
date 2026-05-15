@@ -26,6 +26,7 @@
 - 將 chunked HTTP `IncompleteRead` 視為單頁 skipped reason，避免單一學校頁面傳輸不完整時中斷整批 12 校抓取。
 - 批次 manifest 改為每跑完一所學校就更新，避免全量抓取 timeout 時只留下過期 manifest。
 - 修正語言分數 normalization 的 false positive：同一句中多個語言考試或 TOEFL institution code 不能互相污染，例如 IELTS 不應吃到 ELS 112 或 TOEFL code 5772。
+- 新增語言考試量尺檢查：IELTS、TOEFL iBT、Duolingo、ELS、Cambridge、德文 CEFR 分數需落在合理範圍，避免 IELTS 850 或 TOEFL 7.0 這種跨欄位錯配進入輸出。
 
 ### 進行中
 
@@ -47,6 +48,7 @@
 - 首次 sandbox 批次抓取因本機連線限制全部回傳 `robots_unavailable`；授權網路後發現部分頁面會出現 `IncompleteRead`，已改成可追溯 skipped reason。
 - 全量 12 校、每校 20 頁的批次在本機超過 7 分鐘 timeout；後續不要只依賴一次性全量命令，應以每校或小批次重跑，並靠 incrementally written manifest 判斷完成狀態。
 - 抽查 MBS/ESMT 輸出時發現 regex 若跨過下一個考試名稱，會產生看似完整但錯誤的語言分數；之後新增 normalization 規則時要優先做 false-positive 測試，不只測 happy path。
+- 語言分數不能只靠鄰近文字判斷，還要檢查各考試自己的分數量尺；這種 domain constraint 比單純加長/縮短 regex window 更可靠。
 - 本機 sandbox 對多個官方站的 HTTPS 連線回傳 connection refused；已修正程式避免將環境問題誤判為 robots 封鎖。
 - 人工 review `https://www.munich-business-school.de/en/master`：頁面公開列出 Master International Business、Master Innovation & Entrepreneurship、Master International Marketing and Brand Management、Master Sports Management and Media、Master in Finance、Pre-Master；爬蟲輸出包含上述頁面。
 - MBS sitemap 另帶出 Master International Business 底下 7 個 specialization 頁；目前保留為獨立 program record，後續 schema 可再決定要當 program 或 specialization。

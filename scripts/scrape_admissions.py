@@ -572,6 +572,8 @@ def extract_language_requirements(text: str, source_url: str, retrieved_at: str,
             if not score:
                 continue
             score = score.replace(",", ".")
+            if not plausible_language_score(test_name, score):
+                continue
             key = f"{test_name}:{score}"
             if key in seen:
                 continue
@@ -619,6 +621,28 @@ def extract_language_score(segment: str) -> str | None:
             return match.group("score")
     values = [match.group("score") for match in LANGUAGE_SCORE_RE.finditer(segment)]
     return values[0] if values else None
+
+
+def plausible_language_score(test_name: str, score: str) -> bool:
+    if re.fullmatch(r"A1|A2|B1|B2|C1|C2|TestDaF|DSH", score, re.IGNORECASE):
+        return test_name == "German"
+    try:
+        value = float(score)
+    except ValueError:
+        return False
+    if test_name == "IELTS":
+        return 0 <= value <= 9
+    if "." in score and test_name in {"TOEFL iBT", "Duolingo", "ELS", "Cambridge"}:
+        return False
+    if test_name == "TOEFL iBT":
+        return 0 <= value <= 120
+    if test_name == "Duolingo":
+        return 10 <= value <= 160
+    if test_name == "ELS":
+        return 0 <= value <= 112
+    if test_name == "Cambridge":
+        return 80 <= value <= 230
+    return True
 
 
 def extract_work_experience(text: str, source_url: str, retrieved_at: str, evidence: dict) -> dict:

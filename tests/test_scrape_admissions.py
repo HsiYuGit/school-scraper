@@ -117,6 +117,23 @@ class AdmissionExtractionTest(unittest.TestCase):
         self.assertNotIn(("IELTS", "112"), scores)
         self.assertNotIn(("TOEFL iBT", "5772"), scores)
 
+    def test_language_scores_must_match_test_scale(self):
+        text = "IELTS 850 TOEFL 7.0 IELTS 7.0 TOEFL 95 Duolingo 170 Duolingo 120"
+
+        requirements, _ = normalize_requirements(
+            text,
+            "https://example.edu/programs/mba",
+            "2026-05-15T00:00:00+00:00",
+        )
+        scores = {(item["test"], item["minimum_score"]) for item in requirements["language_requirements"]}
+
+        self.assertIn(("IELTS", "7.0"), scores)
+        self.assertIn(("TOEFL iBT", "95"), scores)
+        self.assertIn(("Duolingo", "120"), scores)
+        self.assertNotIn(("IELTS", "850"), scores)
+        self.assertNotIn(("TOEFL iBT", "7.0"), scores)
+        self.assertNotIn(("Duolingo", "170"), scores)
+
     def test_unavailable_robots_policy_does_not_look_like_block(self):
         parser = urllib.robotparser.RobotFileParser()
         parser.parse([])
