@@ -8,13 +8,13 @@
     "school_type": "university",
     "source_official_url": "https://esmt.berlin/"
   },
-  "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+  "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
   "crawler_policy": {
     "respects_robots_txt": true,
     "same_host_only": true,
     "max_pages": 8,
     "delay_seconds": 0.2,
-    "timeout_seconds": 12.0,
+    "timeout_seconds": 15.0,
     "user_agent": "study-admissions-poc/0.1 (+https://www.gut-haode.com/ partner-school research)",
     "no_login_captcha_paywall_bypass": true,
     "robots_url": "https://esmt.berlin/robots.txt",
@@ -40,7 +40,7 @@
         "school_type": "university"
       },
       "program": {
-        "name": "Admissions for Master in Global Management | ESMT Berlin",
+        "name": "Admissions for Master in Global Management",
         "degree": "MBA",
         "level": "master",
         "url": "https://esmt.berlin/master-programs/master-global-management/admissions",
@@ -50,8 +50,8 @@
           "German",
           "Deutsch"
         ],
-        "parent_program": "Admissions for Master in Global Management",
-        "specialization": "ESMT Berlin"
+        "parent_program": null,
+        "specialization": null
       },
       "requirements": {
         "academic_background": {
@@ -95,7 +95,6 @@
         },
         "documents": [
           "CV",
-          "Transcript",
           "Reference letter",
           "Proof of English proficiency"
         ],
@@ -127,7 +126,7 @@
           {
             "source_url": "https://esmt.berlin/master-programs/master-global-management/admissions",
             "source_text": "international outlook, intercultural competency, and a responsible approach to business General requirements A previous degree (at least Bachelor's equivalent) with excellent grades. If you are completing your undergraduate studies within the next year, your application will also be considered. Recently g",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Degree-level requirement inferred from admissions text."
           }
@@ -136,21 +135,21 @@
           {
             "source_url": "https://esmt.berlin/master-programs/master-global-management/admissions",
             "source_text": "es or with a degree in engineering, natural sciences, mathematics, statistics, or another quantitative field (including economics or business with mainly theoretical/quantitative coursework). As a guideline, GMAT scores below 600 or GRE scores below 304 are not considered competitive. Depending on educationa",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-global-management/admissions",
             "source_text": "rough competitive grades, that included general quantitative courses or with a degree in engineering, natural sciences, mathematics, statistics, or another quantitative field (including economics or business with mainly theoretical/quantitative coursework). As a guideline, GMAT scores below 600 or GRE scores b",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-global-management/admissions",
             "source_text": "tive grades, that included general quantitative courses or with a degree in engineering, natural sciences, mathematics, statistics, or another quantitative field (including economics or business with mainly theoretical/quantitative coursework). As a guideline, GMAT scores below 600 or GRE scores below 304 are",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           }
@@ -159,14 +158,14 @@
           {
             "source_url": "https://esmt.berlin/master-programs/master-global-management/admissions",
             "source_text": "ution code is 8707. Evidence of quantitative skills - depending on your profile, you may be required to take the BAT or GMAT/GRE test) GMAT or GRE scores are not obligatory if candidates can provide alternative evidence of quantitative skills or scientific training within their Bachelor studies through",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "GMAT keyword found."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-global-management/admissions",
             "source_text": "ternational outlook, intercultural competency, and a responsible approach to business General requirements A previous degree (at least Bachelor's equivalent) with excellent grades. If you are completing your undergraduate studies within the next year, your application will also be considered. Recently",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "GRE keyword found."
           }
@@ -175,7 +174,7 @@
           {
             "source_url": "https://esmt.berlin/master-programs/master-global-management/admissions",
             "source_text": "work experience (excluding internships) English language proficiency test scores (if applicable) Submitting an English proficiency test score (TOEFL, IELTS",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Work-experience requirement found."
           }
@@ -184,72 +183,79 @@
           {
             "source_url": "https://esmt.berlin/master-programs/master-global-management/admissions",
             "source_text": "ent quantitative skills. Additionally, you will be asked to submit the following documents with your application : Your CV Academic transcripts from all higher education institutions you have attended One recommendation letter from a current or former employer, or a professor (a form template can be p",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "CV keyword found."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-global-management/admissions",
-            "source_text": "t. Candidates may also take the ESMT Business Admissions Test (BAT) or receive a waiver for the tests if their academic transcripts or related qualifications demonstrate sufficient quantitative skills. Additionally, you will be asked to submit the following documents with your application : Your CV Academic t",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "source_text": "ments with your application : Your CV Academic transcripts from all higher education institutions you have attended One recommendation letter from a current or former employer, or a professor (a form template can be provided by ESMT if needed) GRE/GMAT and TOEFL scores, if needed ESMT cannot begin assessing your",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
-            "review_note": "Transcript keyword found."
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://esmt.berlin/master-programs/master-global-management/admissions",
+            "source_text": "graduate work experience (excluding internships) English language proficiency test scores (if applicable) Submitting an English proficiency test score (TOEFL, IELTS or TOEIC) is not mandatory. Your English language skills are also assessed in the selection interview. You will receive a waiver for the English proficien",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
           }
         ],
         "deadlines": [
           {
             "source_url": "https://esmt.berlin/master-programs/master-global-management/admissions",
             "source_text": "deadline if possible, especially if you need a visa or are applying for a scholarship",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-global-management/admissions",
             "source_text": "intake are now open",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-global-management/admissions",
             "source_text": "intake will start on September 8, 2026",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-global-management/admissions",
             "source_text": "intake",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-global-management/admissions",
             "source_text": "deadline",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-global-management/admissions",
             "source_text": "deadline (current round)",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-global-management/admissions",
             "source_text": "deadline*",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-global-management/admissions",
             "source_text": "deadline will be considered on a case-by-case, space-available basis",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           }
@@ -288,7 +294,7 @@
         "school_type": "university"
       },
       "program": {
-        "name": "MIE Admissions | ESMT Berlin",
+        "name": "MIE Admissions",
         "degree": "MBA",
         "level": "master",
         "url": "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
@@ -298,8 +304,8 @@
           "German",
           "Deutsch"
         ],
-        "parent_program": "MIE Admissions",
-        "specialization": "ESMT Berlin"
+        "parent_program": null,
+        "specialization": null
       },
       "requirements": {
         "academic_background": {
@@ -338,7 +344,6 @@
         },
         "documents": [
           "CV",
-          "Transcript",
           "Reference letter",
           "Proof of English proficiency"
         ],
@@ -370,7 +375,7 @@
           {
             "source_url": "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
             "source_text": "tural leader Request a profile evaluation Get in touch with us What do I need to apply? General requirements A previous degree (at least Bachelor's equivalent) with excellent grades. If you are finishing your undergraduate studies within the next year, your application will also be considered. Ideally, ap",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Degree-level requirement inferred from admissions text."
           }
@@ -379,21 +384,21 @@
           {
             "source_url": "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
             "source_text": "es or with a degree in engineering, natural sciences, mathematics, statistics, or another quantitative field (including economics or business with mainly theoretical/quantitative coursework). ESMT does not have a set minimum GMAT/GRE scores. As a guideline, GMAT scores below 600 (GMAT Focus below 555), or GR",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
             "source_text": "rough competitive grades, that included general quantitative courses or with a degree in engineering, natural sciences, mathematics, statistics, or another quantitative field (including economics or business with mainly theoretical/quantitative coursework). ESMT does not have a set minimum GMAT/GRE scores. As",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
             "source_text": "tive grades, that included general quantitative courses or with a degree in engineering, natural sciences, mathematics, statistics, or another quantitative field (including economics or business with mainly theoretical/quantitative coursework). ESMT does not have a set minimum GMAT/GRE scores. As a guideline,",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           }
@@ -402,14 +407,14 @@
           {
             "source_url": "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
             "source_text": "itution code is 8707. Entrance exam (if applicable) - depending on your profile, you may be required to take the BAT or GMAT/GRE test GMAT or GRE scores are not obligatory if candidates can provide alternative evidence of quantitative skills or scientific training within their Bachelor studies through c",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "GMAT keyword found."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
             "source_text": "ral leader Request a profile evaluation Get in touch with us What do I need to apply? General requirements A previous degree (at least Bachelor's equivalent) with excellent grades. If you are finishing your undergraduate studies within the next year, your application will also be considered. Ideally, a",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "GRE keyword found."
           }
@@ -418,7 +423,7 @@
           {
             "source_url": "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
             "source_text": "3 years of post-graduate work",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "high",
             "review_note": "Work-experience requirement found."
           }
@@ -427,72 +432,79 @@
           {
             "source_url": "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
             "source_text": "onal background and the g Additionally, you will be asked to submit the following documents with your application: Your CV Academic transcripts from all higher education institutions you have attended One recommendation (form provided by ESMT) GRE/GMAT and TOEFL scores, if needed Once your application",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "CV keyword found."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
-            "source_text": "und and the g Additionally, you will be asked to submit the following documents with your application: Your CV Academic transcripts from all higher education institutions you have attended One recommendation (form provided by ESMT) GRE/GMAT and TOEFL scores, if needed Once your application is submitted, the A",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "source_text": "uments with your application: Your CV Academic transcripts from all higher education institutions you have attended One recommendation (form provided by ESMT) GRE/GMAT and TOEFL scores, if needed Once your application is submitted, the Admissions team will review it. If your profile fits the program requirements,",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
-            "review_note": "Transcript keyword found."
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
+            "source_text": "nd professional goals to the respective program. English language proficiency test scores (if applicable) Submitting an English proficiency test score (TOEFL, IELTS or TOEIC) is not mandatory. Your English language skills are also assessed in the selection interview. You will receive a waiver for the English proficien",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
           }
         ],
         "deadlines": [
           {
             "source_url": "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
             "source_text": "deadline if possible, especially if you need a visa or are applying for a scholarship",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
             "source_text": "intake are now open",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
             "source_text": "intake will start on September 8, 2026",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
             "source_text": "intake",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
             "source_text": "deadline",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
             "source_text": "deadline (current round)",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
             "source_text": "deadline*",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
             "source_text": "deadline will be considered on a case-by-case, space-available basis",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           }
@@ -527,7 +539,7 @@
         "school_type": "university"
       },
       "program": {
-        "name": "MAAI Admissions | ESMT Berlin",
+        "name": "MAAI Admissions",
         "degree": "MBA",
         "level": "master",
         "url": "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
@@ -537,8 +549,8 @@
           "German",
           "Deutsch"
         ],
-        "parent_program": "MAAI Admissions",
-        "specialization": "ESMT Berlin"
+        "parent_program": null,
+        "specialization": null
       },
       "requirements": {
         "academic_background": {
@@ -577,7 +589,6 @@
         },
         "documents": [
           "CV",
-          "Transcript",
           "Reference letter",
           "Proof of English proficiency"
         ],
@@ -609,7 +620,7 @@
           {
             "source_url": "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
             "source_text": "pportunities Request a profile evaluation Get in touch with us What do I need to apply? General requirements A previous degree (at least Bachelor's equivalent) with excellent grades. If you are completing your undergraduate studies within the next year, your application will also be considered. Ideally, a",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Degree-level requirement inferred from admissions text."
           }
@@ -618,21 +629,21 @@
           {
             "source_url": "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
             "source_text": "es or with a degree in engineering, natural sciences, mathematics, statistics, or another quantitative field (including economics or business with mainly theoretical/quantitative coursework). As a guideline, GMAT scores below 600 or GRE scores below 304 are not considered competitive. Depending on educationa",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
             "source_text": "rough competitive grades, that included general quantitative courses or with a degree in engineering, natural sciences, mathematics, statistics, or another quantitative field (including economics or business with mainly theoretical/quantitative coursework). As a guideline, GMAT scores below 600 or GRE scores b",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
             "source_text": "tive grades, that included general quantitative courses or with a degree in engineering, natural sciences, mathematics, statistics, or another quantitative field (including economics or business with mainly theoretical/quantitative coursework). As a guideline, GMAT scores below 600 or GRE scores below 304 are",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           }
@@ -641,14 +652,14 @@
           {
             "source_url": "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
             "source_text": "ode is 8707. Evidence of strong quantitative skills - depending on your profile, you may be required to take the BAT or GMAT/GRE test) GMAT or GRE scores are not obligatory if candidates can provide alternative evidence of quantitative skills or scientific training within their Bachelor studies through",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "GMAT keyword found."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
             "source_text": "ortunities Request a profile evaluation Get in touch with us What do I need to apply? General requirements A previous degree (at least Bachelor's equivalent) with excellent grades. If you are completing your undergraduate studies within the next year, your application will also be considered. Ideally,",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "GRE keyword found."
           }
@@ -657,7 +668,7 @@
           {
             "source_url": "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
             "source_text": "3 years of post-graduate work",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "high",
             "review_note": "Work-experience requirement found."
           }
@@ -666,72 +677,79 @@
           {
             "source_url": "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
             "source_text": "the quantitative section Additionally, you will be asked to submit the following documents with your application: Your CV Academic transcripts from all higher education institutions you have attended One recommendation (form provided by ESMT) GRE/GMAT and TOEFL scores, if needed Once your application",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "CV keyword found."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
-            "source_text": "ative section Additionally, you will be asked to submit the following documents with your application: Your CV Academic transcripts from all higher education institutions you have attended One recommendation (form provided by ESMT) GRE/GMAT and TOEFL scores, if needed Once your application is submitted, the A",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "source_text": "uments with your application: Your CV Academic transcripts from all higher education institutions you have attended One recommendation (form provided by ESMT) GRE/GMAT and TOEFL scores, if needed Once your application is submitted, the Admissions team will review it. If your profile fits the program requirements,",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
-            "review_note": "Transcript keyword found."
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
+            "source_text": "nd professional goals to the respective program. English language proficiency test scores (if applicable) Submitting an English proficiency test score (TOEFL, IELTS or TOEIC) is not mandatory. Your English language skills are also assessed in the selection interview. You will receive a waiver for the English proficien",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
           }
         ],
         "deadlines": [
           {
             "source_url": "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
             "source_text": "deadline if possible, especially if you need a visa or are applying for a scholarship",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
             "source_text": "intake are now open",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
             "source_text": "intake will start on September 8, 2026",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
             "source_text": "intake",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
             "source_text": "deadline",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
             "source_text": "deadline is now closed",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
             "source_text": "deadline (current round)",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
             "source_text": "deadline*",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           }
@@ -766,7 +784,7 @@
         "school_type": "university"
       },
       "program": {
-        "name": "Full-time MBA admission requirements | ESMT Berlin",
+        "name": "Full-time MBA admission requirements",
         "degree": "MBA",
         "level": "master",
         "url": "https://esmt.berlin/mba-programs/full-time-mba/admissions",
@@ -776,8 +794,8 @@
           "German",
           "Deutsch"
         ],
-        "parent_program": "Full-time MBA admission requirements",
-        "specialization": "ESMT Berlin"
+        "parent_program": null,
+        "specialization": null
       },
       "requirements": {
         "academic_background": {
@@ -806,10 +824,7 @@
             "waiver": []
           }
         ],
-        "test_requirements": [
-          "GRE",
-          "Personal interview"
-        ],
+        "test_requirements": [],
         "work_experience": {
           "minimum_years": 3,
           "relevance": "At least three years of postgraduate professional",
@@ -817,7 +832,6 @@
         },
         "documents": [
           "CV",
-          "Reference letter",
           "Proof of English proficiency"
         ],
         "conditional_paths": [],
@@ -847,14 +861,14 @@
           {
             "source_url": "https://esmt.berlin/mba-programs/full-time-mba/admissions",
             "source_text": "180 ECTS",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "high",
             "review_note": "Direct ECTS extraction."
           },
           {
             "source_url": "https://esmt.berlin/mba-programs/full-time-mba/admissions",
             "source_text": "g requirements: At least three years of postgraduate professional experience at the time of program start. A bachelor’s degree of at least three years duration (minimum 180 ECTS), or equivalent qualification. Strong score in an admission test . ESMT accepts scores from the following admission tests: If En",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Degree-level requirement inferred from admissions text."
           }
@@ -863,32 +877,23 @@
           {
             "source_url": "https://esmt.berlin/mba-programs/full-time-mba/admissions",
             "source_text": "IELTS - 7 minimum When evaluating your application, we look for a diverse group of professionals who share the school’s missi",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "high",
             "review_note": "Direct language-test score extraction."
           },
           {
             "source_url": "https://esmt.berlin/mba-programs/full-time-mba/admissions",
             "source_text": "TOEFL - 95 minimum; we accept MyBest™ scores; our",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "high",
             "review_note": "Direct language-test score extraction."
-          }
-        ],
-        "test_requirements": [
-          {
-            "source_url": "https://esmt.berlin/mba-programs/full-time-mba/admissions",
-            "source_text": "requirements: At least three years of postgraduate professional experience at the time of program start. A bachelor’s degree of at least three years duration (minimum 180 ECTS), or equivalent qualification. Strong score in an admission test . ESMT accepts scores from the following admission tests: If E",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
-            "confidence": "medium",
-            "review_note": "GRE keyword found."
           }
         ],
         "work_experience": [
           {
             "source_url": "https://esmt.berlin/mba-programs/full-time-mba/admissions",
             "source_text": "At least three years of postgraduate professional",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "high",
             "review_note": "Work-experience requirement found."
           }
@@ -897,16 +902,23 @@
           {
             "source_url": "https://esmt.berlin/mba-programs/full-time-mba/admissions",
             "source_text": "n online application . The application is easy to follow, and will ask you for the following information: An up-to-date CV showing at least three years of postgraduate professional experience Two professional recommendations Answers to the following questions: (max 250-500 words per essay) Please note",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "CV keyword found."
+          },
+          {
+            "source_url": "https://esmt.berlin/mba-programs/full-time-mba/admissions",
+            "source_text": "lish is your native language or you earned a university degree exclusively taught in English you do not need to take an English proficiency test. If you h TOEFL - 95 minimum; we accept MyBest™ scores; our institution code is 8707 PTE - 64 minimum IELTS - 7 minimum When evaluating your application, we look for a divers",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
           }
         ],
         "application_channel": [
           {
             "source_url": "https://esmt.berlin/mba-programs/full-time-mba/admissions",
             "source_text": "sionals who share the school’s mission and who will succeed academically and professionally in the MBA program. Step 1: Online application To begin the admissions process, applicants complete and submit an online application . The application is easy to follow, and will ask you for the following information: An up-to",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Application channel keyword found."
           }
@@ -915,56 +927,56 @@
           {
             "source_url": "https://esmt.berlin/mba-programs/full-time-mba/admissions",
             "source_text": "deadline for each round",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/mba-programs/full-time-mba/admissions",
             "source_text": "intake",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/mba-programs/full-time-mba/admissions",
             "source_text": "intake closes on May 17",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/mba-programs/full-time-mba/admissions",
             "source_text": "deadline will qualify for an early application award of €3,000 that can be applied to the cost of tuition",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/mba-programs/full-time-mba/admissions",
             "source_text": "intake is now open",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/mba-programs/full-time-mba/admissions",
             "source_text": "deadline will receive automatic early application awards, and have a stronger chance of receiving scholarships",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/mba-programs/full-time-mba/admissions",
             "source_text": "intake)",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://esmt.berlin/mba-programs/full-time-mba/admissions",
             "source_text": "deadline",
-            "retrieved_at": "2026-05-15T09:36:36.159145+00:00",
+            "retrieved_at": "2026-05-16T13:11:56.366781+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           }

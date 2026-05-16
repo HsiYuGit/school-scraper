@@ -8,13 +8,13 @@
     "school_type": "university",
     "source_official_url": "https://en.ism.de/"
   },
-  "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+  "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
   "crawler_policy": {
     "respects_robots_txt": true,
     "same_host_only": true,
     "max_pages": 8,
     "delay_seconds": 0.2,
-    "timeout_seconds": 12.0,
+    "timeout_seconds": 15.0,
     "user_agent": "study-admissions-poc/0.1 (+https://www.gut-haode.com/ partner-school research)",
     "no_login_captcha_paywall_bypass": true,
     "robots_url": "https://en.ism.de/robots.txt",
@@ -40,7 +40,7 @@
         "school_type": "university"
       },
       "program": {
-        "name": "Bachelor's programs | Practical and international | ISM",
+        "name": "Bachelor's programs",
         "degree": "MBA",
         "level": "bachelor",
         "url": "https://en.ism.de/full-degree-students/bachelor-programs",
@@ -49,8 +49,8 @@
           "English",
           "German"
         ],
-        "parent_program": "Bachelor's programs",
-        "specialization": "Practical and international | ISM"
+        "parent_program": null,
+        "specialization": null
       },
       "requirements": {
         "academic_background": {
@@ -74,38 +74,8 @@
             "notes": []
           }
         ],
-        "language_requirements": [
-          {
-            "test": "German",
-            "minimum_score": "70",
-            "component_scores": [],
-            "validity": null,
-            "waiver": [
-              "Academic degree completed in English"
-            ]
-          },
-          {
-            "test": "German",
-            "minimum_score": "20",
-            "component_scores": [],
-            "validity": null,
-            "waiver": [
-              "Academic degree completed in English"
-            ]
-          },
-          {
-            "test": "German",
-            "minimum_score": "500",
-            "component_scores": [],
-            "validity": null,
-            "waiver": [
-              "Academic degree completed in English"
-            ]
-          }
-        ],
-        "test_requirements": [
-          "GRE"
-        ],
+        "language_requirements": [],
+        "test_requirements": [],
         "work_experience": {
           "minimum_years": null,
           "relevance": null,
@@ -140,14 +110,14 @@
           {
             "source_url": "https://en.ism.de/full-degree-students/bachelor-programs",
             "source_text": "210 ECTS",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "high",
             "review_note": "Direct ECTS extraction."
           },
           {
             "source_url": "https://en.ism.de/full-degree-students/bachelor-programs",
             "source_text": "Register for online admission, upload your documents and start your dream degree program. Bachelor programs in German, on-campus The Bachelor's degree programs offered in German are taught 70% in German with some classes also in English language. All programs",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Degree-level requirement inferred from admissions text."
           }
@@ -156,48 +126,16 @@
           {
             "source_url": "https://en.ism.de/full-degree-students/bachelor-programs",
             "source_text": "a semester abroad at one of our network of 190+ partner universities. B.A. Marketing & Communications Management B.Sc. Finance & Management B.Sc. Real Estate Management B.Sc. Wirtschaftspsychologie B.A. Global Brand & Fashion Management B.A. International Sports Management Online Bachelor programs in Dist",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
-          }
-        ],
-        "language_requirements": [
-          {
-            "source_url": "https://en.ism.de/full-degree-students/bachelor-programs",
-            "source_text": "German, on-campus The Bachelor's degree programs offered in German are taught 70% in German with some classes also in English",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
-            "confidence": "high",
-            "review_note": "Direct language-test score extraction."
-          },
-          {
-            "source_url": "https://en.ism.de/full-degree-students/bachelor-programs",
-            "source_text": "German with some classes also in English language. All programs include 20 weeks of integrated internships and practical proje",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
-            "confidence": "high",
-            "review_note": "Direct language-test score extraction."
-          },
-          {
-            "source_url": "https://en.ism.de/full-degree-students/bachelor-programs",
-            "source_text": "German) B.Sc. Wirtschaftspsychologie (German) Study together and benefit: Refer a friend to ISM and earn up to 500 Euro for a",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
-            "confidence": "high",
-            "review_note": "Direct language-test score extraction."
-          }
-        ],
-        "test_requirements": [
-          {
-            "source_url": "https://en.ism.de/full-degree-students/bachelor-programs",
-            "source_text": "Register for online admission, upload your documents and start your dream degree program. Bachelor programs in German, on-campus The Bachelor's degree programs offered in German are taught 70% in German with some classes also in English language. All programs",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
-            "confidence": "medium",
-            "review_note": "GRE keyword found."
           }
         ],
         "documents": [
           {
             "source_url": "https://en.ism.de/full-degree-students/bachelor-programs",
             "source_text": "Bachelor’s program, please submit the following documents to a study advisor: School leaving certificate (if available) Transcript of records - no Numerus Clausus (NC) is required to apply at ISM! The admission requirements for a full-time Bachelor degree depend on various factors. Basically, you need a gener",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Transcript keyword found."
           }
@@ -206,7 +144,7 @@
           {
             "source_url": "https://en.ism.de/full-degree-students/bachelor-programs",
             "source_text": "cation period beforehand : At least 1 month in advance if your country of origin is in the EU/EEA and you do not need a visa. Ca. 4 months - up to one year year before your start semester, if you come from a non-EU country and need a study visa. Please get informed from your country's German consulate h",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Visa-sensitive deadline keyword found."
           }
@@ -215,14 +153,14 @@
           {
             "source_url": "https://en.ism.de/full-degree-students/bachelor-programs",
             "source_text": "application period beforehand :",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://en.ism.de/full-degree-students/bachelor-programs",
             "source_text": "deadline for candidates who need a study visa for Germany :",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           }
@@ -257,7 +195,7 @@
         "school_type": "university"
       },
       "program": {
-        "name": "Master's programs | International and pratical | ISM",
+        "name": "Master's programs",
         "degree": "MBA",
         "level": "master",
         "url": "https://en.ism.de/full-degree-students/master-programs",
@@ -266,8 +204,8 @@
           "English",
           "German"
         ],
-        "parent_program": "Master's programs",
-        "specialization": "International and pratical | ISM"
+        "parent_program": null,
+        "specialization": null
       },
       "requirements": {
         "academic_background": {
@@ -286,18 +224,8 @@
             "notes": []
           }
         ],
-        "language_requirements": [
-          {
-            "test": "German",
-            "minimum_score": "6",
-            "component_scores": [],
-            "validity": null,
-            "waiver": []
-          }
-        ],
-        "test_requirements": [
-          "GRE"
-        ],
+        "language_requirements": [],
+        "test_requirements": [],
         "work_experience": {
           "minimum_years": 35,
           "relevance": "35 years of educational experience",
@@ -327,41 +255,23 @@
           {
             "source_url": "https://en.ism.de/full-degree-students/master-programs",
             "source_text": "180 ECTS",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "high",
             "review_note": "Direct ECTS extraction."
           },
           {
             "source_url": "https://en.ism.de/full-degree-students/master-programs",
             "source_text": "Register for online admission, upload your documents and start your dream degree program. Advantages of a Master's degree at ISM Master's degree taught in English with a semester abroad and the opportunity to add more international experience by getting a seco",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Degree-level requirement inferred from admissions text."
-          }
-        ],
-        "language_requirements": [
-          {
-            "source_url": "https://en.ism.de/full-degree-students/master-programs",
-            "source_text": "German Accreditation Council. This makes the ISM one of the best ranked business schools in Germany that ranks among the 6% of",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
-            "confidence": "high",
-            "review_note": "Direct language-test score extraction."
-          }
-        ],
-        "test_requirements": [
-          {
-            "source_url": "https://en.ism.de/full-degree-students/master-programs",
-            "source_text": "Register for online admission, upload your documents and start your dream degree program. Advantages of a Master's degree at ISM Master's degree taught in English with a semester abroad and the opportunity to add more international experience by getting a sec",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
-            "confidence": "medium",
-            "review_note": "GRE keyword found."
           }
         ],
         "work_experience": [
           {
             "source_url": "https://en.ism.de/full-degree-students/master-programs",
             "source_text": "35 years of educational experience",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "high",
             "review_note": "Work-experience requirement found."
           }
@@ -370,7 +280,7 @@
           {
             "source_url": "https://en.ism.de/full-degree-students/master-programs",
             "source_text": "for a Master’s program, please submit the following documents to a study advisor: Bachelor's degree (if available) and Transcript of records Examinations taken should comprise at the end of studies the equivalent of 180 ECTS points. No specific Numerus Clausus or GPA is required Upon examination and sucessfu",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Transcript keyword found."
           }
@@ -379,7 +289,7 @@
           {
             "source_url": "https://en.ism.de/full-degree-students/master-programs",
             "source_text": "application period beforehand: At least 1 month in advance if your country of origin is in the EU and you do not need a visa. Ca. 4 months up to one year year before your start semester, if you come from a non-EU country. Please get informed from your country's German consulate how long the visa applica",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Visa-sensitive deadline keyword found."
           }
@@ -388,7 +298,7 @@
           {
             "source_url": "https://en.ism.de/full-degree-students/master-programs",
             "source_text": "application period beforehand:",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           }
@@ -475,9 +385,7 @@
           }
         ],
         "language_requirements": [],
-        "test_requirements": [
-          "GRE"
-        ],
+        "test_requirements": [],
         "work_experience": {
           "minimum_years": null,
           "relevance": null,
@@ -513,7 +421,7 @@
           {
             "source_url": "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/overview",
             "source_text": "Register for online admission, upload your documents and start your dream degree program. Bachelor of International Management Practical business management studies with individual specialization Whether international management, global value creation or busin",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Degree-level requirement inferred from admissions text."
           }
@@ -522,67 +430,65 @@
           {
             "source_url": "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/overview",
             "source_text": "de range of business t The curriculum of the B.Sc. management degree covers everything from Business Administration and Economics, Mathematics, Accounting, E-Business, Finance, up to elective courses in Human Resources Management, Controlling or Entrepreneurship. Our Bachelor of management students learn abo",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           },
           {
             "source_url": "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/overview",
             "source_text": "he curriculum of the B.Sc. management degree covers everything from Business Administration and Economics, Mathematics, Accounting, E-Business, Finance, up to elective courses in Human Resources Management, Controlling or Entrepreneurship. Our Bachelor of management students learn about the foundation and com",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           },
           {
             "source_url": "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/overview",
             "source_text": "business t The curriculum of the B.Sc. management degree covers everything from Business Administration and Economics, Mathematics, Accounting, E-Business, Finance, up to elective courses in Human Resources Management, Controlling or Entrepreneurship. Our Bachelor of management students learn about the founda",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           },
           {
             "source_url": "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/overview",
             "source_text": "c. management degree covers everything from Business Administration and Economics, Mathematics, Accounting, E-Business, Finance, up to elective courses in Human Resources Management, Controlling or Entrepreneurship. Our Bachelor of management students learn about the foundation and complexities of internat",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
-          }
-        ],
-        "test_requirements": [
-          {
-            "source_url": "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/overview",
-            "source_text": "Register for online admission, upload your documents and start your dream degree program. Bachelor of International Management Practical business management studies with individual specialization Whether international management, global value creation or busi",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
-            "confidence": "medium",
-            "review_note": "GRE keyword found."
           }
         ],
         "documents": [
           {
             "source_url": "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/overview",
             "source_text": "igh-school diploma (transcript of records), vocational diploma or comparable qualification Other application documents: CV, ID card/passport copy, proof of English language knowledge (min. level B2). Successful participation in the online application process Study together and benefit: Refer a friend",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "CV keyword found."
           },
           {
             "source_url": "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/overview",
             "source_text": "questions you might have or if you need help at any point in the application process. Apply with: high-school diploma (transcript of records), vocational diploma or comparable qualification Other application documents: CV, ID card/passport copy, proof of English language knowledge (min. level B2). Successful",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Transcript keyword found."
           },
           {
             "source_url": "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/overview",
+            "source_text": "with any questions you might have or if you need help at any point in the application process. Apply with: high-school diploma (transcript of records), vocational diploma or comparable qualification Other application documents: CV, ID card/passport copy, proof of English language knowledge (min. level B2)",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
+            "confidence": "medium",
+            "review_note": "Degree certificate keyword found."
+          },
+          {
+            "source_url": "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/overview",
             "source_text": "iploma (transcript of records), vocational diploma or comparable qualification Other application documents: CV, ID card/passport copy, proof of English language knowledge (min. level B2). Successful participation in the online application process Study together and benefit: Refer a friend to ISM and earn up",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Passport keyword found."
           },
           {
             "source_url": "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/overview",
             "source_text": "ipt of records), vocational diploma or comparable qualification Other application documents: CV, ID card/passport copy, proof of English language knowledge (min. level B2). Successful participation in the online application process Study together and benefit: Refer a friend to ISM and earn up to 500 Euro for a succ",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Proof of English proficiency keyword found."
           }
@@ -591,7 +497,7 @@
           {
             "source_url": "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/overview",
             "source_text": "C, average grade) and no specific GPA or GMAT score are required to apply . Instead, you will complete a straighforward online application process , t hat considers your personality, motivation, and skills. You apply online, upload your documents, attend an online personal selection interview – and, if successful, se",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Application channel keyword found."
           }
@@ -670,17 +576,8 @@
             "notes": []
           }
         ],
-        "language_requirements": [
-          {
-            "test": "German",
-            "minimum_score": "221",
-            "component_scores": [],
-            "validity": null,
-            "waiver": []
-          }
-        ],
+        "language_requirements": [],
         "test_requirements": [
-          "GRE",
           "Personal interview",
           "Case study"
         ],
@@ -715,14 +612,14 @@
           {
             "source_url": "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview",
             "source_text": "30 ECTS",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "high",
             "review_note": "Direct ECTS extraction."
           },
           {
             "source_url": "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview",
             "source_text": "A first degree in economics or with 30 ECTS points in the field of business sciences. View all entry requirements See tuition fees and discounts AACSB, FIBAA, German Accreditation Council One co",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Degree-level requirement inferred from admissions text."
           }
@@ -731,46 +628,37 @@
           {
             "source_url": "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview",
             "source_text": "A first degree in economics or with 30 ECTS points in the field of business sciences. View all entry requirements See tuition fees and discounts AACSB, FIBAA, German Accreditation Council One compulsory inte",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           },
           {
             "source_url": "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview",
             "source_text": "n addition to the practice-oriented business management content, you can also choose your own individual focus: weather accounting and finance, marketing or operations management - all the wide range of skills you need as a future organisation manager will be taught in this multi-disciplinary management progr",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           },
           {
             "source_url": "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview",
             "source_text": "he practice-oriented business management content, you can also choose your own individual focus: weather accounting and finance, marketing or operations management - all the wide range of skills you need as a future organisation manager will be taught in this multi-disciplinary management programme. The in",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
-          }
-        ],
-        "language_requirements": [
-          {
-            "source_url": "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview",
-            "source_text": "German time (CET). Marcella Brockerhoff Tel.: +49 711.51 89 62-221 E-Mail: This email address is being protected from spambots",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
-            "confidence": "high",
-            "review_note": "Direct language-test score extraction."
           }
         ],
         "test_requirements": [
           {
             "source_url": "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview",
-            "source_text": "A first degree in economics or with 30 ECTS points in the field of business sciences. View all entry requirements See tuition fees and discounts AACSB, FIBAA, German Accreditation Council One c",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "source_text": "Consulting Projects. The application and admission process consists of preparing a brief case study presentation and an online interview. We invite you to send your documents for a Launch your international career with the Master International Management Germany program, specialize in diverse business fields and l",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
-            "review_note": "GRE keyword found."
+            "review_note": "Personal interview keyword found."
           },
           {
             "source_url": "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview",
             "source_text": "perations Management; Managing Consulting Projects. The application and admission process consists of preparing a brief case study presentation and an online interview. We invite you to send your documents for a Launch your international career with the Master International Management Germany program, specia",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Case study keyword found."
           }
@@ -779,21 +667,21 @@
           {
             "source_url": "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview",
             "source_text": "ECTS in the field of busines sciences Application documents (transcript of records, first degree, English certificate, CV, motivation letter) Successful participation in the online application process Study together and benefit: Refer a friend to ISM and earn up to 500 Euro for a successful enrollmen",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "CV keyword found."
           },
           {
             "source_url": "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview",
             "source_text": "S in the field of busines sciences Application documents (transcript of records, first degree, English certificate, CV, motivation letter) Successful participation in the online application process Study together and benefit: Refer a friend to ISM and earn up to 500 Euro for a successful enrollment through our “Brin",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Motivation letter keyword found."
           },
           {
             "source_url": "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview",
             "source_text": "ective! Bachelor's degree (at least 180 ECTS) with min. 30 ECTS in the field of busines sciences Application documents (transcript of records, first degree, English certificate, CV, motivation letter) Successful participation in the online application process Study together and benefit: Refer a friend to ISM",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Transcript keyword found."
           }
@@ -802,7 +690,7 @@
           {
             "source_url": "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview",
             "source_text": "ments (transcript of records, first degree, English certificate, CV, motivation letter) Successful participation in the online application process Study together and benefit: Refer a friend to ISM and earn up to 500 Euro for a successful enrollment through our “Bring a Friend” program. Interested? Fill out the form b",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Application channel keyword found."
           }
@@ -849,7 +737,7 @@
         "school_type": "university"
       },
       "program": {
-        "name": "MBA programs in Management - full-time or part-time",
+        "name": "MBA programs in Management",
         "degree": "MBA",
         "level": "master",
         "url": "https://en.ism.de/full-degree-students/mba-programs",
@@ -882,9 +770,7 @@
           }
         ],
         "language_requirements": [],
-        "test_requirements": [
-          "GRE"
-        ],
+        "test_requirements": [],
         "work_experience": {
           "minimum_years": null,
           "relevance": null,
@@ -903,17 +789,7 @@
           "tuition fees for an MBA program at ISM can vary between about €27,300 for the full-time and €28,800 for the part-time MBA (in 2025)"
         ]
       },
-      "evidence": {
-        "test_requirements": [
-          {
-            "source_url": "https://en.ism.de/full-degree-students/mba-programs",
-            "source_text": "Register for online admission, upload your documents and start your dream degree program. FAQ – MBA degree programs Germany is a popular destination for international MBA students, and German universities are often considered to be a top destination country f",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
-            "confidence": "medium",
-            "review_note": "GRE keyword found."
-          }
-        ]
-      },
+      "evidence": {},
       "raw_evidence_sections": [
         {
           "heading": "Register for online admission, upload your documents and start your dream degree program.",
@@ -958,15 +834,7 @@
             "notes": []
           }
         ],
-        "language_requirements": [
-          {
-            "test": "German",
-            "minimum_score": "54",
-            "component_scores": [],
-            "validity": null,
-            "waiver": []
-          }
-        ],
+        "language_requirements": [],
         "test_requirements": [],
         "work_experience": {
           "minimum_years": null,
@@ -994,20 +862,11 @@
         ]
       },
       "evidence": {
-        "language_requirements": [
-          {
-            "source_url": "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-hotel-management-course-online",
-            "source_text": "German time (CET). Ioulia Aslanidou Tel.: +49 221.27 09 95-54 E-Mail: This email address is being protected from spambots. You",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
-            "confidence": "high",
-            "review_note": "Direct language-test score extraction."
-          }
-        ],
         "work_experience": [
           {
             "source_url": "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-hotel-management-course-online",
             "source_text": "work experience by working in various departments at Motel One, accompanied by experienced professionals",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Work-experience requirement found."
           }
@@ -1016,14 +875,21 @@
           {
             "source_url": "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-hotel-management-course-online",
             "source_text": "be checki Apply with: high-school diploma, vocational diploma or comparable qualification Other application documents: CV, proof of English knowledge (at least B2), copy of ID card. Admission prerequisite: successful participation in the online admission process Study together and benefit: Refer a fr",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "CV keyword found."
           },
           {
             "source_url": "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-hotel-management-course-online",
+            "source_text": "tel One you can simply register online for the admission process. Our university will be checki Apply with: high-school diploma, vocational diploma or comparable qualification Other application documents: CV, proof of English knowledge (at least B2), copy of ID card. Admission prerequisite: successful part",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
+            "confidence": "medium",
+            "review_note": "Degree certificate keyword found."
+          },
+          {
+            "source_url": "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-hotel-management-course-online",
             "source_text": "checki Apply with: high-school diploma, vocational diploma or comparable qualification Other application documents: CV, proof of English knowledge (at least B2), copy of ID card. Admission prerequisite: successful participation in the online admission process Study together and benefit: Refer a friend to ISM and ea",
-            "retrieved_at": "2026-05-15T09:35:05.246331+00:00",
+            "retrieved_at": "2026-05-16T13:07:41.730655+00:00",
             "confidence": "medium",
             "review_note": "Proof of English proficiency keyword found."
           }

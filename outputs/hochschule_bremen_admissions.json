@@ -8,13 +8,13 @@
     "school_type": "university",
     "source_official_url": "https://www.hs-bremen.de/en/"
   },
-  "retrieved_at": "2026-05-15T09:36:30.159679+00:00",
+  "retrieved_at": "2026-05-16T13:11:27.362889+00:00",
   "crawler_policy": {
     "respects_robots_txt": true,
     "same_host_only": true,
     "max_pages": 8,
     "delay_seconds": 0.2,
-    "timeout_seconds": 12.0,
+    "timeout_seconds": 15.0,
     "user_agent": "study-admissions-poc/0.1 (+https://www.gut-haode.com/ partner-school research)",
     "no_login_captcha_paywall_bypass": true,
     "robots_url": "https://www.hs-bremen.de/robots.txt",

@@ -8,13 +8,13 @@
     "school_type": "graduate_center",
     "source_official_url": "https://www.graduatecenter.org/en/"
   },
-  "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
+  "retrieved_at": "2026-05-16T13:12:29.803990+00:00",
   "crawler_policy": {
     "respects_robots_txt": true,
     "same_host_only": true,
     "max_pages": 8,
     "delay_seconds": 0.2,
-    "timeout_seconds": 12.0,
+    "timeout_seconds": 15.0,
     "user_agent": "study-admissions-poc/0.1 (+https://www.gut-haode.com/ partner-school research)",
     "no_login_captcha_paywall_bypass": true,
     "robots_url": "https://www.graduatecenter.org/robots.txt",
@@ -68,9 +68,7 @@
           }
         ],
         "language_requirements": [],
-        "test_requirements": [
-          "GRE"
-        ],
+        "test_requirements": [],
         "work_experience": {
           "minimum_years": null,
           "relevance": null,
@@ -94,20 +92,11 @@
         ]
       },
       "evidence": {
-        "test_requirements": [
-          {
-            "source_url": "https://www.graduatecenter.org/en/mba-master.html",
-            "source_text": "ities and Examinations IGC's full-time MBA and master's programs in International Management Get your MBA or master's degree in International Management in less than two years! At International Graduate Center (IGC) we offer currently seven different full-time MBA and Master's programs in Bremen which",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
-            "confidence": "medium",
-            "review_note": "GRE keyword found."
-          }
-        ],
         "international_requirements": [
           {
             "source_url": "https://www.graduatecenter.org/en/mba-master.html",
             "source_text": "out the differences between MBA and Master's degrees, click here . Related Information International Student Assistance Visa Process Tell-a-friend Accredited by Memberships International MBA Dual Degree MBA Global Management MBA International Tourism Management MBA in Executive Management MBA Internatio",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
+            "retrieved_at": "2026-05-16T13:12:29.803990+00:00",
             "confidence": "medium",
             "review_note": "Visa-sensitive deadline keyword found."
           }
@@ -134,7 +123,7 @@
         "school_type": "graduate_center"
       },
       "program": {
-        "name": "IGC: MBA Global Management - the next step in your career",
+        "name": "IGC: MBA Global Management",
         "degree": "MBA",
         "level": "master",
         "url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
@@ -183,9 +172,7 @@
             "waiver": []
           }
         ],
-        "test_requirements": [
-          "GRE"
-        ],
+        "test_requirements": [],
         "work_experience": {
           "minimum_years": 1,
           "relevance": "1 year of relevant experience",
@@ -218,14 +205,14 @@
           {
             "source_url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
             "source_text": "120 ECTS",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
+            "retrieved_at": "2026-05-16T13:12:29.803990+00:00",
             "confidence": "high",
             "review_note": "Direct ECTS extraction."
           },
           {
             "source_url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
             "source_text": "esigned for graduates aiming to advance their careers in multinational organizations or pursue global management roles. Degree MBA (Master of Business Administration) - 90-120 ECTS Start October (winter semester only) Application deadline Requirements Bachelor's degree in a business / economics related su",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
+            "retrieved_at": "2026-05-16T13:12:29.803990+00:00",
             "confidence": "medium",
             "review_note": "Degree-level requirement inferred from admissions text."
           }
@@ -234,7 +221,7 @@
           {
             "source_url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
             "source_text": "- 90-120 ECTS Start October (winter semester only) Application deadline Requirements Bachelor's degree in a business / economics related subject A minimum of 1 year of relevant experience after first degree High English proficiency (IELTS 6,5 or TOEFL iBT 90 or equivalent ) further requirements Language Eng",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
+            "retrieved_at": "2026-05-16T13:12:29.803990+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           }
@@ -243,41 +230,41 @@
           {
             "source_url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
             "source_text": "IELTS 6,5 or",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
+            "retrieved_at": "2026-05-16T13:12:29.803990+00:00",
             "confidence": "high",
             "review_note": "Direct language-test score extraction."
           },
           {
             "source_url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
             "source_text": "TOEFL iBT 90 or equivalent ) further requirements Language English Duration & Type 3 semester / full-time on campus in Bremen Gro",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
+            "retrieved_at": "2026-05-16T13:12:29.803990+00:00",
             "confidence": "high",
             "review_note": "Direct language-test score extraction."
-          }
-        ],
-        "test_requirements": [
-          {
-            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
-            "source_text": "igned for graduates aiming to advance their careers in multinational organizations or pursue global management roles. Degree MBA (Master of Business Administration) - 90-120 ECTS Start October (winter semester only) Application deadline Requirements Bachelor's degree in a business / economics related s",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
-            "confidence": "medium",
-            "review_note": "GRE keyword found."
           }
         ],
         "work_experience": [
           {
             "source_url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
             "source_text": "1 year of relevant experience",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
+            "retrieved_at": "2026-05-16T13:12:29.803990+00:00",
             "confidence": "high",
             "review_note": "Work-experience requirement found."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
+            "source_text": "r's degree in a business / economics related subject A minimum of 1 year of relevant experience after first degree High English proficiency (IELTS 6,5 or TOEFL iBT 90 or equivalent ) further requirements Language English Duration & Type 3 semester / full-time on campus in Bremen Group size ~25 students",
+            "retrieved_at": "2026-05-16T13:12:29.803990+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
           }
         ],
         "deadlines": [
           {
             "source_url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
             "source_text": "deadline",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
+            "retrieved_at": "2026-05-16T13:12:29.803990+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           }
@@ -337,17 +324,14 @@
         ],
         "language_requirements": [],
         "test_requirements": [
-          "GMAT",
-          "GRE"
+          "GMAT"
         ],
         "work_experience": {
           "minimum_years": null,
           "relevance": null,
           "notes": []
         },
-        "documents": [
-          "Reference letter"
-        ],
+        "documents": [],
         "conditional_paths": [],
         "international_requirements": []
       },
@@ -371,7 +355,7 @@
           {
             "source_url": "https://www.graduatecenter.org/en/mba-master/mba.html",
             "source_text": "to apply for MBA in Germany? For an MBA application to a business school or university in Germany at least a Bachelor's degree and proof of professional experience are required. In addition Which MBA course is best in Germany? Choosing the best MBA program in Germany depends on the applicant's individual",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
+            "retrieved_at": "2026-05-16T13:12:29.803990+00:00",
             "confidence": "medium",
             "review_note": "Degree-level requirement inferred from admissions text."
           }
@@ -380,25 +364,9 @@
           {
             "source_url": "https://www.graduatecenter.org/en/mba-master/mba.html",
             "source_text": "global business landscape. Diverse Academic Programs Tailored for Global Careers At International Graduate Center, the GMAT is not a requirement, but can be used in place of a language test such as TOEL and IELTS if these are not at hand. How to apply for MBA in Germany? For an MBA application to a bus",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
+            "retrieved_at": "2026-05-16T13:12:29.803990+00:00",
             "confidence": "medium",
             "review_note": "GMAT keyword found."
-          },
-          {
-            "source_url": "https://www.graduatecenter.org/en/mba-master/mba.html",
-            "source_text": "apply for MBA in Germany? For an MBA application to a business school or university in Germany at least a Bachelor's degree and proof of professional experience are required. In addition Which MBA course is best in Germany? Choosing the best MBA program in Germany depends on the applicant's individual",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
-            "confidence": "medium",
-            "review_note": "GRE keyword found."
-          }
-        ],
-        "documents": [
-          {
-            "source_url": "https://www.graduatecenter.org/en/mba-master/mba.html",
-            "source_text": "on Which MBA course is best in Germany? Choosing the best MBA program in Germany depends on the applicant's individual preferences and career goals. It is important to consider personal goals, specializations and location preferences as well as the budget available when choosing an MBA program. The various M",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
-            "confidence": "medium",
-            "review_note": "Reference letter keyword found."
           }
         ]
       },
@@ -457,9 +425,7 @@
           }
         ],
         "language_requirements": [],
-        "test_requirements": [
-          "GRE"
-        ],
+        "test_requirements": [],
         "work_experience": {
           "minimum_years": 1,
           "relevance": "1 year of relevant experience",
@@ -491,32 +457,23 @@
           {
             "source_url": "https://www.graduatecenter.org/en/mba-master/mba-international-tourism-management.html",
             "source_text": "120 ECTS",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
+            "retrieved_at": "2026-05-16T13:12:29.803990+00:00",
             "confidence": "high",
             "review_note": "Direct ECTS extraction."
           },
           {
             "source_url": "https://www.graduatecenter.org/en/mba-master/mba-international-tourism-management.html",
             "source_text": "stgraduate program in Bremen, Germany, prepares graduates for leadership positions in international tourism management. Degree MBA (Master of Business Administration) - 90-120 ECTS Study start November / April Application deadline Requirements 10% business related subjects in prior Bachelor studies A mini",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
+            "retrieved_at": "2026-05-16T13:12:29.803990+00:00",
             "confidence": "medium",
             "review_note": "Degree-level requirement inferred from admissions text."
-          }
-        ],
-        "test_requirements": [
-          {
-            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-international-tourism-management.html",
-            "source_text": "graduate program in Bremen, Germany, prepares graduates for leadership positions in international tourism management. Degree MBA (Master of Business Administration) - 90-120 ECTS Study start November / April Application deadline Requirements 10% business related subjects in prior Bachelor studies A min",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
-            "confidence": "medium",
-            "review_note": "GRE keyword found."
           }
         ],
         "work_experience": [
           {
             "source_url": "https://www.graduatecenter.org/en/mba-master/mba-international-tourism-management.html",
             "source_text": "1 year of relevant experience",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
+            "retrieved_at": "2026-05-16T13:12:29.803990+00:00",
             "confidence": "high",
             "review_note": "Work-experience requirement found."
           }
@@ -525,7 +482,7 @@
           {
             "source_url": "https://www.graduatecenter.org/en/mba-master/mba-international-tourism-management.html",
             "source_text": "deadline",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
+            "retrieved_at": "2026-05-16T13:12:29.803990+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           }
@@ -556,7 +513,7 @@
         "school_type": "graduate_center"
       },
       "program": {
-        "name": "IGC: MBA in Logistics & SCM - get your degree in Germany",
+        "name": "IGC: MBA in Logistics & SCM",
         "degree": "MBA",
         "level": "master",
         "url": "https://www.graduatecenter.org/en/mba-master/mba-in-logistics-supply-chain-management.html",
@@ -589,9 +546,7 @@
           }
         ],
         "language_requirements": [],
-        "test_requirements": [
-          "GRE"
-        ],
+        "test_requirements": [],
         "work_experience": {
           "minimum_years": 2,
           "relevance": "two years of relevant experience",
@@ -622,7 +577,7 @@
           {
             "source_url": "https://www.graduatecenter.org/en/mba-master/mba-in-logistics-supply-chain-management.html",
             "source_text": "rt Formalities and Examinations MBA International Logistics & Supply Chain Management Key Facts Requirements Bachelor’s degree in a business / economics related subject A minimum of two years of relevant experience after first degree further requirements Language English Duration & Type 3 semesters / full",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
+            "retrieved_at": "2026-05-16T13:12:29.803990+00:00",
             "confidence": "medium",
             "review_note": "Degree-level requirement inferred from admissions text."
           }
@@ -631,25 +586,16 @@
           {
             "source_url": "https://www.graduatecenter.org/en/mba-master/mba-in-logistics-supply-chain-management.html",
             "source_text": "inations MBA International Logistics & Supply Chain Management Key Facts Requirements Bachelor’s degree in a business / economics related subject A minimum of two years of relevant experience after first degree further requirements Language English Duration & Type 3 semesters / full-time on campus in Bremen",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
+            "retrieved_at": "2026-05-16T13:12:29.803990+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
-          }
-        ],
-        "test_requirements": [
-          {
-            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-in-logistics-supply-chain-management.html",
-            "source_text": "Formalities and Examinations MBA International Logistics & Supply Chain Management Key Facts Requirements Bachelor’s degree in a business / economics related subject A minimum of two years of relevant experience after first degree further requirements Language English Duration & Type 3 semesters / ful",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
-            "confidence": "medium",
-            "review_note": "GRE keyword found."
           }
         ],
         "work_experience": [
           {
             "source_url": "https://www.graduatecenter.org/en/mba-master/mba-in-logistics-supply-chain-management.html",
             "source_text": "two years of relevant experience",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
+            "retrieved_at": "2026-05-16T13:12:29.803990+00:00",
             "confidence": "high",
             "review_note": "Work-experience requirement found."
           }
@@ -658,7 +604,7 @@
           {
             "source_url": "https://www.graduatecenter.org/en/mba-master/mba-in-logistics-supply-chain-management.html",
             "source_text": "deadline",
-            "retrieved_at": "2026-05-15T09:36:56.732545+00:00",
+            "retrieved_at": "2026-05-16T13:12:29.803990+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           }

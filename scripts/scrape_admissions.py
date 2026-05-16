@@ -127,6 +127,7 @@ ACADEMIC_PROGRAM_PATHS = (
     "/master-programs/",
     "/mba-programs/",
     "/study-technology-management",
+    "/business-analytics-and-ai",
     "/your-double-degree",
     "/your-single-degree",
     "/en/bachelor/",
@@ -421,7 +422,7 @@ def page_to_program(
     if not requirements:
         return None
 
-    title = clean_program_title(page.title, page.text_blocks)
+    title = clean_program_title(page.title, page.text_blocks, page.url)
     retrieved_at = retrieved_at or dt.datetime.now(dt.UTC).isoformat()
     school = school or SchoolMetadata(name=None, url="", country=None, partner_status=None, school_type=None)
     raw_sections = [{"heading": item["heading"], "text": item["text"]} for item in requirements]
@@ -452,13 +453,53 @@ def page_to_program(
     }
 
 
-def clean_program_title(title: str, blocks: list[str]) -> str:
+def clean_program_title(title: str, blocks: list[str], url: str = "") -> str:
+    url_title = title_from_program_url(url)
     candidates = [title] + blocks[:6]
     for candidate in candidates:
         candidate = normalize_space(candidate)
+        candidate = strip_site_title(candidate)
+        if title_looks_like_navigation(candidate):
+            continue
         if 5 <= len(candidate) <= 140 and looks_relevant("", candidate):
+            if url_title and title_looks_like_marketing(candidate):
+                return url_title
             return candidate
-    return normalize_space(title or blocks[0] if blocks else "Unknown program")
+    if url_title:
+        return url_title
+    return normalize_space(strip_site_title(title) or blocks[0] if blocks else "Unknown program")
+
+
+def strip_site_title(title: str) -> str:
+    for separator in (" | ", " – ", " - "):
+        if separator in title:
+            title = title.split(separator, 1)[0]
+    return normalize_space(title)
+
+
+def title_from_program_url(url: str) -> str | None:
+    path = urllib.parse.urlsplit(url).path.strip("/").lower()
+    known = {
+        "business-analytics-and-ai": "Master in Business Analytics & AI",
+        "study-technology-management": "MBA in Technology Management",
+        "your-double-degree": "Double Master's Program in Technology Management",
+        "your-single-degree-24m": "MBA in Technology Management",
+        "your-single-degree-12m": "MBA in Technology Management",
+    }
+    for slug, title in known.items():
+        if path.endswith(slug):
+            return title
+    return None
+
+
+def title_looks_like_marketing(title: str) -> bool:
+    lower = title.lower()
+    return lower.startswith(("your ", "study with ", "how to ", "take the next step"))
+
+
+def title_looks_like_navigation(title: str) -> bool:
+    lower = title.lower()
+    return "show submenu" in lower or lower in {"study", "study program", "programs", "programmes"}
 
 
 def extract_requirement_sections(blocks: list[str]) -> list[dict]:
@@ -568,7 +609,7 @@ def extract_language_requirements(text: str, source_url: str, retrieved_at: str,
     for test_name, pattern in LANGUAGE_TEST_PATTERNS.items():
         for match in pattern.finditer(text):
             segment = language_score_segment(text, match, test_name)
-            score = extract_language_score(segment)
+            score = extract_language_score(segment, test_name)
             if not score:
                 continue
             score = score.replace(",", ".")
@@ -609,9 +650,12 @@ def language_score_segment(text: str, match: re.Match[str], test_name: str) -> s
     return normalize_space(segment)
 
 
-def extract_language_score(segment: str) -> str | None:
+def extract_language_score(segment: str, test_name: str) -> str | None:
     if not segment:
         return None
+    if test_name == "German":
+        cefr = re.search(r"\b(A1|A2|B1|B2|C1|C2|TestDaF|DSH)\b", segment, re.IGNORECASE)
+        return cefr.group(1) if cefr else None
     for pattern in (
         r"(?:min\.?|minimum|at least|score of|overall score of)\s*(?:of\s*)?(?P<score>A1|A2|B1|B2|C1|C2|TestDaF|DSH|\d{1,3}(?:[.,]\d+)?)",
         r"[:/-]\s*(?P<score>A1|A2|B1|B2|C1|C2|TestDaF|DSH|\d{1,3}(?:[.,]\d+)?)",
@@ -700,11 +744,19 @@ def extract_keyword_list(
     values: list[str] = []
     lower = text.lower()
     for label, keywords in keyword_map.items():
-        if not any(keyword in lower for keyword in keywords):
+        matched_keyword = next((keyword for keyword in keywords if keyword_in_text(keyword, lower)), None)
+        if not matched_keyword:
             continue
         values.append(label)
-        add_evidence(evidence, evidence_key, source_url, sentence_around(text, keywords[0]), retrieved_at, "medium", f"{label} keyword found.")
+        add_evidence(evidence, evidence_key, source_url, sentence_around(text, matched_keyword), retrieved_at, "medium", f"{label} keyword found.")
     return values
+
+
+def keyword_in_text(keyword: str, lower_text: str) -> bool:
+    escaped = re.escape(keyword.lower())
+    if re.search(rf"(?<![a-z0-9]){escaped}(?![a-z0-9])", lower_text):
+        return True
+    return False
 
 
 def extract_waivers(text: str) -> list[str]:

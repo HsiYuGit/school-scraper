@@ -8,13 +8,13 @@
     "school_type": "university",
     "source_official_url": "https://www.munich-business-school.de/en/"
   },
-  "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+  "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
   "crawler_policy": {
     "respects_robots_txt": true,
     "same_host_only": true,
     "max_pages": 8,
     "delay_seconds": 0.2,
-    "timeout_seconds": 12.0,
+    "timeout_seconds": 15.0,
     "user_agent": "study-admissions-poc/0.1 (+https://www.gut-haode.com/ partner-school research)",
     "no_login_captcha_paywall_bypass": true,
     "robots_url": "https://www.munich-business-school.de/robots.txt",
@@ -42,7 +42,7 @@
         "school_type": "university"
       },
       "program": {
-        "name": "Bachelor International Business – Study International Business at MBS",
+        "name": "Bachelor International Business",
         "degree": null,
         "level": "bachelor",
         "url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
@@ -166,7 +166,7 @@
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": "60 ECTS",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "high",
             "review_note": "Direct ECTS extraction."
           }
@@ -175,35 +175,35 @@
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": ". Previous knowledge in the fields of business administration and management, business law, accounting, mathematics and economics is required. Equivalent study and examination achievements, which have been acquired in an economics program in the basic studies, are counted towards the first two semesters of t",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": "r to the 2nd or 3rd semester. Previous knowledge in the fields of business administration and management, business law, accounting, mathematics and economics is required. Equivalent study and examination achievements, which have been acquired in an economics program in the basic studies, are counted towards t",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": "or 3rd semester. Previous knowledge in the fields of business administration and management, business law, accounting, mathematics and economics is required. Equivalent study and examination achievements, which have been acquired in an economics program in the basic studies, are counted towards the first two",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": "entry into the 2nd semester) or 60 ECTS (lateral entry into the 3rd semester) Recognition of achievements from previous business studies at a state-recognized university in Germany or abroad Proof of English language proficiency with TOEFL, IELTS or 100% English Schooling Proof of advanced knowledge in a 2nd foreig",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": "y of a transfer to the 2nd or 3rd semester. Previous knowledge in the fields of business administration and management, business law, accounting, mathematics and economics is required. Equivalent study and examination achievements, which have been acquired in an economics program in the basic studies, are count",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           }
@@ -212,14 +212,14 @@
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": "TOEFL 85/IBT (MBS TOEFL",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "high",
             "review_note": "Direct language-test score extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": "ELS 112) by the start of studies at the latest Upon receipt of the application fee, the Admission Office checks your docume",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "high",
             "review_note": "Direct language-test score extraction."
           }
@@ -228,7 +228,7 @@
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": "dies at the latest Upon receipt of the application fee, the Admission Office checks your documents and invites you to a personal interview. You will receive your feedback within t Scholarships MBS offers partial scholarships to committed prospective students. In order to apply for one of the limited scholarships, ple",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Personal interview keyword found."
           }
@@ -236,15 +236,36 @@
         "documents": [
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "on Documents Authenticated copy of school leaving certificate, alternatively last 3 school reports Letter of Motivation Resume and photo Proof of English language skills B2 (TOEFL, IELTS, Duolingo, Cambridge, ELS 112) by the start of studies at the latest Upon receipt of the application fee, the Admission",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
+            "confidence": "medium",
+            "review_note": "CV keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "(September) Application Documents Authenticated copy of school leaving certificate, alternatively last 3 school reports Letter of Motivation Resume and photo Proof of English language skills B2 (TOEFL, IELTS, Duolingo, Cambridge, ELS 112) by the start of studies at the latest Upon receipt of the application fee, the Ad",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
+            "confidence": "medium",
+            "review_note": "Motivation letter keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "alification that allows you to access university-level study in Bavaria, e.g. Abitur , Fachhochschulreife , Matura , IB Diploma or certain other international school-leaving qualifications. Did you know? You can apply early by submitting your three most recent school report cards. If your application is su",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
+            "confidence": "medium",
+            "review_note": "Degree certificate keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": "ester) Recognition of achievements from previous business studies at a state-recognized university in Germany or abroad Proof of English language proficiency with TOEFL, IELTS or 100% English Schooling Proof of advanced knowledge in a 2nd foreign language depending on the choice of International Focus (Spanish, Fre",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Proof of English proficiency keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": "s Authenticated copy of school leaving certificate, alternatively last 3 school reports Letter of Motivation Resume and photo Proof of English language skills B2 (TOEFL, IELTS, Duolingo, Cambridge, ELS 112) by the start of studies at the latest Upon receipt of the application fee, the Admission Office ch",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Photo keyword found."
           }
@@ -253,7 +274,7 @@
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": "test can be waived by applicants having completed their schooling in English (i.e. US High School Diploma, IB Diploma). Transfer to MBS You would like to change university and continue your studies at Munich Business School? We offer Bachelor students the possibility of a transfer to the 2nd or 3rd semester",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Transfer/lateral entry keyword found."
           }
@@ -262,14 +283,14 @@
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": "hool-leaving certificate before applying. Do I meet the criteria for universities in Germany? Find out now: https://www.uni-assist.de/en/tools/check-university-admission Completing a vocational training program in Germany and a) passing a mastership examination ( Meisterprüfung ) or equivalent vocational trai",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Uni-assist/VPD keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": "for bachelor’s-level study. English Proficiency Bilingual Track (70% Ger Note: If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance. Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Visa-sensitive deadline keyword found."
           }
@@ -278,7 +299,7 @@
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": "hool-leaving certificate before applying. Do I meet the criteria for universities in Germany? Find out now: https://www.uni-assist.de/en/tools/check-university-admission Completing a vocational training program in Germany and a) passing a mastership examination ( Meisterprüfung ) or equivalent vocational trai",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Uni-assist or VPD keyword found."
           }
@@ -287,56 +308,56 @@
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": "Intake: October 15 – € 1,000 discount Fall Intake: February 15 – € 1,000 discount",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": "deadline January 15 with online interview in January/February",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": "deadline February 15 with online interview in February/March – Early Bird Deadline",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": "deadline March 15 with online interview in March/April",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": "deadline April 15 with online interview in April/May",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": "deadline May 15 with online interview in May/June",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": "deadline June 15 with online interview in June/July",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
             "source_text": "deadline July 15 with online interview in July/August",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           }
@@ -395,7 +416,7 @@
         "school_type": "university"
       },
       "program": {
-        "name": "Master International Business – Study Globally at MBS",
+        "name": "Master International Business",
         "degree": null,
         "level": "master",
         "url": "https://www.munich-business-school.de/en/master/master-international-business",
@@ -442,7 +463,6 @@
           }
         ],
         "test_requirements": [
-          "GRE",
           "Personal interview",
           "Case study"
         ],
@@ -453,7 +473,6 @@
         },
         "documents": [
           "CV",
-          "Transcript",
           "Degree certificate",
           "Reference letter",
           "Proof of English proficiency",
@@ -492,14 +511,14 @@
           {
             "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
             "source_text": "180 ECTS",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "high",
             "review_note": "Direct ECTS extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
             "source_text": "5 February – € 1,000 discount The main requirement for admission to the Master study program is a successful Bachelor's degree (180 ECTS or more). Applicants with a degree in Business Studie English Proficiency Applicants must proof their English language skills by passing one of the following language te",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Degree-level requirement inferred from admissions text."
           }
@@ -508,7 +527,7 @@
           {
             "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
             "source_text": "TOEFL iBT & Home Edition: min. 85 (min. of 22 in writing band, min. of 20 in all other bands; MBS TOEFL",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "high",
             "review_note": "Direct language-test score extraction."
           }
@@ -516,22 +535,15 @@
         "test_requirements": [
           {
             "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
-            "source_text": "February – € 1,000 discount The main requirement for admission to the Master study program is a successful Bachelor's degree (180 ECTS or more). Applicants with a degree in Business Studie English Proficiency Applicants must proof their English language skills by passing one of the following language t",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
-            "confidence": "medium",
-            "review_note": "GRE keyword found."
-          },
-          {
-            "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
             "source_text": "mission and matriculate to the program. Online Application Step 2: Admission Qualified applicants will be invited for a personal interview on site in Munich or online via Microsoft Teams (approx. 30 - 45 minutes). The interview may include the processing of a case study. As soon as you are an admitted student, you ha",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Personal interview keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
             "source_text": "ng a new company. Teaching and Learning Methods Seminar-type lectures and group work Hands-on prototyping workshops and case study workshops for testing market work Supervisory coaching of the founding teams Presentations Business Projects In the Business Project, which lasts two semesters, you work with othe",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Case study keyword found."
           }
@@ -540,35 +552,35 @@
           {
             "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
             "source_text": "ng questions of motivation (various questions are available for selection during the online application process) Résumé/CV Copies of your graduation certificates* and/or current university transcripts* You may also upload the following additional documents: recent photo of yourself (professional, in c",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "CV keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
-            "source_text": "tion during the online application process) Résumé/CV Copies of your graduation certificates* and/or current university transcripts* You may also upload the following additional documents: recent photo of yourself (professional, in color with bright background) Copy of the school leaving certificate (e.g., Hi",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "source_text": "st can be waived by the following candidates: Applicants having completed their schooling in English (i.e., High School Diploma, IB) Applicants having completed their first academic degree in English Application deadlines in detail We accept applications all year round. However, we recommend that you apply",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
-            "review_note": "Transcript keyword found."
+            "review_note": "Degree certificate keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
             "source_text": "leaving certificate (e.g., Highschool Diploma, IB, Abitur)* Proof of English language proficiency (TOEFL, IELTS or ELS) Reference letters (if available) *Please provide the original documents or certified copies when you gain admission and matriculate to the program. Online Application Step 2: Admission Qual",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Reference letter keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
             "source_text": "sional, in color with bright background) Copy of the school leaving certificate (e.g., Highschool Diploma, IB, Abitur)* Proof of English language proficiency (TOEFL, IELTS or ELS) Reference letters (if available) *Please provide the original documents or certified copies when you gain admission and matriculate to t",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Proof of English proficiency keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
             "source_text": "ion certificates* and/or current university transcripts* You may also upload the following additional documents: recent photo of yourself (professional, in color with bright background) Copy of the school leaving certificate (e.g., Highschool Diploma, IB, Abitur)* Proof of English language proficiency (T",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Photo keyword found."
           }
@@ -577,14 +589,14 @@
           {
             "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
             "source_text": "g band, min. of 20 in all other bands; MBS TOEFL Institution Code: 5772) Note : If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance. Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Visa-sensitive deadline keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
             "source_text": "ans (no visa): December 10 Application guideline for non-Europeans (visa required): October 31 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Winter semester Application guideline for Europeans (no visa): July 15 Application guideline for non-Europea",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Country-specific reminder keyword found."
           }
@@ -593,7 +605,7 @@
           {
             "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
             "source_text": "ow an extra month to apply for the relevant visas. Application Process Step 1: Written Application When submitting your online application, please provide the following mandatory documents: Answering questions of motivation (various questions are available for selection during the online application process) Résumé/C",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Application channel keyword found."
           }
@@ -602,14 +614,14 @@
           {
             "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
             "source_text": "intake) or third (September intake) semester abroad at one of our numerous international partner universities",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
             "source_text": "Intake: 15 October – € 1,000 discount Fall Intake: 15 February – € 1,000 discount",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           }
@@ -656,7 +668,7 @@
         "school_type": "university"
       },
       "program": {
-        "name": "MBA General Management – Full-Time Program for Your Career",
+        "name": "MBA General Management",
         "degree": "MBA",
         "level": "master",
         "url": "https://www.munich-business-school.de/en/mba/mba-full-time",
@@ -724,7 +736,6 @@
           }
         ],
         "test_requirements": [
-          "GRE",
           "Personal interview"
         ],
         "work_experience": {
@@ -738,7 +749,6 @@
           "Transcript",
           "Degree certificate",
           "Passport",
-          "Reference letter",
           "Proof of English proficiency",
           "Photo",
           "Application form"
@@ -781,7 +791,7 @@
           {
             "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
             "source_text": "ly 31 – € 2,000 discount Academic requirements You must present proof that you have successfully completed a recognized degree in any subject. Work experience You will be required to present evidence of at least two years of pertinent work experience after your first degree. Personal qualities You should",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Degree-level requirement inferred from admissions text."
           }
@@ -790,21 +800,21 @@
           {
             "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
             "source_text": "IELTS 6.5,",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "high",
             "review_note": "Direct language-test score extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
             "source_text": "TOEFL iBT & Home Edition: min. 85 (min. of 22 in writing band, min. of 20 in all other bands; MBS TOEFL",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "high",
             "review_note": "Direct language-test score extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
             "source_text": "ELS 112) A copy of your passport details page (the one with the photo) A recent passport size photo Completed application f",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "high",
             "review_note": "Direct language-test score extraction."
           }
@@ -812,15 +822,8 @@
         "test_requirements": [
           {
             "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
-            "source_text": "31 – € 2,000 discount Academic requirements You must present proof that you have successfully completed a recognized degree in any subject. Work experience You will be required to present evidence of at least two years of pertinent work experience after your first degree. Personal qualities You should",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
-            "confidence": "medium",
-            "review_note": "GRE keyword found."
-          },
-          {
-            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
             "source_text": "to request any additional information that the Selection Committee believes will assist its admission decision. Step 2: Personal Interview Application Deadlines The following application deadlines exist for the two start dates in March and September: September study start: Application deadline May 31 for internationa",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Personal interview keyword found."
           }
@@ -829,7 +832,7 @@
           {
             "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
             "source_text": "at least two years of pertinent work",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "high",
             "review_note": "Work-experience requirement found."
           }
@@ -837,43 +840,57 @@
         "documents": [
           {
             "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "ovide the following mandatory documents for your application to be considered: Letter of motivation (1-2 pages) Current curriculum vitae A copy of your official academic transcript stating your final grade* Two references of your current or previous employers Proof of English proficiency (TOEFL 85, IELTS 6.5, ELS 1",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
+            "confidence": "medium",
+            "review_note": "CV keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "submitting your application, you must provide the following mandatory documents for your application to be considered: Letter of motivation (1-2 pages) Current curriculum vitae A copy of your official academic transcript stating your final grade* Two references of your current or previous employers Proof of English pr",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
+            "confidence": "medium",
+            "review_note": "Motivation letter keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
             "source_text": "pplication to be considered: Letter of motivation (1-2 pages) Current curriculum vitae A copy of your official academic transcript stating your final grade* Two references of your current or previous employers Proof of English proficiency (TOEFL 85, IELTS 6.5, ELS 112) A copy of your passport details page (th",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Transcript keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "st can be waived by the following candidates: Applicants having completed their schooling in English (i.e., High School Diploma, IB) Applicants having completed their first academic degree in English English is the official language in daily business communication in your current position and company (we r",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
+            "confidence": "medium",
+            "review_note": "Degree certificate keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
             "source_text": "rences of your current or previous employers Proof of English proficiency (TOEFL 85, IELTS 6.5, ELS 112) A copy of your passport details page (the one with the photo) A recent passport size photo Completed application form * Original or certified copies of these documents will need to be provided if you are",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Passport keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
-            "source_text": "tivation (1-2 pages) Current curriculum vitae A copy of your official academic transcript stating your final grade* Two references of your current or previous employers Proof of English proficiency (TOEFL 85, IELTS 6.5, ELS 112) A copy of your passport details page (the one with the photo) A recent passport",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
-            "confidence": "medium",
-            "review_note": "Reference letter keyword found."
-          },
-          {
-            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
             "source_text": "opy of your official academic transcript stating your final grade* Two references of your current or previous employers Proof of English proficiency (TOEFL 85, IELTS 6.5, ELS 112) A copy of your passport details page (the one with the photo) A recent passport size photo Completed application form * Original or cert",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Proof of English proficiency keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
             "source_text": "yers Proof of English proficiency (TOEFL 85, IELTS 6.5, ELS 112) A copy of your passport details page (the one with the photo) A recent passport size photo Completed application form * Original or certified copies of these documents will need to be provided if you are successful in gaining admission to t",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Photo keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
             "source_text": "ELTS 6.5, ELS 112) A copy of your passport details page (the one with the photo) A recent passport size photo Completed application form * Original or certified copies of these documents will need to be provided if you are successful in gaining admission to the program. Optional supporting materials You are welcome",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Application form keyword found."
           }
@@ -882,14 +899,14 @@
           {
             "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
             "source_text": "g band, min. of 20 in all other bands; MBS TOEFL Institution Code: 5772) Note : If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance. Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Visa-sensitive deadline keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
             "source_text": "Europeans (no visa): July 15 Application deadline for non-Europeans (visa required): April 30 Applicants from Vietnam, China and India should allow an extra month to apply for the relevant visas. Compensation for Disadvantages Munich Business School places great importance on diversity and equal opportu",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Country-specific reminder keyword found."
           }
@@ -898,7 +915,7 @@
           {
             "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
             "source_text": "ength of application, experience and interview performance - contact your study advisor for more info. Submit your full online application for the Fall Intake 2026 by July 31, 2026 and recieve a EUR 2,000 discount on the first semester rate. Meet your Academic Director You know where you want to go. What separates th",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Application channel keyword found."
           }
@@ -907,56 +924,56 @@
           {
             "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
             "source_text": "Intake 2026 by July 31, 2026 and recieve a EUR 2,000 discount on the first semester rate",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
             "source_text": "Intake: October 15 – € 2,000 discount Fall Intake: April 30 – € 4,000 discount | July 31 – € 2,000 discount",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
             "source_text": "deadline in detail",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
             "source_text": "deadline for Europeans (no visa): January 31",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
             "source_text": "deadline for non-Europeans (visa required): October 31",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
             "source_text": "deadline for Europeans (no visa): July 15",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
             "source_text": "deadline for non-Europeans (visa required): April 30",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
             "source_text": "deadline May 31 for international students",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           }
@@ -999,7 +1016,7 @@
         "school_type": "university"
       },
       "program": {
-        "name": "Pre-Bachelor International Business – Your Start into Business Studies",
+        "name": "Pre-Bachelor International Business",
         "degree": null,
         "level": "bachelor",
         "url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
@@ -1069,7 +1086,6 @@
           }
         ],
         "test_requirements": [
-          "GRE",
           "Personal interview"
         ],
         "work_experience": {
@@ -1124,14 +1140,14 @@
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "60 ECTS",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "high",
             "review_note": "Direct ECTS extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "icity, heating, or Wi-Fi. We have already taken care of everything for you. Application The application process for our degree programs consists of two consecutive steps: an application and a personal interview. To apply for the Pre-Bachelor’s prog Tuition Fees The quality of teaching and the training of",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Degree-level requirement inferred from admissions text."
           }
@@ -1140,35 +1156,35 @@
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": ". Previous knowledge in the fields of business administration and management, business law, accounting, mathematics and economics is required. Equivalent study and examination achievements, which have been acquired in an economics program in the basic studies, are counted towards the first two semesters of t",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "r to the 2nd or 3rd semester. Previous knowledge in the fields of business administration and management, business law, accounting, mathematics and economics is required. Equivalent study and examination achievements, which have been acquired in an economics program in the basic studies, are counted towards t",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "or 3rd semester. Previous knowledge in the fields of business administration and management, business law, accounting, mathematics and economics is required. Equivalent study and examination achievements, which have been acquired in an economics program in the basic studies, are counted towards the first two",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "entry into the 2nd semester) or 60 ECTS (lateral entry into the 3rd semester) Recognition of achievements from previous business studies at a state-recognized university in Germany or abroad Proof of English language proficiency with TOEFL, IELTS or 100% English Schooling Proof of advanced knowledge in a 2nd foreig",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "y of a transfer to the 2nd or 3rd semester. Previous knowledge in the fields of business administration and management, business law, accounting, mathematics and economics is required. Equivalent study and examination achievements, which have been acquired in an economics program in the basic studies, are count",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Subject prerequisite keyword found."
           }
@@ -1177,14 +1193,14 @@
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "TOEFL 85/IBT (MBS TOEFL",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "high",
             "review_note": "Direct language-test score extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "ELS 112) by the start of studies at the latest Upon receipt of the application fee, the Admission Office checks your docume",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "high",
             "review_note": "Direct language-test score extraction."
           }
@@ -1192,15 +1208,8 @@
         "test_requirements": [
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
-            "source_text": "ity, heating, or Wi-Fi. We have already taken care of everything for you. Application The application process for our degree programs consists of two consecutive steps: an application and a personal interview. To apply for the Pre-Bachelor’s prog Tuition Fees The quality of teaching and the training of",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
-            "confidence": "medium",
-            "review_note": "GRE keyword found."
-          },
-          {
-            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "ou. Application The application process for our degree programs consists of two consecutive steps: an application and a personal interview. To apply for the Pre-Bachelor’s prog Tuition Fees The quality of teaching and the training of sought-after specialists and managers are at the heart of Munich Business School. By",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Personal interview keyword found."
           }
@@ -1208,15 +1217,36 @@
         "documents": [
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "on Documents Authenticated copy of school leaving certificate, alternatively last 3 school reports Letter of Motivation Resume and photo Proof of English language skills B2 (TOEFL, IELTS, Duolingo, Cambridge, ELS 112) by the start of studies at the latest Upon receipt of the application fee, the Admission",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
+            "confidence": "medium",
+            "review_note": "CV keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "(September) Application Documents Authenticated copy of school leaving certificate, alternatively last 3 school reports Letter of Motivation Resume and photo Proof of English language skills B2 (TOEFL, IELTS, Duolingo, Cambridge, ELS 112) by the start of studies at the latest Upon receipt of the application fee, the Ad",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
+            "confidence": "medium",
+            "review_note": "Motivation letter keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "he Pre-Bachelor study program requires a university entrance qualification (e.g. Abitur, Fachhochschulreife, Matura, IB Diploma, A-levels, etc.) as well as good English language skills. Proof of English language skills at least at B2 level is sufficient for the application. Application Process You apply fo",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
+            "confidence": "medium",
+            "review_note": "Degree certificate keyword found."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "fication (e.g. Abitur, Fachhochschulreife, Matura, IB Diploma, A-levels, etc.) as well as good English language skills. Proof of English language skills at least at B2 level is sufficient for the application. Application Process You apply for the Pre-Bachelor study program in combination with the Bachelor Internati",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Proof of English proficiency keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "s Authenticated copy of school leaving certificate, alternatively last 3 school reports Letter of Motivation Resume and photo Proof of English language skills B2 (TOEFL, IELTS, Duolingo, Cambridge, ELS 112) by the start of studies at the latest Upon receipt of the application fee, the Admission Office ch",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Photo keyword found."
           }
@@ -1225,7 +1255,7 @@
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "test can be waived by applicants having completed their schooling in English (i.e. US High School Diploma, IB Diploma). Transfer to MBS You would like to change university and continue your studies at Munich Business School? We offer Bachelor students the possibility of a transfer to the 2nd or 3rd semester",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Transfer/lateral entry keyword found."
           }
@@ -1234,14 +1264,14 @@
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "hool-leaving certificate before applying. Do I meet the criteria for universities in Germany? Find out now: https://www.uni-assist.de/en/tools/check-university-admission Completing a vocational training program in Germany and a) passing a mastership examination ( Meisterprüfung ) or equivalent vocational trai",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Uni-assist/VPD keyword found."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "for bachelor’s-level study. English Proficiency Bilingual Track (70% Ger Note: If the test is also used to apply for a visa, please check the requirements of the respective embassy in advance. Test results can only be accepted if achieved within the last two years. If you are unable to obtain your test",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Visa-sensitive deadline keyword found."
           }
@@ -1250,7 +1280,7 @@
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "hool-leaving certificate before applying. Do I meet the criteria for universities in Germany? Find out now: https://www.uni-assist.de/en/tools/check-university-admission Completing a vocational training program in Germany and a) passing a mastership examination ( Meisterprüfung ) or equivalent vocational trai",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Uni-assist or VPD keyword found."
           }
@@ -1259,56 +1289,56 @@
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "Intake: October 15 – € 1,000 discount Fall Intake: February 15 – € 1,000 discount",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "deadline January 15 with online interview in January/February",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "deadline February 15 with online interview in February/March – Early Bird Deadline",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "deadline March 15 with online interview in March/April",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "deadline April 15 with online interview in April/May",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "deadline May 15 with online interview in May/June",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "deadline June 15 with online interview in June/July",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           },
           {
             "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
             "source_text": "deadline July 15 with online interview in July/August",
-            "retrieved_at": "2026-05-15T09:34:41.945428+00:00",
+            "retrieved_at": "2026-05-16T13:06:53.282146+00:00",
             "confidence": "medium",
             "review_note": "Deadline keyword extraction."
           }

@@ -119,7 +119,7 @@ class AdmissionExtractionTest(unittest.TestCase):
         self.assertNotIn(("TOEFL iBT", "5772"), scores)
 
     def test_language_scores_must_match_test_scale(self):
-        text = "IELTS 850 TOEFL 7.0 IELTS 7.0 TOEFL 95 Duolingo 170 Duolingo 120"
+        text = "IELTS 850 TOEFL 7.0 IELTS 7.0 TOEFL 95 Duolingo 170 Duolingo 120 German-language course September 2025"
 
         requirements, _ = normalize_requirements(
             text,
@@ -134,6 +134,39 @@ class AdmissionExtractionTest(unittest.TestCase):
         self.assertNotIn(("IELTS", "850"), scores)
         self.assertNotIn(("TOEFL iBT", "7.0"), scores)
         self.assertNotIn(("Duolingo", "170"), scores)
+        self.assertNotIn(("German", "1"), scores)
+
+    def test_gre_keyword_does_not_match_degree(self):
+        text = "Bachelor's degree in engineering with good grades and high English proficiency."
+
+        requirements, _ = normalize_requirements(
+            text,
+            "https://example.edu/programs/mba",
+            "2026-05-15T00:00:00+00:00",
+        )
+
+        self.assertNotIn("GRE", requirements["test_requirements"])
+
+    def test_nit_marketing_page_title_normalizes_to_program_name(self):
+        page = Page(
+            url="https://www.nithh.org/business-analytics-and-ai",
+            title="Study Business Analytics & AI",
+            links=[],
+            text_blocks=[
+                "Study Program Show submenu for Study Program",
+                "Data-Driven Decision Making: Your Future Starts Here",
+                "Master in Business Analytics & AI",
+                "The requirements to study Business Analytics & AI",
+                "A Bachelor's or equivalent degree from a recognized university.",
+                "High level of proficiency in English.",
+                "At least one year of professional experience.",
+            ],
+        )
+
+        program = page_to_program(page)
+
+        self.assertIsNotNone(program)
+        self.assertEqual(program["program"]["name"], "Master in Business Analytics & AI")
 
     def test_unavailable_robots_policy_does_not_look_like_block(self):
         parser = urllib.robotparser.RobotFileParser()

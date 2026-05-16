@@ -95,3 +95,25 @@ python scripts\scrape_admissions.py "https://www.munich-business-school.de/en/" 
 - 對好德清單 12 所學校執行實際抓取，產出 `outputs/*.json` 與 summary manifest。
 - 檢查實際 JSON 內容是否可讀、可追溯，並記錄命令與人工 review 摘要。
 - 若正式化，需進一步確認各學校網站 terms of use、資料庫權利、商業用途與個資風險。
+
+## 2026-05-16
+
+### NIT 人工驗證與雙路徑比較
+
+- 人工驗證指出 NIT 輸出存在多個實質錯誤：官方 program family 應以 `Technology Management` 與 `Business Analytics & AI` 為主，原輸出把 study mode / info page 當成獨立校系，且把 `degree` 類字串誤判成 `GRE`。
+- 用 subagent 直接閱讀 NIT 官方頁，產出 LLM 原生版本 `outputs/nit_llm_native_admissions.json`。此版本明確記錄可見的 agent/model metadata、來源 URL、token/cost 不可得狀態，以及 LLM 與爬蟲的差異。
+- 爬蟲側新增保守規則：GRE/GMAT keyword 需完整 token 命中；德語 language score 不再接受一般數字；NIT `business-analytics-and-ai` 納入 program path；導覽/marketing 標題不再直接當 program name。
+- 重新授權網路後重跑 NIT，爬蟲已能移除 false GRE 並抓到 Business Analytics & AI，但仍無法把中央 admissions 頁的語言分數可靠合併回 program record，也仍需要把 Technology Management 的 single/double degree mode 合併成同一 program family。
+
+### 12 校重新核對發現
+
+- 多個 subagent 重新核對 12 份 JSON output，結論是目前批次產物只能當 candidate extraction，不可直接進 admissions database。
+- 高風險共通問題：FAQ/tuition/overview/listing pages 被當 program、degree 被全頁 nav/global text 污染、GRE/GMAT keyword 未區分 required/conditional/not required、language extractor 缺 CEFR/TOEIC/PTE/Cambridge/Duolingo 與多測驗清單支援。
+- SRH Universities 與 Hochschule Bremen 仍是 zero-program output；這類情況未來 manifest 應標 broken 或 needs human review，而不是 `programs_needing_human_review=0`。
+- 全校 batch 在 360 秒限制下跑到第 11 所附近 timeout；改用 600 秒限制完成 12 校 manifest。後續更適合改成 per-school validation workflow 或可續跑的 selected-school append manifest。
+
+### 驗證紀錄
+
+- `python -m unittest tests.test_scrape_admissions`：通過。
+- `python -m json.tool outputs\nit_llm_native_admissions.json`：通過。
+- `python scripts\crawl_partner_schools.py --max-pages 8 --delay 0.2 --timeout 15`：授權網路後完成 12 校 manifest；耗時約 412 秒。
