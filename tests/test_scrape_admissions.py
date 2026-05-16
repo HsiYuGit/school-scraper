@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 
 from scripts.crawl_partner_schools import slugify
+from scripts.render_admissions_html import render_file
 from scripts.scrape_admissions import (
     Page,
     RobotPolicy,
@@ -163,6 +164,38 @@ class AdmissionExtractionTest(unittest.TestCase):
         self.assertFalse(
             looks_like_program_page("https://www.munich-business-school.de/en/l/english-taught-masters-in-germany")
         )
+
+    def test_renders_admissions_fixture_to_html(self):
+        root = Path(__file__).parents[1]
+        fixture_path = root / "tests" / "fixtures" / "mbs_v0_2_sample.json"
+        output_dir = root / "outputs" / "_test_html_admissions"
+
+        output_path = render_file(fixture_path, output_dir)
+        html = output_path.read_text(encoding="utf-8")
+
+        self.assertEqual(output_path.name, "mbs_v0_2_sample.html")
+        self.assertIn("Admissions JSON review page", html)
+        self.assertIn("Requirements", html)
+        self.assertIn("Evidence", html)
+        self.assertIn("&amp;", html)
+
+        output_path.unlink()
+        output_dir.rmdir()
+
+    def test_renders_manifest_as_index(self):
+        root = Path(__file__).parents[1]
+        manifest_path = root / "outputs" / "partner_school_crawl_manifest.json"
+        output_dir = root / "outputs" / "_test_html_manifest"
+
+        output_path = render_file(manifest_path, output_dir)
+        html = output_path.read_text(encoding="utf-8")
+
+        self.assertEqual(output_path.name, "index.html")
+        self.assertIn("Partner School Crawl Manifest", html)
+        self.assertIn("munich_business_school_admissions.html", html)
+
+        output_path.unlink()
+        output_dir.rmdir()
 
 
 if __name__ == "__main__":
