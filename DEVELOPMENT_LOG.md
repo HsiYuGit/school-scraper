@@ -117,3 +117,10 @@ python scripts\scrape_admissions.py "https://www.munich-business-school.de/en/" 
 - `python -m unittest tests.test_scrape_admissions`：通過。
 - `python -m json.tool outputs\nit_llm_native_admissions.json`：通過。
 - `python scripts\crawl_partner_schools.py --max-pages 8 --delay 0.2 --timeout 15`：授權網路後完成 12 校 manifest；耗時約 412 秒。
+- `python scripts\render_admissions_html.py outputs --out-dir outputs\html`：重新產出所有 JSON review HTML，包含 `nit_llm_native_admissions.html`。
+- `python scripts\compare_admissions_outputs.py --crawler-json outputs\nit_northern_institute_of_technology_management_admissions.json --llm-json outputs\nit_llm_native_admissions.json --out outputs\html\nit_llm_vs_crawler_comparison.html`：產出 NIT 爬蟲 vs LLM 原生比較頁。
+- 使用 in-app browser 開啟本機 `file://` 被安全策略阻擋，改用 localhost server 驗證時又被 `ERR_BLOCKED_BY_CLIENT` 阻擋；已停止本機 job，並用 bounded HTML content check 確認比較頁包含差異摘要、TOEFL 90 與 GRE/GMAT not required 等關鍵內容。
+
+### 重要澄清
+
+- 2026-05-16 的 12 校 batch 只是套用少數保守規則後重新產生 outputs，不是完整的「用 12 校驗證結果反覆迭代到 LLM 閱讀品質」。後續若要達到這個目標，應把 subagent 的 per-school findings 轉成逐校 failing tests 與 extraction fixes，而不是只重跑 batch。

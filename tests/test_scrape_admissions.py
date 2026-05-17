@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 
 from scripts.crawl_partner_schools import slugify
+from scripts.compare_admissions_outputs import render_comparison
 from scripts.render_admissions_html import render_file
 from scripts.scrape_admissions import (
     Page,
@@ -229,6 +230,59 @@ class AdmissionExtractionTest(unittest.TestCase):
 
         output_path.unlink()
         output_dir.rmdir()
+
+    def test_renders_nit_comparison_html(self):
+        crawler = {
+            "schema_version": "0.2",
+            "retrieved_at": "2026-05-16T00:00:00+00:00",
+            "crawl_summary": {"pages_fetched": 1},
+            "programs": [
+                {
+                    "program": {
+                        "name": "MBA in Technology Management",
+                        "degree": "MBA",
+                        "url": "https://example.edu/mba",
+                        "language_of_instruction": ["English"],
+                    },
+                    "requirements": {"language_requirements": [], "test_requirements": []},
+                    "needs_human_review": False,
+                }
+            ],
+        }
+        llm = {
+            "schema_version": "0.2-llm-native-draft",
+            "method": {
+                "created_at": "2026-05-16T00:00:00+00:00",
+                "agent": {"model": "Codex default inherited model", "reasoning_effort": "medium"},
+                "cost_tracking": {"token_usage": "not exposed", "estimated_usd_cost": "not available"},
+            },
+            "programs": [
+                {
+                    "program": {
+                        "name": "Technology Management",
+                        "degree": "MBA / M.A.",
+                        "url": "https://example.edu/tm",
+                        "language_of_instruction": ["English"],
+                    },
+                    "requirements": {
+                        "language_requirements": [{"test": "IELTS Academic", "minimum_score": "6.5"}],
+                        "test_requirements": [{"test": "GRE/GMAT", "requirement": "not_required_or_not_stated"}],
+                    },
+                    "needs_human_review": False,
+                }
+            ],
+        }
+
+        html = render_comparison(
+            crawler,
+            llm,
+            Path("crawler.json"),
+            Path("llm.json"),
+        )
+
+        self.assertIn("NIT admissions: crawler vs LLM-native reading", html)
+        self.assertIn("Difference Summary", html)
+        self.assertIn("IELTS Academic: 6.5", html)
 
 
 if __name__ == "__main__":

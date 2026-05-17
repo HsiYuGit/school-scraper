@@ -39,5 +39,13 @@ Subagent 重新核對 12 份 output 後，結論是目前批次產物仍只能�
 - `python -m unittest tests.test_scrape_admissions`
 - `python -m json.tool outputs\nit_llm_native_admissions.json`
 - `python scripts\crawl_partner_schools.py --max-pages 8 --delay 0.2 --timeout 15`
+- `python scripts\render_admissions_html.py outputs --out-dir outputs\html`
+- `python scripts\compare_admissions_outputs.py --crawler-json outputs\nit_northern_institute_of_technology_management_admissions.json --llm-json outputs\nit_llm_native_admissions.json --out outputs\html\nit_llm_vs_crawler_comparison.html`
 
 全校批次在 360 秒限制下曾於第 11 所學校附近 timeout；改用 600 秒限制完成 12 校 manifest。這再次確認跨校全量 crawl 應視為長任務，或改成 per-school/resumable validation workflow。
+
+## 重要澄清
+
+2026-05-16 的 12 校 batch 不是一次完整的「迭代到 LLM 品質」流程。它只是在修掉部分保守規則後重跑既有 crawler outputs，目的是讓新的 JSON 與 LLM-native NIT draft 可被比較。真正要把 crawler 迭代到接近 LLM 閱讀品質，還需要按學校逐一修 program discovery、central requirements merge、degree extraction、language/test conditional semantics，並重複官方頁驗證。
+
+NIT 的 HTML 比較頁位於 `outputs/html/nit_llm_vs_crawler_comparison.html`。這個頁面明確顯示 crawler 與 LLM-native 的差距：crawler 仍有 3 筆 NIT records 且缺語言分數；LLM-native 版本整理成 2 個 program family，並保留 TOEFL/IELTS/C1 與 GRE/GMAT not required 的語意。

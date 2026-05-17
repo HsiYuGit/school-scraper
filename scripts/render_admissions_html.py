@@ -249,14 +249,26 @@ def render_evidence(evidence: dict[str, Any]) -> str:
     for group_name, items in evidence.items():
         rows = []
         for item in items or []:
-            rows.append(
-                "<tr>"
-                f"<td>{escape(item.get('confidence'))}</td>"
-                f"<td><a href=\"{escape(item.get('source_url'))}\">{escape(item.get('source_url'))}</a></td>"
-                f"<td>{escape(item.get('source_text'))}</td>"
-                f"<td>{escape(item.get('review_note'))}</td>"
-                "</tr>"
-            )
+            if isinstance(item, dict):
+                source_url = item.get("source_url")
+                rows.append(
+                    "<tr>"
+                    f"<td>{escape(item.get('confidence'))}</td>"
+                    f"<td><a href=\"{escape(source_url)}\">{escape(source_url)}</a></td>"
+                    f"<td>{escape(item.get('source_text'))}</td>"
+                    f"<td>{escape(item.get('review_note'))}</td>"
+                    "</tr>"
+                )
+            else:
+                source_url = str(item)
+                rows.append(
+                    "<tr>"
+                    "<td></td>"
+                    f"<td><a href=\"{escape(source_url)}\">{escape(source_url)}</a></td>"
+                    "<td></td>"
+                    f"<td>{escape(group_name)}</td>"
+                    "</tr>"
+                )
         if rows:
             groups.append(
                 f"<details><summary>{escape(group_name)} ({len(rows)})</summary>"
