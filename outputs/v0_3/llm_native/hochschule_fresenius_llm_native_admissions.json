@@ -1,0 +1,763 @@
+{
+    "schema_version":  "0.3-llm-native-draft",
+    "method":  {
+                   "type":  "llm_native_official_site_reading",
+                   "created_at":  "2026-05-17T09:02:24Z",
+                   "school":  "Hochschule Fresenius",
+                   "agent":  {
+                                 "agent_id":  "not exposed",
+                                 "nickname":  "not exposed",
+                                 "role":  "worker subagent",
+                                 "model":  "GPT-5 Codex",
+                                 "reasoning_effort":  "medium"
+                             },
+                   "cost_tracking":  {
+                                         "token_usage":  "not exposed",
+                                         "estimated_usd_cost":  "not available",
+                                         "note":  "Do not estimate unavailable cost."
+                                     },
+                   "source_urls":  [
+                                       "https://www.hs-fresenius.com/",
+                                       "https://www.hs-fresenius.com/master/",
+                                       "https://www.hs-fresenius.com/admission-requirements/",
+                                       "https://www.hs-fresenius.com/application/",
+                                       "https://www.hs-fresenius.com/study-programs/sap-engineering-and-analytics-master/",
+                                       "https://www.hs-fresenius.com/study-programs/biomedicine-master/",
+                                       "https://www.hs-fresenius.com/study-programs/biochemical-engineering-master/",
+                                       "https://www.hs-fresenius.com/study-programs/bioanalytical-chemistry-pharmaceutical-analysis-master/",
+                                       "https://www.hs-fresenius.com/study-programs/computer-science-master/"
+                                   ],
+                   "elapsed_time_seconds":  "not exposed",
+                   "format_note":  "Matches repo v0.3 LLM-native admissions JSON contract."
+               },
+    "school":  {
+                   "name":  "Hochschule Fresenius",
+                   "url":  "https://www.hs-fresenius.com/",
+                   "country":  "Germany",
+                   "partner_status":  "confirmed_from_offer_text",
+                   "school_type":  "university"
+               },
+    "retrieved_at":  "2026-05-17T09:02:24Z",
+    "programs":  [
+                     {
+                         "school":  {
+                                        "name":  "Hochschule Fresenius",
+                                        "url":  "https://www.hs-fresenius.com/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "SAP Engineering \u0026 Analytics",
+                                         "degree":  "Master of Science (M.Sc.)",
+                                         "level":  "master",
+                                         "url":  "https://www.hs-fresenius.com/study-programs/sap-engineering-and-analytics-master/",
+                                         "campus":  "Hochschule Fresenius Heidelberg",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "SAP engineering, analytics, data analysis, and digital transformation"
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree",
+                                                                          "minimum_ects":  180,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+                                                                                        "Bachelor\u0027s degree must be in a relevant field such as engineering, IT, or business."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            {
+                                                                                "subject":  "business, information technology, and/or engineering modules",
+                                                                                "minimum_ects":  30,
+                                                                                "notes":  [
+                                                                                              "Missing credit points can be replaced by a successfully completed subject-related interview."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "English CEFR",
+                                                                                "minimum_score":  "B2",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "Central Fresenius admission page gives examples for English B2: TOEFL iBT 70 or IELTS 6.0."
+                                                                                          ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "TOEFL iBT",
+                                                                                "minimum_score":  "70",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "Example score from central English-language admission requirements page."
+                                                                                          ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "IELTS",
+                                                                                "minimum_score":  "6.0",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "Example score from central English-language admission requirements page."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "Subject-related interview",
+                                                                            "requirement":  "conditional; can replace missing subject-specific credit points"
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  0,
+                                                                      "relevance":  null,
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "Applicants missing the required 30 credit points in business, IT, or engineering modules may replace them through a successful subject-related interview."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "German is not required for English-language study programmes, but the school encourages German learning before arrival."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+
+                                                           ],
+                                             "intakes":  [
+
+                                                         ],
+                                             "application_channel":  "Hochschule Fresenius online application / Apply now flow",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://www.hs-fresenius.com/master/",
+                                                              "source_text":  "The official master\u0027s landing page lists SAP Engineering \u0026 Analytics, M.Sc. as a full-time master\u0027s programme and includes it among the new study programs.",
+                                                              "retrieved_at":  "2026-05-17T09:02:24Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://www.hs-fresenius.com/study-programs/sap-engineering-and-analytics-master/",
+                                                              "source_text":  "The programme page states the 180-credit bachelor\u0027s requirement, relevant fields, 30 CP subject requirement, subject-related interview option, and English B2 requirement.",
+                                                              "retrieved_at":  "2026-05-17T09:02:24Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://www.hs-fresenius.com/study-programs/sap-engineering-and-analytics-master/",
+                                                           "heading":  "Admission requirements",
+                                                           "text":  "Bachelor\u0027s programme with at least 180 credit points; relevant field such as engineering, IT, or business; at least 30 credit points in business, IT, or engineering modules, replaceable through a subject-related interview; English B2."
+                                                       },
+                                                       {
+                                                           "source_url":  "https://www.hs-fresenius.com/admission-requirements/",
+                                                           "heading":  "Language skills",
+                                                           "text":  "For English-language study programs, proof equivalent to CEFR B2 is required; examples include TOEFL iBT 70 or IELTS 6.0."
+                                                       }
+                                                   ],
+                         "needs_human_review":  false
+                     },
+                     {
+                         "school":  {
+                                        "name":  "Hochschule Fresenius",
+                                        "url":  "https://www.hs-fresenius.com/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "Biomedicine",
+                                         "degree":  "Master of Science (M.Sc.)",
+                                         "level":  "master",
+                                         "url":  "https://www.hs-fresenius.com/study-programs/biomedicine-master/",
+                                         "campus":  null,
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "Biomedical research, molecular and cellular disease mechanisms"
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree",
+                                                                          "minimum_ects":  180,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+                                                                                        "Accepted fields include biology, biosciences, molecular biology, biomedicine, medicine, biochemistry, pharmacy, or a related subject."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            {
+                                                                                "subject":  "biology, biosciences, molecular biology, biomedicine, medicine, biochemistry, pharmacy, or related subject",
+                                                                                "minimum_ects":  null,
+                                                                                "notes":  [
+
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "English CEFR",
+                                                                                "minimum_score":  "B2",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "native speaker of English"
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "The programme page gives TOEFL iBT 70 and IELTS 6.0 as examples."
+                                                                                          ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "TOEFL iBT",
+                                                                                "minimum_score":  "70",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "native speaker of English"
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "IELTS",
+                                                                                "minimum_score":  "6.0",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "native speaker of English"
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  0,
+                                                                      "relevance":  null,
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+
+                                                            ],
+                                              "conditional_paths":  [
+
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "German is not required for English-language study programmes, but the school encourages German learning before arrival."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+
+                                                           ],
+                                             "intakes":  [
+
+                                                         ],
+                                             "application_channel":  "Hochschule Fresenius online application / Apply now flow",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://www.hs-fresenius.com/master/",
+                                                              "source_text":  "The official master\u0027s landing page lists Biomedicine, M.Sc. as a full-time master\u0027s programme and includes it among the new study programs.",
+                                                              "retrieved_at":  "2026-05-17T09:02:24Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://www.hs-fresenius.com/study-programs/biomedicine-master/",
+                                                              "source_text":  "The programme page requires a 180-credit bachelor\u0027s degree in biology, biosciences, molecular biology, biomedicine, medicine, biochemistry, pharmacy, or related subject, plus English B2 or native speaker status.",
+                                                              "retrieved_at":  "2026-05-17T09:02:24Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://www.hs-fresenius.com/study-programs/biomedicine-master/",
+                                                           "heading":  "Admission requirements",
+                                                           "text":  "Bachelor\u0027s degree with at least 180 credit points in biology, biosciences, molecular biology, biomedicine, medicine, biochemistry, pharmacy, or a related subject; English native speaker or English B2 proof, e.g. TOEFL iBT 70 or IELTS 6.0."
+                                                       }
+                                                   ],
+                         "needs_human_review":  false
+                     },
+                     {
+                         "school":  {
+                                        "name":  "Hochschule Fresenius",
+                                        "url":  "https://www.hs-fresenius.com/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "Biochemical Engineering",
+                                         "degree":  "Master of Engineering (M.Eng.)",
+                                         "level":  "master",
+                                         "url":  "https://www.hs-fresenius.com/study-programs/biochemical-engineering-master/",
+                                         "campus":  null,
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "Biochemical processes, process optimization, and engineering"
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree or equivalent qualification",
+                                                                          "minimum_ects":  180,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+                                                                                        "Degree should be in a chemistry-related field such as analytical chemistry, chemistry, pharmacy, physics, or biology."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            {
+                                                                                "subject":  "chemistry-related field of study",
+                                                                                "minimum_ects":  null,
+                                                                                "notes":  [
+                                                                                              "Examples on the official page: analytical chemistry, chemistry, pharmacy, physics, biology."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "English CEFR",
+                                                                                "minimum_score":  "B2",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "native speaker of English"
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "The programme page gives TOEFL iBT 70 and IELTS 6.0 as examples."
+                                                                                          ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "TOEFL iBT",
+                                                                                "minimum_score":  "70",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "native speaker of English"
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "IELTS",
+                                                                                "minimum_score":  "6.0",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "native speaker of English"
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  0,
+                                                                      "relevance":  null,
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+
+                                                            ],
+                                              "conditional_paths":  [
+
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "German is not required for English-language study programmes, but the school encourages German learning before arrival."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+
+                                                           ],
+                                             "intakes":  [
+
+                                                         ],
+                                             "application_channel":  "Hochschule Fresenius online application / Apply now flow",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://www.hs-fresenius.com/master/",
+                                                              "source_text":  "The official master\u0027s landing page lists Biochemical Engineering, M.Eng. as a full-time master\u0027s programme and includes it among the new study programs.",
+                                                              "retrieved_at":  "2026-05-17T09:02:24Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://www.hs-fresenius.com/study-programs/biochemical-engineering-master/",
+                                                              "source_text":  "The programme page requires a 180-credit bachelor\u0027s degree or equivalent qualification in a chemistry-related field and English B2 or native speaker status.",
+                                                              "retrieved_at":  "2026-05-17T09:02:24Z",
+                                                              "confidence":  "medium",
+                                                              "review_note":  "The page title and master landing use M.Eng.; one admissions sentence refers to M.Sc., so degree label should be manually confirmed."
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://www.hs-fresenius.com/study-programs/biochemical-engineering-master/",
+                                                           "heading":  "Admission requirements",
+                                                           "text":  "Bachelor\u0027s degree with at least 180 credit points or equivalent qualification in a chemistry-related field; English native speaker or English B2 proof, e.g. TOEFL iBT 70 or IELTS 6.0."
+                                                       }
+                                                   ],
+                         "needs_human_review":  true
+                     },
+                     {
+                         "school":  {
+                                        "name":  "Hochschule Fresenius",
+                                        "url":  "https://www.hs-fresenius.com/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "Bioanalytical Chemistry and Pharmaceutical Analysis",
+                                         "degree":  "Master of Science (M.Sc.)",
+                                         "level":  "master",
+                                         "url":  "https://www.hs-fresenius.com/study-programs/bioanalytical-chemistry-pharmaceutical-analysis-master/",
+                                         "campus":  null,
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "Bioanalytical chemistry and pharmaceutical analysis"
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree or equivalent qualification",
+                                                                          "minimum_ects":  180,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+                                                                                        "Degree should be in a chemistry-related field such as analytical chemistry, chemistry, pharmacy, physics, or biology."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            {
+                                                                                "subject":  "chemistry-related field of study",
+                                                                                "minimum_ects":  null,
+                                                                                "notes":  [
+                                                                                              "Examples on the official page: analytical chemistry, chemistry, pharmacy, physics, biology."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "English CEFR",
+                                                                                "minimum_score":  "B2",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "native speaker of English"
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "The programme page gives TOEFL iBT 70 and IELTS 6.0 as examples."
+                                                                                          ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "TOEFL iBT",
+                                                                                "minimum_score":  "70",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "native speaker of English"
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "IELTS",
+                                                                                "minimum_score":  "6.0",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "native speaker of English"
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  0,
+                                                                      "relevance":  null,
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+
+                                                            ],
+                                              "conditional_paths":  [
+
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "German is not required for English-language study programmes, but the school encourages German learning before arrival."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+
+                                                           ],
+                                             "intakes":  [
+
+                                                         ],
+                                             "application_channel":  "Hochschule Fresenius online application / Apply now flow",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://www.hs-fresenius.com/master/",
+                                                              "source_text":  "The official master\u0027s landing page lists Bioanalytical Chemistry and Pharmaceutical Analysis, M.Sc. as a full-time master\u0027s programme and includes it among the new study programs.",
+                                                              "retrieved_at":  "2026-05-17T09:02:24Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://www.hs-fresenius.com/study-programs/bioanalytical-chemistry-pharmaceutical-analysis-master/",
+                                                              "source_text":  "The programme page requires a 180-credit bachelor\u0027s degree or equivalent qualification in a chemistry-related field and English B2 or native speaker status.",
+                                                              "retrieved_at":  "2026-05-17T09:02:24Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://www.hs-fresenius.com/study-programs/bioanalytical-chemistry-pharmaceutical-analysis-master/",
+                                                           "heading":  "Admission requirements",
+                                                           "text":  "Bachelor\u0027s degree with at least 180 credit points or equivalent qualification in a chemistry-related field; English native speaker or English B2 proof, e.g. TOEFL iBT 70 or IELTS 6.0."
+                                                       }
+                                                   ],
+                         "needs_human_review":  false
+                     },
+                     {
+                         "school":  {
+                                        "name":  "Hochschule Fresenius",
+                                        "url":  "https://www.hs-fresenius.com/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "Computer Science",
+                                         "degree":  "Master of Science (M.Sc.)",
+                                         "level":  "master",
+                                         "url":  "https://www.hs-fresenius.com/study-programs/computer-science-master/",
+                                         "campus":  null,
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "Cyber Security and Artificial Intelligence"
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree",
+                                                                          "minimum_ects":  180,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            {
+                                                                                "subject":  "computer science, software engineering, information technology, or computer-science-related topics",
+                                                                                "minimum_ects":  60,
+                                                                                "notes":  [
+                                                                                              "Computer-science-related topics listed by the page include mathematics, programming, design, and software architecture."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "English CEFR",
+                                                                                "minimum_score":  "B2",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "Central Fresenius admission page gives examples for English B2: TOEFL iBT 70 or IELTS 6.0."
+                                                                                          ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "TOEFL iBT",
+                                                                                "minimum_score":  "70",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "Example score from central English-language admission requirements page."
+                                                                                          ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "IELTS",
+                                                                                "minimum_score":  "6.0",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "Example score from central English-language admission requirements page."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  0,
+                                                                      "relevance":  null,
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+
+                                                            ],
+                                              "conditional_paths":  [
+
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "German is not required for English-language study programmes, but the school encourages German learning before arrival."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+
+                                                           ],
+                                             "intakes":  [
+
+                                                         ],
+                                             "application_channel":  "Hochschule Fresenius online application / Apply now flow",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://www.hs-fresenius.com/master/",
+                                                              "source_text":  "The official master\u0027s landing page lists Computer Science, M.Sc. as a full-time master\u0027s programme and includes it among the new study programs.",
+                                                              "retrieved_at":  "2026-05-17T09:02:24Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://www.hs-fresenius.com/study-programs/computer-science-master/",
+                                                              "source_text":  "The programme page requires a 180-credit bachelor\u0027s degree, at least 60 CP in computer science or related topics, and English CEFR B2.",
+                                                              "retrieved_at":  "2026-05-17T09:02:24Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://www.hs-fresenius.com/study-programs/computer-science-master/",
+                                                           "heading":  "Admission requirements",
+                                                           "text":  "Bachelor\u0027s degree with at least 180 credit points; at least 60 credit points in computer science, software engineering, information technology, or related topics; English B2."
+                                                       }
+                                                   ],
+                         "needs_human_review":  false
+                     }
+                 ],
+    "llm_review_summary":  {
+                               "program_count":  5,
+                               "key_findings":  [
+                                                    "The official Fresenius master\u0027s landing page lists five new study programs; all five were read from official programme pages.",
+                                                    "Fresenius English-language programmes use CEFR B2 English as the common standard; the central admissions page gives TOEFL iBT 70 and IELTS 6.0 as examples.",
+                                                    "SAP Engineering \u0026 Analytics has the most specific conditional route: 30 credit points in business, IT, or engineering modules can be replaced by a subject-related interview if missing.",
+                                                    "The biomedical and chemistry-related programmes require a 180-credit bachelor\u0027s background in relevant life-science or chemistry-related fields.",
+                                                    "No official GRE/GMAT requirement was found on the reviewed Fresenius programme pages."
+                                                ],
+                               "known_gaps":  [
+                                                  "The English master\u0027s landing page lists additional master programmes beyond the five new programmes reviewed here; those were not exhaustively converted in this worker pass.",
+                                                  "Public programme pages did not expose application deadlines, exact intakes, fees, or complete document checklists in the fetched text.",
+                                                  "Biochemical Engineering is listed as M.Eng. on the master landing and page title, while one admission sentence refers to M.Sc.; that record is marked for human review."
+                                              ]
+                           }
+}

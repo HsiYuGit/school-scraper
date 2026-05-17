@@ -1,0 +1,399 @@
+{
+    "schema_version":  "0.3-llm-native-draft",
+    "method":  {
+                   "type":  "llm_native_official_site_reading",
+                   "created_at":  "2026-05-16T13:20:00+00:00",
+                   "school":  "NIT Northern Institute of Technology Management",
+                   "agent":  {
+                                 "agent_id":  "019e30da-3e69-72e3-b53c-943992d77be7",
+                                 "nickname":  "Bernoulli",
+                                 "role":  "explorer subagent",
+                                 "model":  "Codex default inherited model; exact model id not exposed in the subagent result",
+                                 "model_family":  "GPT-5 class Codex model",
+                                 "reasoning_effort":  "medium"
+                             },
+                   "cost_tracking":  {
+                                         "token_usage":  "not exposed by the available subagent notification",
+                                         "estimated_usd_cost":  "not available",
+                                         "note":  "This file records model configuration that was visible to Codex. Exact token and dollar cost were not exposed by the agent API in this run."
+                                     },
+                   "source_urls":  [
+                                       "https://www.nithh.org/admissions",
+                                       "https://www.nithh.org/study-technology-management",
+                                       "https://www.nithh.org/your-single-degree-24m",
+                                       "https://www.nithh.org/your-double-degree",
+                                       "https://www.nithh.org/business-analytics-and-ai"
+                                   ],
+                   "comparison_notes":  [
+                                            "The crawler rerun removed the false GRE requirement and discovered the Business Analytics \u0026 AI page, but still treats Technology Management modes as separate program records.",
+                                            "The LLM-native reading grouped NIT into two program families: Technology Management MBA/M.A. and Business Analytics \u0026 AI M.Sc.",
+                                            "The LLM-native reading captured admissions-page language scores and conditional Technology Management degree outcomes that the crawler did not merge into program records."
+                                        ],
+                   "format_note":  "Matches repo v0.3 LLM-native admissions JSON contract."
+               },
+    "school":  {
+                   "name":  "NIT Northern Institute of Technology Management",
+                   "url":  "https://www.nithh.org/",
+                   "country":  "Germany",
+                   "partner_status":  "confirmed_from_offer_text",
+                   "school_type":  "institute"
+               },
+    "programs":  [
+                     {
+                         "school":  {
+                                        "name":  "NIT Northern Institute of Technology Management",
+                                        "url":  "https://www.nithh.org/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "institute"
+                                    },
+                         "program":  {
+                                         "name":  "Technology Management",
+                                         "degree":  "MBA / M.A.",
+                                         "level":  "master",
+                                         "url":  "https://www.nithh.org/study-technology-management",
+                                         "campus":  "TUHH Campus, Hamburg",
+                                         "language_of_instruction":  [
+                                                                         "English",
+                                                                         "German only when the selected TUHH double-degree M.Sc. is German-taught"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  null,
+                                         "study_modes":  [
+                                                             {
+                                                                 "name":  "Single Degree",
+                                                                 "url":  "https://www.nithh.org/your-single-degree-24m",
+                                                                 "degree_outcome":  "MBA if 12 months relevant post-bachelor work experience are documented; otherwise M.A."
+                                                             },
+                                                             {
+                                                                 "name":  "Double Degree with TUHH",
+                                                                 "url":  "https://www.nithh.org/your-double-degree",
+                                                                 "degree_outcome":  "MBA / M.A. from NIT plus selected TUHH M.Sc."
+                                                             }
+                                                         ],
+                                         "_confidence":  {
+                                                             "name":  "high",
+                                                             "degree":  "high",
+                                                             "level":  "high",
+                                                             "language_of_instruction":  "medium"
+                                                         }
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree or first university degree",
+                                                                          "minimum_ects":  null,
+                                                                          "recognized_institution":  "recognized university or equivalent first degree",
+                                                                          "minimum_grade":  "good grades / upper third to quarter / excellent academic achievement",
+                                                                          "notes":  [
+                                                                                        "Single Degree accepts Engineering, Natural Science, Information or Computer Science, or business-related fields.",
+                                                                                        "Double Degree requires Engineering, Natural Science, Information Science or Computer Science and must also satisfy the selected TUHH M.Sc. requirements."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "TOEFL iBT",
+                                                                                "minimum_score":  "90",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "TOEFL paper-based",
+                                                                                "minimum_score":  "577",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "IELTS Academic",
+                                                                                "minimum_score":  "6.5",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "Cambridge CAE / CPE, telc English C1, or DAAD C1",
+                                                                                "minimum_score":  "C1",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "TestDaF or DSH",
+                                                                                "minimum_score":  null,
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "Only required when the selected TUHH double-degree M.Sc. is German-taught."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "GRE/GMAT",
+                                                                            "requirement":  "not_required_or_not_stated_on_NIT_pages"
+                                                                        },
+                                                                        {
+                                                                            "test":  "Personal interview",
+                                                                            "requirement":  "part of the admissions process for promising candidates"
+                                                                        },
+                                                                        {
+                                                                            "test":  "TUHH preliminary assessment / pre-check",
+                                                                            "requirement":  "required for the double-degree TUHH application path"
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  0,
+                                                                      "relevance":  "Professional experience is a plus, not a general admission requirement. Twelve months of relevant post-bachelor experience determine MBA rather than M.A. outcome.",
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Curriculum Vitae",
+                                                                "Bachelor\u0027s degree certificate or provisional certificate",
+                                                                "Transcript of records",
+                                                                "Official explanation of university grading system",
+                                                                "Proof of English language proficiency",
+                                                                "Statement of purpose",
+                                                                "Proof of work experience if applicable"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "EU candidates may choose 90 or 120 ECTS in the single-degree path.",
+                                                                        "Non-EU candidates should choose 120 ECTS for student visa purposes.",
+                                                                        "Double Degree applications are integrated into the TUHH application process."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "Applicants from China, Mongolia, Vietnam and India need APS upon enrollment."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Single Degree: October 1 to September 15",
+                                                               "Double Degree with international TUHH M.Sc.: December 1 to March 1",
+                                                               "Double Degree with German TUHH M.Sc.: October 1 to September 15"
+                                                           ],
+                                             "intakes":  [
+                                                             "October"
+                                                         ],
+                                             "application_channel":  "NIT online application form for single-degree path; TUHH pre-check and TUHH application portal for double-degree path.",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Technology Management 90 ECTS: EUR 26,750 + EUR 150",
+                                                          "Technology Management 120 ECTS: additional EUR 9,750"
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "primary_sources":  [
+                                                                  "https://www.nithh.org/admissions",
+                                                                  "https://www.nithh.org/study-technology-management",
+                                                                  "https://www.nithh.org/your-single-degree-24m",
+                                                                  "https://www.nithh.org/your-double-degree"
+                                                              ]
+                                      },
+                         "needs_human_review":  false,
+                         "raw_evidence_sections":  [
+
+                                                   ]
+                     },
+                     {
+                         "school":  {
+                                        "name":  "NIT Northern Institute of Technology Management",
+                                        "url":  "https://www.nithh.org/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "institute"
+                                    },
+                         "program":  {
+                                         "name":  "Business Analytics \u0026 AI",
+                                         "degree":  "Master of Science",
+                                         "level":  "master",
+                                         "url":  "https://www.nithh.org/business-analytics-and-ai",
+                                         "campus":  "TUHH Campus, Hamburg",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  null,
+                                         "_confidence":  {
+                                                             "name":  "high",
+                                                             "degree":  "high",
+                                                             "level":  "high",
+                                                             "language_of_instruction":  "high"
+                                                         }
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s or equivalent degree",
+                                                                          "minimum_ects":  null,
+                                                                          "recognized_institution":  "recognized university",
+                                                                          "minimum_grade":  "good previous academic performance",
+                                                                          "notes":  [
+                                                                                        "Accepted backgrounds include engineering, science and technology, business engineering, business administration including business informatics/mathematics/geography, or economics."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            {
+                                                                                "subject":  "mathematics",
+                                                                                "minimum_ects":  3,
+                                                                                "notes":  [
+                                                                                              "linear algebra, analysis, discrete mathematics"
+                                                                                          ]
+                                                                            },
+                                                                            {
+                                                                                "subject":  "stochastics / quantitative sciences",
+                                                                                "minimum_ects":  6,
+                                                                                "notes":  [
+                                                                                              "stochastics, probability, numerical simulation"
+                                                                                          ]
+                                                                            },
+                                                                            {
+                                                                                "subject":  "software development",
+                                                                                "minimum_ects":  6,
+                                                                                "notes":  [
+                                                                                              "programming, object-oriented development, scripting, or equivalent certificates"
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "TOEFL iBT",
+                                                                                "minimum_score":  "90",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "TOEFL paper-based",
+                                                                                "minimum_score":  "577",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "IELTS Academic",
+                                                                                "minimum_score":  "6.5",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "Cambridge CAE / CPE, telc English C1, or DAAD C1",
+                                                                                "minimum_score":  "C1",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "GRE/GMAT",
+                                                                            "requirement":  "not_required_or_not_stated_on_NIT_pages"
+                                                                        },
+                                                                        {
+                                                                            "test":  "Personal interview",
+                                                                            "requirement":  "part of the NIT admissions process"
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  1,
+                                                                      "relevance":  "professional experience",
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Curriculum Vitae",
+                                                                "Bachelor\u0027s degree certificate or provisional certificate",
+                                                                "Transcript of records",
+                                                                "Official explanation of university grading system",
+                                                                "Proof of English language proficiency",
+                                                                "Statement of purpose",
+                                                                "Proof of work experience if applicable"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "EU candidates may have a 90 ECTS program.",
+                                                                        "Non-EU candidates must choose 120 ECTS for student visa purposes."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "Applicants from China, Mongolia, Vietnam and India need APS upon enrollment."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Application possible at any time",
+                                                               "NIT admissions page also states October 1 to September 15 for the single-degree application path"
+                                                           ],
+                                             "intakes":  [
+                                                             "October 2026"
+                                                         ],
+                                             "application_channel":  "NIT online application form; missing documents may be submitted by email to admissions@nithh.de.",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "EUR 7,437.50 per semester"
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "primary_sources":  [
+                                                                  "https://www.nithh.org/admissions",
+                                                                  "https://www.nithh.org/business-analytics-and-ai"
+                                                              ]
+                                      },
+                         "needs_human_review":  true,
+                         "raw_evidence_sections":  [
+
+                                                   ]
+                     }
+                 ],
+    "retrieved_at":  "2026-05-16T13:20:00+00:00",
+    "llm_review_summary":  {
+                               "program_count":  2,
+                               "key_findings":  [
+                                                    "Existing NIT LLM-native draft retained as the v0.3 comparison baseline.",
+                                                    "NIT is grouped into Technology Management and Business Analytics \u0026 AI program families."
+                                                ],
+                               "known_gaps":  [
+                                                  "This file was produced in the previous NIT validation run; token and cost data remain not exposed."
+                                              ]
+                           }
+}

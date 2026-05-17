@@ -145,3 +145,11 @@ python scripts\scrape_admissions.py "https://www.munich-business-school.de/en/" 
 
 - `python -m unittest tests.test_scrape_admissions`：通過。
 - `python scripts\crawl_partner_schools.py --output-dir outputs\v0_3 --manifest outputs\v0_3\partner_school_crawl_manifest.json --max-pages 8 --delay 0.2 --timeout 15`：授權網路後完成 12 校 v0.3 crawler manifest；本機 sandbox 未授權網路時會回 `robots_unavailable`/connection refused，不作為 crawler 結果。
+
+### LLM-native 對照與 HTML dashboard
+
+- 以 subagents 產出 11 校 LLM-native official-site reading JSON；NIT 使用既有 `nit_llm_native_admissions.json`，複製並補齊 v0.3 top-level contract。
+- 新增 `docs/admissions_llm_native_schema_v0_3.md`，固定 LLM-native top-level、method metadata、program record 與 requirements taxonomy，避免不同 subagent 產生不同 JSON shape。
+- 新增 dashboard renderer，會把 v0.2 review、v0.3 review、LLM-native review、v0.2 vs v0.3 improvement、v0.3 vs LLM-native comparison 全部接到 `outputs/html/index.html`。
+- `python scripts\render_admissions_dashboard.py --outputs-dir outputs --html-dir outputs\html`：產出 dashboard，包含 39 個 review pages、12 個 LLM comparison pages 與 `outputs/html/comparisons/v0_2_vs_v0_3.html`。
+- 本機 server/browser 驗證因 Windows process 啟動路線不穩且使用者指示跳過，已停止殘留 PID；改用 bounded HTML content/link checks 確認 index 連到 12 校 v0.2、v0.3、LLM-native 與 comparison pages。

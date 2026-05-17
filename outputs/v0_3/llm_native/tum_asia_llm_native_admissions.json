@@ -1,0 +1,633 @@
+{
+    "schema_version":  "0.3-llm-native-draft",
+    "method":  {
+                   "type":  "llm_native_official_site_reading",
+                   "created_at":  "2026-05-17T08:34:06Z",
+                   "school":  "TUM Asia",
+                   "agent":  {
+                                 "agent_id":  "not exposed",
+                                 "nickname":  "not exposed",
+                                 "role":  "worker subagent",
+                                 "model":  "GPT-5 Codex; exact API model id not exposed",
+                                 "reasoning_effort":  "not exposed"
+                             },
+                   "cost_tracking":  {
+                                         "token_usage":  "not exposed",
+                                         "estimated_usd_cost":  "not available",
+                                         "note":  "Do not estimate unavailable cost."
+                                     },
+                   "source_urls":  [
+                                       "https://tum-asia.edu.sg/",
+                                       "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+                                       "https://tum-asia.edu.sg/admissions/graduate-studies/requirements/",
+                                       "https://tum-asia.edu.sg/graduate-studies/master-rail-and-urban-transport",
+                                       "https://tum-asia.edu.sg/graduate-studies/master-integrated-circuit-design/",
+                                       "https://tum-asia.edu.sg/graduate-studies/master-green-electronics/",
+                                       "https://tum-asia.edu.sg/wp-content/uploads/2025/04/TUM-Asia_MSc_RUT_Apr-2025.pdf",
+                                       "https://tum-asia.edu.sg/wp-content/uploads/2020/08/TUMAsia_MSc_IntegratedCircuitDesign_Aug-2020-.pdf",
+                                       "https://tum-asia.edu.sg/wp-content/uploads/TUMAsia_MSc_GreenElectronics_22012020.pdf"
+                                   ],
+                   "elapsed_time_seconds":  "not exposed",
+                   "format_note":  "Matches repo v0.3 LLM-native admissions JSON contract."
+               },
+    "school":  {
+                   "name":  "TUM Asia",
+                   "url":  "https://tum-asia.edu.sg/",
+                   "country":  "Singapore",
+                   "partner_status":  "confirmed_from_offer_text",
+                   "school_type":  "university_partner"
+               },
+    "retrieved_at":  "2026-05-17T08:34:06Z",
+    "programs":  [
+                     {
+                         "school":  {
+                                        "name":  "TUM Asia",
+                                        "url":  "https://tum-asia.edu.sg/",
+                                        "country":  "Singapore",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university_partner"
+                                    },
+                         "program":  {
+                                         "name":  "Rail and Urban Transport",
+                                         "degree":  "Master of Science (M.Sc.)",
+                                         "level":  "master",
+                                         "url":  "https://tum-asia.edu.sg/graduate-studies/master-rail-and-urban-transport",
+                                         "campus":  "Singapore",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  [
+                                                                "Rail",
+                                                                "Transport"
+                                                            ],
+                                         "_confidence":  {
+                                                             "name":  "high",
+                                                             "degree":  "high",
+                                                             "level":  "high",
+                                                             "language_of_instruction":  "medium",
+                                                             "coverage_note":  "Current HTML page and official April 2025 brochure were both readable."
+                                                         }
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree in a closely related discipline",
+                                                                          "minimum_ects":  null,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  "Upper Second-class Honours or equivalent general requirement; programme page says remarkable results.",
+                                                                          "notes":  [
+                                                                                        "Related fields include civil, communications, electrical, environmental, mechanical or transportation engineering, geodetics, geography, computer science, economics, mathematics, physical sciences, architecture, or a closely related discipline.",
+                                                                                        "Bachelor\u0027s degree must normally be completed before enrolment; country-specific academic requirements may differ."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            {
+                                                                                "subject":  "rail or transport related engineering/science background",
+                                                                                "minimum_ects":  null,
+                                                                                "notes":  [
+                                                                                              "The official programme criteria list acceptable related disciplines rather than module-by-module ECTS thresholds."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "TOEFL iBT",
+                                                                                "minimum_score":  "88",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  "no more than 2 years at application",
+                                                                                "waiver":  [
+                                                                                               "Bachelor\u0027s programme was entirely conducted in English and documented on transcript, certificate, or official university letter."
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "IELTS Academic",
+                                                                                "minimum_score":  "6.5 overall",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  "no more than 2 years at application",
+                                                                                "waiver":  [
+                                                                                               "Bachelor\u0027s programme was entirely conducted in English and documented on transcript, certificate, or official university letter."
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "GRE",
+                                                                            "requirement":  "not required"
+                                                                        },
+                                                                        {
+                                                                            "test":  "GATE",
+                                                                            "requirement":  "not required"
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  null,
+                                                                      "relevance":  null,
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Bachelor degree certificate or enrolment letter",
+                                                                "Academic transcripts or mark sheets with credits/grading system",
+                                                                "Statement of purpose",
+                                                                "Curriculum vitae or resume",
+                                                                "Passport-sized photograph",
+                                                                "Passport biodata page photocopy",
+                                                                "Proof of English proficiency if not waived"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "Applications without the required English certificate may be accepted, but final results are not released until the English test is passed.",
+                                                                        "Do not submit GRE or GATE results for TUM Asia master programmes."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "APS certificate required for applicants holding a degree from China, India, or Vietnam.",
+                                                                                 "Documents not in English must be translated by a sworn translator."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Application period: 1 Oct 2025 to 31 Mar 2026",
+                                                               "General graduate admissions open on 1 October each year"
+                                                           ],
+                                             "intakes":  [
+                                                             "August 2026"
+                                                         ],
+                                             "application_channel":  "TUM Asia online application portal with soft-copy documents.",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Application processing fee: SGD 109 inclusive of GST",
+                                                          "Programme fee from current page: S$35,970 after GST"
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "program_overview":  [
+                                                                   {
+                                                                       "source_url":  "https://tum-asia.edu.sg/graduate-studies/master-rail-and-urban-transport",
+                                                                       "source_text":  "M.Sc.; full time; 1 Oct 2025 to 31 Mar 2026; August 2026; 120 ECTS; TUM.",
+                                                                       "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                       "confidence":  "high",
+                                                                       "review_note":  "Direct programme key facts from official HTML."
+                                                                   }
+                                                               ],
+                                          "requirements":  [
+                                                               {
+                                                                   "source_url":  "https://tum-asia.edu.sg/admissions/graduate-studies/requirements/",
+                                                                   "source_text":  "General master\u0027s admission requires a related bachelor degree and Upper Second-class Honours or equivalent.",
+                                                                   "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                   "confidence":  "high",
+                                                                   "review_note":  "Central graduate requirement page."
+                                                               },
+                                                               {
+                                                                   "source_url":  "https://tum-asia.edu.sg/wp-content/uploads/2025/04/TUM-Asia_MSc_RUT_Apr-2025.pdf",
+                                                                   "source_text":  "RUT brochure lists related engineering, geodetics, geography, computing, economics, mathematics, physical sciences, architecture.",
+                                                                   "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                   "confidence":  "high",
+                                                                   "review_note":  "Official April 2025 programme brochure confirms subject background."
+                                                               }
+                                                           ],
+                                          "language_requirements":  [
+                                                                        {
+                                                                            "source_url":  "https://tum-asia.edu.sg/admissions/graduate-studies/requirements/",
+                                                                            "source_text":  "TOEFL iBT 88 or IELTS 6.5; English-medium bachelor\u0027s degree can waive test proof.",
+                                                                            "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                            "confidence":  "high",
+                                                                            "review_note":  "Central current language requirement page."
+                                                                        }
+                                                                    ],
+                                          "test_requirements":  [
+                                                                    {
+                                                                        "source_url":  "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+                                                                        "source_text":  "Master applicants need not submit GRE or GATE results.",
+                                                                        "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                        "confidence":  "high",
+                                                                        "review_note":  "Negated wording; do not extract GRE/GATE as required."
+                                                                    }
+                                                                ],
+                                          "application":  [
+                                                              {
+                                                                  "source_url":  "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+                                                                  "source_text":  "One master intake per year; admissions open 1 October; academic year typically starts in August.",
+                                                                  "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                  "confidence":  "high",
+                                                                  "review_note":  "Central application page."
+                                                              }
+                                                          ],
+                                          "review_notes":  [
+
+                                                           ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "heading":  "Programme key facts",
+                                                           "text":  "M.Sc. Rail and Urban Transport; full time; application period 1 Oct 2025 to 31 Mar 2026; next intake August 2026; 120 ECTS; awarding university TUM."
+                                                       },
+                                                       {
+                                                           "heading":  "Admission criteria",
+                                                           "text":  "Requires a closely related bachelor\u0027s degree; the official brochure lists multiple engineering, science, computing, economics, mathematics and architecture backgrounds."
+                                                       },
+                                                       {
+                                                           "heading":  "Central graduate requirements",
+                                                           "text":  "Related bachelor\u0027s degree, English proof if not waived, APS for China/India/Vietnam degree holders, and GRE/GATE not required."
+                                                       }
+                                                   ],
+                         "needs_human_review":  false
+                     },
+                     {
+                         "school":  {
+                                        "name":  "TUM Asia",
+                                        "url":  "https://tum-asia.edu.sg/",
+                                        "country":  "Singapore",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university_partner"
+                                    },
+                         "program":  {
+                                         "name":  "Integrated Circuit Design",
+                                         "degree":  "Master of Science (M.Sc.)",
+                                         "level":  "master",
+                                         "url":  "https://tum-asia.edu.sg/graduate-studies/master-integrated-circuit-design/",
+                                         "campus":  "Singapore",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  null,
+                                         "_confidence":  {
+                                                             "name":  "high",
+                                                             "degree":  "high",
+                                                             "level":  "high",
+                                                             "language_of_instruction":  "medium",
+                                                             "coverage_note":  "Seed HTML page required JavaScript in the available reader, so programme-specific facts rely on official TUM Asia brochure plus current central admissions pages."
+                                                         }
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree in Electrical or Electronics Engineering or closely related discipline",
+                                                                          "minimum_ects":  null,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  "Upper Second-class Honours or equivalent general requirement.",
+                                                                          "notes":  [
+                                                                                        "Programme-specific admission criteria were available from an official TUM Asia PDF, but the current seed HTML page could not be text-read in this environment."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            {
+                                                                                "subject":  "electrical or electronics engineering background",
+                                                                                "minimum_ects":  null,
+                                                                                "notes":  [
+                                                                                              "No module-level ECTS threshold found on readable official sources."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "TOEFL iBT",
+                                                                                "minimum_score":  "88",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  "no more than 2 years at application",
+                                                                                "waiver":  [
+                                                                                               "Bachelor\u0027s programme was entirely conducted in English and documented on transcript, certificate, or official university letter."
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "IELTS Academic",
+                                                                                "minimum_score":  "6.5 overall",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  "no more than 2 years at application",
+                                                                                "waiver":  [
+                                                                                               "Bachelor\u0027s programme was entirely conducted in English and documented on transcript, certificate, or official university letter."
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "GRE",
+                                                                            "requirement":  "not required"
+                                                                        },
+                                                                        {
+                                                                            "test":  "GATE",
+                                                                            "requirement":  "not required"
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  null,
+                                                                      "relevance":  null,
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Bachelor degree certificate or enrolment letter",
+                                                                "Academic transcripts or mark sheets",
+                                                                "Two recommendation letters from professors or employers",
+                                                                "Statement of purpose",
+                                                                "Curriculum vitae or resume",
+                                                                "Proof of English proficiency if not waived"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "Applications without the required English certificate may be accepted, but final results are not released until the English test is passed.",
+                                                                        "Do not submit GRE or GATE results for TUM Asia master programmes."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "APS certificate required for applicants holding a degree from China, India, or Vietnam.",
+                                                                                 "Documents not in English must be translated by a sworn translator."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "General graduate admissions open on 1 October each year"
+                                                           ],
+                                             "intakes":  [
+                                                             "August 2026"
+                                                         ],
+                                             "application_channel":  "TUM Asia online application portal with soft-copy documents.",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Application processing fee: SGD 109 inclusive of GST"
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "program_overview":  [
+                                                                   {
+                                                                       "source_url":  "https://tum-asia.edu.sg/wp-content/uploads/2020/08/TUMAsia_MSc_IntegratedCircuitDesign_Aug-2020-.pdf",
+                                                                       "source_text":  "Official brochure identifies the programme as Master of Science in Integrated Circuit Design.",
+                                                                       "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                       "confidence":  "medium",
+                                                                       "review_note":  "Official PDF is older than the current admission cycle; use for programme identity/background only."
+                                                                   }
+                                                               ],
+                                          "requirements":  [
+                                                               {
+                                                                   "source_url":  "https://tum-asia.edu.sg/wp-content/uploads/2020/08/TUMAsia_MSc_IntegratedCircuitDesign_Aug-2020-.pdf",
+                                                                   "source_text":  "Admission criteria list Electrical or Electronics Engineering, or a closely related discipline.",
+                                                                   "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                   "confidence":  "medium",
+                                                                   "review_note":  "Current HTML page could not be text-read; confirm against current page manually."
+                                                               }
+                                                           ],
+                                          "language_requirements":  [
+                                                                        {
+                                                                            "source_url":  "https://tum-asia.edu.sg/admissions/graduate-studies/requirements/",
+                                                                            "source_text":  "Current central page gives TOEFL iBT 88 or IELTS 6.5, with English-medium waiver.",
+                                                                            "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                            "confidence":  "medium",
+                                                                            "review_note":  "Older ICD brochure states a higher TOEFL threshold; current page should be manually confirmed."
+                                                                        }
+                                                                    ],
+                                          "test_requirements":  [
+                                                                    {
+                                                                        "source_url":  "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+                                                                        "source_text":  "Master applicants need not submit GRE or GATE results.",
+                                                                        "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                        "confidence":  "high",
+                                                                        "review_note":  "Negated wording; do not extract GRE/GATE as required."
+                                                                    }
+                                                                ],
+                                          "application":  [
+                                                              {
+                                                                  "source_url":  "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+                                                                  "source_text":  "One master intake per year; admissions open 1 October; academic year typically starts in August.",
+                                                                  "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                  "confidence":  "high",
+                                                                  "review_note":  "Central application page."
+                                                              }
+                                                          ],
+                                          "review_notes":  [
+                                                               {
+                                                                   "source_url":  "https://tum-asia.edu.sg/graduate-studies/master-integrated-circuit-design/",
+                                                                   "source_text":  "Seed programme page was not text-readable in the available official-site reader.",
+                                                                   "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                   "confidence":  "medium",
+                                                                   "review_note":  "Needs current-page verification for application close date, fees, and any programme-specific language threshold."
+                                                               }
+                                                           ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "heading":  "Programme identity",
+                                                           "text":  "Official TUM Asia brochure names the programme Master of Science in Integrated Circuit Design."
+                                                       },
+                                                       {
+                                                           "heading":  "Programme-specific background",
+                                                           "text":  "Official brochure criteria mention Electrical or Electronics Engineering, or a closely related discipline."
+                                                       },
+                                                       {
+                                                           "heading":  "Central graduate requirements",
+                                                           "text":  "Related bachelor\u0027s degree, English proof if not waived, APS for China/India/Vietnam degree holders, and GRE/GATE not required."
+                                                       }
+                                                   ],
+                         "needs_human_review":  true
+                     },
+                     {
+                         "school":  {
+                                        "name":  "TUM Asia",
+                                        "url":  "https://tum-asia.edu.sg/",
+                                        "country":  "Singapore",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university_partner"
+                                    },
+                         "program":  {
+                                         "name":  "Green Electronics",
+                                         "degree":  "Master of Science (M.Sc.)",
+                                         "level":  "master",
+                                         "url":  "https://tum-asia.edu.sg/graduate-studies/master-green-electronics/",
+                                         "campus":  "Singapore",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  null,
+                                         "_confidence":  {
+                                                             "name":  "high",
+                                                             "degree":  "high",
+                                                             "level":  "high",
+                                                             "language_of_instruction":  "medium",
+                                                             "coverage_note":  "Seed HTML page required JavaScript in the available reader, so programme-specific facts rely on official TUM Asia brochure plus current central admissions pages."
+                                                         }
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree in Electrical or Electronics Engineering or closely related discipline",
+                                                                          "minimum_ects":  null,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  "Upper Second-class Honours or equivalent general requirement.",
+                                                                          "notes":  [
+                                                                                        "Programme-specific admission criteria were available from an official TUM Asia PDF, but the current seed HTML page could not be text-read in this environment."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            {
+                                                                                "subject":  "electrical or electronics engineering background",
+                                                                                "minimum_ects":  null,
+                                                                                "notes":  [
+                                                                                              "No module-level ECTS threshold found on readable official sources."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "TOEFL iBT",
+                                                                                "minimum_score":  "88",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  "no more than 2 years at application",
+                                                                                "waiver":  [
+                                                                                               "Bachelor\u0027s programme was entirely conducted in English and documented on transcript, certificate, or official university letter."
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "IELTS Academic",
+                                                                                "minimum_score":  "6.5 overall",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  "no more than 2 years at application",
+                                                                                "waiver":  [
+                                                                                               "Bachelor\u0027s programme was entirely conducted in English and documented on transcript, certificate, or official university letter."
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "GRE",
+                                                                            "requirement":  "not required"
+                                                                        },
+                                                                        {
+                                                                            "test":  "GATE",
+                                                                            "requirement":  "not required"
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  null,
+                                                                      "relevance":  null,
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Bachelor degree certificate or enrolment letter",
+                                                                "Academic transcripts or mark sheets",
+                                                                "Two recommendation letters from professors or employers",
+                                                                "Statement of purpose",
+                                                                "Curriculum vitae or resume",
+                                                                "Proof of English proficiency if not waived"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "Applications without the required English certificate may be accepted, but final results are not released until the English test is passed.",
+                                                                        "Do not submit GRE or GATE results for TUM Asia master programmes."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "APS certificate required for applicants holding a degree from China, India, or Vietnam.",
+                                                                                 "Documents not in English must be translated by a sworn translator."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "General graduate admissions open on 1 October each year"
+                                                           ],
+                                             "intakes":  [
+                                                             "August 2026"
+                                                         ],
+                                             "application_channel":  "TUM Asia online application portal with soft-copy documents.",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Application processing fee: SGD 109 inclusive of GST"
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "program_overview":  [
+                                                                   {
+                                                                       "source_url":  "https://tum-asia.edu.sg/wp-content/uploads/TUMAsia_MSc_GreenElectronics_22012020.pdf",
+                                                                       "source_text":  "Official brochure identifies the programme as Master of Science in Green Electronics.",
+                                                                       "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                       "confidence":  "medium",
+                                                                       "review_note":  "Official PDF is older than the current admission cycle; use for programme identity/background only."
+                                                                   }
+                                                               ],
+                                          "requirements":  [
+                                                               {
+                                                                   "source_url":  "https://tum-asia.edu.sg/wp-content/uploads/TUMAsia_MSc_GreenElectronics_22012020.pdf",
+                                                                   "source_text":  "Admission criteria list Electrical or Electronics Engineering, or a closely related discipline.",
+                                                                   "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                   "confidence":  "medium",
+                                                                   "review_note":  "Current HTML page could not be text-read; confirm against current page manually."
+                                                               }
+                                                           ],
+                                          "language_requirements":  [
+                                                                        {
+                                                                            "source_url":  "https://tum-asia.edu.sg/admissions/graduate-studies/requirements/",
+                                                                            "source_text":  "Current central page gives TOEFL iBT 88 or IELTS 6.5, with English-medium waiver.",
+                                                                            "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                            "confidence":  "medium",
+                                                                            "review_note":  "Older Green Electronics brochure states a higher TOEFL threshold; current page should be manually confirmed."
+                                                                        }
+                                                                    ],
+                                          "test_requirements":  [
+                                                                    {
+                                                                        "source_url":  "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+                                                                        "source_text":  "Master applicants need not submit GRE or GATE results.",
+                                                                        "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                        "confidence":  "high",
+                                                                        "review_note":  "Negated wording; do not extract GRE/GATE as required."
+                                                                    }
+                                                                ],
+                                          "application":  [
+                                                              {
+                                                                  "source_url":  "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+                                                                  "source_text":  "One master intake per year; admissions open 1 October; academic year typically starts in August.",
+                                                                  "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                  "confidence":  "high",
+                                                                  "review_note":  "Central application page."
+                                                              }
+                                                          ],
+                                          "review_notes":  [
+                                                               {
+                                                                   "source_url":  "https://tum-asia.edu.sg/graduate-studies/master-green-electronics/",
+                                                                   "source_text":  "Seed programme page was not text-readable in the available official-site reader.",
+                                                                   "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                   "confidence":  "medium",
+                                                                   "review_note":  "Needs current-page verification for application close date, fees, and any programme-specific language threshold."
+                                                               }
+                                                           ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "heading":  "Programme identity",
+                                                           "text":  "Official TUM Asia brochure names the programme Master of Science in Green Electronics."
+                                                       },
+                                                       {
+                                                           "heading":  "Programme-specific background",
+                                                           "text":  "Official brochure criteria mention Electrical or Electronics Engineering, or a closely related discipline."
+                                                       },
+                                                       {
+                                                           "heading":  "Central graduate requirements",
+                                                           "text":  "Related bachelor\u0027s degree, English proof if not waived, APS for China/India/Vietnam degree holders, and GRE/GATE not required."
+                                                       }
+                                                   ],
+                         "needs_human_review":  true
+                     }
+                 ],
+    "llm_review_summary":  {
+                               "program_count":  3,
+                               "key_findings":  [
+                                                    "Graduate Studies Application is an application page, not a programme record.",
+                                                    "Official TUM Asia wording says master applicants need not submit GRE or GATE; these tests should not be extracted as requirements.",
+                                                    "Central current graduate requirements state related bachelor\u0027s degree, English proof unless waived, and APS for China, India, or Vietnam degree holders.",
+                                                    "Rail and Urban Transport has current readable programme facts: M.Sc., 120 ECTS, August 2026 intake, and 1 Oct 2025 to 31 Mar 2026 application period.",
+                                                    "Integrated Circuit Design and Green Electronics current seed pages were not text-readable here, so programme-specific close dates and fees require manual confirmation."
+                                                ],
+                               "known_gaps":  [
+                                                  "This draft structures the three TUM Asia seed programmes plus central admissions pages, not the full TUM Asia graduate catalogue.",
+                                                  "Current HTML for Green Electronics and Integrated Circuit Design returned a JavaScript-required page in the available official-site reader; official older PDFs were used only for programme identity and academic background.",
+                                                  "Programme-specific language thresholds may differ from the central current graduate requirement and should be manually verified before publication."
+                                              ]
+                           }
+}

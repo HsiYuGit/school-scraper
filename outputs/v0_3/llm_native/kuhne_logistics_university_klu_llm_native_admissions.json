@@ -1,0 +1,892 @@
+{
+    "schema_version":  "0.3-llm-native-draft",
+    "method":  {
+                   "type":  "llm_native_official_site_reading",
+                   "created_at":  "2026-05-17T08:35:55Z",
+                   "school":  "Kühne Logistics University (KLU)",
+                   "agent":  {
+                                 "agent_id":  "not exposed",
+                                 "nickname":  "not exposed",
+                                 "role":  "worker subagent",
+                                 "model":  "not exposed",
+                                 "reasoning_effort":  "medium"
+                             },
+                   "cost_tracking":  {
+                                         "token_usage":  "not exposed",
+                                         "estimated_usd_cost":  "not available",
+                                         "note":  "Do not estimate unavailable cost."
+                                     },
+                   "source_urls":  [
+                                       "https://www.klu.org/",
+                                       "https://www.klu.org/degree-programs/choose-your-program/",
+                                       "https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+                                       "https://www.klu.org/programs/study-for-a-master-in-international-management-in-germany",
+                                       "https://www.klu.org/programs/master-programs/study-for-a-master-in-business-analytics-and-data-science-in-germany",
+                                       "https://www.klu.org/programs/study-for-a-master-in-global-logistics-and-supply-chain-management-in-germany",
+                                       "https://www.klu.org/professionals-organizations/mba-leadership-scm",
+                                       "https://www.klu.org/programs/business-foundation-program",
+                                       "https://www.klu.org/programs/faq/faq-undergraduate",
+                                       "https://www.klu.org/programs/faq/faq-graduate",
+                                       "https://www.klu.org/programs/financing-information/tuition-cost-of-living"
+                                   ],
+                   "elapsed_time_seconds":  "not exposed",
+                   "format_note":  "Matches repo v0.3 LLM-native admissions JSON contract."
+               },
+    "school":  {
+                   "name":  "Kühne Logistics University (KLU)",
+                   "url":  "https://www.klu.org/",
+                   "country":  "Germany",
+                   "partner_status":  "confirmed_from_offer_text",
+                   "school_type":  "university"
+               },
+    "retrieved_at":  "2026-05-17T08:35:55Z",
+    "programs":  [
+                     {
+                         "school":  {
+                                        "name":  "Kühne Logistics University (KLU)",
+                                        "url":  "https://www.klu.org/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "Business Administration",
+                                         "degree":  "Bachelor of Science",
+                                         "level":  "bachelor",
+                                         "url":  "https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+                                         "campus":  "Hamburg",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  null
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Higher education entrance qualification for bachelor study",
+                                                                          "minimum_ects":  null,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  "Equivalent to German grade 2.5 or better; lower grades may be considered case by case",
+                                                                          "notes":  [
+                                                                                        "KLU asks applicants to upload evidence of secondary-school completion or equivalent eligibility for undergraduate admission."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            {
+                                                                                "subject":  "Mathematics",
+                                                                                "minimum_ects":  null,
+                                                                                "notes":  [
+                                                                                              "Undergraduate FAQ states applicants need a good command of mathematics."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "language":  "English",
+                                                                                "accepted_proofs":  [
+                                                                                                        {
+                                                                                                            "test":  "TOEFL iBT",
+                                                                                                            "minimum_score":  "90",
+                                                                                                            "component_scores":  [
+                                                                                                                                     {
+                                                                                                                                         "component":  "Each skill",
+                                                                                                                                         "minimum_score":  "20"
+                                                                                                                                     }
+                                                                                                                                 ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "test":  "IELTS Academic",
+                                                                                                            "minimum_score":  "6.5",
+                                                                                                            "component_scores":  [
+                                                                                                                                     {
+                                                                                                                                         "component":  "Each band",
+                                                                                                                                         "minimum_score":  "6.0"
+                                                                                                                                     }
+                                                                                                                                 ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "test":  "Cambridge English",
+                                                                                                            "minimum_score":  "Scale score 180"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "test":  "Duolingo English Test",
+                                                                                                            "minimum_score":  "125"
+                                                                                                        }
+                                                                                                    ],
+                                                                                "waiver":  [
+                                                                                               "Native speakers and applicants with at least 18 months of entirely English-language education may be exempt."
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "Admissions interview",
+                                                                            "requirement":  "Required after the initial document check."
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  0,
+                                                                      "relevance":  "No undergraduate work-experience requirement was stated.",
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "CV or resume",
+                                                                "Certified copy of school diploma or current transcript",
+                                                                "Transcript of records",
+                                                                "Proof of English proficiency",
+                                                                "Photograph",
+                                                                "Letter of motivation or recommendation",
+                                                                "Passport or identity document"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "Applicants may apply before receiving final school certificates and submit final documents later.",
+                                                                        "Applicants without direct German higher-education entrance eligibility may use KLU\u0027s Business Foundation Program pathway."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "Non-EU applicants should apply by the earlier KLU non-EU deadline to allow visa processing."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "1 March for non-EU applicants",
+                                                               "30 June for EU applicants"
+                                                           ],
+                                             "intakes":  [
+                                                             "Fall semester"
+                                                         ],
+                                             "application_channel":  "Apply through KLU\u0027s online application portal; upload documents, pass eligibility screening, and complete an interview.",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Tuition source consulted separately on KLU financing page; exact amount not normalized into this record."
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+                                                              "source_text":  "The official bachelor page identifies the B.Sc. in Business Administration, English instruction, three-year duration, and Hamburg location.",
+                                                              "retrieved_at":  "2026-05-17T08:35:55Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  "Used for program identity and application process."
+                                                          },
+                                                          {
+                                                              "source_url":  "https://www.klu.org/programs/faq/faq-undergraduate",
+                                                              "source_text":  "KLU\u0027s undergraduate FAQ lists English score thresholds, undergraduate document expectations, deadlines, and interview-based admission.",
+                                                              "retrieved_at":  "2026-05-17T08:35:55Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  "Used for reusable undergraduate requirements."
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+                                                           "section":  "Program overview",
+                                                           "summary":  "English-taught B.Sc. Business Administration in Hamburg with online application and interview after eligibility screening."
+                                                       },
+                                                       {
+                                                           "source_url":  "https://www.klu.org/programs/faq/faq-undergraduate",
+                                                           "section":  "Admission requirements / language / deadlines",
+                                                           "summary":  "Undergraduate grade expectation, math readiness, English score thresholds, document list, and March/June deadlines."
+                                                       }
+                                                   ],
+                         "needs_human_review":  false
+                     },
+                     {
+                         "school":  {
+                                        "name":  "Kühne Logistics University (KLU)",
+                                        "url":  "https://www.klu.org/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "International Management",
+                                         "degree":  "Master of Science",
+                                         "level":  "master",
+                                         "url":  "https://www.klu.org/programs/study-for-a-master-in-international-management-in-germany",
+                                         "campus":  "Hamburg",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  null
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree or equivalent",
+                                                                          "minimum_ects":  null,
+                                                                          "recognized_institution":  "Recognized higher education institution",
+                                                                          "minimum_grade":  "Equivalent to German grade 2.5 or better; lower grades may be considered case by case",
+                                                                          "notes":  [
+                                                                                        "A bachelor\u0027s degree is required for KLU master\u0027s admission."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            {
+                                                                                "subject":  "Business administration or economics",
+                                                                                "minimum_ects":  null,
+                                                                                "notes":  [
+                                                                                              "KLU identifies International Management as an option for applicants with a business/economics background."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "language":  "English",
+                                                                                "accepted_proofs":  [
+                                                                                                        {
+                                                                                                            "test":  "TOEFL iBT",
+                                                                                                            "minimum_score":  "90",
+                                                                                                            "component_scores":  [
+                                                                                                                                     {
+                                                                                                                                         "component":  "Each skill",
+                                                                                                                                         "minimum_score":  "20"
+                                                                                                                                     }
+                                                                                                                                 ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "test":  "IELTS Academic",
+                                                                                                            "minimum_score":  "6.5",
+                                                                                                            "component_scores":  [
+                                                                                                                                     {
+                                                                                                                                         "component":  "Each band",
+                                                                                                                                         "minimum_score":  "6.0"
+                                                                                                                                     }
+                                                                                                                                 ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "test":  "Cambridge English",
+                                                                                                            "minimum_score":  "Scale score 180"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "test":  "Duolingo English Test",
+                                                                                                            "minimum_score":  "125"
+                                                                                                        }
+                                                                                                    ],
+                                                                                "waiver":  [
+                                                                                               "Native speakers and applicants with at least 18 months of entirely English-language education may be exempt."
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "Admissions interview",
+                                                                            "requirement":  "Required after initial document screening."
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  0,
+                                                                      "relevance":  "No work-experience requirement was stated for this M.Sc.",
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "CV or resume",
+                                                                "Bachelor\u0027s degree certificate or current transcript",
+                                                                "Transcript of records",
+                                                                "Proof of English proficiency",
+                                                                "Photograph",
+                                                                "Letter of motivation or recommendation",
+                                                                "Passport or identity document"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "Final certificates may be submitted later when applicants apply before completion."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "Non-EU applicants should apply by the earlier KLU non-EU deadline to allow visa processing."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "15 January for non-EU applicants",
+                                                               "31 March for EU applicants"
+                                                           ],
+                                             "intakes":  [
+                                                             "Fall semester"
+                                                         ],
+                                             "application_channel":  "Apply through KLU\u0027s online application portal; upload documents and complete admission steps including an interview.",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Tuition source consulted separately on KLU financing page; exact amount not normalized into this record."
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://www.klu.org/programs/study-for-a-master-in-international-management-in-germany",
+                                                              "source_text":  "The official page identifies International Management as an English-taught M.Sc. for applicants with business/economics background.",
+                                                              "retrieved_at":  "2026-05-17T08:35:55Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  "Used for program identity and academic fit."
+                                                          },
+                                                          {
+                                                              "source_url":  "https://www.klu.org/programs/faq/faq-graduate",
+                                                              "source_text":  "KLU\u0027s graduate FAQ lists master\u0027s English thresholds, documents, deadlines, and interview-based admission.",
+                                                              "retrieved_at":  "2026-05-17T08:35:55Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  "Used for reusable graduate admissions requirements."
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://www.klu.org/programs/study-for-a-master-in-international-management-in-germany",
+                                                           "section":  "Program overview",
+                                                           "summary":  "English-taught International Management M.Sc. in Hamburg, positioned for business/economics backgrounds."
+                                                       },
+                                                       {
+                                                           "source_url":  "https://www.klu.org/programs/faq/faq-graduate",
+                                                           "section":  "Application / admission / language",
+                                                           "summary":  "Graduate FAQ gives non-EU/EU deadlines, document expectations, English test thresholds, and admissions interview workflow."
+                                                       }
+                                                   ],
+                         "needs_human_review":  false
+                     },
+                     {
+                         "school":  {
+                                        "name":  "Kühne Logistics University (KLU)",
+                                        "url":  "https://www.klu.org/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "Business Analytics and Data Science",
+                                         "degree":  "Master of Science",
+                                         "level":  "master",
+                                         "url":  "https://www.klu.org/programs/master-programs/study-for-a-master-in-business-analytics-and-data-science-in-germany",
+                                         "campus":  "Hamburg",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  null
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree or equivalent",
+                                                                          "minimum_ects":  null,
+                                                                          "recognized_institution":  "Recognized higher education institution",
+                                                                          "minimum_grade":  "Equivalent to German grade 2.5 or better; lower grades may be considered case by case",
+                                                                          "notes":  [
+                                                                                        "KLU positions this M.Sc. for applicants with business, management, logistics, mathematics, engineering, social sciences, science, psychology, or similar backgrounds."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            {
+                                                                                "subject":  "Business, quantitative, technical, or related background",
+                                                                                "minimum_ects":  null,
+                                                                                "notes":  [
+                                                                                              "The program page lists multiple acceptable academic backgrounds; exact ECTS prerequisites were not normalized from the page read."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "language":  "English",
+                                                                                "accepted_proofs":  [
+                                                                                                        {
+                                                                                                            "test":  "TOEFL iBT",
+                                                                                                            "minimum_score":  "90",
+                                                                                                            "component_scores":  [
+                                                                                                                                     {
+                                                                                                                                         "component":  "Each skill",
+                                                                                                                                         "minimum_score":  "20"
+                                                                                                                                     }
+                                                                                                                                 ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "test":  "IELTS Academic",
+                                                                                                            "minimum_score":  "6.5",
+                                                                                                            "component_scores":  [
+                                                                                                                                     {
+                                                                                                                                         "component":  "Each band",
+                                                                                                                                         "minimum_score":  "6.0"
+                                                                                                                                     }
+                                                                                                                                 ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "test":  "Cambridge English",
+                                                                                                            "minimum_score":  "Scale score 180"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "test":  "Duolingo English Test",
+                                                                                                            "minimum_score":  "125"
+                                                                                                        }
+                                                                                                    ],
+                                                                                "waiver":  [
+                                                                                               "Native speakers and applicants with at least 18 months of entirely English-language education may be exempt."
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "Admissions interview",
+                                                                            "requirement":  "Required after initial document screening."
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  0,
+                                                                      "relevance":  "No work-experience requirement was stated for this M.Sc.",
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "CV or resume",
+                                                                "Bachelor\u0027s degree certificate or current transcript",
+                                                                "Transcript of records",
+                                                                "Proof of English proficiency",
+                                                                "Photograph",
+                                                                "Letter of motivation or recommendation",
+                                                                "Passport or identity document"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "Final certificates may be submitted later when applicants apply before completion."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "Non-EU applicants should apply by the earlier KLU non-EU deadline to allow visa processing."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "15 January for non-EU applicants",
+                                                               "31 March for EU applicants"
+                                                           ],
+                                             "intakes":  [
+                                                             "Fall semester"
+                                                         ],
+                                             "application_channel":  "Apply through KLU\u0027s online application portal; upload documents and complete admission steps including an interview.",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Tuition source consulted separately on KLU financing page; exact amount not normalized into this record."
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://www.klu.org/programs/master-programs/study-for-a-master-in-business-analytics-and-data-science-in-germany",
+                                                              "source_text":  "The official page identifies Business Analytics and Data Science as an English-taught M.Sc. in Hamburg with broad eligible backgrounds.",
+                                                              "retrieved_at":  "2026-05-17T08:35:55Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  "Used for program identity and academic fit."
+                                                          },
+                                                          {
+                                                              "source_url":  "https://www.klu.org/programs/faq/faq-graduate",
+                                                              "source_text":  "KLU\u0027s graduate FAQ supplies shared master\u0027s application, language, deadline, and interview evidence.",
+                                                              "retrieved_at":  "2026-05-17T08:35:55Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  "Used for reusable graduate admissions requirements."
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://www.klu.org/programs/master-programs/study-for-a-master-in-business-analytics-and-data-science-in-germany",
+                                                           "section":  "Program overview",
+                                                           "summary":  "English-taught BADS M.Sc.; Hamburg; suitable backgrounds include business, logistics, quantitative, technical, science, and social-science fields."
+                                                       },
+                                                       {
+                                                           "source_url":  "https://www.klu.org/programs/faq/faq-graduate",
+                                                           "section":  "Application / admission / language",
+                                                           "summary":  "Graduate FAQ gives non-EU/EU deadlines, document expectations, English test thresholds, and admissions interview workflow."
+                                                       }
+                                                   ],
+                         "needs_human_review":  false
+                     },
+                     {
+                         "school":  {
+                                        "name":  "Kühne Logistics University (KLU)",
+                                        "url":  "https://www.klu.org/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "Global Logistics and Supply Chain Management",
+                                         "degree":  "Master of Science",
+                                         "level":  "master",
+                                         "url":  "https://www.klu.org/programs/study-for-a-master-in-global-logistics-and-supply-chain-management-in-germany",
+                                         "campus":  "Hamburg",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  null
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree or equivalent",
+                                                                          "minimum_ects":  null,
+                                                                          "recognized_institution":  "Recognized higher education institution",
+                                                                          "minimum_grade":  "Equivalent to German grade 2.5 or better; lower grades may be considered case by case",
+                                                                          "notes":  [
+                                                                                        "KLU\u0027s graduate FAQ gives the shared master\u0027s entrance expectation; program-specific ECTS details were not visible on the page read."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            {
+                                                                                "subject":  "Business, economics, industrial engineering, management, mathematics, or related fields",
+                                                                                "minimum_ects":  null,
+                                                                                "notes":  [
+                                                                                              "The program page positions the M.Sc. for applicants from business, economics, industrial engineering, management, mathematics, or similar fields."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "language":  "English",
+                                                                                "accepted_proofs":  [
+                                                                                                        {
+                                                                                                            "test":  "TOEFL iBT",
+                                                                                                            "minimum_score":  "90",
+                                                                                                            "component_scores":  [
+                                                                                                                                     {
+                                                                                                                                         "component":  "Each skill",
+                                                                                                                                         "minimum_score":  "20"
+                                                                                                                                     }
+                                                                                                                                 ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "test":  "IELTS Academic",
+                                                                                                            "minimum_score":  "6.5",
+                                                                                                            "component_scores":  [
+                                                                                                                                     {
+                                                                                                                                         "component":  "Each band",
+                                                                                                                                         "minimum_score":  "6.0"
+                                                                                                                                     }
+                                                                                                                                 ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "test":  "Cambridge English",
+                                                                                                            "minimum_score":  "Scale score 180"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "test":  "Duolingo English Test",
+                                                                                                            "minimum_score":  "125"
+                                                                                                        }
+                                                                                                    ],
+                                                                                "waiver":  [
+                                                                                               "Native speakers and applicants with at least 18 months of entirely English-language education may be exempt."
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "Admissions interview",
+                                                                            "requirement":  "Required after initial document screening."
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  0,
+                                                                      "relevance":  "No work-experience requirement was stated for this M.Sc.",
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "CV or resume",
+                                                                "Bachelor\u0027s degree certificate or current transcript",
+                                                                "Transcript of records",
+                                                                "Proof of English proficiency",
+                                                                "Photograph",
+                                                                "Letter of motivation or recommendation",
+                                                                "Passport or identity document"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "Final certificates may be submitted later when applicants apply before completion."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "Non-EU applicants should apply by the earlier KLU non-EU deadline to allow visa processing."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "15 January for non-EU applicants",
+                                                               "31 March for EU applicants"
+                                                           ],
+                                             "intakes":  [
+                                                             "Fall semester"
+                                                         ],
+                                             "application_channel":  "Apply through KLU\u0027s online application portal; upload documents and complete admission steps including an interview.",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Tuition source consulted separately on KLU financing page; exact amount not normalized into this record."
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://www.klu.org/programs/study-for-a-master-in-global-logistics-and-supply-chain-management-in-germany",
+                                                              "source_text":  "The official page identifies Global Logistics and Supply Chain Management as an English-taught M.Sc. in Hamburg.",
+                                                              "retrieved_at":  "2026-05-17T08:35:55Z",
+                                                              "confidence":  "medium",
+                                                              "review_note":  "Used for program identity and academic fit; the page read had less detailed requirement text than the FAQ."
+                                                          },
+                                                          {
+                                                              "source_url":  "https://www.klu.org/programs/faq/faq-graduate",
+                                                              "source_text":  "KLU\u0027s graduate FAQ supplies the shared master\u0027s application, language, deadline, and interview evidence.",
+                                                              "retrieved_at":  "2026-05-17T08:35:55Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  "Used for reusable graduate admissions requirements."
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://www.klu.org/programs/study-for-a-master-in-global-logistics-and-supply-chain-management-in-germany",
+                                                           "section":  "Program overview",
+                                                           "summary":  "English-taught M.Sc. in Hamburg, for applicants from business, economics, industrial engineering, management, mathematics, or similar fields."
+                                                       },
+                                                       {
+                                                           "source_url":  "https://www.klu.org/programs/faq/faq-graduate",
+                                                           "section":  "Application / admission / language",
+                                                           "summary":  "Graduate FAQ gives non-EU/EU deadlines, document expectations, English test thresholds, and admissions interview workflow."
+                                                       }
+                                                   ],
+                         "needs_human_review":  true
+                     },
+                     {
+                         "school":  {
+                                        "name":  "Kühne Logistics University (KLU)",
+                                        "url":  "https://www.klu.org/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "Leadership and Supply Chain Management",
+                                         "degree":  "Master of Business Administration",
+                                         "level":  "mba",
+                                         "url":  "https://www.klu.org/professionals-organizations/mba-leadership-scm",
+                                         "campus":  "Hamburg with remote and blended elements",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  null
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree or equivalent",
+                                                                          "minimum_ects":  null,
+                                                                          "recognized_institution":  "Recognized higher education institution",
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+                                                                                        "The official MBA page requires a bachelor\u0027s degree or equivalent academic qualification."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "language":  "English",
+                                                                                "accepted_proofs":  [
+                                                                                                        {
+                                                                                                            "test":  "Proof may be required depending on applicant background",
+                                                                                                            "minimum_score":  null
+                                                                                                        }
+                                                                                                    ],
+                                                                                "waiver":  [
+                                                                                               "Applicants may not need a separate test when their background sufficiently demonstrates English proficiency."
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "Admissions interview",
+                                                                            "requirement":  "Required as part of MBA admission."
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  3,
+                                                                      "relevance":  "Professional experience is required for the MBA.",
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Application form",
+                                                                "CV or resume",
+                                                                "Proof of academic degree",
+                                                                "Proof of professional experience",
+                                                                "Proof of English proficiency if requested"
+                                                            ],
+                                              "conditional_paths":  [
+
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "International applicants should account for visa and travel timelines for Hamburg components."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Not normalized from the MBA page read"
+                                                           ],
+                                             "intakes":  [
+                                                             "Not normalized from the MBA page read"
+                                                         ],
+                                             "application_channel":  "Apply through KLU\u0027s MBA application process and complete the admissions interview.",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Tuition source consulted separately on KLU financing page; exact MBA amount not normalized into this record."
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://www.klu.org/professionals-organizations/mba-leadership-scm",
+                                                              "source_text":  "The official MBA page lists a degree or equivalent, at least three years of work experience, English ability, and an admissions interview.",
+                                                              "retrieved_at":  "2026-05-17T08:35:55Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  "Used for MBA admission requirements."
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://www.klu.org/professionals-organizations/mba-leadership-scm",
+                                                           "section":  "Admission Requirements",
+                                                           "summary":  "Bachelor\u0027s or equivalent qualification, three years of relevant professional experience, English proficiency, and admissions interview."
+                                                       }
+                                                   ],
+                         "needs_human_review":  true
+                     },
+                     {
+                         "school":  {
+                                        "name":  "Kühne Logistics University (KLU)",
+                                        "url":  "https://www.klu.org/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "Business Foundations Program",
+                                         "degree":  "Foundation / Studienkolleg pathway",
+                                         "level":  "foundation",
+                                         "url":  "https://www.klu.org/programs/business-foundation-program",
+                                         "campus":  "Hamburg",
+                                         "language_of_instruction":  [
+                                                                         "English",
+                                                                         "German support for pathway progression"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  null
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Secondary-school qualification not yet directly equivalent to German higher-education entrance qualification",
+                                                                          "minimum_ects":  null,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+                                                                                        "The foundation program is positioned for applicants whose school certificates are not directly equivalent to the German Abitur."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "language":  "English",
+                                                                                "accepted_proofs":  [
+                                                                                                        {
+                                                                                                            "test":  "B2-level English",
+                                                                                                            "minimum_score":  "B2"
+                                                                                                        }
+                                                                                                    ],
+                                                                                "waiver":  [
+
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "language":  "German",
+                                                                                "accepted_proofs":  [
+                                                                                                        {
+                                                                                                            "test":  "A1-level German",
+                                                                                                            "minimum_score":  "A1"
+                                                                                                        }
+                                                                                                    ],
+                                                                                "waiver":  [
+
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  0,
+                                                                      "relevance":  "No work-experience requirement was stated.",
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Secondary-school documents",
+                                                                "Proof of English proficiency",
+                                                                "Proof of German proficiency",
+                                                                "Passport or identity document"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "Successful completion can support progression toward KLU undergraduate study when direct admission is not available."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "Designed especially for international applicants needing a German higher-education entrance pathway."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Not normalized from the page read"
+                                                           ],
+                                             "intakes":  [
+                                                             "Not normalized from the page read"
+                                                         ],
+                                             "application_channel":  "Apply through KLU\u0027s foundation-program application route.",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Tuition source consulted separately on KLU financing page; exact amount not normalized into this record."
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://www.klu.org/programs/business-foundation-program",
+                                                              "source_text":  "The official page describes the Business Foundations Program as a pathway for applicants whose school certificate is not Abitur-equivalent.",
+                                                              "retrieved_at":  "2026-05-17T08:35:55Z",
+                                                              "confidence":  "medium",
+                                                              "review_note":  "Included as a pathway program, not a degree."
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://www.klu.org/programs/business-foundation-program",
+                                                           "section":  "Business Foundations Program overview",
+                                                           "summary":  "Foundation route for applicants without direct German higher-education entrance equivalence, with English and German proficiency expectations."
+                                                       }
+                                                   ],
+                         "needs_human_review":  true
+                     }
+                 ],
+    "llm_review_summary":  {
+                               "program_count":  6,
+                               "key_findings":  [
+                                                    "KLU official pages support one undergraduate business degree, three English-taught MSc program records, an MBA, and a non-degree foundation pathway.",
+                                                    "The prior crawler false positive for GRE/GMAT should be rejected: no official KLU page read stated GRE or GMAT as a requirement.",
+                                                    "KLU\u0027s FAQ pages are reusable admissions evidence, but they should not be treated as program records.",
+                                                    "KLU undergraduate and graduate English thresholds are TOEFL iBT 90 with 20 per skill, IELTS 6.5 with 6.0 per band, Cambridge scale 180, or Duolingo 125.",
+                                                    "KLU deadlines differ by level: bachelor pages/FAQ state 1 March non-EU and 30 June EU; graduate FAQ states 15 January non-EU and 31 March EU."
+                                                ],
+                               "known_gaps":  [
+                                                  "Tuition amounts were not normalized into program records because KLU\u0027s financing page is central and program-specific values need a fee-table pass.",
+                                                  "The Global Logistics M.Sc. and foundation pathway records need human review for program-specific admissions details beyond the shared FAQ evidence.",
+                                                  "MBA intake/deadline and exact English-proof thresholds require a focused MBA admissions/fees follow-up."
+                                              ]
+                           }
+}

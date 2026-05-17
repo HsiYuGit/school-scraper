@@ -22,6 +22,8 @@
 - v0.3 crawler vs LLM-native official-site reading。
 - 每校 review page，全部從 `outputs/html/index.html` 連結。
 
+LLM-native JSON 的固定格式見 `docs/admissions_llm_native_schema_v0_3.md`。
+
 ## v0.3 crawler changes
 
 v0.3 根據 `data/admissions_validation_findings_2026_05_16.json` 收斂 crawler，目標是降低假陽性，而不是把每所學校的所有 program 都硬抓出來：

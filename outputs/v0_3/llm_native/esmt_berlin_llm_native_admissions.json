@@ -1,0 +1,1178 @@
+{
+    "schema_version":  "0.3-llm-native-draft",
+    "method":  {
+                   "type":  "llm_native_official_site_reading",
+                   "created_at":  "2026-05-17T08:34:24Z",
+                   "school":  "ESMT Berlin",
+                   "agent":  {
+                                 "agent_id":  "not exposed",
+                                 "nickname":  "not exposed",
+                                 "role":  "worker subagent",
+                                 "model":  "GPT-5 Codex",
+                                 "reasoning_effort":  "not exposed"
+                             },
+                   "cost_tracking":  {
+                                         "token_usage":  "not exposed",
+                                         "estimated_usd_cost":  "not available",
+                                         "note":  "Do not estimate unavailable cost."
+                                     },
+                   "source_urls":  [
+                                       "https://esmt.berlin/",
+                                       "https://esmt.berlin/degrees",
+                                       "https://esmt.berlin/master-programs",
+                                       "https://esmt.berlin/master-programs/master-global-management/admissions",
+                                       "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
+                                       "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
+                                       "https://esmt.berlin/mba-programs",
+                                       "https://esmt.berlin/mba-programs/full-time-mba/admissions",
+                                       "https://esmt.berlin/mba-programs/global-online-mba",
+                                       "https://esmt.berlin/mba-programs/part-time-mba",
+                                       "https://esmt.berlin/mba-programs/executive-mba"
+                                   ],
+                   "elapsed_time_seconds":  "not exposed",
+                   "format_note":  "Matches repo v0.3 LLM-native admissions JSON contract."
+               },
+    "school":  {
+                   "name":  "ESMT Berlin",
+                   "url":  "https://esmt.berlin/",
+                   "country":  "Germany",
+                   "partner_status":  "candidate_from_partner_logo",
+                   "school_type":  "university"
+               },
+    "retrieved_at":  "2026-05-17T08:34:24Z",
+    "programs":  [
+                     {
+                         "school":  {
+                                        "name":  "ESMT Berlin",
+                                        "url":  "https://esmt.berlin/",
+                                        "country":  "Germany",
+                                        "partner_status":  "candidate_from_partner_logo",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "Master in Global Management",
+                                         "degree":  "Master of Science (MSc)",
+                                         "level":  "master",
+                                         "url":  "https://esmt.berlin/master-programs/master-global-management/admissions",
+                                         "campus":  "Berlin plus required global internship and social impact projects",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "Managing global corporations in a changing world",
+                                         "_confidence":  {
+                                                             "name":  "high",
+                                                             "degree":  "high",
+                                                             "level":  "high",
+                                                             "language_of_instruction":  "medium"
+                                                         }
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s equivalent or higher",
+                                                                          "minimum_ects":  null,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  "excellent grades",
+                                                                          "notes":  [
+                                                                                        "Applications are considered from students completing undergraduate studies within the next year."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "English proficiency test",
+                                                                                "minimum_score":  "not mandatory unless required after assessment",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "English native language",
+                                                                                               "university degree completely taught in English"
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "English is also assessed in the selection interview."
+                                                                                          ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "TOEFL",
+                                                                                "minimum_score":  "100 if required",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "English native language",
+                                                                                               "university degree completely taught in English"
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "ESMT TOEFL institution code 8707."
+                                                                                          ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "IELTS",
+                                                                                "minimum_score":  "7.0 if required",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "English native language",
+                                                                                               "university degree completely taught in English"
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "TOEIC",
+                                                                                "minimum_score":  "850 if required",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "English native language",
+                                                                                               "university degree completely taught in English"
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "BAT or GMAT/GRE",
+                                                                            "requirement":  "conditional; depending on profile, evidence of quantitative skills may be required"
+                                                                        },
+                                                                        {
+                                                                            "test":  "GMAT",
+                                                                            "requirement":  "not obligatory if alternative quantitative evidence is sufficient; GMAT below 600 is usually not competitive"
+                                                                        },
+                                                                        {
+                                                                            "test":  "GRE",
+                                                                            "requirement":  "not obligatory if alternative quantitative evidence is sufficient; GRE below 304 is usually not competitive"
+                                                                        },
+                                                                        {
+                                                                            "test":  "Admissions interview",
+                                                                            "requirement":  "used to assess analytical and problem-solving skills, teamwork, and English proficiency"
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  0,
+                                                                      "relevance":  "recent graduate profile",
+                                                                      "notes":  [
+                                                                                    "No more than 24 months of postgraduate work experience, excluding internships."
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Basic personal data",
+                                                                "Academic and professional background",
+                                                                "Short essay answers",
+                                                                "CV",
+                                                                "Academic transcripts from all higher education institutions",
+                                                                "One recommendation",
+                                                                "GRE/GMAT and TOEFL scores if needed"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "BAT, GMAT, or GRE can be waived when transcripts or related qualifications demonstrate sufficient quantitative skills."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "Visa and scholarship applicants are encouraged to apply as soon as possible while seats remain available."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "2026 intake current round deadline: May 17",
+                                                               "Round four deadline: June 30",
+                                                               "Round five deadline: July 31; later applications considered case-by-case, space available"
+                                                           ],
+                                             "intakes":  [
+                                                             "September 8, 2026"
+                                                         ],
+                                             "application_channel":  "ESMT online application portal",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Application fee: EUR 75"
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://esmt.berlin/degrees",
+                                                              "source_text":  "The degree overview lists Global Management as a 24-month on-campus master\u0027s program starting in September, located in Berlin with required global internship and social impact projects.",
+                                                              "retrieved_at":  "2026-05-17T08:34:24Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://esmt.berlin/master-programs/master-global-management/admissions",
+                                                              "source_text":  "General requirements include a Bachelor\u0027s-equivalent degree with excellent grades, no more than 24 months postgraduate work experience, conditional English scores, conditional BAT/GMAT/GRE, essays, one reference, and EUR 75 fee.",
+                                                              "retrieved_at":  "2026-05-17T08:34:24Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://esmt.berlin/master-programs/master-global-management/admissions",
+                                                           "heading":  "What do I need to apply?",
+                                                           "text":  "Previous degree at least Bachelor\u0027s equivalent with excellent grades; recently graduated with no more than 24 months postgraduate work experience; English scores if applicable; evidence of quantitative skills with possible BAT or GMAT/GRE; completed application including essays, one reference, and EUR 75 fee."
+                                                       },
+                                                       {
+                                                           "source_url":  "https://esmt.berlin/master-programs/master-global-management/admissions",
+                                                           "heading":  "MGM application dates 2026",
+                                                           "text":  "Applications for 2026 intake are open; intake starts September 8, 2026; current round closes May 17; following deadlines June 30 and July 31."
+                                                       }
+                                                   ],
+                         "needs_human_review":  false
+                     },
+                     {
+                         "school":  {
+                                        "name":  "ESMT Berlin",
+                                        "url":  "https://esmt.berlin/",
+                                        "country":  "Germany",
+                                        "partner_status":  "candidate_from_partner_logo",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "Master in Innovation and Entrepreneurship",
+                                         "degree":  "Master of Science (MSc)",
+                                         "level":  "master",
+                                         "url":  "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
+                                         "campus":  "Berlin",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "Transform or build the business of tomorrow",
+                                         "_confidence":  {
+                                                             "name":  "high",
+                                                             "degree":  "high",
+                                                             "level":  "high",
+                                                             "language_of_instruction":  "medium"
+                                                         }
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s equivalent or higher",
+                                                                          "minimum_ects":  null,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  "excellent grades",
+                                                                          "notes":  [
+                                                                                        "Applications are considered from students completing undergraduate studies within the next year."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "English proficiency test",
+                                                                                "minimum_score":  "not mandatory unless required after assessment",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "English native language",
+                                                                                               "university degree completely taught in English"
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "English is also assessed in the selection interview."
+                                                                                          ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "TOEFL",
+                                                                                "minimum_score":  "100 if required",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "English native language",
+                                                                                               "university degree completely taught in English"
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "ESMT TOEFL institution code 8707."
+                                                                                          ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "IELTS",
+                                                                                "minimum_score":  "7.0 if required",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "English native language",
+                                                                                               "university degree completely taught in English"
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "TOEIC",
+                                                                                "minimum_score":  "850 if required",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "English native language",
+                                                                                               "university degree completely taught in English"
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "BAT or GMAT/GRE",
+                                                                            "requirement":  "conditional; depending on profile, evidence of quantitative skills may be required"
+                                                                        },
+                                                                        {
+                                                                            "test":  "GMAT",
+                                                                            "requirement":  "not obligatory if alternative quantitative evidence is sufficient; GMAT below 600 or GMAT Focus below 555 is usually not competitive"
+                                                                        },
+                                                                        {
+                                                                            "test":  "GRE",
+                                                                            "requirement":  "not obligatory if alternative quantitative evidence is sufficient; GRE below 304 is usually not competitive"
+                                                                        },
+                                                                        {
+                                                                            "test":  "Admissions interview",
+                                                                            "requirement":  "used to assess analytical and problem-solving skills, teamwork, and English proficiency"
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  0,
+                                                                      "relevance":  "early-career master\u0027s applicant",
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Basic personal data",
+                                                                "Academic and professional background",
+                                                                "Short essay answers",
+                                                                "CV",
+                                                                "Academic transcripts from all higher education institutions",
+                                                                "One recommendation",
+                                                                "GRE/GMAT and TOEFL scores if needed"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "BAT, GMAT, or GRE can be waived when transcripts or related qualifications demonstrate sufficient quantitative skills."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "Students needing a visa are advised to apply early, suggested before June 30.",
+                                                                                 "Graduates of Chinese or Indian universities may need additional APS steps that can take up to six months."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "2026 intake current round deadline: May 17",
+                                                               "Round four deadline: June 30",
+                                                               "Round five deadline: July 31; later applications considered case-by-case, space available"
+                                                           ],
+                                             "intakes":  [
+                                                             "September 8, 2026"
+                                                         ],
+                                             "application_channel":  "ESMT online application portal",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Application fee: EUR 75"
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://esmt.berlin/degrees",
+                                                              "source_text":  "The degree overview lists Innovation and Entrepreneurship as a 24-month on-campus master\u0027s program starting in September, located in Berlin with optional exchange semester for Innovation track students.",
+                                                              "retrieved_at":  "2026-05-17T08:34:24Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
+                                                              "source_text":  "The MIE admissions page states English tests are not mandatory unless required; TOEFL 100, IELTS 7.0, TOEIC 850 are expected if required; BAT/GMAT/GRE is profile-dependent.",
+                                                              "retrieved_at":  "2026-05-17T08:34:24Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
+                                                           "heading":  "General requirements",
+                                                           "text":  "English proficiency score is not mandatory; waiver for native English or English-taught university degree; if required TOEFL 100, IELTS 7.0, or TOEIC 850; entrance exam may be BAT or GMAT/GRE depending on profile."
+                                                       },
+                                                       {
+                                                           "source_url":  "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
+                                                           "heading":  "MIE application dates 2026",
+                                                           "text":  "Applications for the 2026 intake are open; intake starts September 8, 2026; current round closes May 17; later listed deadlines are June 30 and July 31."
+                                                       }
+                                                   ],
+                         "needs_human_review":  false
+                     },
+                     {
+                         "school":  {
+                                        "name":  "ESMT Berlin",
+                                        "url":  "https://esmt.berlin/",
+                                        "country":  "Germany",
+                                        "partner_status":  "candidate_from_partner_logo",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "Master in Analytics and Artificial Intelligence",
+                                         "degree":  "Master of Science (MSc)",
+                                         "level":  "master",
+                                         "url":  "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
+                                         "campus":  "Berlin plus required global internship",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "Analytics and Artificial Intelligence",
+                                         "_confidence":  {
+                                                             "name":  "high",
+                                                             "degree":  "high",
+                                                             "level":  "high",
+                                                             "language_of_instruction":  "medium"
+                                                         }
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s equivalent or higher",
+                                                                          "minimum_ects":  null,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  "excellent grades",
+                                                                          "notes":  [
+                                                                                        "Applications are considered from students completing undergraduate studies within the next year.",
+                                                                                        "Ideal applicants have 0-3 years of postgraduate work experience; up to five years can be considered case-by-case."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            {
+                                                                                "subject":  "scientific or quantitative training",
+                                                                                "minimum_ects":  null,
+                                                                                "notes":  [
+                                                                                              "Evidence can come from a Bachelor\u0027s specialization in engineering, natural sciences, mathematics and statistics, or other quantitative science/economics with mainly theoretical and quantitative coursework."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "English proficiency test",
+                                                                                "minimum_score":  "not mandatory unless required after assessment",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "English native language",
+                                                                                               "university degree completely taught in English"
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "English is also assessed in the selection interview."
+                                                                                          ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "TOEFL",
+                                                                                "minimum_score":  "100 if required",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "English native language",
+                                                                                               "university degree completely taught in English"
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "ESMT TOEFL institution code 8707."
+                                                                                          ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "IELTS",
+                                                                                "minimum_score":  "7.0 if required",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "English native language",
+                                                                                               "university degree completely taught in English"
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "TOEIC",
+                                                                                "minimum_score":  "850 if required",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "English native language",
+                                                                                               "university degree completely taught in English"
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "BAT or GMAT/GRE",
+                                                                            "requirement":  "conditional; depending on profile, evidence of strong quantitative skills may be required"
+                                                                        },
+                                                                        {
+                                                                            "test":  "GMAT",
+                                                                            "requirement":  "not obligatory if alternative quantitative evidence is sufficient; GMAT below 600 is usually not competitive"
+                                                                        },
+                                                                        {
+                                                                            "test":  "GRE",
+                                                                            "requirement":  "not obligatory if alternative quantitative evidence is sufficient; GRE below 304 is usually not competitive"
+                                                                        },
+                                                                        {
+                                                                            "test":  "Admissions interview",
+                                                                            "requirement":  "used to assess analytical and problem-solving skills, teamwork, and English proficiency"
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  0,
+                                                                      "relevance":  "analytics and AI master\u0027s applicant",
+                                                                      "notes":  [
+                                                                                    "Ideal range is 0-3 years of postgraduate work experience; up to five years is considered case-by-case."
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Basic personal data",
+                                                                "Academic and professional background",
+                                                                "Short essay answers",
+                                                                "CV",
+                                                                "Academic transcripts from all higher education institutions",
+                                                                "One recommendation",
+                                                                "GRE/GMAT and TOEFL scores if needed"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "BAT, GMAT, or GRE can be waived when transcripts or related qualifications demonstrate sufficient quantitative skills."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "Students needing a visa are advised to apply early, suggested before June 30.",
+                                                                                 "Graduates of Chinese or Indian universities may need additional APS steps that can take up to six months.",
+                                                                                 "Applicants from listed countries including the United States do not need a visa to enter Germany as a student, according to the reviewed page; this should be checked with ESMT or a German mission because it can change."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "2026 intake current round deadline: May 17",
+                                                               "Round four deadline: June 30",
+                                                               "Round five deadline: July 31; later applications considered case-by-case, space available"
+                                                           ],
+                                             "intakes":  [
+                                                             "September 8, 2026"
+                                                         ],
+                                             "application_channel":  "ESMT online application portal",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Application fee: EUR 75"
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://esmt.berlin/degrees",
+                                                              "source_text":  "The degree overview lists Analytics and Artificial Intelligence as a 24-month on-campus master\u0027s program starting in September, located in Berlin plus required global internship.",
+                                                              "retrieved_at":  "2026-05-17T08:34:24Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
+                                                              "source_text":  "MAAI admissions specify Bachelor\u0027s-equivalent degree, ideal 0-3 years work experience, conditional TOEFL/IELTS/TOEIC, conditional BAT/GMAT/GRE, and scientific or quantitative training evidence.",
+                                                              "retrieved_at":  "2026-05-17T08:34:24Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
+                                                           "heading":  "General requirements",
+                                                           "text":  "Previous degree at least Bachelor\u0027s equivalent with excellent grades; ideal 0-3 years postgraduate work experience; English score not mandatory unless required; TOEFL 100, IELTS 7.0, TOEIC 850 if required; BAT or GMAT/GRE may be required depending on profile."
+                                                       },
+                                                       {
+                                                           "source_url":  "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
+                                                           "heading":  "Evidence of scientific training",
+                                                           "text":  "Evidence can be from engineering, natural sciences, mathematics and statistics, or another quantitative science/economics Bachelor\u0027s specialization with mainly theoretical and quantitative coursework."
+                                                       }
+                                                   ],
+                         "needs_human_review":  false
+                     },
+                     {
+                         "school":  {
+                                        "name":  "ESMT Berlin",
+                                        "url":  "https://esmt.berlin/",
+                                        "country":  "Germany",
+                                        "partner_status":  "candidate_from_partner_logo",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "Full-time MBA",
+                                         "degree":  "Master of Business Administration (MBA)",
+                                         "level":  "mba",
+                                         "url":  "https://esmt.berlin/mba-programs/full-time-mba/admissions",
+                                         "campus":  "Berlin",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "General management plus managerial analytics or innovation and entrepreneurship",
+                                         "_confidence":  {
+                                                             "name":  "high",
+                                                             "degree":  "high",
+                                                             "level":  "high",
+                                                             "language_of_instruction":  "high"
+                                                         }
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree or equivalent",
+                                                                          "minimum_ects":  180,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+                                                                                        "Bachelor\u0027s degree must be at least three years duration."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "English proficiency test",
+                                                                                "minimum_score":  "if applicable",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "English native language",
+                                                                                               "university degree exclusively taught in English",
+                                                                                               "worked in an English-speaking country or organization whose communication language was English for 12 months or more"
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "Strong English command should also be demonstrated in the admission interview."
+                                                                                          ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "TOEFL",
+                                                                                "minimum_score":  "95",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "native English or English-taught degree/work waiver"
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "MyBest scores accepted; institution code 8707."
+                                                                                          ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "PTE",
+                                                                                "minimum_score":  "64",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "native English or English-taught degree/work waiver"
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "IELTS",
+                                                                                "minimum_score":  "7",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "native English or English-taught degree/work waiver"
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "ESMT admission test (BAT)",
+                                                                            "requirement":  "accepted admission test"
+                                                                        },
+                                                                        {
+                                                                            "test":  "GMAT",
+                                                                            "requirement":  "accepted admission test"
+                                                                        },
+                                                                        {
+                                                                            "test":  "GRE",
+                                                                            "requirement":  "accepted admission test"
+                                                                        },
+                                                                        {
+                                                                            "test":  "GMAC Executive Assessment",
+                                                                            "requirement":  "accepted admission test"
+                                                                        },
+                                                                        {
+                                                                            "test":  "Admissions interview",
+                                                                            "requirement":  "shortlisted applicants interview approximately one to two weeks after each deadline"
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  3,
+                                                                      "relevance":  "postgraduate professional experience at time of program start",
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Up-to-date CV showing at least three years postgraduate professional experience",
+                                                                "Two professional recommendations",
+                                                                "Essay answers",
+                                                                "Undergraduate transcripts with courses and grades",
+                                                                "Valid GMAT, GRE, or ESMT admissions test (BAT)",
+                                                                "English proficiency score if applicable"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "English proficiency may be waived for qualifying native English, English-taught degree, or English-speaking work background.",
+                                                                        "Incomplete applications are not reviewed in the current round until required documents are submitted."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "Students who need a visa should apply as early as possible due to long processing times."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "2027 intake current round deadline: May 17",
+                                                               "Round four deadline: June 30",
+                                                               "Round five deadline: July 31",
+                                                               "Round six deadline: September 15",
+                                                               "Round seven deadline: October 31",
+                                                               "Round eight deadline: December 8; later applications considered case-by-case, space available"
+                                                           ],
+                                             "intakes":  [
+                                                             "January 2027"
+                                                         ],
+                                             "application_channel":  "ESMT online application portal",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Application fee: EUR 100"
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://esmt.berlin/mba-programs",
+                                                              "source_text":  "The MBA overview lists Full-time MBA as 15 months, face-to-face in Berlin, January start, focused on general management plus managerial analytics or innovation and entrepreneurship.",
+                                                              "retrieved_at":  "2026-05-17T08:34:24Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://esmt.berlin/mba-programs/full-time-mba/admissions",
+                                                              "source_text":  "Full-time MBA admissions require at least three years postgraduate professional experience, a 180 ECTS Bachelor\u0027s degree or equivalent, an accepted admission test, and English score if applicable.",
+                                                              "retrieved_at":  "2026-05-17T08:34:24Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://esmt.berlin/mba-programs/full-time-mba/admissions",
+                                                           "heading":  "Admission requirements",
+                                                           "text":  "At least three years postgraduate professional experience; Bachelor\u0027s degree of at least three years duration, minimum 180 ECTS, or equivalent; strong score in BAT, GMAT, GRE, or GMAC Executive Assessment; English score if applicable."
+                                                       },
+                                                       {
+                                                           "source_url":  "https://esmt.berlin/mba-programs/full-time-mba/admissions",
+                                                           "heading":  "All 2026 application rounds and deadlines (2027 intake)",
+                                                           "text":  "Current May 17 deadline, followed by June 30, July 31, September 15, October 31, and December 8 deadlines for the January 2027 intake."
+                                                       }
+                                                   ],
+                         "needs_human_review":  false
+                     },
+                     {
+                         "school":  {
+                                        "name":  "ESMT Berlin",
+                                        "url":  "https://esmt.berlin/",
+                                        "country":  "Germany",
+                                        "partner_status":  "candidate_from_partner_logo",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "Global Online MBA",
+                                         "degree":  "Master of Business Administration (MBA)",
+                                         "level":  "mba",
+                                         "url":  "https://esmt.berlin/mba-programs/global-online-mba",
+                                         "campus":  "Online",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "General management combined with technology, innovation, and global electives",
+                                         "_confidence":  {
+                                                             "name":  "high",
+                                                             "degree":  "high",
+                                                             "level":  "high",
+                                                             "language_of_instruction":  "high"
+                                                         }
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Undergraduate degree or equivalent qualification",
+                                                                          "minimum_ects":  null,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "English proficiency test",
+                                                                                "minimum_score":  "if applicable",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "The reviewed program page says English proficiency test scores are required if applicable but refers readers to a detailed admissions page for the full list."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "ESMT admission test / GMAT / GMAT Focus / GRE / GMAC Executive Assessment",
+                                                                            "requirement":  "strong score required; test waiver may be granted for some candidates"
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  3,
+                                                                      "relevance":  "postgraduate professional experience",
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "Test waiver may be granted for some candidates."
+                                                                    ],
+                                              "international_requirements":  [
+
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "October intake early application award deadline: May 17"
+                                                           ],
+                                             "intakes":  [
+                                                             "March",
+                                                             "October"
+                                                         ],
+                                             "application_channel":  "ESMT online application portal",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Tuition listed on reviewed page: EUR 28,000"
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://esmt.berlin/mba-programs/global-online-mba",
+                                                              "source_text":  "Quick facts list 24-60 months, March and October intakes, online location, 100% online format, and English language.",
+                                                              "retrieved_at":  "2026-05-17T08:34:24Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://esmt.berlin/mba-programs/global-online-mba",
+                                                              "source_text":  "FAQ admissions requirements list three years professional experience, undergraduate degree or equivalent, strong admission test score, and English score if applicable.",
+                                                              "retrieved_at":  "2026-05-17T08:34:24Z",
+                                                              "confidence":  "medium",
+                                                              "review_note":  "The page points to a dedicated GOMBA admissions page for a detailed list; that detail page was not part of the assigned seed/source URL set."
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://esmt.berlin/mba-programs/global-online-mba",
+                                                           "heading":  "Quick facts about the Global Online MBA",
+                                                           "text":  "Duration 24-60 months; intakes March and October; location online; format 100% online; language English; application deadline May 17 for October intake early application award."
+                                                       },
+                                                       {
+                                                           "source_url":  "https://esmt.berlin/mba-programs/global-online-mba",
+                                                           "heading":  "Admissions requirements FAQ",
+                                                           "text":  "Three years postgraduate professional experience; undergraduate degree or equivalent; strong score in ESMT admission test, GMAT, GMAT Focus, GRE, or GMAC Executive Assessment; English proficiency scores if applicable."
+                                                       }
+                                                   ],
+                         "needs_human_review":  true
+                     },
+                     {
+                         "school":  {
+                                        "name":  "ESMT Berlin",
+                                        "url":  "https://esmt.berlin/",
+                                        "country":  "Germany",
+                                        "partner_status":  "candidate_from_partner_logo",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "Part-time MBA",
+                                         "degree":  "Master of Business Administration (MBA)",
+                                         "level":  "mba",
+                                         "url":  "https://esmt.berlin/mba-programs/part-time-mba",
+                                         "campus":  "Berlin and online",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "Business innovation, leadership, and general management",
+                                         "_confidence":  {
+                                                             "name":  "high",
+                                                             "degree":  "high",
+                                                             "level":  "high",
+                                                             "language_of_instruction":  "high"
+                                                         }
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree or equivalent",
+                                                                          "minimum_ects":  180,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+                                                                                        "Bachelor\u0027s degree must be at least three years duration."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "English proficiency test",
+                                                                                "minimum_score":  "if applicable",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "The reviewed program page says English proficiency test score is required if applicable but points to a detailed admissions page for more details."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "ESMT admission test / GMAT / GMAT Focus / GRE / GMAC Executive Assessment",
+                                                                            "requirement":  "strong score required; waiver may be granted in certain situations"
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  3,
+                                                                      "relevance":  "postgraduate professional experience at time of program start",
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "Test waiver may be granted in certain situations."
+                                                                    ],
+                                              "international_requirements":  [
+
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Early Application Award deadline: May 17"
+                                                           ],
+                                             "intakes":  [
+                                                             "September"
+                                                         ],
+                                             "application_channel":  "ESMT online application portal",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Tuition listed on reviewed page: EUR 40,000"
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://esmt.berlin/mba-programs/part-time-mba",
+                                                              "source_text":  "Quick facts list 24 months, September start, Berlin location, blended campus/online format, English language, and May 17 early application award deadline.",
+                                                              "retrieved_at":  "2026-05-17T08:34:24Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://esmt.berlin/mba-programs/part-time-mba",
+                                                              "source_text":  "FAQ admissions requirements list at least three years postgraduate professional experience, 180 ECTS Bachelor\u0027s or equivalent, strong admission test score, and English score if applicable.",
+                                                              "retrieved_at":  "2026-05-17T08:34:24Z",
+                                                              "confidence":  "medium",
+                                                              "review_note":  "The page points to a dedicated Part-time MBA admissions page for more details; that detail page was not part of the assigned seed/source URL set."
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://esmt.berlin/mba-programs/part-time-mba",
+                                                           "heading":  "Quick facts about the Part-time MBA",
+                                                           "text":  "Duration 24 months, part-time; start date September; location Berlin; format 42 days on campus plus online; language English; early application award deadline May 17."
+                                                       },
+                                                       {
+                                                           "source_url":  "https://esmt.berlin/mba-programs/part-time-mba",
+                                                           "heading":  "Admissions requirements FAQ",
+                                                           "text":  "At least three years postgraduate professional experience; Bachelor\u0027s degree of at least three years duration, minimum 180 ECTS, or equivalent; strong score in ESMT admission test, GMAT, GMAT Focus, GRE, or GMAC Executive Assessment; English proficiency if applicable."
+                                                       }
+                                                   ],
+                         "needs_human_review":  true
+                     },
+                     {
+                         "school":  {
+                                        "name":  "ESMT Berlin",
+                                        "url":  "https://esmt.berlin/",
+                                        "country":  "Germany",
+                                        "partner_status":  "candidate_from_partner_logo",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "Executive MBA",
+                                         "degree":  "Master of Business Administration (MBA)",
+                                         "level":  "executive_mba",
+                                         "url":  "https://esmt.berlin/mba-programs/executive-mba",
+                                         "campus":  "Berlin plus global locations",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "Leadership, strategy, finance, and innovation",
+                                         "_confidence":  {
+                                                             "name":  "high",
+                                                             "degree":  "high",
+                                                             "level":  "high",
+                                                             "language_of_instruction":  "high"
+                                                         }
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Undergraduate degree or equivalent professional qualification",
+                                                                          "minimum_ects":  null,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+                                                                                        "Undergraduate degree is described as minimum three years or equivalent professional qualification."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "TOEFL",
+                                                                                "minimum_score":  "may be required for candidates with limited experience in business English",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+
+                                                                                           ],
+                                                                                "notes":  [
+
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "GMAT / GMAT Focus / GRE / GMAC Executive Assessment / ESMT Admissions Test (BAT)",
+                                                                            "requirement":  "strong score required"
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  7,
+                                                                      "relevance":  "postgraduate professional experience",
+                                                                      "notes":  [
+                                                                                    "Includes three years of managerial experience with emphasis on leadership qualities and achievements managing people, process, or budgets."
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+
+                                                            ],
+                                              "conditional_paths":  [
+
+                                                                    ],
+                                              "international_requirements":  [
+
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Early Application Award deadline: May 17"
+                                                           ],
+                                             "intakes":  [
+                                                             "October"
+                                                         ],
+                                             "application_channel":  "ESMT online application portal",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Tuition listed on reviewed page: EUR 64,800"
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://esmt.berlin/mba-programs/executive-mba",
+                                                              "source_text":  "Key facts list Executive MBA as 18 months, part-time modular in person, October start, Berlin plus global locations, English language, and May 17 early application award deadline.",
+                                                              "retrieved_at":  "2026-05-17T08:34:24Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://esmt.berlin/mba-programs/executive-mba",
+                                                              "source_text":  "FAQ admissions requirements list seven or more years postgraduate experience including three managerial years, undergraduate degree or equivalent, strong test scores, and TOEFL may be required for limited business English.",
+                                                              "retrieved_at":  "2026-05-17T08:34:24Z",
+                                                              "confidence":  "medium",
+                                                              "review_note":  "The page points to a dedicated EMBA admissions page for a detailed list; that detail page was not part of the assigned seed/source URL set."
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://esmt.berlin/mba-programs/executive-mba",
+                                                           "heading":  "Key facts about the Executive MBA",
+                                                           "text":  "Start date October; part-time modular format with six Berlin modules and two international modules; duration 18 months; leadership, strategy, finance, and innovation focus; English language."
+                                                       },
+                                                       {
+                                                           "source_url":  "https://esmt.berlin/mba-programs/executive-mba",
+                                                           "heading":  "Admission requirements FAQ",
+                                                           "text":  "Seven or more years postgraduate professional experience including three years managerial; undergraduate degree of minimum three years or equivalent professional qualification; strong GMAT/GMAT Focus/GRE/GMAC Executive Assessment or ESMT Admissions Test scores; TOEFL may be required for limited business English."
+                                                       }
+                                                   ],
+                         "needs_human_review":  true
+                     }
+                 ],
+    "llm_review_summary":  {
+                               "program_count":  7,
+                               "key_findings":  [
+                                                    "ESMT has three MSc master\u0027s programs: Global Management, Innovation and Entrepreneurship, and Analytics and Artificial Intelligence.",
+                                                    "For the MSc programs, English tests are conditional rather than automatically mandatory; if required, the reviewed pages expect TOEFL 100, IELTS 7.0, or TOEIC 850.",
+                                                    "For the MSc programs, BAT/GMAT/GRE is also conditional and can be waived when transcripts or related qualifications show sufficient quantitative skills; low guideline scores are GMAT below 600 and GRE below 304.",
+                                                    "The Full-time MBA has a different English threshold set: TOEFL 95, PTE 64, or IELTS 7 if applicable, and requires at least three years of postgraduate professional experience.",
+                                                    "The Global Online MBA, Part-time MBA, and Executive MBA are included from official MBA program pages, but their detailed admissions subpages were not fully extracted here."
+                                                ],
+                               "known_gaps":  [
+                                                  "Detailed admissions pages for Global Online MBA, Part-time MBA, and Executive MBA are referenced by official pages but were not in the assigned seed/source URL set; those three records are marked for human review.",
+                                                  "The PhD program appears in ESMT navigation but was not covered by the assigned admissions seed/source URLs and is not included as a program record.",
+                                                  "Exact English-test validity periods for ESMT programs were not found in the reviewed page text.",
+                                                  "Tuition and scholarship details were not exhaustively extracted; only visible application fees or visible MBA tuition figures were captured."
+                                              ]
+                           }
+}

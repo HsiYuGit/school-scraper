@@ -334,6 +334,41 @@ class AdmissionExtractionTest(unittest.TestCase):
         self.assertIn("Difference Summary", html)
         self.assertIn("IELTS Academic: 6.5", html)
 
+    def test_llm_native_outputs_keep_v0_3_contract(self):
+        root = Path(__file__).parents[1]
+        llm_dir = root / "outputs" / "v0_3" / "llm_native"
+        if not llm_dir.exists():
+            self.skipTest("No v0.3 LLM-native outputs available.")
+
+        top_level_keys = {"schema_version", "method", "school", "retrieved_at", "programs", "llm_review_summary"}
+        program_keys = {"school", "program", "requirements", "application", "evidence", "raw_evidence_sections", "needs_human_review"}
+        requirement_keys = {
+            "academic_background",
+            "subject_prerequisites",
+            "language_requirements",
+            "test_requirements",
+            "work_experience",
+            "documents",
+            "conditional_paths",
+            "international_requirements",
+        }
+        files = sorted(llm_dir.glob("*.json"))
+        self.assertTrue(files)
+        for path in files:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            self.assertEqual(set(payload), top_level_keys, path.name)
+            self.assertEqual(payload["schema_version"], "0.3-llm-native-draft")
+            self.assertEqual(payload["method"]["type"], "llm_native_official_site_reading")
+            self.assertIn("cost_tracking", payload["method"])
+            self.assertIn("source_urls", payload["method"])
+            self.assertIn("format_note", payload["method"])
+            self.assertEqual(payload["llm_review_summary"]["program_count"], len(payload["programs"]))
+            for program in payload["programs"]:
+                self.assertEqual(set(program), program_keys, path.name)
+                self.assertIsInstance(program["evidence"], dict, path.name)
+                self.assertIsInstance(program["raw_evidence_sections"], list, path.name)
+                self.assertEqual(set(program["requirements"]), requirement_keys, path.name)
+
 
 if __name__ == "__main__":
     unittest.main()

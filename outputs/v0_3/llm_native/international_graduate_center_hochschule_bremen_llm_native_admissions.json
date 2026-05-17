@@ -1,0 +1,1214 @@
+{
+    "schema_version":  "0.3-llm-native-draft",
+    "method":  {
+                   "type":  "llm_native_official_site_reading",
+                   "created_at":  "2026-05-17T08:35:42+00:00",
+                   "school":  "International Graduate Center, Hochschule Bremen",
+                   "agent":  {
+                                 "agent_id":  "not exposed",
+                                 "nickname":  "not exposed",
+                                 "role":  "worker subagent",
+                                 "model":  "not exposed",
+                                 "reasoning_effort":  "medium"
+                             },
+                   "cost_tracking":  {
+                                         "token_usage":  "not exposed",
+                                         "estimated_usd_cost":  "not available",
+                                         "note":  "Do not estimate unavailable cost."
+                                     },
+                   "source_urls":  [
+                                       "https://www.graduatecenter.org/en/mba-master.html",
+                                       "https://www.graduatecenter.org/en/application/requirements.html",
+                                       "https://www.graduatecenter.org/en/application/application.html",
+                                       "https://www.graduatecenter.org/en/support/program-start.html",
+                                       "https://www.graduatecenter.org/en/mba-master/summer-semester-start.html",
+                                       "https://www.graduatecenter.org/en/mba-master/international-mba-dual-degree.html",
+                                       "https://www.graduatecenter.org/en/mba-master/mba-in-logistics-supply-chain-management.html",
+                                       "https://www.graduatecenter.org/en/mba-master/mba-international-tourism-management.html",
+                                       "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
+                                       "https://www.graduatecenter.org/en/mba-master/mba/mba-in-executive-management.html",
+                                       "https://www.graduatecenter.org/en/mba-master/management-digitalization-and-transformation-ma.html",
+                                       "https://www.graduatecenter.org/en/mba-master/master-aeronautical-management.html",
+                                       "https://www.graduatecenter.org/fileadmin/user_upload/downloads/IGC_english_certificate_requirements.pdf"
+                                   ],
+                   "elapsed_time_seconds":  "not exposed",
+                   "format_note":  "Matches repo v0.3 LLM-native admissions JSON contract."
+               },
+    "school":  {
+                   "name":  "International Graduate Center, Hochschule Bremen",
+                   "url":  "https://www.graduatecenter.org/en/",
+                   "country":  "Germany",
+                   "partner_status":  "candidate_from_partner_logo",
+                   "school_type":  "graduate_center"
+               },
+    "retrieved_at":  "2026-05-17T08:35:42+00:00",
+    "programs":  [
+                     {
+                         "school":  {
+                                        "name":  "International Graduate Center, Hochschule Bremen",
+                                        "url":  "https://www.graduatecenter.org/en/",
+                                        "country":  "Germany",
+                                        "partner_status":  "candidate_from_partner_logo",
+                                        "school_type":  "graduate_center"
+                                    },
+                         "program":  {
+                                         "name":  "International MBA: Dual Degree",
+                                         "degree":  "International MBA (Master of Business Administration)",
+                                         "level":  "master",
+                                         "url":  "https://www.graduatecenter.org/en/mba-master/international-mba-dual-degree.html",
+                                         "campus":  "Bremen, Germany, plus one IBSA partner-university location depending on specialization",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "International Finance \u0026 Investments; International Logistics \u0026 Supply Chain Management; International Marketing; Sustainable Risk Management"
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree or first university degree",
+                                                                          "minimum_ects":  "210 ECTS for EHEA applicants; European applicants with 180 ECTS may be conditionally admitted with a mandatory 22-week internship",
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+                                                                                        "Business- or economics-related bachelor\u0027s degree, or equivalent.",
+                                                                                        "Applicants from outside the EHEA undergo an equivalence check."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            "Business or economics-related previous study, or equivalent preparation"
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "IELTS",
+                                                                                "minimum_score":  "6.5",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  "2 years per English certificate PDF",
+                                                                                "waiver":  [
+                                                                                               "A formal medium-of-instruction letter may be accepted when the prior degree was fully taught in English.",
+                                                                                               "No waiver is indicated for the International Finance \u0026 Investments double-degree focus; TOEFL or IELTS is required there."
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "TOEFL iBT",
+                                                                                "minimum_score":  "90",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  "2 years per English certificate PDF",
+                                                                                "waiver":  [
+                                                                                               "A formal medium-of-instruction letter may be accepted when the prior degree was fully taught in English.",
+                                                                                               "No waiver is indicated for the International Finance \u0026 Investments double-degree focus; TOEFL or IELTS is required there."
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  2,
+                                                                      "relevance":  "relevant experience after first degree",
+                                                                      "notes":  [
+                                                                                    "The central FAQ says the International MBA requires 24 months of work experience.",
+                                                                                    "Internships can count if they were not part of previous studies."
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Proof of previous university degree(s) and transcripts",
+                                                                "Copy of passport or birth certificate",
+                                                                "Curriculum vitae",
+                                                                "Proof of English language proficiency",
+                                                                "Letter of recommendation by a university lecturer or employer",
+                                                                "Letter of motivation",
+                                                                "Passport photograph",
+                                                                "Proof of practical knowledge or work experience",
+                                                                "English translations for documents not issued in English or German",
+                                                                "All International MBA documents must be provided in English"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "European applicants with 180 ECTS can be admitted under the condition of a mandatory internship of at least 22 weeks as part of the study program.",
+                                                                        "Students can choose a second-term specialization at an IBSA partner institution after admission to the first-choice university.",
+                                                                        "Summer start is possible for the IMBA according to the central requirements FAQ."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "Original APS certificate is required for Chinese and Vietnamese applicants.",
+                                                                                 "Indian applicants do not need APS for the first IGC application step, but need APS for the visa appointment.",
+                                                                                 "Applicants from abroad should start the visa process immediately after admission because embassy appointment timing can take weeks.",
+                                                                                 "Sufficient financial resources are required for tuition fees and living costs."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Winter semester application deadline: May 31, 2026"
+                                                           ],
+                                             "intakes":  [
+                                                             "October",
+                                                             "February"
+                                                         ],
+                                             "application_channel":  "IGC online application portal",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Winter semester tuition from EUR 17,000 depending on partner university",
+                                                          "Additional semester fee of roughly EUR 420 per semester at IGC",
+                                                          "EUR 2,000 down payment after admission to secure the study place"
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "program_identity":  [
+                                                                   {
+                                                                       "source_url":  "https://www.graduatecenter.org/en/mba-master.html",
+                                                                       "source_text":  "Overview lists International MBA Dual Degree among IGC full-time MBA and master\u0027s programs.",
+                                                                       "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                       "confidence":  "high",
+                                                                       "review_note":  "Used overview only to determine program boundary, not crawler output."
+                                                                   },
+                                                                   {
+                                                                       "source_url":  "https://www.graduatecenter.org/en/mba-master/international-mba-dual-degree.html",
+                                                                       "source_text":  "Key facts identify degree, October/February start, May 31 winter deadline, English language, and three semesters.",
+                                                                       "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                       "confidence":  "high",
+                                                                       "review_note":  "Direct official program page."
+                                                                   }
+                                                               ],
+                                          "requirements":  [
+                                                               {
+                                                                   "source_url":  "https://www.graduatecenter.org/en/application/requirements.html",
+                                                                   "source_text":  "Central requirements group International MBA with MBA Logistics and state business/economics degree, two years experience, English proof, and 210 ECTS rule.",
+                                                                   "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                   "confidence":  "high",
+                                                                   "review_note":  "Merged central requirements into the program record."
+                                                               }
+                                                           ],
+                                          "application":  [
+                                                              {
+                                                                  "source_url":  "https://www.graduatecenter.org/en/application/application.html",
+                                                                  "source_text":  "Application page states intake 2026 applications run through the IGC portal until May 31 for fall 2026.",
+                                                                  "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                  "confidence":  "high",
+                                                                  "review_note":  "Portal URL is listed but not used as source of admissions facts."
+                                                              }
+                                                          ],
+                                          "international_requirements":  [
+                                                                             {
+                                                                                 "source_url":  "https://www.graduatecenter.org/en/application/requirements.html",
+                                                                                 "source_text":  "General requirements include APS notes, translations, visa timing, and financial resources.",
+                                                                                 "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                                 "confidence":  "high",
+                                                                                 "review_note":  "Applied common international rules to all full-time IGC records."
+                                                                             }
+                                                                         ],
+                                          "test_requirements":  [
+                                                                    {
+                                                                        "source_url":  "https://www.graduatecenter.org/fileadmin/user_upload/downloads/IGC_english_certificate_requirements.pdf",
+                                                                        "source_text":  "The English-certificate PDF mentions GMAT only as an accepted English certificate context.",
+                                                                        "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                        "confidence":  "medium",
+                                                                        "review_note":  "No GRE or GMAT admission-test requirement was added."
+                                                                    }
+                                                                ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "heading":  "Program key facts",
+                                                           "text":  "International MBA: Dual Degree; International MBA degree; October/February start; winter deadline May 31, 2026; English; 3 semesters; full-time on campus."
+                                                       },
+                                                       {
+                                                           "heading":  "Program-specific requirements",
+                                                           "text":  "Business/economics-related bachelor\u0027s degree or equivalent; two years relevant post-degree experience; IELTS 6.5 or TOEFL iBT 90 or equivalent; documents in English; 210 ECTS EHEA rule."
+                                                       },
+                                                       {
+                                                           "heading":  "Specializations",
+                                                           "text":  "Second-term options are International Finance \u0026 Investments, International Logistics \u0026 Supply Chain Management, International Marketing, and Sustainable Risk Management."
+                                                       }
+                                                   ],
+                         "needs_human_review":  true
+                     },
+                     {
+                         "school":  {
+                                        "name":  "International Graduate Center, Hochschule Bremen",
+                                        "url":  "https://www.graduatecenter.org/en/",
+                                        "country":  "Germany",
+                                        "partner_status":  "candidate_from_partner_logo",
+                                        "school_type":  "graduate_center"
+                                    },
+                         "program":  {
+                                         "name":  "MBA International Logistics \u0026 Supply Chain Management",
+                                         "degree":  "International Master of Business Administration",
+                                         "level":  "master",
+                                         "url":  "https://www.graduatecenter.org/en/mba-master/mba-in-logistics-supply-chain-management.html",
+                                         "campus":  "Bremen, Germany",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "International Logistics \u0026 Supply Chain Management"
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree or first university degree",
+                                                                          "minimum_ects":  "210 ECTS for EHEA applicants; European applicants with 180 ECTS may be conditionally admitted with a mandatory 22-week internship",
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+                                                                                        "Business- or economics-related bachelor\u0027s degree, or equivalent.",
+                                                                                        "Applicants from outside the EHEA undergo an equivalence check."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            "Business or economics-related previous study, or equivalent preparation"
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "IELTS",
+                                                                                "minimum_score":  "6.5",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  "2 years per English certificate PDF",
+                                                                                "waiver":  [
+                                                                                               "A formal medium-of-instruction letter may be accepted when the prior degree was fully taught in English."
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "TOEFL iBT",
+                                                                                "minimum_score":  "90",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  "2 years per English certificate PDF",
+                                                                                "waiver":  [
+                                                                                               "A formal medium-of-instruction letter may be accepted when the prior degree was fully taught in English."
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  2,
+                                                                      "relevance":  "relevant experience after first degree",
+                                                                      "notes":  [
+                                                                                    "Internships can count if they were not part of previous studies."
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Proof of previous university degree(s) and transcripts",
+                                                                "Copy of passport or birth certificate",
+                                                                "Curriculum vitae",
+                                                                "Proof of English language proficiency",
+                                                                "Letter of recommendation by a university lecturer or employer",
+                                                                "Letter of motivation",
+                                                                "Passport photograph",
+                                                                "Proof of practical knowledge or work experience",
+                                                                "English translations for documents not issued in English or German",
+                                                                "All MBA Logistics documents must be provided in English"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "European applicants with 180 ECTS can be admitted under the condition of a mandatory internship of at least 22 weeks as part of the study program.",
+                                                                        "A February/summer start is offered through a reverse study model beginning with the logistics specialization."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "Original APS certificate is required for Chinese and Vietnamese applicants.",
+                                                                                 "Indian applicants do not need APS for the first IGC application step, but need APS for the visa appointment.",
+                                                                                 "Applicants from abroad should start the visa process immediately after admission because embassy appointment timing can take weeks.",
+                                                                                 "Sufficient financial resources are required for tuition fees and living costs."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Winter semester application deadline: May 31, 2026"
+                                                           ],
+                                             "intakes":  [
+                                                             "October",
+                                                             "February"
+                                                         ],
+                                             "application_channel":  "IGC online application portal",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Summer special: EUR 17,200 total until June 30, 2026",
+                                                          "Regular fee: EUR 17,900 total",
+                                                          "Plus EUR 420 student and semester ticket each term",
+                                                          "EUR 2,000 down payment after admission to secure the study place"
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "program_identity":  [
+                                                                   {
+                                                                       "source_url":  "https://www.graduatecenter.org/en/mba-master.html",
+                                                                       "source_text":  "Overview lists MBA International Logistics \u0026 Supply Chain Management as an IGC international MBA program.",
+                                                                       "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                       "confidence":  "high",
+                                                                       "review_note":  "Excluded category pages and used the individual program page."
+                                                                   },
+                                                                   {
+                                                                       "source_url":  "https://www.graduatecenter.org/en/mba-master/mba-in-logistics-supply-chain-management.html",
+                                                                       "source_text":  "Key facts identify degree, October/February start, May 31 winter deadline, English language, and three semesters.",
+                                                                       "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                       "confidence":  "high",
+                                                                       "review_note":  "Direct official program page."
+                                                                   }
+                                                               ],
+                                          "requirements":  [
+                                                               {
+                                                                   "source_url":  "https://www.graduatecenter.org/en/application/requirements.html",
+                                                                   "source_text":  "Central requirements state business/economics degree, two years experience, IELTS 6.5 or TOEFL iBT 90, and English documents.",
+                                                                   "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                   "confidence":  "high",
+                                                                   "review_note":  "Same central requirement block covers International MBA and MBA Logistics."
+                                                               }
+                                                           ],
+                                          "application":  [
+                                                              {
+                                                                  "source_url":  "https://www.graduatecenter.org/en/mba-master/summer-semester-start.html",
+                                                                  "source_text":  "Summer-semester page describes a February logistics start and reverse study model.",
+                                                                  "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                  "confidence":  "medium",
+                                                                  "review_note":  "Summer start is official, but a separate summer application deadline was not found."
+                                                              }
+                                                          ],
+                                          "test_requirements":  [
+                                                                    {
+                                                                        "source_url":  "https://www.graduatecenter.org/fileadmin/user_upload/downloads/IGC_english_certificate_requirements.pdf",
+                                                                        "source_text":  "The English-certificate PDF mentions GMAT only as an accepted English certificate context.",
+                                                                        "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                        "confidence":  "medium",
+                                                                        "review_note":  "No GRE or GMAT admission-test requirement was added."
+                                                                    }
+                                                                ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "heading":  "Program key facts",
+                                                           "text":  "MBA International Logistics \u0026 Supply Chain Management; International MBA degree; October/February start; winter deadline May 31, 2026; English; 3 semesters; Bremen campus."
+                                                       },
+                                                       {
+                                                           "heading":  "Program-specific requirements",
+                                                           "text":  "Business/economics-related bachelor\u0027s degree or equivalent; two years relevant post-degree experience; IELTS 6.5 or TOEFL iBT 90 or equivalent; documents in English; 210 ECTS EHEA rule."
+                                                       },
+                                                       {
+                                                           "heading":  "Summer start",
+                                                           "text":  "Summer start begins with the International Logistics and Supply Chain Management specialization before core studies or transfer options."
+                                                       }
+                                                   ],
+                         "needs_human_review":  false
+                     },
+                     {
+                         "school":  {
+                                        "name":  "International Graduate Center, Hochschule Bremen",
+                                        "url":  "https://www.graduatecenter.org/en/",
+                                        "country":  "Germany",
+                                        "partner_status":  "candidate_from_partner_logo",
+                                        "school_type":  "graduate_center"
+                                    },
+                         "program":  {
+                                         "name":  "MBA International Tourism Management",
+                                         "degree":  "MBA (Master of Business Administration) - 90-120 ECTS",
+                                         "level":  "master",
+                                         "url":  "https://www.graduatecenter.org/en/mba-master/mba-international-tourism-management.html",
+                                         "campus":  "Bremen, Germany",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "International Tourism Management"
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree or first university degree",
+                                                                          "minimum_ects":  null,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+                                                                                        "The central requirements page accepts Law, Politics, Business/Economics, related, or interdisciplinary courses such as International Relations.",
+                                                                                        "The program page highlights at least 10 percent business-related subjects in prior bachelor studies."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            "At least 10 percent business-related subjects in prior bachelor studies",
+                                                                            "Law, Politics, Business/Economics, related, or interdisciplinary academic background such as International Relations"
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "IELTS",
+                                                                                "minimum_score":  "6.0",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  "2 years per English certificate PDF",
+                                                                                "waiver":  [
+                                                                                               "A formal medium-of-instruction letter may be accepted when the prior degree was fully taught in English."
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "TOEFL iBT",
+                                                                                "minimum_score":  "80",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  "2 years per English certificate PDF",
+                                                                                "waiver":  [
+                                                                                               "A formal medium-of-instruction letter may be accepted when the prior degree was fully taught in English."
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  1,
+                                                                      "relevance":  "relevant experience after the third semester of the first degree",
+                                                                      "notes":  [
+                                                                                    "Internships can count if they were not part of previous studies."
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Proof of previous university degree(s) and transcripts",
+                                                                "Copy of passport or birth certificate",
+                                                                "Curriculum vitae",
+                                                                "Proof of English language proficiency",
+                                                                "Letter of recommendation by an employer or university teacher",
+                                                                "Letter of motivation",
+                                                                "Passport photograph",
+                                                                "Proof of practical knowledge or work experience",
+                                                                "English translations for documents not issued in English or German"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "Summer semester start in April is available through a reverse study model."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "Original APS certificate is required for Chinese and Vietnamese applicants.",
+                                                                                 "Indian applicants do not need APS for the first IGC application step, but need APS for the visa appointment.",
+                                                                                 "Applicants from abroad should start the visa process immediately after admission because embassy appointment timing can take weeks.",
+                                                                                 "Sufficient financial resources are required for tuition fees and living costs."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Winter semester application deadline: May 31, 2026"
+                                                           ],
+                                             "intakes":  [
+                                                             "November",
+                                                             "April"
+                                                         ],
+                                             "application_channel":  "IGC online application portal",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Summer special: EUR 15,200 total until June 30, 2026",
+                                                          "Winter regular fee: EUR 15,900 total",
+                                                          "Summer semester regular fee: EUR 14,500 on the program page; summer-start overview lists EUR 15,900 regular tuition fee",
+                                                          "Plus EUR 420 student and semester ticket twice a year",
+                                                          "EUR 2,000 down payment after admission to secure the study place"
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "program_identity":  [
+                                                                   {
+                                                                       "source_url":  "https://www.graduatecenter.org/en/mba-master.html",
+                                                                       "source_text":  "Overview lists MBA International Tourism Management among the IGC international MBA programs.",
+                                                                       "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                       "confidence":  "high",
+                                                                       "review_note":  "Used official overview to identify program membership."
+                                                                   },
+                                                                   {
+                                                                       "source_url":  "https://www.graduatecenter.org/en/mba-master/mba-international-tourism-management.html",
+                                                                       "source_text":  "Key facts identify MBA degree, November/April start, May 31 winter deadline, English language, and 3 semesters.",
+                                                                       "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                       "confidence":  "high",
+                                                                       "review_note":  "Direct official program page."
+                                                                   }
+                                                               ],
+                                          "requirements":  [
+                                                               {
+                                                                   "source_url":  "https://www.graduatecenter.org/en/application/requirements.html",
+                                                                   "source_text":  "Central requirements state related bachelor\u0027s fields, one year relevant experience, recommendation, CV, and IELTS 6.0 or TOEFL iBT 80.",
+                                                                   "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                   "confidence":  "high",
+                                                                   "review_note":  "Program page and central requirements page were reconciled."
+                                                               }
+                                                           ],
+                                          "application":  [
+                                                              {
+                                                                  "source_url":  "https://www.graduatecenter.org/en/mba-master/summer-semester-start.html",
+                                                                  "source_text":  "Summer-semester page lists MBA International Tourism Management as an April-start option.",
+                                                                  "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                  "confidence":  "medium",
+                                                                  "review_note":  "Summer start is official, but separate summer deadline was not found."
+                                                              }
+                                                          ],
+                                          "test_requirements":  [
+                                                                    {
+                                                                        "source_url":  "https://www.graduatecenter.org/en/application/requirements.html",
+                                                                        "source_text":  "Official requirements list English proficiency and documents, not GRE or GMAT admission tests.",
+                                                                        "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                        "confidence":  "medium",
+                                                                        "review_note":  "No GRE or GMAT admission-test requirement was added."
+                                                                    }
+                                                                ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "heading":  "Program key facts",
+                                                           "text":  "MBA International Tourism Management; MBA degree; November/April start; winter deadline May 31, 2026; English; 3 semesters; Bremen campus."
+                                                       },
+                                                       {
+                                                           "heading":  "Program-specific requirements",
+                                                           "text":  "Law, Politics, Business/Economics, related, or interdisciplinary first degree; one year relevant experience; recommendation; CV; IELTS 6.0 or TOEFL iBT 80; financial resources."
+                                                       },
+                                                       {
+                                                           "heading":  "Summer start",
+                                                           "text":  "April start is available and uses a reverse study model with the existing group."
+                                                       }
+                                                   ],
+                         "needs_human_review":  true
+                     },
+                     {
+                         "school":  {
+                                        "name":  "International Graduate Center, Hochschule Bremen",
+                                        "url":  "https://www.graduatecenter.org/en/",
+                                        "country":  "Germany",
+                                        "partner_status":  "candidate_from_partner_logo",
+                                        "school_type":  "graduate_center"
+                                    },
+                         "program":  {
+                                         "name":  "MBA in Global Management",
+                                         "degree":  "MBA (Master of Business Administration) - 90-120 ECTS",
+                                         "level":  "master",
+                                         "url":  "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
+                                         "campus":  "Bremen, Germany",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "Global Management"
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree or first university degree",
+                                                                          "minimum_ects":  "210 ECTS for EHEA applicants; European applicants with 180 ECTS may be conditionally admitted with a mandatory 22-week internship",
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+                                                                                        "Business-related bachelor\u0027s degree.",
+                                                                                        "Applicants from outside the EHEA undergo an equivalence check."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            "Business-related previous study"
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "IELTS",
+                                                                                "minimum_score":  "6.5",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  "2 years per English certificate PDF",
+                                                                                "waiver":  [
+                                                                                               "A formal medium-of-instruction letter may be accepted when the prior degree was fully taught in English."
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "TOEFL iBT",
+                                                                                "minimum_score":  "90",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  "2 years per English certificate PDF",
+                                                                                "waiver":  [
+                                                                                               "A formal medium-of-instruction letter may be accepted when the prior degree was fully taught in English."
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  1,
+                                                                      "relevance":  "relevant experience after first degree",
+                                                                      "notes":  [
+                                                                                    "Internships can count if they were not part of previous studies."
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Proof of previous university degree(s) and transcripts",
+                                                                "Copy of passport or birth certificate",
+                                                                "Curriculum vitae",
+                                                                "Proof of English language proficiency",
+                                                                "Letter of recommendation by a university lecturer or employer",
+                                                                "Letter of motivation",
+                                                                "Passport photograph",
+                                                                "Proof of practical knowledge or work experience",
+                                                                "English translations for documents not issued in English or German"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "European applicants with 180 ECTS can be admitted under the condition of a mandatory internship of at least 22 weeks as part of the study program."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "Original APS certificate is required for Chinese and Vietnamese applicants.",
+                                                                                 "Indian applicants do not need APS for the first IGC application step, but need APS for the visa appointment.",
+                                                                                 "Applicants from abroad should start the visa process immediately after admission because embassy appointment timing can take weeks.",
+                                                                                 "Sufficient financial resources are required for tuition fees and living costs."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Application deadline: May 31, 2026"
+                                                           ],
+                                             "intakes":  [
+                                                             "October"
+                                                         ],
+                                             "application_channel":  "IGC online application portal",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Summer special: EUR 16,200 total until June 30, 2026",
+                                                          "Regular fee: EUR 16,900 total",
+                                                          "Plus EUR 420 student and semester ticket twice a year",
+                                                          "EUR 2,000 down payment after admission to secure the study place"
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "program_identity":  [
+                                                                   {
+                                                                       "source_url":  "https://www.graduatecenter.org/en/mba-master.html",
+                                                                       "source_text":  "Overview lists MBA Global Management among IGC international MBA programs.",
+                                                                       "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                       "confidence":  "high",
+                                                                       "review_note":  "Used official overview to identify program membership."
+                                                                   },
+                                                                   {
+                                                                       "source_url":  "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
+                                                                       "source_text":  "Key facts identify MBA degree, October start, May 31 deadline, English language, and 3 semesters.",
+                                                                       "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                       "confidence":  "high",
+                                                                       "review_note":  "Direct official program page."
+                                                                   }
+                                                               ],
+                                          "requirements":  [
+                                                               {
+                                                                   "source_url":  "https://www.graduatecenter.org/en/application/requirements.html",
+                                                                   "source_text":  "Central requirements state business-related degree, one year experience, CV, motivation letter, IELTS 6.5 or TOEFL iBT 90, and 210 ECTS rule.",
+                                                                   "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                   "confidence":  "high",
+                                                                   "review_note":  "Merged central requirements into program page facts."
+                                                               }
+                                                           ],
+                                          "test_requirements":  [
+                                                                    {
+                                                                        "source_url":  "https://www.graduatecenter.org/en/application/requirements.html",
+                                                                        "source_text":  "Official requirements list English proficiency and documents, not GRE or GMAT admission tests.",
+                                                                        "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                        "confidence":  "medium",
+                                                                        "review_note":  "No GRE or GMAT admission-test requirement was added."
+                                                                    }
+                                                                ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "heading":  "Program key facts",
+                                                           "text":  "MBA in Global Management; MBA degree; October start; May 31, 2026 deadline; English; 3 semesters; full-time on campus in Bremen."
+                                                       },
+                                                       {
+                                                           "heading":  "Program-specific requirements",
+                                                           "text":  "Business-related bachelor\u0027s degree; one year relevant post-degree experience; motivation letter; CV; IELTS 6.5 or TOEFL iBT 90; financial resources; 210 ECTS EHEA rule."
+                                                       }
+                                                   ],
+                         "needs_human_review":  false
+                     },
+                     {
+                         "school":  {
+                                        "name":  "International Graduate Center, Hochschule Bremen",
+                                        "url":  "https://www.graduatecenter.org/en/",
+                                        "country":  "Germany",
+                                        "partner_status":  "candidate_from_partner_logo",
+                                        "school_type":  "graduate_center"
+                                    },
+                         "program":  {
+                                         "name":  "MBA in Executive Management",
+                                         "degree":  "MBA (Master of Business Administration) - 90-120 ECTS",
+                                         "level":  "master",
+                                         "url":  "https://www.graduatecenter.org/en/mba-master/mba/mba-in-executive-management.html",
+                                         "campus":  "Bremen, Germany",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "Executive Management"
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree or first university degree",
+                                                                          "minimum_ects":  "210 ECTS for EHEA applicants; European applicants with 180 ECTS may be conditionally admitted with a mandatory 22-week internship",
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+                                                                                        "Bachelor\u0027s degree subject should be primarily non-business-related.",
+                                                                                        "Applicants from outside the EHEA undergo an equivalence check."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            "Primarily non-business-related prior degree"
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "IELTS",
+                                                                                "minimum_score":  "6.5",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  "2 years per English certificate PDF",
+                                                                                "waiver":  [
+                                                                                               "A formal medium-of-instruction letter may be accepted when the prior degree was fully taught in English."
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "TOEFL iBT",
+                                                                                "minimum_score":  "90",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  "2 years per English certificate PDF",
+                                                                                "waiver":  [
+                                                                                               "A formal medium-of-instruction letter may be accepted when the prior degree was fully taught in English."
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  1,
+                                                                      "relevance":  "relevant experience after first degree",
+                                                                      "notes":  [
+                                                                                    "Internships can count if they were not part of previous studies."
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Proof of previous university degree(s) and transcripts",
+                                                                "Copy of passport or birth certificate",
+                                                                "Curriculum vitae",
+                                                                "Proof of English language proficiency",
+                                                                "Letter of recommendation by a university lecturer or employer",
+                                                                "Letter of motivation",
+                                                                "Passport photograph",
+                                                                "Proof of practical knowledge or work experience",
+                                                                "English translations for documents not issued in English or German"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "European applicants with 180 ECTS can be admitted under the condition of a mandatory internship of at least 22 weeks as part of the study program.",
+                                                                        "The official page says the Executive Management title applies from winter semester 2026/27 and remains subject to senatorial approval."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "Original APS certificate is required for Chinese and Vietnamese applicants.",
+                                                                                 "Indian applicants do not need APS for the first IGC application step, but need APS for the visa appointment.",
+                                                                                 "Applicants from abroad should start the visa process immediately after admission because embassy appointment timing can take weeks.",
+                                                                                 "Sufficient financial resources are required for tuition fees and living costs."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Application deadline: May 31, 2026"
+                                                           ],
+                                             "intakes":  [
+                                                             "November"
+                                                         ],
+                                             "application_channel":  "IGC online application portal",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Summer special: EUR 16,200 total until June 30, 2026",
+                                                          "Regular fee: EUR 16,900 total",
+                                                          "Plus EUR 420 student and semester ticket twice a year",
+                                                          "EUR 2,000 down payment after admission to secure the study place"
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "program_identity":  [
+                                                                   {
+                                                                       "source_url":  "https://www.graduatecenter.org/en/mba-master.html",
+                                                                       "source_text":  "Overview lists MBA in Executive Management among IGC international MBA programs.",
+                                                                       "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                       "confidence":  "high",
+                                                                       "review_note":  "Used official overview to identify program membership."
+                                                                   },
+                                                                   {
+                                                                       "source_url":  "https://www.graduatecenter.org/en/mba-master/mba/mba-in-executive-management.html",
+                                                                       "source_text":  "Key facts identify MBA degree, November start, May 31 deadline, English language, and 3 semesters.",
+                                                                       "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                       "confidence":  "high",
+                                                                       "review_note":  "The page also notes the title change remains subject to approval."
+                                                                   }
+                                                               ],
+                                          "requirements":  [
+                                                               {
+                                                                   "source_url":  "https://www.graduatecenter.org/en/application/requirements.html",
+                                                                   "source_text":  "Central requirements state non-business prior degree, one year experience, CV, motivation letter, IELTS 6.5 or TOEFL iBT 90, and 210 ECTS rule.",
+                                                                   "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                   "confidence":  "high",
+                                                                   "review_note":  "Merged central requirements into program page facts."
+                                                               }
+                                                           ],
+                                          "test_requirements":  [
+                                                                    {
+                                                                        "source_url":  "https://www.graduatecenter.org/en/application/requirements.html",
+                                                                        "source_text":  "Official requirements list English proficiency and documents, not GRE or GMAT admission tests.",
+                                                                        "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                        "confidence":  "medium",
+                                                                        "review_note":  "No GRE or GMAT admission-test requirement was added."
+                                                                    }
+                                                                ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "heading":  "Program key facts",
+                                                           "text":  "MBA in Executive Management; MBA degree; November start; May 31, 2026 deadline; English; 3 semesters; full-time on campus in Bremen."
+                                                       },
+                                                       {
+                                                           "heading":  "Program-specific requirements",
+                                                           "text":  "Primarily non-business-related bachelor\u0027s degree; one year relevant post-degree experience; motivation letter; CV; IELTS 6.5 or TOEFL iBT 90; financial resources; 210 ECTS EHEA rule."
+                                                       },
+                                                       {
+                                                           "heading":  "Title note",
+                                                           "text":  "The program was formerly MBA European/Asian Management; the new title from winter 2026/27 is subject to official approval."
+                                                       }
+                                                   ],
+                         "needs_human_review":  true
+                     },
+                     {
+                         "school":  {
+                                        "name":  "International Graduate Center, Hochschule Bremen",
+                                        "url":  "https://www.graduatecenter.org/en/",
+                                        "country":  "Germany",
+                                        "partner_status":  "candidate_from_partner_logo",
+                                        "school_type":  "graduate_center"
+                                    },
+                         "program":  {
+                                         "name":  "Management - Digitalization and Transformation, M.A.",
+                                         "degree":  "Master of Arts - 90 ECTS",
+                                         "level":  "master",
+                                         "url":  "https://www.graduatecenter.org/en/mba-master/management-digitalization-and-transformation-ma.html",
+                                         "campus":  "Bremen, Germany",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "Digitalization and Transformation"
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree or first university degree",
+                                                                          "minimum_ects":  "210 ECTS for EHEA applicants; European applicants with 180 ECTS may be conditionally admitted with a mandatory 22-week internship",
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+                                                                                        "Bachelor\u0027s degree in business and economics, or equivalent.",
+                                                                                        "Applicants from outside the EHEA undergo an equivalence check."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            "Business and economics previous study, or equivalent preparation"
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "IELTS",
+                                                                                "minimum_score":  "6.0",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  "2 years per English certificate PDF",
+                                                                                "waiver":  [
+                                                                                               "A formal medium-of-instruction letter may be accepted when the prior degree was fully taught in English."
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "TOEFL iBT",
+                                                                                "minimum_score":  "80",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  "2 years per English certificate PDF",
+                                                                                "waiver":  [
+                                                                                               "A formal medium-of-instruction letter may be accepted when the prior degree was fully taught in English."
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  1,
+                                                                      "relevance":  "relevant experience after first degree",
+                                                                      "notes":  [
+                                                                                    "Internships can count if they were not part of previous studies."
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Proof of previous university degree(s) and transcripts",
+                                                                "Copy of passport or birth certificate",
+                                                                "Curriculum vitae",
+                                                                "Proof of English language proficiency",
+                                                                "Letter of recommendation by a university lecturer or employer",
+                                                                "Letter of motivation",
+                                                                "Passport photograph",
+                                                                "Proof of practical knowledge or work experience",
+                                                                "English translations for documents not issued in English or German"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "European applicants with 180 ECTS can be admitted under the condition of a mandatory internship of at least 22 weeks as part of the study program.",
+                                                                        "Summer semester start in April is available through a reverse study model."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "Original APS certificate is required for Chinese and Vietnamese applicants.",
+                                                                                 "Indian applicants do not need APS for the first IGC application step, but need APS for the visa appointment.",
+                                                                                 "Applicants from abroad should start the visa process immediately after admission because embassy appointment timing can take weeks.",
+                                                                                 "Sufficient financial resources are required for tuition fees and living costs."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Winter semester application deadline: May 31, 2026"
+                                                           ],
+                                             "intakes":  [
+                                                             "November",
+                                                             "April"
+                                                         ],
+                                             "application_channel":  "IGC online application portal",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Summer special: EUR 14,200 total until June 30, 2026",
+                                                          "Regular fee: EUR 14,900 total",
+                                                          "Summer semester regular fee: EUR 14,900 total",
+                                                          "Plus EUR 420 student and semester ticket twice a year",
+                                                          "EUR 2,000 down payment after admission to secure the study place"
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "program_identity":  [
+                                                                   {
+                                                                       "source_url":  "https://www.graduatecenter.org/en/mba-master.html",
+                                                                       "source_text":  "Overview lists Master Management - Digitalization \u0026 Transformation among IGC specialized master programs.",
+                                                                       "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                       "confidence":  "high",
+                                                                       "review_note":  "Used official overview to identify program membership."
+                                                                   },
+                                                                   {
+                                                                       "source_url":  "https://www.graduatecenter.org/en/mba-master/management-digitalization-and-transformation-ma.html",
+                                                                       "source_text":  "Key facts identify Master of Arts, November/April start, May 31 winter deadline, English language, and 3 semesters.",
+                                                                       "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                       "confidence":  "high",
+                                                                       "review_note":  "Direct official program page."
+                                                                   }
+                                                               ],
+                                          "requirements":  [
+                                                               {
+                                                                   "source_url":  "https://www.graduatecenter.org/en/application/requirements.html",
+                                                                   "source_text":  "Central requirements state business/economics degree, one year experience, CV, motivation letter, IELTS 6.0 or TOEFL iBT 80, and 210 ECTS rule.",
+                                                                   "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                   "confidence":  "high",
+                                                                   "review_note":  "Merged central requirements into program page facts."
+                                                               }
+                                                           ],
+                                          "application":  [
+                                                              {
+                                                                  "source_url":  "https://www.graduatecenter.org/en/mba-master/summer-semester-start.html",
+                                                                  "source_text":  "Summer-semester page lists Master Management Digitalization \u0026 Transformation as an April-start option.",
+                                                                  "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                  "confidence":  "medium",
+                                                                  "review_note":  "Summer start is official, but separate summer deadline was not found."
+                                                              }
+                                                          ],
+                                          "test_requirements":  [
+                                                                    {
+                                                                        "source_url":  "https://www.graduatecenter.org/en/application/requirements.html",
+                                                                        "source_text":  "Official requirements list English proficiency and documents, not GRE or GMAT admission tests.",
+                                                                        "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                        "confidence":  "medium",
+                                                                        "review_note":  "No GRE or GMAT admission-test requirement was added."
+                                                                    }
+                                                                ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "heading":  "Program key facts",
+                                                           "text":  "Management - Digitalization and Transformation, M.A.; Master of Arts; November/April start; winter deadline May 31, 2026; English; 3 semesters; Bremen campus."
+                                                       },
+                                                       {
+                                                           "heading":  "Program-specific requirements",
+                                                           "text":  "Business and economics bachelor\u0027s degree or equivalent; one year relevant post-degree experience; motivation letter; CV; IELTS 6.0 or TOEFL iBT 80; financial resources; 210 ECTS EHEA rule."
+                                                       },
+                                                       {
+                                                           "heading":  "Summer start",
+                                                           "text":  "April start is available and uses a reverse study model with the existing group."
+                                                       }
+                                                   ],
+                         "needs_human_review":  false
+                     },
+                     {
+                         "school":  {
+                                        "name":  "International Graduate Center, Hochschule Bremen",
+                                        "url":  "https://www.graduatecenter.org/en/",
+                                        "country":  "Germany",
+                                        "partner_status":  "candidate_from_partner_logo",
+                                        "school_type":  "graduate_center"
+                                    },
+                         "program":  {
+                                         "name":  "Master Aeronautical Management",
+                                         "degree":  "Master of Engineering",
+                                         "level":  "master",
+                                         "url":  "https://www.graduatecenter.org/en/mba-master/master-aeronautical-management.html",
+                                         "campus":  "Bremen, Germany",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "Aeronautical Management"
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Aviation-related first degree",
+                                                                          "minimum_ects":  null,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+                                                                                        "Program is designed for pilots and engineers."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            "Aviation-related first degree"
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "IELTS",
+                                                                                "minimum_score":  "6.0",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  "2 years per English certificate PDF",
+                                                                                "waiver":  [
+                                                                                               "A formal medium-of-instruction letter may be accepted when the prior degree was fully taught in English."
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "TOEFL iBT",
+                                                                                "minimum_score":  "80",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  "2 years per English certificate PDF",
+                                                                                "waiver":  [
+                                                                                               "A formal medium-of-instruction letter may be accepted when the prior degree was fully taught in English."
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  1,
+                                                                      "relevance":  "postgraduate aviation experience as a pilot, in aircraft maintenance, or in the aviation industry",
+                                                                      "notes":  [
+                                                                                    "The program page describes at least one year of relevant aviation experience."
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Proof of previous university degree(s) and transcripts",
+                                                                "Copy of passport or birth certificate",
+                                                                "Curriculum vitae",
+                                                                "Proof of English language proficiency",
+                                                                "Letter of recommendation by a university lecturer or employer",
+                                                                "Letter of motivation",
+                                                                "Passport photograph",
+                                                                "Proof of practical knowledge or work experience",
+                                                                "English translations for documents not issued in English or German"
+                                                            ],
+                                              "conditional_paths":  [
+
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "Original APS certificate is required for Chinese and Vietnamese applicants.",
+                                                                                 "Indian applicants do not need APS for the first IGC application step, but need APS for the visa appointment.",
+                                                                                 "Applicants from abroad should start the visa process immediately after admission because embassy appointment timing can take weeks.",
+                                                                                 "Sufficient financial resources are required for tuition fees and living costs."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Application deadline: May 31, 2026"
+                                                           ],
+                                             "intakes":  [
+                                                             "October"
+                                                         ],
+                                             "application_channel":  "IGC online application portal",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Tuition fee: EUR 9,800",
+                                                          "Tuition is due in one lump sum or two installments",
+                                                          "Plus additional semester fee of roughly EUR 420 per semester",
+                                                          "EUR 2,000 down payment after admission to secure the study place"
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "program_identity":  [
+                                                                   {
+                                                                       "source_url":  "https://www.graduatecenter.org/en/mba-master.html",
+                                                                       "source_text":  "Overview lists Master Aeronautical Management among IGC specialized master programs.",
+                                                                       "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                       "confidence":  "high",
+                                                                       "review_note":  "Used official overview to identify program membership."
+                                                                   },
+                                                                   {
+                                                                       "source_url":  "https://www.graduatecenter.org/en/mba-master/master-aeronautical-management.html",
+                                                                       "source_text":  "Key facts identify Master of Engineering, October start, May 31 deadline, English language, and 2 semesters.",
+                                                                       "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                       "confidence":  "high",
+                                                                       "review_note":  "Direct official program page."
+                                                                   }
+                                                               ],
+                                          "requirements":  [
+                                                               {
+                                                                   "source_url":  "https://www.graduatecenter.org/en/application/requirements.html",
+                                                                   "source_text":  "Central requirements state aviation-related first degree, one year postgraduate aviation experience, CV, and IELTS 6.0 or TOEFL iBT 80.",
+                                                                   "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                   "confidence":  "high",
+                                                                   "review_note":  "Merged central requirements into program page facts."
+                                                               }
+                                                           ],
+                                          "test_requirements":  [
+                                                                    {
+                                                                        "source_url":  "https://www.graduatecenter.org/en/application/requirements.html",
+                                                                        "source_text":  "Official requirements list English proficiency and documents, not GRE or GMAT admission tests.",
+                                                                        "retrieved_at":  "2026-05-17T08:35:42+00:00",
+                                                                        "confidence":  "medium",
+                                                                        "review_note":  "No GRE or GMAT admission-test requirement was added."
+                                                                    }
+                                                                ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "heading":  "Program key facts",
+                                                           "text":  "Master Aeronautical Management; Master of Engineering; October start; May 31, 2026 deadline; English; 2 semesters; full-time on campus in Bremen."
+                                                       },
+                                                       {
+                                                           "heading":  "Program-specific requirements",
+                                                           "text":  "Aviation-related first degree; one year postgraduate aviation work experience; CV; IELTS 6.0 or TOEFL iBT 80; financial resources."
+                                                       }
+                                                   ],
+                         "needs_human_review":  false
+                     }
+                 ],
+    "llm_review_summary":  {
+                               "program_count":  7,
+                               "key_findings":  [
+                                                    "IGC\u0027s official full-time MBA/Master overview lists seven current full-time programs; overview/category pages were not treated as program records.",
+                                                    "Central admission requirements were merged into each program because the official site separates key facts pages from shared requirements pages.",
+                                                    "Language thresholds split into two main groups: IELTS 6.5 or TOEFL iBT 90 for IMBA, Logistics, Global Management, and Executive Management; IELTS 6.0 or TOEFL iBT 80 for Tourism, Management Digitalization and Transformation, and Aeronautical Management.",
+                                                    "No GRE requirement was found. GMAT appears only in the official English-certificate PDF context and was not modeled as an admissions aptitude test.",
+                                                    "Common international handling includes APS for Chinese and Vietnamese applicants, India APS for visa appointment rather than first IGC application step, translations, early visa action, and financial resources."
+                                                ],
+                               "known_gaps":  [
+                                                  "Summer-semester start is official for selected programs, but the read pages did not expose a separate summer application deadline.",
+                                                  "MBA in Executive Management title is marked by IGC as a winter 2026/27 title change subject to senatorial approval.",
+                                                  "International MBA partner-university specialization rules were summarized from IGC pages; partner institution pages were not used because this task was limited to IGC official sources.",
+                                                  "Program fees and discount references are 2026 page facts and should be refreshed before student-facing quoting."
+                                              ]
+                           }
+}

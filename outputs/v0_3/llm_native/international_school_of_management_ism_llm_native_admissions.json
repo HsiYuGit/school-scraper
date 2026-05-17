@@ -1,0 +1,607 @@
+{
+    "schema_version":  "0.3-llm-native-draft",
+    "method":  {
+                   "type":  "llm_native_official_site_reading",
+                   "created_at":  "2026-05-17T08:39:05Z",
+                   "school":  "International School of Management (ISM)",
+                   "agent":  {
+                                 "agent_id":  "not exposed",
+                                 "nickname":  "not exposed",
+                                 "role":  "worker subagent",
+                                 "model":  "GPT-5 Codex",
+                                 "reasoning_effort":  "medium"
+                             },
+                   "cost_tracking":  {
+                                         "token_usage":  "not exposed",
+                                         "estimated_usd_cost":  "not available",
+                                         "note":  "Do not estimate unavailable cost."
+                                     },
+                   "source_urls":  [
+                                       "https://en.ism.de/",
+                                       "https://en.ism.de/full-degree-students/bachelor-programs",
+                                       "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/overview",
+                                       "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/application",
+                                       "https://en.ism.de/full-degree-students/master-programs",
+                                       "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview",
+                                       "https://en.ism.de/full-degree-students/master-programs/master-international-management/application",
+                                       "https://en.ism.de/full-degree-students/mba-programs",
+                                       "https://en.ism.de/full-degree-students/mba-programs/mba-general-management-full-time/overview",
+                                       "https://en.ism.de/full-degree-students/mba-programs/mba-general-management-part-time/overview",
+                                       "https://en.ism.de/ism-distance-learning"
+                                   ],
+                   "elapsed_time_seconds":  "not exposed",
+                   "format_note":  "Matches repo v0.3 LLM-native admissions JSON contract."
+               },
+    "school":  {
+                   "name":  "International School of Management (ISM)",
+                   "url":  "https://en.ism.de/",
+                   "country":  "Germany",
+                   "partner_status":  "confirmed_from_offer_text",
+                   "school_type":  "university"
+               },
+    "retrieved_at":  "2026-05-17T08:39:05Z",
+    "programs":  [
+                     {
+                         "school":  {
+                                        "name":  "International School of Management (ISM)",
+                                        "url":  "https://en.ism.de/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "B.Sc. International Management",
+                                         "degree":  "Bachelor of Science in International Management",
+                                         "level":  "bachelor",
+                                         "url":  "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/overview",
+                                         "campus":  [
+                                                        "Dortmund",
+                                                        "Frankfurt/Main",
+                                                        "Munich",
+                                                        "Hamburg",
+                                                        "Cologne",
+                                                        "Stuttgart",
+                                                        "Berlin",
+                                                        "Distance Learning option referenced from overview"
+                                                    ],
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  null,
+                                         "_confidence":  {
+                                                             "name":  "high",
+                                                             "degree":  "high",
+                                                             "campus":  "high",
+                                                             "language_of_instruction":  "high",
+                                                             "requirements":  "high"
+                                                         }
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "High school diploma, vocational diploma, equivalent school-leaving qualification, or recognized professional qualification that grants German university entrance.",
+                                                                          "minimum_ects":  null,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "English proficiency",
+                                                                                "minimum_score":  "B2",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "ISM gives TOEFL and IELTS as examples but does not state numeric TOEFL/IELTS thresholds on the reviewed page."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "Personal selection interview including presentation",
+                                                                            "requirement":  "required in the stated admission process"
+                                                                        }
+                                                                    ],
+                                              "work_experience":  null,
+                                              "documents":  [
+                                                                "Completed application form",
+                                                                "Copy of identity card",
+                                                                "School-leaving diploma or equivalent with subjects and transcript of records",
+                                                                "Proof of English proficiency at least B2",
+                                                                "CV"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "Prior learning recognition may be requested for previous vocational training or previous degree-program examinations."
+                                                                    ],
+                                              "international_requirements":  [
+
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Visa applicants without an existing German visa should apply by June 15 for fall term or December 15 for spring term."
+                                                           ],
+                                             "intakes":  [
+                                                             "March",
+                                                             "September"
+                                                         ],
+                                             "application_channel":  "ISM online application form",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/overview",
+                                                              "source_text":  "Overview identifies the program as Bachelor of Science in International Management, taught 100 percent in English, with seven listed campuses.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/application",
+                                                              "source_text":  "Application page states a four-step process: online application, document review, personal interview with presentation, and enrollment.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/application",
+                                                              "source_text":  "Entry requirements include university entrance eligibility and proof of language proficiency at least B2 in the language of instruction.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/overview",
+                                                           "heading":  "B.Sc. International Management at a glance",
+                                                           "source_text":  "Standard period: 6 semesters or 7 with Global Track. Start: March or September. Degree: Bachelor of Science. Language: 100 percent English."
+                                                       },
+                                                       {
+                                                           "source_url":  "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/application",
+                                                           "heading":  "Admission requirements",
+                                                           "source_text":  "Bachelor admission requires a qualifying school/professional credential, B2 language proof for the instruction language, complete documents, and successful admission process."
+                                                       }
+                                                   ],
+                         "needs_human_review":  false
+                     },
+                     {
+                         "school":  {
+                                        "name":  "International School of Management (ISM)",
+                                        "url":  "https://en.ism.de/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "M.Sc. International Management",
+                                         "degree":  "Master of Science",
+                                         "level":  "master",
+                                         "url":  "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview",
+                                         "campus":  [
+                                                        "Dortmund",
+                                                        "Frankfurt/Main",
+                                                        "Munich",
+                                                        "Hamburg",
+                                                        "Cologne",
+                                                        "Stuttgart",
+                                                        "Berlin",
+                                                        "Distance Learning option referenced from overview"
+                                                    ],
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  null,
+                                         "_confidence":  {
+                                                             "name":  "high",
+                                                             "degree":  "high",
+                                                             "campus":  "high",
+                                                             "language_of_instruction":  "high",
+                                                             "requirements":  "high"
+                                                         }
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree or equivalent from a university, university of applied sciences, or recognized foreign university.",
+                                                                          "minimum_ects":  "180 ECTS; 210 ECTS for the fast-track option",
+                                                                          "recognized_institution":  "recognized university, university of applied sciences, or recognized foreign university",
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+                                                                                        "For economics master\u0027s admission, ISM expects a first degree in economics/business sciences or at least 30 ECTS in business sciences."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            {
+                                                                                "subject":  "Business sciences / economics",
+                                                                                "minimum":  "30 ECTS or a first degree in economics/business sciences",
+                                                                                "notes":  [
+                                                                                              "Missing subject-specific ECTS can be compensated or acquired through relevant professional experience, internships, preparatory courses, or the Pre-Master program."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "English proficiency",
+                                                                                "minimum_score":  "B2",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "ISM gives TOEFL and IELTS as examples but does not state numeric TOEFL/IELTS thresholds on the reviewed page."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "Personal selection interview including presentation",
+                                                                            "requirement":  "required in the stated admission process"
+                                                                        }
+                                                                    ],
+                                              "work_experience":  null,
+                                              "documents":  [
+                                                                "Completed application form",
+                                                                "Copy of identity card",
+                                                                "Bachelor\u0027s degree and transcript of records, or equivalent if available",
+                                                                "School-leaving diploma with subjects and transcript of records",
+                                                                "Proof of English language proficiency at minimum B2",
+                                                                "CV"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "Pre-Master program or preparatory courses may be used for missing business-science credits.",
+                                                                        "Prior learning recognition may be requested for relevant previous training or degree-program examinations."
+                                                                    ],
+                                              "international_requirements":  [
+
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Visa applicants without an existing German visa should apply by June 15 for fall term or December 15 for spring term."
+                                                           ],
+                                             "intakes":  [
+                                                             "September"
+                                                         ],
+                                             "application_channel":  "ISM online application form",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview",
+                                                              "source_text":  "Overview identifies M.Sc. International Management as an English-taught Master of Science with September start and listed ISM campuses.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://en.ism.de/full-degree-students/master-programs/master-international-management/application",
+                                                              "source_text":  "Master application page requires a bachelor\u0027s degree, B2 English proof, document review, and personal interview with presentation.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://en.ism.de/full-degree-students/master-programs/master-international-management/application",
+                                                              "source_text":  "Economics master\u0027s admission expects an economics/business first degree or 30 ECTS in business sciences, with compensation paths for missing credits.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview",
+                                                           "heading":  "Master International Management in Germany at a glance",
+                                                           "source_text":  "Standard period: 3 semesters plus master thesis. Start: September. Degree: Master of Science. Language: 100 percent English."
+                                                       },
+                                                       {
+                                                           "source_url":  "https://en.ism.de/full-degree-students/master-programs/master-international-management/application",
+                                                           "heading":  "Admission requirements",
+                                                           "source_text":  "Master admission requires at least 180 ECTS, 210 ECTS for Fast Track, business-science background or 30 ECTS, and B2 language proof."
+                                                       }
+                                                   ],
+                         "needs_human_review":  false
+                     },
+                     {
+                         "school":  {
+                                        "name":  "International School of Management (ISM)",
+                                        "url":  "https://en.ism.de/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "MBA General Management",
+                                         "degree":  "Master of Business Administration",
+                                         "level":  "mba",
+                                         "url":  "https://en.ism.de/full-degree-students/mba-programs/mba-general-management-full-time/overview",
+                                         "campus":  [
+                                                        "Munich"
+                                                    ],
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "Full-time",
+                                         "_confidence":  {
+                                                             "name":  "high",
+                                                             "degree":  "high",
+                                                             "campus":  "high",
+                                                             "language_of_instruction":  "high",
+                                                             "requirements":  "medium"
+                                                         }
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Successful first bachelor\u0027s degree",
+                                                                          "minimum_ects":  "210 ECTS",
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+                                                                                        "The broader MBA page states GMAT score does not matter for admission."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "English proficiency",
+                                                                                "minimum_score":  "B2",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "Reviewed ISM MBA pages cite IELTS or TOEFL as examples but do not state numeric minimums."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "GMAT",
+                                                                            "requirement":  "not relevant for admission according to the general MBA page"
+                                                                        },
+                                                                        {
+                                                                            "test":  "Case study and interview",
+                                                                            "requirement":  "stated as part of the MBA admission process on the general MBA page"
+                                                                        },
+                                                                        {
+                                                                            "test":  "Online personal interview",
+                                                                            "requirement":  "stated on the full-time MBA overview page"
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  2,
+                                                                      "relevance":  "professional experience after the first degree",
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+
+                                                            ],
+                                              "conditional_paths":  [
+
+                                                                    ],
+                                              "international_requirements":  [
+
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+
+                                                           ],
+                                             "intakes":  [
+                                                             "September",
+                                                             "March"
+                                                         ],
+                                             "application_channel":  "ISM online admission process / online application",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://en.ism.de/full-degree-students/mba-programs/mba-general-management-full-time/overview",
+                                                              "source_text":  "Full-time MBA page identifies the program as MBA General Management, taught 100 percent in English at Munich, with September or March starts.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://en.ism.de/full-degree-students/mba-programs/mba-general-management-full-time/overview",
+                                                              "source_text":  "Full-time MBA admission summary lists first bachelor\u0027s degree with 210 ECTS, two years of professional experience, and English B2.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://en.ism.de/full-degree-students/mba-programs",
+                                                              "source_text":  "General MBA page states GMAT score does not matter for admission and names case study plus interview as admission process elements.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "medium",
+                                                              "review_note":  "Applied to the MBA family because the full-time detail page links to its application section but document details were not opened separately."
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://en.ism.de/full-degree-students/mba-programs/mba-general-management-full-time/overview",
+                                                           "heading":  "MBA General Management full-time at a glance",
+                                                           "source_text":  "Full-time MBA: 2 or 3 semesters, September or March start, Munich campus, MBA degree, 100 percent English."
+                                                       },
+                                                       {
+                                                           "source_url":  "https://en.ism.de/full-degree-students/mba-programs/mba-general-management-full-time/overview",
+                                                           "heading":  "How can I apply for an MBA program?",
+                                                           "source_text":  "Full-time MBA requires a successful first bachelor\u0027s degree with 210 ECTS, at least two years of professional experience, and English B2."
+                                                       }
+                                                   ],
+                         "needs_human_review":  true
+                     },
+                     {
+                         "school":  {
+                                        "name":  "International School of Management (ISM)",
+                                        "url":  "https://en.ism.de/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "MBA General Management",
+                                         "degree":  "Master of Business Administration",
+                                         "level":  "mba",
+                                         "url":  "https://en.ism.de/full-degree-students/mba-programs/mba-general-management-part-time/overview",
+                                         "campus":  [
+                                                        "Dortmund"
+                                                    ],
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "Part-time",
+                                         "_confidence":  {
+                                                             "name":  "high",
+                                                             "degree":  "high",
+                                                             "campus":  "high",
+                                                             "language_of_instruction":  "high",
+                                                             "requirements":  "medium"
+                                                         }
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Successful completion of first degree",
+                                                                          "minimum_ects":  "210 or 240 ECTS, depending on study duration",
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "English proficiency",
+                                                                                "minimum_score":  "B2",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+
+                                                                                           ],
+                                                                                "notes":  [
+                                                                                              "Reviewed page does not state numeric TOEFL/IELTS thresholds."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "Online selection interview",
+                                                                            "requirement":  "part of the digital application process"
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  2,
+                                                                      "relevance":  "professional experience",
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+
+                                                            ],
+                                              "conditional_paths":  [
+
+                                                                    ],
+                                              "international_requirements":  [
+
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+
+                                                           ],
+                                             "intakes":  [
+
+                                                         ],
+                                             "application_channel":  "ISM digital application process",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://en.ism.de/full-degree-students/mba-programs/mba-general-management-part-time/overview",
+                                                              "source_text":  "Part-time MBA page identifies MBA General Management as a part-time English MBA with Dortmund campus and 60/90 ECTS tracks.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://en.ism.de/full-degree-students/mba-programs/mba-general-management-part-time/overview",
+                                                              "source_text":  "Part-time MBA application section lists first degree, 210 or 240 ECTS depending on duration, two years of professional experience, and English B2.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://en.ism.de/full-degree-students/mba-programs/mba-general-management-part-time/overview",
+                                                           "heading":  "How can I apply for an MBA program?",
+                                                           "source_text":  "Part-time MBA requires a first degree with 210 or 240 ECTS depending on duration, two years of professional experience, and English B2."
+                                                       }
+                                                   ],
+                         "needs_human_review":  true
+                     }
+                 ],
+    "llm_review_summary":  {
+                               "program_count":  4,
+                               "key_findings":  [
+                                                    "ISM listing pages are useful for discovery but should not be stored as program records.",
+                                                    "Bachelor and master English programs both require B2 language proficiency; reviewed pages do not expose numeric TOEFL/IELTS cutoffs.",
+                                                    "The M.Sc. International Management page requires 180 ECTS, with 210 ECTS for Fast Track, plus economics/business background or 30 ECTS in business sciences.",
+                                                    "ISM MBA pages state GMAT score does not matter, and MBA admission is centered on first degree, work experience, English B2, and interviews/case study."
+                                                ],
+                               "known_gaps":  [
+                                                  "This LLM-native pass records only official detail/application pages read directly: B.Sc. International Management, M.Sc. International Management, MBA full-time, and MBA part-time.",
+                                                  "Other English on-campus, online, and German-language ISM programs listed on overview pages were not expanded into records without opening their own requirement pages.",
+                                                  "MBA document checklist and exact application deadlines were not found in the reviewed official pages."
+                                              ]
+                           }
+}

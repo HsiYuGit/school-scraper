@@ -1,0 +1,629 @@
+{
+    "schema_version":  "0.3-llm-native-draft",
+    "method":  {
+                   "type":  "llm_native_official_site_reading",
+                   "created_at":  "2026-05-17T08:39:05Z",
+                   "school":  "CBS International Business School",
+                   "agent":  {
+                                 "agent_id":  "not exposed",
+                                 "nickname":  "not exposed",
+                                 "role":  "worker subagent",
+                                 "model":  "GPT-5 Codex",
+                                 "reasoning_effort":  "medium"
+                             },
+                   "cost_tracking":  {
+                                         "token_usage":  "not exposed",
+                                         "estimated_usd_cost":  "not available",
+                                         "note":  "Do not estimate unavailable cost."
+                                     },
+                   "source_urls":  [
+                                       "https://www.cbs.de/en/",
+                                       "https://www.cbs.de/en/international-business-school",
+                                       "https://www.cbs.de/en/full-time-study-programmes-germany",
+                                       "https://www.cbs.de/en/bachelors-degree-germany/international-business",
+                                       "https://www.cbs.de/en/masters-degree-germany/international-business-management",
+                                       "https://www.cbs.de/en/admissions/admission-requirements",
+                                       "https://www.cbs.de/en/admissions/requirements/bachelors",
+                                       "https://www.cbs.de/en/admissions/requirements/masters",
+                                       "https://www.cbs.de/en/mba-germany/master-business-administration",
+                                       "https://www.cbs.de/en/mba-germany/one-year-mba-international-management"
+                                   ],
+                   "elapsed_time_seconds":  "not exposed",
+                   "format_note":  "Matches repo v0.3 LLM-native admissions JSON contract."
+               },
+    "school":  {
+                   "name":  "CBS International Business School",
+                   "url":  "https://www.cbs.de/en/",
+                   "country":  "Germany",
+                   "partner_status":  "confirmed_from_offer_text",
+                   "school_type":  "university"
+               },
+    "retrieved_at":  "2026-05-17T08:39:05Z",
+    "programs":  [
+                     {
+                         "school":  {
+                                        "name":  "CBS International Business School",
+                                        "url":  "https://www.cbs.de/en/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "International Business",
+                                         "degree":  "Bachelor of Science",
+                                         "level":  "bachelor",
+                                         "url":  "https://www.cbs.de/en/bachelors-degree-germany/international-business",
+                                         "campus":  [
+                                                        "Cologne"
+                                                    ],
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  null,
+                                         "_confidence":  {
+                                                             "name":  "high",
+                                                             "degree":  "high",
+                                                             "campus":  "medium",
+                                                             "language_of_instruction":  "high",
+                                                             "requirements":  "high"
+                                                         }
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "General university entrance qualification such as A-levels, university of applied sciences entrance qualification, or internationally recognized equivalent.",
+                                                                          "minimum_ects":  null,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  "No minimum GPA / no numerus clausus stated on the reviewed program page.",
+                                                                          "notes":  [
+                                                                                        "CBS also describes alternative bachelor admission paths via vocational qualifications or master craftsman/equivalent advanced training."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "TOEFL",
+                                                                                "minimum_score":  "83",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "Previous education or degree completed in English may be accepted."
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "IELTS",
+                                                                                "minimum_score":  "6.5",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "Previous education or degree completed in English may be accepted."
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "Cambridge Certificate",
+                                                                                "minimum_score":  "B2 or C1 depending on the programme",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "Previous education or degree completed in English may be accepted."
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "Personal admissions interview",
+                                                                            "requirement":  "program page says CBS looks forward to getting to know applicants in a personal admissions interview"
+                                                                        }
+                                                                    ],
+                                              "work_experience":  null,
+                                              "documents":  [
+                                                                "Officially certified copy of university entrance qualification",
+                                                                "CV in tabular format",
+                                                                "Valid visa for international applicants only",
+                                                                "Motivation letter for international applicants only",
+                                                                "Proof of health insurance",
+                                                                "Proof of language proficiency if required"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "Alternative bachelor entry may be possible through certain vocational qualifications or advanced professional qualifications.",
+                                                                        "An aptitude test may be required in some alternative-entry cases."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "Visa applicants should observe the stated visa-sensitive deadlines."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "CBS says applications are possible year-round while places are available.",
+                                                               "For visa applicants, Bachelor checklist states May 30 for winter semester and November 30 for summer semester."
+                                                           ],
+                                             "intakes":  [
+                                                             "Winter",
+                                                             "Summer"
+                                                         ],
+                                             "application_channel":  "CBS online application",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://www.cbs.de/en/bachelors-degree-germany/international-business",
+                                                              "source_text":  "Program page identifies International Business as an English full-time Bachelor of Science with winter and summer starts.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://www.cbs.de/en/admissions/requirements/bachelors",
+                                                              "source_text":  "Bachelor requirements page accepts A-levels/equivalent qualifications and lists TOEFL 83, IELTS 6.5, and Cambridge B2/C1 for English-taught bachelor programs.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://www.cbs.de/en/admissions/requirements/bachelors",
+                                                              "source_text":  "Bachelor checklist includes certified entrance qualification, CV, visa if applicable, motivation letter for international applicants, health insurance, and language proof.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://www.cbs.de/en/bachelors-degree-germany/international-business",
+                                                           "heading":  "International Business (B.Sc.)",
+                                                           "source_text":  "Full-time International Business is taught in English, starts in winter and summer, and awards Bachelor of Science."
+                                                       },
+                                                       {
+                                                           "source_url":  "https://www.cbs.de/en/admissions/requirements/bachelors",
+                                                           "heading":  "Language Requirements (English-Taught Programmes)",
+                                                           "source_text":  "English-taught bachelor programs require recognized language proof such as TOEFL 83, IELTS 6.5, or Cambridge B2/C1 depending on program."
+                                                       }
+                                                   ],
+                         "needs_human_review":  false
+                     },
+                     {
+                         "school":  {
+                                        "name":  "CBS International Business School",
+                                        "url":  "https://www.cbs.de/en/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "International Business \u0026 Management",
+                                         "degree":  "Master of Science",
+                                         "level":  "master",
+                                         "url":  "https://www.cbs.de/en/masters-degree-germany/ma-international-business",
+                                         "campus":  [
+
+                                                    ],
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  null,
+                                         "_confidence":  {
+                                                             "name":  "high",
+                                                             "degree":  "high",
+                                                             "campus":  "low",
+                                                             "language_of_instruction":  "high",
+                                                             "requirements":  "high"
+                                                         }
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Successfully completed Bachelor\u0027s, Diploma, or Magister degree from a recognized German or international university, university of applied sciences, or cooperative education institution.",
+                                                                          "minimum_ects":  "180 ECTS for business-related master\u0027s admission",
+                                                                          "recognized_institution":  "recognized German or international university, university of applied sciences, or cooperative education institution",
+                                                                          "minimum_grade":  "good for business-related master\u0027s admission",
+                                                                          "notes":  [
+                                                                                        "The program page itself shows 120/90/60 ECTS tracks; central master requirements state exact requirements depend on the program."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            {
+                                                                                "subject":  "Business-related first degree",
+                                                                                "minimum":  "Business-related degree for business/economics master\u0027s admission",
+                                                                                "notes":  [
+                                                                                              "Central master requirements state related-field expectations can vary by programme and lateral entry may be possible if foundational knowledge was acquired elsewhere."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "TOEFL",
+                                                                                "minimum_score":  "92",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "A previously completed Bachelor\u0027s degree taught in English may be accepted as proof."
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "IELTS",
+                                                                                "minimum_score":  "7.0",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "A previously completed Bachelor\u0027s degree taught in English may be accepted as proof."
+                                                                                           ]
+                                                                            },
+                                                                            {
+                                                                                "test":  "Cambridge Certificate",
+                                                                                "minimum_score":  "B2 or C1 depending on the programme",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "A previously completed Bachelor\u0027s degree taught in English may be accepted as proof."
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "Admission interview",
+                                                                            "requirement":  "program page states applicants are invited to a personal interview after application review"
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  null,
+                                                                      "relevance":  "Optional proof of study abroad experience and/or relevant internships or work experience may be submitted if required.",
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Officially certified copy of Bachelor\u0027s degree",
+                                                                "CV in tabular format",
+                                                                "Valid visa for international applicants only",
+                                                                "Proof of health insurance",
+                                                                "Copy of official photo ID",
+                                                                "Proof of language proficiency if required",
+                                                                "Academic transcripts if required",
+                                                                "Optional proof of study abroad experience and/or relevant internships or work experience"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "Lateral entry may be possible if relevant foundational knowledge was acquired in another discipline.",
+                                                                        "Applicants without a traditional bachelor\u0027s qualification may qualify under specific professional-experience or higher-qualification conditions."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "Visa applicants should observe the stated visa-sensitive deadlines."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Program page states the application deadline is year-round open while places are available.",
+                                                               "For visa applicants, master checklist states May 30 for winter semester and November 30 for summer semester."
+                                                           ],
+                                             "intakes":  [
+                                                             "Winter"
+                                                         ],
+                                             "application_channel":  "CBS online application",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://www.cbs.de/en/masters-degree-germany/ma-international-business",
+                                                              "source_text":  "Program page identifies International Business \u0026 Management as an English-taught Master of Science with 120/90/60 ECTS tracks and winter start.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://www.cbs.de/en/admissions/requirements/masters",
+                                                              "source_text":  "Master requirements page lists TOEFL 92, IELTS 7.0, and Cambridge B2/C1 for English-taught master programs, with English-taught prior degree as possible proof.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://www.cbs.de/en/admissions/requirements/masters",
+                                                              "source_text":  "Business-related master admission requires a recognized first degree with minimum grade good and at least 180 ECTS.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://www.cbs.de/en/masters-degree-germany/ma-international-business",
+                                                           "heading":  "International Business \u0026 Management Master (M.Sc.)",
+                                                           "source_text":  "Program page states four semesters, English language, winter start, 120/90/60 ECTS, and Master of Science degree."
+                                                       },
+                                                       {
+                                                           "source_url":  "https://www.cbs.de/en/admissions/requirements/masters",
+                                                           "heading":  "Language Requirements for English-Taught Master\u0027s Programmes",
+                                                           "source_text":  "Recognized English certificates include TOEFL 92, IELTS 7.0, and Cambridge B2/C1 depending on programme."
+                                                       }
+                                                   ],
+                         "needs_human_review":  true
+                     },
+                     {
+                         "school":  {
+                                        "name":  "CBS International Business School",
+                                        "url":  "https://www.cbs.de/en/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "International Management",
+                                         "degree":  "Master of Business Administration",
+                                         "level":  "mba",
+                                         "url":  "https://www.cbs.de/en/mba-germany/master-business-administration",
+                                         "campus":  [
+                                                        "Cologne"
+                                                    ],
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "120 ECTS, full-time",
+                                         "_confidence":  {
+                                                             "name":  "high",
+                                                             "degree":  "high",
+                                                             "campus":  "high",
+                                                             "language_of_instruction":  "high",
+                                                             "requirements":  "high"
+                                                         }
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "First academic degree from a recognized German or international university, university of applied sciences, or business academy.",
+                                                                          "minimum_ects":  "180 ECTS from undergraduate degree",
+                                                                          "recognized_institution":  "recognized university, university of applied sciences, or business academy",
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+
+                                                                        ],
+                                              "language_requirements":  [
+
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "Admission interview",
+                                                                            "requirement":  "application process includes an admission interview after assessment"
+                                                                        },
+                                                                        {
+                                                                            "test":  "GRE/GMAT",
+                                                                            "requirement":  "not found on the reviewed official MBA page"
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  1,
+                                                                      "relevance":  "professional work experience to demonstrate practical business competencies",
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Application documents in English",
+                                                                "Proof of university entrance qualification / transcript if final diploma is not yet available"
+                                                            ],
+                                              "conditional_paths":  [
+
+                                                                    ],
+                                              "international_requirements":  [
+
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Program page says the application deadline is year-round open while places are available."
+                                                           ],
+                                             "intakes":  [
+                                                             "Winter"
+                                                         ],
+                                             "application_channel":  "CBS online application",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://www.cbs.de/en/mba-germany/master-business-administration",
+                                                              "source_text":  "Program page identifies International Management MBA 120 ECTS as a full-time English MBA with four semesters, winter start, and Cologne location.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://www.cbs.de/en/mba-germany/master-business-administration",
+                                                              "source_text":  "MBA FAQ states applicants need a recognized first academic degree, at least 180 ECTS, and at least one year of professional work experience.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://www.cbs.de/en/mba-germany/master-business-administration",
+                                                              "source_text":  "Application process lists online application, assessment, admission interview, and offer.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://www.cbs.de/en/mba-germany/master-business-administration",
+                                                           "heading":  "International Management (MBA) 120 ECTS",
+                                                           "source_text":  "Program page states four semesters, English language, winter start, 120 ECTS, MBA degree, and Cologne study location."
+                                                       },
+                                                       {
+                                                           "source_url":  "https://www.cbs.de/en/mba-germany/master-business-administration",
+                                                           "heading":  "FAQ: admission requirements for the MBA",
+                                                           "source_text":  "MBA requirements include recognized first academic degree, minimum 180 ECTS, at least one year professional work experience, and English application documents."
+                                                       }
+                                                   ],
+                         "needs_human_review":  true
+                     },
+                     {
+                         "school":  {
+                                        "name":  "CBS International Business School",
+                                        "url":  "https://www.cbs.de/en/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "International Management",
+                                         "degree":  "Master of Business Administration",
+                                         "level":  "mba",
+                                         "url":  "https://www.cbs.de/en/mba-germany/one-year-mba-international-management",
+                                         "campus":  [
+                                                        "Cologne"
+                                                    ],
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  "60 ECTS, fast track",
+                                         "_confidence":  {
+                                                             "name":  "high",
+                                                             "degree":  "high",
+                                                             "campus":  "medium",
+                                                             "language_of_instruction":  "high",
+                                                             "requirements":  "high"
+                                                         }
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "First academic degree from a recognized German or international university, university of applied sciences, or business academy.",
+                                                                          "minimum_ects":  "180 ECTS from undergraduate studies",
+                                                                          "recognized_institution":  "recognized German or international university, university of applied sciences, or business academy",
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+
+                                                                        ],
+                                              "language_requirements":  [
+
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "Admission interview",
+                                                                            "requirement":  "application process includes an admission interview after assessment"
+                                                                        },
+                                                                        {
+                                                                            "test":  "GRE/GMAT",
+                                                                            "requirement":  "not found on the reviewed official MBA page"
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  1,
+                                                                      "relevance":  "professional work experience to demonstrate practical business expertise",
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Application documents in English",
+                                                                "Proof of university entrance qualification / transcript if final diploma is not yet available"
+                                                            ],
+                                              "conditional_paths":  [
+
+                                                                    ],
+                                              "international_requirements":  [
+
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Program page says the application deadline is year-round open while places are available."
+                                                           ],
+                                             "intakes":  [
+                                                             "Winter"
+                                                         ],
+                                             "application_channel":  "CBS online application",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://www.cbs.de/en/mba-germany/one-year-mba-international-management",
+                                                              "source_text":  "Fast Track MBA page identifies International Management MBA 60 ECTS as full-time, English-taught, two semesters, winter start, and MBA degree.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://www.cbs.de/en/mba-germany/one-year-mba-international-management",
+                                                              "source_text":  "MBA FAQ states applicants need a recognized first academic degree, at least 180 ECTS, and at least one year of professional work experience.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          },
+                                                          {
+                                                              "source_url":  "https://www.cbs.de/en/mba-germany/one-year-mba-international-management",
+                                                              "source_text":  "Application process lists online application, assessment, admission interview, and offer.",
+                                                              "retrieved_at":  "2026-05-17T08:39:05Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  null
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://www.cbs.de/en/mba-germany/one-year-mba-international-management",
+                                                           "heading":  "International Management (MBA) 60 ECTS",
+                                                           "source_text":  "Fast Track MBA page states two semesters, English language, winter start, 60 ECTS, and MBA degree."
+                                                       },
+                                                       {
+                                                           "source_url":  "https://www.cbs.de/en/mba-germany/one-year-mba-international-management",
+                                                           "heading":  "FAQ: admission requirements for the MBA",
+                                                           "source_text":  "MBA requirements include recognized first academic degree, minimum 180 ECTS, at least one year professional work experience, and English application documents."
+                                                       }
+                                                   ],
+                         "needs_human_review":  true
+                     }
+                 ],
+    "llm_review_summary":  {
+                               "program_count":  4,
+                               "key_findings":  [
+                                                    "CBS central Bachelor requirements provide TOEFL 83, IELTS 6.5, and Cambridge B2/C1 for English-taught bachelor programs.",
+                                                    "CBS central Master requirements provide TOEFL 92, IELTS 7.0, and Cambridge B2/C1 for English-taught master programs.",
+                                                    "The CBS MBA pages do not show GRE/GMAT as an admission requirement; official MBA FAQ instead emphasizes first academic degree, 180 ECTS, and at least one year of work experience.",
+                                                    "CBS application flow is digital and generally year-round while places are available; visa-sensitive checklist deadlines appear on the Bachelor/Master requirement pages."
+                                                ],
+                               "known_gaps":  [
+                                                  "This pass covers seed/finding-relevant detailed programs: B.Sc. International Business, M.Sc. International Business \u0026 Management, MBA 120 ECTS, and MBA 60 ECTS.",
+                                                  "Other English CBS bachelor/master programs listed on the full-time page were not expanded into records without opening their own program pages.",
+                                                  "MBA-specific language certificate thresholds were not found on the reviewed MBA pages, so the MBA language_requirements arrays are intentionally empty."
+                                              ]
+                           }
+}

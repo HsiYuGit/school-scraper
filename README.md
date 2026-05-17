@@ -78,3 +78,5 @@ v0.3 延續同一個 taxonomy，但把 validation 發現轉成更保守的 crawl
 - `outputs/v0_3/`：保存本輪修正後重新產生的 crawler JSON、manifest 與 LLM-native official-site reading。
 
 版本化輸出與 HTML 比較方式見 `docs/admissions_output_versions.md`。
+
+LLM-native official-site reading 的 JSON 格式固定記錄在 `docs/admissions_llm_native_schema_v0_3.md`，避免不同 subagent 產生不同 shape，讓後續比較聚焦在資料內容而不是格式差異。

@@ -1,0 +1,247 @@
+{
+    "schema_version":  "0.3-llm-native-draft",
+    "method":  {
+                   "type":  "llm_native_official_site_reading",
+                   "created_at":  "2026-05-17T08:34:06Z",
+                   "school":  "Hochschule Bremen",
+                   "agent":  {
+                                 "agent_id":  "not exposed",
+                                 "nickname":  "not exposed",
+                                 "role":  "worker subagent",
+                                 "model":  "GPT-5 Codex; exact API model id not exposed",
+                                 "reasoning_effort":  "not exposed"
+                             },
+                   "cost_tracking":  {
+                                         "token_usage":  "not exposed",
+                                         "estimated_usd_cost":  "not available",
+                                         "note":  "Do not estimate unavailable cost."
+                                     },
+                   "source_urls":  [
+                                       "https://www.hs-bremen.de/en/",
+                                       "https://www.hs-bremen.de/en/study/programmes/",
+                                       "https://www.hs-bremen.de/en/study/before/application-and-admission/",
+                                       "https://www.hs-bremen.de/en/study/before/application-and-admission/admission-requirements/",
+                                       "https://www.hs-bremen.de/en/study/degree-programme/computer-science-msc/"
+                                   ],
+                   "elapsed_time_seconds":  "not exposed",
+                   "format_note":  "Matches repo v0.3 LLM-native admissions JSON contract."
+               },
+    "school":  {
+                   "name":  "Hochschule Bremen",
+                   "url":  "https://www.hs-bremen.de/en/",
+                   "country":  "Germany",
+                   "partner_status":  "confirmed_from_offer_text",
+                   "school_type":  "university"
+               },
+    "retrieved_at":  "2026-05-17T08:34:06Z",
+    "programs":  [
+                     {
+                         "school":  {
+                                        "name":  "Hochschule Bremen",
+                                        "url":  "https://www.hs-bremen.de/en/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university"
+                                    },
+                         "program":  {
+                                         "name":  "Computer Science M.Sc. (optional dual study mode)",
+                                         "degree":  "Master of Science",
+                                         "level":  "master",
+                                         "url":  "https://www.hs-bremen.de/en/study/degree-programme/computer-science-msc/",
+                                         "campus":  "Hochschule Bremen",
+                                         "language_of_instruction":  [
+                                                                         "German",
+                                                                         "Selected modules in English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  [
+                                                                "Complex Software Systems",
+                                                                "Human-Computer Interaction",
+                                                                "Embedded Systems",
+                                                                "Computational Geometry and Virtual Reality",
+                                                                "Big Data",
+                                                                "Computer Vision",
+                                                                "Information Security and Secure Software Development",
+                                                                "Mobile Computing",
+                                                                "Distributed System"
+                                                            ],
+                                         "_confidence":  {
+                                                             "name":  "high",
+                                                             "degree":  "high",
+                                                             "level":  "high",
+                                                             "language_of_instruction":  "high",
+                                                             "coverage_note":  "This record is based on the official HSB programme page named in validation findings, plus central HSB application/admission pages."
+                                                         }
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "First professionally qualifying degree, usually a Bachelor\u0027s degree",
+                                                                          "minimum_ects":  210,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  "Average grade good (2.5) or ECTS Grade A to B may be accepted through recognition of external achievements.",
+                                                                          "notes":  [
+                                                                                        "Subject background must be computer science, mathematics, or another relevant field of study.",
+                                                                                        "Comparable foreign degrees are accepted if they satisfy the programme requirement."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+                                                                            {
+                                                                                "subject":  "computer science, mathematics, or relevant field",
+                                                                                "minimum_ects":  null,
+                                                                                "notes":  [
+                                                                                              "The programme page gives field requirements but no module-level ECTS split."
+                                                                                          ]
+                                                                            }
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "test":  "German language skills",
+                                                                                "minimum_score":  "native speaker or level C1 for universities",
+                                                                                "component_scores":  [
+
+                                                                                                     ],
+                                                                                "validity":  null,
+                                                                                "waiver":  [
+                                                                                               "Native German speaker"
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  null,
+                                                                      "relevance":  null,
+                                                                      "notes":  [
+                                                                                    "No work-experience requirement found on the official Computer Science M.Sc. page."
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "Dual study is optional.",
+                                                                        "Part-time track extends the programme duration to five semesters.",
+                                                                        "International applicants with foreign higher education entrance qualification apply first for uni-assist VPD, then apply to HSB through CampInO with the VPD."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "HSB participates in uni-assist preliminary review documentation (VPD) for applicants whose higher education entrance qualification was acquired abroad.",
+                                                                                 "Applicants must also meet admission requirements and language qualifications before applying to HSB with the VPD."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Winter semester: 1 June to 15 July",
+                                                               "Summer semester: 15 December to 15 January"
+                                                           ],
+                                             "intakes":  [
+                                                             "Winter semester",
+                                                             "Summer semester"
+                                                         ],
+                                             "application_channel":  "CampInO for applicants with German bachelor\u0027s degree; foreign entrance-qualification applicants first obtain uni-assist VPD, then apply directly to HSB in CampInO with the VPD.",
+                                             "uni_assist_or_vpd":  "VPD required for applicants whose higher education entrance qualification was acquired abroad; IGC programmes are handled separately.",
+                                             "fees":  [
+
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "program_overview":  [
+                                                                   {
+                                                                       "source_url":  "https://www.hs-bremen.de/en/study/degree-programme/computer-science-msc/",
+                                                                       "source_text":  "Computer Science M.Sc.; winter and summer starts; 90 credits; admission restricted; language German.",
+                                                                       "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                       "confidence":  "high",
+                                                                       "review_note":  "Direct programme key facts from official HSB page."
+                                                                   }
+                                                               ],
+                                          "requirements":  [
+                                                               {
+                                                                   "source_url":  "https://www.hs-bremen.de/en/study/degree-programme/computer-science-msc/",
+                                                                   "source_text":  "Requires 210 ECTS in computer science, mathematics, or another relevant field.",
+                                                                   "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                   "confidence":  "high",
+                                                                   "review_note":  "Programme-specific requirement from official page."
+                                                               },
+                                                               {
+                                                                   "source_url":  "https://www.hs-bremen.de/en/study/before/application-and-admission/admission-requirements/",
+                                                                   "source_text":  "For consecutive master\u0027s programmes, a first academic degree is required; programme pages carry specific extra requirements.",
+                                                                   "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                   "confidence":  "high",
+                                                                   "review_note":  "Central admission-requirements page confirms the programme-page model."
+                                                               }
+                                                           ],
+                                          "language_requirements":  [
+                                                                        {
+                                                                            "source_url":  "https://www.hs-bremen.de/en/study/degree-programme/computer-science-msc/",
+                                                                            "source_text":  "German language skills: native speaker or university level C1.",
+                                                                            "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                            "confidence":  "high",
+                                                                            "review_note":  "Programme-specific language requirement from official page."
+                                                                        }
+                                                                    ],
+                                          "application":  [
+                                                              {
+                                                                  "source_url":  "https://www.hs-bremen.de/en/study/before/application-and-admission/",
+                                                                  "source_text":  "Most programmes: winter 1 June-15 July; summer 15 December-15 January.",
+                                                                  "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                  "confidence":  "high",
+                                                                  "review_note":  "Central application page; Computer Science page uses the same periods."
+                                                              },
+                                                              {
+                                                                  "source_url":  "https://www.hs-bremen.de/en/study/before/application-and-admission/",
+                                                                  "source_text":  "Foreign entrance-qualification applicants first apply for uni-assist VPD, then apply to HSB in CampInO.",
+                                                                  "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                  "confidence":  "high",
+                                                                  "review_note":  "Central international application rule."
+                                                              }
+                                                          ],
+                                          "review_notes":  [
+                                                               {
+                                                                   "source_url":  "https://www.hs-bremen.de/en/study/programmes/",
+                                                                   "source_text":  "Programme catalogue page is official but did not expose full dynamic listing in the text reader.",
+                                                                   "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                   "confidence":  "medium",
+                                                                   "review_note":  "This draft does not claim full HSB catalogue coverage."
+                                                               },
+                                                               {
+                                                                   "source_url":  "https://www.hs-bremen.de/en/study/degree-programme/computer-science-msc/",
+                                                                   "source_text":  "No GRE, GMAT, TOEFL, IELTS, work-experience, or fee requirement found for this programme page.",
+                                                                   "retrieved_at":  "2026-05-17T08:34:06Z",
+                                                                   "confidence":  "medium",
+                                                                   "review_note":  "Empty fields are intentional; do not infer from other schools."
+                                                               }
+                                                           ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "heading":  "Programme key facts",
+                                                           "text":  "Computer Science M.Sc.; winter and summer start; application periods 1 June to 15 July and 15 December to 15 January; 3 semesters; 90 credits; admission restricted."
+                                                       },
+                                                       {
+                                                           "heading":  "Admission requirements",
+                                                           "text":  "Requires a first professionally qualifying degree with 210 ECTS credits in computer science, mathematics, or another relevant field, and German C1 or native-speaker status."
+                                                       },
+                                                       {
+                                                           "heading":  "Central application path",
+                                                           "text":  "German bachelor\u0027s applicants use CampInO when requirements are met; foreign entrance-qualification applicants first obtain a uni-assist VPD, then apply to HSB with the VPD."
+                                                       }
+                                                   ],
+                         "needs_human_review":  false
+                     }
+                 ],
+    "llm_review_summary":  {
+                               "program_count":  1,
+                               "key_findings":  [
+                                                    "The official HSB site has programme-specific degree pages; the zero-program crawler output should be treated as broken.",
+                                                    "Computer Science M.Sc. has explicit admissions facts: 210 ECTS in computer science, mathematics, or relevant field; German C1/native speaker; 90 credits; winter and summer starts.",
+                                                    "Most HSB application periods are winter 1 June to 15 July and summer 15 December to 15 January; the Computer Science page repeats those periods.",
+                                                    "International applicants with foreign entrance qualifications use the uni-assist VPD route before applying to HSB through CampInO.",
+                                                    "No GRE, GMAT, TOEFL, IELTS, fee, or work-experience requirement was found for the Computer Science M.Sc. official page."
+                                                ],
+                               "known_gaps":  [
+                                                  "This draft structures the official Computer Science M.Sc. validation target, not the full HSB catalogue.",
+                                                  "The official programme catalogue page did not expose the full dynamic programme listing in the available text reader.",
+                                                  "Documents required for Computer Science M.Sc. were not listed on the readable programme page; keep documents empty until the application portal or official checklist is reviewed."
+                                              ]
+                           }
+}

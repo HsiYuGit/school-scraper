@@ -1,0 +1,443 @@
+{
+    "schema_version":  "0.3-llm-native-draft",
+    "method":  {
+                   "type":  "llm_native_official_site_reading",
+                   "created_at":  "2026-05-17T08:35:55Z",
+                   "school":  "SRH Universities",
+                   "agent":  {
+                                 "agent_id":  "not exposed",
+                                 "nickname":  "not exposed",
+                                 "role":  "worker subagent",
+                                 "model":  "not exposed",
+                                 "reasoning_effort":  "medium"
+                             },
+                   "cost_tracking":  {
+                                         "token_usage":  "not exposed",
+                                         "estimated_usd_cost":  "not available",
+                                         "note":  "Do not estimate unavailable cost."
+                                     },
+                   "source_urls":  [
+                                       "https://www.srh-universities.de/en/",
+                                       "https://www.srh-university.de/en/programme-finder/",
+                                       "https://www.srh-university.de/en/you-want-to-study/applications-and-admissions/",
+                                       "https://www.srh-university.de/en/you-want-to-study/faqs/",
+                                       "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/",
+                                       "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/admission-requirements/",
+                                       "https://www.srh-university.de/en/master/supply-chain-management-english/g/",
+                                       "https://www.srh-university.de/en/master/supply-chain-management-english/g/supply-chain-management-m-sc-admission-requirements/",
+                                       "https://www.srh-university.de/en/master/general-management/mba/general-management-mba-admission-requirements/"
+                                   ],
+                   "elapsed_time_seconds":  "not exposed",
+                   "format_note":  "Matches repo v0.3 LLM-native admissions JSON contract."
+               },
+    "school":  {
+                   "name":  "SRH Universities",
+                   "url":  "https://www.srh-universities.de/en/",
+                   "country":  "Germany",
+                   "partner_status":  "confirmed_from_offer_text",
+                   "school_type":  "university_group"
+               },
+    "retrieved_at":  "2026-05-17T08:35:55Z",
+    "programs":  [
+                     {
+                         "school":  {
+                                        "name":  "SRH Universities",
+                                        "url":  "https://www.srh-universities.de/en/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university_group"
+                                    },
+                         "program":  {
+                                         "name":  "Applied Artificial Intelligence",
+                                         "degree":  "Bachelor of Science",
+                                         "level":  "bachelor",
+                                         "url":  "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/",
+                                         "campus":  "Heidelberg",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  null
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "University entrance qualification for bachelor study",
+                                                                          "minimum_ects":  null,
+                                                                          "recognized_institution":  null,
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+                                                                                        "Applicants without a conventional university entrance qualification may be admitted through an officially recognized professional-qualification path plus aptitude assessment."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "language":  "English",
+                                                                                "accepted_proofs":  [
+                                                                                                        {
+                                                                                                            "test":  "TOEFL iBT",
+                                                                                                            "minimum_score":  "80"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "test":  "IELTS Academic",
+                                                                                                            "minimum_score":  "6.5"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "test":  "Duolingo English Test",
+                                                                                                            "minimum_score":  "95"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "test":  "SRH English test or proof of prior English-language instruction",
+                                                                                                            "minimum_score":  null
+                                                                                                        }
+                                                                                                    ],
+                                                                                "waiver":  [
+                                                                                               "Prior English-language instruction may satisfy the language proof."
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "Aptitude test",
+                                                                            "requirement":  "Required only for the professional-qualification admission path."
+                                                                        },
+                                                                        {
+                                                                            "test":  "Selection interview",
+                                                                            "requirement":  "SRH contacts applicants for an interview when formal requirements are met."
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  0,
+                                                                      "relevance":  "Not required for the regular bachelor path; three years of work experience are part of the professional-qualification path.",
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Curriculum vitae with passport photo",
+                                                                "Identity card or passport copy",
+                                                                "University entrance qualification",
+                                                                "Proof of English language proficiency"
+                                                            ],
+                                              "conditional_paths":  [
+                                                                        "Professional qualification route requires at least two years of vocational training, normally three years of professional experience, and an aptitude test."
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "International applicants needing a visa should account for visa processing time when applying."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Applications are accepted at any time."
+                                                           ],
+                                             "intakes":  [
+                                                             "Winter semester"
+                                                         ],
+                                             "application_channel":  "Apply through SRH\u0027s online application flow; SRH reviews documents and then contacts eligible applicants for an interview.",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Tuition shown by SRH: EUR 790 per month",
+                                                          "Registration fee: EUR 750 for EU/EEA applicants",
+                                                          "Registration fee: EUR 1,000 for non-EU/non-EEA applicants"
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/",
+                                                              "source_text":  "The official program page identifies Applied Artificial Intelligence as a B.Sc. in Heidelberg, taught in English, with winter intake.",
+                                                              "retrieved_at":  "2026-05-17T08:35:55Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  "Used for program identity, campus, language, duration, intake and fee context."
+                                                          },
+                                                          {
+                                                              "source_url":  "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/admission-requirements/",
+                                                              "source_text":  "The admission page lists bachelor entrance qualification, English proof options, documents, and professional-qualification admission conditions.",
+                                                              "retrieved_at":  "2026-05-17T08:35:55Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  "Used for the structured requirements record."
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/",
+                                                           "section":  "Key Facts",
+                                                           "summary":  "B.Sc.; 180 ECTS; Heidelberg; English; six semesters; winter semester; listed monthly tuition."
+                                                       },
+                                                       {
+                                                           "source_url":  "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/admission-requirements/",
+                                                           "section":  "Admission requirements",
+                                                           "summary":  "Regular bachelor entrance qualification, English proof, required documents, interview step, and professional admission alternative."
+                                                       }
+                                                   ],
+                         "needs_human_review":  false
+                     },
+                     {
+                         "school":  {
+                                        "name":  "SRH Universities",
+                                        "url":  "https://www.srh-universities.de/en/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university_group"
+                                    },
+                         "program":  {
+                                         "name":  "Supply Chain Management",
+                                         "degree":  "Master of Science",
+                                         "level":  "master",
+                                         "url":  "https://www.srh-university.de/en/master/supply-chain-management-english/g/",
+                                         "campus":  "Berlin, Hamburg, Cologne, Hamm",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  null
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree for master admission",
+                                                                          "minimum_ects":  180,
+                                                                          "recognized_institution":  "Recognized higher education institution",
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+                                                                                        "SRH\u0027s admission page states that a first academic degree is required for admission to the M.Sc."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "language":  "English",
+                                                                                "accepted_proofs":  [
+                                                                                                        {
+                                                                                                            "test":  "TOEFL iBT",
+                                                                                                            "minimum_score":  "80"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "test":  "IELTS Academic",
+                                                                                                            "minimum_score":  "6.5"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "test":  "Duolingo English Test",
+                                                                                                            "minimum_score":  "95"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "test":  "SRH English test or proof of prior English-language instruction",
+                                                                                                            "minimum_score":  null
+                                                                                                        }
+                                                                                                    ],
+                                                                                "waiver":  [
+                                                                                               "Prior English-language instruction may satisfy the language proof."
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "Selection interview",
+                                                                            "requirement":  "SRH contacts applicants for an interview when formal requirements are met."
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  0,
+                                                                      "relevance":  "No work-experience requirement was stated on the official admissions page read.",
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Curriculum vitae with passport photo",
+                                                                "Identity card or passport copy",
+                                                                "Bachelor\u0027s certificate",
+                                                                "Transcript of records",
+                                                                "Proof of English language proficiency"
+                                                            ],
+                                              "conditional_paths":  [
+
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "International applicants needing a visa should account for visa processing time when applying."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Applications are accepted at any time."
+                                                           ],
+                                             "intakes":  [
+                                                             "1 April",
+                                                             "1 October"
+                                                         ],
+                                             "application_channel":  "Apply through SRH\u0027s online application flow; SRH reviews documents and then contacts eligible applicants for an interview.",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+                                                          "Tuition shown by SRH: from EUR 770 per month"
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://www.srh-university.de/en/master/supply-chain-management-english/g/",
+                                                              "source_text":  "The official program page identifies Supply Chain Management as an English-taught M.Sc. with April and October starts.",
+                                                              "retrieved_at":  "2026-05-17T08:35:55Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  "Used for program identity, campus, language, duration and intake context."
+                                                          },
+                                                          {
+                                                              "source_url":  "https://www.srh-university.de/en/master/supply-chain-management-english/g/supply-chain-management-m-sc-admission-requirements/",
+                                                              "source_text":  "The admission page lists a first degree, English proof options, application documents, and SRH\u0027s interview workflow.",
+                                                              "retrieved_at":  "2026-05-17T08:35:55Z",
+                                                              "confidence":  "high",
+                                                              "review_note":  "Used for the structured requirements record."
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://www.srh-university.de/en/master/supply-chain-management-english/g/",
+                                                           "section":  "Key Facts",
+                                                           "summary":  "M.Sc.; 120 ECTS; English; four semesters; Berlin/Hamburg/Cologne/Hamm campus references; April and October starts."
+                                                       },
+                                                       {
+                                                           "source_url":  "https://www.srh-university.de/en/master/supply-chain-management-english/g/supply-chain-management-m-sc-admission-requirements/",
+                                                           "section":  "Admission requirements",
+                                                           "summary":  "Bachelor\u0027s degree, English language proof, CV, identity document, degree certificate, transcript, and admission interview process."
+                                                       }
+                                                   ],
+                         "needs_human_review":  false
+                     },
+                     {
+                         "school":  {
+                                        "name":  "SRH Universities",
+                                        "url":  "https://www.srh-universities.de/en/",
+                                        "country":  "Germany",
+                                        "partner_status":  "confirmed_from_offer_text",
+                                        "school_type":  "university_group"
+                                    },
+                         "program":  {
+                                         "name":  "General Management",
+                                         "degree":  "Master of Business Administration",
+                                         "level":  "mba",
+                                         "url":  "https://www.srh-university.de/en/master/general-management/mba/general-management-mba-admission-requirements/",
+                                         "campus":  "SRH campus not normalized from the admission page alone",
+                                         "language_of_instruction":  [
+                                                                         "English"
+                                                                     ],
+                                         "parent_program":  null,
+                                         "specialization":  null
+                                     },
+                         "requirements":  {
+                                              "academic_background":  {
+                                                                          "degree_level":  "Bachelor\u0027s degree or equivalent",
+                                                                          "minimum_ects":  null,
+                                                                          "recognized_institution":  "Recognized university or equivalent",
+                                                                          "minimum_grade":  null,
+                                                                          "notes":  [
+                                                                                        "SRH\u0027s MBA admission page states a completed degree is required; exact ECTS were not captured from the page read."
+                                                                                    ]
+                                                                      },
+                                              "subject_prerequisites":  [
+
+                                                                        ],
+                                              "language_requirements":  [
+                                                                            {
+                                                                                "language":  "English",
+                                                                                "accepted_proofs":  [
+                                                                                                        {
+                                                                                                            "test":  "TOEFL iBT",
+                                                                                                            "minimum_score":  "80"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "test":  "IELTS Academic",
+                                                                                                            "minimum_score":  "6.5"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "test":  "Duolingo English Test",
+                                                                                                            "minimum_score":  "95"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "test":  "SRH English test or proof of prior English-language instruction",
+                                                                                                            "minimum_score":  null
+                                                                                                        }
+                                                                                                    ],
+                                                                                "waiver":  [
+                                                                                               "Prior English-language instruction may satisfy the language proof."
+                                                                                           ]
+                                                                            }
+                                                                        ],
+                                              "test_requirements":  [
+                                                                        {
+                                                                            "test":  "Selection interview",
+                                                                            "requirement":  "SRH contacts applicants for an interview when formal requirements are met."
+                                                                        }
+                                                                    ],
+                                              "work_experience":  {
+                                                                      "minimum_years":  1,
+                                                                      "relevance":  "Professional experience required for the MBA path.",
+                                                                      "notes":  [
+
+                                                                                ]
+                                                                  },
+                                              "documents":  [
+                                                                "Curriculum vitae with passport photo",
+                                                                "Identity card or passport copy",
+                                                                "Bachelor\u0027s certificate",
+                                                                "Transcript of records",
+                                                                "Proof of English language proficiency"
+                                                            ],
+                                              "conditional_paths":  [
+
+                                                                    ],
+                                              "international_requirements":  [
+                                                                                 "International applicants needing a visa should account for visa processing time when applying."
+                                                                             ]
+                                          },
+                         "application":  {
+                                             "deadlines":  [
+                                                               "Applications are accepted at any time."
+                                                           ],
+                                             "intakes":  [
+                                                             "Not normalized from the admission page alone"
+                                                         ],
+                                             "application_channel":  "Apply through SRH\u0027s online application flow; SRH reviews documents and then contacts eligible applicants for an interview.",
+                                             "uni_assist_or_vpd":  null,
+                                             "fees":  [
+
+                                                      ]
+                                         },
+                         "evidence":  {
+                                          "general":  [
+                                                          {
+                                                              "source_url":  "https://www.srh-university.de/en/master/general-management/mba/general-management-mba-admission-requirements/",
+                                                              "source_text":  "The official MBA admission page lists degree, work experience, English proof, documents, and SRH\u0027s interview workflow.",
+                                                              "retrieved_at":  "2026-05-17T08:35:55Z",
+                                                              "confidence":  "medium",
+                                                              "review_note":  "Used for MBA admissions; program-detail facts beyond admission requirements were not fully normalized."
+                                                          }
+                                                      ]
+                                      },
+                         "raw_evidence_sections":  [
+                                                       {
+                                                           "source_url":  "https://www.srh-university.de/en/master/general-management/mba/general-management-mba-admission-requirements/",
+                                                           "section":  "Admission requirements",
+                                                           "summary":  "Completed first degree, professional experience, English language proof, core application documents, and interview step."
+                                                       }
+                                                   ],
+                         "needs_human_review":  true
+                     }
+                 ],
+    "llm_review_summary":  {
+                               "program_count":  3,
+                               "key_findings":  [
+                                                    "SRH\u0027s current program surface is on srh-university.de and the programme finder lists 96 results, so the prior zero-program crawler output is not trustworthy.",
+                                                    "SRH program admission pages use a repeated structure: formal degree requirement, English proof for English-taught programs, required documents, and an SRH review/interview workflow.",
+                                                    "English proof thresholds repeatedly observed on the official SRH pages are TOEFL iBT 80, IELTS 6.5, Duolingo 95, SRH English test, or prior English-language instruction.",
+                                                    "The bachelor sample includes an alternate professional-qualification route with vocational training, work experience, and aptitude assessment."
+                                                ],
+                               "known_gaps":  [
+                                                  "This file normalizes representative official bachelor, master, and MBA admissions records rather than all 96 SRH programme-finder results.",
+                                                  "The General Management MBA record needs human review for campus, exact intake, and fee details because only the admission-requirements page was normalized."
+                                              ]
+                           }
+}

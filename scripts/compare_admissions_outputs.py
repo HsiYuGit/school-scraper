@@ -1,4 +1,4 @@
-"""Render a side-by-side HTML comparison for two admissions JSON outputs."""
+"""Render side-by-side HTML comparisons for admissions JSON outputs."""
 
 from __future__ import annotations
 
@@ -34,6 +34,10 @@ def program_names(payload: dict[str, Any]) -> list[str]:
     return [program.get("program", {}).get("name") or "Unnamed program" for program in payload.get("programs", [])]
 
 
+def normalized_program_names(payload: dict[str, Any]) -> set[str]:
+    return {name.lower().strip() for name in program_names(payload)}
+
+
 def language_tests(program: dict[str, Any]) -> list[str]:
     values = []
     for item in program.get("requirements", {}).get("language_requirements", []) or []:
@@ -56,6 +60,14 @@ def test_requirements(program: dict[str, Any]) -> list[str]:
         else:
             values.append(str(item))
     return values
+
+
+def count_language_tests(payload: dict[str, Any]) -> int:
+    return sum(len(language_tests(program)) for program in payload.get("programs", []))
+
+
+def count_test_requirements(payload: dict[str, Any]) -> int:
+    return sum(len(test_requirements(program)) for program in payload.get("programs", []))
 
 
 def program_summary_rows(payload: dict[str, Any]) -> str:
@@ -99,12 +111,21 @@ def render_difference_summary(crawler: dict[str, Any], llm: dict[str, Any]) -> s
     llm_tests = sorted({value for program in llm.get("programs", []) for value in test_requirements(program)})
     crawler_languages = sorted({value for program in crawler.get("programs", []) for value in language_tests(program)})
     llm_languages = sorted({value for program in llm.get("programs", []) for value in language_tests(program)})
-    observations = [
-        "Crawler output still keeps Technology Management overview and Single Degree as separate records, while the LLM-native output groups Technology Management modes under one program family.",
-        "Crawler output discovers Business Analytics & AI after the path fix, but still misses the admissions-page TOEFL/IELTS/C1 language thresholds.",
-        "Crawler output no longer emits the previous false GRE requirement; LLM-native output explicitly records GRE/GMAT as not required or not stated.",
-        "LLM-native output captures conditional degree outcomes and visa/ECTS study-mode logic that the crawler does not currently model."
-    ]
+    only_crawler = sorted(set(crawler_names) - set(llm_names))
+    only_llm = sorted(set(llm_names) - set(crawler_names))
+    observations = []
+    if len(crawler_names) != len(llm_names):
+        observations.append("Program counts differ; review whether crawler records are missed programs or non-program pages.")
+    if count_language_tests(llm) > count_language_tests(crawler):
+        observations.append("LLM-native reading found more language-test details than the crawler.")
+    if count_test_requirements(crawler) > count_test_requirements(llm):
+        observations.append("Crawler emitted more test requirements than the LLM-native reading; inspect for keyword false positives.")
+    if only_crawler:
+        observations.append("Crawler-only program names may include false positives or naming differences.")
+    if only_llm:
+        observations.append("LLM-only program names may indicate crawler discovery gaps.")
+    if not observations:
+        observations.append("Crawler and LLM-native outputs are broadly aligned at the summary level.")
     return (
         "<section>"
         "<h2>Difference Summary</h2>"
@@ -114,6 +135,8 @@ def render_difference_summary(crawler: dict[str, Any], llm: dict[str, Any]) -> s
                 "llm_program_count": len(llm_names),
                 "crawler_program_names": crawler_names,
                 "llm_program_names": llm_names,
+                "crawler_only_names": only_crawler,
+                "llm_only_names": only_llm,
                 "crawler_language_tests": crawler_languages,
                 "llm_language_tests": llm_languages,
                 "crawler_other_tests": crawler_tests,
@@ -126,12 +149,20 @@ def render_difference_summary(crawler: dict[str, Any], llm: dict[str, Any]) -> s
     )
 
 
-def render_comparison(crawler: dict[str, Any], llm: dict[str, Any], crawler_path: Path, llm_path: Path) -> str:
+def render_comparison(
+    crawler: dict[str, Any],
+    llm: dict[str, Any],
+    crawler_path: Path,
+    llm_path: Path,
+    title: str | None = None,
+) -> str:
     generated_at = dt.datetime.now(dt.UTC).isoformat()
+    school_name = crawler.get("school", {}).get("name") or llm.get("school", {}).get("name") or "Admissions"
+    page_title = title or f"{school_name}: crawler vs LLM-native reading"
     body = "".join(
         [
             "<header>",
-            "<h1>NIT admissions: crawler vs LLM-native reading</h1>",
+            f"<h1>{escape(page_title)}</h1>",
             f"<p>Generated at {escape(generated_at)} from {escape(crawler_path.name)} and {escape(llm_path.name)}.</p>",
             "</header>",
             "<main>",
@@ -161,7 +192,7 @@ def render_comparison(crawler: dict[str, Any], llm: dict[str, Any], crawler_path
             "</main>",
         ]
     )
-    return page("NIT crawler vs LLM-native comparison", body)
+    return page(page_title, body)
 
 
 def parse_args(argv: Iterable[str] | None = None) -> argparse.Namespace:
@@ -169,6 +200,7 @@ def parse_args(argv: Iterable[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--crawler-json", default=str(DEFAULT_CRAWLER_JSON))
     parser.add_argument("--llm-json", default=str(DEFAULT_LLM_JSON))
     parser.add_argument("--out", default=str(DEFAULT_OUTPUT))
+    parser.add_argument("--title", default=None)
     return parser.parse_args(argv)
 
 
@@ -177,7 +209,7 @@ def main(argv: Iterable[str] | None = None) -> int:
     crawler_path = Path(args.crawler_json)
     llm_path = Path(args.llm_json)
     output_path = Path(args.out)
-    content = render_comparison(load_json(crawler_path), load_json(llm_path), crawler_path, llm_path)
+    content = render_comparison(load_json(crawler_path), load_json(llm_path), crawler_path, llm_path, args.title)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(content + "\n", encoding="utf-8")
     print(json.dumps({"generated_at": dt.datetime.now(dt.UTC).isoformat(), "html_file": str(output_path)}, indent=2))

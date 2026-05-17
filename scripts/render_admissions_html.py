@@ -245,6 +245,10 @@ def render_application(application: dict[str, Any]) -> str:
 
 
 def render_evidence(evidence: dict[str, Any]) -> str:
+    if isinstance(evidence, list):
+        evidence = {"evidence": evidence}
+    if not isinstance(evidence, dict):
+        evidence = {}
     groups = []
     for group_name, items in evidence.items():
         rows = []
