@@ -79,6 +79,7 @@ def crawl_school(batch_args: argparse.Namespace, school: dict, seed_config: dict
     }
     output_path = output_dir / f"{slugify(school['name'])}_admissions.json"
     output_path.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    validation_status = classify_validation_status(output["crawl_summary"])
     return {
         "school": school["name"],
         "partner_status": school.get("partner_status"),
@@ -87,9 +88,21 @@ def crawl_school(batch_args: argparse.Namespace, school: dict, seed_config: dict
         "robots_status": robot_policy.status,
         "robots_error": robot_policy.error,
         "crawl_summary": output["crawl_summary"],
+        "validation_status": validation_status,
         "review_notes": seed_config.get("review_notes", []),
         "crawl_cautions": seed_config.get("crawl_cautions", []),
     }
+
+
+def classify_validation_status(crawl_summary: dict) -> str:
+    programs = crawl_summary.get("programs_extracted", 0)
+    pages = crawl_summary.get("pages_fetched", 0)
+    review = crawl_summary.get("programs_needing_human_review", 0)
+    if pages and not programs:
+        return "broken_or_needs_review"
+    if programs and review == programs:
+        return "needs_review"
+    return "candidate_extraction"
 
 
 def build_manifest(args: argparse.Namespace, manifest_entries: list[dict]) -> dict:

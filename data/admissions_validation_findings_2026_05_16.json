@@ -1,0 +1,199 @@
+{
+  "schema_version": "0.1",
+  "generated_from": "subagent official-site validation notes",
+  "created_at": "2026-05-17T08:10:00+00:00",
+  "method_note": "These findings compare crawler outputs against direct official-site/LLM validation. Only NIT currently has a full LLM-native structured JSON draft; the other schools have official-site validation summaries.",
+  "schools": [
+    {
+      "school": "TUM Asia",
+      "output_path": "outputs/tum_asia_admissions.json",
+      "verdict": "broken",
+      "most_serious_issue": "Graduate Studies Application was treated as a program, GRE/GATE was extracted from a negated sentence saying master applicants need not submit GRE or GATE, and several MSc pages were marked as PhD.",
+      "suggested_rules": [
+        "Strengthen program-page classification so application-general pages do not become program records.",
+        "Add negation handling for GRE/GATE/GMAT phrases such as need not submit and not required.",
+        "Constrain degree extraction to title/key-facts areas instead of full-page navigation text."
+      ],
+      "official_sources": [
+        "https://tum-asia.edu.sg/graduate-studies/",
+        "https://tum-asia.edu.sg/admissions/graduate-studies/application/"
+      ]
+    },
+    {
+      "school": "Munich Business School",
+      "output_path": "outputs/munich_business_school_admissions.json",
+      "verdict": "suspicious",
+      "most_serious_issue": "Multiple programs had false GRE extraction, and Master International Business missed English test scores such as TOEFL 85, IELTS 6.5, ELS 112, Duolingo 115, PTE 56, and Cambridge 173/Grade B.",
+      "suggested_rules": [
+        "Require exact GRE token and admissions-test context.",
+        "Extract all language tests in the same bullet/list instead of stopping after the first test.",
+        "Support PTE and Cambridge score formats."
+      ],
+      "official_sources": [
+        "https://www.munich-business-school.de/en/master/master-international-business",
+        "https://www.munich-business-school.de/en/mba/mba-full-time",
+        "https://www.munich-business-school.de/en/bachelor/bachelor-international-business"
+      ]
+    },
+    {
+      "school": "International School of Management (ISM)",
+      "output_path": "outputs/international_school_of_management_ism_admissions.json",
+      "verdict": "broken",
+      "most_serious_issue": "Category and overview pages were treated as concrete programs; bachelor/master overview records were marked as MBA; German language scores were polluted by percentages, week counts, money amounts, and unrelated numbers.",
+      "suggested_rules": [
+        "Exclude listing pages such as /bachelor-programs and /master-programs from program records.",
+        "Extract degree only from trusted title/key-facts regions.",
+        "Only accept German scores in CEFR/TestDaF/DSH/telc-like formats."
+      ],
+      "official_sources": [
+        "https://en.ism.de/full-degree-students/bachelor-programs",
+        "https://en.ism.de/full-degree-students/master-programs",
+        "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview"
+      ]
+    },
+    {
+      "school": "CBS International Business School",
+      "output_path": "outputs/cbs_international_business_school_admissions.json",
+      "verdict": "suspicious",
+      "most_serious_issue": "MBA pages did not show GRE/GMAT, but crawler extracted GRE; crawler also missed central MBA requirements such as first academic degree, 180 ECTS, and at least one year of work experience.",
+      "suggested_rules": [
+        "Add FAQ/admission accordion extraction for requirement sections.",
+        "Require exact GRE/GMAT token and evidence-window validation.",
+        "Mark language or test blanks as review when admissions requirement links exist."
+      ],
+      "official_sources": [
+        "https://www.cbs.de/en/mba-germany/master-business-administration",
+        "https://www.cbs.de/en/mba-germany/one-year-mba-international-management"
+      ]
+    },
+    {
+      "school": "EBS Universität",
+      "output_path": "outputs/ebs_universitat_admissions.json",
+      "verdict": "suspicious",
+      "most_serious_issue": "Bachelor pages were contaminated by MBA degree text, and a 120-minute online assessment was extracted as a German language score. Master in Finance does have real GMAT/GRE and language requirements.",
+      "suggested_rules": [
+        "Reject duration values such as 120-minute from language scores.",
+        "Constrain language score extraction to explicit test/certificate proximity.",
+        "Avoid full-page fallback for degree extraction."
+      ],
+      "official_sources": [
+        "https://www.ebs.edu/en/ebs-business-school/study-programmes/bachelor-in-business-studies",
+        "https://www.ebs.edu/en/ebs-law-school/programmes/study-law/bachelor-in-law-politics-and-economics",
+        "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-finance"
+      ]
+    },
+    {
+      "school": "SRH Universities",
+      "output_path": "outputs/srh_universities_admissions.json",
+      "verdict": "broken",
+      "most_serious_issue": "Crawler extracted zero programs even though SRH has official bachelor/master/MBA programs and program-specific admission requirement pages.",
+      "suggested_rules": [
+        "Treat fetched-seed-but-zero-program output as broken or needs human review.",
+        "Follow SRH admission detail URL patterns such as /en/bachelor/.../admission-requirements/.",
+        "Use program finder/listing pages for discovery rather than final program records."
+      ],
+      "official_sources": [
+        "https://www.srh-university.de/en/you-want-to-study/faqs/",
+        "https://www.srh-university.de/en/bachelor/user-experience-design-content-creation/d/bachelor-user-experience-design-admission-requirements/"
+      ]
+    },
+    {
+      "school": "Kühne Logistics University (KLU)",
+      "output_path": "outputs/kuhne_logistics_university_klu_admissions.json",
+      "verdict": "broken",
+      "most_serious_issue": "FAQ and tuition pages were treated as programs with names like Programs; GRE was falsely extracted even though official KLU FAQ pages do not show GRE; TOEFL component/code-like numbers were treated as minimum scores.",
+      "suggested_rules": [
+        "Exclude FAQ, financing, tuition, and program-list pages from program records.",
+        "Scope FAQ sections before merging shared requirements into programs.",
+        "Separate TOEFL total score from component scores and institution/code-like numbers."
+      ],
+      "official_sources": [
+        "https://www.klu.org/programs/faq/faq-undergraduate",
+        "https://www.klu.org/programs/faq/faq-graduate",
+        "https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany"
+      ]
+    },
+    {
+      "school": "Hochschule Fresenius",
+      "output_path": "outputs/hochschule_fresenius_admissions.json",
+      "verdict": "suspicious",
+      "most_serious_issue": "Three real programs were found, but all had false GRE extraction; SAP Engineering also missed the official English B2 requirement.",
+      "suggested_rules": [
+        "Add CEFR B2/C1 language requirement extraction.",
+        "Require evidence snippet to contain an independent GRE token.",
+        "Keep language requirements even when they are CEFR instead of IELTS/TOEFL scores."
+      ],
+      "official_sources": [
+        "https://www.hs-fresenius.com/study-programs/sap-engineering-and-analytics-master/",
+        "https://www.hs-fresenius.com/study-programs/biomedicine-master/",
+        "https://www.hs-fresenius.com/study-programs/biochemical-engineering-master/"
+      ]
+    },
+    {
+      "school": "NIT Northern Institute of Technology Management",
+      "output_path": "outputs/nit_northern_institute_of_technology_management_admissions.json",
+      "llm_native_path": "outputs/nit_llm_native_admissions.json",
+      "verdict": "broken",
+      "most_serious_issue": "Crawler still keeps Technology Management overview/single-degree pages as separate records and misses admissions-page TOEFL/IELTS/C1 thresholds. LLM-native reading groups NIT into Technology Management MBA/M.A. and Business Analytics & AI M.Sc.",
+      "suggested_rules": [
+        "Group NIT Technology Management single/double degree modes under one program family.",
+        "Merge central admissions requirements back into program records.",
+        "Keep GRE/GMAT as not required or not stated rather than a requirement."
+      ],
+      "official_sources": [
+        "https://www.nithh.org/admissions",
+        "https://www.nithh.org/study-technology-management",
+        "https://www.nithh.org/business-analytics-and-ai",
+        "https://www.nithh.org/your-single-degree-24m",
+        "https://www.nithh.org/your-double-degree"
+      ]
+    },
+    {
+      "school": "Hochschule Bremen",
+      "output_path": "outputs/hochschule_bremen_admissions.json",
+      "verdict": "broken",
+      "most_serious_issue": "Crawler extracted zero programs, but official HSB degree-programme pages exist and carry program-specific admission requirements.",
+      "suggested_rules": [
+        "Improve HSB discovery using /en/study/degree-programme/{slug}/ pages.",
+        "Treat zero-program outputs with successful seed fetches as broken/review.",
+        "Use official program list/search pages only as discovery seeds."
+      ],
+      "official_sources": [
+        "https://www.hs-bremen.de/en/study/programmes/",
+        "https://www.hs-bremen.de/en/study/degree-programme/computer-science-msc/"
+      ]
+    },
+    {
+      "school": "ESMT Berlin",
+      "output_path": "outputs/esmt_berlin_admissions.json",
+      "verdict": "suspicious",
+      "most_serious_issue": "Three master programs were marked as MBA and kept admissions-page titles instead of clean program names; master admissions pages include TOEFL 100, IELTS 7.0, TOEIC 850 when required, but crawler language requirements were empty.",
+      "suggested_rules": [
+        "Extract program name and degree from H1/key facts, not admissions page title.",
+        "Represent GMAT/GRE as conditional when official wording says depending on profile.",
+        "Support TOEIC, PTE, and conditional language/test requirements."
+      ],
+      "official_sources": [
+        "https://esmt.berlin/master-programs/master-global-management/admissions",
+        "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
+        "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
+        "https://esmt.berlin/mba-programs/full-time-mba/admissions"
+      ]
+    },
+    {
+      "school": "International Graduate Center, Hochschule Bremen",
+      "output_path": "outputs/international_graduate_center_hochschule_bremen_admissions.json",
+      "verdict": "broken",
+      "most_serious_issue": "Overview/category pages such as /mba-master.html and /mba.html were treated as programs; multiple GRE values were false positives from degree text; central requirements contain IELTS/TOEFL thresholds that crawler missed.",
+      "suggested_rules": [
+        "Exclude overview/category pages from final program records.",
+        "Merge central requirements page back into individual IGC programs.",
+        "Use exact GRE/GMAT token and context checks."
+      ],
+      "official_sources": [
+        "https://www.graduatecenter.org/en/application/requirements.html",
+        "https://www.graduatecenter.org/en/mba-master/mba-global-management.html"
+      ]
+    }
+  ]
+}

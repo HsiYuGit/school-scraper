@@ -1,0 +1,581 @@
+{
+  "schema_version": "0.3",
+  "school": {
+    "name": "Hochschule Fresenius",
+    "url": "https://www.hs-fresenius.com/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university",
+    "source_official_url": "https://www.hs-fresenius.com/"
+  },
+  "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+  "crawler_policy": {
+    "respects_robots_txt": true,
+    "same_host_only": true,
+    "max_pages": 8,
+    "delay_seconds": 0.2,
+    "timeout_seconds": 15.0,
+    "user_agent": "study-admissions-poc/0.1 (+https://www.gut-haode.com/ partner-school research)",
+    "no_login_captcha_paywall_bypass": true,
+    "robots_url": "https://www.hs-fresenius.com/robots.txt",
+    "robots_status": "available",
+    "robots_error": null,
+    "sitemaps_discovered": [
+      "https://www.hs-fresenius.com/sitemap_index.xml"
+    ]
+  },
+  "crawl_summary": {
+    "pages_fetched": 8,
+    "pages_skipped": 0,
+    "programs_extracted": 3,
+    "programs_needing_human_review": 0,
+    "shared_requirement_pages": 2
+  },
+  "programs": [
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master SAP Engineering & Analytics: Data & SAP Expertise",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://www.hs-fresenius.com/study-programs/sap-engineering-and-analytics-master/",
+        "campus": "location",
+        "language_of_instruction": [
+          "German",
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "CEFR English",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "German",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Reference letter",
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/sap-engineering-and-analytics-master/",
+            "source_text": "eted a bachelor’s study program with at least 180 credit points Subject-specific admission requirement. Your bachelor’s degree is required to be in a relevant field, such as engineering, IT or business. Applicants must demonstrate at least 30 Credit Points in business, information technology, and/or engin",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/sap-engineering-and-analytics-master/",
+            "source_text": "English language skills are equivalent to Level B2 of the European Framework of Reference for Languages. Get to know us Blog Get in touch Imprint Privacy Policy Whistlebl",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/sap-engineering-and-analytics-master/",
+            "source_text": "You need to provide evidence that your English language skills are equivalent to Level B2 of the European Framework of Reference for Languages. Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/sap-engineering-and-analytics-master/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "You must have completed a bachelor’s study program with at least 180 credit points Subject-specific admission requirement.",
+          "source_url": "https://www.hs-fresenius.com/study-programs/sap-engineering-and-analytics-master/",
+          "text": "Your bachelor’s degree is required to be in a relevant field, such as engineering, IT or business. Applicants must demonstrate at least 30 Credit Points in business, information technology, and/or engineering modules. Missing credit points can be replaced by a successfully completed subject-related interview. You need to provide evidence that your English language skills are equivalent to Level B2 of the European Framework of Reference for Languages. Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master’s in Biomedicine: Innovate in Biomedical Research",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://www.hs-fresenius.com/study-programs/biomedicine-master/",
+        "campus": "location",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "CEFR English",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "German",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/biomedicine-master/",
+            "source_text": ".Sc.) at Fresenius University of Applied Sciences, you need to fulfil the following requirements: You need a bachelor’s degree with at least 180 credit points in biology, biosciences, molecular biology, biomedicine, medicine, biochemistry, pharmacy or a related subject. You are either a native speaker of",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/biomedicine-master/",
+            "source_text": "IELTS with at least 6.0). Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/biomedicine-master/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/biomedicine-master/",
+            "source_text": "English or can provide proof of language skills equivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/biomedicine-master/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "To be admitted to the master’s study program Biomedicine (M.Sc.) at Fresenius University of Applied Sciences, you need to fulfil the following requirements:",
+          "source_url": "https://www.hs-fresenius.com/study-programs/biomedicine-master/",
+          "text": "You need a bachelor’s degree with at least 180 credit points in biology, biosciences, molecular biology, biomedicine, medicine, biochemistry, pharmacy or a related subject. You are either a native speaker of English or can provide proof of language skills equivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master’s in Biochemical Engineering: Advance Your Career",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://www.hs-fresenius.com/study-programs/biochemical-engineering-master/",
+        "campus": "location",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "CEFR English",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "German",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/biochemical-engineering-master/",
+            "source_text": "ering (M.Sc.) at Fresenius University of Applied Sciences, you need to fulfil the following requi You need a bachelor’s degree with at least 180 credit points or an equivalent qualification in a chemistry-related field of study (e.g. analytical chemistry, chemistry, pharmacy, physics, biology). You are ei",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/biochemical-engineering-master/",
+            "source_text": "IELTS with at least 6.0). Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/biochemical-engineering-master/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/biochemical-engineering-master/",
+            "source_text": "English or can provide proof of language skills equivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-17T08:47:15.446667+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/biochemical-engineering-master/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "To be admitted to the master’s study program Biochemical Engineering (M.Sc.) at Fresenius University of Applied Sciences, you need to fulfil the following requi",
+          "source_url": "https://www.hs-fresenius.com/study-programs/biochemical-engineering-master/",
+          "text": "You need a bachelor’s degree with at least 180 credit points or an equivalent qualification in a chemistry-related field of study (e.g. analytical chemistry, chemistry, pharmacy, physics, biology). You are either a native speaker of English or can provide proof of language skills equivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)"
+        }
+      ],
+      "needs_human_review": false
+    }
+  ],
+  "skipped": [],
+  "review_seed_config": {
+    "seed_urls": [
+      "https://www.hs-fresenius.com/bachelor/",
+      "https://www.hs-fresenius.com/master/",
+      "https://www.hs-fresenius.com/admission-requirements/",
+      "https://www.hs-fresenius.com/application/"
+    ],
+    "review_notes": [
+      "Degree landing pages list programme links under /study-programs/.",
+      "Central admission-requirements page is a strong reusable seed."
+    ],
+    "crawl_cautions": [
+      "Prefer programme/admission pages over lead-form application pages."
+    ]
+  }
+}

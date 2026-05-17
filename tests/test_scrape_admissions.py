@@ -3,7 +3,7 @@ import urllib.robotparser
 import json
 from pathlib import Path
 
-from scripts.crawl_partner_schools import slugify
+from scripts.crawl_partner_schools import classify_validation_status, slugify
 from scripts.compare_admissions_outputs import render_comparison
 from scripts.render_admissions_html import render_file
 from scripts.scrape_admissions import (
@@ -94,8 +94,8 @@ class AdmissionExtractionTest(unittest.TestCase):
         )
         self.assertEqual(requirements["work_experience"]["minimum_years"], 2)
         self.assertIn("CV", requirements["documents"])
-        self.assertIn("Personal interview", requirements["test_requirements"])
-        self.assertIn("Case study", requirements["test_requirements"])
+        self.assertIn("Personal interview", {item["test"] for item in requirements["test_requirements"]})
+        self.assertIn("Case study", {item["test"] for item in requirements["test_requirements"]})
         self.assertIn("Uni-assist/VPD", requirements["international_requirements"])
         self.assertIn("language_requirements", evidence)
 
@@ -148,6 +148,39 @@ class AdmissionExtractionTest(unittest.TestCase):
 
         self.assertNotIn("GRE", requirements["test_requirements"])
 
+    def test_gre_gate_negation_is_not_required(self):
+        text = "Master applicants need not submit GRE or GATE scores. GMAT may be requested depending on profile."
+
+        requirements, _ = normalize_requirements(
+            text,
+            "https://example.edu/admissions",
+            "2026-05-17T00:00:00+00:00",
+        )
+        statuses = {(item["test"], item["requirement"]) for item in requirements["test_requirements"]}
+
+        self.assertIn(("GRE", "not_required"), statuses)
+        self.assertIn(("GATE", "not_required"), statuses)
+        self.assertIn(("GMAT", "conditional"), statuses)
+
+    def test_language_extractor_supports_v0_3_formats(self):
+        text = (
+            "Proof of English: TOEIC 850, PTE Academic 56, Cambridge 173 Grade B, "
+            "Duolingo 115, English level B2 according to CEFR."
+        )
+
+        requirements, _ = normalize_requirements(
+            text,
+            "https://example.edu/programs/msc-management",
+            "2026-05-17T00:00:00+00:00",
+        )
+        scores = {(item["test"], item["minimum_score"]) for item in requirements["language_requirements"]}
+
+        self.assertIn(("TOEIC", "850"), scores)
+        self.assertIn(("PTE Academic", "56"), scores)
+        self.assertIn(("Cambridge", "173"), scores)
+        self.assertIn(("Duolingo", "115"), scores)
+        self.assertIn(("CEFR English", "B2"), scores)
+
     def test_nit_marketing_page_title_normalizes_to_program_name(self):
         page = Page(
             url="https://www.nithh.org/business-analytics-and-ai",
@@ -198,6 +231,12 @@ class AdmissionExtractionTest(unittest.TestCase):
         self.assertFalse(
             looks_like_program_page("https://www.munich-business-school.de/en/l/english-taught-masters-in-germany")
         )
+        self.assertFalse(
+            looks_like_program_page("https://tum-asia.edu.sg/admissions/graduate-studies/application/")
+        )
+        self.assertFalse(
+            looks_like_program_page("https://en.ism.de/full-degree-students/master-programs/master-international-management/overview")
+        )
 
     def test_renders_admissions_fixture_to_html(self):
         root = Path(__file__).parents[1]
@@ -230,6 +269,17 @@ class AdmissionExtractionTest(unittest.TestCase):
 
         output_path.unlink()
         output_dir.rmdir()
+
+    def test_zero_program_manifest_status_is_broken_or_review(self):
+        status = classify_validation_status(
+            {
+                "pages_fetched": 4,
+                "programs_extracted": 0,
+                "programs_needing_human_review": 0,
+            }
+        )
+
+        self.assertEqual(status, "broken_or_needs_review")
 
     def test_renders_nit_comparison_html(self):
         crawler = {
@@ -280,7 +330,7 @@ class AdmissionExtractionTest(unittest.TestCase):
             Path("llm.json"),
         )
 
-        self.assertIn("NIT admissions: crawler vs LLM-native reading", html)
+        self.assertIn("crawler vs LLM-native reading", html)
         self.assertIn("Difference Summary", html)
         self.assertIn("IELTS Academic: 6.5", html)
 

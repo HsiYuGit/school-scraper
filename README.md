@@ -63,6 +63,8 @@ python scripts\crawl_partner_schools.py --max-pages 30 --delay 1 --timeout 15
 
 因為各校網站版面差異很大，v0.2 採 evidence-first 策略：能明確抽出的 ECTS、語言分數、文件、工作經驗等會進入 structured fields；抽不出或信心不足時會保留 raw evidence 並標記 `needs_human_review`，避免把某一所學校的模板硬套到其他學校。
 
+v0.3 延續同一個 taxonomy，但把 validation 發現轉成更保守的 crawler 規則：listing/FAQ/tuition/general application 頁不直接產生 program record，GRE/GMAT/GATE 會區分 required、conditional、not required，語言測驗支援 TOEIC、PTE、Cambridge、CEFR，且 zero-program output 會在 manifest 中標示為 broken 或需要人工確認。
+
 ## 後續 POC 目標
 
 - 擴充更多合作學校的人工 reviewed seed URL。

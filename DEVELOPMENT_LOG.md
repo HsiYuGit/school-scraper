@@ -131,3 +131,17 @@ python scripts\scrape_admissions.py "https://www.munich-business-school.de/en/" 
 
 - 建立 `outputs/v0_2/`，保存目前 12 校 crawler JSON、`partner_school_crawl_manifest.json` 與既有 `nit_llm_native_admissions.json`。
 - 新增 `docs/admissions_output_versions.md`，明確區分 v0.2 snapshot 與後續 v0.3 重新產生結果，避免後續 comparison 因覆蓋舊檔而失去基準。
+
+### v0.3 crawler 修正
+
+- 根據 `data/admissions_validation_findings_2026_05_16.json` 修正 program classifier：FAQ、tuition、overview、listing、general application page 不再直接產生 program record。
+- degree extraction 改為只看 title、頁面前段與 URL pattern，避免全頁 nav/global text 污染。
+- 語言測驗 extraction 補 TOEIC、PTE Academic、Cambridge、CEFR English，並保留 IELTS、TOEFL、Duolingo、ELS、German 的量尺檢查。
+- GMAT/GRE/GATE 改為 structured status，區分 `required`、`conditional`、`not_required`、`mentioned_unclear`，避免只因 keyword 出現就當作要求。
+- shared requirement pages 可保守合併到 program record 空白欄位，但不直接成為 program。
+- batch manifest 新增 `validation_status`，seed 有成功抓到頁面但沒有 program 時標 `broken_or_needs_review`。
+
+驗證：
+
+- `python -m unittest tests.test_scrape_admissions`：通過。
+- `python scripts\crawl_partner_schools.py --output-dir outputs\v0_3 --manifest outputs\v0_3\partner_school_crawl_manifest.json --max-pages 8 --delay 0.2 --timeout 15`：授權網路後完成 12 校 v0.3 crawler manifest；本機 sandbox 未授權網路時會回 `robots_unavailable`/connection refused，不作為 crawler 結果。

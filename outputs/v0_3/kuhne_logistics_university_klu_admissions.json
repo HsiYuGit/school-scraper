@@ -1,0 +1,679 @@
+{
+  "schema_version": "0.3",
+  "school": {
+    "name": "Kühne Logistics University (KLU)",
+    "url": "https://www.klu.org/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university",
+    "source_official_url": "https://www.klu.org/"
+  },
+  "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+  "crawler_policy": {
+    "respects_robots_txt": true,
+    "same_host_only": true,
+    "max_pages": 8,
+    "delay_seconds": 0.2,
+    "timeout_seconds": 15.0,
+    "user_agent": "study-admissions-poc/0.1 (+https://www.gut-haode.com/ partner-school research)",
+    "no_login_captcha_paywall_bypass": true,
+    "robots_url": "https://www.klu.org/robots.txt",
+    "robots_status": "available",
+    "robots_error": null,
+    "sitemaps_discovered": []
+  },
+  "crawl_summary": {
+    "pages_fetched": 8,
+    "pages_skipped": 0,
+    "programs_extracted": 1,
+    "programs_needing_human_review": 0,
+    "shared_requirement_pages": 2
+  },
+  "programs": [
+    {
+      "school": {
+        "name": "Kühne Logistics University (KLU)",
+        "url": "https://www.klu.org/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Study for a Bachelor in Business Administration in Germany · KLU",
+        "degree": "BSc",
+        "level": "master",
+        "url": "https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+        "campus": "Campus Life",
+        "language_of_instruction": [
+          "German",
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": 210,
+          "recognized_institution": null,
+          "minimum_grade": "180",
+          "notes": [
+            "Found 210 ECTS requirement."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "economics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "mathematics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "accounting",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "statistics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "finance",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "CEFR English",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "6.5",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": []
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "7.0",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "21",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "90",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "95",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "5",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "31",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": []
+          },
+          {
+            "test": "PTE Academic",
+            "minimum_score": "61",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": []
+          },
+          {
+            "test": "PTE Academic",
+            "minimum_score": "65",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": []
+          },
+          {
+            "test": "Cambridge",
+            "minimum_score": "180",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": []
+          },
+          {
+            "test": "CEFR English",
+            "minimum_score": "C1",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": []
+          },
+          {
+            "test": "CEFR English",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": []
+          },
+          {
+            "test": "German",
+            "minimum_score": "A2",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": []
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "6.5",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "21",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "90",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "PTE Academic",
+            "minimum_score": "61",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "Cambridge",
+            "minimum_score": "180",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": "work experience is not an admission requirement, but is definitely beneficial for the classroom and for the ev What are the prerequisites in order to do th",
+          "notes": []
+        },
+        "documents": [
+          "Transcript",
+          "Degree certificate",
+          "Motivation letter",
+          "Proof of English proficiency",
+          "Portfolio"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "Visa-sensitive deadline",
+          "APS",
+          "Country-specific reminder"
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "deadline",
+          "deadline (10% tuition discount): January 15"
+        ],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Tuition & Cost of Living",
+          "Tuition",
+          "tuition discount): January 15",
+          "fee of €50 for all applicants",
+          "tuition financing options covering up to 100% of our fees"
+        ]
+      },
+      "evidence": {
+        "language_requirements": [
+          {
+            "source_url": "https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+            "source_text": "English language proficiency B2 - Check out the requirements . Interview - Meet our admissions team and faculty. Depending on your country of origin, t",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "IELTS Academic (band 6.5)* IELTS Online Academic Test (band 6.5)* CAE (grade C) / CPE (180 points)* FCE",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "IELTS: 7.0* CAE: Grade C / CPE: 180 points* Pearson",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "TOEFL iBT Score Requirements (incl. MyBest Scores & Special Edition) For exams taken before January 21, 2026 : We require a minim",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "TOEFL iBT score of 90. For e",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "TOEFL iBT (incl. MyBest Score) For exams taken before January 21, 2026 : We require a minimum TOEFL iBT score of 95. For exams ta",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "TOEFL iBT score of 5.",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "TOEFL institutional code is 7373). English test score reports must be handed in by August 31. *Test score reports should not",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "PTE Academic (also online version) (score 61)*",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "PTE Academic: 65* However, these language requirements are not necessary to join the program. For admission, you only need English p",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "Cambridge Linguaskill (180 points) Oxford ELLT (score 7) The English proficiency requirements for the business foundations progra",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "English proficiency on level C1:",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "English proficiency at level B2 and German proficiency",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "German (A2) language courses to prepare for the final exam. In case of admission, please note that you will need an official score",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-graduate",
+            "source_text": "IELTS Academic (band 6.5)* IELTS Online Academic Test (band 6.5)* CAE (grade C) / CPE (180 points)* FCE",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-graduate",
+            "source_text": "TOEFL iBT Score Requirements (incl. MyBest Scores & Special Edition) For exams taken before January 21, 2026 : We require a minim",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-graduate",
+            "source_text": "TOEFL iBT score of 90. For e",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-graduate",
+            "source_text": "PTE Academic (also online version) (score 61)* Cambridge Linguaskill (180 points) Oxford ELLT (score 7)",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-graduate",
+            "source_text": "Cambridge Linguaskill (180 points) Oxford ELLT (score 7)",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+            "source_text": "uirements – feel free to ask . Haven’t received your final school leaving certificate yet? No problem! Send your latest transcript and submit your final certificate later. Application Deadlines",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Transcript keyword found."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+            "source_text": "r the B.Sc. in Business Administration Download Module Handbook Curriculum & Courses Admission Requirements High school diploma/school leaving certificate (qualifying you for admission to German universities). English language proficiency B2 - Check out the requirements . Interview - Meet our admissions te",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Degree certificate keyword found."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "d destination? The places are allocated by the International Office, taking into account the average grade as well as a motivation letter, explaining the reasons of choosing this particular partner. Language Requirements Can I still apply even if I don’t have my English Language test results yet? Yes, you can still",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Motivation letter keyword found."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "mark sheets for the last 3 semesters of your high school . Additionally, please notify us when we can expect your final transcripts. In addition to the above mentioned documents, applicants with a degree from India, China or Vietnam have to submit an APS certificate with their application. My previous educati",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Transcript keyword found."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "icate with their application to study at KLU. It is also a prerequisite for the visa application. What are the basic IB Diploma prerequisites to be eligible to study at KLU? For IB graduates until 2024: 6 examination courses with at least IB grade 4. These must include: 2 language courses (level A or B) 1",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Degree certificate keyword found."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "prove my English language proficiency? There are several ways to prove your English language proficiency. Please note, proof of English proficiency can be submitted by August 31. Do not wait to apply until you receive your test scores. We recommend that you apply early and proactively and submit them later. TOEFL",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "ster abroad is to gain international experience, therefore going to your home country does not build your international portfolio. If certain criteria are fulfilled, students will be allowed to study in their home country. Please consult the International Office. Do you have partner universities? Yes, we hav",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Portfolio keyword found."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-graduate",
+            "source_text": "eiving your bachelor’s degree. While applying you can simply say you still haven’t completed your degree and upload the transcripts of record that you have at the time. The Office of Admissions will note it automatically while evaluating your application. In case of admission, you will be admitted conditional",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Transcript keyword found."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-graduate",
+            "source_text": "ication. In case of admission, you will be admitted conditionally until you submit your final transcript of records and degree certificate. In addition to the above mentioned documents, applicants with a degree from India, China or Vietnam have to submit an APS certificate with their application. My previous educatio",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Degree certificate keyword found."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-graduate",
+            "source_text": "prove my English language proficiency? There are several ways to prove your English language proficiency. Please note, proof of English proficiency can be submitted by August 31. Do not wait to apply until you receive your test scores. We recommend that you apply early and submit them later. TOEFL iBT Score Requir",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-graduate",
+            "source_text": "ster abroad is to gain international experience, therefore going to your home country does not build your international portfolio. If certain criteria are fulfilled, students will be allowed to study in their home country. Please consult the International Office. Do you have partner universities? Yes, we hav",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Portfolio keyword found."
+          }
+        ],
+        "deadlines": [
+          {
+            "source_url": "https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+            "source_text": "deadline",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+            "source_text": "deadline (10% tuition discount): January 15",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ],
+        "academic_background": [
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "on your eligibility can only be made after you have submitted your Can I apply even though I do not have my high school degree? Yes, you can apply at KLU prior to receiving your final school certificate. We kindly ask you to submit your mark sheets for the last 3 semesters of your high school . Additional",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-graduate",
+            "source_text": "210 ECTS",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "high",
+            "review_note": "Direct ECTS extraction."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-graduate",
+            "source_text": "on your eligibility can only be made after you have submitted your Can I apply even though I do not have my Bachelor's degree? Yes, you can apply at KLU before receiving your bachelor’s degree. While applying you can simply say you still haven’t completed your degree and upload the transcripts of record",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "subject_prerequisites": [
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "or B) 1 science course (Biology, Chemistry, Physics) 1 mathematics course 1 social science course (History, Geography, Economics) 1 additional course 3 courses on „Higher Level“ must include: A mathematics or a science course (Biology, Chemistry or Physics) 2 additional courses (from the above-mentioned cou",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "east IB grade 4. These must include: 2 language courses (level A or B) 1 science course (Biology, Chemistry, Physics) 1 mathematics course 1 social science course (History, Geography, Economics) 1 additional course 3 courses on „Higher Level“ must include: A mathematics or a science course (Biology, Chemistry",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-graduate",
+            "source_text": "on. What kind of courses count as business courses? For our Master’s degree programs we require a degree in business or economics, but will consider other fields such as industrial or mechanical engineering, business informatics, and mathematics if your Bachelor's degree contains a sufficient number of cours",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-graduate",
+            "source_text": "urses could be recognized as necessary business courses: Microeconomics Macroeconomics Operations Research Econometrics Accounting Economics Finance Entrepreneurship Business Strategy Marketing (Management) Management (International, Operations, Strategic) Human Resource Management Supply Chain Management and",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-graduate",
+            "source_text": "ss or economics, but will consider other fields such as industrial or mechanical engineering, business informatics, and mathematics if your Bachelor's degree contains a sufficient number of courses in business (at least four). The following courses could be recognized as necessary business courses: Microeconom",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-graduate",
+            "source_text": "lease note, the following courses are NOT considered as business courses, but only as quantitative courses: Mathematics Statistics Quantitative Methods / Techniques How can I prove additional business courses? You can do so No. For the MSc programs (not MBA) professional / work experience is not an admission",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-graduate",
+            "source_text": "ized as necessary business courses: Microeconomics Macroeconomics Operations Research Econometrics Accounting Economics Finance Entrepreneurship Business Strategy Marketing (Management) Management (International, Operations, Strategic) Human Resource Management Supply Chain Management and similar Please no",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          }
+        ],
+        "international_requirements": [
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "etnam or China must submit an APS certificate with their application to study at KLU. It is also a prerequisite for the visa application. What are the basic IB Diploma prerequisites to be eligible to study at KLU? For IB graduates until 2024: 6 examination courses with at least IB grade 4. These must in",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Visa-sensitive deadline keyword found."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": ". In addition to the above mentioned documents, applicants with a degree from India, China or Vietnam have to submit an APS certificate with their application. My previous education is in a language other than English or German, what should I do? What is a certified translation and where can I translat",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-undergraduate",
+            "source_text": "e can expect your final transcripts. In addition to the above mentioned documents, applicants with a degree from India, China or Vietnam have to submit an APS certificate with their application. My previous education is in a language other than English or German, what should I do? What is a certified tra",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-graduate",
+            "source_text": "etnam or China must submit an APS certificate with their application to study at KLU. It is also a prerequisite for the visa application. What kind of courses count as business courses? For our Master’s degree programs we require a degree in business or economics, but will consider other fields such as",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Visa-sensitive deadline keyword found."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-graduate",
+            "source_text": ". In addition to the above mentioned documents, applicants with a degree from India, China or Vietnam have to submit an APS certificate with their application. My previous education is in a language other than English or German, what should I do? What is a certified translation and where can I translat",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          },
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-graduate",
+            "source_text": "t of records and degree certificate. In addition to the above mentioned documents, applicants with a degree from India, China or Vietnam have to submit an APS certificate with their application. My previous education is in a language other than English or German, what should I do? What is a certified tra",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          }
+        ],
+        "work_experience": [
+          {
+            "source_url": "https://www.klu.org/programs/faq/faq-graduate",
+            "source_text": "work experience is not an admission requirement, but is definitely beneficial for the classroom and for the ev What are the prerequisites in order to do th",
+            "retrieved_at": "2026-05-17T08:46:29.789392+00:00",
+            "confidence": "medium",
+            "review_note": "Work-experience requirement found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission Requirements",
+          "source_url": "https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+          "text": "Tuition Funding Options Why study in Germany?"
+        },
+        {
+          "heading": "Admission Requirements",
+          "source_url": "https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+          "text": "Tuition Funding Options Why study in Germany?"
+        },
+        {
+          "heading": "General Requirements for the B.Sc. in Business Administration",
+          "source_url": "https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+          "text": "Download Module Handbook Curriculum & Courses"
+        },
+        {
+          "heading": "Admission Requirements",
+          "source_url": "https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+          "text": "High school diploma/school leaving certificate (qualifying you for admission to German universities)."
+        },
+        {
+          "heading": "English language proficiency B2 - Check out the requirements .",
+          "source_url": "https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+          "text": "Interview - Meet our admissions team and faculty."
+        },
+        {
+          "heading": "Depending on your country of origin, there may be additional requirements – feel free to ask .",
+          "source_url": "https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+          "text": "Haven’t received your final school leaving certificate yet? No problem! Send your latest transcript and submit your final certificate later. Application Deadlines"
+        }
+      ],
+      "needs_human_review": false
+    }
+  ],
+  "skipped": [],
+  "review_seed_config": {
+    "seed_urls": [
+      "https://www.klu.org/degree-programs/choose-your-program/",
+      "https://www.klu.org/programs/master-programs",
+      "https://www.klu.org/programs/mba-programs",
+      "https://www.klu.org/programs/faq/faq-undergraduate",
+      "https://www.klu.org/programs/faq/faq-graduate",
+      "https://www.klu.org/programs/financing-information/tuition-cost-of-living"
+    ],
+    "review_notes": [
+      "Best crawl seed is the choose-your-program page.",
+      "FAQ pages contain reusable admissions and language evidence."
+    ],
+    "crawl_cautions": [
+      "Skip application portals unless needed."
+    ]
+  }
+}

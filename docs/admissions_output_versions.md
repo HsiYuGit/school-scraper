@@ -21,3 +21,14 @@
 - v0.2 crawler vs v0.3 crawler improvement。
 - v0.3 crawler vs LLM-native official-site reading。
 - 每校 review page，全部從 `outputs/html/index.html` 連結。
+
+## v0.3 crawler changes
+
+v0.3 根據 `data/admissions_validation_findings_2026_05_16.json` 收斂 crawler，目標是降低假陽性，而不是把每所學校的所有 program 都硬抓出來：
+
+- FAQ、tuition、overview、listing、general application page 只作 discovery 或 shared evidence，不直接產生 final program record。
+- degree 只從 title、頁面前段與 URL pattern 推斷，不再用全頁文字 fallback。
+- language extraction 補 TOEIC、PTE Academic、Cambridge、CEFR English，並保留既有 IELTS、TOEFL、Duolingo、ELS、German。
+- GMAT、GRE、GATE 改為 structured test requirement，包含 `required`、`conditional`、`not_required`、`mentioned_unclear`。
+- central/shared requirement pages 可保守合併到 program record 的空白欄位，但 shared page 本身不再當 program。
+- seed 成功抓到頁面但 `programs_extracted=0` 時，manifest 標為 `broken_or_needs_review`。

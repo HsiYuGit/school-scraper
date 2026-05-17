@@ -1,0 +1,1205 @@
+{
+  "schema_version": "0.3",
+  "school": {
+    "name": "International Graduate Center, Hochschule Bremen",
+    "url": "https://www.graduatecenter.org/en/",
+    "country": "Germany",
+    "partner_status": "candidate_from_partner_logo",
+    "school_type": "graduate_center",
+    "source_official_url": "https://www.graduatecenter.org/en/"
+  },
+  "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+  "crawler_policy": {
+    "respects_robots_txt": true,
+    "same_host_only": true,
+    "max_pages": 8,
+    "delay_seconds": 0.2,
+    "timeout_seconds": 15.0,
+    "user_agent": "study-admissions-poc/0.1 (+https://www.gut-haode.com/ partner-school research)",
+    "no_login_captcha_paywall_bypass": true,
+    "robots_url": "https://www.graduatecenter.org/robots.txt",
+    "robots_status": "available",
+    "robots_error": null,
+    "sitemaps_discovered": [
+      "https://www.graduatecenter.org/sitemap.xml"
+    ]
+  },
+  "crawl_summary": {
+    "pages_fetched": 8,
+    "pages_skipped": 1,
+    "programs_extracted": 4,
+    "programs_needing_human_review": 0,
+    "shared_requirement_pages": 2
+  },
+  "programs": [
+    {
+      "school": {
+        "name": "International Graduate Center, Hochschule Bremen",
+        "url": "https://www.graduatecenter.org/en/",
+        "country": "Germany",
+        "partner_status": "candidate_from_partner_logo",
+        "school_type": "graduate_center"
+      },
+      "program": {
+        "name": "IGC: MBA Global Management",
+        "degree": "MBA",
+        "level": "master",
+        "url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
+        "campus": "location",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": 120,
+          "recognized_institution": "recognized or accredited institution",
+          "minimum_grade": null,
+          "notes": [
+            "Found 120 ECTS requirement.",
+            "Found 210 ECTS requirement."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "economics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "finance",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business law",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.5",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "90",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": 1,
+          "relevance": "1 year of relevant experience",
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency",
+          "CV",
+          "Motivation letter",
+          "Passport",
+          "Reference letter"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "APS",
+          "Country-specific reminder",
+          "Visa-sensitive deadline"
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "deadline"
+        ],
+        "intakes": [
+          "Summer semester",
+          "winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Tuition & Fees",
+          "Tuition fees & payment",
+          "Fee: €16,900 in total"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
+            "source_text": "120 ECTS",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "high",
+            "review_note": "Direct ECTS extraction."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
+            "source_text": "esigned for graduates aiming to advance their careers in multinational organizations or pursue global management roles. Degree MBA (Master of Business Administration) - 90-120 ECTS Start October (winter semester only) Application deadline Requirements Bachelor's degree in a business / economics related su",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "210 ECTS",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "high",
+            "review_note": "Direct ECTS extraction."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "l weeks. Visa process For admission we require the following qualifications and documents: proof of previous university degree(s) and transcripts (1) a copy of your passport or birth certificate (1) Original diplomas or certified copies of original documents are required. If you submit normal copies along",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "subject_prerequisites": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
+            "source_text": "- 90-120 ECTS Start October (winter semester only) Application deadline Requirements Bachelor's degree in a business / economics related subject A minimum of 1 year of relevant experience after first degree High English proficiency (IELTS 6,5 or TOEFL iBT 90 or equivalent ) further requirements Language Eng",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "step of the IGC application and admission process. We will process your application and admit you without this How to finance your studies It's important to have a plan for financing your studies as you have to cover tuition fees and living costs. Financial support Accredited by Memberships International",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "n Program-specific requirements Master Management - Digitalization and Transformation Bachelor's degree in business and economics or equivalent* Min. of one year of relevant experience after first degree Letter of motivation All documents must be provided in English Sufficient financial resources for tuition",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
+            "source_text": "IELTS 6,5 or",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
+            "source_text": "TOEFL iBT 90 or equivalent ) further requirements Language English Duration & Type 3 semester / full-time on campus in Bremen Gro",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "work_experience": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
+            "source_text": "1 year of relevant experience",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "high",
+            "review_note": "Work-experience requirement found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "one year of relevant experience",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "high",
+            "review_note": "Work-experience requirement found."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
+            "source_text": "r's degree in a business / economics related subject A minimum of 1 year of relevant experience after first degree High English proficiency (IELTS 6,5 or TOEFL iBT 90 or equivalent ) further requirements Language English Duration & Type 3 semester / full-time on campus in Bremen Group size ~25 students",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "rt your application The following documents are required for a complete application: Copy of passport Curriculum vitae (CV) Letter of Motivation Degrees & transcripts (English translation needed) English language certificate Proof of practical experience (e.g., employer's certificate) Other documents",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "CV keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "our application The following documents are required for a complete application: Copy of passport Curriculum vitae (CV) Letter of Motivation Degrees & transcripts (English translation needed) English language certificate Proof of practical experience (e.g., employer's certificate) Other documents such as further certif",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Motivation letter keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "ation Portal Before you start your application The following documents are required for a complete application: Copy of passport Curriculum vitae (CV) Letter of Motivation Degrees & transcripts (English translation needed) English language certificate Proof of practical experience (e.g., employer's certific",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Passport keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "ficate Proof of practical experience (e.g., employer's certificate) Other documents such as further certificates and/or reference letters Applicants from India please note: You do not need an APS certificate for the first step of the IGC application and admission process. We will process your application and",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "al questions, you can contact our admission team . Basic entry requirements: Copy of your passport or birth certificate Curriculum Vitae Proof of previous University degree(s) and transcripts Proof of English language skills (i.e. TOEFL, IELTS) Proof of practical knowledge or work experience (at least 12 months, IM",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "CV keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "ional Relations Usually a minimum of 1 year of relevant experience after the 3rd semester of the first degree Letter of motivation Letter of recommendation from an employer / university teacher In order to find out if you are qualified, please check the requirements on the website. Additionally, you can also contact",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Motivation letter keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "e the following qualifications and documents: proof of previous university degree(s) and transcripts (1) a copy of your passport or birth certificate (1) Original diplomas or certified copies of original documents are required. If you submit normal copies along with your application, you must present the or",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Passport keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "ly a minimum of 1 year of relevant experience after the 3rd semester of the first degree Letter of motivation Letter of recommendation from an employer / university teacher In order to find out if you are qualified, please check the requirements on the website. Additionally, you can also contact your program coor",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "nts: Copy of your passport or birth certificate Curriculum Vitae Proof of previous University degree(s) and transcripts Proof of English language skills (i.e. TOEFL, IELTS) Proof of practical knowledge or work experience (at least 12 months, IMBA 2 years ) Letter of recommendation by a university teacher or employe",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ],
+        "deadlines": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
+            "source_text": "deadline",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ],
+        "international_requirements": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "r documents such as further certificates and/or reference letters Applicants from India please note: You do not need an APS certificate for the first step of the IGC application and admission process. We will process your application and admit you without this How to finance your studies It's importan",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "ce (e.g., employer's certificate) Other documents such as further certificates and/or reference letters Applicants from India please note: You do not need an APS certificate for the first step of the IGC application and admission process. We will process your application and admit you without this How t",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": ", please contact our application team . Please read more about the specific requirements of each prog Applying for your visa You should apply for a student visa as early as possible. The process can take up to several weeks. Visa process For admission we require the following qualifications and document",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Visa-sensitive deadline keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "ty teacher or employer Motivation letter in which you express your interest in the program Passport photograph Original APS-Certificate (for Chinese and Vietnamese applicants only) Please note that some programs have specific requirements so it is advised to check the program website to ensure you meet",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Requirements",
+          "source_url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
+          "text": "Application Program Start Formalities and Examinations MBA in Global Management Key facts The MBA Global Management program at the International Graduate Center (IGC) prepares professionals to lead and make strategic decisions in international business environments. It combines core management studies with global perspectives, emphasizing intercultural competence, leadership, and practical experience. The program is designed for graduates aiming to advance their careers in multinational organizations or pursue global management roles. Degree MBA (Master of Business Administration) - 90-120 ECTS Start October (winter semester only) Application deadline"
+        },
+        {
+          "heading": "Requirements",
+          "source_url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
+          "text": "Bachelor's degree in a business / economics related subject A minimum of 1 year of relevant experience after first degree High English proficiency (IELTS 6,5 or TOEFL iBT 90 or equivalent )"
+        },
+        {
+          "heading": "further requirements",
+          "source_url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
+          "text": "Language English Duration & Type 3 semester / full-time on campus in Bremen Group size ~25 students"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "International Graduate Center, Hochschule Bremen",
+        "url": "https://www.graduatecenter.org/en/",
+        "country": "Germany",
+        "partner_status": "candidate_from_partner_logo",
+        "school_type": "graduate_center"
+      },
+      "program": {
+        "name": "IGC: International MBA programs made in Bremen, Germany",
+        "degree": "MBA",
+        "level": "master",
+        "url": "https://www.graduatecenter.org/en/mba-master/mba.html",
+        "campus": "location",
+        "language_of_instruction": [
+          "German",
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": 210,
+          "recognized_institution": "recognized or accredited institution",
+          "minimum_grade": null,
+          "notes": [
+            "Found 210 ECTS requirement."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "finance",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "economics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business law",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [
+          {
+            "test": "GMAT",
+            "requirement": "required",
+            "notes": "At International Graduate Center, the GMAT is not a requirement, but can be used in place of a language test such as TOEL and IELTS if these are not at hand"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 1,
+          "relevance": "one year of relevant experience",
+          "notes": []
+        },
+        "documents": [
+          "CV",
+          "Motivation letter",
+          "Passport",
+          "Reference letter",
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "APS",
+          "Country-specific reminder",
+          "Visa-sensitive deadline"
+        ]
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [
+          "Summer semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Tuition & Fees",
+          "fee",
+          "tuition fees reflect the high-quality teaching materials, access to state-of-the-art learning resources, personalised support from our experienced",
+          "fees and financing options",
+          "tuition fees, possible additional costs and the various options for financial support, including scholarships"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba.html",
+            "source_text": "to apply for MBA in Germany? For an MBA application to a business school or university in Germany at least a Bachelor's degree and proof of professional experience are required. In addition Which MBA course is best in Germany? Choosing the best MBA program in Germany depends on the applicant's individual",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "210 ECTS",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "high",
+            "review_note": "Direct ECTS extraction."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "l weeks. Visa process For admission we require the following qualifications and documents: proof of previous university degree(s) and transcripts (1) a copy of your passport or birth certificate (1) Original diplomas or certified copies of original documents are required. If you submit normal copies along",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba.html",
+            "source_text": "At International Graduate Center, the GMAT is not a requirement, but can be used in place of a language test such as TOEL and IELTS if these are not at hand",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "high",
+            "review_note": "GMAT interpreted as required."
+          }
+        ],
+        "subject_prerequisites": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "step of the IGC application and admission process. We will process your application and admit you without this How to finance your studies It's important to have a plan for financing your studies as you have to cover tuition fees and living costs. Financial support Accredited by Memberships International",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "n Program-specific requirements Master Management - Digitalization and Transformation Bachelor's degree in business and economics or equivalent* Min. of one year of relevant experience after first degree Letter of motivation All documents must be provided in English Sufficient financial resources for tuition",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "rt your application The following documents are required for a complete application: Copy of passport Curriculum vitae (CV) Letter of Motivation Degrees & transcripts (English translation needed) English language certificate Proof of practical experience (e.g., employer's certificate) Other documents",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "CV keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "our application The following documents are required for a complete application: Copy of passport Curriculum vitae (CV) Letter of Motivation Degrees & transcripts (English translation needed) English language certificate Proof of practical experience (e.g., employer's certificate) Other documents such as further certif",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Motivation letter keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "ation Portal Before you start your application The following documents are required for a complete application: Copy of passport Curriculum vitae (CV) Letter of Motivation Degrees & transcripts (English translation needed) English language certificate Proof of practical experience (e.g., employer's certific",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Passport keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "ficate Proof of practical experience (e.g., employer's certificate) Other documents such as further certificates and/or reference letters Applicants from India please note: You do not need an APS certificate for the first step of the IGC application and admission process. We will process your application and",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "al questions, you can contact our admission team . Basic entry requirements: Copy of your passport or birth certificate Curriculum Vitae Proof of previous University degree(s) and transcripts Proof of English language skills (i.e. TOEFL, IELTS) Proof of practical knowledge or work experience (at least 12 months, IM",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "CV keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "ional Relations Usually a minimum of 1 year of relevant experience after the 3rd semester of the first degree Letter of motivation Letter of recommendation from an employer / university teacher In order to find out if you are qualified, please check the requirements on the website. Additionally, you can also contact",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Motivation letter keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "e the following qualifications and documents: proof of previous university degree(s) and transcripts (1) a copy of your passport or birth certificate (1) Original diplomas or certified copies of original documents are required. If you submit normal copies along with your application, you must present the or",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Passport keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "ly a minimum of 1 year of relevant experience after the 3rd semester of the first degree Letter of motivation Letter of recommendation from an employer / university teacher In order to find out if you are qualified, please check the requirements on the website. Additionally, you can also contact your program coor",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "nts: Copy of your passport or birth certificate Curriculum Vitae Proof of previous University degree(s) and transcripts Proof of English language skills (i.e. TOEFL, IELTS) Proof of practical knowledge or work experience (at least 12 months, IMBA 2 years ) Letter of recommendation by a university teacher or employe",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ],
+        "international_requirements": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "r documents such as further certificates and/or reference letters Applicants from India please note: You do not need an APS certificate for the first step of the IGC application and admission process. We will process your application and admit you without this How to finance your studies It's importan",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "ce (e.g., employer's certificate) Other documents such as further certificates and/or reference letters Applicants from India please note: You do not need an APS certificate for the first step of the IGC application and admission process. We will process your application and admit you without this How t",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": ", please contact our application team . Please read more about the specific requirements of each prog Applying for your visa You should apply for a student visa as early as possible. The process can take up to several weeks. Visa process For admission we require the following qualifications and document",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Visa-sensitive deadline keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "ty teacher or employer Motivation letter in which you express your interest in the program Passport photograph Original APS-Certificate (for Chinese and Vietnamese applicants only) Please note that some programs have specific requirements so it is advised to check the program website to ensure you meet",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          }
+        ],
+        "work_experience": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "one year of relevant experience",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "high",
+            "review_note": "Work-experience requirement found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Requirements",
+          "source_url": "https://www.graduatecenter.org/en/mba-master/mba.html",
+          "text": "Application Program Start Formalities and Examinations MBA programs at IGC Our MBA programs MBA International Logistics & Supply Chain Management MBA International Tourism Management MBA Global Management MBA in Executive Management Your MBA in Germany The International Graduate Center (IGC) in Bremen is a premier destination for students worldwide seeking to advance their careers through top-tier education. Renowned for its academic excellence both within Germany and on the global stage, the IGC stands as a beacon of knowledge, innovation, and professional development. Our institution is celebrated for its commitment to providing a comprehensive educational experience, tailored to meet the evolving demands of the global business landscape. Diverse Academic Programs Tailored for Global Careers"
+        },
+        {
+          "heading": "At International Graduate Center, the GMAT is not a requirement, but can be used in place of a language test such as TOEL and IELTS if these are not at hand.",
+          "source_url": "https://www.graduatecenter.org/en/mba-master/mba.html",
+          "text": "How to apply for MBA in Germany?"
+        },
+        {
+          "heading": "For an MBA application to a business school or university in Germany at least a Bachelor's degree and proof of professional experience are required. In addition",
+          "source_url": "https://www.graduatecenter.org/en/mba-master/mba.html",
+          "text": "Which MBA course is best in Germany? Choosing the best MBA program in Germany depends on the applicant's individual preferences and career goals. It is important to consider personal goals, specializations and location preferences as well as the budget available when choosing an MBA program. The various MBA programs at International Graduate Center offer a cost-effective option, as the cost of living in Bremen is still within reasonable limits compared to the rest of Germany as well as compared internationally. Accredited by Memberships International MBA Dual Degree MBA Global Management MBA International Tourism Management MBA in Executive Management MBA International Logistics & Supply Chain Management Master Management - Digitalization & Transformation M.A. Master of Eng. Aeronautical Management Application Accreditation Blog © 2026 Privacy Imprint Disclaimer Barrier-free access Hochschule Bremen ∙ International Graduate Center ∙ Langemarckstraße 113 ∙ 28199 Bremen, Germany"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "International Graduate Center, Hochschule Bremen",
+        "url": "https://www.graduatecenter.org/en/",
+        "country": "Germany",
+        "partner_status": "candidate_from_partner_logo",
+        "school_type": "graduate_center"
+      },
+      "program": {
+        "name": "IGC: MBA International Tourism Management, start your career in Germany",
+        "degree": "MBA",
+        "level": "master",
+        "url": "https://www.graduatecenter.org/en/mba-master/mba-international-tourism-management.html",
+        "campus": "location",
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": 120,
+          "recognized_institution": "recognized or accredited institution",
+          "minimum_grade": null,
+          "notes": [
+            "Found 120 ECTS requirement.",
+            "Found 210 ECTS requirement."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "finance",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "economics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business law",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": 1,
+          "relevance": "1 year of relevant experience",
+          "notes": []
+        },
+        "documents": [
+          "CV",
+          "Motivation letter",
+          "Passport",
+          "Reference letter",
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "APS",
+          "Country-specific reminder",
+          "Visa-sensitive deadline"
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "deadline"
+        ],
+        "intakes": [
+          "Summer semester",
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Tuition & Fees",
+          "Tuition fees & payment",
+          "fee: €15,900",
+          "fee: €14,500"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-international-tourism-management.html",
+            "source_text": "120 ECTS",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "high",
+            "review_note": "Direct ECTS extraction."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-international-tourism-management.html",
+            "source_text": "stgraduate program in Bremen, Germany, prepares graduates for leadership positions in international tourism management. Degree MBA (Master of Business Administration) - 90-120 ECTS Study start November / April Application deadline Requirements 10% business related subjects in prior Bachelor studies A mini",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "210 ECTS",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "high",
+            "review_note": "Direct ECTS extraction."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "l weeks. Visa process For admission we require the following qualifications and documents: proof of previous university degree(s) and transcripts (1) a copy of your passport or birth certificate (1) Original diplomas or certified copies of original documents are required. If you submit normal copies along",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "work_experience": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-international-tourism-management.html",
+            "source_text": "1 year of relevant experience",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "high",
+            "review_note": "Work-experience requirement found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "one year of relevant experience",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "high",
+            "review_note": "Work-experience requirement found."
+          }
+        ],
+        "deadlines": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-international-tourism-management.html",
+            "source_text": "deadline",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ],
+        "subject_prerequisites": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "step of the IGC application and admission process. We will process your application and admit you without this How to finance your studies It's important to have a plan for financing your studies as you have to cover tuition fees and living costs. Financial support Accredited by Memberships International",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "n Program-specific requirements Master Management - Digitalization and Transformation Bachelor's degree in business and economics or equivalent* Min. of one year of relevant experience after first degree Letter of motivation All documents must be provided in English Sufficient financial resources for tuition",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "rt your application The following documents are required for a complete application: Copy of passport Curriculum vitae (CV) Letter of Motivation Degrees & transcripts (English translation needed) English language certificate Proof of practical experience (e.g., employer's certificate) Other documents",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "CV keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "our application The following documents are required for a complete application: Copy of passport Curriculum vitae (CV) Letter of Motivation Degrees & transcripts (English translation needed) English language certificate Proof of practical experience (e.g., employer's certificate) Other documents such as further certif",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Motivation letter keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "ation Portal Before you start your application The following documents are required for a complete application: Copy of passport Curriculum vitae (CV) Letter of Motivation Degrees & transcripts (English translation needed) English language certificate Proof of practical experience (e.g., employer's certific",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Passport keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "ficate Proof of practical experience (e.g., employer's certificate) Other documents such as further certificates and/or reference letters Applicants from India please note: You do not need an APS certificate for the first step of the IGC application and admission process. We will process your application and",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "al questions, you can contact our admission team . Basic entry requirements: Copy of your passport or birth certificate Curriculum Vitae Proof of previous University degree(s) and transcripts Proof of English language skills (i.e. TOEFL, IELTS) Proof of practical knowledge or work experience (at least 12 months, IM",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "CV keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "ional Relations Usually a minimum of 1 year of relevant experience after the 3rd semester of the first degree Letter of motivation Letter of recommendation from an employer / university teacher In order to find out if you are qualified, please check the requirements on the website. Additionally, you can also contact",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Motivation letter keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "e the following qualifications and documents: proof of previous university degree(s) and transcripts (1) a copy of your passport or birth certificate (1) Original diplomas or certified copies of original documents are required. If you submit normal copies along with your application, you must present the or",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Passport keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "ly a minimum of 1 year of relevant experience after the 3rd semester of the first degree Letter of motivation Letter of recommendation from an employer / university teacher In order to find out if you are qualified, please check the requirements on the website. Additionally, you can also contact your program coor",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "nts: Copy of your passport or birth certificate Curriculum Vitae Proof of previous University degree(s) and transcripts Proof of English language skills (i.e. TOEFL, IELTS) Proof of practical knowledge or work experience (at least 12 months, IMBA 2 years ) Letter of recommendation by a university teacher or employe",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ],
+        "international_requirements": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "r documents such as further certificates and/or reference letters Applicants from India please note: You do not need an APS certificate for the first step of the IGC application and admission process. We will process your application and admit you without this How to finance your studies It's importan",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "ce (e.g., employer's certificate) Other documents such as further certificates and/or reference letters Applicants from India please note: You do not need an APS certificate for the first step of the IGC application and admission process. We will process your application and admit you without this How t",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": ", please contact our application team . Please read more about the specific requirements of each prog Applying for your visa You should apply for a student visa as early as possible. The process can take up to several weeks. Visa process For admission we require the following qualifications and document",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Visa-sensitive deadline keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "ty teacher or employer Motivation letter in which you express your interest in the program Passport photograph Original APS-Certificate (for Chinese and Vietnamese applicants only) Please note that some programs have specific requirements so it is advised to check the program website to ensure you meet",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Requirements",
+          "source_url": "https://www.graduatecenter.org/en/mba-master/mba-international-tourism-management.html",
+          "text": "Application Program Start Formalities and Examinations MBA International Tourism Management Key facts The International Tourism Management MBA at the International Graduate Center (IGC), Hochschule Bremen, is an accredited full-time master’s program combining advanced business administration with global tourism and hospitality expertise. This postgraduate program in Bremen, Germany, prepares graduates for leadership positions in international tourism management. Degree MBA (Master of Business Administration) - 90-120 ECTS Study start November / April Application deadline"
+        },
+        {
+          "heading": "Requirements",
+          "source_url": "https://www.graduatecenter.org/en/mba-master/mba-international-tourism-management.html",
+          "text": "10% business related subjects in prior Bachelor studies A minimum of 1 year of relevant experience after first degree"
+        },
+        {
+          "heading": "further requirements",
+          "source_url": "https://www.graduatecenter.org/en/mba-master/mba-international-tourism-management.html",
+          "text": "Language English Duration & Type 3 semesters / full-time on campus in Bremen Field Trips One week field trip to a European country, Visit to the world's leading travel trade show Group size max. 25 students"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "International Graduate Center, Hochschule Bremen",
+        "url": "https://www.graduatecenter.org/en/",
+        "country": "Germany",
+        "partner_status": "candidate_from_partner_logo",
+        "school_type": "graduate_center"
+      },
+      "program": {
+        "name": "IGC: MBA in Logistics & SCM",
+        "degree": "MBA",
+        "level": "master",
+        "url": "https://www.graduatecenter.org/en/mba-master/mba-in-logistics-supply-chain-management.html",
+        "campus": "location",
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": 210,
+          "recognized_institution": "recognized or accredited institution",
+          "minimum_grade": null,
+          "notes": [
+            "Found 210 ECTS requirement."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "economics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "finance",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business law",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": 2,
+          "relevance": "two years of relevant experience",
+          "notes": []
+        },
+        "documents": [
+          "CV",
+          "Motivation letter",
+          "Passport",
+          "Reference letter",
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "APS",
+          "Country-specific reminder",
+          "Visa-sensitive deadline"
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "deadline"
+        ],
+        "intakes": [
+          "Summer semester",
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Tuition & Fees",
+          "Tuition fees and payment",
+          "Fee: €17,900 in total"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-in-logistics-supply-chain-management.html",
+            "source_text": "rt Formalities and Examinations MBA International Logistics & Supply Chain Management Key Facts Requirements Bachelor’s degree in a business / economics related subject A minimum of two years of relevant experience after first degree further requirements Language English Duration & Type 3 semesters / full",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "210 ECTS",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "high",
+            "review_note": "Direct ECTS extraction."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "l weeks. Visa process For admission we require the following qualifications and documents: proof of previous university degree(s) and transcripts (1) a copy of your passport or birth certificate (1) Original diplomas or certified copies of original documents are required. If you submit normal copies along",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "subject_prerequisites": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-in-logistics-supply-chain-management.html",
+            "source_text": "inations MBA International Logistics & Supply Chain Management Key Facts Requirements Bachelor’s degree in a business / economics related subject A minimum of two years of relevant experience after first degree further requirements Language English Duration & Type 3 semesters / full-time on campus in Bremen",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "step of the IGC application and admission process. We will process your application and admit you without this How to finance your studies It's important to have a plan for financing your studies as you have to cover tuition fees and living costs. Financial support Accredited by Memberships International",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "n Program-specific requirements Master Management - Digitalization and Transformation Bachelor's degree in business and economics or equivalent* Min. of one year of relevant experience after first degree Letter of motivation All documents must be provided in English Sufficient financial resources for tuition",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          }
+        ],
+        "work_experience": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-in-logistics-supply-chain-management.html",
+            "source_text": "two years of relevant experience",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "high",
+            "review_note": "Work-experience requirement found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "one year of relevant experience",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "high",
+            "review_note": "Work-experience requirement found."
+          }
+        ],
+        "deadlines": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-in-logistics-supply-chain-management.html",
+            "source_text": "deadline",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "rt your application The following documents are required for a complete application: Copy of passport Curriculum vitae (CV) Letter of Motivation Degrees & transcripts (English translation needed) English language certificate Proof of practical experience (e.g., employer's certificate) Other documents",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "CV keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "our application The following documents are required for a complete application: Copy of passport Curriculum vitae (CV) Letter of Motivation Degrees & transcripts (English translation needed) English language certificate Proof of practical experience (e.g., employer's certificate) Other documents such as further certif",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Motivation letter keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "ation Portal Before you start your application The following documents are required for a complete application: Copy of passport Curriculum vitae (CV) Letter of Motivation Degrees & transcripts (English translation needed) English language certificate Proof of practical experience (e.g., employer's certific",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Passport keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "ficate Proof of practical experience (e.g., employer's certificate) Other documents such as further certificates and/or reference letters Applicants from India please note: You do not need an APS certificate for the first step of the IGC application and admission process. We will process your application and",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "al questions, you can contact our admission team . Basic entry requirements: Copy of your passport or birth certificate Curriculum Vitae Proof of previous University degree(s) and transcripts Proof of English language skills (i.e. TOEFL, IELTS) Proof of practical knowledge or work experience (at least 12 months, IM",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "CV keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "ional Relations Usually a minimum of 1 year of relevant experience after the 3rd semester of the first degree Letter of motivation Letter of recommendation from an employer / university teacher In order to find out if you are qualified, please check the requirements on the website. Additionally, you can also contact",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Motivation letter keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "e the following qualifications and documents: proof of previous university degree(s) and transcripts (1) a copy of your passport or birth certificate (1) Original diplomas or certified copies of original documents are required. If you submit normal copies along with your application, you must present the or",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Passport keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "ly a minimum of 1 year of relevant experience after the 3rd semester of the first degree Letter of motivation Letter of recommendation from an employer / university teacher In order to find out if you are qualified, please check the requirements on the website. Additionally, you can also contact your program coor",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "nts: Copy of your passport or birth certificate Curriculum Vitae Proof of previous University degree(s) and transcripts Proof of English language skills (i.e. TOEFL, IELTS) Proof of practical knowledge or work experience (at least 12 months, IMBA 2 years ) Letter of recommendation by a university teacher or employe",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ],
+        "international_requirements": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "r documents such as further certificates and/or reference letters Applicants from India please note: You do not need an APS certificate for the first step of the IGC application and admission process. We will process your application and admit you without this How to finance your studies It's importan",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/application.html",
+            "source_text": "ce (e.g., employer's certificate) Other documents such as further certificates and/or reference letters Applicants from India please note: You do not need an APS certificate for the first step of the IGC application and admission process. We will process your application and admit you without this How t",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": ", please contact our application team . Please read more about the specific requirements of each prog Applying for your visa You should apply for a student visa as early as possible. The process can take up to several weeks. Visa process For admission we require the following qualifications and document",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "Visa-sensitive deadline keyword found."
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/application/requirements.html",
+            "source_text": "ty teacher or employer Motivation letter in which you express your interest in the program Passport photograph Original APS-Certificate (for Chinese and Vietnamese applicants only) Please note that some programs have specific requirements so it is advised to check the program website to ensure you meet",
+            "retrieved_at": "2026-05-17T08:48:54.511153+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Requirements",
+          "source_url": "https://www.graduatecenter.org/en/mba-master/mba-in-logistics-supply-chain-management.html",
+          "text": "Application Program Start Formalities and Examinations MBA International Logistics & Supply Chain Management Key Facts"
+        },
+        {
+          "heading": "Requirements",
+          "source_url": "https://www.graduatecenter.org/en/mba-master/mba-in-logistics-supply-chain-management.html",
+          "text": "Bachelor’s degree in a business / economics related subject A minimum of two years of relevant experience after first degree"
+        },
+        {
+          "heading": "further requirements",
+          "source_url": "https://www.graduatecenter.org/en/mba-master/mba-in-logistics-supply-chain-management.html",
+          "text": "Language English Duration & Type 3 semesters / full-time on campus in Bremen Group size max. 25 students"
+        }
+      ],
+      "needs_human_review": false
+    }
+  ],
+  "skipped": [
+    {
+      "url": "https://www.graduatecenter.org/en/application/program-start.html",
+      "reason": "HTTPError",
+      "detail": "HTTP Error 404: Not Found"
+    }
+  ],
+  "review_seed_config": {
+    "seed_urls": [
+      "https://www.graduatecenter.org/en/mba-master.html",
+      "https://www.graduatecenter.org/en/application/application.html",
+      "https://www.graduatecenter.org/en/application/requirements.html",
+      "https://www.graduatecenter.org/en/application/program-start.html",
+      "https://www.graduatecenter.org/en/mba-master/mba-global-management.html"
+    ],
+    "review_notes": [
+      "Separate programme pages live under /en/mba-master/.",
+      "Central requirements page contains general and programme-specific requirements."
+    ],
+    "crawl_cautions": [
+      "Respect robots exclusions for TYPO3 paths and selected query parameters."
+    ]
+  }
+}

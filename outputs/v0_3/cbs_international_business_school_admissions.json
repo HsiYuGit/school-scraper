@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.3",
+  "school": {
+    "name": "CBS International Business School",
+    "url": "https://www.cbs.de/en/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university",
+    "source_official_url": "https://www.cbs.de/en/"
+  },
+  "retrieved_at": "2026-05-17T08:44:52.474366+00:00",
+  "crawler_policy": {
+    "respects_robots_txt": true,
+    "same_host_only": true,
+    "max_pages": 8,
+    "delay_seconds": 0.2,
+    "timeout_seconds": 15.0,
+    "user_agent": "study-admissions-poc/0.1 (+https://www.gut-haode.com/ partner-school research)",
+    "no_login_captcha_paywall_bypass": true,
+    "robots_url": "https://www.cbs.de/robots.txt",
+    "robots_status": "available",
+    "robots_error": null,
+    "sitemaps_discovered": [
+      "https://www.cbs.de/sitemap.xml"
+    ]
+  },
+  "crawl_summary": {
+    "pages_fetched": 8,
+    "pages_skipped": 0,
+    "programs_extracted": 0,
+    "programs_needing_human_review": 0,
+    "shared_requirement_pages": 0
+  },
+  "programs": [],
+  "skipped": [],
+  "review_seed_config": {
+    "seed_urls": [
+      "https://www.cbs.de/en/international-business-school",
+      "https://www.cbs.de/en/full-time-study-programmes-germany",
+      "https://www.cbs.de/en/part-time-degree-programmes-germany",
+      "https://www.cbs.de/en/bachelors-degree-germany/international-business",
+      "https://www.cbs.de/en/international/exchange-students"
+    ],
+    "review_notes": [
+      "Listing pages expose many programme cards.",
+      "Programme pages use English paths such as /en/bachelors-degree-germany/{slug}."
+    ],
+    "crawl_cautions": [
+      "Avoid HubSpot forms, preview URLs, preference endpoints, and reCAPTCHA surfaces."
+    ]
+  }
+}
