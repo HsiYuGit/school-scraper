@@ -1,0 +1,834 @@
+{
+  "schema_version": "0.2",
+  "school": {
+    "name": "TUM Asia",
+    "url": "https://tum-asia.edu.sg/",
+    "country": "Singapore",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university_partner",
+    "source_official_url": "https://tum-asia.edu.sg/"
+  },
+  "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+  "crawler_policy": {
+    "respects_robots_txt": true,
+    "same_host_only": true,
+    "max_pages": 8,
+    "delay_seconds": 0.2,
+    "timeout_seconds": 15.0,
+    "user_agent": "study-admissions-poc/0.1 (+https://www.gut-haode.com/ partner-school research)",
+    "no_login_captcha_paywall_bypass": true,
+    "robots_url": "https://tum-asia.edu.sg/robots.txt",
+    "robots_status": "available",
+    "robots_error": null,
+    "sitemaps_discovered": [
+      "https://tum-asia.edu.sg/sitemap_index.xml"
+    ]
+  },
+  "crawl_summary": {
+    "pages_fetched": 8,
+    "pages_skipped": 0,
+    "programs_extracted": 7,
+    "programs_needing_human_review": 6
+  },
+  "programs": [
+    {
+      "school": {
+        "name": "TUM Asia",
+        "url": "https://tum-asia.edu.sg/",
+        "country": "Singapore",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_partner"
+      },
+      "program": {
+        "name": "Graduate Studies",
+        "degree": "PhD",
+        "level": null,
+        "url": "https://tum-asia.edu.sg/graduate-studies/",
+        "campus": "Campus Life",
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {},
+      "raw_evidence_sections": [
+        {
+          "heading": "Requirements",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "text": "Preparing for Your Studies FAQ"
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "TUM Asia",
+        "url": "https://tum-asia.edu.sg/",
+        "country": "Singapore",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_partner"
+      },
+      "program": {
+        "name": "Graduate Studies Application",
+        "degree": "PhD",
+        "level": null,
+        "url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+        "campus": "Campus Life",
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [
+          "GRE"
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Transcript",
+          "Reference letter",
+          "Proof of English proficiency",
+          "Application form"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "APS",
+          "Country-specific reminder"
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "intake per year for our Master of Science programmes (admissions open from 1 October), with the academic year typically commencing in August",
+          "application period",
+          "deadline",
+          "intake only"
+        ],
+        "intakes": [],
+        "application_channel": "Online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "fee of SGD 109 (inclusive of prevailing GST*)",
+          "fees are quoted in Singapore Dollars and are subject to the prevailing Goods and Services Tax (GST) as stipulated under the Singapore GST Act",
+          "Fee",
+          "fee",
+          "fee must be paid by 31 December 2025 before 2359h (Singapore Time) in order to qualify"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "n the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English Proficiency – TOEFL or IELTS (Required for applicants whose native tongue or medium",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "complete the following steps: Upload the signed Offer of Admission (both Official and Student Copies) and the Student Agreement Form to the Online Admission Portal . Email the following to TUM Asia: Notarised academic documents The signed application form Please note the following important points: Do",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "GRE keyword found."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "th APPA) in your email for quicker assistance. Submit the Module Descriptions of all the modules you have taken in your Transcript , as found in your curriculum document or syllabus handbook (only applicable Submit 2 Recommendation Letters from 2 different Professors or Employers (only applicable for MSc in G",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "Transcript keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "you have taken in your Transcript , as found in your curriculum document or syllabus handbook (only applicable Submit 2 Recommendation Letters from 2 different Professors or Employers (only applicable for MSc in Green Electronics, MSc in Integrated Circuit Design and MSc in Industrial Chemistry applications) You",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English Proficiency – TOEFL or IELTS (Required for applicants whose native tongue or medium of instruction from previous studies is not in English) Documents that are not in English must",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "greement Form to the Online Admission Portal . Email the following to TUM Asia: Notarised academic documents The signed application form Please note the following important points: Documents submitted to us will not be returned under any circumstances. To be considered for the MSc Scholarships, applicants must subm",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "Application form keyword found."
+          }
+        ],
+        "international_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "for you. Submit 1 Statement of Purpose that indicates the reason(s) you are interested in the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of E",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "you. Submit 1 Statement of Purpose that indicates the reason(s) you are interested in the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          }
+        ],
+        "application_channel": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "t the admission requirements for the specific programme you are applying to. Step-by-Step Application Guide Submit your online application (with soft copy documents) via our Online Application Portal . Pay the non-refundable application processing fee of SGD 109 (inclusive of prevailing GST*) *All fees are quoted in",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "Application channel keyword found."
+          }
+        ],
+        "deadlines": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "intake per year for our Master of Science programmes (admissions open from 1 October), with the academic year typically commencing in August",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "application period",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "deadline",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "intake only",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Requirements",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Before submitting your application, please ensure that you meet the admission requirements for the specific programme you are applying to.",
+          "text": "Step-by-Step Application Guide"
+        },
+        {
+          "heading": "Submit your online application (with soft copy documents) via our Online Application Portal .",
+          "text": "Pay the non-refundable application processing fee of SGD 109 (inclusive of prevailing GST*) *All fees are quoted in Singapore Dollars and are subject to the prevailing Goods and Services Tax (GST) as stipulated under the Singapore GST Act. Each application undergoes a careful review. As such, the screening process typically takes a minimum of 2 months from the date of complete application submission, depending on the programme and application volume."
+        },
+        {
+          "heading": "All required documents must be uploaded via the Online Application Portal before the application deadline. Documents submitted via email will not be processed.",
+          "text": "Please refrain from inquiring about your application status within the first 4 weeks after submission. Each application is evaluated individually, and processing times may vary. We kindly ask that you do not compare your application status with others, as differences in timelines are normal and expected. If you have received an Offer of Admission, you are required to complete the following steps: Upload the signed Offer of Admission (both Official and Student Copies) and the Student Agreement Form to the Online Admission Portal . Email the following to TUM Asia:"
+        },
+        {
+          "heading": "Notarised academic documents",
+          "text": "The signed application form Please note the following important points:"
+        },
+        {
+          "heading": "Documents submitted to us will not be returned under any circumstances.",
+          "text": "To be considered for the MSc Scholarships, applicants must submit their scholarship application together with their MSc programme application by the respective application deadline. For more information on available scholarships, please visit our Scholarship page. Successful applicant(s) will be notified directly by the TUM Asia Office of Admission. For any further admission enquiries, please email us at admission@tum-asia.edu.sg . Kindly include your full name and application number (starting with APPA) in your email for quicker assistance."
+        },
+        {
+          "heading": "Submit the Module Descriptions of all the modules you have taken in your Transcript , as found in your curriculum document or syllabus handbook (only applicable",
+          "text": "Submit 2 Recommendation Letters from 2 different Professors or Employers (only applicable for MSc in Green Electronics, MSc in Integrated Circuit Design and MSc in Industrial Chemistry applications) You will have to contact your recommenders to submit recommendation letters for your application. We will not be informing the recommenders to submit recommendation letters for you. Your recommenders may choose to send the letters to you so you can upload them into the portal. However, if they are not comfortable with doing that, they may send the letters to admission@tum-asia.edu.sg, quoting your name and application number in the email, so we can identify that these letters are for you. Submit 1 Statement of Purpose that indicates the reason(s) you are interested in the programme you applied for"
+        },
+        {
+          "heading": "APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f",
+          "text": "APS Vietnam Proof of English Proficiency – TOEFL or IELTS (Required for applicants whose native tongue or medium of instruction from previous studies is not in English)"
+        },
+        {
+          "heading": "Documents that are not in English must be translated by a sworn translator before submission.",
+          "text": "Applicants for our Master programmes need not submit GRE or GATE results. If the medium of instruction for your Bachelor degree is in English, you do not need to submit your TOEFL or IELTS result as well. Iranian degrees and and transcripts must be legalised by the German Embassy in Tehran."
+        },
+        {
+          "heading": "All mandatory notarised documents",
+          "text": "Signed application form"
+        },
+        {
+          "heading": "Please do not mail any documents to us if we do not tell you to. We do not return any documents submitted to us.",
+          "text": "Processing Fee Once your application is submitted, a payment option will appear to cover the processing fee. The service is hosted by PayPal, but a PayPal account is not required. You can make a payment using your credit or debit card, just like a regular online payment. If you prefer not to create a PayPal account, simply select ‘Checkout as Guest’. Early Bird Privilege"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "TUM Asia",
+        "url": "https://tum-asia.edu.sg/",
+        "country": "Singapore",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_partner"
+      },
+      "program": {
+        "name": "Rail and Urban Transport",
+        "degree": "PhD",
+        "level": "master",
+        "url": "https://tum-asia.edu.sg/graduate-studies/master-rail-and-urban-transport/",
+        "campus": "Campus Life",
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Application period 1 Oct 2025 – 10 Jun 2026 * Extended *",
+          "intake August 2026"
+        ],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Fees & Finances",
+          "Tuition Fees",
+          "tuition fees are payable upon acceptance of offer across 3 instalments throughout the academic year",
+          "Fee",
+          "fee: S$37,387* (inclusive 9% GST)"
+        ]
+      },
+      "evidence": {
+        "deadlines": [
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-rail-and-urban-transport/",
+            "source_text": "Application period 1 Oct 2025 – 10 Jun 2026 * Extended *",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-rail-and-urban-transport/",
+            "source_text": "intake August 2026",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Requirements",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "One of the ground-breaking innovations in the railway infrastructure space, ballastless tracks are increasingly adopted globally due to their superior ride comf",
+          "text": "Elective Modules (Choose 3 modules) In this module, students gain a comprehensive overview of tunnel works and geotechniques, covering the key aspects of the investigations conducted prior to the start of the project. Students will learn about the fundamentals of soil investigation, the basics of foundation, and earth construction in traffic ways. The module will also dive into the tunnelling methods and the techniques covering the various calculating methods and the prediction of settlements by tunnelling in loose soils."
+        },
+        {
+          "heading": "This module advances students on their knowledge of dynamic vehicle behaviour, thus deepening their fundamental concepts, theories, and applications used in the",
+          "text": "Elective Modules (Choose 3 modules) The module will begin with the core principles of business logistics, where students gain insights into the functional process of logistics and the pivotal role logistics play in a competitive landscape. Providing an incisive portrait of the various aspects of logistics processes, students learn how logistics processes can be optimised, which in turn gives them an opportunity to develop their critical thinking on the potential of information technology and digitisation in logistics."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "TUM Asia",
+        "url": "https://tum-asia.edu.sg/",
+        "country": "Singapore",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_partner"
+      },
+      "program": {
+        "name": "Integrated Circuit Design",
+        "degree": "PhD",
+        "level": "master",
+        "url": "https://tum-asia.edu.sg/graduate-studies/master-integrated-circuit-design/",
+        "campus": "Campus Life",
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Application period 1 Oct 2025 – 31 Mar 2026",
+          "intake August 2026"
+        ],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Fees & Finances",
+          "tuition fees are payable upon acceptance of offer across 3 instalments throughout the academic year",
+          "Fee",
+          "fee: S$56,156",
+          "fees quoted are in Singapore Dollars and are inclusive of the prevailing Goods and Services Tax (GST) imposed under the Singapore GST Act"
+        ]
+      },
+      "evidence": {
+        "deadlines": [
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-integrated-circuit-design/",
+            "source_text": "Application period 1 Oct 2025 – 31 Mar 2026",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-integrated-circuit-design/",
+            "source_text": "intake August 2026",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Requirements",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Manufacturers are confronted with special requirements of their production processes. Cycles, by-products, batches and campaigns are difficult to handle by nowa",
+          "text": "This module covers different types of Intellectual Property (IP) and methods of protection. Students will acquire up-to-date knowledge about patents as a connecting link between science, research, and technical developments on the one hand, and Technopreneurship opportunities on the other hand. At first, fundamentals of international patent systems and patent data bases will be presented. Then, the elements of a patent application and the patent grant procedure are detailed. Finally, use cases such as IP-based company startups and the interaction between intellectual property and market needs are discussed. Global Internship Gain real-world experience through internships, where you can take an active role in securing opportunities at a company of your choice, anywhere in the world."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "TUM Asia",
+        "url": "https://tum-asia.edu.sg/",
+        "country": "Singapore",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_partner"
+      },
+      "program": {
+        "name": "Green Electronics",
+        "degree": "PhD",
+        "level": "master",
+        "url": "https://tum-asia.edu.sg/graduate-studies/master-green-electronics/",
+        "campus": "Campus Life",
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Application period 1 Oct 2025 – 15 May 2026 * Extended *",
+          "intake August 2026"
+        ],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Fees & Finances",
+          "tuition fees are payable upon acceptance of offer across 3 instalments throughout the academic year",
+          "Fee",
+          "fee: S$56,156",
+          "fees quoted are in Singapore Dollars and are inclusive of the prevailing Goods and Services Tax (GST) imposed under the Singapore GST Act"
+        ]
+      },
+      "evidence": {
+        "deadlines": [
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-green-electronics/",
+            "source_text": "Application period 1 Oct 2025 – 15 May 2026 * Extended *",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-green-electronics/",
+            "source_text": "intake August 2026",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Requirements",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Manufacturers face unique challenges in their production processes. Cycles, by-products, batches, and campaigns are difficult to manage with current ERP (Enterp",
+          "text": "Part A: Overview Part B: Industries – Chemical, Plastics and PVC Part C: The World of PVC Part D: Production Planning – Introduction Part E: Production Planning Process Part F: Procurement Process Part G: SAP & Enterprise Resource Planning Part H: Simulation Theory and Simulation Models Global Internship Gain real-world experience through internships, where you can take an active role in securing opportunities at a company of your choice, anywhere in the world. The internship programme is one of the hallmarks of all our master’s programmes designed to provide structured and supervised work experiences. Students complete a three-month internship with the industry or an academic institution of choice related to his or her field of study at TUM Asia. Internship can be completed anywhere in the world."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "TUM Asia",
+        "url": "https://tum-asia.edu.sg/",
+        "country": "Singapore",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_partner"
+      },
+      "program": {
+        "name": "Aerospace Engineering",
+        "degree": "PhD",
+        "level": "master",
+        "url": "https://tum-asia.edu.sg/graduate-studies/master-aerospace-engineering/",
+        "campus": "Campus Life",
+        "language_of_instruction": [
+          "German",
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Application period 1 Oct 2025 – 10 Jun 2026 * Extended *",
+          "intake August 2026"
+        ],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Fees & Finances",
+          "tuition fees are payable upon acceptance of offer across 3 instalments throughout the academic year",
+          "Fee",
+          "fee: S$40,657* (inclusive 9% GST)",
+          "fees quoted are in Singapore Dollars and are inclusive of the prevailing Goods and Services Tax (GST) imposed under the Singapore GST Act"
+        ]
+      },
+      "evidence": {
+        "deadlines": [
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-aerospace-engineering/",
+            "source_text": "Application period 1 Oct 2025 – 10 Jun 2026 * Extended *",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-aerospace-engineering/",
+            "source_text": "intake August 2026",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Requirements",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "text": "Preparing for Your Studies FAQ"
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "TUM Asia",
+        "url": "https://tum-asia.edu.sg/",
+        "country": "Singapore",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_partner"
+      },
+      "program": {
+        "name": "Industrial Chemistry",
+        "degree": "PhD",
+        "level": "master",
+        "url": "https://tum-asia.edu.sg/graduate-studies/master-industrial-chemistry/",
+        "campus": "Campus Life",
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [
+          "Case study"
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Application period 1 Oct 2025 – 15 Apr 2026 * Extended *",
+          "intake August 2026"
+        ],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Fees & Finances",
+          "tuition fees are payable upon acceptance of offer across 3 instalments throughout the academic year",
+          "Fee",
+          "fee: S$49,050* (inclusive 9% GST)",
+          "fees quoted are in Singapore Dollars and are inclusive of the prevailing Goods and Services Tax (GST) imposed under the Singapore GST Act"
+        ]
+      },
+      "evidence": {
+        "test_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-industrial-chemistry/",
+            "source_text": "ntal workshop on collaborative robotics Site visit and workshop on indoor vertical farming with disruptive technologies Case study on Aquaculture 4.0 Site visit to the Competence Centre for Digitalisation, Technology and Innovation (CDTI) and the Advanced Manufacturing Transformation Centre (AMTC)",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "Case study keyword found."
+          }
+        ],
+        "deadlines": [
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-industrial-chemistry/",
+            "source_text": "Application period 1 Oct 2025 – 15 Apr 2026 * Extended *",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-industrial-chemistry/",
+            "source_text": "intake August 2026",
+            "retrieved_at": "2026-05-16T13:06:18.192970+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Requirements",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Manufacturers face unique challenges in their production processes. Cycles, by-products, batches, and campaigns are difficult to manage with current ERP (Enterp",
+          "text": "Part A: Overview Part B: Industries – Chemical, Plastics and PVC Part C: The World of PVC Part D: Production Planning – Introduction Part E: Production Planning Process Part F: Procurement Process Part G: SAP & Enterprise Resource Planning Part H: Simulation Theory and Simulation Models The module covers the following topics: Introduction to Industry 4.0 Core elements of Industry 4.0 Fundamental workshop on AR/VR and digital twins Fundamental workshop on additive manufacturing Fundamental workshop on collaborative robotics Site visit and workshop on indoor vertical farming with disruptive technologies Case study on Aquaculture 4.0 Site visit to the Competence Centre for Digitalisation, Technology and Innovation (CDTI) and the Advanced Manufacturing Transformation Centre (AMTC)"
+        }
+      ],
+      "needs_human_review": true
+    }
+  ],
+  "skipped": [],
+  "review_seed_config": {
+    "seed_urls": [
+      "https://tum-asia.edu.sg/graduate-studies/",
+      "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+      "https://tum-asia.edu.sg/graduate-studies/master-rail-and-urban-transport/",
+      "https://tum-asia.edu.sg/graduate-studies/master-integrated-circuit-design/",
+      "https://tum-asia.edu.sg/graduate-studies/master-green-electronics/"
+    ],
+    "review_notes": [
+      "Likely MSc programme pattern is /graduate-studies/master-{program-slug}/.",
+      "Undergraduate admissions may route through SIT, so keep graduate and undergraduate review separate."
+    ],
+    "crawl_cautions": [
+      "Verify robots before crawling PDFs/pages.",
+      "Skip application forms and PDF scraping in this POC."
+    ]
+  }
+}

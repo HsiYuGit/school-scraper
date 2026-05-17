@@ -69,3 +69,10 @@ python scripts\crawl_partner_schools.py --max-pages 30 --delay 1 --timeout 15
 - 將 `program` 與 `specialization` 的資料層級拆得更清楚。
 - 將 admission requirement 文字再拆成學歷、語言、文件、期限、費用等欄位。
 - 為好德清單內 12 所學校建立可重跑 seed config 與批次輸出 manifest。
+
+## 輸出版本
+
+- `outputs/v0_2/`：保存 2026-05-16 既有 12 校 crawler JSON、manifest 與 NIT LLM-native draft，作為後續比較基準。
+- `outputs/v0_3/`：保存本輪修正後重新產生的 crawler JSON、manifest 與 LLM-native official-site reading。
+
+版本化輸出與 HTML 比較方式見 `docs/admissions_output_versions.md`。

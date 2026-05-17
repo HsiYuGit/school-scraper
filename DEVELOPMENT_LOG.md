@@ -124,3 +124,10 @@ python scripts\scrape_admissions.py "https://www.munich-business-school.de/en/" 
 ### 重要澄清
 
 - 2026-05-16 的 12 校 batch 只是套用少數保守規則後重新產生 outputs，不是完整的「用 12 校驗證結果反覆迭代到 LLM 閱讀品質」。後續若要達到這個目標，應把 subagent 的 per-school findings 轉成逐校 failing tests 與 extraction fixes，而不是只重跑 batch。
+
+## 2026-05-17
+
+### v0.2 輸出凍結
+
+- 建立 `outputs/v0_2/`，保存目前 12 校 crawler JSON、`partner_school_crawl_manifest.json` 與既有 `nit_llm_native_admissions.json`。
+- 新增 `docs/admissions_output_versions.md`，明確區分 v0.2 snapshot 與後續 v0.3 重新產生結果，避免後續 comparison 因覆蓋舊檔而失去基準。
