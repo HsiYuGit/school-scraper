@@ -1,0 +1,3786 @@
+{
+  "schema_version": "0.3",
+  "school": {
+    "name": "Hochschule Fresenius",
+    "url": "https://www.hs-fresenius.com/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university",
+    "source_official_url": "https://www.hs-fresenius.com/"
+  },
+  "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+  "crawler_policy": {
+    "respects_robots_txt": true,
+    "same_host_only": true,
+    "max_pages": 30,
+    "delay_seconds": 0.2,
+    "timeout_seconds": 12.0,
+    "user_agent": "study-admissions-poc/0.1 (+https://www.gut-haode.com/ partner-school research)",
+    "no_login_captcha_paywall_bypass": true,
+    "robots_url": "https://www.hs-fresenius.com/robots.txt",
+    "robots_status": "available",
+    "robots_error": null,
+    "sitemaps_discovered": [
+      "https://www.hs-fresenius.com/sitemap_index.xml"
+    ]
+  },
+  "crawl_summary": {
+    "pages_fetched": 28,
+    "pages_skipped": 5,
+    "programs_extracted": 21,
+    "programs_needing_human_review": 0,
+    "shared_requirement_pages": 2
+  },
+  "programs": [
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master SAP Engineering & Analytics: Data & SAP Expertise",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://www.hs-fresenius.com/study-programs/sap-engineering-and-analytics-master/",
+        "campus": "location",
+        "language_of_instruction": [
+          "German",
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "CEFR English",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "German",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Reference letter",
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/sap-engineering-and-analytics-master/",
+            "source_text": "eted a bachelor’s study program with at least 180 credit points Subject-specific admission requirement. Your bachelor’s degree is required to be in a relevant field, such as engineering, IT or business. Applicants must demonstrate at least 30 Credit Points in business, information technology, and/or engin",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/sap-engineering-and-analytics-master/",
+            "source_text": "English language skills are equivalent to Level B2 of the European Framework of Reference for Languages. Get to know us Blog Get in touch Imprint Privacy Policy Whistlebl",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/sap-engineering-and-analytics-master/",
+            "source_text": "You need to provide evidence that your English language skills are equivalent to Level B2 of the European Framework of Reference for Languages. Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/sap-engineering-and-analytics-master/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "You must have completed a bachelor’s study program with at least 180 credit points Subject-specific admission requirement.",
+          "source_url": "https://www.hs-fresenius.com/study-programs/sap-engineering-and-analytics-master/",
+          "text": "Your bachelor’s degree is required to be in a relevant field, such as engineering, IT or business. Applicants must demonstrate at least 30 Credit Points in business, information technology, and/or engineering modules. Missing credit points can be replaced by a successfully completed subject-related interview. You need to provide evidence that your English language skills are equivalent to Level B2 of the European Framework of Reference for Languages. Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master’s in Biomedicine: Innovate in Biomedical Research",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://www.hs-fresenius.com/study-programs/biomedicine-master/",
+        "campus": "location",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "CEFR English",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/biomedicine-master/",
+            "source_text": ".Sc.) at Fresenius University of Applied Sciences, you need to fulfil the following requirements: You need a bachelor’s degree with at least 180 credit points in biology, biosciences, molecular biology, biomedicine, medicine, biochemistry, pharmacy or a related subject. You are either a native speaker of",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/biomedicine-master/",
+            "source_text": "IELTS with at least 6.0). Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/biomedicine-master/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/biomedicine-master/",
+            "source_text": "English or can provide proof of language skills equivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/biomedicine-master/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "To be admitted to the master’s study program Biomedicine (M.Sc.) at Fresenius University of Applied Sciences, you need to fulfil the following requirements:",
+          "source_url": "https://www.hs-fresenius.com/study-programs/biomedicine-master/",
+          "text": "You need a bachelor’s degree with at least 180 credit points in biology, biosciences, molecular biology, biomedicine, medicine, biochemistry, pharmacy or a related subject. You are either a native speaker of English or can provide proof of language skills equivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master’s in Biochemical Engineering: Advance Your Career",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://www.hs-fresenius.com/study-programs/biochemical-engineering-master/",
+        "campus": "location",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "CEFR English",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/biochemical-engineering-master/",
+            "source_text": "ering (M.Sc.) at Fresenius University of Applied Sciences, you need to fulfil the following requi You need a bachelor’s degree with at least 180 credit points or an equivalent qualification in a chemistry-related field of study (e.g. analytical chemistry, chemistry, pharmacy, physics, biology). You are ei",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/biochemical-engineering-master/",
+            "source_text": "IELTS with at least 6.0). Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/biochemical-engineering-master/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/biochemical-engineering-master/",
+            "source_text": "English or can provide proof of language skills equivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/biochemical-engineering-master/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "To be admitted to the master’s study program Biochemical Engineering (M.Sc.) at Fresenius University of Applied Sciences, you need to fulfil the following requi",
+          "source_url": "https://www.hs-fresenius.com/study-programs/biochemical-engineering-master/",
+          "text": "You need a bachelor’s degree with at least 180 credit points or an equivalent qualification in a chemistry-related field of study (e.g. analytical chemistry, chemistry, pharmacy, physics, biology). You are either a native speaker of English or can provide proof of language skills equivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master’s in Bioanalytical Chemistry & Pharmaceutical Analysis",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://www.hs-fresenius.com/study-programs/bioanalytical-chemistry-pharmaceutical-analysis-master/",
+        "campus": "location",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "CEFR English",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/bioanalytical-chemistry-pharmaceutical-analysis-master/",
+            "source_text": "istry and Pharmaceutical Analysis (M.Sc.) at Fresenius University of Applied Sciences, you need t You need a bachelor’s degree with at least 180 credit points or an equivalent qualification in a chemistry-related field of study (e.g. analytical chemistry, chemistry, pharmacy, physics, biology). You are ei",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/bioanalytical-chemistry-pharmaceutical-analysis-master/",
+            "source_text": "IELTS with at least 6.0). Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/bioanalytical-chemistry-pharmaceutical-analysis-master/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/bioanalytical-chemistry-pharmaceutical-analysis-master/",
+            "source_text": "English or can provide proof of language skills equivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "The master in Bioanalytical Chemistry and Pharmaceutical Analysis (M.Sc.) provides you with comprehensive theoretical and practical expertise in the analysis of",
+          "source_url": "https://www.hs-fresenius.com/study-programs/bioanalytical-chemistry-pharmaceutical-analysis-master/",
+          "text": "In the master´s program, you will acquire comprehensive and specialized knowledge in analytical chemistry, bioanalysis and quality assurance in the fields of pharmaceutical analysis, clinical analysis and forensics. You will be prepared for a variety of professional roles in international environments by combining theoretical content and practical applications. Topics in your study program include, among others: Analysis of biomolecules Pharmacology and toxicology Clinical and biochemical analysis Methods of structural analysis Analytical Data Science II and pharmacophore models Lab course on forensics, food and pharmaceutical analysis Advanced analysis methods incl. large molecule separation Pharmaceutical analysis and drug discovery Essential – Four Reasons to Get Your Info Brochure Get all the details about your dream study program! Study content and curricula"
+        },
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/bioanalytical-chemistry-pharmaceutical-analysis-master/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "To be admitted to the master’s study program Bioanalytical Chemistry and Pharmaceutical Analysis (M.Sc.) at Fresenius University of Applied Sciences, you need t",
+          "source_url": "https://www.hs-fresenius.com/study-programs/bioanalytical-chemistry-pharmaceutical-analysis-master/",
+          "text": "You need a bachelor’s degree with at least 180 credit points or an equivalent qualification in a chemistry-related field of study (e.g. analytical chemistry, chemistry, pharmacy, physics, biology). You are either a native speaker of English or can provide proof of language skills equivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master in Computer Science (M.Sc.) in Germany",
+        "degree": "M.Sc",
+        "level": "master",
+        "url": "https://www.hs-fresenius.com/study-programs/computer-science-master/",
+        "campus": "location",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "mathematics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business law",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "CEFR English",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Reference letter",
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/computer-science-master/",
+            "source_text": "standing of the design, maintenance, and analysis of digital systems. You will be After you have completed the master’s degree in Computer Science (M.Sc.), many doors in the job market will be open to you, both at home and abroad. Potential industries and roles include: Computer network architect Computer",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "subject_prerequisites": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/computer-science-master/",
+            "source_text": "re engineering, information technology, or another field with at least 60 CP in computer science-related topics such as mathematics, programming, design, and software architecture. Your English language skills must be equivalent to Level B2 of the European Framework of Reference for Languages (CEFR). Get to kn",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/computer-science-master/",
+            "source_text": "English language skills must be equivalent to Level B2 of the European Framework of Reference for Languages (CEFR). Get to know us Blog Get in touch Imprint Privacy Policy Wh",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/computer-science-master/",
+            "source_text": "gn, and software architecture. Your English language skills must be equivalent to Level B2 of the European Framework of Reference for Languages (CEFR). Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "After your graduation in Computer Science (M.Sc.), you will have a deeper understanding of the design, maintenance, and analysis of digital systems. You will be",
+          "source_url": "https://www.hs-fresenius.com/study-programs/computer-science-master/",
+          "text": "After you have completed the master’s degree in Computer Science (M.Sc.), many doors in the job market will be open to you, both at home and abroad. Potential industries and roles include: Computer network architect Computer system analyst Computer systems engineer Data scientist or engineer Machine learning, AI or computer vision engineer Information Security Specialist IT manager IT consultant Software engineer Software developer Keyfacts Your study program in detail The master’s program in Computer Science (M.Sc.) helps you critically assess the security of computer systems and creatively apply technological possibilities and innovations in the fields of computer science. Additionally, you will broaden and deepen your formal methods, algorithmic skills and other applied computer science methods, as well as your knowledge in the areas of Cyber Security and Artificial Intelligence. In the master’s program, you will design, implement and exploit methods in cryptography and security related areas, but will also learn to use, adapt and improve modern artificial intelligence techniques related to data, planning and applications. These areas will be complemented by project management skills which will help you to implement e.g. security measures at your company. Additionally, you learn more about life in Germany and the work culture in various courses. Topics in your study program include, among others: Cyber Attacks & Threat Management Intelligent Systems Machine Learning IIOT / Intro to Python Enterprise Security Architecture Security Governance, IT Law & Compliance Project AI / Cyber Security Architecture and process management"
+        },
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/computer-science-master/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "To be admitted to the master’s study program Computer Science (M.Sc.) at Fresenius University of Applied Sciences, you need to fulfil the following requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/computer-science-master/",
+          "text": "You need to have a completed bachelor’s degree with at least 180 credit points. In your bachelor’s degree you must have gained at least 60 credit points in the fields of computer science, software engineering, information technology, or another field with at least 60 CP in computer science-related topics such as mathematics, programming, design, and software architecture. Your English language skills must be equivalent to Level B2 of the European Framework of Reference for Languages (CEFR). Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Bachelor in Computer Science (B.Sc.) in Germany",
+        "degree": "B.Sc",
+        "level": "bachelor",
+        "url": "https://www.hs-fresenius.com/study-programs/computer-science-bachelor/",
+        "campus": "location",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/computer-science-bachelor/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "To be admitted to the bachelor’s study program Computer Science (B.Sc.) at Fresenius University of Applied Sciences, your English language skills must be equiva",
+          "source_url": "https://www.hs-fresenius.com/study-programs/computer-science-bachelor/",
+          "text": "Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "YOUR BACHELORS PROGRAM IN INTERNATIONAL BUSINESS (B.A.) WITH SPECIALIZATION IN INTERNATIONAL MANAGEMENT",
+        "degree": "B.A",
+        "level": "bachelor",
+        "url": "https://www.hs-fresenius.com/study-programs/international-business-bachelor-international-management/",
+        "campus": "location",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "CEFR English",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/international-business-bachelor-international-management/",
+            "source_text": "IELTS with at least 6.0). Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/international-business-bachelor-international-management/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/international-business-bachelor-international-management/",
+            "source_text": "English or can provide proof of language skills equivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/international-business-bachelor-international-management/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/international-business-bachelor-international-management/",
+          "text": "To be admitted to this study program, you need a university entrance qualification, for example a general university entrance qualification or an international school-leaving degree. For more information, please contact our Study Advice Service. English language skills: You are either a native speaker of English or can provide proof of language skills equivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Biomedical Sciences Bachelor’s Degree: Study & Career Overview",
+        "degree": "Bachelor",
+        "level": "bachelor",
+        "url": "https://www.hs-fresenius.com/study-programs/biomedical-sciences-bachelor/",
+        "campus": "location",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "statistics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "CEFR English",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/biomedical-sciences-bachelor/",
+            "source_text": "n requirements Costs and financing options Career opportunities Admission requirements To be admitted to the bachelor’s degree program in Biomedical Sciences (B.Sc.) at Fresenius University of Applied Sciences, you need a university entrance qualification, for example a general university entrance qualifi",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/biomedical-sciences-bachelor/",
+            "source_text": "IELTS with at least 6.0). Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/biomedical-sciences-bachelor/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/biomedical-sciences-bachelor/",
+            "source_text": "English or can provide proof of language skills equivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "You are able to independently evaluate and interpret complex data from biomedical analyses. You can apply computer-based and statistical methods to analyze biol",
+          "source_url": "https://www.hs-fresenius.com/study-programs/biomedical-sciences-bachelor/",
+          "text": "As a graduate of the bachelor’s program in Biomedical Sciences (B.Sc.), you will find employment opportunities in the biomedical field. You may work in diagnostic laboratories or in medical and pharmaceutical research. Other roles are available in biotechnology companies and in quality management within biomedical diagnostics. Typical areas of employment include: Diagnostic laboratories Medical and pharmaceutical research Biotechnology and bioanalytics Biomedical product development Quality management and regulatory affairs Research and development"
+        },
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/biomedical-sciences-bachelor/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/biomedical-sciences-bachelor/",
+          "text": "To be admitted to the bachelor’s degree program in Biomedical Sciences (B.Sc.) at Fresenius University of Applied Sciences, you need a university entrance qualification, for example a general university entrance qualification or an international school-leaving degree. For more information, please contact our Study Advice Service. English language skills: You are either a native speaker of English or can provide proof of language skills equivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "YOUR INDUSTRIAL ENGINEERING AND MANAGEMENT BACHELOR’S PROGRAM",
+        "degree": "Bachelor",
+        "level": "bachelor",
+        "url": "https://www.hs-fresenius.com/study-programs/industrial-engineering-and-management-bachelor/",
+        "campus": "location",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": "recognized or accredited institution",
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "CEFR English",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Reference letter",
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/industrial-engineering-and-management-bachelor/",
+            "source_text": "English language skills at least at level B2 of the Common European Framework of Reference for Languages (CEFR) are required, as evidenced by recognized language ce",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/industrial-engineering-and-management-bachelor/",
+            "source_text": "own entrance examination. In addition, English language skills at least at level B2 of the Common European Framework of Reference for Languages (CEFR) are required, as evidenced by recognized language certificates. Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ],
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/industrial-engineering-and-management-bachelor/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/industrial-engineering-and-management-bachelor/",
+          "text": "To be admitted to the bachelor’s program in Industrial Engineering and Management (B.Eng.) at Fresenius University of Applied Sciences, you need a recognized university entrance qualification. Alternatively, you can take the university’s own entrance examination. In addition, English language skills at least at level B2 of the Common European Framework of Reference for Languages (CEFR) are required, as evidenced by recognized language certificates. Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International Business Management Bachelor in Germany",
+        "degree": "Bachelor",
+        "level": "bachelor",
+        "url": "https://www.hs-fresenius.com/study-programs/international-business-management-bachelor/",
+        "campus": "location",
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "German",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [
+          "winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "tuition fee"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/international-business-management-bachelor/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/international-business-management-bachelor/",
+          "text": "We explain what you need to start your bachelor’s study program in International Business Management (B.A.) at Fresenius University of Applied Sciences and how the application process works. Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International Real Estate Management Master’s Program",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://www.hs-fresenius.com/study-programs/international-real-estate-management-master/",
+        "campus": "location",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": 180,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Found 180 ECTS requirement."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "CEFR English",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/international-real-estate-management-master/",
+            "source_text": "180 ECTS credits",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct ECTS extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/international-real-estate-management-master/",
+            "source_text": "Estate Management (M.Sc.) at Fresenius University of Applied Sciences, you need to fulfil the fo You need a bachelor’s degree comprising at least 180 ECTS credits, at least 30 of which must be in business-related subjects. You must either be a native English speaker or provide proof of English language p",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/international-real-estate-management-master/",
+            "source_text": "IELTS score of at least 6.0. Alternative admission options: If you do not yet meet all the requirements, you can take an admi",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/international-real-estate-management-master/",
+            "source_text": "TOEFL iBT score of at least 70 or an",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/international-real-estate-management-master/",
+            "source_text": "English speaker or provide proof of English language proficiency at level B2 (CEFR), e.g. a TOEFL iBT score of at least 70 or an",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/international-real-estate-management-master/",
+            "source_text": "dits, at least 30 of which must be in business-related subjects. You must either be a native English speaker or provide proof of English language proficiency at level B2 (CEFR), e.g. a TOEFL iBT score of at least 70 or an IELTS score of at least 6.0. Alternative admission options: If you do not yet meet all the req",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/international-real-estate-management-master/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "To be admitted to the master’s study program International Real Estate Management (M.Sc.) at Fresenius University of Applied Sciences, you need to fulfil the fo",
+          "source_url": "https://www.hs-fresenius.com/study-programs/international-real-estate-management-master/",
+          "text": "You need a bachelor’s degree comprising at least 180 ECTS credits, at least 30 of which must be in business-related subjects. You must either be a native English speaker or provide proof of English language proficiency at level B2 (CEFR), e.g. a TOEFL iBT score of at least 70 or an IELTS score of at least 6.0."
+        },
+        {
+          "heading": "Alternative admission options: If you do not yet meet all the requirements, you can take an admissions test or attend preparatory courses to acquire the necessa",
+          "source_url": "https://www.hs-fresenius.com/study-programs/international-real-estate-management-master/",
+          "text": "Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "YOUR PHARMACEUTICAL MEDICINE MASTER’S PROGRAM",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://www.hs-fresenius.com/study-programs/pharmaceutical-medicine-master-part-time/",
+        "campus": "location",
+        "language_of_instruction": [
+          "German",
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "CEFR English",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "German",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Personal interview",
+            "requirement": "mentioned_unclear",
+            "notes": "We would also be happy to advise you in a personal interview Get to know us Blog"
+          },
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Reference letter",
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/pharmaceutical-medicine-master-part-time/",
+            "source_text": "English, which is why an English language proficiency level of B2 is required. You must provide proof of this according to the Common European Framework of Reference for Languages CEFR.",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/pharmaceutical-medicine-master-part-time/",
+            "source_text": "We would also be happy to advise you in a personal interview Get to know us Blog",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Personal interview interpreted as mentioned_unclear."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/pharmaceutical-medicine-master-part-time/",
+            "source_text": "guage proficiency level of B2 is required. You must provide proof of this according to the Common European Framework of Reference for Languages CEFR. If you fulfil these basic requirements, we look forward to receiving a formal application from you. We would also be happy to advise you in a personal intervie",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ],
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/pharmaceutical-medicine-master-part-time/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/pharmaceutical-medicine-master-part-time/",
+          "text": "Would you like to be prepared to work in areas such as drug research, development and testing, both in the national and international market? You need these prerequisites:"
+        },
+        {
+          "heading": "In order to study the master’s degree program in Pharmaceutical Medicine (M.Sc.) at Charlotte Fresenius University, you need basic requirements such as a bachel",
+          "source_url": "https://www.hs-fresenius.com/study-programs/pharmaceutical-medicine-master-part-time/",
+          "text": "The degree program is taught in English, which is why an English language proficiency level of B2 is required. You must provide proof of this according to the Common European Framework of Reference for Languages CEFR."
+        },
+        {
+          "heading": "If you fulfil these basic requirements, we look forward to receiving a formal application from you. We would also be happy to advise you in a personal interview",
+          "source_url": "https://www.hs-fresenius.com/study-programs/pharmaceutical-medicine-master-part-time/",
+          "text": "Get to know us Blog"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International Business Management Master’s program",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://www.hs-fresenius.com/study-programs/international-business-management-master/",
+        "campus": "location",
+        "language_of_instruction": [
+          "German",
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "economics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "German",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/international-business-management-master/",
+            "source_text": "to fulfil the fo You must have completed a bachelor’s study program with at least 180 credit points. In your bachelor’s degree, you must have gained 60 credit points in the fields of business or economics.",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "subject_prerequisites": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/international-business-management-master/",
+            "source_text": "least 180 credit points. In your bachelor’s degree, you must have gained 60 credit points in the fields of business or economics.",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/international-business-management-master/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "To be admitted to the master’s study program in International Business Management (M.Sc.) at Fresenius University of Applied Sciences, you need to fulfil the fo",
+          "source_url": "https://www.hs-fresenius.com/study-programs/international-business-management-master/",
+          "text": "You must have completed a bachelor’s study program with at least 180 credit points. In your bachelor’s degree, you must have gained 60 credit points in the fields of business or economics."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Marketing & Brand Management Master’s program",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://www.hs-fresenius.com/study-programs/marketing-brand-management-master/",
+        "campus": "location",
+        "language_of_instruction": [
+          "German",
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "economics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "German",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/marketing-brand-management-master/",
+            "source_text": "lfil the followi You must have completed a bachelor’s study program with at least 180 credit points. In your bachelor’s degree, you must have gained 60 credit points in the fields of business or economics.",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "subject_prerequisites": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/marketing-brand-management-master/",
+            "source_text": "least 180 credit points. In your bachelor’s degree, you must have gained 60 credit points in the fields of business or economics.",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/marketing-brand-management-master/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "To be admitted to the master’s study program in Marketing & Brand Management (M.Sc.) at Fresenius University of Applied Sciences, you need to fulfil the followi",
+          "source_url": "https://www.hs-fresenius.com/study-programs/marketing-brand-management-master/",
+          "text": "You must have completed a bachelor’s study program with at least 180 credit points. In your bachelor’s degree, you must have gained 60 credit points in the fields of business or economics."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "MBA Full time",
+        "degree": "MBA",
+        "level": "master",
+        "url": "https://www.hs-fresenius.com/study-programs/mba-fast-track/",
+        "campus": "location",
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "CEFR English",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "German",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 1,
+          "relevance": "one year of relevant professional",
+          "notes": []
+        },
+        "documents": [
+          "Reference letter",
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/mba-fast-track/",
+            "source_text": "rogram at Fresenius University of Applied Sciences, you need to fulfill the follow You must have completed a bachelor’s degree with 210 credit points. You don’t need to fulfill any subject-specific requirements. You need one year of relevant professional experience. Proof of English language proficiency a",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/mba-fast-track/",
+            "source_text": "English language proficiency at Level B2 of the Common European Framework of Reference for Languages (CEFR) is mandatory. If you have questions about fulfilling",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "work_experience": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/mba-fast-track/",
+            "source_text": "one year of relevant professional",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Work-experience requirement found."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/mba-fast-track/",
+            "source_text": "relevant professional experience. Proof of English language proficiency at Level B2 of the Common European Framework of Reference for Languages (CEFR) is mandatory. If you have questions about fulfilling the admission requirements, please contact our Study Advice Team. Get to know us Blog Get in touch Imprin",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/mba-fast-track/",
+            "source_text": "ts. You don’t need to fulfill any subject-specific requirements. You need one year of relevant professional experience. Proof of English language proficiency at Level B2 of the Common European Framework of Reference for Languages (CEFR) is mandatory. If you have questions about fulfilling the admission requirements",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/mba-fast-track/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "To be admitted to the one-year Master of Business Administration (MBA) study program at Fresenius University of Applied Sciences, you need to fulfill the follow",
+          "source_url": "https://www.hs-fresenius.com/study-programs/mba-fast-track/",
+          "text": "You must have completed a bachelor’s degree with 210 credit points."
+        },
+        {
+          "heading": "You don’t need to fulfill any subject-specific requirements.",
+          "source_url": "https://www.hs-fresenius.com/study-programs/mba-fast-track/",
+          "text": "You need one year of relevant professional experience. Proof of English language proficiency at Level B2 of the Common European Framework of Reference for Languages (CEFR) is mandatory."
+        },
+        {
+          "heading": "If you have questions about fulfilling the admission requirements, please contact our Study Advice Team.",
+          "source_url": "https://www.hs-fresenius.com/study-programs/mba-fast-track/",
+          "text": "Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "MBA Full time",
+        "degree": "MBA",
+        "level": "master",
+        "url": "https://www.hs-fresenius.com/study-programs/mba/",
+        "campus": "location",
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "CEFR English",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "German",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 1,
+          "relevance": "one year of relevant professional",
+          "notes": []
+        },
+        "documents": [
+          "Reference letter",
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/mba/",
+            "source_text": "rogram at Fresenius University of Applied Sciences, you need to fulfill the follow You must have completed a bachelor’s degree study program with 180 credit points. You don’t need to fulfill any subject-specific requirements. You need one year of relevant professional experience. Proof of English language",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/mba/",
+            "source_text": "English language proficiency at Level B2 of the Common European Framework of Reference for Languages (CEFR) is mandatory. If you have questions about fulfilling",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "work_experience": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/mba/",
+            "source_text": "one year of relevant professional",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Work-experience requirement found."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/mba/",
+            "source_text": "relevant professional experience. Proof of English language proficiency at Level B2 of the Common European Framework of Reference for Languages (CEFR) is mandatory. If you have questions about fulfilling the admission requirements, please contact our Study Advice Team. Get to know us Blog Get in touch Imprin",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/mba/",
+            "source_text": "ts. You don’t need to fulfill any subject-specific requirements. You need one year of relevant professional experience. Proof of English language proficiency at Level B2 of the Common European Framework of Reference for Languages (CEFR) is mandatory. If you have questions about fulfilling the admission requirements",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/mba/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "To be admitted to the one-year Master of Business Administration (MBA) study program at Fresenius University of Applied Sciences, you need to fulfill the follow",
+          "source_url": "https://www.hs-fresenius.com/study-programs/mba/",
+          "text": "You must have completed a bachelor’s degree study program with 180 credit points."
+        },
+        {
+          "heading": "You don’t need to fulfill any subject-specific requirements.",
+          "source_url": "https://www.hs-fresenius.com/study-programs/mba/",
+          "text": "You need one year of relevant professional experience. Proof of English language proficiency at Level B2 of the Common European Framework of Reference for Languages (CEFR) is mandatory."
+        },
+        {
+          "heading": "If you have questions about fulfilling the admission requirements, please contact our Study Advice Team.",
+          "source_url": "https://www.hs-fresenius.com/study-programs/mba/",
+          "text": "Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Pharmaceutical Biotechnology Master study program",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://www.hs-fresenius.com/study-programs/medical-pharmaceutical-biotechnology-master/",
+        "campus": "location",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "CEFR English",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Reference letter",
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/medical-pharmaceutical-biotechnology-master/",
+            "source_text": "utical Biotechnology (M.Sc.) at Fresenius University of Applied Sciences, you need You must have completed a bachelor’s degree with at least 180 credit points in a chemistry- or biology-related field of study, such as pharmacy, chemistry, biology, biochemistry, or biotechnology. You should have previous k",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/medical-pharmaceutical-biotechnology-master/",
+            "source_text": "English, therefore you’ll also need English language skills at Level B2 of the European Framework of Reference for Languages. The study program is taught in English, therefore you will also n",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/medical-pharmaceutical-biotechnology-master/",
+            "source_text": "ogram is taught in English, therefore you’ll also need English language skills at Level B2 of the European Framework of Reference for Languages. The study program is taught in English, therefore you will also need English language skills at Level B2 o f the European Framework of Reference for Languages. Get",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/medical-pharmaceutical-biotechnology-master/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "To be admitted to the full-time master’s study program in Medical and Pharmaceutical Biotechnology (M.Sc.) at Fresenius University of Applied Sciences, you need",
+          "source_url": "https://www.hs-fresenius.com/study-programs/medical-pharmaceutical-biotechnology-master/",
+          "text": "You must have completed a bachelor’s degree with at least 180 credit points in a chemistry- or biology-related field of study, such as pharmacy, chemistry, biology, biochemistry, or biotechnology. You should have previous knowledge in the fields of organic chemistry and biochemistry, e.g., documented by successfully completed modules. The study program is taught in English, therefore you’ll also need English language skills at Level B2 of the European Framework of Reference for Languages. The study program is taught in English, therefore you will also need English language skills at Level B2 o f the European Framework of Reference for Languages. Get to know us Blog Get in touch Imprint Privacy Policy Whistleblower Protection (Act)"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master’s study program in E-Commerce and Logistics",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://www.hs-fresenius.com/study-programs/e-commerce-logistics-master/",
+        "campus": "location",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "economics",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/e-commerce-logistics-master/",
+            "source_text": "the following re You must have completed a bachelor’s study program with at least 180 credit points. In your bachelor’s degree, you must have gained 60 credit points in the fields of business or economics.",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "subject_prerequisites": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/e-commerce-logistics-master/",
+            "source_text": "least 180 credit points. In your bachelor’s degree, you must have gained 60 credit points in the fields of business or economics.",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/e-commerce-logistics-master/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "To be admitted to the master’s study program in E-Commerce & Logistics (M.Sc.) at Fresenius University of Applied Sciences, you need to fulfill the following re",
+          "source_url": "https://www.hs-fresenius.com/study-programs/e-commerce-logistics-master/",
+          "text": "You must have completed a bachelor’s study program with at least 180 credit points. In your bachelor’s degree, you must have gained 60 credit points in the fields of business or economics."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Industrial Engineering and International Management Master",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://www.hs-fresenius.com/study-programs/industrial-engineering-master/",
+        "campus": "location",
+        "language_of_instruction": [
+          "German",
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "mathematics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "German",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/industrial-engineering-master/",
+            "source_text": "ciences, you nee You must have completed a bachelor’s study program with at least 180 credit points. In your bachelor’s degree, you must have gained credit points in the following fields: At least 60 credit points in STEM subjects (Science, Technology, Engineering, Mathematics) At least 10 credit points i",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "subject_prerequisites": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/industrial-engineering-master/",
+            "source_text": "ed credit points in the following fields: At least 60 credit points in STEM subjects (Science, Technology, Engineering, Mathematics) At least 10 credit points in a thesis, final project, or final case study or similar",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/industrial-engineering-master/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "To be admitted to the master’s study program in Industrial Engineering and International Management (M.Sc.) at Fresenius University of Applied Sciences, you nee",
+          "source_url": "https://www.hs-fresenius.com/study-programs/industrial-engineering-master/",
+          "text": "You must have completed a bachelor’s study program with at least 180 credit points. In your bachelor’s degree, you must have gained credit points in the following fields: At least 60 credit points in STEM subjects (Science, Technology, Engineering, Mathematics) At least 10 credit points in a thesis, final project, or final case study or similar"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International Health Economics & Pharmacoeconomics master’s program",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://www.hs-fresenius.com/study-programs/international-health-economics-master/",
+        "campus": "location",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "economics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "mathematics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "statistics",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "CEFR English",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Reference letter",
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/international-health-economics-master/",
+            "source_text": "You must have completed a bachelor’s study program with at least 180 credit points You must have gained your bachelor’s degree in the following fields: STEM subjects (Natural/Life Science, Economics, Medical Engineering, Medical Technology) e.g. pharmacy, chemistry, biology, nutritional science, mathemati",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "subject_prerequisites": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/international-health-economics-master/",
+            "source_text": "and reimbursement In addition to internationality and interdisciplinarity, the master’s program in International Health Economics & Pharmacoeconomics (M.Sc.) is characterized by its strong application focus: Specific health economic tools and methods and a twelve-week residency placement combined with an aca",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/international-health-economics-master/",
+            "source_text": "fe Science, Economics, Medical Engineering, Medical Technology) e.g. pharmacy, chemistry, biology, nutritional science, mathematics, statistics You must have proven English language skills at Level B2 of the European Framework of Reference for Languages (CEFR) or 62 points in a PTE Academic English test.",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/international-health-economics-master/",
+            "source_text": "stand and analyze industry processes from an economic perspective. You will gain a broad know-how about methods such as statistics and cost-benefit analysis. And you will acquire the knowledge and skills to be aware of how healthcare systems are established and funded, which political and regulatory factors p",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/international-health-economics-master/",
+            "source_text": "English language skills at Level B2 of the European Framework of Reference for Languages (CEFR) or 62 points in a",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/international-health-economics-master/",
+            "source_text": "science, mathematics, statistics You must have proven English language skills at Level B2 of the European Framework of Reference for Languages (CEFR) or 62 points in a PTE Academic English test.",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Become an expert in licensing processes and pricing, gain the necessary qualifications for more senior roles at public authorities, institutes, or companies in ",
+          "source_url": "https://www.hs-fresenius.com/study-programs/international-health-economics-master/",
+          "text": "During your studies, you will learn to understand and analyze industry processes from an economic perspective. You will gain a broad know-how about methods such as statistics and cost-benefit analysis. And you will acquire the knowledge and skills to be aware of how healthcare systems are established and funded, which political and regulatory factors play a role in the licensing of new drugs and medical devices, and how pricing structures work. Some of the topics, you can expect, are: Economic theory for healthcare Global healthcare systems Health policy and healthcare delivery Epidemiology and public health Global health product development and regulations Market strategies for international healthcare Pricing and reimbursement In addition to internationality and interdisciplinarity, the master’s program in International Health Economics & Pharmacoeconomics (M.Sc.) is characterized by its strong application focus: Specific health economic tools and methods and a twelve-week residency placement combined with an academic project in the third semester provide you with a comprehensive foundation for continued scientific work in academic institutions or research-oriented organizations within the pharmaceutical or medtech industry. Additionally, all the knowledge and skills you acquire in your classes have practical relevance and can be applied to everyday working life. Throughout your studies you write numerous semester papers, a project report, and a master’s thesis. These are not just for research purposes but also deal with topics highly relevant to the healthcare industry. Essential – Four Reasons to Get Your Info Brochure Get all the details about your dream study program! Study content and curricula"
+        },
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/international-health-economics-master/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "To be admitted to the master’s study program in International Health Economics and Pharmacoeconomics (M.Sc.) at Fresenius University of Applied Sciences, you ne",
+          "source_url": "https://www.hs-fresenius.com/study-programs/international-health-economics-master/",
+          "text": "You must have completed a bachelor’s study program with at least 180 credit points You must have gained your bachelor’s degree in the following fields: STEM subjects (Natural/Life Science, Economics, Medical Engineering, Medical Technology) e.g. pharmacy, chemistry, biology, nutritional science, mathematics, statistics You must have proven English language skills at Level B2 of the European Framework of Reference for Languages (CEFR) or 62 points in a PTE Academic English test."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master’s study program in International Management (M.A.)",
+        "degree": "M.A",
+        "level": "master",
+        "url": "https://www.hs-fresenius.com/study-programs/international-management-master/",
+        "campus": "location",
+        "language_of_instruction": [
+          "German",
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "economics",
+            "minimum_ects": null,
+            "notes": []
+          },
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "70",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "German",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "not_required",
+            "notes": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/international-management-master/",
+            "source_text": "equired. On the contrary, you can have gained a maximum of 60 credit points in business or economics in your bachelor’s degree.",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "its own admission requirements. In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your maste",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "subject_prerequisites": [
+          {
+            "source_url": "https://www.hs-fresenius.com/study-programs/international-management-master/",
+            "source_text": "u do not need to have earned credit points in a business-related subject in order to be admitted. Previous knowledge of economics is not required. On the contrary, you can have gained a maximum of 60 credit points in business or economics in your bachelor’s degree.",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosh",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "TOEFL iBT with at least 70 points or",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "German-speaking country, you will need to prove language skills equivalent to Level B2. If you are unsure whether your certificate entitles you to study at Fresenius University of Applied Sciences, please f",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "In general, you can start a master’s program if you have attained a first professional degree, e If you have completed vocational training in a specific field and have several years of professional experience, you might be able to take an aptitude test and begin your master’s program without a bachelor’s degree",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "high",
+            "review_note": "Aptitude test interpreted as not_required."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.hs-fresenius.com/admission-requirements/",
+            "source_text": "quivalent to Level B2 (e.g., TOEFL iBT with at least 70 points or IELTS with at least 6.0). For more information on the proof of English language proficiency, please have a look at the Infosheet below: If you wish to enroll in a German-language study program, and you are not a native speaker or have not completed y",
+            "retrieved_at": "2026-05-18T16:36:46.424348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-fresenius.com/study-programs/international-management-master/",
+          "text": "Costs and financing options Career opportunities"
+        },
+        {
+          "heading": "To be admitted to the master’s study program International Management (M.A.) (for Non-Business Graduates) at Fresenius University of Applied Sciences, you need ",
+          "source_url": "https://www.hs-fresenius.com/study-programs/international-management-master/",
+          "text": "You must have completed a bachelor’s study program with at least 180 credit points. You do not need to have earned credit points in a business-related subject in order to be admitted. Previous knowledge of economics is not required. On the contrary, you can have gained a maximum of 60 credit points in business or economics in your bachelor’s degree."
+        }
+      ],
+      "needs_human_review": false
+    }
+  ],
+  "skipped": [
+    {
+      "url": "https://www.hs-fresenius.com/study-programs/fashion-design-b-a-vollzeit/",
+      "reason": "redirected_to_different_host",
+      "detail": "https://www.amdnet.com/study-programs/fashion-design-bachelor/"
+    },
+    {
+      "url": "https://www.hs-fresenius.com/study-programs/fashion-design-management/",
+      "reason": "redirected_to_different_host",
+      "detail": "https://www.amdnet.com/study-programs/fashion-design-management-bachelor/"
+    },
+    {
+      "url": "https://www.hs-fresenius.com/study-programs/sustainability-in-fashion-and-creative-industries-education-master/",
+      "reason": "redirected_to_different_host",
+      "detail": "https://www.amdnet.com/study-programs/sustainability-in-fashion-master/"
+    },
+    {
+      "url": "https://www.hs-fresenius.com/study-programs/mba",
+      "reason": "duplicate_after_redirect",
+      "detail": "https://www.hs-fresenius.com/study-programs/mba/"
+    },
+    {
+      "url": "https://www.hs-fresenius.com/study-programs/mba-fast-track",
+      "reason": "duplicate_after_redirect",
+      "detail": "https://www.hs-fresenius.com/study-programs/mba-fast-track/"
+    }
+  ],
+  "review_seed_config": {
+    "seed_urls": [
+      "https://www.hs-fresenius.com/bachelor/",
+      "https://www.hs-fresenius.com/master/",
+      "https://www.hs-fresenius.com/admission-requirements/",
+      "https://www.hs-fresenius.com/application/",
+      "https://www.hs-fresenius.com/study-programs/sap-engineering-and-analytics-master/",
+      "https://www.hs-fresenius.com/study-programs/biomedicine-master/",
+      "https://www.hs-fresenius.com/study-programs/biochemical-engineering-master/",
+      "https://www.hs-fresenius.com/study-programs/bioanalytical-chemistry-pharmaceutical-analysis-master/",
+      "https://www.hs-fresenius.com/study-programs/computer-science-master/"
+    ],
+    "review_notes": [
+      "Degree landing pages list programme links under /study-programs/.",
+      "Central admission-requirements page is a strong reusable seed."
+    ],
+    "crawl_cautions": [
+      "Prefer programme/admission pages over lead-form application pages."
+    ]
+  }
+}

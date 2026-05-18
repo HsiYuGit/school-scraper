@@ -153,3 +153,24 @@ python scripts\scrape_admissions.py "https://www.munich-business-school.de/en/" 
 - 新增 dashboard renderer，會把 v0.2 review、v0.3 review、LLM-native review、v0.2 vs v0.3 improvement、v0.3 vs LLM-native comparison 全部接到 `outputs/html/index.html`。
 - `python scripts\render_admissions_dashboard.py --outputs-dir outputs --html-dir outputs\html`：產出 dashboard，包含 39 個 review pages、12 個 LLM comparison pages 與 `outputs/html/comparisons/v0_2_vs_v0_3.html`。
 - 本機 server/browser 驗證因 Windows process 啟動路線不穩且使用者指示跳過，已停止殘留 PID；改用 bounded HTML content/link checks 確認 index 連到 12 校 v0.2、v0.3、LLM-native 與 comparison pages。
+
+## 2026-05-19
+
+### LLM v0.2 clean-room gap review
+
+- 依照主 agent 不直接補答案的限制，派出 fresh-context worker 針對 TUM Asia 與 Munich Business School 做兩校 gap analysis。
+- 新增 `docs/admissions_llm_v0_2_gap_report.md`、`docs/prompts/admissions_llm_native_v0_2_prompt.md`、`docs/admissions_extraction_harness.md`。
+- 產出 `outputs/v0_3/llm_native_v0_2/` 兩份 v0.2 LLM-native JSON，用於驗證 LLM 是否能吸收 crawler 已抓到但 v0.1 漏掉的 admissions facts。
+
+### Crawler v0.4 review and rerun
+
+- 逐校檢討 v0.3 crawler output，新增 `docs/admissions_crawler_v0_4_review.md`。
+- 擴充 `data/partner_school_crawl_seeds.json`，把 reviewed seeds 從 listing/overview 擴到具體 programme/admissions URL。
+- 改善 crawler 精度：允許 ISM/CBS/SRH 等具體 program URL；阻擋 event、summer-school、focus、study-mode、generic-title、cross-host redirect 等 non-program records；`RemoteDisconnected` 現在會被記錄為 skipped URL。
+- 產出 `outputs/v0_4/` 12 校 crawler JSON 與 manifest。v0.4 summary: 126 program records、251 language requirement records、199 test requirement records；v0.3 summary: 30 program records、69 language requirement records、75 test requirement records。
+
+### Verification
+
+- `python -m unittest tests.test_scrape_admissions`
+- `python -m json.tool outputs\v0_4\partner_school_crawl_manifest.json`
+- 逐校 suspect query: generic title、cross-host redirect、event/focus/study-mode URL 均為 0。

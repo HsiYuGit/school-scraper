@@ -1,0 +1,1811 @@
+{
+  "schema_version": "0.3",
+  "school": {
+    "name": "TUM Asia",
+    "url": "https://tum-asia.edu.sg/",
+    "country": "Singapore",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university_partner",
+    "source_official_url": "https://tum-asia.edu.sg/"
+  },
+  "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+  "crawler_policy": {
+    "respects_robots_txt": true,
+    "same_host_only": true,
+    "max_pages": 30,
+    "delay_seconds": 0.2,
+    "timeout_seconds": 12.0,
+    "user_agent": "study-admissions-poc/0.1 (+https://www.gut-haode.com/ partner-school research)",
+    "no_login_captcha_paywall_bypass": true,
+    "robots_url": "https://tum-asia.edu.sg/robots.txt",
+    "robots_status": "available",
+    "robots_error": null,
+    "sitemaps_discovered": [
+      "https://tum-asia.edu.sg/sitemap_index.xml"
+    ]
+  },
+  "crawl_summary": {
+    "pages_fetched": 19,
+    "pages_skipped": 0,
+    "programs_extracted": 7,
+    "programs_needing_human_review": 0,
+    "shared_requirement_pages": 2
+  },
+  "programs": [
+    {
+      "school": {
+        "name": "TUM Asia",
+        "url": "https://tum-asia.edu.sg/",
+        "country": "Singapore",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_partner"
+      },
+      "program": {
+        "name": "Aerospace Engineering",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://tum-asia.edu.sg/graduate-studies/master-aerospace-engineering/",
+        "campus": "Campus Life",
+        "language_of_instruction": [
+          "German",
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "PTE Academic",
+            "minimum_score": "13.06",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "GRE",
+            "requirement": "not_required",
+            "notes": "Applicants for our Master programmes need not submit GRE or GATE results"
+          },
+          {
+            "test": "GATE",
+            "requirement": "not_required",
+            "notes": "Applicants for our Master programmes need not submit GRE or GATE results"
+          },
+          {
+            "test": "GRE",
+            "requirement": "mentioned_unclear",
+            "notes": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。"
+          },
+          {
+            "test": "GATE",
+            "requirement": "mentioned_unclear",
+            "notes": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Transcript",
+          "Reference letter",
+          "Proof of English proficiency",
+          "Application form",
+          "Degree certificate"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "APS",
+          "Country-specific reminder"
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Application period 1 Oct 2025 – 10 Jun 2026 * Extended *",
+          "intake August 2026"
+        ],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Fees & Finances",
+          "tuition fees are payable upon acceptance of offer across 3 instalments throughout the academic year",
+          "Fee",
+          "fee: S$40,657* (inclusive 9% GST)",
+          "fees quoted are in Singapore Dollars and are inclusive of the prevailing Goods and Services Tax (GST) imposed under the Singapore GST Act"
+        ]
+      },
+      "evidence": {
+        "deadlines": [
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-aerospace-engineering/",
+            "source_text": "Application period 1 Oct 2025 – 10 Jun 2026 * Extended *",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-aerospace-engineering/",
+            "source_text": "intake August 2026",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ],
+        "academic_background": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "n the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English Proficiency – TOEFL or IELTS (Required for applicants whose native tongue or medium",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "Applicants for our Master programmes need not submit GRE or GATE results",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "high",
+            "review_note": "GRE interpreted as not_required."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "Applicants for our Master programmes need not submit GRE or GATE results",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "high",
+            "review_note": "GATE interpreted as not_required."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "GRE interpreted as mentioned_unclear."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "GATE interpreted as mentioned_unclear."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "th APPA) in your email for quicker assistance. Submit the Module Descriptions of all the modules you have taken in your Transcript , as found in your curriculum document or syllabus handbook (only applicable Submit 2 Recommendation Letters from 2 different Professors or Employers (only applicable for MSc in G",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Transcript keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "you have taken in your Transcript , as found in your curriculum document or syllabus handbook (only applicable Submit 2 Recommendation Letters from 2 different Professors or Employers (only applicable for MSc in Green Electronics, MSc in Integrated Circuit Design and MSc in Industrial Chemistry applications) You",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English Proficiency – TOEFL or IELTS (Required for applicants whose native tongue or medium of instruction from previous studies is not in English) Documents that are not in English must",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "greement Form to the Online Admission Portal . Email the following to TUM Asia: Notarised academic documents The signed application form Please note the following important points: Documents submitted to us will not be returned under any circumstances. To be considered for the MSc Scholarships, applicants must subm",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Application form keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "学位 概述 化学工程 电子与数据工程 硕士学位 概述 航空工程 绿色微纳电子 工业化学 集成电路设计 物流工程与管理 铁路与城市交通 可持续食品 博士研究 攻读博士学位 博士研究生 工业博士项目 终身教育 概述 文凭课程 Graduate Diploma Professional Certificates 搜寻课程 常见问题集 Competence Centre of Digitalisation, Technology & Innovation (CDTI) 招生部门 学士学位 硕士学位 申请流程 入学要求 为学习做准备 常见问题集 奖学金 联系招生团队 为何选择TUM Asia？ 探索TUM Asia",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Degree certificate keyword found."
+          }
+        ],
+        "international_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "for you. Submit 1 Statement of Purpose that indicates the reason(s) you are interested in the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of E",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "you. Submit 1 Statement of Purpose that indicates the reason(s) you are interested in the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "u.sg，并在邮件中注明您的姓名和申请编号，以便我们识别。 提交 1份个人陈述 ，说明您对所申请课程感兴趣的原因。 提交 1 份简历。 提交 1张护照尺寸照片。 提交 1份护照生物数据页复印件 （包含您个人信息的护照页）。 学术评估办公室（APS）证书 （所有持有中国、印度或越南学位的申请人都需提交APS证书。） APS China APS India APS Vietnam 英语能力证明——TOEFL或IELTS TOEFL要求： 最低88分 （TOEFL机构代码：German Institute of Science and Technology – TUM Asia (Singapore)，D",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "明您对所申请课程感兴趣的原因。 提交 1 份简历。 提交 1张护照尺寸照片。 提交 1份护照生物数据页复印件 （包含您个人信息的护照页）。 学术评估办公室（APS）证书 （所有持有中国、印度或越南学位的申请人都需提交APS证书。） APS China APS India APS Vietnam 英语能力证明——TOEFL或IELTS TOEFL要求： 最低88分 （TOEFL机构代码：German Institute of Science and Technology – TUM Asia (Singapore)，DI代码： 7368 ）。 IELTS要求：总分 最低6.5分 。 非英文文件必须在提交前",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "Pte Ltd PEI Reg. No. 200105229R | Registration Period 13.06.2023 to 12.06.2029 Privacy Policy",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Requirements",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-aerospace-engineering/",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-aerospace-engineering/",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-aerospace-engineering/",
+          "text": "Preparing for Your Studies FAQ"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "TUM Asia",
+        "url": "https://tum-asia.edu.sg/",
+        "country": "Singapore",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_partner"
+      },
+      "program": {
+        "name": "Industrial Chemistry",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://tum-asia.edu.sg/graduate-studies/master-industrial-chemistry/",
+        "campus": "Campus Life",
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "PTE Academic",
+            "minimum_score": "13.06",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "GRE",
+            "requirement": "not_required",
+            "notes": "Applicants for our Master programmes need not submit GRE or GATE results"
+          },
+          {
+            "test": "GATE",
+            "requirement": "not_required",
+            "notes": "Applicants for our Master programmes need not submit GRE or GATE results"
+          },
+          {
+            "test": "GRE",
+            "requirement": "mentioned_unclear",
+            "notes": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。"
+          },
+          {
+            "test": "GATE",
+            "requirement": "mentioned_unclear",
+            "notes": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Transcript",
+          "Reference letter",
+          "Proof of English proficiency",
+          "Application form",
+          "Degree certificate"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "APS",
+          "Country-specific reminder"
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Application period 1 Oct 2025 – 15 Apr 2026 * Extended *",
+          "intake August 2026"
+        ],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Fees & Finances",
+          "tuition fees are payable upon acceptance of offer across 3 instalments throughout the academic year",
+          "Fee",
+          "fee: S$49,050* (inclusive 9% GST)",
+          "fees quoted are in Singapore Dollars and are inclusive of the prevailing Goods and Services Tax (GST) imposed under the Singapore GST Act"
+        ]
+      },
+      "evidence": {
+        "deadlines": [
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-industrial-chemistry/",
+            "source_text": "Application period 1 Oct 2025 – 15 Apr 2026 * Extended *",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-industrial-chemistry/",
+            "source_text": "intake August 2026",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ],
+        "academic_background": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "n the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English Proficiency – TOEFL or IELTS (Required for applicants whose native tongue or medium",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "Applicants for our Master programmes need not submit GRE or GATE results",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "high",
+            "review_note": "GRE interpreted as not_required."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "Applicants for our Master programmes need not submit GRE or GATE results",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "high",
+            "review_note": "GATE interpreted as not_required."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "GRE interpreted as mentioned_unclear."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "GATE interpreted as mentioned_unclear."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "th APPA) in your email for quicker assistance. Submit the Module Descriptions of all the modules you have taken in your Transcript , as found in your curriculum document or syllabus handbook (only applicable Submit 2 Recommendation Letters from 2 different Professors or Employers (only applicable for MSc in G",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Transcript keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "you have taken in your Transcript , as found in your curriculum document or syllabus handbook (only applicable Submit 2 Recommendation Letters from 2 different Professors or Employers (only applicable for MSc in Green Electronics, MSc in Integrated Circuit Design and MSc in Industrial Chemistry applications) You",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English Proficiency – TOEFL or IELTS (Required for applicants whose native tongue or medium of instruction from previous studies is not in English) Documents that are not in English must",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "greement Form to the Online Admission Portal . Email the following to TUM Asia: Notarised academic documents The signed application form Please note the following important points: Documents submitted to us will not be returned under any circumstances. To be considered for the MSc Scholarships, applicants must subm",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Application form keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "学位 概述 化学工程 电子与数据工程 硕士学位 概述 航空工程 绿色微纳电子 工业化学 集成电路设计 物流工程与管理 铁路与城市交通 可持续食品 博士研究 攻读博士学位 博士研究生 工业博士项目 终身教育 概述 文凭课程 Graduate Diploma Professional Certificates 搜寻课程 常见问题集 Competence Centre of Digitalisation, Technology & Innovation (CDTI) 招生部门 学士学位 硕士学位 申请流程 入学要求 为学习做准备 常见问题集 奖学金 联系招生团队 为何选择TUM Asia？ 探索TUM Asia",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Degree certificate keyword found."
+          }
+        ],
+        "international_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "for you. Submit 1 Statement of Purpose that indicates the reason(s) you are interested in the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of E",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "you. Submit 1 Statement of Purpose that indicates the reason(s) you are interested in the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "u.sg，并在邮件中注明您的姓名和申请编号，以便我们识别。 提交 1份个人陈述 ，说明您对所申请课程感兴趣的原因。 提交 1 份简历。 提交 1张护照尺寸照片。 提交 1份护照生物数据页复印件 （包含您个人信息的护照页）。 学术评估办公室（APS）证书 （所有持有中国、印度或越南学位的申请人都需提交APS证书。） APS China APS India APS Vietnam 英语能力证明——TOEFL或IELTS TOEFL要求： 最低88分 （TOEFL机构代码：German Institute of Science and Technology – TUM Asia (Singapore)，D",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "明您对所申请课程感兴趣的原因。 提交 1 份简历。 提交 1张护照尺寸照片。 提交 1份护照生物数据页复印件 （包含您个人信息的护照页）。 学术评估办公室（APS）证书 （所有持有中国、印度或越南学位的申请人都需提交APS证书。） APS China APS India APS Vietnam 英语能力证明——TOEFL或IELTS TOEFL要求： 最低88分 （TOEFL机构代码：German Institute of Science and Technology – TUM Asia (Singapore)，DI代码： 7368 ）。 IELTS要求：总分 最低6.5分 。 非英文文件必须在提交前",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "Pte Ltd PEI Reg. No. 200105229R | Registration Period 13.06.2023 to 12.06.2029 Privacy Policy",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Requirements",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-industrial-chemistry/",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-industrial-chemistry/",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-industrial-chemistry/",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Manufacturers face unique challenges in their production processes. Cycles, by-products, batches, and campaigns are difficult to manage with current ERP (Enterp",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-industrial-chemistry/",
+          "text": "Part A: Overview Part B: Industries – Chemical, Plastics and PVC Part C: The World of PVC Part D: Production Planning – Introduction Part E: Production Planning Process Part F: Procurement Process Part G: SAP & Enterprise Resource Planning Part H: Simulation Theory and Simulation Models The module covers the following topics: Introduction to Industry 4.0 Core elements of Industry 4.0 Fundamental workshop on AR/VR and digital twins Fundamental workshop on additive manufacturing Fundamental workshop on collaborative robotics Site visit and workshop on indoor vertical farming with disruptive technologies Case study on Aquaculture 4.0 Site visit to the Competence Centre for Digitalisation, Technology and Innovation (CDTI) and the Advanced Manufacturing Transformation Centre (AMTC)"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "TUM Asia",
+        "url": "https://tum-asia.edu.sg/",
+        "country": "Singapore",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_partner"
+      },
+      "program": {
+        "name": "Rail and Urban Transport",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://tum-asia.edu.sg/graduate-studies/master-rail-and-urban-transport/",
+        "campus": "Campus Life",
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "PTE Academic",
+            "minimum_score": "13.06",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "GRE",
+            "requirement": "not_required",
+            "notes": "Applicants for our Master programmes need not submit GRE or GATE results"
+          },
+          {
+            "test": "GATE",
+            "requirement": "not_required",
+            "notes": "Applicants for our Master programmes need not submit GRE or GATE results"
+          },
+          {
+            "test": "GRE",
+            "requirement": "mentioned_unclear",
+            "notes": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。"
+          },
+          {
+            "test": "GATE",
+            "requirement": "mentioned_unclear",
+            "notes": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Transcript",
+          "Reference letter",
+          "Proof of English proficiency",
+          "Application form",
+          "Degree certificate"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "APS",
+          "Country-specific reminder"
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Application period 1 Oct 2025 – 10 Jun 2026 * Extended *",
+          "intake August 2026"
+        ],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Fees & Finances",
+          "Tuition Fees",
+          "tuition fees are payable upon acceptance of offer across 3 instalments throughout the academic year",
+          "Fee",
+          "fee: S$37,387* (inclusive 9% GST)"
+        ]
+      },
+      "evidence": {
+        "deadlines": [
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-rail-and-urban-transport/",
+            "source_text": "Application period 1 Oct 2025 – 10 Jun 2026 * Extended *",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-rail-and-urban-transport/",
+            "source_text": "intake August 2026",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ],
+        "academic_background": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "n the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English Proficiency – TOEFL or IELTS (Required for applicants whose native tongue or medium",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "Applicants for our Master programmes need not submit GRE or GATE results",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "high",
+            "review_note": "GRE interpreted as not_required."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "Applicants for our Master programmes need not submit GRE or GATE results",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "high",
+            "review_note": "GATE interpreted as not_required."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "GRE interpreted as mentioned_unclear."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "GATE interpreted as mentioned_unclear."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "th APPA) in your email for quicker assistance. Submit the Module Descriptions of all the modules you have taken in your Transcript , as found in your curriculum document or syllabus handbook (only applicable Submit 2 Recommendation Letters from 2 different Professors or Employers (only applicable for MSc in G",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Transcript keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "you have taken in your Transcript , as found in your curriculum document or syllabus handbook (only applicable Submit 2 Recommendation Letters from 2 different Professors or Employers (only applicable for MSc in Green Electronics, MSc in Integrated Circuit Design and MSc in Industrial Chemistry applications) You",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English Proficiency – TOEFL or IELTS (Required for applicants whose native tongue or medium of instruction from previous studies is not in English) Documents that are not in English must",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "greement Form to the Online Admission Portal . Email the following to TUM Asia: Notarised academic documents The signed application form Please note the following important points: Documents submitted to us will not be returned under any circumstances. To be considered for the MSc Scholarships, applicants must subm",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Application form keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "学位 概述 化学工程 电子与数据工程 硕士学位 概述 航空工程 绿色微纳电子 工业化学 集成电路设计 物流工程与管理 铁路与城市交通 可持续食品 博士研究 攻读博士学位 博士研究生 工业博士项目 终身教育 概述 文凭课程 Graduate Diploma Professional Certificates 搜寻课程 常见问题集 Competence Centre of Digitalisation, Technology & Innovation (CDTI) 招生部门 学士学位 硕士学位 申请流程 入学要求 为学习做准备 常见问题集 奖学金 联系招生团队 为何选择TUM Asia？ 探索TUM Asia",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Degree certificate keyword found."
+          }
+        ],
+        "international_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "for you. Submit 1 Statement of Purpose that indicates the reason(s) you are interested in the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of E",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "you. Submit 1 Statement of Purpose that indicates the reason(s) you are interested in the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "u.sg，并在邮件中注明您的姓名和申请编号，以便我们识别。 提交 1份个人陈述 ，说明您对所申请课程感兴趣的原因。 提交 1 份简历。 提交 1张护照尺寸照片。 提交 1份护照生物数据页复印件 （包含您个人信息的护照页）。 学术评估办公室（APS）证书 （所有持有中国、印度或越南学位的申请人都需提交APS证书。） APS China APS India APS Vietnam 英语能力证明——TOEFL或IELTS TOEFL要求： 最低88分 （TOEFL机构代码：German Institute of Science and Technology – TUM Asia (Singapore)，D",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "明您对所申请课程感兴趣的原因。 提交 1 份简历。 提交 1张护照尺寸照片。 提交 1份护照生物数据页复印件 （包含您个人信息的护照页）。 学术评估办公室（APS）证书 （所有持有中国、印度或越南学位的申请人都需提交APS证书。） APS China APS India APS Vietnam 英语能力证明——TOEFL或IELTS TOEFL要求： 最低88分 （TOEFL机构代码：German Institute of Science and Technology – TUM Asia (Singapore)，DI代码： 7368 ）。 IELTS要求：总分 最低6.5分 。 非英文文件必须在提交前",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "Pte Ltd PEI Reg. No. 200105229R | Registration Period 13.06.2023 to 12.06.2029 Privacy Policy",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Requirements",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-rail-and-urban-transport/",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-rail-and-urban-transport/",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-rail-and-urban-transport/",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "One of the ground-breaking innovations in the railway infrastructure space, ballastless tracks are increasingly adopted globally due to their superior ride comf",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-rail-and-urban-transport/",
+          "text": "Elective Modules (Choose 3 modules) In this module, students gain a comprehensive overview of tunnel works and geotechniques, covering the key aspects of the investigations conducted prior to the start of the project. Students will learn about the fundamentals of soil investigation, the basics of foundation, and earth construction in traffic ways. The module will also dive into the tunnelling methods and the techniques covering the various calculating methods and the prediction of settlements by tunnelling in loose soils."
+        },
+        {
+          "heading": "This module advances students on their knowledge of dynamic vehicle behaviour, thus deepening their fundamental concepts, theories, and applications used in the",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-rail-and-urban-transport/",
+          "text": "Elective Modules (Choose 3 modules) The module will begin with the core principles of business logistics, where students gain insights into the functional process of logistics and the pivotal role logistics play in a competitive landscape. Providing an incisive portrait of the various aspects of logistics processes, students learn how logistics processes can be optimised, which in turn gives them an opportunity to develop their critical thinking on the potential of information technology and digitisation in logistics."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "TUM Asia",
+        "url": "https://tum-asia.edu.sg/",
+        "country": "Singapore",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_partner"
+      },
+      "program": {
+        "name": "Integrated Circuit Design",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://tum-asia.edu.sg/graduate-studies/master-integrated-circuit-design/",
+        "campus": "Campus Life",
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "PTE Academic",
+            "minimum_score": "13.06",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "GRE",
+            "requirement": "not_required",
+            "notes": "Applicants for our Master programmes need not submit GRE or GATE results"
+          },
+          {
+            "test": "GATE",
+            "requirement": "not_required",
+            "notes": "Applicants for our Master programmes need not submit GRE or GATE results"
+          },
+          {
+            "test": "GRE",
+            "requirement": "mentioned_unclear",
+            "notes": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。"
+          },
+          {
+            "test": "GATE",
+            "requirement": "mentioned_unclear",
+            "notes": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Transcript",
+          "Reference letter",
+          "Proof of English proficiency",
+          "Application form",
+          "Degree certificate"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "APS",
+          "Country-specific reminder"
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Application period 1 Oct 2025 – 31 Mar 2026",
+          "intake August 2026"
+        ],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Fees & Finances",
+          "tuition fees are payable upon acceptance of offer across 3 instalments throughout the academic year",
+          "Fee",
+          "fee: S$56,156",
+          "fees quoted are in Singapore Dollars and are inclusive of the prevailing Goods and Services Tax (GST) imposed under the Singapore GST Act"
+        ]
+      },
+      "evidence": {
+        "deadlines": [
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-integrated-circuit-design/",
+            "source_text": "Application period 1 Oct 2025 – 31 Mar 2026",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-integrated-circuit-design/",
+            "source_text": "intake August 2026",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ],
+        "academic_background": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "n the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English Proficiency – TOEFL or IELTS (Required for applicants whose native tongue or medium",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "Applicants for our Master programmes need not submit GRE or GATE results",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "high",
+            "review_note": "GRE interpreted as not_required."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "Applicants for our Master programmes need not submit GRE or GATE results",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "high",
+            "review_note": "GATE interpreted as not_required."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "GRE interpreted as mentioned_unclear."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "GATE interpreted as mentioned_unclear."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "th APPA) in your email for quicker assistance. Submit the Module Descriptions of all the modules you have taken in your Transcript , as found in your curriculum document or syllabus handbook (only applicable Submit 2 Recommendation Letters from 2 different Professors or Employers (only applicable for MSc in G",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Transcript keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "you have taken in your Transcript , as found in your curriculum document or syllabus handbook (only applicable Submit 2 Recommendation Letters from 2 different Professors or Employers (only applicable for MSc in Green Electronics, MSc in Integrated Circuit Design and MSc in Industrial Chemistry applications) You",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English Proficiency – TOEFL or IELTS (Required for applicants whose native tongue or medium of instruction from previous studies is not in English) Documents that are not in English must",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "greement Form to the Online Admission Portal . Email the following to TUM Asia: Notarised academic documents The signed application form Please note the following important points: Documents submitted to us will not be returned under any circumstances. To be considered for the MSc Scholarships, applicants must subm",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Application form keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "学位 概述 化学工程 电子与数据工程 硕士学位 概述 航空工程 绿色微纳电子 工业化学 集成电路设计 物流工程与管理 铁路与城市交通 可持续食品 博士研究 攻读博士学位 博士研究生 工业博士项目 终身教育 概述 文凭课程 Graduate Diploma Professional Certificates 搜寻课程 常见问题集 Competence Centre of Digitalisation, Technology & Innovation (CDTI) 招生部门 学士学位 硕士学位 申请流程 入学要求 为学习做准备 常见问题集 奖学金 联系招生团队 为何选择TUM Asia？ 探索TUM Asia",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Degree certificate keyword found."
+          }
+        ],
+        "international_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "for you. Submit 1 Statement of Purpose that indicates the reason(s) you are interested in the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of E",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "you. Submit 1 Statement of Purpose that indicates the reason(s) you are interested in the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "u.sg，并在邮件中注明您的姓名和申请编号，以便我们识别。 提交 1份个人陈述 ，说明您对所申请课程感兴趣的原因。 提交 1 份简历。 提交 1张护照尺寸照片。 提交 1份护照生物数据页复印件 （包含您个人信息的护照页）。 学术评估办公室（APS）证书 （所有持有中国、印度或越南学位的申请人都需提交APS证书。） APS China APS India APS Vietnam 英语能力证明——TOEFL或IELTS TOEFL要求： 最低88分 （TOEFL机构代码：German Institute of Science and Technology – TUM Asia (Singapore)，D",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "明您对所申请课程感兴趣的原因。 提交 1 份简历。 提交 1张护照尺寸照片。 提交 1份护照生物数据页复印件 （包含您个人信息的护照页）。 学术评估办公室（APS）证书 （所有持有中国、印度或越南学位的申请人都需提交APS证书。） APS China APS India APS Vietnam 英语能力证明——TOEFL或IELTS TOEFL要求： 最低88分 （TOEFL机构代码：German Institute of Science and Technology – TUM Asia (Singapore)，DI代码： 7368 ）。 IELTS要求：总分 最低6.5分 。 非英文文件必须在提交前",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "Pte Ltd PEI Reg. No. 200105229R | Registration Period 13.06.2023 to 12.06.2029 Privacy Policy",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Requirements",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-integrated-circuit-design/",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-integrated-circuit-design/",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-integrated-circuit-design/",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Manufacturers are confronted with special requirements of their production processes. Cycles, by-products, batches and campaigns are difficult to handle by nowa",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-integrated-circuit-design/",
+          "text": "This module covers different types of Intellectual Property (IP) and methods of protection. Students will acquire up-to-date knowledge about patents as a connecting link between science, research, and technical developments on the one hand, and Technopreneurship opportunities on the other hand. At first, fundamentals of international patent systems and patent data bases will be presented. Then, the elements of a patent application and the patent grant procedure are detailed. Finally, use cases such as IP-based company startups and the interaction between intellectual property and market needs are discussed. Global Internship Gain real-world experience through internships, where you can take an active role in securing opportunities at a company of your choice, anywhere in the world."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "TUM Asia",
+        "url": "https://tum-asia.edu.sg/",
+        "country": "Singapore",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_partner"
+      },
+      "program": {
+        "name": "Green Electronics",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://tum-asia.edu.sg/graduate-studies/master-green-electronics/",
+        "campus": "Campus Life",
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "PTE Academic",
+            "minimum_score": "13.06",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "GRE",
+            "requirement": "not_required",
+            "notes": "Applicants for our Master programmes need not submit GRE or GATE results"
+          },
+          {
+            "test": "GATE",
+            "requirement": "not_required",
+            "notes": "Applicants for our Master programmes need not submit GRE or GATE results"
+          },
+          {
+            "test": "GRE",
+            "requirement": "mentioned_unclear",
+            "notes": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。"
+          },
+          {
+            "test": "GATE",
+            "requirement": "mentioned_unclear",
+            "notes": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Transcript",
+          "Reference letter",
+          "Proof of English proficiency",
+          "Application form",
+          "Degree certificate"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "APS",
+          "Country-specific reminder"
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Application period 1 Oct 2025 – 15 May 2026 * Extended *",
+          "intake August 2026"
+        ],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Fees & Finances",
+          "tuition fees are payable upon acceptance of offer across 3 instalments throughout the academic year",
+          "Fee",
+          "fee: S$56,156",
+          "fees quoted are in Singapore Dollars and are inclusive of the prevailing Goods and Services Tax (GST) imposed under the Singapore GST Act"
+        ]
+      },
+      "evidence": {
+        "deadlines": [
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-green-electronics/",
+            "source_text": "Application period 1 Oct 2025 – 15 May 2026 * Extended *",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-green-electronics/",
+            "source_text": "intake August 2026",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ],
+        "academic_background": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "n the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English Proficiency – TOEFL or IELTS (Required for applicants whose native tongue or medium",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "Applicants for our Master programmes need not submit GRE or GATE results",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "high",
+            "review_note": "GRE interpreted as not_required."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "Applicants for our Master programmes need not submit GRE or GATE results",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "high",
+            "review_note": "GATE interpreted as not_required."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "GRE interpreted as mentioned_unclear."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "GATE interpreted as mentioned_unclear."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "th APPA) in your email for quicker assistance. Submit the Module Descriptions of all the modules you have taken in your Transcript , as found in your curriculum document or syllabus handbook (only applicable Submit 2 Recommendation Letters from 2 different Professors or Employers (only applicable for MSc in G",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Transcript keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "you have taken in your Transcript , as found in your curriculum document or syllabus handbook (only applicable Submit 2 Recommendation Letters from 2 different Professors or Employers (only applicable for MSc in Green Electronics, MSc in Integrated Circuit Design and MSc in Industrial Chemistry applications) You",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English Proficiency – TOEFL or IELTS (Required for applicants whose native tongue or medium of instruction from previous studies is not in English) Documents that are not in English must",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "greement Form to the Online Admission Portal . Email the following to TUM Asia: Notarised academic documents The signed application form Please note the following important points: Documents submitted to us will not be returned under any circumstances. To be considered for the MSc Scholarships, applicants must subm",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Application form keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "学位 概述 化学工程 电子与数据工程 硕士学位 概述 航空工程 绿色微纳电子 工业化学 集成电路设计 物流工程与管理 铁路与城市交通 可持续食品 博士研究 攻读博士学位 博士研究生 工业博士项目 终身教育 概述 文凭课程 Graduate Diploma Professional Certificates 搜寻课程 常见问题集 Competence Centre of Digitalisation, Technology & Innovation (CDTI) 招生部门 学士学位 硕士学位 申请流程 入学要求 为学习做准备 常见问题集 奖学金 联系招生团队 为何选择TUM Asia？ 探索TUM Asia",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Degree certificate keyword found."
+          }
+        ],
+        "international_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "for you. Submit 1 Statement of Purpose that indicates the reason(s) you are interested in the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of E",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "you. Submit 1 Statement of Purpose that indicates the reason(s) you are interested in the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "u.sg，并在邮件中注明您的姓名和申请编号，以便我们识别。 提交 1份个人陈述 ，说明您对所申请课程感兴趣的原因。 提交 1 份简历。 提交 1张护照尺寸照片。 提交 1份护照生物数据页复印件 （包含您个人信息的护照页）。 学术评估办公室（APS）证书 （所有持有中国、印度或越南学位的申请人都需提交APS证书。） APS China APS India APS Vietnam 英语能力证明——TOEFL或IELTS TOEFL要求： 最低88分 （TOEFL机构代码：German Institute of Science and Technology – TUM Asia (Singapore)，D",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "明您对所申请课程感兴趣的原因。 提交 1 份简历。 提交 1张护照尺寸照片。 提交 1份护照生物数据页复印件 （包含您个人信息的护照页）。 学术评估办公室（APS）证书 （所有持有中国、印度或越南学位的申请人都需提交APS证书。） APS China APS India APS Vietnam 英语能力证明——TOEFL或IELTS TOEFL要求： 最低88分 （TOEFL机构代码：German Institute of Science and Technology – TUM Asia (Singapore)，DI代码： 7368 ）。 IELTS要求：总分 最低6.5分 。 非英文文件必须在提交前",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "Pte Ltd PEI Reg. No. 200105229R | Registration Period 13.06.2023 to 12.06.2029 Privacy Policy",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Requirements",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-green-electronics/",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-green-electronics/",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-green-electronics/",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Manufacturers face unique challenges in their production processes. Cycles, by-products, batches, and campaigns are difficult to manage with current ERP (Enterp",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-green-electronics/",
+          "text": "Part A: Overview Part B: Industries – Chemical, Plastics and PVC Part C: The World of PVC Part D: Production Planning – Introduction Part E: Production Planning Process Part F: Procurement Process Part G: SAP & Enterprise Resource Planning Part H: Simulation Theory and Simulation Models Global Internship Gain real-world experience through internships, where you can take an active role in securing opportunities at a company of your choice, anywhere in the world. The internship programme is one of the hallmarks of all our master’s programmes designed to provide structured and supervised work experiences. Students complete a three-month internship with the industry or an academic institution of choice related to his or her field of study at TUM Asia. Internship can be completed anywhere in the world."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "TUM Asia",
+        "url": "https://tum-asia.edu.sg/",
+        "country": "Singapore",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_partner"
+      },
+      "program": {
+        "name": "Logistics Engineering and Management",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://tum-asia.edu.sg/graduate-studies/master-logistics-engineering-and-management/",
+        "campus": "Campus Life",
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "PTE Academic",
+            "minimum_score": "13.06",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "GRE",
+            "requirement": "not_required",
+            "notes": "Applicants for our Master programmes need not submit GRE or GATE results"
+          },
+          {
+            "test": "GATE",
+            "requirement": "not_required",
+            "notes": "Applicants for our Master programmes need not submit GRE or GATE results"
+          },
+          {
+            "test": "GRE",
+            "requirement": "mentioned_unclear",
+            "notes": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。"
+          },
+          {
+            "test": "GATE",
+            "requirement": "mentioned_unclear",
+            "notes": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Transcript",
+          "Reference letter",
+          "Proof of English proficiency",
+          "Application form",
+          "Degree certificate"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "APS",
+          "Country-specific reminder"
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Application period 1 Oct 2025 – 10 Jun 2026 * Extended *",
+          "intake August 2026"
+        ],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Fees & Finances",
+          "tuition fees are payable upon acceptance of offer across 3 instalments throughout the academic year",
+          "Fee",
+          "fee: S$37,387* (inclusive 9% GST)",
+          "fees quoted are in Singapore Dollars and are inclusive of the prevailing Goods and Services Tax (GST) imposed under the Singapore GST Act"
+        ]
+      },
+      "evidence": {
+        "deadlines": [
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-logistics-engineering-and-management/",
+            "source_text": "Application period 1 Oct 2025 – 10 Jun 2026 * Extended *",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-logistics-engineering-and-management/",
+            "source_text": "intake August 2026",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ],
+        "academic_background": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "n the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English Proficiency – TOEFL or IELTS (Required for applicants whose native tongue or medium",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "Applicants for our Master programmes need not submit GRE or GATE results",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "high",
+            "review_note": "GRE interpreted as not_required."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "Applicants for our Master programmes need not submit GRE or GATE results",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "high",
+            "review_note": "GATE interpreted as not_required."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "GRE interpreted as mentioned_unclear."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "GATE interpreted as mentioned_unclear."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "th APPA) in your email for quicker assistance. Submit the Module Descriptions of all the modules you have taken in your Transcript , as found in your curriculum document or syllabus handbook (only applicable Submit 2 Recommendation Letters from 2 different Professors or Employers (only applicable for MSc in G",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Transcript keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "you have taken in your Transcript , as found in your curriculum document or syllabus handbook (only applicable Submit 2 Recommendation Letters from 2 different Professors or Employers (only applicable for MSc in Green Electronics, MSc in Integrated Circuit Design and MSc in Industrial Chemistry applications) You",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English Proficiency – TOEFL or IELTS (Required for applicants whose native tongue or medium of instruction from previous studies is not in English) Documents that are not in English must",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "greement Form to the Online Admission Portal . Email the following to TUM Asia: Notarised academic documents The signed application form Please note the following important points: Documents submitted to us will not be returned under any circumstances. To be considered for the MSc Scholarships, applicants must subm",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Application form keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "学位 概述 化学工程 电子与数据工程 硕士学位 概述 航空工程 绿色微纳电子 工业化学 集成电路设计 物流工程与管理 铁路与城市交通 可持续食品 博士研究 攻读博士学位 博士研究生 工业博士项目 终身教育 概述 文凭课程 Graduate Diploma Professional Certificates 搜寻课程 常见问题集 Competence Centre of Digitalisation, Technology & Innovation (CDTI) 招生部门 学士学位 硕士学位 申请流程 入学要求 为学习做准备 常见问题集 奖学金 联系招生团队 为何选择TUM Asia？ 探索TUM Asia",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Degree certificate keyword found."
+          }
+        ],
+        "international_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "for you. Submit 1 Statement of Purpose that indicates the reason(s) you are interested in the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of E",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "you. Submit 1 Statement of Purpose that indicates the reason(s) you are interested in the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "u.sg，并在邮件中注明您的姓名和申请编号，以便我们识别。 提交 1份个人陈述 ，说明您对所申请课程感兴趣的原因。 提交 1 份简历。 提交 1张护照尺寸照片。 提交 1份护照生物数据页复印件 （包含您个人信息的护照页）。 学术评估办公室（APS）证书 （所有持有中国、印度或越南学位的申请人都需提交APS证书。） APS China APS India APS Vietnam 英语能力证明——TOEFL或IELTS TOEFL要求： 最低88分 （TOEFL机构代码：German Institute of Science and Technology – TUM Asia (Singapore)，D",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "明您对所申请课程感兴趣的原因。 提交 1 份简历。 提交 1张护照尺寸照片。 提交 1份护照生物数据页复印件 （包含您个人信息的护照页）。 学术评估办公室（APS）证书 （所有持有中国、印度或越南学位的申请人都需提交APS证书。） APS China APS India APS Vietnam 英语能力证明——TOEFL或IELTS TOEFL要求： 最低88分 （TOEFL机构代码：German Institute of Science and Technology – TUM Asia (Singapore)，DI代码： 7368 ）。 IELTS要求：总分 最低6.5分 。 非英文文件必须在提交前",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "Pte Ltd PEI Reg. No. 200105229R | Registration Period 13.06.2023 to 12.06.2029 Privacy Policy",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Requirements",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-logistics-engineering-and-management/",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-logistics-engineering-and-management/",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-logistics-engineering-and-management/",
+          "text": "Preparing for Your Studies FAQ"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "TUM Asia",
+        "url": "https://tum-asia.edu.sg/",
+        "country": "Singapore",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_partner"
+      },
+      "program": {
+        "name": "Sustainable Food",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://tum-asia.edu.sg/graduate-studies/master-sustainable-food/",
+        "campus": "Campus Life",
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "PTE Academic",
+            "minimum_score": "13.06",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "GRE",
+            "requirement": "not_required",
+            "notes": "Applicants for our Master programmes need not submit GRE or GATE results"
+          },
+          {
+            "test": "GATE",
+            "requirement": "not_required",
+            "notes": "Applicants for our Master programmes need not submit GRE or GATE results"
+          },
+          {
+            "test": "GRE",
+            "requirement": "mentioned_unclear",
+            "notes": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。"
+          },
+          {
+            "test": "GATE",
+            "requirement": "mentioned_unclear",
+            "notes": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Transcript",
+          "Reference letter",
+          "Proof of English proficiency",
+          "Application form",
+          "Degree certificate"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "APS",
+          "Country-specific reminder"
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Application period 1 Oct 2025 – 10 Jun 2026 * Extended *",
+          "intake August 2026"
+        ],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Fees & Finances",
+          "tuition fees are payable upon acceptance of offer across 3 instalments throughout the academic year",
+          "Fee",
+          "fee: S$38,695* (inclusive 9% GST)",
+          "fees quoted are in Singapore Dollars and are inclusive of the prevailing Goods and Services Tax (GST) imposed under the Singapore GST Act"
+        ]
+      },
+      "evidence": {
+        "deadlines": [
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-sustainable-food/",
+            "source_text": "Application period 1 Oct 2025 – 10 Jun 2026 * Extended *",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/graduate-studies/master-sustainable-food/",
+            "source_text": "intake August 2026",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Deadline keyword extraction."
+          }
+        ],
+        "academic_background": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "n the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English Proficiency – TOEFL or IELTS (Required for applicants whose native tongue or medium",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "Applicants for our Master programmes need not submit GRE or GATE results",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "high",
+            "review_note": "GRE interpreted as not_required."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "Applicants for our Master programmes need not submit GRE or GATE results",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "high",
+            "review_note": "GATE interpreted as not_required."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "GRE interpreted as mentioned_unclear."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "申请我们的硕士课程无需提交GRE或GATE成绩。如果您的学士学位授课语言为英语，则无需提交TOEFL或IELTS成绩。",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "GATE interpreted as mentioned_unclear."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "th APPA) in your email for quicker assistance. Submit the Module Descriptions of all the modules you have taken in your Transcript , as found in your curriculum document or syllabus handbook (only applicable Submit 2 Recommendation Letters from 2 different Professors or Employers (only applicable for MSc in G",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Transcript keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "you have taken in your Transcript , as found in your curriculum document or syllabus handbook (only applicable Submit 2 Recommendation Letters from 2 different Professors or Employers (only applicable for MSc in Green Electronics, MSc in Integrated Circuit Design and MSc in Industrial Chemistry applications) You",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Reference letter keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English Proficiency – TOEFL or IELTS (Required for applicants whose native tongue or medium of instruction from previous studies is not in English) Documents that are not in English must",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "greement Form to the Online Admission Portal . Email the following to TUM Asia: Notarised academic documents The signed application form Please note the following important points: Documents submitted to us will not be returned under any circumstances. To be considered for the MSc Scholarships, applicants must subm",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Application form keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "学位 概述 化学工程 电子与数据工程 硕士学位 概述 航空工程 绿色微纳电子 工业化学 集成电路设计 物流工程与管理 铁路与城市交通 可持续食品 博士研究 攻读博士学位 博士研究生 工业博士项目 终身教育 概述 文凭课程 Graduate Diploma Professional Certificates 搜寻课程 常见问题集 Competence Centre of Digitalisation, Technology & Innovation (CDTI) 招生部门 学士学位 硕士学位 申请流程 入学要求 为学习做准备 常见问题集 奖学金 联系招生团队 为何选择TUM Asia？ 探索TUM Asia",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Degree certificate keyword found."
+          }
+        ],
+        "international_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "for you. Submit 1 Statement of Purpose that indicates the reason(s) you are interested in the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of E",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+            "source_text": "you. Submit 1 Statement of Purpose that indicates the reason(s) you are interested in the programme you applied for APS India (For Indian applicants, please refer to our FAQ page under Admissions (Master Degree) – Questions on Admission Requirements (Master Programmes) – Q4 f APS Vietnam Proof of English",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "u.sg，并在邮件中注明您的姓名和申请编号，以便我们识别。 提交 1份个人陈述 ，说明您对所申请课程感兴趣的原因。 提交 1 份简历。 提交 1张护照尺寸照片。 提交 1份护照生物数据页复印件 （包含您个人信息的护照页）。 学术评估办公室（APS）证书 （所有持有中国、印度或越南学位的申请人都需提交APS证书。） APS China APS India APS Vietnam 英语能力证明——TOEFL或IELTS TOEFL要求： 最低88分 （TOEFL机构代码：German Institute of Science and Technology – TUM Asia (Singapore)，D",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "APS keyword found."
+          },
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "明您对所申请课程感兴趣的原因。 提交 1 份简历。 提交 1张护照尺寸照片。 提交 1份护照生物数据页复印件 （包含您个人信息的护照页）。 学术评估办公室（APS）证书 （所有持有中国、印度或越南学位的申请人都需提交APS证书。） APS China APS India APS Vietnam 英语能力证明——TOEFL或IELTS TOEFL要求： 最低88分 （TOEFL机构代码：German Institute of Science and Technology – TUM Asia (Singapore)，DI代码： 7368 ）。 IELTS要求：总分 最低6.5分 。 非英文文件必须在提交前",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "medium",
+            "review_note": "Country-specific reminder keyword found."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://tum-asia.edu.sg/cn/admissions/graduate-studies/application/",
+            "source_text": "Pte Ltd PEI Reg. No. 200105229R | Registration Period 13.06.2023 to 12.06.2029 Privacy Policy",
+            "retrieved_at": "2026-05-18T11:10:39.643008+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Requirements",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-sustainable-food/",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-sustainable-food/",
+          "text": "Preparing for Your Studies FAQ"
+        },
+        {
+          "heading": "Requirements",
+          "source_url": "https://tum-asia.edu.sg/graduate-studies/master-sustainable-food/",
+          "text": "Preparing for Your Studies FAQ"
+        }
+      ],
+      "needs_human_review": false
+    }
+  ],
+  "skipped": [],
+  "review_seed_config": {
+    "seed_urls": [
+      "https://tum-asia.edu.sg/graduate-studies/",
+      "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+      "https://tum-asia.edu.sg/admissions/graduate-studies/requirements/",
+      "https://tum-asia.edu.sg/graduate-studies/master-aerospace-engineering/",
+      "https://tum-asia.edu.sg/graduate-studies/master-industrial-chemistry/",
+      "https://tum-asia.edu.sg/graduate-studies/master-rail-and-urban-transport/",
+      "https://tum-asia.edu.sg/graduate-studies/master-integrated-circuit-design/",
+      "https://tum-asia.edu.sg/graduate-studies/master-green-electronics/"
+    ],
+    "review_notes": [
+      "Likely MSc programme pattern is /graduate-studies/master-{program-slug}/.",
+      "Undergraduate admissions may route through SIT, so keep graduate and undergraduate review separate."
+    ],
+    "crawl_cautions": [
+      "Verify robots before crawling PDFs/pages.",
+      "Skip application forms and PDF scraping in this POC."
+    ]
+  }
+}

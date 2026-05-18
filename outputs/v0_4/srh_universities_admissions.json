@@ -1,0 +1,1541 @@
+{
+  "schema_version": "0.3",
+  "school": {
+    "name": "SRH Universities",
+    "url": "https://www.srh-university.de/en/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university_group",
+    "source_official_url": "https://www.srh-universities.de/en/"
+  },
+  "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+  "crawler_policy": {
+    "respects_robots_txt": true,
+    "same_host_only": true,
+    "max_pages": 30,
+    "delay_seconds": 0.2,
+    "timeout_seconds": 12.0,
+    "user_agent": "study-admissions-poc/0.1 (+https://www.gut-haode.com/ partner-school research)",
+    "no_login_captcha_paywall_bypass": true,
+    "robots_url": "https://www.srh-university.de/robots.txt",
+    "robots_status": "available",
+    "robots_error": null,
+    "sitemaps_discovered": [
+      "https://www.srh-university.de/sitemap.xml",
+      "https://www.srh-university.de/en/sitemap.xml"
+    ]
+  },
+  "crawl_summary": {
+    "pages_fetched": 30,
+    "pages_skipped": 3,
+    "programs_extracted": 12,
+    "programs_needing_human_review": 0,
+    "shared_requirement_pages": 1
+  },
+  "programs": [
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Bachelor Applied Artificial Intelligence studieren| SRH Heidelberg",
+        "degree": "Bachelor",
+        "level": "bachelor",
+        "url": "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/",
+        "campus": null,
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": "Bachelor Applied Artificial Intelligence studieren",
+        "specialization": "SRH Heidelberg"
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.5",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "80",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": []
+          },
+          {
+            "test": "Duolingo",
+            "minimum_score": "95",
+            "component_scores": [],
+            "validity": "2 years",
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Personal interview",
+            "requirement": "mentioned_unclear",
+            "notes": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "Online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "tuition fees",
+          "Tuition fees",
+          "fee remains the same throughout your entire period of study",
+          "fee of €750 (EU/EEA) or €1,000 (non-EU/EEA) is charged",
+          "fees or similar charges are levied, not even for repeat examinations"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/",
+            "source_text": "ime via our online portal without obligation. We will then review your application documents. To apply for a bachelor's degree programme, you need: Recognised university entrance qualification, e.g. the German Abitur, Fachhochschulreife or an equivalent international qualification that entitles you to stu",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "language_requirements": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/",
+            "source_text": "IELTS with 6.5 or",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/",
+            "source_text": "TOEFL with at least 80 points,",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          },
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/",
+            "source_text": "Duolingo with 95 points) or an official letter from your previous educational institution confirming that your lessons were cond",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "high",
+            "review_note": "Direct language-test score extraction."
+          }
+        ],
+        "application_channel": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/",
+            "source_text": "ements We look forward to welcoming you to SRH University. Here is what our application process looks like: Submit your online application via the SRH application portal If admission requirements are met, you will receive an invitation for the admissions interview* After a successful interview, you will receive an ac",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Application channel keyword found."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.srh-university.de/en/you-want-to-study/applications-and-admissions/",
+            "source_text": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Personal interview interpreted as mentioned_unclear."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "You can apply at any time via our online portal without obligation. We will then review your application documents.",
+          "source_url": "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/",
+          "text": "To apply for a bachelor's degree programme, you need: Recognised university entrance qualification, e.g. the German Abitur, Fachhochschulreife or an equivalent international qualification that entitles you to study at a university in Germany* Proof of your English language skills* (TOEFL with at least 80 points, IELTS with 6.5 or Duolingo with 95 points) or an official letter from your previous educational institution confirming that your lessons were conducted in English (Medium of Instruction Letter)"
+        },
+        {
+          "heading": "*Professionally qualified individuals without university entrance qualifications who have at least two years of vocational training and at least three years of ",
+          "source_url": "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/",
+          "text": "We look forward to welcoming you to SRH University. Here is what our application process looks like: Submit your online application via the SRH application portal"
+        },
+        {
+          "heading": "If admission requirements are met, you will receive an invitation for the admissions interview*",
+          "source_url": "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/",
+          "text": "After a successful interview, you will receive an acceptance letter and the study contract Read thoroughly, sign and upload your study contract to your application account"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Master's degree programmes in Supply Chain Management (M.Sc.)",
+        "degree": "MSc",
+        "level": "master",
+        "url": "https://www.srh-university.de/en/master/supply-chain-management-english/g/",
+        "campus": "campus, we are also happy to offer an online appointment",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "G"
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": 180,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Found 180 ECTS requirement."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [
+          {
+            "test": "Personal interview",
+            "requirement": "mentioned_unclear",
+            "notes": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "Online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "tuition fees",
+          "fees go towards equipping our campuses, providing services for our students, and ensuring quality assurance",
+          "tuition fees remain the same for the entire duration of the study programme",
+          "fee of €750 (EU/EEA) or €1000 (non-EU/EEA) is to be paid once",
+          "fees or similar are charged, not even for repeat examinations, so you have maximum cost transparency during your studies"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.srh-university.de/en/master/supply-chain-management-english/g/",
+            "source_text": "180 ECTS",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "high",
+            "review_note": "Direct ECTS extraction."
+          },
+          {
+            "source_url": "https://www.srh-university.de/en/master/supply-chain-management-english/g/",
+            "source_text": "an apply anytime via our online portal . After receiving your documents, we will review them. To apply for the Master's degree programme in Supply Chain Management in Berlin, Hamburg, Cologne or Hamm, you will need: For admission to the Master's programme you need: A Bachelor's degree with 180 ECTS Genera",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "application_channel": [
+          {
+            "source_url": "https://www.srh-university.de/en/master/supply-chain-management-english/g/",
+            "source_text": "tment. We look forward to welcoming you to SRH University. This is what our application process looks like: Submit your online application via the SRH application portal If admission requirements are met, you will receive an invitation for the admissions interview* After a successful interview, you will receive an ac",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Application channel keyword found."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.srh-university.de/en/you-want-to-study/applications-and-admissions/",
+            "source_text": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Personal interview interpreted as mentioned_unclear."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "You can apply anytime via our online portal . After receiving your documents, we will review them.",
+          "source_url": "https://www.srh-university.de/en/master/supply-chain-management-english/g/",
+          "text": "To apply for the Master's degree programme in Supply Chain Management in Berlin, Hamburg, Cologne or Hamm, you will need: For admission to the Master's programme you need: A Bachelor's degree with 180 ECTS General higher education entrance qualification (Abitur) or entrance qualification for universities of applied sciences"
+        },
+        {
+          "heading": "If your documents are approved, we will invite you to a personal admissions interview. Here we want to find out more about your programme-specific knowledge, cr",
+          "source_url": "https://www.srh-university.de/en/master/supply-chain-management-english/g/",
+          "text": "We look forward to welcoming you to SRH University. This is what our application process looks like: Submit your online application via the SRH application portal"
+        },
+        {
+          "heading": "If admission requirements are met, you will receive an invitation for the admissions interview*",
+          "source_url": "https://www.srh-university.de/en/master/supply-chain-management-english/g/",
+          "text": "After a successful interview, you will receive an acceptance letter and the study contract Read thoroughly, sign and upload your study contract to your application account"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Study Bachelor International Business Administration",
+        "degree": "Bachelor",
+        "level": "bachelor",
+        "url": "https://www.srh-university.de/en/bachelor/international-business-administration/b/",
+        "campus": "Campus Berlin",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business studies",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [
+          {
+            "test": "Personal interview",
+            "requirement": "mentioned_unclear",
+            "notes": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "Online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "tuition fees",
+          "tuition fee (per month/per semester) remains the same for the entire period of study",
+          "fee of € 750 (EU/EEA) / € 1,000 (non-EU/EEA) is charged",
+          "fee within the guarantee period",
+          "tuition fees as per your study contract"
+        ]
+      },
+      "evidence": {
+        "documents": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/international-business-administration/b/",
+            "source_text": "lification or technical college entrance qualification Alternatively, a vocational qualification may also grant access* Proof of English language proficiency* * Professionally qualified individuals without university entrance qualifications who have completed at least two years of vocational training and have at le",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ],
+        "application_channel": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/international-business-administration/b/",
+            "source_text": "ements We look forward to welcoming you to SRH University. This is what our application process looks like: Submit your online application via the SRH application portal If admission requirements are met, you will receive an invitation for the admissions interview* After a successful interview, you will receive an ac",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Application channel keyword found."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.srh-university.de/en/you-want-to-study/applications-and-admissions/",
+            "source_text": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Personal interview interpreted as mentioned_unclear."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "You can apply at any time via our Online-Portal . After receiving your documents, we will review them.",
+          "source_url": "https://www.srh-university.de/en/bachelor/international-business-administration/b/",
+          "text": "To apply for the International Business Administration , you will need to provide: General higher education entrance qualification or technical college entrance qualification Alternatively, a vocational qualification may also grant access* Proof of English language proficiency*"
+        },
+        {
+          "heading": "* Professionally qualified individuals without university entrance qualifications who have completed at least two years of vocational training and have at least",
+          "source_url": "https://www.srh-university.de/en/bachelor/international-business-administration/b/",
+          "text": "We look forward to welcoming you to SRH University. This is what our application process looks like: Submit your online application via the SRH application portal"
+        },
+        {
+          "heading": "If admission requirements are met, you will receive an invitation for the admissions interview*",
+          "source_url": "https://www.srh-university.de/en/bachelor/international-business-administration/b/",
+          "text": "After a successful interview, you will receive an acceptance letter and the study contract Read thoroughly, sign and upload your study contract to your application account"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Applied Data Science and Artificial Intelligence Master",
+        "degree": "MSc",
+        "level": "master",
+        "url": "https://www.srh-university.de/en/master/applied-data-science-and-artificial-intelligence/i/",
+        "campus": "Campus-specific)",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "I"
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "mathematics",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [
+          {
+            "test": "Personal interview",
+            "requirement": "mentioned_unclear",
+            "notes": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "Online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "tuition fees",
+          "fees go towards equipping our campuses, providing services for our students, and ensuring quality assurance",
+          "Tuition fees Hamburg",
+          "Tuition fees Heidelberg",
+          "Tuition fees Munich"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.srh-university.de/en/master/applied-data-science-and-artificial-intelligence/i/",
+            "source_text": "ply for the Master's programme in Applied Data Science and Artificial Intelligence, you will need to provide Bachelor's degree in Computer Science, Data Science, Information Technology, Artificial Intelligence, Data Analysis, Mathematics, Business Informatics If you have not graduated yet, apply with exis",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "subject_prerequisites": [
+          {
+            "source_url": "https://www.srh-university.de/en/master/applied-data-science-and-artificial-intelligence/i/",
+            "source_text": "de Bachelor's degree in Computer Science, Data Science, Information Technology, Artificial Intelligence, Data Analysis, Mathematics, Business Informatics If you have not graduated yet, apply with existing transcripts. Proof of English language proficiency* More information about the admission requirements We l",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Subject prerequisite keyword found."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.srh-university.de/en/master/applied-data-science-and-artificial-intelligence/i/",
+            "source_text": "gence, Data Analysis, Mathematics, Business Informatics If you have not graduated yet, apply with existing transcripts. Proof of English language proficiency* More information about the admission requirements We look forward to welcoming you to SRH University. This is what our application process looks like: Submit",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ],
+        "application_channel": [
+          {
+            "source_url": "https://www.srh-university.de/en/master/applied-data-science-and-artificial-intelligence/i/",
+            "source_text": "ements We look forward to welcoming you to SRH University. This is what our application process looks like: Submit your online application via the SRH application portal If admission requirements are met, you will receive an invitation for the admissions interview* After a successful interview, you will receive an ac",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Application channel keyword found."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.srh-university.de/en/you-want-to-study/applications-and-admissions/",
+            "source_text": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Personal interview interpreted as mentioned_unclear."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "You can apply anytime via our online portal . After receiving your documents, we will review them.",
+          "source_url": "https://www.srh-university.de/en/master/applied-data-science-and-artificial-intelligence/i/",
+          "text": "To apply for the Master's programme in Applied Data Science and Artificial Intelligence, you will need to provide Bachelor's degree in Computer Science, Data Science, Information Technology, Artificial Intelligence, Data Analysis, Mathematics, Business Informatics If you have not graduated yet, apply with existing transcripts. Proof of English language proficiency*"
+        },
+        {
+          "heading": "More information about the admission requirements",
+          "source_url": "https://www.srh-university.de/en/master/applied-data-science-and-artificial-intelligence/i/",
+          "text": "We look forward to welcoming you to SRH University. This is what our application process looks like: Submit your online application via the SRH application portal"
+        },
+        {
+          "heading": "If admission requirements are met, you will receive an invitation for the admissions interview*",
+          "source_url": "https://www.srh-university.de/en/master/applied-data-science-and-artificial-intelligence/i/",
+          "text": "After a successful interview, you will receive an acceptance letter and the study contract Read thoroughly, sign and upload your study contract to your application account"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Applied Mechatronic Systems Bachelor's programme (B.Eng.)",
+        "degree": "Bachelor",
+        "level": "bachelor",
+        "url": "https://www.srh-university.de/en/bachelor/applied-mechatronic-systems/e/",
+        "campus": null,
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [
+          {
+            "test": "Personal interview",
+            "requirement": "mentioned_unclear",
+            "notes": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "Online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "tuition fees",
+          "Tuition fees Berlin",
+          "Tuition fees Heidelberg",
+          "Tuition fees Leipzig",
+          "Tuition fees Munich"
+        ]
+      },
+      "evidence": {
+        "documents": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/applied-mechatronic-systems/e/",
+            "source_text": "university of applied sciences entrance qualification. If you have not graduated yet, apply with existing transcripts. Proof of English* More information about the admission requirements We look forward to welcoming you to SRH University. This is what our application process looks like: Submit your online applicat",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ],
+        "application_channel": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/applied-mechatronic-systems/e/",
+            "source_text": "ements We look forward to welcoming you to SRH University. This is what our application process looks like: Submit your online application via the SRH application portal If admission requirements are met, you will receive an invitation for the admissions interview* After a successful interview, you will receive an ac",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Application channel keyword found."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.srh-university.de/en/you-want-to-study/applications-and-admissions/",
+            "source_text": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Personal interview interpreted as mentioned_unclear."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "You can apply at any time via our online portal . After receiving your documents, we will review them.",
+          "source_url": "https://www.srh-university.de/en/bachelor/applied-mechatronic-systems/e/",
+          "text": "To apply for the Bachelor's programme in Applied Mechatronic Systems , you will need to provide General higher education or university of applied sciences entrance qualification. If you have not graduated yet, apply with existing transcripts. Proof of English*"
+        },
+        {
+          "heading": "More information about the admission requirements",
+          "source_url": "https://www.srh-university.de/en/bachelor/applied-mechatronic-systems/e/",
+          "text": "We look forward to welcoming you to SRH University. This is what our application process looks like: Submit your online application via the SRH application portal"
+        },
+        {
+          "heading": "If admission requirements are met, you will receive an invitation for the admissions interview*",
+          "source_url": "https://www.srh-university.de/en/bachelor/applied-mechatronic-systems/e/",
+          "text": "After a successful interview, you will receive an acceptance letter and the study contract Read thoroughly, sign and upload your study contract to your application account"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Artificial Intelligence Master (M.Eng.)",
+        "degree": "MSc",
+        "level": "master",
+        "url": "https://www.srh-university.de/en/master/bls/information-technology-artificial-intelligence/",
+        "campus": null,
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Information Technology Artificial Intelligence"
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [
+          {
+            "test": "Personal interview",
+            "requirement": "mentioned_unclear",
+            "notes": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "Online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "tuition fees",
+          "fees go towards equipping our campuses, providing services for our students, and ensuring quality assurance",
+          "Tuition fees",
+          "tuition fees remain the same for the entire duration of the study programme",
+          "fee of €750 (EU/EEA) or €1000 (non-EU/EEA) is to be paid once"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.srh-university.de/en/master/bls/information-technology-artificial-intelligence/",
+            "source_text": "ly for the Master’s programme in Information Technology - Artificial Intelligence , you will need to provide Bachelor's degree in electrical engineering, information technology, communication technology or a similar subject Proof of English language proficiency* More Information about the admission requir",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.srh-university.de/en/master/bls/information-technology-artificial-intelligence/",
+            "source_text": "vide Bachelor's degree in electrical engineering, information technology, communication technology or a similar subject Proof of English language proficiency* More Information about the admission requirements We look forward to welcoming you to SRH University. This is what our application process looks like: Submit",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ],
+        "application_channel": [
+          {
+            "source_url": "https://www.srh-university.de/en/master/bls/information-technology-artificial-intelligence/",
+            "source_text": "ements We look forward to welcoming you to SRH University. This is what our application process looks like: Submit your online application via the SRH application portal If admission requirements are met, you will receive an invitation for the admissions interview* After a successful interview, you will receive an ac",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Application channel keyword found."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.srh-university.de/en/you-want-to-study/applications-and-admissions/",
+            "source_text": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Personal interview interpreted as mentioned_unclear."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "You can apply anytime via our online portal . After receiving your documents, we will review them.",
+          "source_url": "https://www.srh-university.de/en/master/bls/information-technology-artificial-intelligence/",
+          "text": "To apply for the Master’s programme in Information Technology - Artificial Intelligence , you will need to provide Bachelor's degree in electrical engineering, information technology, communication technology or a similar subject Proof of English language proficiency*"
+        },
+        {
+          "heading": "More Information about the admission requirements",
+          "source_url": "https://www.srh-university.de/en/master/bls/information-technology-artificial-intelligence/",
+          "text": "We look forward to welcoming you to SRH University. This is what our application process looks like: Submit your online application via the SRH application portal"
+        },
+        {
+          "heading": "If admission requirements are met, you will receive an invitation for the admissions interview*",
+          "source_url": "https://www.srh-university.de/en/master/bls/information-technology-artificial-intelligence/",
+          "text": "After a successful interview, you will receive an acceptance letter and the study contract Read thoroughly, sign and upload your study contract to your application account"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Master in Big Data & Artificial Intelligence (M.Sc)",
+        "degree": "MSc",
+        "level": "master",
+        "url": "https://www.srh-university.de/en/master/computer-science-big-data-artificial-intelligence/i/",
+        "campus": null,
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "I"
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [
+          {
+            "test": "Personal interview",
+            "requirement": "mentioned_unclear",
+            "notes": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Motivation letter",
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "Online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "tuition fees",
+          "fees go towards equipping our campuses, providing services for our students, and ensuring quality assurance",
+          "Tuition fees Berlin",
+          "Tuition fees Leipzig",
+          "tuition fees remain the same for the entire duration of the study programme"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.srh-university.de/en/master/computer-science-big-data-artificial-intelligence/i/",
+            "source_text": "the Master's programme in Computer Science - Big Data and Artificial Intelligence , you will need to provide Bachelor's degree in Computer Science , Information Systems or a similar area of studies Letter of motivation Proof of English language proficiency* More information about the admission requirement",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.srh-university.de/en/master/computer-science-big-data-artificial-intelligence/i/",
+            "source_text": "nce , you will need to provide Bachelor's degree in Computer Science , Information Systems or a similar area of studies Letter of motivation Proof of English language proficiency* More information about the admission requirements We look forward to welcoming you to SRH University. This is what our application process l",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Motivation letter keyword found."
+          },
+          {
+            "source_url": "https://www.srh-university.de/en/master/computer-science-big-data-artificial-intelligence/i/",
+            "source_text": "o provide Bachelor's degree in Computer Science , Information Systems or a similar area of studies Letter of motivation Proof of English language proficiency* More information about the admission requirements We look forward to welcoming you to SRH University. This is what our application process looks like: Submit",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ],
+        "application_channel": [
+          {
+            "source_url": "https://www.srh-university.de/en/master/computer-science-big-data-artificial-intelligence/i/",
+            "source_text": "ements We look forward to welcoming you to SRH University. This is what our application process looks like: Submit your online application via the SRH application portal If admission requirements are met, you will receive an invitation for the admissions interview* After a successful interview, you will receive an ac",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Application channel keyword found."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.srh-university.de/en/you-want-to-study/applications-and-admissions/",
+            "source_text": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Personal interview interpreted as mentioned_unclear."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "You can apply anytime via our online portal . After receiving your documents, we will review them.",
+          "source_url": "https://www.srh-university.de/en/master/computer-science-big-data-artificial-intelligence/i/",
+          "text": "To apply for the Master's programme in Computer Science - Big Data and Artificial Intelligence , you will need to provide Bachelor's degree in Computer Science , Information Systems or a similar area of studies Letter of motivation Proof of English language proficiency*"
+        },
+        {
+          "heading": "More information about the admission requirements",
+          "source_url": "https://www.srh-university.de/en/master/computer-science-big-data-artificial-intelligence/i/",
+          "text": "We look forward to welcoming you to SRH University. This is what our application process looks like: Submit your online application via the SRH application portal"
+        },
+        {
+          "heading": "If admission requirements are met, you will receive an invitation for the admissions interview*",
+          "source_url": "https://www.srh-university.de/en/master/computer-science-big-data-artificial-intelligence/i/",
+          "text": "After a successful interview, you will receive an acceptance letter and the study contract Read thoroughly, sign and upload your study contract to your application account"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Business Engineering Bachelor",
+        "degree": "Bachelor",
+        "level": "bachelor",
+        "url": "https://www.srh-university.de/en/bachelor/business-engineering/e/",
+        "campus": null,
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [
+          {
+            "test": "Personal interview",
+            "requirement": "mentioned_unclear",
+            "notes": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "Online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "tuition fees",
+          "fees go towards equipping our campuses, providing services for our students, and ensuring quality assurance",
+          "Tuition fees",
+          "tuition fees remain the same for the entire duration of the study programme",
+          "fee of €750 (EU/EEA) or €1000 (non-EU/EEA) is to be paid once"
+        ]
+      },
+      "evidence": {
+        "documents": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/business-engineering/e/",
+            "source_text": "university of applied sciences entrance qualification. If you have not graduated yet, apply with existing transcripts. Proof of English* More information about the admission requirements We look forward to welcoming you to SRH University. This is what our application process looks like: Submit your online applicat",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ],
+        "application_channel": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/business-engineering/e/",
+            "source_text": "ements We look forward to welcoming you to SRH University. This is what our application process looks like: Submit your online application via the SRH application portal If admission requirements are met, you will receive an invitation for the admissions interview* After a successful interview, you will receive an ac",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Application channel keyword found."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.srh-university.de/en/you-want-to-study/applications-and-admissions/",
+            "source_text": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Personal interview interpreted as mentioned_unclear."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "You can apply at any time via our online portal . After receiving your documents, we will review them.",
+          "source_url": "https://www.srh-university.de/en/bachelor/business-engineering/e/",
+          "text": "To apply for the Bachelor's programme in Business Engineering , you will need to provide General higher education or university of applied sciences entrance qualification. If you have not graduated yet, apply with existing transcripts. Proof of English*"
+        },
+        {
+          "heading": "More information about the admission requirements",
+          "source_url": "https://www.srh-university.de/en/bachelor/business-engineering/e/",
+          "text": "We look forward to welcoming you to SRH University. This is what our application process looks like: Submit your online application via the SRH application portal"
+        },
+        {
+          "heading": "If admission requirements are met, you will receive an invitation for the admissions interview*",
+          "source_url": "https://www.srh-university.de/en/bachelor/business-engineering/e/",
+          "text": "After a successful interview, you will receive an acceptance letter and the study contract Read thoroughly, sign and upload your study contract to your application account"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Bachelor Classical Music studieren",
+        "degree": "Bachelor",
+        "level": "bachelor",
+        "url": "https://www.srh-university.de/en/bachelor/classical-music/m/",
+        "campus": "Location for Classical Music and World Music",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "mentioned_unclear",
+            "notes": "To apply for the Bachelor's degree programme in Classical Music , you will need general higher education entrance qualification (Abitur), subject-restricted higher education entrance qualification (subject-restricted Abitur) or entrance qualification for universities of applied sciences or at least two years of vocational training and at least three years of professional experience plus an aptitude test English language certificate*"
+          },
+          {
+            "test": "Personal interview",
+            "requirement": "mentioned_unclear",
+            "notes": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 2,
+          "relevance": "at least two years of vocational training and at least three years of professional",
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "Online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "tuition fees",
+          "Tuition fees",
+          "fee remains the same for the entire duration of your studies",
+          "fees or similar are charged, not even for repeat examinations",
+          "fee would be €1,050 per month (€12,600 per year)"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/classical-music/m/",
+            "source_text": "al . We will then check your application documents and invite you to the selection process. To apply for the Bachelor's degree programme in Classical Music , you will need general higher education entrance qualification (Abitur), subject-restricted higher education entrance qualification (subject-restrict",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/classical-music/m/",
+            "source_text": "To apply for the Bachelor's degree programme in Classical Music , you will need general higher education entrance qualification (Abitur), subject-restricted higher education entrance qualification (subject-restricted Abitur) or entrance qualification for universities of applied sciences or at least two years of vocational training and at least three years of professional experience plus an aptitude test English language certificate*",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Aptitude test interpreted as mentioned_unclear."
+          },
+          {
+            "source_url": "https://www.srh-university.de/en/you-want-to-study/applications-and-admissions/",
+            "source_text": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Personal interview interpreted as mentioned_unclear."
+          }
+        ],
+        "work_experience": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/classical-music/m/",
+            "source_text": "at least two years of vocational training and at least three years of professional",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "high",
+            "review_note": "Work-experience requirement found."
+          }
+        ],
+        "application_channel": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/classical-music/m/",
+            "source_text": "dure*. We look forward to welcoming you to SRH University. This is what our application process looks like: Submit your online application via the SRH application portal If admission requirements are met, you will receive an invitation for the admissions interview* After a successful interview, you will receive an ac",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Application channel keyword found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "You can apply at any time without obligation via our online portal . We will then check your application documents and invite you to the selection process.",
+          "source_url": "https://www.srh-university.de/en/bachelor/classical-music/m/",
+          "text": "To apply for the Bachelor's degree programme in Classical Music , you will need general higher education entrance qualification (Abitur), subject-restricted higher education entrance qualification (subject-restricted Abitur) or entrance qualification for universities of applied sciences or at least two years of vocational training and at least three years of professional experience plus an aptitude test English language certificate*"
+        },
+        {
+          "heading": "If admission requirements are met, you will receive an invitation for the admissions interview*",
+          "source_url": "https://www.srh-university.de/en/bachelor/classical-music/m/",
+          "text": "After a successful interview, you will receive an acceptance letter and the study contract Read thoroughly, sign and upload your study contract to your application account"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Study Master Classical Music",
+        "degree": "MSc",
+        "level": "master",
+        "url": "https://www.srh-university.de/en/master/classical-music/m/",
+        "campus": "Location for Classical Music and World Music",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "M"
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": 180,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Found 180 ECTS requirement."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [
+          {
+            "test": "Personal interview",
+            "requirement": "mentioned_unclear",
+            "notes": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "Online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "tuition fees",
+          "Tuition fees",
+          "fee remains the same for the entire duration of your studies",
+          "fees or similar are charged, not even for repeat examinations",
+          "fee would be €1,050 per month (€12,600 per year)"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.srh-university.de/en/master/classical-music/m/",
+            "source_text": "180 ECTS credits",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "high",
+            "review_note": "Direct ECTS extraction."
+          },
+          {
+            "source_url": "https://www.srh-university.de/en/master/classical-music/m/",
+            "source_text": "ss. To apply for the Master's programme in Classical Music , you will need University or university of applied sciences degree (Bachelor’s degree or equivalent with at least 180 ECTS credits; a degree in music is not mandatory). English language certificate* If admission requirements are met, you will rec",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "application_channel": [
+          {
+            "source_url": "https://www.srh-university.de/en/master/classical-music/m/",
+            "source_text": "dure*. We look forward to welcoming you to SRH University. This is what our application process looks like: Submit your online application via the SRH application portal If admission requirements are met, you will receive an invitation for the admissions interview* After a successful interview, you will receive an ac",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Application channel keyword found."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.srh-university.de/en/you-want-to-study/applications-and-admissions/",
+            "source_text": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Personal interview interpreted as mentioned_unclear."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "You can apply at any time without obligation via our online portal . We will then check your application documents and invite you to the selection process.",
+          "source_url": "https://www.srh-university.de/en/master/classical-music/m/",
+          "text": "To apply for the Master's programme in Classical Music , you will need University or university of applied sciences degree (Bachelor’s degree or equivalent with at least 180 ECTS credits; a degree in music is not mandatory). English language certificate*"
+        },
+        {
+          "heading": "If admission requirements are met, you will receive an invitation for the admissions interview*",
+          "source_url": "https://www.srh-university.de/en/master/classical-music/m/",
+          "text": "After a successful interview, you will receive an acceptance letter and the study contract Read thoroughly, sign and upload your study contract to your application account"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Study Bachelor Communication Design",
+        "degree": "Bachelor",
+        "level": "bachelor",
+        "url": "https://www.srh-university.de/en/bachelor/communication-design/v/",
+        "campus": "Campus Berlin, achieved a remarkable double win",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [
+          {
+            "test": "Personal interview",
+            "requirement": "mentioned_unclear",
+            "notes": "To apply for the Bachelor's degree programme in Communication Design , you need General higher education entrance qualification, entrance qualification for universities of applied sciences or an equivalent higher education entrance qualification or higher education entrance qualification for qualified professionals* Portfolio with around 10-15 of your own design works (drawings, images, graphics, photos or scribbles)** - You can upload the portfolio together with your application, send it to us or simply bring it with you to the personal interview"
+          },
+          {
+            "test": "Personal interview",
+            "requirement": "mentioned_unclear",
+            "notes": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency",
+          "Portfolio"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "Online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "tuition fees",
+          "Tuition fees Berlin",
+          "Tuition fees Berlin (English programme)",
+          "Tuition fees Cologne",
+          "tuition fees remain the same for the entire duration of the study programme"
+        ]
+      },
+      "evidence": {
+        "academic_background": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/communication-design/v/",
+            "source_text": "obligation via our online portal to apply. We will then check your application documents . To apply for the Bachelor's degree programme in Communication Design , you need General higher education entrance qualification, entrance qualification for universities of applied sciences or an equivalent higher e",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Degree-level requirement inferred from admissions text."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/communication-design/v/",
+            "source_text": "To apply for the Bachelor's degree programme in Communication Design , you need General higher education entrance qualification, entrance qualification for universities of applied sciences or an equivalent higher education entrance qualification or higher education entrance qualification for qualified professionals* Portfolio with around 10-15 of your own design works (drawings, images, graphics, photos or scribbles)** - You can upload the portfolio together with your application, send it to us ",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Personal interview interpreted as mentioned_unclear."
+          },
+          {
+            "source_url": "https://www.srh-university.de/en/you-want-to-study/applications-and-admissions/",
+            "source_text": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Personal interview interpreted as mentioned_unclear."
+          }
+        ],
+        "documents": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/communication-design/v/",
+            "source_text": "load the portfolio together with your application, send it to us or simply bring it with you to the personal interview. Proof of English* If your documents are approved, we will invite you to a personal admissions interview. Here we want to find out more about your programme-specific knowledge, cr We look forward t",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          },
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/communication-design/v/",
+            "source_text": "ivalent higher education entrance qualification or higher education entrance qualification for qualified professionals* Portfolio with around 10-15 of your own design works (drawings, images, graphics, photos or scribbles)** - You can upload the portfolio together with your application, send it to us or simp",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Portfolio keyword found."
+          }
+        ],
+        "application_channel": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/communication-design/v/",
+            "source_text": "tment. We look forward to welcoming you to SRH University. This is what our application process looks like: Submit your online application via the SRH application portal If admission requirements are met, you will receive an invitation for the admissions interview* After a successful interview, you will receive an ac",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Application channel keyword found."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "You can apply at any time without obligation via our online portal to apply. We will then check your application documents .",
+          "source_url": "https://www.srh-university.de/en/bachelor/communication-design/v/",
+          "text": "To apply for the Bachelor's degree programme in Communication Design , you need General higher education entrance qualification, entrance qualification for universities of applied sciences or an equivalent higher education entrance qualification or higher education entrance qualification for qualified professionals* Portfolio with around 10-15 of your own design works (drawings, images, graphics, photos or scribbles)** - You can upload the portfolio together with your application, send it to us or simply bring it with you to the personal interview. Proof of English*"
+        },
+        {
+          "heading": "If your documents are approved, we will invite you to a personal admissions interview. Here we want to find out more about your programme-specific knowledge, cr",
+          "source_url": "https://www.srh-university.de/en/bachelor/communication-design/v/",
+          "text": "We look forward to welcoming you to SRH University. This is what our application process looks like: Submit your online application via the SRH application portal"
+        },
+        {
+          "heading": "If admission requirements are met, you will receive an invitation for the admissions interview*",
+          "source_url": "https://www.srh-university.de/en/bachelor/communication-design/v/",
+          "text": "After a successful interview, you will receive an acceptance letter and the study contract Read thoroughly, sign and upload your study contract to your application account"
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Bachelor in Computer Science (B.Sc.) in Germany",
+        "degree": "Bachelor",
+        "level": "bachelor",
+        "url": "https://www.srh-university.de/en/bachelor/computer-science/i/",
+        "campus": null,
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "bachelor or recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [
+          {
+            "test": "Personal interview",
+            "requirement": "mentioned_unclear",
+            "notes": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "Online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "tuition fees",
+          "fees go towards equipping our campuses, providing services for our students, and ensuring quality assurance",
+          "tuition fees remain the same for the entire duration of the study programme",
+          "fee of €750 (EU/EEA) or €1000 (non-EU/EEA) is to be paid once",
+          "fee within the guarantee period"
+        ]
+      },
+      "evidence": {
+        "documents": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/computer-science/i/",
+            "source_text": "university of applied sciences entrance qualification. If you have not graduated yet, apply with existing transcripts. Proof of English language proficiency* More information about the admission requirements We look forward to welcoming you to SRH University. This is what our application process looks like: Submit",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Proof of English proficiency keyword found."
+          }
+        ],
+        "application_channel": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/computer-science/i/",
+            "source_text": "ements We look forward to welcoming you to SRH University. This is what our application process looks like: Submit your online application via the SRH application portal If admission requirements are met, you will receive an invitation for the admissions interview* After a successful interview, you will receive an ac",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Application channel keyword found."
+          }
+        ],
+        "test_requirements": [
+          {
+            "source_url": "https://www.srh-university.de/en/you-want-to-study/applications-and-admissions/",
+            "source_text": "If you fulfil the admission requirements, we will invite you to a personal interview or Admission interview: In a personal interview, we will discuss the start of your studies together and check whether the chosen study programme matches your goals and ambitions",
+            "retrieved_at": "2026-05-18T16:34:22.511348+00:00",
+            "confidence": "medium",
+            "review_note": "Personal interview interpreted as mentioned_unclear."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "You can apply at any time via our online portal . After receiving your documents, we will review them.",
+          "source_url": "https://www.srh-university.de/en/bachelor/computer-science/i/",
+          "text": "To apply for the Bachelor's programme in Computer Science , you will need to provide General higher education or university of applied sciences entrance qualification. If you have not graduated yet, apply with existing transcripts. Proof of English language proficiency*"
+        },
+        {
+          "heading": "More information about the admission requirements",
+          "source_url": "https://www.srh-university.de/en/bachelor/computer-science/i/",
+          "text": "We look forward to welcoming you to SRH University. This is what our application process looks like: Submit your online application via the SRH application portal"
+        },
+        {
+          "heading": "If admission requirements are met, you will receive an invitation for the admissions interview*",
+          "source_url": "https://www.srh-university.de/en/bachelor/computer-science/i/",
+          "text": "After a successful interview, you will receive an acceptance letter and the study contract Read thoroughly, sign and upload your study contract to your application account"
+        }
+      ],
+      "needs_human_review": false
+    }
+  ],
+  "skipped": [
+    {
+      "url": "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/admission-requirements/",
+      "reason": "HTTPError",
+      "detail": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.srh-university.de/en/master/supply-chain-management-english/g/supply-chain-management-m-sc-admission-requirements/",
+      "reason": "HTTPError",
+      "detail": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.srh-university.de/en/master/general-management/mba/general-management-mba-admission-requirements/",
+      "reason": "HTTPError",
+      "detail": "HTTP Error 404: Not Found"
+    }
+  ],
+  "review_seed_config": {
+    "seed_urls": [
+      "https://www.srh-university.de/en/programme-finder/",
+      "https://www.srh-university.de/en/bachelor/",
+      "https://www.srh-university.de/en/master/",
+      "https://www.srh-university.de/en/you-want-to-study/applications-and-admissions/",
+      "https://www.srh-university.de/en/you-want-to-study/faqs/",
+      "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/",
+      "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/admission-requirements/",
+      "https://www.srh-university.de/en/master/supply-chain-management-english/g/",
+      "https://www.srh-university.de/en/master/supply-chain-management-english/g/supply-chain-management-m-sc-admission-requirements/",
+      "https://www.srh-university.de/en/master/general-management/mba/general-management-mba-admission-requirements/"
+    ],
+    "review_notes": [
+      "Current official programme surface appears to be srh-university.de.",
+      "Degree landing pages lead to a programme finder and application details."
+    ],
+    "crawl_cautions": [
+      "Avoid aggressive crawling of apply.srh.de."
+    ]
+  }
+}

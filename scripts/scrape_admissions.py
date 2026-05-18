@@ -10,6 +10,7 @@ This is a conservative proof-of-concept scraper:
 from __future__ import annotations
 
 import argparse
+import copy
 import dataclasses
 import datetime as dt
 import html.parser
@@ -130,6 +131,8 @@ ACADEMIC_PROGRAM_PATHS = (
     "/mba-master/",
     "/master-programs/",
     "/mba-programs/",
+    "/professionals-organizations/",
+    "/masters-degree-germany/",
     "/study-technology-management",
     "/business-analytics-and-ai",
     "/your-double-degree",
@@ -156,6 +159,13 @@ NON_PROGRAM_PATHS = (
     "/en/l/bachelor-in-english",
     "/en/l/english-taught",
     "/en/l/master-program-in-english",
+    "/international-mba-dual-degree/",
+    "/your-double-degree",
+    "/your-single-degree",
+    "summer-semester-start",
+    "/summer-school",
+    "info-event",
+    "-focus.html",
 )
 LISTING_PAGE_PATHS = (
     "/graduate-studies",
@@ -176,6 +186,8 @@ LISTING_PAGE_PATHS = (
     "/study/programmes",
     "/en/mba-master.html",
     "/en/mba-master",
+    "/en/mba-master/mba.html",
+    "/en/mba-master/master.html",
 )
 SHARED_REQUIREMENT_PATH_HINTS = (
     "/admission-requirements",
@@ -333,7 +345,7 @@ def normalized_path(url: str) -> str:
 
 def is_listing_page_url(url: str) -> bool:
     path = normalized_path(url)
-    if path.endswith("/overview"):
+    if path.endswith("/overview") and not concrete_ism_overview_path(path):
         return True
     return path in LISTING_PAGE_PATHS
 
@@ -355,6 +367,10 @@ def program_specific_admissions_path(path: str) -> bool:
     )
 
 
+def concrete_ism_overview_path(path: str) -> bool:
+    return bool(re.search(r"/full-degree-students/(?:bachelor|master|mba)-programs/[^/]+/overview$", path))
+
+
 def has_program_specific_path(url: str) -> bool:
     path = normalized_path(url)
     if program_specific_admissions_path(path):
@@ -364,11 +380,15 @@ def has_program_specific_path(url: str) -> bool:
         r"/study-programs/[^/]+$",
         r"/study-programmes/[^/]+$",
         r"/programs/[^/]+$",
+        r"/programs/master-programs/[^/]+$",
+        r"/professionals-organizations/mba-[^/]+$",
         r"/degree-programme/[^/]+$",
         r"/bachelors-degree-germany/[^/]+$",
+        r"/masters-degree-germany/[^/]+$",
         r"/mba-germany/[^/]+$",
+        r"/full-degree-students/(?:bachelor|master|mba)-programs/[^/]+/overview$",
         r"/programs/study-for-[^/]+$",
-        r"/mba-master/[^/]+\.html$",
+        r"/mba-master/(?:[^/]+/)?[^/]+\.html$",
         r"/en/l/study-finder/[^/]+$",
     )
     if any(re.search(pattern, path) for pattern in program_patterns):
@@ -466,8 +486,18 @@ def crawl(
             time.sleep(delay)
         try:
             page = fetch_page(url, user_agent=user_agent, timeout=timeout)
-        except (urllib.error.URLError, TimeoutError, ValueError, UnicodeDecodeError, http.client.IncompleteRead) as exc:
+        except (
+            urllib.error.URLError,
+            TimeoutError,
+            ValueError,
+            UnicodeDecodeError,
+            http.client.IncompleteRead,
+            http.client.RemoteDisconnected,
+        ) as exc:
             skipped.append({"url": url, "reason": type(exc).__name__, "detail": str(exc)[:200]})
+            continue
+        if not same_host(page.url, root_url):
+            skipped.append({"url": url, "reason": "redirected_to_different_host", "detail": page.url})
             continue
         if page.url in fetched_final_urls:
             skipped.append({"url": url, "reason": "duplicate_after_redirect", "detail": page.url})
@@ -530,6 +560,8 @@ def page_to_program(
         return None
 
     title = clean_program_title(page.title, page.text_blocks, page.url)
+    if program_title_is_too_generic(title):
+        return None
     retrieved_at = retrieved_at or dt.datetime.now(dt.UTC).isoformat()
     school = school or SchoolMetadata(name=None, url="", country=None, partner_status=None, school_type=None)
     raw_sections = [{"heading": item["heading"], "source_url": page.url, "text": item["text"]} for item in requirements]
@@ -562,6 +594,8 @@ def page_to_program(
 
 def clean_program_title(title: str, blocks: list[str], url: str = "") -> str:
     url_title = title_from_program_url(url)
+    if url_title:
+        return url_title
     candidates = [title] + blocks[:6]
     for candidate in candidates:
         candidate = normalize_space(candidate)
@@ -592,6 +626,12 @@ def title_from_program_url(url: str) -> str | None:
         "your-double-degree": "Double Master's Program in Technology Management",
         "your-single-degree-24m": "MBA in Technology Management",
         "your-single-degree-12m": "MBA in Technology Management",
+        "master-global-management/admissions": "Master in Global Management",
+        "master-innovation-entrepreneurship/admissions": "Master in Innovation and Entrepreneurship",
+        "master-analytics-artificial-intelligence/admissions": "Master in Analytics and Artificial Intelligence",
+        "full-time-mba/admissions": "Full-time MBA",
+        "master-in-management": "Master in Management",
+        "full-time-mba": "Full-time MBA",
     }
     for slug, title in known.items():
         if path.endswith(slug):
@@ -606,7 +646,40 @@ def title_looks_like_marketing(title: str) -> bool:
 
 def title_looks_like_navigation(title: str) -> bool:
     lower = title.lower()
-    return "show submenu" in lower or lower in {"study", "study program", "programs", "programmes"}
+    if lower.startswith(("applicants ", "proof of ", "requirements for ")):
+        return True
+    if lower.endswith(".") and re.search(r"\b(applicants?|need|degree|proof|submit|required)\b", lower):
+        return True
+    return "show submenu" in lower or lower in {
+        "study",
+        "study program",
+        "programs",
+        "programmes",
+        "application",
+        "admissions",
+        "admission requirements",
+        "requirements",
+        "bachelor programs",
+        "master programs",
+        "mba programs",
+    }
+
+
+def program_title_is_too_generic(title: str) -> bool:
+    lower = title.strip().lower()
+    return lower in {
+        "bachelor",
+        "master",
+        "mba",
+        "program",
+        "programme",
+        "programs",
+        "programmes",
+        "bachelor programs",
+        "master programs",
+        "mba programs",
+        "mba & master",
+    }
 
 
 def extract_requirement_sections(blocks: list[str]) -> list[dict]:
@@ -786,7 +859,7 @@ def plausible_language_score(test_name: str, score: str) -> bool:
     if "." in score and test_name in {"TOEFL iBT", "Duolingo", "ELS", "Cambridge"}:
         return False
     if test_name == "TOEFL iBT":
-        return 0 <= value <= 120
+        return 40 <= value <= 120
     if test_name == "TOEIC":
         return 10 <= value <= 990
     if test_name == "PTE Academic":
@@ -825,6 +898,8 @@ def extract_test_requirements(text: str, source_url: str, retrieved_at: str, evi
             pattern = re.compile(rf"(?<![a-z0-9]){re.escape(keyword)}(?![a-z0-9])", re.IGNORECASE)
             for match in pattern.finditer(text):
                 segment = sentence_containing_match(text, match)
+                if label == "Case study" and not admissions_test_context(segment):
+                    continue
                 requirement = classify_test_requirement(segment)
                 key = f"{label}:{requirement}:{segment[:80]}"
                 if key in seen:
@@ -840,6 +915,16 @@ def extract_test_requirements(text: str, source_url: str, retrieved_at: str, evi
                 confidence = "high" if requirement in {"required", "not_required"} else "medium"
                 add_evidence(evidence, "test_requirements", source_url, segment, retrieved_at, confidence, f"{label} interpreted as {requirement}.")
     return requirements
+
+
+def admissions_test_context(segment: str) -> bool:
+    return bool(
+        re.search(
+            r"\b(admission|application|applicant|candidate|selection|interview|invited|assessment)\b",
+            segment,
+            re.IGNORECASE,
+        )
+    )
 
 
 def sentence_containing_match(text: str, match: re.Match[str]) -> str:
@@ -1002,6 +1087,20 @@ def number_from_word(value: str | None) -> int | None:
 
 
 def infer_degree(title: str, url: str, blocks: list[str]) -> str | None:
+    path = normalized_path(url)
+    if "/bachelor-programs/" in path or "/bachelors-degree-germany/" in path or "/en/bachelor/" in path:
+        return "Bachelor"
+    if path.endswith("/business-analytics-and-ai"):
+        return "Master of Science"
+    if "/master-programs/" in path or "/masters-degree-germany/" in path or "/en/master/" in path:
+        return "MSc"
+    if "/mba-programs/" in path or "/mba-germany/" in path or "/en/mba/" in path or path.endswith("/full-time-mba"):
+        return "MBA"
+    title_direct = first_match(DEGREE_RE, title)
+    if title_direct:
+        return title_direct
+    if re.search(r"\bmaster\b", title, re.IGNORECASE):
+        return "Master"
     trusted_text = "\n".join([title] + blocks[:4])
     direct = first_match(DEGREE_RE, trusted_text)
     if direct:
@@ -1026,9 +1125,13 @@ def infer_degree(title: str, url: str, blocks: list[str]) -> str | None:
 
 def infer_program_level(title: str, url: str) -> str | None:
     haystack = f"{title} {url}".lower()
-    if any(value in haystack for value in ("master", "msc", "m.sc", "mba", "ma", "m.a")):
+    if re.search(r"\bpre[- ]?(bachelor|undergraduate)\b", haystack):
+        return "pre-bachelor"
+    if re.search(r"\bpre[- ]?master\b", haystack):
+        return "pre-master"
+    if re.search(r"\b(master|msc|m\.sc|mba|ma|m\.a)\b", haystack):
         return "master"
-    if any(value in haystack for value in ("bachelor", "bsc", "b.sc", "ba", "b.a")):
+    if re.search(r"\b(bachelor|bsc|b\.sc|ba|b\.a)\b", haystack):
         return "bachelor"
     if "phd" in haystack or "doctor" in haystack:
         return "doctoral"
@@ -1105,9 +1208,7 @@ def build_output(
             if (program := page_to_program(page, school=school, retrieved_at=retrieved_at))
         ]
     )
-    shared_requirements, shared_evidence = extract_shared_requirements(pages, retrieved_at)
-    if shared_requirements:
-        programs = [merge_shared_requirements(program, shared_requirements, shared_evidence) for program in programs]
+    programs = merge_shared_requirements_from_pages(programs, pages, retrieved_at)
     return {
         "schema_version": "0.3",
         "school": school.as_dict(),
@@ -1165,6 +1266,45 @@ def extract_shared_requirements(pages: list[Page], retrieved_at: str) -> tuple[d
     return merged, evidence
 
 
+def merge_shared_requirements_from_pages(programs: list[dict], pages: list[Page], retrieved_at: str) -> list[dict]:
+    shared_pages = [page for page in pages if is_shared_requirements_page(page.url)]
+    if not shared_pages:
+        return programs
+    for program in programs:
+        for page in shared_pages:
+            if not shared_page_applies_to_program(page.url, program):
+                continue
+            sections = extract_requirement_sections(page.text_blocks)
+            text = "\n".join(f"{section['heading']} {section['text']}" for section in sections) or "\n".join(page.text_blocks)
+            if not text:
+                continue
+            requirements, evidence = normalize_requirements(text, page.url, retrieved_at)
+            merge_shared_requirements(program, filter_requirements_for_program(requirements, program), evidence)
+    return programs
+
+
+def shared_page_applies_to_program(url: str, program: dict) -> bool:
+    path = normalized_path(url)
+    level = (program.get("program", {}).get("level") or "").lower()
+    if any(marker in path for marker in ("faq-graduate", "graduate", "master", "mba")):
+        return level in {"master", "mba", "doctoral"}
+    if any(marker in path for marker in ("faq-undergraduate", "undergraduate", "bachelor")):
+        return level in {"bachelor", "pre-bachelor"}
+    return True
+
+
+def filter_requirements_for_program(requirements: dict, program: dict) -> dict:
+    filtered = copy.deepcopy(requirements)
+    languages = " ".join(program.get("program", {}).get("language_of_instruction") or []).lower()
+    if "english" in languages and "german" not in languages and "deutsch" not in languages:
+        filtered["language_requirements"] = [
+            item
+            for item in filtered.get("language_requirements", [])
+            if not isinstance(item, dict) or item.get("test") != "German"
+        ]
+    return filtered
+
+
 def merge_shared_requirements(program: dict, shared_requirements: dict, shared_evidence: dict) -> dict:
     merge_requirement_values(program["requirements"], shared_requirements, fill_only=True)
     merge_evidence(program["evidence"], shared_evidence)
@@ -1183,6 +1323,9 @@ def merge_requirement_values(target: dict, source: dict, fill_only: bool = False
             academic["notes"].append(note)
     for key in ("subject_prerequisites", "language_requirements", "test_requirements", "documents", "conditional_paths", "international_requirements"):
         for item in source.get(key, []):
+            if key == "language_requirements" and isinstance(item, dict):
+                merge_language_requirement(target[key], item)
+                continue
             if item not in target[key]:
                 target[key].append(item)
     work = target["work_experience"]
@@ -1194,6 +1337,24 @@ def merge_requirement_values(target: dict, source: dict, fill_only: bool = False
     for note in source_work.get("notes", []):
         if note not in work["notes"]:
             work["notes"].append(note)
+
+
+def merge_language_requirement(target: list[dict], item: dict) -> None:
+    key = (item.get("test"), item.get("minimum_score"))
+    for existing in target:
+        if not isinstance(existing, dict):
+            continue
+        if (existing.get("test"), existing.get("minimum_score")) != key:
+            continue
+        for field in ("component_scores", "waiver"):
+            existing.setdefault(field, [])
+            for value in item.get(field, []):
+                if value not in existing[field]:
+                    existing[field].append(value)
+        if not existing.get("validity") and item.get("validity"):
+            existing["validity"] = item["validity"]
+        return
+    target.append(item)
 
 
 def merge_evidence(target: dict, source: dict) -> None:

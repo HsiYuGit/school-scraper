@@ -1,7 +1,10 @@
+import http.client
 import unittest
 import urllib.robotparser
 import json
 from pathlib import Path
+from types import SimpleNamespace
+from unittest import mock
 
 from scripts.crawl_partner_schools import classify_validation_status, slugify
 from scripts.compare_admissions_outputs import render_comparison
@@ -9,6 +12,8 @@ from scripts.render_admissions_html import render_file
 from scripts.scrape_admissions import (
     Page,
     RobotPolicy,
+    build_output,
+    crawl,
     looks_like_program_page,
     normalize_requirements,
     page_to_program,
@@ -120,7 +125,7 @@ class AdmissionExtractionTest(unittest.TestCase):
         self.assertNotIn(("TOEFL iBT", "5772"), scores)
 
     def test_language_scores_must_match_test_scale(self):
-        text = "IELTS 850 TOEFL 7.0 IELTS 7.0 TOEFL 95 Duolingo 170 Duolingo 120 German-language course September 2025"
+        text = "IELTS 850 TOEFL 7.0 TOEFL 21 IELTS 7.0 TOEFL 95 Duolingo 170 Duolingo 120 German-language course September 2025"
 
         requirements, _ = normalize_requirements(
             text,
@@ -134,8 +139,41 @@ class AdmissionExtractionTest(unittest.TestCase):
         self.assertIn(("Duolingo", "120"), scores)
         self.assertNotIn(("IELTS", "850"), scores)
         self.assertNotIn(("TOEFL iBT", "7.0"), scores)
+        self.assertNotIn(("TOEFL iBT", "21"), scores)
         self.assertNotIn(("Duolingo", "170"), scores)
         self.assertNotIn(("German", "1"), scores)
+
+    def test_toefl_component_scores_do_not_become_total_scores(self):
+        text = "Proof of English: TOEFL iBT 90, with no less than 21 in each section; IELTS 6.5."
+
+        requirements, _ = normalize_requirements(
+            text,
+            "https://example.edu/programs/msc-management",
+            "2026-05-18T00:00:00+00:00",
+        )
+        scores = {(item["test"], item["minimum_score"]) for item in requirements["language_requirements"]}
+
+        self.assertIn(("TOEFL iBT", "90"), scores)
+        self.assertNotIn(("TOEFL iBT", "21"), scores)
+
+    def test_degree_inference_prefers_program_url_over_navigation_text(self):
+        page = Page(
+            url="https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/",
+            title="Bachelor Applied Artificial Intelligence",
+            links=[],
+            text_blocks=[
+                "MBA",
+                "Admission requirements",
+                "Applicants need a university entrance qualification and proof of English.",
+                "TOEFL 80 or IELTS 6.0.",
+            ],
+        )
+
+        program = page_to_program(page)
+
+        self.assertIsNotNone(program)
+        self.assertEqual(program["program"]["degree"], "Bachelor")
+        self.assertEqual(program["program"]["level"], "bachelor")
 
     def test_gre_keyword_does_not_match_degree(self):
         text = "Bachelor's degree in engineering with good grades and high English proficiency."
@@ -215,6 +253,58 @@ class AdmissionExtractionTest(unittest.TestCase):
         self.assertFalse(policy.can_fetch("study-admissions-poc/0.1", "https://example.edu/"))
         self.assertEqual(policy.status, "unavailable")
 
+    def test_crawl_records_remote_disconnected_as_skipped(self):
+        parser = urllib.robotparser.RobotFileParser()
+        parser.parse(["User-agent: *", "Allow: /"])
+        policy = RobotPolicy(parser=parser, robots_url="https://example.edu/robots.txt", status="available")
+
+        with (
+            mock.patch("scripts.scrape_admissions.build_robot_policy", return_value=policy),
+            mock.patch(
+                "scripts.scrape_admissions.fetch_page",
+                side_effect=http.client.RemoteDisconnected("Remote end closed connection without response"),
+            ),
+        ):
+            pages, skipped, robot_policy = crawl(
+                "https://example.edu/",
+                ["https://example.edu/programs/msc-management"],
+                max_pages=1,
+                delay=0,
+                user_agent="test-agent",
+                timeout=1,
+            )
+
+        self.assertEqual(pages, [])
+        self.assertEqual(robot_policy.status, "available")
+        self.assertIn("RemoteDisconnected", {item["reason"] for item in skipped})
+
+    def test_crawl_skips_redirects_to_different_host(self):
+        parser = urllib.robotparser.RobotFileParser()
+        parser.parse(["User-agent: *", "Allow: /"])
+        policy = RobotPolicy(parser=parser, robots_url="https://example.edu/robots.txt", status="available")
+        redirected = Page(
+            url="https://other.example.edu/programs/msc-management",
+            title="MSc Management",
+            links=[],
+            text_blocks=["Admission requirements", "Bachelor degree and TOEFL 90."],
+        )
+
+        with (
+            mock.patch("scripts.scrape_admissions.build_robot_policy", return_value=policy),
+            mock.patch("scripts.scrape_admissions.fetch_page", return_value=redirected),
+        ):
+            pages, skipped, _ = crawl(
+                "https://example.edu/",
+                ["https://example.edu/programs/msc-management"],
+                max_pages=1,
+                delay=0,
+                user_agent="test-agent",
+                timeout=1,
+            )
+
+        self.assertEqual(pages, [])
+        self.assertIn("redirected_to_different_host", {item["reason"] for item in skipped})
+
     def test_program_url_filter_excludes_events_and_marketing_pages(self):
         self.assertTrue(
             looks_like_program_page("https://www.munich-business-school.de/en/master/international-business")
@@ -235,8 +325,190 @@ class AdmissionExtractionTest(unittest.TestCase):
             looks_like_program_page("https://tum-asia.edu.sg/admissions/graduate-studies/application/")
         )
         self.assertFalse(
-            looks_like_program_page("https://en.ism.de/full-degree-students/master-programs/master-international-management/overview")
+            looks_like_program_page("https://en.ism.de/full-degree-students/master-programs")
         )
+        self.assertFalse(looks_like_program_page("https://www.nithh.org/your-single-degree-24m"))
+        self.assertFalse(looks_like_program_page("https://www.nithh.org/your-double-degree"))
+        self.assertFalse(looks_like_program_page("https://esmt.berlin/programs/summer-school"))
+        self.assertFalse(
+            looks_like_program_page("https://www.graduatecenter.org/en/mba-master/summer-semester-start.html")
+        )
+        self.assertFalse(
+            looks_like_program_page(
+                "https://www.graduatecenter.org/en/mba-master/international-mba-dual-degree/essca-school-of-managment.html"
+            )
+        )
+        self.assertFalse(
+            looks_like_program_page(
+                "https://www.graduatecenter.org/en/mba-master/international-marketing-focus.html"
+            )
+        )
+        self.assertFalse(
+            looks_like_program_page(
+                "https://www.graduatecenter.org/en/mba-master/info-event-application-for-full-time-studies-at-the-international-graduate-center.html"
+            )
+        )
+
+    def test_program_url_filter_allows_concrete_school_patterns(self):
+        self.assertTrue(
+            looks_like_program_page(
+                "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview"
+            )
+        )
+        self.assertFalse(looks_like_program_page("https://en.ism.de/full-degree-students/master-programs"))
+        self.assertTrue(
+            looks_like_program_page("https://www.cbs.de/en/masters-degree-germany/international-business")
+        )
+        self.assertTrue(
+            looks_like_program_page("https://www.srh-university.de/en/master/supply-chain-management-english/g/")
+        )
+        self.assertTrue(
+            looks_like_program_page(
+                "https://www.klu.org/professionals-organizations/mba-leadership-scm"
+            )
+        )
+        self.assertTrue(
+            looks_like_program_page(
+                "https://www.graduatecenter.org/en/mba-master/mba/mba-in-executive-management.html"
+            )
+        )
+        self.assertFalse(looks_like_program_page("https://www.graduatecenter.org/en/mba-master/mba.html"))
+
+    def test_case_study_in_curriculum_is_not_admissions_test(self):
+        text = (
+            "Admission requirements Bachelor degree with 180 ECTS. "
+            "Curriculum Students work on a KUKA case study during the strategy module."
+        )
+
+        requirements, _ = normalize_requirements(
+            text,
+            "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-management",
+            "2026-05-18T00:00:00+00:00",
+        )
+
+        self.assertNotIn("Case study", {item["test"] for item in requirements["test_requirements"]})
+
+    def test_generic_program_titles_are_not_final_records(self):
+        for title in ("Bachelor", "Master Programs", "MBA programs"):
+            with self.subTest(title=title):
+                page = Page(
+                    url="https://example.edu/programs/msc-management",
+                    title=title,
+                    links=[],
+                    text_blocks=[
+                        "Admission requirements",
+                        "Applicants need a bachelor degree and proof of English.",
+                    ],
+                )
+
+                self.assertIsNone(page_to_program(page))
+
+    def test_known_program_url_title_wins_over_generic_page_text(self):
+        page = Page(
+            url="https://www.nithh.org/business-analytics-and-ai",
+            title="Business Analytics & AI",
+            links=[],
+            text_blocks=[
+                "• Master/MBA",
+                "The requirements to study Business Analytics & AI",
+                "A Bachelor's or equivalent degree from a recognized university.",
+                "High level of proficiency in English.",
+            ],
+        )
+
+        program = page_to_program(page)
+
+        self.assertIsNotNone(program)
+        self.assertEqual(program["program"]["name"], "Master in Business Analytics & AI")
+        self.assertEqual(program["program"]["degree"], "Master of Science")
+
+    def test_program_level_does_not_match_ma_inside_words(self):
+        page = Page(
+            url="https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+            title="Study for a Bachelor in Business Administration in Germany",
+            links=[],
+            text_blocks=[
+                "Admission requirements",
+                "A university entrance qualification and proof of English are required.",
+                "TOEFL 80 or IELTS 6.0.",
+            ],
+        )
+
+        program = page_to_program(page)
+
+        self.assertIsNotNone(program)
+        self.assertEqual(program["program"]["level"], "bachelor")
+
+    def test_pre_bachelor_level_is_not_promoted_to_bachelor(self):
+        page = Page(
+            url="https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            title="Pre-Bachelor International Business",
+            links=[],
+            text_blocks=[
+                "Admission requirements",
+                "The Pre-Bachelor program prepares applicants for undergraduate studies.",
+                "Applicants submit proof of English proficiency.",
+            ],
+        )
+
+        program = page_to_program(page)
+
+        self.assertIsNotNone(program)
+        self.assertEqual(program["program"]["level"], "pre-bachelor")
+
+    def test_shared_requirements_merge_respects_level_and_language_scope(self):
+        parser = urllib.robotparser.RobotFileParser()
+        parser.parse(["User-agent: *", "Allow: /"])
+        policy = RobotPolicy(parser=parser, robots_url="https://www.klu.org/robots.txt", status="available")
+        args = SimpleNamespace(
+            school_name="Kühne Logistics University (KLU)",
+            country="Germany",
+            partner_status="confirmed_from_offer_text",
+            school_type="university",
+            max_pages=3,
+            delay=0,
+            timeout=15,
+            user_agent="test-agent",
+        )
+        pages = [
+            Page(
+                url="https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+                title="Study for a Bachelor in Business Administration in Germany",
+                links=[],
+                text_blocks=[
+                    "Admission requirements",
+                    "A university entrance qualification and proof of English are required.",
+                    "TOEFL 80 or IELTS 6.0.",
+                ],
+            ),
+            Page(
+                url="https://www.klu.org/programs/faq/faq-graduate",
+                title="FAQ Graduate",
+                links=[],
+                text_blocks=[
+                    "Admission requirements",
+                    "Applicants for graduate programs need a bachelor degree with 210 ECTS.",
+                    "Proof of German C1 and TOEFL 90 may be required.",
+                ],
+            ),
+            Page(
+                url="https://www.klu.org/programs/faq/faq-undergraduate",
+                title="FAQ Undergraduate",
+                links=[],
+                text_blocks=[
+                    "Admission requirements",
+                    "Bachelor applicants may submit TOEFL 80 or IELTS 6.0.",
+                ],
+            ),
+        ]
+
+        output = build_output("https://www.klu.org/", pages, [], policy, args)
+        program = output["programs"][0]
+        language_tests = {item["test"] for item in program["requirements"]["language_requirements"]}
+
+        self.assertEqual(program["program"]["level"], "bachelor")
+        self.assertNotEqual(program["requirements"]["academic_background"]["minimum_ects"], 210)
+        self.assertNotIn("German", language_tests)
 
     def test_renders_admissions_fixture_to_html(self):
         root = Path(__file__).parents[1]

@@ -11,6 +11,9 @@
       "seed_urls": [
         "https://tum-asia.edu.sg/graduate-studies/",
         "https://tum-asia.edu.sg/admissions/graduate-studies/application/",
+        "https://tum-asia.edu.sg/admissions/graduate-studies/requirements/",
+        "https://tum-asia.edu.sg/graduate-studies/master-aerospace-engineering/",
+        "https://tum-asia.edu.sg/graduate-studies/master-industrial-chemistry/",
         "https://tum-asia.edu.sg/graduate-studies/master-rail-and-urban-transport/",
         "https://tum-asia.edu.sg/graduate-studies/master-integrated-circuit-design/",
         "https://tum-asia.edu.sg/graduate-studies/master-green-electronics/"
@@ -29,9 +32,15 @@
       "crawl_root_url": "https://www.munich-business-school.de/en/",
       "seed_urls": [
         "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+        "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
         "https://www.munich-business-school.de/en/master",
         "https://www.munich-business-school.de/en/master/master-international-business",
+        "https://www.munich-business-school.de/en/master/master-innovation-and-entrepreneurship",
+        "https://www.munich-business-school.de/en/master/master-international-marketing-and-brand-management",
+        "https://www.munich-business-school.de/en/master/master-sports-management-and-media",
+        "https://www.munich-business-school.de/en/master/master-in-finance",
         "https://www.munich-business-school.de/en/mba/mba-full-time",
+        "https://www.munich-business-school.de/en/dba",
         "https://www.munich-business-school.de/en/online-application"
       ],
       "review_notes": [
@@ -49,7 +58,12 @@
         "https://en.ism.de/full-degree-students/bachelor-programs",
         "https://en.ism.de/full-degree-students/master-programs",
         "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/overview",
+        "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/application",
         "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview",
+        "https://en.ism.de/full-degree-students/master-programs/master-international-management/application",
+        "https://en.ism.de/full-degree-students/mba-programs",
+        "https://en.ism.de/full-degree-students/mba-programs/mba-general-management-full-time/overview",
+        "https://en.ism.de/full-degree-students/mba-programs/mba-general-management-part-time/overview",
         "https://en.ism.de/ism-distance-learning"
       ],
       "review_notes": [
@@ -64,11 +78,17 @@
       "name": "CBS International Business School",
       "crawl_root_url": "https://www.cbs.de/en/",
       "seed_urls": [
+        "https://www.cbs.de/en/",
         "https://www.cbs.de/en/international-business-school",
         "https://www.cbs.de/en/full-time-study-programmes-germany",
         "https://www.cbs.de/en/part-time-degree-programmes-germany",
         "https://www.cbs.de/en/bachelors-degree-germany/international-business",
-        "https://www.cbs.de/en/international/exchange-students"
+        "https://www.cbs.de/en/masters-degree-germany/international-business-management",
+        "https://www.cbs.de/en/admissions/admission-requirements",
+        "https://www.cbs.de/en/admissions/requirements/bachelors",
+        "https://www.cbs.de/en/admissions/requirements/masters",
+        "https://www.cbs.de/en/mba-germany/master-business-administration",
+        "https://www.cbs.de/en/mba-germany/one-year-mba-international-management"
       ],
       "review_notes": [
         "Listing pages expose many programme cards.",
@@ -82,9 +102,19 @@
       "name": "EBS Universität",
       "crawl_root_url": "https://www.ebs.edu/en/",
       "seed_urls": [
+        "https://www.ebs.edu/en/education/ebs-business-school",
+        "https://www.ebs.edu/en/education/ebs-law-school",
         "https://www.ebs.edu/en/ebs-business-school/study-programmes",
         "https://www.ebs.edu/en/mba-programmes",
-        "https://www.ebs.edu/en/the-applicationprocess-of-ebs-universitaet"
+        "https://www.ebs.edu/en/the-applicationprocess-of-ebs-universitaet",
+        "https://www.ebs.edu/en/ebs-business-school/study-programmes/bachelor-in-business-studies",
+        "https://www.ebs.edu/en/ebs-law-school/programmes/study-law/bachelor-in-law-politics-and-economics",
+        "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-management",
+        "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-finance",
+        "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-business-analytics",
+        "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-real-estate",
+        "https://www.ebs.edu/en/ebs-business-school/study-programmes/full-time-mba",
+        "https://www.ebs.edu/en/ebs-business-school/study-programmes/executive-mba"
       ],
       "review_notes": [
         "Official content uses programme-list pages plus individual study programme pages.",
@@ -98,9 +128,16 @@
       "name": "SRH Universities",
       "crawl_root_url": "https://www.srh-university.de/en/",
       "seed_urls": [
+        "https://www.srh-university.de/en/programme-finder/",
         "https://www.srh-university.de/en/bachelor/",
         "https://www.srh-university.de/en/master/",
-        "https://www.srh-university.de/en/you-want-to-study/applications-and-admissions/"
+        "https://www.srh-university.de/en/you-want-to-study/applications-and-admissions/",
+        "https://www.srh-university.de/en/you-want-to-study/faqs/",
+        "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/",
+        "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/admission-requirements/",
+        "https://www.srh-university.de/en/master/supply-chain-management-english/g/",
+        "https://www.srh-university.de/en/master/supply-chain-management-english/g/supply-chain-management-m-sc-admission-requirements/",
+        "https://www.srh-university.de/en/master/general-management/mba/general-management-mba-admission-requirements/"
       ],
       "review_notes": [
         "Current official programme surface appears to be srh-university.de.",
@@ -115,6 +152,12 @@
       "crawl_root_url": "https://www.klu.org/",
       "seed_urls": [
         "https://www.klu.org/degree-programs/choose-your-program/",
+        "https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+        "https://www.klu.org/programs/study-for-a-master-in-international-management-in-germany",
+        "https://www.klu.org/programs/master-programs/study-for-a-master-in-business-analytics-and-data-science-in-germany",
+        "https://www.klu.org/programs/study-for-a-master-in-global-logistics-and-supply-chain-management-in-germany",
+        "https://www.klu.org/professionals-organizations/mba-leadership-scm",
+        "https://www.klu.org/programs/business-foundation-program",
         "https://www.klu.org/programs/master-programs",
         "https://www.klu.org/programs/mba-programs",
         "https://www.klu.org/programs/faq/faq-undergraduate",
@@ -136,7 +179,12 @@
         "https://www.hs-fresenius.com/bachelor/",
         "https://www.hs-fresenius.com/master/",
         "https://www.hs-fresenius.com/admission-requirements/",
-        "https://www.hs-fresenius.com/application/"
+        "https://www.hs-fresenius.com/application/",
+        "https://www.hs-fresenius.com/study-programs/sap-engineering-and-analytics-master/",
+        "https://www.hs-fresenius.com/study-programs/biomedicine-master/",
+        "https://www.hs-fresenius.com/study-programs/biochemical-engineering-master/",
+        "https://www.hs-fresenius.com/study-programs/bioanalytical-chemistry-pharmaceutical-analysis-master/",
+        "https://www.hs-fresenius.com/study-programs/computer-science-master/"
       ],
       "review_notes": [
         "Degree landing pages list programme links under /study-programs/.",
@@ -171,7 +219,7 @@
         "https://www.hs-bremen.de/en/study/programmes/",
         "https://www.hs-bremen.de/en/study/before/application-and-admission/",
         "https://www.hs-bremen.de/en/study/before/application-and-admission/admission-requirements/",
-        "https://www.hs-bremen.de/en/study/degree-programme/"
+        "https://www.hs-bremen.de/en/study/degree-programme/computer-science-msc/"
       ],
       "review_notes": [
         "Best pattern is /en/study/degree-programme/{slug}/.",
@@ -192,7 +240,10 @@
         "https://esmt.berlin/master-programs/master-global-management/admissions",
         "https://esmt.berlin/master-programs/master-innovation-entrepreneurship/admissions",
         "https://esmt.berlin/master-programs/master-analytics-artificial-intelligence/admissions",
-        "https://esmt.berlin/mba-programs/full-time-mba/admissions"
+        "https://esmt.berlin/mba-programs/full-time-mba/admissions",
+        "https://esmt.berlin/mba-programs/global-online-mba",
+        "https://esmt.berlin/mba-programs/part-time-mba",
+        "https://esmt.berlin/mba-programs/executive-mba"
       ],
       "review_notes": [
         "Admissions pages are nested under each programme and include requirements, process, deadlines, and apply links."
@@ -209,8 +260,15 @@
         "https://www.graduatecenter.org/en/mba-master.html",
         "https://www.graduatecenter.org/en/application/application.html",
         "https://www.graduatecenter.org/en/application/requirements.html",
-        "https://www.graduatecenter.org/en/application/program-start.html",
-        "https://www.graduatecenter.org/en/mba-master/mba-global-management.html"
+        "https://www.graduatecenter.org/en/support/program-start.html",
+        "https://www.graduatecenter.org/en/mba-master/summer-semester-start.html",
+        "https://www.graduatecenter.org/en/mba-master/international-mba-dual-degree.html",
+        "https://www.graduatecenter.org/en/mba-master/mba-in-logistics-supply-chain-management.html",
+        "https://www.graduatecenter.org/en/mba-master/mba-international-tourism-management.html",
+        "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
+        "https://www.graduatecenter.org/en/mba-master/mba/mba-in-executive-management.html",
+        "https://www.graduatecenter.org/en/mba-master/management-digitalization-and-transformation-ma.html",
+        "https://www.graduatecenter.org/en/mba-master/master-aeronautical-management.html"
       ],
       "review_notes": [
         "Separate programme pages live under /en/mba-master/.",
