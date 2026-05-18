@@ -1,0 +1,1529 @@
+{
+  "schema_version": "0.3-llm-native-draft",
+  "method": {
+    "type": "llm_native_official_site_reading",
+    "created_at": "2026-05-18T00:00:00Z",
+    "school": "Munich Business School",
+    "agent": {
+      "agent_id": "not exposed",
+      "nickname": "not exposed",
+      "role": "worker subagent",
+      "model": "GPT-5 Codex",
+      "reasoning_effort": "not exposed"
+    },
+    "cost_tracking": {
+      "token_usage": "not exposed; no standalone measured LLM API call was run for this v0.2 repair pass",
+      "estimated_usd_cost": "not available",
+      "note": "Do not estimate unavailable token or dollar cost."
+    },
+    "source_urls": [
+      "https://www.munich-business-school.de/en/",
+      "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+      "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+      "https://www.munich-business-school.de/en/dba",
+      "https://www.munich-business-school.de/en/master",
+      "https://www.munich-business-school.de/en/master/master-in-finance",
+      "https://www.munich-business-school.de/en/master/master-innovation-and-entrepreneurship",
+      "https://www.munich-business-school.de/en/master/master-international-business",
+      "https://www.munich-business-school.de/en/master/master-international-marketing-and-brand-management",
+      "https://www.munich-business-school.de/en/master/master-sports-management-and-media",
+      "https://www.munich-business-school.de/en/mba/mba-full-time",
+      "https://www.munich-business-school.de/en/online-application"
+    ],
+    "elapsed_time_seconds": "not exposed",
+    "format_note": "Matches the repo v0.3 LLM-native program-level contract; this file is the llm_native_v0_2 gap-repair variant.",
+    "version": "llm_native_v0_2",
+    "source_files": [
+      "outputs/v0_3/munich_business_school_admissions.json",
+      "outputs/v0_3/llm_native/munich_business_school_llm_native_admissions.json",
+      "docs/admissions_llm_native_schema_v0_3.md"
+    ],
+    "prompt_file": "docs/prompts/admissions_llm_native_v0_2_prompt.md",
+    "workflow": "Repo-grounded clean-room gap repair: compare crawler v0.3 JSON with LLM-native v0.1 JSON, classify crawler-only facts from evidence/source URLs, then add only confirmed omissions while preserving v0.1 strengths.",
+    "limitations": [
+      "No new paid LLM/API run was made; token usage and dollar cost are unavailable.",
+      "Admissions JSON remains candidate data, not truth.",
+      "Official pages that required JavaScript were not fully re-read live; local crawler evidence was used and marked with appropriate confidence.",
+      "Program records were improved only for the two selected schools."
+    ]
+  },
+  "school": {
+    "name": "Munich Business School",
+    "url": "https://www.munich-business-school.de/en/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university"
+  },
+  "retrieved_at": "2026-05-18T00:00:00Z",
+  "programs": [
+    {
+      "school": {
+        "name": "Munich Business School",
+        "url": "https://www.munich-business-school.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Bachelor International Business",
+        "degree": "Bachelor of Arts (B.A.)",
+        "level": "bachelor",
+        "url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+        "campus": "Munich",
+        "language_of_instruction": [
+          "German/English",
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": [
+          "International focus options include Asia-Pacific, Arabic Countries and the Middle East, Russia and Eastern Europe, Spain and Latin America, France and Francophone Countries, and Germany and European Union."
+        ],
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "level": "high",
+          "language_of_instruction": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "University entrance / school leaving qualification",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "The written application requires an authenticated school leaving certificate, or alternatively the last three school reports.",
+            "Applicants can submit the school leaving certificate by the start of studies at the latest."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "English proficiency",
+            "minimum_score": "CEFR B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [],
+            "notes": [
+              "Official page names TOEFL, IELTS, Duolingo, Cambridge, and ELS 112 as acceptable proof routes, but does not expose exact score thresholds in the reviewed page text."
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Personal interview",
+            "requirement": "required after document review"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": [
+            "Internship proof is required only for lateral entry into the third semester."
+          ]
+        },
+        "documents": [
+          "Authenticated copy of school leaving certificate, alternatively last three school reports",
+          "Letter of motivation",
+          "Resume and photo",
+          "Proof of English language skills B2 by start of studies",
+          "Scholarship personal statement when applying for a scholarship"
+        ],
+        "conditional_paths": [
+          "Transfer students may need advanced knowledge in a second foreign language depending on international focus.",
+          "Lateral entry into the third semester requires internship proof and a document of good academic standing.",
+          "The Pre-Bachelor program is presented as a preparation route, not as a degree record here."
+        ],
+        "international_requirements": [
+          "Non-EU nationals are required to apply for a student visa after acceptance.",
+          "For visa invitation letter steps, MBS asks for the signed study contract, passport details page, enrollment fee, and deposit."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Monthly application rounds: January 15, February 15, March 15, April 15, May 15, June 15, July 15, August 15, September 15, October 15, November 15, and December 15.",
+          "Transfer students: November 30 for spring term entry; June 30 for fall term entry."
+        ],
+        "intakes": [
+          "February",
+          "September"
+        ],
+        "application_channel": "MBS online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Application fee: EUR 60",
+          "Enrollment fee after acceptance: EUR 690; international students EUR 1,490",
+          "Deposit after acceptance: EUR 1,990"
+        ]
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "Key facts list February and September starts, German/English or English language, 210 ECTS, and Bachelor of Arts final degree.",
+            "retrieved_at": "2026-05-17T08:34:24Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+            "source_text": "Application documents include school leaving certificate, motivation letter, resume/photo, and English B2 proof by start of studies.",
+            "retrieved_at": "2026-05-17T08:34:24Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+          "heading": "Key Facts Bachelor's Program",
+          "text": "Program Start February and September; Language German/English or English; Duration 6 semesters plus Bachelor thesis; Credit Points 210 ECTS; Final Degree Bachelor of Arts (B.A.)."
+        },
+        {
+          "source_url": "https://www.munich-business-school.de/en/bachelor/bachelor-international-business",
+          "heading": "Application Documents",
+          "text": "Authenticated copy of school leaving certificate or last three school reports; letter of motivation; resume and photo; proof of English B2 by start of studies; scholarship personal statement if applicable."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "Munich Business School",
+        "url": "https://www.munich-business-school.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Pre-Bachelor International Business",
+        "degree": "Pre-Bachelor certificate / preparation program",
+        "level": "pre-bachelor",
+        "url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+        "campus": "Munich",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": "Bachelor International Business",
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "medium",
+          "level": "high",
+          "language_of_instruction": "medium",
+          "coverage_note": "Official page presents this as a Pre-Bachelor study program taken in combination with Bachelor International Business, not a standalone degree."
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "University entrance qualification such as Abitur, Fachhochschulreife, Matura, IB Diploma, A-levels, or equivalent",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Crawler lateral-entry 30/60 ECTS and grade 2.5 evidence belongs to Bachelor transfer admission, not the normal Pre-Bachelor requirement, so it was not imported."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "English proficiency",
+            "minimum_score": "CEFR B2",
+            "component_scores": [],
+            "validity": "test results accepted only if achieved within the last two years when used",
+            "waiver": [
+              "Schooling completed in English, e.g. US High School Diploma or IB Diploma"
+            ],
+            "notes": [
+              "Application documents name TOEFL, IELTS, Duolingo, Cambridge, and ELS 112 as proof routes."
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Personal interview",
+            "requirement": "required after written application; online via Microsoft Teams"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Authenticated copy of school leaving certificate, alternatively last three school reports",
+          "Letter of motivation",
+          "Resume and photo",
+          "Proof of English language skills B2 by start of studies"
+        ],
+        "conditional_paths": [
+          "Application is made for Pre-Bachelor in combination with the Bachelor International Business program.",
+          "Early application can use the three most recent school reports; final school-leaving certificate is due before the start of studies."
+        ],
+        "international_requirements": [
+          "Applicants should check whether their school-leaving certificate qualifies for German university admission; MBS links to the uni-assist check tool.",
+          "If an English test is also used for a visa, applicants should check the relevant embassy requirements."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Monthly application rounds from January 15 through December 15 for February or September starts",
+          "Early Bird Special: Spring Intake October 15; Fall Intake February 15"
+        ],
+        "intakes": [
+          "February",
+          "September"
+        ],
+        "application_channel": "MBS online application; written application followed by online interview via Microsoft Teams.",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Application fee: EUR 60",
+          "Pre-Bachelor tuition fees can be paid in seven semester installments or 42 monthly installments; exact tuition amount was not captured in local evidence."
+        ]
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "The Pre-Bachelor study program requires a university entrance qualification as well as good English language skills. Proof of English language skills at least at B2 level is sufficient for the application.",
+            "retrieved_at": "2026-05-18T00:00:00Z",
+            "confidence": "high",
+            "review_note": "Official page confirms this is a real program and gives admission requirements."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "You apply for the Pre-Bachelor study program in combination with the Bachelor International Business program. The two-step admission process consists of a written application, and an online interview via Microsoft Teams.",
+            "retrieved_at": "2026-05-18T00:00:00Z",
+            "confidence": "high",
+            "review_note": "Classifies the record as a preparation program linked to the bachelor, not a standalone degree."
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+            "source_text": "Application Documents: Authenticated copy of school leaving certificate or last 3 school reports; Letter of Motivation; Resume and photo; Proof of English language skills B2 by the start of studies.",
+            "retrieved_at": "2026-05-17T08:43:52.087387+00:00",
+            "confidence": "high",
+            "review_note": "Crawler/raw evidence and live official page align."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+          "heading": "Admission Requirements",
+          "text": "The Pre-Bachelor study program requires a university entrance qualification, e.g. Abitur, Fachhochschulreife, Matura, IB Diploma, A-levels, or equivalent, and good English language skills; B2 English proof is sufficient for application."
+        },
+        {
+          "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+          "heading": "Application process",
+          "text": "Applicants apply for the Pre-Bachelor study program in combination with Bachelor International Business; the two-step admission process consists of written application and online interview via Microsoft Teams."
+        },
+        {
+          "source_url": "https://www.munich-business-school.de/en/bachelor/pre-bachelor",
+          "heading": "Application Documents",
+          "text": "Authenticated copy of school leaving certificate or last three school reports; letter of motivation; resume and photo; proof of English language skills B2 by start of studies."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "Munich Business School",
+        "url": "https://www.munich-business-school.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master International Business",
+        "degree": "Master of Arts (M.A.)",
+        "level": "master",
+        "url": "https://www.munich-business-school.de/en/master/master-international-business",
+        "campus": "Munich",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": [
+          "Sustainable Business",
+          "International Marketing",
+          "Corporate Finance",
+          "Luxury Management",
+          "Global Family Business",
+          "Innovation and Digital Business",
+          "International Entrepreneurship"
+        ],
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "level": "high",
+          "language_of_instruction": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor's degree",
+          "minimum_ects": 180,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Applicants with Business Studies, Management, or Economics degrees may apply directly.",
+            "Applicants without an economics degree can qualify by completing the Pre-Master Program."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "TOEFL iBT & Home Edition",
+            "minimum_score": "85",
+            "component_scores": [
+              "writing 22",
+              "all other bands 20"
+            ],
+            "validity": "two years",
+            "waiver": [
+              "schooling completed in English",
+              "first academic degree completed in English"
+            ]
+          },
+          {
+            "test": "IELTS & IELTS Online Academic Module",
+            "minimum_score": "6.5",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": [
+              "schooling completed in English",
+              "first academic degree completed in English"
+            ]
+          },
+          {
+            "test": "ELS English for Academic Purposes",
+            "minimum_score": "Advanced Level 112",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          },
+          {
+            "test": "Duolingo English Test",
+            "minimum_score": "115",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          },
+          {
+            "test": "Pearson PTE Academic",
+            "minimum_score": "56",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          },
+          {
+            "test": "Cambridge",
+            "minimum_score": "173 or Grade B",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Personal interview",
+            "requirement": "qualified applicants are invited; interview may include a case study"
+          },
+          {
+            "test": "GMAT/GRE",
+            "requirement": null,
+            "review_note": "No GMAT or GRE requirement found on the reviewed official page."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Motivation answers in online application",
+          "Resume/CV",
+          "Graduation certificates and/or current university transcripts",
+          "Optional recent photo",
+          "Optional school leaving certificate",
+          "Proof of English language proficiency",
+          "Reference letters if available",
+          "Scholarship personal statement when applicable"
+        ],
+        "conditional_paths": [
+          "Spring semester intake is available for Master International Business only.",
+          "Dual degree option extends duration to 24 months and is available only for fall start.",
+          "Pre-Master route can qualify applicants without an economics degree."
+        ],
+        "international_requirements": [
+          "For non-Europeans requiring a visa, MBS publishes earlier application guidelines.",
+          "Applicants from Vietnam, China, and India should allow an extra month for relevant visas."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Applications accepted all year round; early application recommended.",
+          "Spring semester: Europeans no visa December 10; non-Europeans visa required October 31.",
+          "Winter semester: Europeans no visa July 15; non-Europeans visa required April 30."
+        ],
+        "intakes": [
+          "February",
+          "September"
+        ],
+        "application_channel": "MBS online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
+            "source_text": "Key facts list February and September starts, 100% English language, 18-month single degree, 24-month dual degree, and Master of Arts final degree.",
+            "retrieved_at": "2026-05-17T08:34:24Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
+            "source_text": "Admission requirements state successful Bachelor's degree of 180 ECTS or more; non-economics applicants can qualify through the Pre-Master Program.",
+            "retrieved_at": "2026-05-17T08:34:24Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
+          "heading": "Key Facts Master International Business",
+          "text": "Program Start February and September; Language 100% English; Duration Single Degree 18 months; Duration Dual Degree 24 months; Format full-time; Final Degree Master of Arts (M.A.)."
+        },
+        {
+          "source_url": "https://www.munich-business-school.de/en/master/master-international-business",
+          "heading": "Admission Requirements",
+          "text": "Successful Bachelor's degree of 180 ECTS or more; Business Studies, Management, or Economics applicants may apply directly; applicants without economics degree can qualify through Pre-Master; English tests include TOEFL 85, IELTS 6.5, ELS 112, Duolingo 115, PTE 56, Cambridge 173 or Grade B."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Munich Business School",
+        "url": "https://www.munich-business-school.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master Innovation and Entrepreneurship",
+        "degree": "Master of Arts (M.A.)",
+        "level": "master",
+        "url": "https://www.munich-business-school.de/en/master/master-innovation-and-entrepreneurship",
+        "campus": "Munich",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "level": "high",
+          "language_of_instruction": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor's degree",
+          "minimum_ects": 180,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Applicants with Business Studies, Management, or Economics degrees may apply directly.",
+            "Applicants without an economics degree can qualify by completing the Pre-Master Program."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "TOEFL iBT & Home Edition",
+            "minimum_score": "85",
+            "component_scores": [
+              "writing 22",
+              "all other bands 20"
+            ],
+            "validity": "two years",
+            "waiver": [
+              "schooling completed in English",
+              "first academic degree completed in English"
+            ]
+          },
+          {
+            "test": "IELTS & IELTS Online Academic Module",
+            "minimum_score": "6.5",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": [
+              "schooling completed in English",
+              "first academic degree completed in English"
+            ]
+          },
+          {
+            "test": "ELS English for Academic Purposes",
+            "minimum_score": "Advanced Level 112",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          },
+          {
+            "test": "Duolingo English Test",
+            "minimum_score": "115",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          },
+          {
+            "test": "Pearson PTE Academic",
+            "minimum_score": "56",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          },
+          {
+            "test": "Cambridge",
+            "minimum_score": "173 or Grade B",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Personal interview",
+            "requirement": "qualified applicants are invited; interview may include a case study"
+          },
+          {
+            "test": "GMAT/GRE",
+            "requirement": null,
+            "review_note": "No GMAT or GRE requirement found on the reviewed official page."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Motivation answers in online application",
+          "Resume/CV",
+          "Graduation certificates and/or current university transcripts",
+          "Optional recent photo",
+          "Optional school leaving certificate",
+          "Proof of English language proficiency",
+          "Reference letters if available",
+          "Scholarship personal statement when applicable"
+        ],
+        "conditional_paths": [
+          "Pre-Master route can qualify applicants without an economics degree.",
+          "Dual degree option extends duration to 24 months."
+        ],
+        "international_requirements": [
+          "For non-Europeans requiring a visa, MBS publishes earlier winter-semester application guidelines.",
+          "Applicants from Vietnam, China, and India should allow an extra month for relevant visas."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Applications accepted all year round; early application recommended.",
+          "Winter semester: Europeans no visa July 15; non-Europeans visa required April 30."
+        ],
+        "intakes": [
+          "September"
+        ],
+        "application_channel": "MBS online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-innovation-and-entrepreneurship",
+            "source_text": "Key facts list September start, 100% English language, 18-month single degree, 24-month dual degree, and Master of Arts final degree.",
+            "retrieved_at": "2026-05-17T08:34:24Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-innovation-and-entrepreneurship",
+            "source_text": "Admission requirements list 180 ECTS Bachelor's degree and English tests TOEFL 85, IELTS 6.5, ELS 112, Duolingo 115, PTE 56, Cambridge 173 or Grade B.",
+            "retrieved_at": "2026-05-17T08:34:24Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.munich-business-school.de/en/master/master-innovation-and-entrepreneurship",
+          "heading": "Key Facts Master Innovation and Entrepreneurship",
+          "text": "Program Start September; Language 100% English; Duration Single Degree 18 months; Duration Dual Degree 24 months; Final Degree Master of Arts (M.A.)."
+        },
+        {
+          "source_url": "https://www.munich-business-school.de/en/master/master-innovation-and-entrepreneurship",
+          "heading": "Application Process",
+          "text": "Mandatory documents are motivation answers, Resume/CV, and copies of graduation certificates or current university transcripts; additional English proof and references can be uploaded."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Munich Business School",
+        "url": "https://www.munich-business-school.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master International Marketing and Brand Management",
+        "degree": "Master of Arts (M.A.)",
+        "level": "master",
+        "url": "https://www.munich-business-school.de/en/master/master-international-marketing-and-brand-management",
+        "campus": "Munich",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "level": "high",
+          "language_of_instruction": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor's degree",
+          "minimum_ects": 180,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Applicants with Business Studies, Management, or Economics degrees may apply directly.",
+            "Applicants without an economics degree can qualify by completing the Pre-Master Program."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "TOEFL iBT & Home Edition",
+            "minimum_score": "85",
+            "component_scores": [
+              "writing 22",
+              "all other bands 20"
+            ],
+            "validity": "two years",
+            "waiver": [
+              "schooling completed in English",
+              "first academic degree completed in English"
+            ]
+          },
+          {
+            "test": "IELTS & IELTS Online Academic Module",
+            "minimum_score": "6.5",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": [
+              "schooling completed in English",
+              "first academic degree completed in English"
+            ]
+          },
+          {
+            "test": "ELS English for Academic Purposes",
+            "minimum_score": "Advanced Level 112",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          },
+          {
+            "test": "Duolingo English Test",
+            "minimum_score": "115",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          },
+          {
+            "test": "Pearson PTE Academic",
+            "minimum_score": "56",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          },
+          {
+            "test": "Cambridge",
+            "minimum_score": "173 or Grade B",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Personal interview",
+            "requirement": "qualified applicants are invited; interview may include a case study"
+          },
+          {
+            "test": "GMAT/GRE",
+            "requirement": null,
+            "review_note": "No GMAT or GRE requirement found on the reviewed official page."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Motivation answers in online application",
+          "Resume/CV",
+          "Graduation certificates and/or current university transcripts",
+          "Optional recent photo",
+          "Optional school leaving certificate",
+          "Proof of English language proficiency",
+          "Reference letters if available",
+          "Scholarship personal statement when applicable"
+        ],
+        "conditional_paths": [
+          "Pre-Master route can qualify applicants without an economics degree.",
+          "Dual degree option extends duration to 24 months."
+        ],
+        "international_requirements": [
+          "For non-Europeans requiring a visa, MBS publishes earlier winter-semester application guidelines.",
+          "Applicants from Vietnam, China, and India should allow an extra month for relevant visas."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Applications accepted all year round; early application recommended.",
+          "Winter semester: Europeans no visa July 15; non-Europeans visa required April 30."
+        ],
+        "intakes": [
+          "September"
+        ],
+        "application_channel": "MBS online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-international-marketing-and-brand-management",
+            "source_text": "Key facts list September start, 100% English language, 18-month single degree, 24-month dual degree, and Master of Arts final degree.",
+            "retrieved_at": "2026-05-17T08:34:24Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-international-marketing-and-brand-management",
+            "source_text": "Admission requirements list 180 ECTS Bachelor's degree and the full English-test set including TOEFL, IELTS, ELS, Duolingo, PTE, and Cambridge.",
+            "retrieved_at": "2026-05-17T08:34:24Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.munich-business-school.de/en/master/master-international-marketing-and-brand-management",
+          "heading": "Key Facts Master International Marketing and Brand Management",
+          "text": "Program Start September; Language 100% English; Duration Single Degree 18 months; Duration Dual Degree 24 months; Final Degree Master of Arts (M.A.)."
+        },
+        {
+          "source_url": "https://www.munich-business-school.de/en/master/master-international-marketing-and-brand-management",
+          "heading": "Application Process",
+          "text": "Written application requires motivation answers, Resume/CV, and copies of graduation certificates or current university transcripts; qualified applicants are invited for a personal interview that may include a case study."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Munich Business School",
+        "url": "https://www.munich-business-school.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master Sports Management and Media",
+        "degree": "Master of Arts (M.A.)",
+        "level": "master",
+        "url": "https://www.munich-business-school.de/en/master/master-sports-management-and-media",
+        "campus": "Munich",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": "Master International Business",
+        "specialization": "Sports Management and Media",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "level": "high",
+          "language_of_instruction": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor's degree",
+          "minimum_ects": 180,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Applicants with Business Studies, Management, or Economics degrees may apply directly.",
+            "Applicants without an economics degree can qualify by completing the Pre-Master Program."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "TOEFL iBT & Home Edition",
+            "minimum_score": "85",
+            "component_scores": [
+              "writing 22",
+              "all other bands 20"
+            ],
+            "validity": "two years",
+            "waiver": [
+              "schooling completed in English",
+              "first academic degree completed in English"
+            ]
+          },
+          {
+            "test": "IELTS & IELTS Online Academic Module",
+            "minimum_score": "6.5",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": [
+              "schooling completed in English",
+              "first academic degree completed in English"
+            ]
+          },
+          {
+            "test": "ELS English for Academic Purposes",
+            "minimum_score": "Advanced Level 112",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          },
+          {
+            "test": "Duolingo English Test",
+            "minimum_score": "115",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          },
+          {
+            "test": "Pearson PTE Academic",
+            "minimum_score": "56",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          },
+          {
+            "test": "Cambridge",
+            "minimum_score": "173 or Grade B",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Personal interview",
+            "requirement": "qualified applicants are invited; interview may include a case study"
+          },
+          {
+            "test": "GMAT/GRE",
+            "requirement": null,
+            "review_note": "No GMAT or GRE requirement found on the reviewed official page."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Motivation answers in online application",
+          "Resume/CV",
+          "Graduation certificates and/or current university transcripts",
+          "Optional recent photo",
+          "Optional school leaving certificate",
+          "Proof of English language proficiency",
+          "Reference letters if available",
+          "Scholarship personal statement when applicable"
+        ],
+        "conditional_paths": [
+          "Pre-Master route can qualify applicants without an economics degree.",
+          "Dual degree option extends duration to 24 months."
+        ],
+        "international_requirements": [
+          "For non-Europeans requiring a visa, MBS publishes earlier winter-semester application guidelines.",
+          "Applicants from Vietnam, China, and India should allow an extra month for relevant visas."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Applications accepted all year round; early application recommended.",
+          "Winter semester: Europeans no visa July 15; non-Europeans visa required April 30."
+        ],
+        "intakes": [
+          "September"
+        ],
+        "application_channel": "MBS online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-sports-management-and-media",
+            "source_text": "Key facts list the study program as Master International Business | Sports Management and Media, 100% English language, September start, and Master of Arts final degree.",
+            "retrieved_at": "2026-05-17T08:34:24Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-sports-management-and-media",
+            "source_text": "Admission requirements list the shared master requirement of 180 ECTS Bachelor's degree and English-test thresholds.",
+            "retrieved_at": "2026-05-17T08:34:24Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.munich-business-school.de/en/master/master-sports-management-and-media",
+          "heading": "Key Facts Master Sports Management and Media",
+          "text": "Program Start September; Language 100% English; Duration Single Degree 18 months; Duration Dual Degree 24 months; Study program Master International Business | Sports Management and Media; Final Degree Master of Arts (M.A.)."
+        },
+        {
+          "source_url": "https://www.munich-business-school.de/en/master/master-sports-management-and-media",
+          "heading": "English Proficiency",
+          "text": "Applicants must prove English skills via TOEFL iBT 85, IELTS 6.5, ELS 112, Duolingo 115, PTE 56, or Cambridge 173/Grade B; test may be waived for schooling or first degree in English."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Munich Business School",
+        "url": "https://www.munich-business-school.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master in Finance",
+        "degree": "Master of Arts (M.A.)",
+        "level": "master",
+        "url": "https://www.munich-business-school.de/en/master/master-in-finance",
+        "campus": "Munich",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "level": "high",
+          "language_of_instruction": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor's degree",
+          "minimum_ects": 180,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Applicants with Business Studies, Management, or Economics degrees may apply directly.",
+            "Applicants without an economics degree can qualify by completing the Pre-Master Program."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "TOEFL iBT & Home Edition",
+            "minimum_score": "85",
+            "component_scores": [
+              "writing 22",
+              "all other bands 20"
+            ],
+            "validity": "two years",
+            "waiver": [
+              "schooling completed in English",
+              "first academic degree completed in English"
+            ]
+          },
+          {
+            "test": "IELTS & IELTS Online Academic Module",
+            "minimum_score": "6.5",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": [
+              "schooling completed in English",
+              "first academic degree completed in English"
+            ]
+          },
+          {
+            "test": "ELS English for Academic Purposes",
+            "minimum_score": "Advanced Level 112",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          },
+          {
+            "test": "Duolingo English Test",
+            "minimum_score": "115",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          },
+          {
+            "test": "Pearson PTE Academic",
+            "minimum_score": "56",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          },
+          {
+            "test": "Cambridge",
+            "minimum_score": "173 or Grade B",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Personal interview",
+            "requirement": "qualified applicants are invited; interview may include a case study"
+          },
+          {
+            "test": "GMAT/GRE",
+            "requirement": null,
+            "review_note": "No GMAT or GRE requirement found on the reviewed official page."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Motivation answers in online application",
+          "Resume/CV",
+          "Graduation certificates and/or current university transcripts",
+          "Optional recent photo",
+          "Optional school leaving certificate",
+          "Proof of English language proficiency",
+          "Reference letters if available",
+          "Scholarship personal statement when applicable"
+        ],
+        "conditional_paths": [
+          "Pre-Master route can qualify applicants without an economics degree."
+        ],
+        "international_requirements": [
+          "For non-Europeans requiring a visa, MBS publishes earlier winter-semester application guidelines.",
+          "Applicants from Vietnam, China, and India should allow an extra month for relevant visas."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Applications accepted all year round; early application recommended.",
+          "Winter semester: Europeans no visa July 15; non-Europeans visa required April 30."
+        ],
+        "intakes": [
+          "September"
+        ],
+        "application_channel": "MBS online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-in-finance",
+            "source_text": "Key facts list September start, 100% English language, 18-month single degree, full-time format, and Master of Arts final degree.",
+            "retrieved_at": "2026-05-17T08:34:24Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/master/master-in-finance",
+            "source_text": "Admission requirements list the shared master requirement of 180 ECTS Bachelor's degree and English-test thresholds.",
+            "retrieved_at": "2026-05-17T08:34:24Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.munich-business-school.de/en/master/master-in-finance",
+          "heading": "Key Facts Master In Finance",
+          "text": "Program Start September; Language 100% English; Duration Single Degree 18 months; Format full-time; Final Degree Master of Arts (M.A.)."
+        },
+        {
+          "source_url": "https://www.munich-business-school.de/en/master/master-in-finance",
+          "heading": "Application deadlines in detail",
+          "text": "Applications accepted all year round; winter semester guidelines are July 15 for Europeans without visa and April 30 for non-Europeans requiring visa."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Munich Business School",
+        "url": "https://www.munich-business-school.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "MBA General Management",
+        "degree": "Master of Business Administration (MBA)",
+        "level": "mba",
+        "url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+        "campus": "Munich",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "General Management",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "level": "high",
+          "language_of_instruction": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Recognized first degree",
+          "minimum_ects": null,
+          "recognized_institution": "recognized degree",
+          "minimum_grade": null,
+          "notes": [
+            "The official page says the recognized degree may be in any subject."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "TOEFL iBT & Home Edition",
+            "minimum_score": "85",
+            "component_scores": [
+              "writing 22",
+              "all other bands 20"
+            ],
+            "validity": "two years",
+            "waiver": [
+              "schooling completed in English",
+              "first academic degree completed in English",
+              "English is official language in current daily business communication for at least two years with employer confirmation"
+            ]
+          },
+          {
+            "test": "IELTS & IELTS Online Academic Module",
+            "minimum_score": "6.5",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": [
+              "schooling completed in English",
+              "first academic degree completed in English",
+              "English workplace communication waiver with employer confirmation"
+            ]
+          },
+          {
+            "test": "ELS English for Academic Purposes",
+            "minimum_score": "Advanced Level 112",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          },
+          {
+            "test": "Duolingo English Test",
+            "minimum_score": "115",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          },
+          {
+            "test": "Pearson PTE Academic",
+            "minimum_score": "56",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          },
+          {
+            "test": "Cambridge",
+            "minimum_score": "173 or Grade B",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Personal interview",
+            "requirement": "30-45 minute interview after written application"
+          },
+          {
+            "test": "GMAT/GRE",
+            "requirement": null,
+            "review_note": "No GMAT or GRE requirement found on the reviewed official MBA page."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 2,
+          "relevance": "pertinent work experience after first degree",
+          "notes": []
+        },
+        "documents": [
+          "Letter of motivation (1-2 pages)",
+          "Current curriculum vitae",
+          "Official academic transcript stating final grade",
+          "Two employer references",
+          "Proof of English proficiency",
+          "Passport details page",
+          "Recent passport-size photo",
+          "Completed application form",
+          "Scholarship personal statement when applicable"
+        ],
+        "conditional_paths": [
+          "Original or certified copies are required after successful admission.",
+          "MBS may request additional information for the selection committee."
+        ],
+        "international_requirements": [
+          "Applicants from Vietnam, China, and India should allow an extra month for relevant visas.",
+          "Non-EU nationals need a student visa and MBS lists visa invitation letter steps after admission."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Applications accepted all year round; early application recommended.",
+          "Spring semester: Europeans no visa January 31; non-Europeans visa required October 31.",
+          "Winter semester: Europeans no visa July 15; non-Europeans visa required April 30.",
+          "Separate MBA application deadlines for September start: May 31 international students, July 15 EU/EFTA students.",
+          "Separate MBA application deadlines for March start: November 15 international students, January 31 EU/EFTA students."
+        ],
+        "intakes": [
+          "March",
+          "September"
+        ],
+        "application_channel": "MBS online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Application fee: EUR 60",
+          "Enrollment fee: EUR 690 EU/EFTA or EUR 1,490 non-EU",
+          "Deposit after acceptance: EUR 1,990"
+        ]
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "Key facts list March or September start, English language, 12 months, 60 ECTS, full-time format, and MBA degree.",
+            "retrieved_at": "2026-05-17T08:34:24Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+            "source_text": "Academic and professional requirements state recognized degree in any subject and at least two years of pertinent work experience after first degree.",
+            "retrieved_at": "2026-05-17T08:34:24Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+          "heading": "Key Facts MBA General Management",
+          "text": "Program Start March or September; Language English; Duration 12 months; Credits 60 ECTS; Format full-time; Degree Master of Business Administration (MBA)."
+        },
+        {
+          "source_url": "https://www.munich-business-school.de/en/mba/mba-full-time",
+          "heading": "Admission requirements",
+          "text": "Recognized degree in any subject; at least two years pertinent work experience after first degree; TOEFL 85, IELTS 6.5, ELS 112, Duolingo 115, PTE 56, Cambridge 173/Grade B."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "Munich Business School",
+        "url": "https://www.munich-business-school.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Doctor of Business Administration",
+        "degree": "Doctor of Business Administration",
+        "level": "doctoral",
+        "url": "https://www.munich-business-school.de/en/dba",
+        "campus": "Munich and Sheffield Hallam University (UK)",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "level": "high",
+          "language_of_instruction": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Master's degree",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master's degree must be in business, management, or a related area."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "IELTS Academic",
+            "minimum_score": "7.0",
+            "component_scores": [],
+            "validity": "two years",
+            "waiver": [
+              "English native speaker",
+              "university degree entirely in English in an English-speaking country within last three years",
+              "English is official language in daily business communication in current position and company with employer confirmation"
+            ]
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "100",
+            "component_scores": [
+              "Listening 23",
+              "Reading 23",
+              "Writing 26",
+              "Speaking 22"
+            ],
+            "validity": "two years",
+            "waiver": [
+              "English native speaker",
+              "qualifying English-taught degree",
+              "English workplace communication waiver"
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Application research proposal",
+            "requirement": "required"
+          },
+          {
+            "test": "Personal interview",
+            "requirement": "45-60 minute interview; in person where feasible, otherwise video conference"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 5,
+          "relevance": "working experience, including three years managerial experience with team lead or budget responsibility",
+          "notes": []
+        },
+        "documents": [
+          "Completed application form including application research proposal",
+          "Curriculum Vitae in English",
+          "Copies of diplomas and transcripts with translations if needed",
+          "Two reference letters",
+          "Proof of English proficiency",
+          "Optional academic papers, articles, and certificates"
+        ],
+        "conditional_paths": [
+          "After completing three preparatory modules, students receive a Certificate in Business Research from MBS and enter the Sheffield Hallam DBA research phase."
+        ],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Required application documents may be submitted at any time.",
+          "MBS recommends committing to a specific application round because spots are limited, but exact round deadlines were not found in the reviewed page text."
+        ],
+        "intakes": [
+          "September"
+        ],
+        "application_channel": "MBS online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Application processing fee: EUR 60",
+          "Matriculation fee after acceptance: EUR 690 EU/EFTA or EUR 1,490 non-EU"
+        ]
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.munich-business-school.de/en/dba",
+            "source_text": "Key facts list Doctor of Business Administration, September start, English language, 48 months, part-time format, and Sheffield Hallam University studies abroad.",
+            "retrieved_at": "2026-05-17T08:34:24Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.munich-business-school.de/en/dba",
+            "source_text": "Admission requirements require a Master's degree in business, management, or related area plus at least five years working experience including three managerial years.",
+            "retrieved_at": "2026-05-17T08:34:24Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.munich-business-school.de/en/dba",
+          "heading": "Key Facts DBA",
+          "text": "Final Degree Doctor of Business Administration; Start September; Language English; Duration 48 months; Format part-time; Studies Abroad Sheffield Hallam University (UK)."
+        },
+        {
+          "source_url": "https://www.munich-business-school.de/en/dba",
+          "heading": "Admission Requirements",
+          "text": "Master's degree in business, management, or related area; minimum five years working experience, three years managerial; IELTS 7.0 or TOEFL iBT 100 with component scores; application research proposal and interview required."
+        }
+      ],
+      "needs_human_review": true
+    }
+  ],
+  "llm_review_summary": {
+    "program_count": 9,
+    "key_findings": [
+      "MBS English master programs share a common admissions core: 180 ECTS Bachelor's degree, business/economics direct entry, Pre-Master route for non-economics backgrounds, and the same English-test thresholds.",
+      "The earlier crawler warning about missing MBS language tests is confirmed as important: official master and MBA pages list TOEFL 85, IELTS 6.5, ELS 112, Duolingo 115, PTE 56, and Cambridge 173/Grade B.",
+      "No official GMAT/GRE requirement was found on the reviewed MBS Bachelor, Master, MBA, or DBA pages.",
+      "MBA General Management requires at least two years of pertinent post-degree work experience; DBA requires a Master's degree plus five years of work experience including three managerial years.",
+      "Master International Business has February and September starts; the other reviewed English master programs start in September.",
+      "v0.2 recovers Pre-Bachelor International Business as a genuine v0.1 omission: an official MBS preparation program linked to Bachelor International Business.",
+      "v0.2 preserves v0.1 degree-program coverage and does not import crawler lateral-entry ECTS/grade facts as normal Pre-Bachelor requirements."
+    ],
+    "known_gaps": [
+      "Bachelor English B2 proof is stated, but exact TOEFL/IELTS/Duolingo/Cambridge score thresholds were not found in the reviewed page text.",
+      "Master program application fees were not found on the reviewed master pages.",
+      "DBA application can be submitted any time, but specific application-round dates were not found.",
+      "Pre-Master remains represented only as a conditional pathway because the crawler did not expose a separate current program record for it in this audit scope."
+    ]
+  }
+}
