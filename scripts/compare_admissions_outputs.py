@@ -104,7 +104,12 @@ def render_program_table(title: str, payload: dict[str, Any]) -> str:
     )
 
 
-def render_difference_summary(crawler: dict[str, Any], llm: dict[str, Any]) -> str:
+def render_difference_summary(
+    crawler: dict[str, Any],
+    llm: dict[str, Any],
+    crawler_label: str = "crawler",
+    llm_label: str = "LLM-native",
+) -> str:
     crawler_names = program_names(crawler)
     llm_names = program_names(llm)
     crawler_tests = sorted({value for program in crawler.get("programs", []) for value in test_requirements(program)})
@@ -115,32 +120,32 @@ def render_difference_summary(crawler: dict[str, Any], llm: dict[str, Any]) -> s
     only_llm = sorted(set(llm_names) - set(crawler_names))
     observations = []
     if len(crawler_names) != len(llm_names):
-        observations.append("Program counts differ; review whether crawler records are missed programs or non-program pages.")
+        observations.append("Program counts differ; review whether the difference is a true coverage gap or a non-program page.")
     if count_language_tests(llm) > count_language_tests(crawler):
-        observations.append("LLM-native reading found more language-test details than the crawler.")
+        observations.append(f"{llm_label} found more language-test details than {crawler_label}.")
     if count_test_requirements(crawler) > count_test_requirements(llm):
-        observations.append("Crawler emitted more test requirements than the LLM-native reading; inspect for keyword false positives.")
+        observations.append(f"{crawler_label} emitted more test requirements than {llm_label}; inspect for keyword false positives.")
     if only_crawler:
-        observations.append("Crawler-only program names may include false positives or naming differences.")
+        observations.append(f"{crawler_label}-only program names may include false positives or naming differences.")
     if only_llm:
-        observations.append("LLM-only program names may indicate crawler discovery gaps.")
+        observations.append(f"{llm_label}-only program names may indicate discovery gaps.")
     if not observations:
-        observations.append("Crawler and LLM-native outputs are broadly aligned at the summary level.")
+        observations.append(f"{crawler_label} and {llm_label} outputs are broadly aligned at the summary level.")
     return (
         "<section>"
         "<h2>Difference Summary</h2>"
         + render_meta_grid(
             {
-                "crawler_program_count": len(crawler_names),
-                "llm_program_count": len(llm_names),
-                "crawler_program_names": crawler_names,
-                "llm_program_names": llm_names,
-                "crawler_only_names": only_crawler,
-                "llm_only_names": only_llm,
-                "crawler_language_tests": crawler_languages,
-                "llm_language_tests": llm_languages,
-                "crawler_other_tests": crawler_tests,
-                "llm_other_tests": llm_tests,
+                f"{crawler_label}_program_count": len(crawler_names),
+                f"{llm_label}_program_count": len(llm_names),
+                f"{crawler_label}_program_names": crawler_names,
+                f"{llm_label}_program_names": llm_names,
+                f"{crawler_label}_only_names": only_crawler,
+                f"{llm_label}_only_names": only_llm,
+                f"{crawler_label}_language_tests": crawler_languages,
+                f"{llm_label}_language_tests": llm_languages,
+                f"{crawler_label}_other_tests": crawler_tests,
+                f"{llm_label}_other_tests": llm_tests,
             }
         )
         + "<h3>Assessment</h3>"
@@ -155,6 +160,8 @@ def render_comparison(
     crawler_path: Path,
     llm_path: Path,
     title: str | None = None,
+    crawler_label: str = "Crawler output",
+    llm_label: str = "LLM-native output",
 ) -> str:
     generated_at = dt.datetime.now(dt.UTC).isoformat()
     school_name = crawler.get("school", {}).get("name") or llm.get("school", {}).get("name") or "Admissions"
@@ -166,9 +173,9 @@ def render_comparison(
             f"<p>Generated at {escape(generated_at)} from {escape(crawler_path.name)} and {escape(llm_path.name)}.</p>",
             "</header>",
             "<main>",
-            render_difference_summary(crawler, llm),
-            render_program_table("Crawler output", crawler),
-            render_program_table("LLM-native output", llm),
+            render_difference_summary(crawler, llm, crawler_label, llm_label),
+            render_program_table(crawler_label, crawler),
+            render_program_table(llm_label, llm),
             "<section><h2>Method Metadata</h2>",
             render_meta_grid(
                 {

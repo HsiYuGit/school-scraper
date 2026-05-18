@@ -54,3 +54,22 @@ python scripts\render_admissions_html.py outputs\munich_business_school_admissio
 The generated HTML is an output artifact for manual review. Do not edit it as
 source of truth; update the scraper or JSON generation flow when the displayed
 content reveals an extraction issue.
+
+## Client dashboard
+
+Use the dashboard renderer when preparing a self-contained folder for review:
+
+```powershell
+python scripts\render_admissions_dashboard.py --outputs-dir outputs --html-dir outputs\html
+```
+
+This keeps existing files in `outputs/html/` and adds or updates:
+
+- `outputs/html/index.html`
+- `outputs/html/comparisons/v0_3_vs_v0_4.html`
+- `outputs/html/comparisons/llm_v0_1_vs_v0_2/*.html`
+- `outputs/html/comparisons/v0_4_vs_llm_v0_2/*.html`
+- versioned review pages for `v0_2`, `v0_3`, `v0_4`, `llm_native`, and `llm_native_v0_2`
+
+For the current client review, open or copy the whole `outputs/html/` folder
+and start from `outputs/html/index.html`.

@@ -174,3 +174,10 @@ python scripts\scrape_admissions.py "https://www.munich-business-school.de/en/" 
 - `python -m unittest tests.test_scrape_admissions`
 - `python -m json.tool outputs\v0_4\partner_school_crawl_manifest.json`
 - 逐校 suspect query: generic title、cross-host redirect、event/focus/study-mode URL 均為 0。
+
+### Client HTML dashboard
+
+- 更新 `scripts/render_admissions_dashboard.py`，讓 `outputs/html/index.html` 連到 v0.4 review pages、`v0.3 vs v0.4` crawler comparison、兩校 `LLM v0.1 vs v0.2` comparison，以及兩校 `v0.4 vs LLM v0.2` comparison。
+- 更新 `scripts/compare_admissions_outputs.py`，讓比較頁可以用不同 left/right label，而不只顯示 crawler vs LLM-native。
+- 重新產生 `outputs/html/`，保留舊 HTML，不清空資料夾。
+- 驗證 `outputs/html` 共 87 個 HTML 檔，所有相對連結存在。

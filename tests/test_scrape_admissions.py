@@ -1,4 +1,5 @@
 import http.client
+import shutil
 import unittest
 import urllib.robotparser
 import json
@@ -8,6 +9,7 @@ from unittest import mock
 
 from scripts.crawl_partner_schools import classify_validation_status, slugify
 from scripts.compare_admissions_outputs import render_comparison
+from scripts.render_admissions_dashboard import main as render_dashboard_main
 from scripts.render_admissions_html import render_file
 from scripts.scrape_admissions import (
     Page,
@@ -541,6 +543,28 @@ class AdmissionExtractionTest(unittest.TestCase):
 
         output_path.unlink()
         output_dir.rmdir()
+
+    def test_dashboard_includes_client_comparison_routes(self):
+        root = Path(__file__).parents[1]
+        output_dir = root / "outputs" / "_test_html_dashboard"
+        if output_dir.exists():
+            shutil.rmtree(output_dir)
+
+        try:
+            result = render_dashboard_main(["--outputs-dir", str(root / "outputs"), "--html-dir", str(output_dir)])
+            index_path = output_dir / "index.html"
+            html = index_path.read_text(encoding="utf-8")
+
+            self.assertEqual(result, 0)
+            self.assertIn("v0.3 vs v0.4 crawler improvement", html)
+            self.assertIn("LLM v0.1 vs v0.2", html)
+            self.assertIn("v0.4 vs LLM v0.2", html)
+            self.assertTrue((output_dir / "comparisons" / "v0_3_vs_v0_4.html").exists())
+            self.assertEqual(2, len(list((output_dir / "comparisons" / "llm_v0_1_vs_v0_2").glob("*.html"))))
+            self.assertEqual(2, len(list((output_dir / "comparisons" / "v0_4_vs_llm_v0_2").glob("*.html"))))
+        finally:
+            if output_dir.exists():
+                shutil.rmtree(output_dir)
 
     def test_zero_program_manifest_status_is_broken_or_review(self):
         status = classify_validation_status(
