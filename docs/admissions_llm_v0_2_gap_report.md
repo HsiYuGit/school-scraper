@@ -1,13 +1,15 @@
 # Admissions LLM-native v0.2 gap report
 
-Date: 2026-05-18
+Date: 2026-05-18, extended 2026-05-19
 
-Scope: clean-room comparison of `outputs/v0_3/*.json` crawler outputs against `outputs/v0_3/llm_native/*.json`, treating the current LLM-native files as LLM v0.1. Admissions JSON is candidate data, not truth.
+Scope: clean-room comparison of `outputs/v0_3/*.json` crawler outputs against `outputs/v0_3/llm_native/*.json`, treating the current LLM-native files as LLM v0.1. The 2026-05-19 extension also used `outputs/v0_4/*.json` as a candidate recall surface for CBS International Business School and EBS Universität. Admissions JSON is candidate data, not truth.
 
 Generated v0.2 files:
 
 - `outputs/v0_3/llm_native_v0_2/tum_asia_llm_native_v0_2_admissions.json`
 - `outputs/v0_3/llm_native_v0_2/munich_business_school_llm_native_v0_2_admissions.json`
+- `outputs/v0_3/llm_native_v0_2/cbs_international_business_school_llm_native_v0_2_admissions.json`
+- `outputs/v0_3/llm_native_v0_2/ebs_universitat_llm_native_v0_2_admissions.json`
 
 ## Chosen schools
 
@@ -17,6 +19,8 @@ I selected exactly two schools where crawler v0.3 captured meaningful items that
 | --- | --- |
 | TUM Asia | Crawler found Aerospace Engineering and Industrial Chemistry program records and current application-period/fee facts missing from LLM v0.1. Live official navigation also lists both programs under Graduate Studies. |
 | Munich Business School | Crawler found Pre-Bachelor International Business as an official program page. LLM v0.1 only mentioned Pre-Bachelor as a conditional/preparation route and listed it as a known gap. |
+| CBS International Business School | Crawler v0.4 recovered concrete CBS master/MBA programme URLs after v0.3 had zero program records. Official CBS pages confirmed several v0.1 omissions. |
+| EBS Universität | v0.4 did not reveal genuine v0.1 program omissions, but it was useful for classifying crawler naming, grouping, fee, and language-noise differences. |
 
 ## Comparison table
 
@@ -24,6 +28,8 @@ I selected exactly two schools where crawler v0.3 captured meaningful items that
 | --- | ---: | ---: | ---: |
 | TUM Asia | 5 programs | 3 programs | 5 programs |
 | Munich Business School | 4 programs | 8 programs | 9 programs |
+| CBS International Business School | 0 programs in v0.3; 13 programs in v0.4 | 4 programs | 12 programs |
+| EBS Universität | 4 programs in v0.3; 7 programs in v0.4 | 8 programs | 8 programs |
 
 ## Root-cause classification
 
@@ -47,6 +53,29 @@ I selected exactly two schools where crawler v0.3 captured meaningful items that
 | MBS Pre-Bachelor 30/60 ECTS and grade 2.5 | crawler_false_positive for normal Pre-Bachelor admission | Those facts come from Bachelor transfer/lateral-entry sections in the same page raw evidence. v0.2 does not put them in normal Pre-Bachelor academic requirements. |
 | MBS Pre-Bachelor monthly application rounds and interview | genuine_llm_omission | Crawler raw evidence and the page text show monthly application rounds and a two-step written application plus online interview. v0.2 records this. |
 
+### CBS International Business School
+
+| Crawler-only item | Classification | Judgment and evidence |
+| --- | --- | --- |
+| v0.3 zero-program output | crawler recall gap | v0.3 was not a reliable negative result. v0.4 found concrete CBS programme pages that official `cbs.de` pages confirm. |
+| International Business & Management M.Sc. | naming_or_grouping_mismatch | v0.1 already had this core programme. v0.2 preserves it and updates intake coverage rather than duplicating a crawler title variant. |
+| International Business M.A. | genuine_llm_omission with caveat | Official CBS page exists, but it frames the offering as last available in Summer 2026. v0.2 adds the record and marks it for human review. |
+| Business Psychology and Management, Digital Marketing, Global Finance, Strategy & Consulting, Supply Chain & Logistics | genuine_llm_omission | Official CBS programme pages confirm these as real programme records. v0.2 adds them. |
+| Global Finance winter/summer URLs | schema_granularity_difference | v0.2 models the winter/summer URL variants as one programme with two intake windows. |
+| Business Technology Part-Time | schema_granularity_difference | Official CBS page exists, but catalogue grouping is specialization-like. v0.2 keeps it as a human-review record. |
+| NXT GEN Programmes and template snippets | crawler_false_positive | These are broad marketing/template surfaces, not final programme records. v0.2 does not import them. |
+
+### EBS Universität
+
+| Crawler-only item | Classification | Judgment and evidence |
+| --- | --- | --- |
+| Master in Business Analytics crawler title as "AI master's degree" | naming_or_grouping_mismatch | v0.1 already had the correct programme family. v0.2 keeps `Master in Business Analytics`. |
+| Full-time MBA crawler title | naming_or_grouping_mismatch | v0.1 correctly groups full-time and part-time MBA variants. v0.2 preserves the grouped record. |
+| Executive MBA early-bonus dates | schema_granularity_difference | v0.2 records March/May 2026 dates as fee/bonus notes, not admissions deadlines. |
+| Master in Management / Finance test extraction | crawler_under_specified | v0.1 contains stronger admissions-test interpretation, including Finance CFA Level 1 nuance. v0.2 preserves it. |
+| Bachelor in Law, Politics and Economics missing from v0.4 | crawler recall gap | Absence from v0.4 is not an LLM error. v0.2 preserves the v0.1 record. |
+| English/German/Deutsch language extraction | crawler_false_positive | v0.2 does not import crawler language pollution where official English pages support English-only programme language. |
+
 ## v0.1 to v0.2 changes
 
 TUM Asia:
@@ -66,11 +95,27 @@ Munich Business School:
 - Removed the v0.1 known-gap statement that Pre-Bachelor is only a pathway.
 - Excluded false positives from the crawler: transfer-entry ECTS/grade facts as normal Pre-Bachelor admission requirements.
 
+CBS International Business School:
+
+- Added `method.version = llm_native_v0_2`, `source_files`, `prompt_file`, workflow notes, limitations, and truthful unavailable cost/token metadata.
+- Expanded from 4 to 12 records by adding official-confirmed CBS programme pages while preserving v0.1 shared requirements and MBA cautions.
+- Rejected crawler/template noise, including `NXT GEN Programmes`, navigation-derived campus fragments, and generic deadline snippets.
+- Marked International Business M.A., Business Psychology and Management, Business Technology Part-Time, and MBA records for human review where availability, catalogue grouping, or public-page detail remains uncertain.
+
+EBS Universität:
+
+- Added `method.version = llm_native_v0_2`, `source_files`, `prompt_file`, workflow notes, limitations, and truthful unavailable cost/token metadata.
+- Kept all 8 v0.1 programme records because v0.4 did not show genuine programme omissions.
+- Refreshed confirmed fee/timing facts where useful and classified v0.4 differences as naming, grouping, schema granularity, or crawler false positives.
+- Recorded the Windows console encoding lesson: terminal mojibake is not the same as invalid UTF-8 JSON.
+
 ## Why v0.2 is better
 
 v0.2 improves recall for confirmed crawler-only facts while keeping precision controls:
 
 - It recovers true missed program coverage for TUM Asia and MBS.
+- It recovers true missed program coverage for CBS where v0.4 found official programme URLs after a v0.3 zero-output result.
+- It avoids adding duplicates for EBS where the crawler mostly surfaced naming/granularity differences rather than true omissions.
 - It keeps the LLM v0.1 richer requirement extraction instead of replacing it with crawler-normalized fragments.
 - It marks JavaScript-gated or crawler-only evidence as candidate data needing human review.
 - It explicitly rejects crawler false positives rather than merging every crawler-only field.

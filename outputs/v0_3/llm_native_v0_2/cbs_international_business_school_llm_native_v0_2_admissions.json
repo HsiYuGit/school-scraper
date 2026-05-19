@@ -1,0 +1,1613 @@
+{
+  "schema_version": "0.3-llm-native-draft",
+  "method": {
+    "type": "llm_native_official_site_reading",
+    "created_at": "2026-05-19T02:16:00Z",
+    "school": "CBS International Business School",
+    "agent": {
+      "agent_id": "not exposed",
+      "nickname": "not exposed",
+      "role": "worker subagent",
+      "model": "GPT-5 Codex",
+      "reasoning_effort": "medium"
+    },
+    "cost_tracking": {
+      "token_usage": "not exposed; no standalone measured LLM API call was run for this v0.2 repair pass",
+      "estimated_usd_cost": "not available",
+      "note": "Do not estimate unavailable token or dollar cost."
+    },
+    "source_urls": [
+      "https://www.cbs.de/en/admissions/requirements/bachelors",
+      "https://www.cbs.de/en/admissions/requirements/masters",
+      "https://www.cbs.de/en/bachelors-degree-germany/international-business",
+      "https://www.cbs.de/en/masters-degree-germany/international-business-ma",
+      "https://www.cbs.de/en/masters-degree-germany/ma-international-business",
+      "https://www.cbs.de/en/masters-degree-germany/business-psychology",
+      "https://www.cbs.de/en/masters-degree-germany/digital-online-marketing",
+      "https://www.cbs.de/en/masters-degree-germany/msc-global-finance",
+      "https://www.cbs.de/en/masters-degree-germany/business-consulting",
+      "https://www.cbs.de/en/masters-degree-germany/masters-supply-chain-management",
+      "https://www.cbs.de/en/masters-degree-germany/mbt-business-and-technology",
+      "https://www.cbs.de/en/masters-degree-germany/digital-transformation-management-part-time",
+      "https://www.cbs.de/en/mba-germany/master-business-administration",
+      "https://www.cbs.de/en/mba-germany/one-year-mba-international-management"
+    ],
+    "elapsed_time_seconds": "not exposed",
+    "format_note": "Matches the repo v0.3 LLM-native program-level contract; this file is the llm_native_v0_2 gap-repair variant.",
+    "version": "llm_native_v0_2",
+    "source_files": [
+      "docs/admissions_extraction_harness.md",
+      "docs/prompts/admissions_llm_native_v0_2_prompt.md",
+      "docs/admissions_llm_native_schema_v0_3.md",
+      "outputs/v0_3/cbs_international_business_school_admissions.json",
+      "outputs/v0_3/llm_native/cbs_international_business_school_llm_native_admissions.json",
+      "outputs/v0_4/cbs_international_business_school_admissions.json"
+    ],
+    "prompt_file": "docs/prompts/admissions_llm_native_v0_2_prompt.md",
+    "workflow": "Repo-grounded clean-room gap repair: compare crawler v0.3 JSON, LLM-native v0.1 JSON, and v0.4 candidate recall; classify crawler-only facts from official cbs.de pages; preserve v0.1 strengths and add only official-confirmed omissions.",
+    "limitations": [
+      "Admissions JSON remains candidate data, not truth.",
+      "No standalone paid LLM/API run was made; token usage and dollar cost are unavailable.",
+      "CBS pages contain repeated navigation/template text, so v0.2 rejects template-derived crawler noise.",
+      "Some CBS programme granularity is catalogue-specific; Business Psychology and Business Technology remain human-review records."
+    ]
+  },
+  "school": {
+    "name": "CBS International Business School",
+    "url": "https://www.cbs.de/en/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university"
+  },
+  "retrieved_at": "2026-05-19T02:16:00Z",
+  "programs": [
+    {
+      "school": {
+        "name": "CBS International Business School",
+        "url": "https://www.cbs.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International Business",
+        "degree": "Bachelor of Science",
+        "level": "bachelor",
+        "url": "https://www.cbs.de/en/bachelors-degree-germany/international-business",
+        "campus": [
+          "Cologne"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "level": "high",
+          "language_of_instruction": "medium",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "General university entrance qualification such as A-levels, university of applied sciences entrance qualification, or internationally recognized equivalent.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": "No numerus clausus / no fixed minimum GPA found in the reviewed CBS page text.",
+          "notes": [
+            "CBS describes alternative bachelor admission paths via vocational qualifications or master craftsman/equivalent advanced training.",
+            "Applicants may apply before completing the final school diploma if they submit it later."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "TOEFL",
+            "minimum_score": "83",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previous education or degree completed in English may be accepted."
+            ]
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "6.5",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previous education or degree completed in English may be accepted."
+            ]
+          },
+          {
+            "test": "Cambridge Certificate",
+            "minimum_score": "B2 or C1 depending on the programme",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previous education or degree completed in English may be accepted."
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Interview or assessment",
+            "requirement": "may be required after document review; programme-specific process not fully exposed in the reviewed public text"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "School leaving certificate or latest transcripts",
+          "CV or resume",
+          "Proof of English language skills for English-taught programmes",
+          "Passport or identity document when required by the application process"
+        ],
+        "conditional_paths": [
+          "Alternative bachelor admission paths may exist through vocational qualifications or master craftsman/equivalent advanced training."
+        ],
+        "international_requirements": [
+          "Central CBS checklist gives visa-sensitive deadlines; international applicants should allow enough time for visa processing."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "CBS pages state that application is generally possible year-round while places are available; visa-sensitive applicants should observe central checklist deadlines."
+        ],
+        "intakes": [
+          "Winter",
+          "Summer"
+        ],
+        "application_channel": "CBS online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.cbs.de/en/bachelors-degree-germany/international-business",
+            "source_text": "CBS International Business B.Sc. page identifies the English-taught bachelor programme, Cologne campus, and winter/summer study start.",
+            "retrieved_at": "2026-05-19T02:16:00Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.cbs.de/en/bachelors-degree-germany/international-business",
+          "heading": "International Business B.Sc.",
+          "source_text": "Programme page identifies International Business as a Bachelor of Science programme taught in English with Cologne campus and winter/summer intake."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "CBS International Business School",
+        "url": "https://www.cbs.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International Business",
+        "degree": "Master of Arts",
+        "level": "master",
+        "url": "https://www.cbs.de/en/masters-degree-germany/international-business-ma",
+        "campus": [
+          "Cologne"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "level": "high",
+          "language_of_instruction": "medium",
+          "requirements": "medium",
+          "coverage_note": "Added as a genuine v0.1 omission, but marked for review because the public page frames it as a final Summer 2026 offer."
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Recognized bachelor's, diploma, magister, or equivalent first degree for master's admission.",
+          "minimum_ects": "at least 180 ECTS for business-related master's programmes when stated on CBS master requirements",
+          "recognized_institution": "recognized German or international university, university of applied sciences, or business academy",
+          "minimum_grade": "good minimum grade for business-related master's programmes when stated on CBS master requirements",
+          "notes": [
+            "CBS central master requirements are shared evidence; individual programme pages may specify ECTS variants such as 120, 90, or 60 ECTS tracks."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business-related prior studies",
+            "minimum_ects": null,
+            "notes": [
+              "Required or relevant for business-focused CBS master's programmes where stated."
+            ]
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "TOEFL",
+            "minimum_score": "92",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "7.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          },
+          {
+            "test": "Cambridge Certificate",
+            "minimum_score": "B2 or C1 depending on the programme",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "conditional",
+            "notes": "CBS says an aptitude test may be required in certain cases to demonstrate study suitability."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": "programme-specific; not a general requirement for all CBS master's programmes",
+          "notes": []
+        },
+        "documents": [
+          "First degree certificate or current transcript",
+          "CV or resume",
+          "Proof of English language skills for English-taught programmes",
+          "Application documents requested through the CBS online application process"
+        ],
+        "conditional_paths": [
+          "Some programmes may require an aptitude test or additional suitability evidence in individual cases."
+        ],
+        "international_requirements": [
+          "Central master checklist gives May 30 for winter semester and November 30 for summer semester for applicants needing a visa."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "CBS pages state that application is generally possible year-round while places are available; visa-sensitive applicants should observe central checklist deadlines."
+        ],
+        "intakes": [
+          "Summer 2026 only / last time Summer 2026"
+        ],
+        "application_channel": "CBS online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.cbs.de/en/masters-degree-germany/international-business-ma",
+            "source_text": "CBS International Business M.A. page is an official programme page; it indicates the programme is available for the last time in Summer 2026.",
+            "retrieved_at": "2026-05-19T02:16:00Z",
+            "confidence": "high",
+            "review_note": "Confirm current availability before production ingestion."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.cbs.de/en/masters-degree-germany/international-business-ma",
+          "heading": "International Business M.A.",
+          "source_text": "Official page identifies International Business as a master's programme and marks the Summer 2026 offering as the last time."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "CBS International Business School",
+        "url": "https://www.cbs.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International Business & Management",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://www.cbs.de/en/masters-degree-germany/ma-international-business",
+        "campus": [
+          "Cologne"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "120/90/60 ECTS variants",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "level": "high",
+          "language_of_instruction": "medium",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Recognized bachelor's, diploma, magister, or equivalent first degree for master's admission.",
+          "minimum_ects": "at least 180 ECTS for business-related master's programmes when stated on CBS master requirements",
+          "recognized_institution": "recognized German or international university, university of applied sciences, or business academy",
+          "minimum_grade": "good minimum grade for business-related master's programmes when stated on CBS master requirements",
+          "notes": [
+            "CBS central master requirements are shared evidence; individual programme pages may specify ECTS variants such as 120, 90, or 60 ECTS tracks."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business-related prior studies",
+            "minimum_ects": null,
+            "notes": [
+              "Required or relevant for business-focused CBS master's programmes where stated."
+            ]
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "TOEFL",
+            "minimum_score": "92",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "7.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          },
+          {
+            "test": "Cambridge Certificate",
+            "minimum_score": "B2 or C1 depending on the programme",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "conditional",
+            "notes": "CBS says an aptitude test may be required in certain cases to demonstrate study suitability."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": "programme-specific; not a general requirement for all CBS master's programmes",
+          "notes": []
+        },
+        "documents": [
+          "First degree certificate or current transcript",
+          "CV or resume",
+          "Proof of English language skills for English-taught programmes",
+          "Application documents requested through the CBS online application process"
+        ],
+        "conditional_paths": [
+          "Some programmes may require an aptitude test or additional suitability evidence in individual cases."
+        ],
+        "international_requirements": [
+          "Central master checklist gives May 30 for winter semester and November 30 for summer semester for applicants needing a visa."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "CBS pages state that application is generally possible year-round while places are available; visa-sensitive applicants should observe central checklist deadlines."
+        ],
+        "intakes": [
+          "Winter",
+          "Summer"
+        ],
+        "application_channel": "CBS online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.cbs.de/en/masters-degree-germany/ma-international-business",
+            "source_text": "CBS International Business & Management M.Sc. page confirms an English-taught M.Sc. programme with winter and summer intakes.",
+            "retrieved_at": "2026-05-19T02:16:00Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.cbs.de/en/masters-degree-germany/ma-international-business",
+          "heading": "International Business & Management M.Sc.",
+          "source_text": "Programme page identifies International Business & Management as a Master of Science programme with 120/90/60 ECTS variants and winter/summer starts."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "CBS International Business School",
+        "url": "https://www.cbs.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Business Psychology and Management",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://www.cbs.de/en/masters-degree-germany/business-psychology",
+        "campus": [
+          "Cologne"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Business psychology and management",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "level": "high",
+          "language_of_instruction": "medium",
+          "requirements": "medium",
+          "coverage_note": "Official page confirmed, but marked for review due template-heavy page wording."
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Recognized bachelor's, diploma, magister, or equivalent first degree for master's admission.",
+          "minimum_ects": "at least 180 ECTS for business-related master's programmes when stated on CBS master requirements",
+          "recognized_institution": "recognized German or international university, university of applied sciences, or business academy",
+          "minimum_grade": "good minimum grade for business-related master's programmes when stated on CBS master requirements",
+          "notes": [
+            "CBS central master requirements are shared evidence; individual programme pages may specify ECTS variants such as 120, 90, or 60 ECTS tracks."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business-related prior studies",
+            "minimum_ects": null,
+            "notes": [
+              "Required or relevant for business-focused CBS master's programmes where stated."
+            ]
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "TOEFL",
+            "minimum_score": "92",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "7.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          },
+          {
+            "test": "Cambridge Certificate",
+            "minimum_score": "B2 or C1 depending on the programme",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "conditional",
+            "notes": "CBS says an aptitude test may be required in certain cases to demonstrate study suitability."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": "programme-specific; not a general requirement for all CBS master's programmes",
+          "notes": []
+        },
+        "documents": [
+          "First degree certificate or current transcript",
+          "CV or resume",
+          "Proof of English language skills for English-taught programmes",
+          "Application documents requested through the CBS online application process"
+        ],
+        "conditional_paths": [
+          "Some programmes may require an aptitude test or additional suitability evidence in individual cases."
+        ],
+        "international_requirements": [
+          "Central master checklist gives May 30 for winter semester and November 30 for summer semester for applicants needing a visa."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "CBS pages state that application is generally possible year-round while places are available; visa-sensitive applicants should observe central checklist deadlines."
+        ],
+        "intakes": [
+          "Winter"
+        ],
+        "application_channel": "CBS online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.cbs.de/en/masters-degree-germany/business-psychology",
+            "source_text": "CBS Business Psychology page is an official English-taught business psychology master's page; degree wording and template text should be manually checked.",
+            "retrieved_at": "2026-05-19T02:16:00Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.cbs.de/en/masters-degree-germany/business-psychology",
+          "heading": "Business Psychology",
+          "source_text": "Official CBS page presents Business Psychology and Management as a master's programme; page template/degree wording requires manual verification."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "CBS International Business School",
+        "url": "https://www.cbs.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Digital Marketing",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://www.cbs.de/en/masters-degree-germany/digital-online-marketing",
+        "campus": [
+          "Cologne"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Online and digital marketing",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "level": "high",
+          "language_of_instruction": "medium",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Recognized bachelor's, diploma, magister, or equivalent first degree for master's admission.",
+          "minimum_ects": "at least 180 ECTS for business-related master's programmes when stated on CBS master requirements",
+          "recognized_institution": "recognized German or international university, university of applied sciences, or business academy",
+          "minimum_grade": "good minimum grade for business-related master's programmes when stated on CBS master requirements",
+          "notes": [
+            "CBS central master requirements are shared evidence; individual programme pages may specify ECTS variants such as 120, 90, or 60 ECTS tracks."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business-related prior studies",
+            "minimum_ects": null,
+            "notes": [
+              "Required or relevant for business-focused CBS master's programmes where stated."
+            ]
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "TOEFL",
+            "minimum_score": "92",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "7.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          },
+          {
+            "test": "Cambridge Certificate",
+            "minimum_score": "B2 or C1 depending on the programme",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "conditional",
+            "notes": "CBS says an aptitude test may be required in certain cases to demonstrate study suitability."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": "programme-specific; not a general requirement for all CBS master's programmes",
+          "notes": []
+        },
+        "documents": [
+          "First degree certificate or current transcript",
+          "CV or resume",
+          "Proof of English language skills for English-taught programmes",
+          "Application documents requested through the CBS online application process"
+        ],
+        "conditional_paths": [
+          "Some programmes may require an aptitude test or additional suitability evidence in individual cases."
+        ],
+        "international_requirements": [
+          "Central master checklist gives May 30 for winter semester and November 30 for summer semester for applicants needing a visa."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "CBS pages state that application is generally possible year-round while places are available; visa-sensitive applicants should observe central checklist deadlines."
+        ],
+        "intakes": [
+          "Winter"
+        ],
+        "application_channel": "CBS online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.cbs.de/en/masters-degree-germany/digital-online-marketing",
+            "source_text": "CBS Digital Marketing page confirms an official English-taught M.Sc. programme.",
+            "retrieved_at": "2026-05-19T02:16:00Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.cbs.de/en/masters-degree-germany/digital-online-marketing",
+          "heading": "Digital Marketing",
+          "source_text": "Official programme page identifies Digital Marketing / Online & Digital Marketing as an English-taught Master of Science programme."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "CBS International Business School",
+        "url": "https://www.cbs.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Global Finance",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://www.cbs.de/en/masters-degree-germany/msc-global-finance",
+        "campus": [
+          "Cologne"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "level": "high",
+          "language_of_instruction": "medium",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Recognized bachelor's, diploma, magister, or equivalent first degree for master's admission.",
+          "minimum_ects": "at least 180 ECTS for business-related master's programmes when stated on CBS master requirements",
+          "recognized_institution": "recognized German or international university, university of applied sciences, or business academy",
+          "minimum_grade": "good minimum grade for business-related master's programmes when stated on CBS master requirements",
+          "notes": [
+            "CBS central master requirements are shared evidence; individual programme pages may specify ECTS variants such as 120, 90, or 60 ECTS tracks."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business-related prior studies",
+            "minimum_ects": null,
+            "notes": [
+              "Required or relevant for business-focused CBS master's programmes where stated."
+            ]
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "TOEFL",
+            "minimum_score": "92",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "7.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          },
+          {
+            "test": "Cambridge Certificate",
+            "minimum_score": "B2 or C1 depending on the programme",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "conditional",
+            "notes": "CBS says an aptitude test may be required in certain cases to demonstrate study suitability."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": "programme-specific; not a general requirement for all CBS master's programmes",
+          "notes": []
+        },
+        "documents": [
+          "First degree certificate or current transcript",
+          "CV or resume",
+          "Proof of English language skills for English-taught programmes",
+          "Application documents requested through the CBS online application process"
+        ],
+        "conditional_paths": [
+          "Some programmes may require an aptitude test or additional suitability evidence in individual cases."
+        ],
+        "international_requirements": [
+          "Central master checklist gives May 30 for winter semester and November 30 for summer semester for applicants needing a visa."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "CBS pages state that application is generally possible year-round while places are available; visa-sensitive applicants should observe central checklist deadlines."
+        ],
+        "intakes": [
+          "Winter",
+          "Summer"
+        ],
+        "application_channel": "CBS online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.cbs.de/en/masters-degree-germany/msc-global-finance",
+            "source_text": "CBS Global Finance page confirms an official M.Sc. programme; winter and summer page variants represent one programme rather than two records.",
+            "retrieved_at": "2026-05-19T02:16:00Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.cbs.de/en/masters-degree-germany/msc-global-finance",
+          "heading": "Global Finance",
+          "source_text": "Official CBS Global Finance pages are grouped into one programme record with winter and summer intake coverage."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "CBS International Business School",
+        "url": "https://www.cbs.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Strategy & Consulting",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://www.cbs.de/en/masters-degree-germany/business-consulting",
+        "campus": [
+          "Cologne"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "level": "high",
+          "language_of_instruction": "medium",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Recognized bachelor's, diploma, magister, or equivalent first degree for master's admission.",
+          "minimum_ects": "at least 180 ECTS for business-related master's programmes when stated on CBS master requirements",
+          "recognized_institution": "recognized German or international university, university of applied sciences, or business academy",
+          "minimum_grade": "good minimum grade for business-related master's programmes when stated on CBS master requirements",
+          "notes": [
+            "CBS central master requirements are shared evidence; individual programme pages may specify ECTS variants such as 120, 90, or 60 ECTS tracks."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business-related prior studies",
+            "minimum_ects": null,
+            "notes": [
+              "Required or relevant for business-focused CBS master's programmes where stated."
+            ]
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "TOEFL",
+            "minimum_score": "92",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "7.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          },
+          {
+            "test": "Cambridge Certificate",
+            "minimum_score": "B2 or C1 depending on the programme",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "conditional",
+            "notes": "CBS says an aptitude test may be required in certain cases to demonstrate study suitability."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": "programme-specific; not a general requirement for all CBS master's programmes",
+          "notes": []
+        },
+        "documents": [
+          "First degree certificate or current transcript",
+          "CV or resume",
+          "Proof of English language skills for English-taught programmes",
+          "Application documents requested through the CBS online application process"
+        ],
+        "conditional_paths": [
+          "Some programmes may require an aptitude test or additional suitability evidence in individual cases."
+        ],
+        "international_requirements": [
+          "Central master checklist gives May 30 for winter semester and November 30 for summer semester for applicants needing a visa."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "CBS pages state that application is generally possible year-round while places are available; visa-sensitive applicants should observe central checklist deadlines."
+        ],
+        "intakes": [
+          "Winter"
+        ],
+        "application_channel": "CBS online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.cbs.de/en/masters-degree-germany/business-consulting",
+            "source_text": "CBS Strategy & Consulting / Business Consulting page confirms an official English-taught M.Sc. programme.",
+            "retrieved_at": "2026-05-19T02:16:00Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.cbs.de/en/masters-degree-germany/business-consulting",
+          "heading": "Strategy & Consulting",
+          "source_text": "Official programme page supports the Strategy & Consulting / Business Consulting M.Sc. record."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "CBS International Business School",
+        "url": "https://www.cbs.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Supply Chain & Logistics",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://www.cbs.de/en/masters-degree-germany/masters-supply-chain-management",
+        "campus": [
+          "Cologne"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "level": "high",
+          "language_of_instruction": "medium",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Recognized bachelor's, diploma, magister, or equivalent first degree for master's admission.",
+          "minimum_ects": "at least 180 ECTS for business-related master's programmes when stated on CBS master requirements",
+          "recognized_institution": "recognized German or international university, university of applied sciences, or business academy",
+          "minimum_grade": "good minimum grade for business-related master's programmes when stated on CBS master requirements",
+          "notes": [
+            "CBS central master requirements are shared evidence; individual programme pages may specify ECTS variants such as 120, 90, or 60 ECTS tracks."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business-related prior studies",
+            "minimum_ects": null,
+            "notes": [
+              "Required or relevant for business-focused CBS master's programmes where stated."
+            ]
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "TOEFL",
+            "minimum_score": "92",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "7.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          },
+          {
+            "test": "Cambridge Certificate",
+            "minimum_score": "B2 or C1 depending on the programme",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "conditional",
+            "notes": "CBS says an aptitude test may be required in certain cases to demonstrate study suitability."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": "programme-specific; not a general requirement for all CBS master's programmes",
+          "notes": []
+        },
+        "documents": [
+          "First degree certificate or current transcript",
+          "CV or resume",
+          "Proof of English language skills for English-taught programmes",
+          "Application documents requested through the CBS online application process"
+        ],
+        "conditional_paths": [
+          "Some programmes may require an aptitude test or additional suitability evidence in individual cases."
+        ],
+        "international_requirements": [
+          "Central master checklist gives May 30 for winter semester and November 30 for summer semester for applicants needing a visa."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "CBS pages state that application is generally possible year-round while places are available; visa-sensitive applicants should observe central checklist deadlines."
+        ],
+        "intakes": [
+          "Winter"
+        ],
+        "application_channel": "CBS online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.cbs.de/en/masters-degree-germany/masters-supply-chain-management",
+            "source_text": "CBS Supply Chain Management page confirms an official supply chain/logistics M.Sc. programme.",
+            "retrieved_at": "2026-05-19T02:16:00Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.cbs.de/en/masters-degree-germany/masters-supply-chain-management",
+          "heading": "Supply Chain & Logistics",
+          "source_text": "Official CBS page presents the Supply Chain Management master's programme; v0.2 names it Supply Chain & Logistics for review consistency."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "CBS International Business School",
+        "url": "https://www.cbs.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Business Technology Part-Time",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://www.cbs.de/en/masters-degree-germany/mbt-business-and-technology",
+        "campus": [],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": "Strategic Management (M.Sc.)",
+        "specialization": "Business Technology specialization / MBT degree",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "level": "high",
+          "language_of_instruction": "medium",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Recognized bachelor's, diploma, magister, or equivalent first degree for master's admission.",
+          "minimum_ects": "at least 180 ECTS for business-related master's programmes when stated on CBS master requirements",
+          "recognized_institution": "recognized German or international university, university of applied sciences, or business academy",
+          "minimum_grade": "good minimum grade for business-related master's programmes when stated on CBS master requirements",
+          "notes": [
+            "CBS central master requirements are shared evidence; individual programme pages may specify ECTS variants such as 120, 90, or 60 ECTS tracks."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business-related prior studies",
+            "minimum_ects": null,
+            "notes": [
+              "Required or relevant for business-focused CBS master's programmes where stated."
+            ]
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "TOEFL",
+            "minimum_score": "92",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "7.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          },
+          {
+            "test": "Cambridge Certificate",
+            "minimum_score": "B2 or C1 depending on the programme",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "conditional",
+            "notes": "CBS says an aptitude test may be required in certain cases to demonstrate study suitability."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": "programme-specific; not a general requirement for all CBS master's programmes",
+          "notes": []
+        },
+        "documents": [
+          "First degree certificate or current transcript",
+          "CV or resume",
+          "Proof of English language skills for English-taught programmes",
+          "Application documents requested through the CBS online application process"
+        ],
+        "conditional_paths": [
+          "Some programmes may require an aptitude test or additional suitability evidence in individual cases."
+        ],
+        "international_requirements": [
+          "Central master checklist gives May 30 for winter semester and November 30 for summer semester for applicants needing a visa."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "CBS pages state that application is generally possible year-round while places are available; visa-sensitive applicants should observe central checklist deadlines."
+        ],
+        "intakes": [
+          "Winter"
+        ],
+        "application_channel": "CBS online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.cbs.de/en/masters-degree-germany/mbt-business-and-technology",
+            "source_text": "CBS Business Technology page is official, but it appears specialization-like/part-time in catalogue structure; keep as a human-review record.",
+            "retrieved_at": "2026-05-19T02:16:00Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.cbs.de/en/masters-degree-germany/mbt-business-and-technology",
+          "heading": "Business Technology",
+          "source_text": "Official CBS page supports a Business Technology / MBT part-time master's offering, but grouping with Strategic Management should be confirmed."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "CBS International Business School",
+        "url": "https://www.cbs.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Digital Transformation Management Part-Time",
+        "degree": "Master of Arts",
+        "level": "master",
+        "url": "https://www.cbs.de/en/masters-degree-germany/digital-transformation-management-part-time",
+        "campus": [],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "level": "high",
+          "language_of_instruction": "medium",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Recognized bachelor's, diploma, magister, or equivalent first degree for master's admission.",
+          "minimum_ects": "at least 180 ECTS for business-related master's programmes when stated on CBS master requirements",
+          "recognized_institution": "recognized German or international university, university of applied sciences, or business academy",
+          "minimum_grade": "good minimum grade for business-related master's programmes when stated on CBS master requirements",
+          "notes": [
+            "CBS central master requirements are shared evidence; individual programme pages may specify ECTS variants such as 120, 90, or 60 ECTS tracks."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business-related prior studies",
+            "minimum_ects": null,
+            "notes": [
+              "Required or relevant for business-focused CBS master's programmes where stated."
+            ]
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "TOEFL",
+            "minimum_score": "92",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "7.0",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          },
+          {
+            "test": "Cambridge Certificate",
+            "minimum_score": "B2 or C1 depending on the programme",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Previously completed English-taught bachelor's degree may be accepted."
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "conditional",
+            "notes": "CBS says an aptitude test may be required in certain cases to demonstrate study suitability."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": "programme-specific; not a general requirement for all CBS master's programmes",
+          "notes": []
+        },
+        "documents": [
+          "First degree certificate or current transcript",
+          "CV or resume",
+          "Proof of English language skills for English-taught programmes",
+          "Application documents requested through the CBS online application process"
+        ],
+        "conditional_paths": [
+          "Some programmes may require an aptitude test or additional suitability evidence in individual cases."
+        ],
+        "international_requirements": [
+          "Central master checklist gives May 30 for winter semester and November 30 for summer semester for applicants needing a visa."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "CBS pages state that application is generally possible year-round while places are available; visa-sensitive applicants should observe central checklist deadlines."
+        ],
+        "intakes": [
+          "Winter"
+        ],
+        "application_channel": "CBS online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.cbs.de/en/masters-degree-germany/digital-transformation-management-part-time",
+            "source_text": "CBS Digital Transformation Management part-time page confirms an official English-taught Master of Arts programme.",
+            "retrieved_at": "2026-05-19T02:16:00Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.cbs.de/en/masters-degree-germany/digital-transformation-management-part-time",
+          "heading": "Digital Transformation Management Part-Time",
+          "source_text": "Official CBS part-time page identifies Digital Transformation Management as a Master of Arts programme."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "CBS International Business School",
+        "url": "https://www.cbs.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International Management",
+        "degree": "Master of Business Administration",
+        "level": "mba",
+        "url": "https://www.cbs.de/en/mba-germany/master-business-administration",
+        "campus": [
+          "Cologne"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "120 ECTS, full-time",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "level": "high",
+          "language_of_instruction": "medium",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "First academic degree from a recognized German or international university, university of applied sciences, or business academy.",
+          "minimum_ects": "180 ECTS from undergraduate studies",
+          "recognized_institution": "recognized German or international university, university of applied sciences, or business academy",
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [
+          {
+            "test": "Admission interview",
+            "requirement": "application process includes an admission interview after assessment"
+          },
+          {
+            "test": "GRE/GMAT",
+            "requirement": "not found on the reviewed official MBA page"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 1,
+          "relevance": "professional work experience to demonstrate practical business expertise",
+          "notes": []
+        },
+        "documents": [
+          "Application documents in English",
+          "Proof of university entrance qualification / transcript if final diploma is not yet available"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "CBS pages state that application is generally possible year-round while places are available; visa-sensitive applicants should observe central checklist deadlines."
+        ],
+        "intakes": [
+          "Winter"
+        ],
+        "application_channel": "CBS online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/master-business-administration",
+            "source_text": "CBS full-time MBA page identifies International Management MBA 120 ECTS as English-taught and includes first-degree, 180 ECTS, and one-year work-experience requirements.",
+            "retrieved_at": "2026-05-19T02:16:00Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.cbs.de/en/mba-germany/master-business-administration",
+          "heading": "International Management MBA 120 ECTS",
+          "source_text": "Official MBA page supports a 120 ECTS International Management MBA; MBA-specific language certificate thresholds were not found in the public page text."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "CBS International Business School",
+        "url": "https://www.cbs.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International Management",
+        "degree": "Master of Business Administration",
+        "level": "mba",
+        "url": "https://www.cbs.de/en/mba-germany/one-year-mba-international-management",
+        "campus": [
+          "Cologne"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "60 ECTS, fast track",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "level": "high",
+          "language_of_instruction": "medium",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "First academic degree from a recognized German or international university, university of applied sciences, or business academy.",
+          "minimum_ects": "180 ECTS from undergraduate studies",
+          "recognized_institution": "recognized German or international university, university of applied sciences, or business academy",
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [
+          {
+            "test": "Admission interview",
+            "requirement": "application process includes an admission interview after assessment"
+          },
+          {
+            "test": "GRE/GMAT",
+            "requirement": "not found on the reviewed official MBA page"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 1,
+          "relevance": "professional work experience to demonstrate practical business expertise",
+          "notes": []
+        },
+        "documents": [
+          "Application documents in English",
+          "Proof of university entrance qualification / transcript if final diploma is not yet available"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "CBS pages state that application is generally possible year-round while places are available; visa-sensitive applicants should observe central checklist deadlines."
+        ],
+        "intakes": [
+          "Winter"
+        ],
+        "application_channel": "CBS online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.cbs.de/en/mba-germany/one-year-mba-international-management",
+            "source_text": "CBS one-year MBA page identifies International Management MBA 60 ECTS as English-taught and includes first-degree, 180 ECTS, and one-year work-experience requirements.",
+            "retrieved_at": "2026-05-19T02:16:00Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.cbs.de/en/mba-germany/one-year-mba-international-management",
+          "heading": "International Management MBA 60 ECTS",
+          "source_text": "Official fast-track MBA page supports a 60 ECTS International Management MBA record; MBA-specific language certificate thresholds were not found in the public page text."
+        }
+      ],
+      "needs_human_review": true
+    }
+  ],
+  "llm_review_summary": {
+    "program_count": 12,
+    "key_findings": [
+      "CBS v0.3 crawler had zero program records, while v0.4 exposed genuine official CBS programme pages missing from LLM v0.1.",
+      "LLM v0.2 preserves v0.1 high-confidence bachelor, master, and MBA requirements while adding official-confirmed programme coverage.",
+      "NXT GEN Programmes, navigation-derived campus snippets, generic deadlines, and unqualified shared aptitude/work-experience snippets were classified as crawler/template noise and not imported.",
+      "Global Finance winter/summer URL variants are modeled as one programme with two intake windows rather than duplicate records."
+    ],
+    "known_gaps": [
+      "Full CBS undergraduate German/dual catalogue remains outside this focused v0.2 gap-repair pass.",
+      "Business Psychology and Business Technology are official pages but remain human-review records because catalogue granularity or page wording is not fully stable from public text.",
+      "MBA-specific English test thresholds were not found in the reviewed public MBA pages, so MBA language_requirements remain empty."
+    ],
+    "gap_classification": [
+      {
+        "item": "v0.3 crawler had 0 CBS programs",
+        "classification": "crawler recall gap",
+        "v0_2_action": "Ignore old zero-output state; use v0.4 only as candidate recall."
+      },
+      {
+        "item": "International Business & Management M.Sc.",
+        "classification": "naming_or_grouping_mismatch",
+        "v0_2_action": "Preserve v0.1 record and update intake coverage to Winter and Summer."
+      },
+      {
+        "item": "International Business M.A.",
+        "classification": "genuine_llm_omission",
+        "v0_2_action": "Add as a reviewed record because official page says last Summer 2026."
+      },
+      {
+        "item": "Business Psychology, Digital Marketing, Global Finance, Strategy & Consulting, Supply Chain",
+        "classification": "genuine_llm_omission",
+        "v0_2_action": "Add official-confirmed programme records."
+      },
+      {
+        "item": "NXT GEN Programmes",
+        "classification": "crawler_false_positive",
+        "v0_2_action": "Do not import as a programme record."
+      }
+    ]
+  }
+}

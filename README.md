@@ -83,8 +83,8 @@ LLM-native official-site reading 的 JSON 格式固定記錄在 `docs/admissions
 
 ## 2026-05-19 crawler/LLM output note
 
-- `outputs/v0_3/llm_native_v0_2/` contains the clean-room two-school LLM v0.2 repair outputs.
+- `outputs/v0_3/llm_native_v0_2/` contains the clean-room four-school LLM v0.2 repair outputs.
 - `outputs/v0_4/` contains the reviewed crawler v0.4 rerun for all 12 partner schools.
-- `docs/admissions_llm_v0_2_gap_report.md` explains why the two-school LLM/crawler gaps happened.
+- `docs/admissions_llm_v0_2_gap_report.md` explains why the selected LLM/crawler gaps happened.
 - `docs/admissions_extraction_harness.md` records the prompt, workflow, and JSON contract pattern for future extraction harnesses.
 - `docs/admissions_crawler_v0_4_review.md` records the per-school crawler v0.3 review and v0.4 improvements.

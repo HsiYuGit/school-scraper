@@ -560,8 +560,11 @@ class AdmissionExtractionTest(unittest.TestCase):
             self.assertIn("LLM v0.1 vs v0.2", html)
             self.assertIn("v0.4 vs LLM v0.2", html)
             self.assertTrue((output_dir / "comparisons" / "v0_3_vs_v0_4.html").exists())
-            self.assertEqual(2, len(list((output_dir / "comparisons" / "llm_v0_1_vs_v0_2").glob("*.html"))))
-            self.assertEqual(2, len(list((output_dir / "comparisons" / "v0_4_vs_llm_v0_2").glob("*.html"))))
+            expected_llm_v0_2 = len(list((root / "outputs" / "v0_3" / "llm_native_v0_2").glob("*.json")))
+            self.assertEqual(expected_llm_v0_2, len(list((output_dir / "comparisons" / "llm_v0_1_vs_v0_2").glob("*.html"))))
+            self.assertEqual(expected_llm_v0_2, len(list((output_dir / "comparisons" / "v0_4_vs_llm_v0_2").glob("*.html"))))
+            self.assertIn("v0_3/llm_native_v0_2/cbs_international_business_school_llm_native_v0_2_admissions.html", html)
+            self.assertIn("v0_3/llm_native_v0_2/ebs_universitat_llm_native_v0_2_admissions.html", html)
         finally:
             if output_dir.exists():
                 shutil.rmtree(output_dir)

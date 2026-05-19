@@ -90,6 +90,8 @@ Focused local verification:
 ```powershell
 python -m json.tool outputs\v0_3\llm_native_v0_2\tum_asia_llm_native_v0_2_admissions.json
 python -m json.tool outputs\v0_3\llm_native_v0_2\munich_business_school_llm_native_v0_2_admissions.json
+python -m json.tool outputs\v0_3\llm_native_v0_2\cbs_international_business_school_llm_native_v0_2_admissions.json
+python -m json.tool outputs\v0_3\llm_native_v0_2\ebs_universitat_llm_native_v0_2_admissions.json
 ```
 
 Suggested static comparison:
@@ -118,3 +120,9 @@ The next durable harness can be a script that:
 6. Emits a report table and validation commands with exit status.
 
 This keeps the crawler useful as a recall engine and the LLM useful as a precision/evidence reviewer without pretending either output is final truth.
+
+## Lessons from CBS and EBS extension
+
+- CBS showed that a zero-program crawler v0.3 output can hide real LLM recall gaps once v0.4 finds concrete programme URLs. Use the crawler as a recall surface, but reject template records such as broad programme-family or marketing pages before writing LLM v0.2.
+- EBS showed the opposite pattern: crawler v0.4 mostly confirmed or renamed records that LLM v0.1 already handled better. In that case, v0.2 should preserve the stronger LLM extraction and record the crawler differences as naming, grouping, or granularity notes instead of adding duplicate programmes.
+- Keep console encoding separate from file encoding. On Windows, UTF-8 names such as `EBS Universität` may display as mojibake in terminal output even when the JSON file itself is valid UTF-8.

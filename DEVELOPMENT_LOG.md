@@ -162,6 +162,19 @@ python scripts\scrape_admissions.py "https://www.munich-business-school.de/en/" 
 - 新增 `docs/admissions_llm_v0_2_gap_report.md`、`docs/prompts/admissions_llm_native_v0_2_prompt.md`、`docs/admissions_extraction_harness.md`。
 - 產出 `outputs/v0_3/llm_native_v0_2/` 兩份 v0.2 LLM-native JSON，用於驗證 LLM 是否能吸收 crawler 已抓到但 v0.1 漏掉的 admissions facts。
 
+### CBS / EBS LLM v0.2 extension
+
+- Dispatched two school-partitioned subagents: one for CBS International Business School and one for EBS Universität.
+- Generated:
+  - `outputs/v0_3/llm_native_v0_2/cbs_international_business_school_llm_native_v0_2_admissions.json`
+  - `outputs/v0_3/llm_native_v0_2/ebs_universitat_llm_native_v0_2_admissions.json`
+- CBS result: v0.4 recovered real programme URLs after v0.3 zero-output, so LLM v0.2 expands CBS from 4 to 12 programme records while rejecting template noise such as `NXT GEN Programmes`.
+- EBS result: v0.4 did not reveal true v0.1 programme omissions, so LLM v0.2 keeps all 8 v0.1 records and records crawler differences as naming, grouping, schema granularity, or false positives.
+- Lessons learned:
+  - A crawler recall improvement is not automatically an LLM omission; EBS shows the need to classify before adding.
+  - A zero-program crawler output is also not proof of no programme coverage; CBS needed the later v0.4 recall surface.
+  - Windows terminal mojibake for `EBS Universität` should not be confused with invalid JSON encoding.
+
 ### Crawler v0.4 review and rerun
 
 - 逐校檢討 v0.3 crawler output，新增 `docs/admissions_crawler_v0_4_review.md`。

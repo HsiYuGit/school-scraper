@@ -1,0 +1,1229 @@
+{
+  "schema_version": "0.3-llm-native-draft",
+  "method": {
+    "type": "llm_native_official_site_reading",
+    "created_at": "2026-05-19T02:16:00Z",
+    "school": "EBS Universit?t",
+    "agent": {
+      "agent_id": "not exposed",
+      "nickname": "not exposed",
+      "role": "worker subagent",
+      "model": "GPT-5 Codex",
+      "reasoning_effort": "medium"
+    },
+    "cost_tracking": {
+      "token_usage": "not exposed; no standalone measured LLM API call was run for this v0.2 repair pass",
+      "estimated_usd_cost": "not available",
+      "note": "Do not estimate unavailable token or dollar cost."
+    },
+    "source_urls": [
+      "https://www.ebs.edu/en/ebs-business-school/study-programmes/bachelor-in-business-studies",
+      "https://www.ebs.edu/en/ebs-law-school/programmes/study-law/bachelor-in-law-politics-and-economics",
+      "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-management",
+      "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-finance",
+      "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-business-analytics",
+      "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-real-estate",
+      "https://www.ebs.edu/en/ebs-business-school/study-programmes/full-time-mba",
+      "https://www.ebs.edu/en/ebs-business-school/study-programmes/executive-mba"
+    ],
+    "elapsed_time_seconds": "not exposed",
+    "format_note": "Matches the repo v0.3 LLM-native program-level contract; this file is the llm_native_v0_2 gap-repair variant.",
+    "version": "llm_native_v0_2",
+    "source_files": [
+      "docs/admissions_extraction_harness.md",
+      "docs/prompts/admissions_llm_native_v0_2_prompt.md",
+      "docs/admissions_llm_native_schema_v0_3.md",
+      "outputs/v0_3/ebs_universitat_admissions.json",
+      "outputs/v0_3/llm_native/ebs_universitat_llm_native_admissions.json",
+      "outputs/v0_4/ebs_universitat_admissions.json"
+    ],
+    "prompt_file": "docs/prompts/admissions_llm_native_v0_2_prompt.md",
+    "workflow": "Repo-grounded clean-room gap repair: compare crawler v0.3 JSON, LLM-native v0.1 JSON, and v0.4 candidate recall; verify crawler-only facts on official ebs.edu pages; preserve v0.1 strengths where v0.4 only changes naming or granularity.",
+    "limitations": [
+      "Admissions JSON remains candidate data, not truth.",
+      "No standalone paid LLM/API run was made; token usage and dollar cost are unavailable.",
+      "The public application portal was not entered; only public official EBS pages were used.",
+      "Windows console output may display Universit?t incorrectly under legacy code pages; the JSON file itself is UTF-8."
+    ]
+  },
+  "school": {
+    "name": "EBS Universität",
+    "url": "https://www.ebs.edu/en/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university"
+  },
+  "retrieved_at": "2026-05-19T02:16:00Z",
+  "programs": [
+    {
+      "school": {
+        "name": "EBS Universität",
+        "url": "https://www.ebs.edu/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Bachelor in Business Studies",
+        "degree": "Bachelor of Science (BSc)",
+        "level": "bachelor",
+        "url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/bachelor-in-business-studies",
+        "campus": "Campus Rheingau",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Seven specialisations; double degree possible"
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "general higher education entrance qualification or equivalent secondary-school qualification",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Applicants may apply with current transcripts if the final school-leaving certificate is not yet available."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "English proficiency proof",
+            "minimum_score": "accepted certificate; no fixed score found on page",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "German Abitur with good grades in English",
+              "native speaker",
+              "school career entirely in English",
+              "very good English level proven in interview in justified exceptional cases"
+            ],
+            "notes": [
+              "Accepted certificates listed by EBS: IELTS, TOEFL, Cambridge, Pearson, Duolingo."
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "EBS knowledge test",
+            "requirement": "standard selection test; about 30 minutes"
+          },
+          {
+            "test": "EBS personality test",
+            "requirement": "self-assessment part of selection; about 20 minutes"
+          },
+          {
+            "test": "SAT / ACT / Gaokao",
+            "requirement": "recognized with secondary-school diploma instead of the EBS online assessment for international applicants"
+          },
+          {
+            "test": "Personal selection interview",
+            "requirement": "30-minute interview assessing motivation and social skills"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Curriculum vitae in tabular form",
+          "Proof of general higher education entrance qualification or current transcripts",
+          "Proof of English language proficiency"
+        ],
+        "conditional_paths": [
+          "International applicants whose secondary-school diploma does not follow German higher-education standards complete a 120-minute EBS online assessment instead of the regular tests.",
+          "SAT, ACT, or Gaokao can replace the EBS online assessment when combined with the secondary-school diploma."
+        ],
+        "international_requirements": [
+          "Visa-seeking international applicants are advised to apply by May 30 for fall start and October 15 for spring start."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "No formal application deadline stated",
+          "Recommended submission by June 30 for fall term",
+          "Recommended submission by November 30 for spring term"
+        ],
+        "intakes": [
+          "Spring term",
+          "Fall term"
+        ],
+        "application_channel": "EBS online application platform",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Tuition total listed on reviewed page: EUR 54,480 for six semesters"
+        ]
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.ebs.edu/en/education/ebs-business-school",
+            "source_text": "The EBS Business School overview lists Bachelor in Business Studies as a full-time English BSc at Campus Rheingau with spring and fall starts.",
+            "retrieved_at": "2026-05-17T09:02:24Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/bachelor-in-business-studies",
+            "source_text": "The programme page lists 180 ECTS, six semesters, English language, application documents, English proof options, selection tests, interview, and recommended application timing.",
+            "retrieved_at": "2026-05-17T09:02:24Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/bachelor-in-business-studies",
+          "heading": "Admission requirements and application",
+          "text": "EBS assesses selection tests, academic performance, motivation, and personal characteristics; no formal deadlines, but recommended submission before June 30 for fall and November 30 for spring, with earlier visa recommendations."
+        },
+        {
+          "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/bachelor-in-business-studies",
+          "heading": "Application documents",
+          "text": "Required documents include CV, higher education entrance qualification or current transcripts, and proof of English; accepted English certificates include IELTS, TOEFL, Cambridge, Pearson, and Duolingo."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "EBS Universität",
+        "url": "https://www.ebs.edu/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Bachelor in Law, Politics and Economics",
+        "degree": "Bachelor of Arts (BA)",
+        "level": "bachelor",
+        "url": "https://www.ebs.edu/en/ebs-law-school/programmes/study-law/bachelor-in-law-politics-and-economics",
+        "campus": "Campus Rheingau",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Law, politics, and economics"
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "general higher education entrance qualification or equivalent secondary-school qualification",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Applicants may submit current transcripts if the final school-leaving certificate is not yet available."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "English proficiency proof",
+            "minimum_score": "accepted certificate; no fixed score found on page",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "German Abitur with good grades in English",
+              "native speaker",
+              "school career entirely in English",
+              "very good English level proven in interview in justified exceptional cases"
+            ],
+            "notes": [
+              "Accepted certificates listed by EBS: IELTS, TOEFL, Cambridge, Pearson, Duolingo."
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "EBS knowledge test",
+            "requirement": "standard selection test; about 30 minutes"
+          },
+          {
+            "test": "EBS personality test",
+            "requirement": "self-assessment part of selection; about 20 minutes"
+          },
+          {
+            "test": "SAT / ACT / Gaokao",
+            "requirement": "recognized with secondary-school diploma instead of the EBS online assessment for international applicants"
+          },
+          {
+            "test": "Personal selection interview",
+            "requirement": "30-minute interview assessing motivation and social skills"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Curriculum vitae in tabular form",
+          "Proof of general higher education entrance qualification or current transcripts",
+          "Proof of English language proficiency"
+        ],
+        "conditional_paths": [
+          "International applicants whose secondary-school diploma does not follow German higher-education standards complete a 120-minute EBS online assessment instead of the regular tests.",
+          "SAT, ACT, or Gaokao can replace the EBS online assessment when combined with the secondary-school diploma."
+        ],
+        "international_requirements": [
+          "Visa-seeking international applicants are advised to apply by May 30 for fall start and October 15 for spring start."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "No formal application deadline stated",
+          "Recommended submission by June 30 for fall term",
+          "Recommended submission by November 30 for spring term"
+        ],
+        "intakes": [
+          "Fall term"
+        ],
+        "application_channel": "EBS online application platform",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Tuition total listed on reviewed page: EUR 54,480 for six semesters"
+        ]
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.ebs.edu/en/education/ebs-business-school",
+            "source_text": "The EBS overview lists Bachelor in Law, Politics and Economics as a full-time English BA at Campus Rheingau with a fall start.",
+            "retrieved_at": "2026-05-17T09:02:24Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-law-school/programmes/study-law/bachelor-in-law-politics-and-economics",
+            "source_text": "The programme page gives the same bachelor selection flow as EBS business bachelor pages: online application, knowledge/personality tests, interview, and English proof.",
+            "retrieved_at": "2026-05-17T09:02:24Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.ebs.edu/en/ebs-law-school/programmes/study-law/bachelor-in-law-politics-and-economics",
+          "heading": "Admission requirements and application",
+          "text": "EBS assesses selection tests, academic performance, motivation, and personal characteristics; the page recommends early application and gives earlier dates for visa applicants."
+        },
+        {
+          "source_url": "https://www.ebs.edu/en/ebs-law-school/programmes/study-law/bachelor-in-law-politics-and-economics",
+          "heading": "Application documents",
+          "text": "Required documents include CV, proof of general higher education entrance qualification or current transcripts, and proof of English language proficiency."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "EBS Universität",
+        "url": "https://www.ebs.edu/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master in Management",
+        "degree": "Master of Science (MSc)",
+        "level": "master",
+        "url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-management",
+        "campus": "Campus Rheingau",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Strategic management; accelerated track and SPJIMR route available"
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor's degree or equivalent recognized qualification",
+          "minimum_ects": 180,
+          "recognized_institution": "equally recognized institution",
+          "minimum_grade": null,
+          "notes": [
+            "Applicants can submit a current transcript if the bachelor's degree is not yet available.",
+            "Accelerated Track requires at least 240 ECTS or qualifying post-bachelor work experience for 180 or 210 ECTS degrees."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "TOEFL iBT / MyBest TOEFL",
+            "minimum_score": "95",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "undergraduate degree completed in English",
+              "native speaker",
+              "at least two years worked in an English-speaking country"
+            ]
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "7",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "undergraduate degree completed in English",
+              "native speaker",
+              "at least two years worked in an English-speaking country"
+            ]
+          },
+          {
+            "test": "Duolingo English Test",
+            "minimum_score": "125",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "undergraduate degree completed in English",
+              "native speaker",
+              "at least two years worked in an English-speaking country"
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "GMAT / GRE / Business Admissions Test / EBSgrad Test / Common Admissions Test",
+            "requirement": "valid score required"
+          },
+          {
+            "test": "Individual selection interview",
+            "requirement": "used to evaluate motivation, social skills, learning motivation, and initiative"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": "not required for regular track; relevant post-bachelor work can qualify lower-ECTS applicants for the accelerated track",
+          "notes": [
+            "For the accelerated track, 180 ECTS degrees require at least 12 months and 210 ECTS degrees require at least 6 months of full-time relevant professional experience."
+          ]
+        },
+        "documents": [
+          "Bachelor's degree and transcripts or current transcript",
+          "English language certificate or waiver evidence",
+          "Valid admissions test score",
+          "Online application materials"
+        ],
+        "conditional_paths": [
+          "Accelerated Track: 240 ECTS directly, or 180/210 ECTS with 12/6 months relevant full-time work experience.",
+          "SPJIMR Global Management Programme route can allow completion of the EBS MSc in 12 months."
+        ],
+        "international_requirements": [
+          "Visa-seeking international applicants are advised to apply by May 30 for fall start and October 15 for spring start."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "No formal application deadline stated",
+          "Recommended submission by June 30 for fall term",
+          "Recommended submission by November 30 for spring term"
+        ],
+        "intakes": [
+          "Spring term",
+          "Fall term"
+        ],
+        "application_channel": "EBS online application platform",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Tuition total: EUR 33,780 for Semester Abroad or Practice Track",
+          "Tuition total: EUR 27,830 for Accelerated Track"
+        ]
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.ebs.edu/en/education/ebs-business-school",
+            "source_text": "The EBS overview lists Master in Management as a full-time English MSc at Campus Rheingau with spring and fall starts.",
+            "retrieved_at": "2026-05-17T09:02:24Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-management",
+            "source_text": "The admissions section lists 180 ECTS bachelor's degree, TOEFL 95/IELTS 7/Duolingo 125, valid GMAT/GRE/BAT/EBSgrad/CAT, accelerated track rules, and recommended dates.",
+            "retrieved_at": "2026-05-17T09:02:24Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-management",
+            "source_text": "LLM v0.2 official-site gap repair confirmed this programme's v0.4 crawler difference as either already covered by v0.1 or a naming/granularity update, not a new programme omission.",
+            "retrieved_at": "2026-05-19T02:16:00Z",
+            "confidence": "medium",
+            "review_note": "Added during EBS v0.2 integration."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-management",
+          "heading": "Admission requirements",
+          "text": "Bachelor's degree and transcripts in any field with at least 180 ECTS; accelerated track rules for 240, 210, or 180 ECTS backgrounds; English certificate thresholds; valid admissions test score."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "EBS Universität",
+        "url": "https://www.ebs.edu/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master in Finance",
+        "degree": "Master of Science (MSc)",
+        "level": "master",
+        "url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-finance",
+        "campus": "Campus Rheingau",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Finance; accelerated track and semester abroad track available"
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor's degree or equivalent recognized qualification",
+          "minimum_ects": 180,
+          "recognized_institution": "equally recognized institution",
+          "minimum_grade": null,
+          "notes": [
+            "Applicants can submit a current transcript if the bachelor's degree is not yet available.",
+            "Accelerated Track requires at least 240 ECTS or qualifying post-bachelor work experience for 180 or 210 ECTS degrees."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "TOEFL iBT / MyBest TOEFL",
+            "minimum_score": "95",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "undergraduate degree completed in English",
+              "native speaker",
+              "at least two years worked in an English-speaking country"
+            ]
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "7",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "undergraduate degree completed in English",
+              "native speaker",
+              "at least two years worked in an English-speaking country"
+            ]
+          },
+          {
+            "test": "Duolingo English Test",
+            "minimum_score": "125",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "undergraduate degree completed in English",
+              "native speaker",
+              "at least two years worked in an English-speaking country"
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "GMAT / GRE / Business Admissions Test / EBSgrad Test / Common Admissions Test / CFA Level 1",
+            "requirement": "valid score required; CFA Level 1 does not apply for candidates interested in the Semester Abroad Track"
+          },
+          {
+            "test": "Individual selection interview",
+            "requirement": "used to evaluate motivation, social skills, learning motivation, and initiative"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": "not required for regular track; relevant post-bachelor work can qualify lower-ECTS applicants for the accelerated track",
+          "notes": [
+            "For the accelerated track, 180 ECTS degrees require at least 12 months and 210 ECTS degrees require at least 6 months of full-time relevant professional experience."
+          ]
+        },
+        "documents": [
+          "Bachelor's degree and transcripts or current transcript",
+          "English language certificate or waiver evidence",
+          "Valid admissions test score",
+          "Online application materials"
+        ],
+        "conditional_paths": [
+          "Accelerated Track: 240 ECTS directly, or 180/210 ECTS with 12/6 months relevant full-time work experience.",
+          "SPJIMR Global Management Programme route can allow completion of the EBS MSc in 12 months.",
+          "CFA Level 1 is not available as test evidence for the Semester Abroad Track."
+        ],
+        "international_requirements": [
+          "Visa-seeking international applicants are advised to apply by May 30 for fall start and October 15 for spring start."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "No formal application deadline stated",
+          "Recommended submission by June 30 for fall term",
+          "Recommended submission by November 30 for spring term"
+        ],
+        "intakes": [
+          "Spring term",
+          "Fall term"
+        ],
+        "application_channel": "EBS online application platform",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Tuition total: EUR 37,780 for Semester Abroad or Practice Track",
+          "Tuition total: EUR 30,980 for Accelerated Track"
+        ]
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.ebs.edu/en/education/ebs-business-school",
+            "source_text": "The EBS overview lists Master in Finance as a full-time English MSc at Campus Rheingau with spring and fall starts.",
+            "retrieved_at": "2026-05-17T09:02:24Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-finance",
+            "source_text": "The admissions section lists 180 ECTS bachelor's degree, TOEFL 95/IELTS 7/Duolingo 125, valid GMAT/GRE/BAT/EBSgrad/CAT/CFA Level 1, and recommended dates.",
+            "retrieved_at": "2026-05-17T09:02:24Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-finance",
+            "source_text": "LLM v0.2 official-site gap repair confirmed this programme's v0.4 crawler difference as either already covered by v0.1 or a naming/granularity update, not a new programme omission.",
+            "retrieved_at": "2026-05-19T02:16:00Z",
+            "confidence": "medium",
+            "review_note": "Added during EBS v0.2 integration."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-finance",
+          "heading": "Admission requirements",
+          "text": "Bachelor's degree and transcripts in any field with at least 180 ECTS; accelerated track rules; English certificate thresholds; valid GMAT, GRE, BAT, EBSgrad, CAT, or CFA Level 1 score, with CFA exception for semester abroad candidates."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "EBS Universität",
+        "url": "https://www.ebs.edu/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master in Business Analytics",
+        "degree": "Master of Science (MSc)",
+        "level": "master",
+        "url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-business-analytics",
+        "campus": "Campus Rheingau",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Business analytics and AI; accelerated track available"
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor's degree or equivalent recognized qualification",
+          "minimum_ects": 180,
+          "recognized_institution": "equally recognized institution",
+          "minimum_grade": null,
+          "notes": [
+            "Applicants can submit a current transcript if the bachelor's degree is not yet available.",
+            "Accelerated Track requires at least 240 ECTS or qualifying post-bachelor work experience for 180 or 210 ECTS degrees."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "TOEFL iBT / MyBest TOEFL",
+            "minimum_score": "95",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "undergraduate degree completed in English",
+              "native speaker",
+              "at least two years worked in an English-speaking country"
+            ]
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "7",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "undergraduate degree completed in English",
+              "native speaker",
+              "at least two years worked in an English-speaking country"
+            ]
+          },
+          {
+            "test": "Duolingo English Test",
+            "minimum_score": "125",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "undergraduate degree completed in English",
+              "native speaker",
+              "at least two years worked in an English-speaking country"
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "GMAT / GRE / Business Admissions Test / EBSgrad Test / Common Admissions Test",
+            "requirement": "valid score required"
+          },
+          {
+            "test": "Individual selection interview",
+            "requirement": "used to evaluate motivation, social skills, learning motivation, and initiative"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": "not required for regular track; relevant post-bachelor work can qualify lower-ECTS applicants for the accelerated track",
+          "notes": [
+            "For the accelerated track, 180 ECTS degrees require at least 12 months and 210 ECTS degrees require at least 6 months of full-time relevant professional experience."
+          ]
+        },
+        "documents": [
+          "Bachelor's degree and transcripts or current transcript",
+          "English language certificate or waiver evidence",
+          "Valid admissions test score",
+          "Online application materials"
+        ],
+        "conditional_paths": [
+          "Accelerated Track: 240 ECTS directly, or 180/210 ECTS with 12/6 months relevant full-time work experience.",
+          "SPJIMR Global Management Programme route can allow completion of the EBS MSc in 12 months."
+        ],
+        "international_requirements": [
+          "Visa-seeking international applicants are advised to apply by May 30 for fall start."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "No formal application deadline stated",
+          "Recommended submission by June 30 for fall term"
+        ],
+        "intakes": [
+          "Fall term"
+        ],
+        "application_channel": "EBS online application platform",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Tuition total: EUR 33,780 for Semester Abroad or Practice Track",
+          "Tuition total: EUR 27,830 for Accelerated Track"
+        ]
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.ebs.edu/en/education/ebs-business-school",
+            "source_text": "The EBS overview lists Master in Business Analytics as a full-time English MSc at Campus Rheingau with a fall start.",
+            "retrieved_at": "2026-05-17T09:02:24Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-business-analytics",
+            "source_text": "The admissions section lists 180 ECTS bachelor's degree, accelerated track rules, TOEFL 95/IELTS 7/Duolingo 125, valid GMAT/GRE/BAT/EBSgrad/CAT, and fall-start recommendation dates.",
+            "retrieved_at": "2026-05-17T09:02:24Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-business-analytics",
+            "source_text": "LLM v0.2 official-site gap repair confirmed this programme's v0.4 crawler difference as either already covered by v0.1 or a naming/granularity update, not a new programme omission.",
+            "retrieved_at": "2026-05-19T02:16:00Z",
+            "confidence": "medium",
+            "review_note": "Added during EBS v0.2 integration."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-business-analytics",
+          "heading": "Admission requirements",
+          "text": "Bachelor's degree and transcripts in any field with at least 180 ECTS; accelerated track rules; English certificate thresholds; valid admissions test score; no formal deadline, but recommended June 30 and May 30 for visa applicants."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "EBS Universität",
+        "url": "https://www.ebs.edu/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master in Real Estate",
+        "degree": "Master of Science (MSc)",
+        "level": "master",
+        "url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-real-estate",
+        "campus": "Hamburg",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Real estate; RICS accredited; accelerated track available"
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor's degree or equivalent recognized qualification",
+          "minimum_ects": 180,
+          "recognized_institution": "equally recognized institution",
+          "minimum_grade": null,
+          "notes": [
+            "Applicants can submit a current transcript if the bachelor's degree is not yet available.",
+            "Accelerated Track requires at least 240 ECTS or qualifying post-bachelor work experience for 180 or 210 ECTS degrees."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "TOEFL iBT / MyBest TOEFL",
+            "minimum_score": "95",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "undergraduate degree completed in English",
+              "native speaker",
+              "at least two years worked in an English-speaking country"
+            ]
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "7",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "undergraduate degree completed in English",
+              "native speaker",
+              "at least two years worked in an English-speaking country"
+            ]
+          },
+          {
+            "test": "Duolingo English Test",
+            "minimum_score": "125",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "undergraduate degree completed in English",
+              "native speaker",
+              "at least two years worked in an English-speaking country"
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "GMAT / GRE / Business Admissions Test / EBSgrad Test / Common Admissions Test",
+            "requirement": "valid score required"
+          },
+          {
+            "test": "Individual selection interview",
+            "requirement": "used to evaluate motivation, social skills, learning motivation, and initiative"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": "not required for regular track; relevant post-bachelor work can qualify lower-ECTS applicants for the accelerated track",
+          "notes": [
+            "For the accelerated track, 180 ECTS degrees require at least 12 months and 210 ECTS degrees require at least 6 months of full-time relevant professional experience."
+          ]
+        },
+        "documents": [
+          "Bachelor's degree and transcripts or current transcript",
+          "English language certificate or waiver evidence",
+          "Valid admissions test score",
+          "Online application materials"
+        ],
+        "conditional_paths": [
+          "Accelerated Track: 240 ECTS directly, or 180/210 ECTS with 12/6 months relevant full-time work experience.",
+          "SPJIMR Global Management Programme route can allow completion of the EBS MSc in 12 months."
+        ],
+        "international_requirements": [
+          "Visa-seeking international applicants are advised to apply by May 30 for fall start."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "No formal application deadline stated",
+          "Recommended submission by June 30 for fall term"
+        ],
+        "intakes": [
+          "Fall term"
+        ],
+        "application_channel": "EBS online application platform",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Tuition total listed on reviewed page: EUR 33,780 for 4-semester track",
+          "Tuition total listed on reviewed page: EUR 27,830 for accelerated track"
+        ]
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.ebs.edu/en/education/ebs-business-school",
+            "source_text": "The EBS overview lists Master in Real Estate as a full-time English MSc in Hamburg with a fall start.",
+            "retrieved_at": "2026-05-17T09:02:24Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-real-estate",
+            "source_text": "The admissions section lists 180 ECTS bachelor's degree, accelerated track rules, TOEFL 95/IELTS 7/Duolingo 125, valid GMAT/GRE/BAT/EBSgrad/CAT, and fall-start recommendation dates.",
+            "retrieved_at": "2026-05-17T09:02:24Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-real-estate",
+            "source_text": "LLM v0.2 official-site gap repair confirmed this programme's v0.4 crawler difference as either already covered by v0.1 or a naming/granularity update, not a new programme omission.",
+            "retrieved_at": "2026-05-19T02:16:00Z",
+            "confidence": "medium",
+            "review_note": "Added during EBS v0.2 integration."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/master-in-real-estate",
+          "heading": "Admission requirements",
+          "text": "Bachelor's degree and transcripts in any field with at least 180 ECTS; accelerated track rules; English certificate thresholds; valid admissions test score; no formal deadline, but recommended June 30 and May 30 for visa applicants."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "EBS Universität",
+        "url": "https://www.ebs.edu/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "MBA, full-time or part-time",
+        "degree": "Master of Business Administration (MBA)",
+        "level": "mba",
+        "url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/full-time-mba",
+        "campus": "Campus Rheingau",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Full-time 2 semesters or part-time 4 semesters"
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor's degree or equivalent recognized qualification",
+          "minimum_ects": 180,
+          "recognized_institution": "equally recognized institution",
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "TOEFL iBT / MyBest TOEFL",
+            "minimum_score": "95",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "undergraduate degree completed in English",
+              "native speaker",
+              "at least two years worked in an English-speaking country"
+            ],
+            "notes": [
+              "Candidates who plan to study abroad during the programme need a valid TOEFL or IELTS score because of partner-university rules."
+            ]
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "7",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "undergraduate degree completed in English",
+              "native speaker",
+              "at least two years worked in an English-speaking country"
+            ],
+            "notes": [
+              "Candidates who plan to study abroad during the programme need a valid TOEFL or IELTS score because of partner-university rules."
+            ]
+          },
+          {
+            "test": "Duolingo English Test",
+            "minimum_score": "125",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "undergraduate degree completed in English",
+              "native speaker",
+              "at least two years worked in an English-speaking country"
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "GMAT / GRE / Business Admissions Test / EBSgrad Test / Common Admissions Test",
+            "requirement": "valid score required"
+          },
+          {
+            "test": "Individual selection interview",
+            "requirement": "selection interview follows document review"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 2,
+          "relevance": "postgraduate full-time working experience",
+          "notes": []
+        },
+        "documents": [
+          "Bachelor's degree and transcripts",
+          "Proof of at least two years postgraduate full-time working experience",
+          "English language certificate or waiver evidence",
+          "Valid admissions test score",
+          "Online application materials"
+        ],
+        "conditional_paths": [
+          "SPJIMR Global Management Programme route can allow completion of the EBS MBA in 12 months."
+        ],
+        "international_requirements": [
+          "Visa-seeking international applicants are advised to apply by May 30 for fall start and October 15 for spring start."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "No formal application deadline stated",
+          "Recommended submission by June 30 for fall term",
+          "Recommended submission by November 30 for spring term"
+        ],
+        "intakes": [
+          "Spring term",
+          "Fall term"
+        ],
+        "application_channel": "EBS online application platform",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "MBA full-time total: EUR 29,780",
+          "MBA part-time total: EUR 29,780"
+        ]
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.ebs.edu/en/mba-programmes",
+            "source_text": "The MBA overview links MBA full-time or part-time as English, two semesters full-time or four semesters part-time at Campus Rheingau.",
+            "retrieved_at": "2026-05-17T09:02:24Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/full-time-mba",
+            "source_text": "The admissions section lists 180 ECTS bachelor's degree, two years postgraduate full-time work experience, TOEFL 95/IELTS 7/Duolingo 125, valid admissions test score, and recommended application dates.",
+            "retrieved_at": "2026-05-17T09:02:24Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/full-time-mba",
+            "source_text": "LLM v0.2 official-site gap repair confirmed this programme's v0.4 crawler difference as either already covered by v0.1 or a naming/granularity update, not a new programme omission.",
+            "retrieved_at": "2026-05-19T02:16:00Z",
+            "confidence": "medium",
+            "review_note": "Added during EBS v0.2 integration."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/full-time-mba",
+          "heading": "Admission requirements",
+          "text": "Bachelor's degree and transcripts with at least 180 ECTS; proof of at least two years postgraduate full-time work; English certificate thresholds and waiver routes; valid GMAT, GRE, BAT, EBSgrad, or CAT."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "EBS Universität",
+        "url": "https://www.ebs.edu/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Executive MBA",
+        "degree": "MBA, Dual Degree Programme EBS Universität & Durham University",
+        "level": "executive_mba",
+        "url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/executive-mba",
+        "campus": "EBS / Durham dual-degree format",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Executive MBA for applicants with management, personnel, or budget responsibility"
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor's degree with university entrance qualification or Master's degree route",
+          "minimum_ects": 180,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Route 1: university entrance qualification plus bachelor's degree with at least 180 ECTS and at least five years professional experience by programme start.",
+            "Route 2: master's degree with at least 90 ECTS and at least three years professional experience by programme start."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "English proficiency proof",
+            "minimum_score": "certificate or other accepted proof; no fixed score found on page",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [],
+            "notes": [
+              "The page requires demonstrated proficiency in English."
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Informal admission interview",
+            "requirement": "conducted jointly by EBS and Durham programme directors after document review"
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 3,
+          "relevance": "five years required on bachelor route; three years required on master route",
+          "notes": [
+            "The programme is aimed at applicants with management, personnel, or budget responsibility."
+          ]
+        },
+        "documents": [
+          "Curriculum vitae in English",
+          "University diploma and transcripts in original language and English",
+          "Demonstrated proficiency in English",
+          "Personal motivation letter"
+        ],
+        "conditional_paths": [
+          "Bachelor route: university entrance qualification plus bachelor's degree of at least 180 ECTS and five years professional experience.",
+          "Master route: master's degree of at least 90 ECTS and three years professional experience."
+        ],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "It is advisable to apply before July of the year you wish to start"
+        ],
+        "intakes": [
+          "Fall term"
+        ],
+        "application_channel": "EBS application portal",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Tuition total: EUR 44,950",
+          "Early application bonus: apply by March 31, 2026 for EUR 6,000 bonus",
+          "Early application bonus: apply by May 31, 2026 for EUR 3,300 bonus"
+        ]
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.ebs.edu/en/mba-programmes",
+            "source_text": "The MBA overview lists Executive MBA as an English part-time dual-degree MBA with EBS and Durham University.",
+            "retrieved_at": "2026-05-17T09:02:24Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/executive-mba",
+            "source_text": "The admissions section states the bachelor's and master's entry routes, professional experience thresholds, English CV, translated diploma/transcripts, English proof, motivation letter, and joint interview.",
+            "retrieved_at": "2026-05-17T09:02:24Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/executive-mba",
+            "source_text": "LLM v0.2 official-site gap repair confirmed this programme's v0.4 crawler difference as either already covered by v0.1 or a naming/granularity update, not a new programme omission.",
+            "retrieved_at": "2026-05-19T02:16:00Z",
+            "confidence": "medium",
+            "review_note": "Added during EBS v0.2 integration."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.ebs.edu/en/ebs-business-school/study-programmes/executive-mba",
+          "heading": "Admission requirements",
+          "text": "Applicants submit either bachelor's-route or master's-route evidence, plus English CV, diploma and transcripts in original language and English, English proof, and a motivation letter; eligible applicants are invited to an admission interview."
+        }
+      ],
+      "needs_human_review": false
+    }
+  ],
+  "llm_review_summary": {
+    "program_count": 8,
+    "key_findings": [
+      "EBS v0.4 did not expose genuine programme omissions from LLM v0.1; the v0.1 official-site extraction already has broader programme coverage than the crawler candidate set.",
+      "LLM v0.2 keeps all eight v0.1 programme records and treats v0.4 differences mainly as naming, grouping, or schema-granularity issues.",
+      "Confirmed fee and timing facts from official pages were refreshed where useful, but v0.2 does not let crawler naming noise overwrite stronger v0.1 admissions logic.",
+      "Crawler language pollution such as English/German/Deutsch is classified as navigation contamination and not imported where official programme pages support English-only instruction."
+    ],
+    "known_gaps": [
+      "The public application portal was not entered; only public official EBS pages were used.",
+      "Exact component scores and test validity periods for EBS English tests were not found in the reviewed public page text.",
+      "The repo files are UTF-8, but Windows console rendering may show EBS Universit?t as mojibake under legacy code pages."
+    ],
+    "gap_classification": [
+      {
+        "item": "Master in Business Analytics crawler title as AI master's degree",
+        "classification": "naming_or_grouping_mismatch",
+        "v0_2_action": "Keep v0.1 Master in Business Analytics."
+      },
+      {
+        "item": "Full-time MBA crawler title",
+        "classification": "naming_or_grouping_mismatch",
+        "v0_2_action": "Keep v0.1 grouped MBA full-time or part-time record."
+      },
+      {
+        "item": "Executive MBA early-bonus dates",
+        "classification": "schema_granularity_difference",
+        "v0_2_action": "Store as fee/bonus notes, not admissions deadlines."
+      },
+      {
+        "item": "Master test extraction",
+        "classification": "crawler_under_specified",
+        "v0_2_action": "Preserve v0.1 valid-score interpretation and Finance CFA exception."
+      },
+      {
+        "item": "Bachelor in Law, Politics and Economics missing from v0.4",
+        "classification": "crawler recall gap",
+        "v0_2_action": "Preserve v0.1 record."
+      },
+      {
+        "item": "English, German, Deutsch language extraction",
+        "classification": "crawler_false_positive",
+        "v0_2_action": "Do not import language pollution."
+      }
+    ]
+  }
+}
