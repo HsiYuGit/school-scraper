@@ -194,3 +194,39 @@ python scripts\scrape_admissions.py "https://www.munich-business-school.de/en/" 
 - 更新 `scripts/compare_admissions_outputs.py`，讓比較頁可以用不同 left/right label，而不只顯示 crawler vs LLM-native。
 - 重新產生 `outputs/html/`，保留舊 HTML，不清空資料夾。
 - 驗證 `outputs/html` 共 87 個 HTML 檔，所有相對連結存在。
+
+## 2026-05-20
+
+### Remaining 8-school LLM v0.2 clean-room completion
+
+- 先關閉一批被錯誤指示可讀 v0.1 的 worker，確認沒有留下目標 JSON 後，重新派出四個 clean-room subagents。
+- Clean-room 規則：worker 不可讀 `outputs/v0_3/llm_native/`、root LLM-native draft，或任何 v0.1 answer；只能用專案 docs、v0.3/v0.4 crawler candidate files、embedded official evidence、必要時的官方頁，以及其他學校的 v0.2 檔作 schema/style 參考。
+- Generated the remaining eight LLM v0.2 JSON files:
+  - `outputs/v0_3/llm_native_v0_2/esmt_berlin_llm_native_v0_2_admissions.json`
+  - `outputs/v0_3/llm_native_v0_2/hochschule_bremen_llm_native_v0_2_admissions.json`
+  - `outputs/v0_3/llm_native_v0_2/hochschule_fresenius_llm_native_v0_2_admissions.json`
+  - `outputs/v0_3/llm_native_v0_2/international_graduate_center_hochschule_bremen_llm_native_v0_2_admissions.json`
+  - `outputs/v0_3/llm_native_v0_2/international_school_of_management_ism_llm_native_v0_2_admissions.json`
+  - `outputs/v0_3/llm_native_v0_2/kuhne_logistics_university_klu_llm_native_v0_2_admissions.json`
+  - `outputs/v0_3/llm_native_v0_2/nit_northern_institute_of_technology_management_llm_native_v0_2_admissions.json`
+  - `outputs/v0_3/llm_native_v0_2/srh_universities_llm_native_v0_2_admissions.json`
+- Program counts: ESMT Berlin 7, Hochschule Bremen 12, Hochschule Fresenius 21, IGC Hochschule Bremen 7, ISM 14, KLU 8, NIT 2, SRH Universities 12.
+- 重新產生 `outputs/html/index.html` 和所有 versioned review/comparison pages；dashboard 現在有 64 個 review pages、12 個 LLM v0.1 vs v0.2 comparison pages、12 個 v0.4 vs LLM v0.2 comparison pages。
+
+### Lessons learned
+
+- v0.2 的 clean-room 測試必須把「產生答案」和「對照 v0.1 KPI」切成兩階段；subagent 先寫答案，controller 之後才可讀 v0.1 做 hidden comparison。
+- v0.4 crawler 很適合當 recall surface，但不是 ground truth。SRH、ISM、HSB 等 zero/weak v0.3 cases 可以靠 v0.4 找回真 programme URLs，但仍要標記弱 evidence 或 human review。
+- Shared admissions pages 需要 programme/route/level/campus scope，否則 VPD、language、deadline、documents、interview、test requirement 會被錯誤套到每個 programme。
+- KLU/SRH/ISM/IGC/ESMT/Fresenius 都顯示 crawler 會把 application interview、catalogue title、campus suffix、global text 當成 requirement；後續 harness v0.3 應把 listing confirmation 和 detail-page requirement classification 分開。
+- Worker 回報 candidate JSON 異常時，controller 要用 `python -m json.tool` 複驗；本輪 Hochschule Bremen v0.4 在整合時可正常 parse。
+
+### Verification
+
+- `python -m json.tool` 通過 8 個新 LLM v0.2 JSON。
+- Static metadata check confirmed all 8 new files use `method.version = llm_native_v0_2`, have non-empty `programs`, and do not list forbidden v0.1 source paths.
+- `python scripts\render_admissions_dashboard.py --outputs-dir outputs --html-dir outputs\html`：通過，產出 dashboard。
+- HTML link sweep: 117 HTML files, 134 internal links checked, 0 missing links。
+- `python -m unittest tests.test_scrape_admissions`：29 tests passed。
+- `python -m py_compile scripts\render_admissions_dashboard.py scripts\render_admissions_html.py scripts\compare_admissions_outputs.py`：通過。
+- In-app Browser 嘗試開啟 `file://` dashboard 時被 Browser URL policy 阻擋；未使用 workaround，改以 static render/link/content checks 作為本輪 HTML 驗證。

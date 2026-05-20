@@ -1,0 +1,1290 @@
+{
+  "schema_version": "0.3-llm-native-draft",
+  "method": {
+    "type": "llm_native_official_site_reading",
+    "created_at": "2026-05-20T00:00:00Z",
+    "school": "SRH Universities",
+    "agent": {
+      "agent_id": "not exposed",
+      "nickname": "Clean-room Worker B",
+      "role": "worker subagent",
+      "model": "GPT-5 Codex",
+      "reasoning_effort": "medium"
+    },
+    "cost_tracking": {
+      "token_usage": "not exposed; no standalone measured LLM API call was run for this v0.2 clean-room pass",
+      "estimated_usd_cost": "not available",
+      "note": "Do not estimate unavailable token or dollar cost."
+    },
+    "source_urls": [
+      "https://www.srh-university.de/en/",
+      "https://www.srh-university.de/en/programme-finder/",
+      "https://www.srh-university.de/en/you-want-to-study/applications-and-admissions/",
+      "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/",
+      "https://www.srh-university.de/en/master/supply-chain-management-english/g/",
+      "https://www.srh-university.de/en/bachelor/international-business-administration/b/",
+      "https://www.srh-university.de/en/master/applied-data-science-and-artificial-intelligence/i/",
+      "https://www.srh-university.de/en/bachelor/applied-mechatronic-systems/e/",
+      "https://www.srh-university.de/en/master/bls/information-technology-artificial-intelligence/",
+      "https://www.srh-university.de/en/master/computer-science-big-data-artificial-intelligence/i/",
+      "https://www.srh-university.de/en/bachelor/business-engineering/e/",
+      "https://www.srh-university.de/en/bachelor/classical-music/m/",
+      "https://www.srh-university.de/en/master/classical-music/m/",
+      "https://www.srh-university.de/en/bachelor/communication-design/v/",
+      "https://www.srh-university.de/en/bachelor/computer-science/i/"
+    ],
+    "elapsed_time_seconds": "not exposed",
+    "format_note": "Matches the repo v0.3 LLM-native program-level contract; this file is the llm_native_v0_2 clean-room variant.",
+    "version": "llm_native_v0_2",
+    "source_files": [
+      "README.md",
+      "DEVELOPMENT_LOG.md",
+      "docs/admissions_schema_v0_2.md",
+      "docs/admissions_output_versions.md",
+      "docs/admissions_llm_native_schema_v0_3.md",
+      "docs/html_review_tool.md",
+      "docs/admissions_extraction_harness.md",
+      "docs/prompts/admissions_llm_native_v0_2_prompt.md",
+      "outputs/v0_3/srh_universities_admissions.json",
+      "outputs/v0_4/srh_universities_admissions.json"
+    ],
+    "prompt_file": "docs/prompts/admissions_llm_native_v0_2_prompt.md",
+    "workflow": "Clean-room official-site reading from allowed repo docs, SRH crawler v0.3/v0.4 candidate JSON, embedded source evidence, and official srh-university.de pages only. v0.3 zero-output was treated as a crawler recall failure; v0.4 programme pages were treated as candidate recall, not truth.",
+    "limitations": [
+      "No LLM v0.1 answer file was opened or compared.",
+      "SRH is a university group with many programmes; this v0.2 file reflects the 12 official programme URLs surfaced by the allowed v0.4 crawler candidate, not an exhaustive SRH catalogue.",
+      "Some SRH page titles contain German words or route suffixes; names were normalized conservatively while preserving official URL evidence.",
+      "Several records rely on programme-page admissions snippets and should be reviewed before production ingestion."
+    ]
+  },
+  "school": {
+    "name": "SRH Universities",
+    "url": "https://www.srh-university.de/en/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university_group"
+  },
+  "retrieved_at": "2026-05-20T00:00:00Z",
+  "programs": [
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Applied Artificial Intelligence",
+        "degree": "Bachelor of Science",
+        "level": "bachelor",
+        "url": "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/",
+        "campus": [
+          "Heidelberg"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Recognised university entrance qualification, such as German Abitur, Fachhochschulreife, or an equivalent international qualification that entitles study at a university in Germany.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Professionally qualified applicants without university entrance qualifications may be eligible with vocational training, professional experience, and an aptitude test."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "TOEFL",
+            "minimum_score": "80",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Medium of Instruction letter confirming previous lessons were conducted in English."
+            ]
+          },
+          {
+            "test": "IELTS",
+            "minimum_score": "6.5",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Medium of Instruction letter confirming previous lessons were conducted in English."
+            ]
+          },
+          {
+            "test": "Duolingo",
+            "minimum_score": "95",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Medium of Instruction letter confirming previous lessons were conducted in English."
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Admissions interview",
+            "requirement": "required after admission requirements are met",
+            "notes": "Official process invites applicants to an admissions interview."
+          },
+          {
+            "test": "Aptitude test",
+            "requirement": "conditional",
+            "notes": "Conditional path for professionally qualified applicants without university entrance qualifications."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": [
+            "Three years professional experience appears only in the alternative professionally-qualified route."
+          ]
+        },
+        "documents": [
+          "University entrance qualification",
+          "Proof of English language skills",
+          "Curriculum vitae with current passport photo",
+          "Copy of ID card or passport"
+        ],
+        "conditional_paths": [
+          "Professionally qualified applicants without university entrance qualifications may qualify through vocational training, professional experience, and aptitude test."
+        ],
+        "international_requirements": [
+          "Applicants requiring a visa should apply for a study visa after receiving admission."
+        ]
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": "SRH online application portal",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Enrollment fee/reservation payment is part of the application process; tuition details are listed on the programme page."
+        ]
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/",
+            "source_text": "Official SRH page identifies Applied Artificial Intelligence as a Bachelor of Science in Heidelberg, taught in English, with 180 ECTS, winter start, and admission requirements including recognised university entrance qualification, TOEFL 80 / IELTS 6.5 / Duolingo 95 or Medium of Instruction letter.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.srh-university.de/en/bachelor/aim/applied-artificial-intelligence/",
+          "heading": "Admission requirements and application",
+          "source_text": "Recognised university entrance qualification; proof of English language skills TOEFL 80, IELTS 6.5, Duolingo 95 or Medium of Instruction Letter; CV with current passport photo; ID/passport copy; online application and admissions interview process."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Supply Chain Management",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://www.srh-university.de/en/master/supply-chain-management-english/g/",
+        "campus": [
+          "Berlin",
+          "Hamburg",
+          "Cologne",
+          "Hamm"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor's degree for admission to the master's programme.",
+          "minimum_ects": 180,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Crawler evidence also surfaced general higher education entrance qualification text, but that appears template-like for this master page and is not modeled as the main master requirement."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "English language proficiency",
+            "minimum_score": null,
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Personal admissions interview",
+            "requirement": "required after document approval",
+            "notes": "Interview checks programme-specific knowledge, creativity, and motivation."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Bachelor's degree with 180 ECTS",
+          "Signed curriculum vitae",
+          "Proof of English language proficiency",
+          "Photo",
+          "Proof of health insurance",
+          "Letter of motivation",
+          "Copy of identity card or passport"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "SRH online application portal",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.srh-university.de/en/master/supply-chain-management-english/g/",
+            "source_text": "Official SRH page states the Supply Chain Management M.Sc. requires a bachelor's degree with 180 ECTS plus CV, English proof, health insurance proof, motivation letter, identity document, and personal admissions interview.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.srh-university.de/en/master/supply-chain-management-english/g/",
+          "heading": "Admission requirements and application",
+          "source_text": "A Bachelor's degree with 180 ECTS; signed curriculum vitae; proof of English language proficiency; photo and proof of health insurance; letter of motivation; ID/passport copy; personal admissions interview after documents are approved."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "International Business Administration",
+        "degree": "Bachelor",
+        "level": "bachelor",
+        "url": "https://www.srh-university.de/en/bachelor/international-business-administration/b/",
+        "campus": [
+          "Berlin"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "medium",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "General higher education entrance qualification or technical college entrance qualification.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Alternative vocational qualification may grant access."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "English proficiency",
+            "minimum_score": null,
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Admissions interview",
+            "requirement": "required after requirements are met",
+            "notes": "Shared SRH application process evidence."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English language proficiency"
+        ],
+        "conditional_paths": [
+          "Vocational qualification may grant access."
+        ],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "SRH online application portal",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/international-business-administration/b/",
+            "source_text": "Candidate official page evidence says International Business Administration applicants need general higher education or technical college entrance qualification, with vocational qualification alternative and proof of English.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "medium",
+            "review_note": "Programme title and campus are crawler-derived from official page text."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.srh-university.de/en/bachelor/international-business-administration/b/",
+          "heading": "Admission requirements",
+          "source_text": "General higher education entrance qualification or technical college entrance qualification; alternatively, vocational qualification may grant access; proof of English language proficiency."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Applied Data Science and Artificial Intelligence",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://www.srh-university.de/en/master/applied-data-science-and-artificial-intelligence/i/",
+        "campus": [
+          "Heidelberg"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "medium",
+          "requirements": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor's degree in Computer Science, Data Science, Information Technology, Artificial Intelligence, Data Analysis, Mathematics, Business Informatics, or related candidate fields.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Applicants not yet graduated may apply with existing transcripts."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "Computer Science, Data Science, IT, AI, Data Analysis, Mathematics, Business Informatics",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "English language proficiency",
+            "minimum_score": null,
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Admissions interview",
+            "requirement": "required after requirements are met",
+            "notes": "Shared SRH application process evidence."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Existing transcripts if not yet graduated",
+          "Proof of English language proficiency",
+          "Curriculum vitae",
+          "Letter of motivation",
+          "Copy of identity card or passport"
+        ],
+        "conditional_paths": [
+          "Apply with existing transcripts if the prior degree is not yet completed."
+        ],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "SRH online application portal",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.srh-university.de/en/master/applied-data-science-and-artificial-intelligence/i/",
+            "source_text": "Official SRH page states the Applied Data Science and Artificial Intelligence master's requires a bachelor's degree in listed computing/data/math/business-informatics fields, English proof, CV, motivation letter, and ID/passport copy.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.srh-university.de/en/master/applied-data-science-and-artificial-intelligence/i/",
+          "heading": "Admission requirements and application",
+          "source_text": "Bachelor's degree in Computer Science, Data Science, Information Technology, Artificial Intelligence, Data Analysis, Mathematics, Business Informatics; apply with existing transcripts if not yet graduated; proof of English; CV; letter of motivation; ID/passport copy."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Applied Mechatronic Systems",
+        "degree": "Bachelor of Engineering",
+        "level": "bachelor",
+        "url": "https://www.srh-university.de/en/bachelor/applied-mechatronic-systems/e/",
+        "campus": [],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "medium",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "General higher education or university of applied sciences entrance qualification.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Applicants not yet graduated may apply with existing transcripts."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "Proof of English",
+            "minimum_score": null,
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Admissions interview",
+            "requirement": "required after requirements are met",
+            "notes": "Shared SRH application process evidence."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Existing transcripts if not yet graduated",
+          "Proof of English"
+        ],
+        "conditional_paths": [
+          "Apply with existing transcripts if not yet graduated."
+        ],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "SRH online application portal",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/applied-mechatronic-systems/e/",
+            "source_text": "Candidate official page evidence says Applied Mechatronic Systems applicants need general higher education or university of applied sciences entrance qualification and proof of English.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "medium",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.srh-university.de/en/bachelor/applied-mechatronic-systems/e/",
+          "heading": "Admission requirements",
+          "source_text": "General higher education or university of applied sciences entrance qualification; apply with existing transcripts if not yet graduated; proof of English."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Information Technology - Artificial Intelligence",
+        "degree": "Master of Engineering",
+        "level": "master",
+        "url": "https://www.srh-university.de/en/master/bls/information-technology-artificial-intelligence/",
+        "campus": [],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": "Information Technology",
+        "specialization": "Artificial Intelligence",
+        "_confidence": {
+          "name": "high",
+          "degree": "medium",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor's degree in electrical engineering, information technology, communication technology, or a similar subject.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "electrical engineering, information technology, communication technology, or similar",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "Proof of English language proficiency",
+            "minimum_score": null,
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Admissions interview",
+            "requirement": "required after requirements are met",
+            "notes": "Shared SRH application process evidence."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Proof of English language proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "SRH online application portal",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.srh-university.de/en/master/bls/information-technology-artificial-intelligence/",
+            "source_text": "Candidate official page evidence says the Information Technology - Artificial Intelligence master's requires a bachelor's degree in electrical engineering, information technology, communication technology, or similar, plus proof of English.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "medium",
+            "review_note": "A separate official detailed requirements page mentions German C1 for a similarly named AI page; this English programme record should be manually checked for language scope."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.srh-university.de/en/master/bls/information-technology-artificial-intelligence/",
+          "heading": "Admission requirements",
+          "source_text": "Bachelor's degree in electrical engineering, information technology, communication technology or a similar subject; proof of English language proficiency."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Computer Science - Big Data and Artificial Intelligence",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://www.srh-university.de/en/master/computer-science-big-data-artificial-intelligence/i/",
+        "campus": [
+          "Berlin",
+          "Leipzig"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": "Computer Science",
+        "specialization": "Big Data and Artificial Intelligence",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor's degree in Computer Science, Information Systems, or a similar area of studies.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "Computer Science, Information Systems, or similar",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "Proof of English language proficiency",
+            "minimum_score": null,
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Admissions interview",
+            "requirement": "required after requirements are met",
+            "notes": "Shared SRH application process evidence."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Letter of motivation",
+          "Proof of English language proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "SRH online application portal",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.srh-university.de/en/master/computer-science-big-data-artificial-intelligence/i/",
+            "source_text": "Candidate official page evidence says the Computer Science - Big Data and Artificial Intelligence master's requires a bachelor's degree in Computer Science, Information Systems, or similar, plus motivation letter and English proof.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "medium",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.srh-university.de/en/master/computer-science-big-data-artificial-intelligence/i/",
+          "heading": "Admission requirements",
+          "source_text": "Bachelor's degree in Computer Science, Information Systems or a similar area of studies; letter of motivation; proof of English language proficiency."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Business Engineering",
+        "degree": "Bachelor",
+        "level": "bachelor",
+        "url": "https://www.srh-university.de/en/bachelor/business-engineering/e/",
+        "campus": [],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "medium",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "General higher education or university of applied sciences entrance qualification.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Applicants not yet graduated may apply with existing transcripts."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "Proof of English",
+            "minimum_score": null,
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Admissions interview",
+            "requirement": "required after requirements are met",
+            "notes": "Shared SRH application process evidence."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Existing transcripts if not yet graduated",
+          "Proof of English"
+        ],
+        "conditional_paths": [
+          "Apply with existing transcripts if not yet graduated."
+        ],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "SRH online application portal",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/business-engineering/e/",
+            "source_text": "Candidate official page evidence says Business Engineering applicants need general higher education or university of applied sciences entrance qualification and proof of English.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "medium",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.srh-university.de/en/bachelor/business-engineering/e/",
+          "heading": "Admission requirements",
+          "source_text": "General higher education or university of applied sciences entrance qualification; apply with existing transcripts if not yet graduated; proof of English."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Classical Music",
+        "degree": "Bachelor",
+        "level": "bachelor",
+        "url": "https://www.srh-university.de/en/bachelor/classical-music/m/",
+        "campus": [],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "medium",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "General higher education entrance qualification, subject-restricted higher education entrance qualification, entrance qualification for universities of applied sciences, or vocational training plus professional experience route.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "English language certificate",
+            "minimum_score": null,
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Aptitude test",
+            "requirement": "required or conditional",
+            "notes": "Candidate evidence states vocational route includes aptitude test; page should be reviewed for whether all applicants need a selection process."
+          },
+          {
+            "test": "Admissions interview",
+            "requirement": "required after requirements are met",
+            "notes": "Shared SRH application process evidence."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": "At least three years professional experience appears in the vocational access route.",
+          "notes": []
+        },
+        "documents": [
+          "English language certificate"
+        ],
+        "conditional_paths": [
+          "At least two years of vocational training and at least three years of professional experience plus aptitude test may qualify."
+        ],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "SRH online application portal",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/classical-music/m/",
+            "source_text": "Candidate official page evidence says Classical Music bachelor applicants need higher education entrance qualification or vocational/professional route plus aptitude test and English language certificate.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "medium",
+            "review_note": "Music selection process should be manually confirmed."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.srh-university.de/en/bachelor/classical-music/m/",
+          "heading": "Admission requirements",
+          "source_text": "General higher education entrance qualification, subject-restricted Abitur, university of applied sciences entrance qualification, or at least two years vocational training and three years professional experience plus aptitude test; English language certificate."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Classical Music",
+        "degree": "Master",
+        "level": "master",
+        "url": "https://www.srh-university.de/en/master/classical-music/m/",
+        "campus": [],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "medium",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "University or university of applied sciences degree; bachelor's degree or equivalent.",
+          "minimum_ects": 180,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Candidate evidence states a degree in music is not mandatory."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "English language certificate",
+            "minimum_score": null,
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Admissions interview",
+            "requirement": "required after requirements are met",
+            "notes": "Shared SRH application process evidence."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "English language certificate"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "SRH online application portal",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.srh-university.de/en/master/classical-music/m/",
+            "source_text": "Candidate official page evidence says the Classical Music master's requires a university or university of applied sciences degree, bachelor's or equivalent with at least 180 ECTS, and an English language certificate; a degree in music is not mandatory.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "medium",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.srh-university.de/en/master/classical-music/m/",
+          "heading": "Admission requirements",
+          "source_text": "Bachelor's degree or equivalent with at least 180 ECTS; a degree in music is not mandatory; English language certificate."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Communication Design",
+        "degree": "Bachelor",
+        "level": "bachelor",
+        "url": "https://www.srh-university.de/en/bachelor/communication-design/v/",
+        "campus": [
+          "Berlin",
+          "Cologne"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "medium",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "General higher education entrance qualification, entrance qualification for universities of applied sciences, equivalent higher education entrance qualification, or higher education entrance qualification for qualified professionals.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "Proof of English",
+            "minimum_score": null,
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Portfolio review / personal interview",
+            "requirement": "required or strongly implied",
+            "notes": "Candidate evidence says portfolio may be uploaded, sent, or brought to the personal interview."
+          },
+          {
+            "test": "Admissions interview",
+            "requirement": "required after requirements are met",
+            "notes": "Shared SRH application process evidence."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Portfolio with around 10-15 own design works",
+          "Proof of English"
+        ],
+        "conditional_paths": [
+          "Higher education entrance qualification for qualified professionals may apply."
+        ],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "SRH online application portal",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/communication-design/v/",
+            "source_text": "Candidate official page evidence says Communication Design applicants need higher education entrance qualification, a portfolio of around 10-15 design works, and proof of English.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "medium",
+            "review_note": "Crawler campus text included unrelated award/news wording; v0.2 keeps only Berlin/Cologne from tuition/campus candidate context."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.srh-university.de/en/bachelor/communication-design/v/",
+          "heading": "Admission requirements",
+          "source_text": "Higher education entrance qualification; portfolio with around 10-15 own design works; portfolio can be uploaded, sent, or brought to personal interview; proof of English."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "SRH Universities",
+        "url": "https://www.srh-university.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_group"
+      },
+      "program": {
+        "name": "Computer Science",
+        "degree": "Bachelor of Science",
+        "level": "bachelor",
+        "url": "https://www.srh-university.de/en/bachelor/computer-science/i/",
+        "campus": [],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "General higher education or university of applied sciences entrance qualification.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Applicants not yet graduated may apply with existing transcripts."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "Proof of English language proficiency",
+            "minimum_score": null,
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Admissions interview",
+            "requirement": "required after requirements are met",
+            "notes": "Shared SRH application process evidence."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Existing transcripts if not yet graduated",
+          "Proof of English language proficiency"
+        ],
+        "conditional_paths": [
+          "Apply with existing transcripts if not yet graduated."
+        ],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "SRH online application portal",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.srh-university.de/en/bachelor/computer-science/i/",
+            "source_text": "Candidate official page evidence says Computer Science bachelor applicants need general higher education or university of applied sciences entrance qualification, existing transcripts if not graduated, and proof of English language proficiency.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "medium",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.srh-university.de/en/bachelor/computer-science/i/",
+          "heading": "Admission requirements",
+          "source_text": "General higher education or university of applied sciences entrance qualification; apply with existing transcripts if not yet graduated; proof of English language proficiency."
+        }
+      ],
+      "needs_human_review": true
+    }
+  ],
+  "llm_review_summary": {
+    "program_count": 12,
+    "key_findings": [
+      "SRH v0.3 zero-output was a crawler recall failure, not evidence of no programme data.",
+      "SRH v0.4 recovered 12 official programme URLs; v0.2 keeps them as a focused recall set while marking medium-confidence records for human review.",
+      "The Applied Artificial Intelligence bachelor and Supply Chain Management master have strong official admissions snippets with concrete English-test or document/ECTS requirements.",
+      "Shared SRH application process text is modeled as admissions interview/application workflow, not as programme-specific academic prerequisites."
+    ],
+    "known_gaps": [
+      {
+        "item": "v0.3 SRH zero-program output",
+        "classification": "genuine_llm_omission_candidate",
+        "v0_2_action": "Use v0.4 official programme URLs as candidate recall and create programme records."
+      },
+      {
+        "item": "SRH university group catalogue",
+        "classification": "unverifiable_from_available_evidence",
+        "v0_2_action": "Do not claim exhaustive coverage beyond the 12 allowed v0.4 candidate programme URLs."
+      },
+      {
+        "item": "Campus strings such as 'campus, we are also happy to offer an online appointment' or award/news snippets",
+        "classification": "crawler_false_positive",
+        "v0_2_action": "Remove or leave campus empty unless the official programme page/search snippet identifies a campus."
+      },
+      {
+        "item": "Route suffixes such as /g/, /i/, /e/, /m/, /v/",
+        "classification": "naming_or_grouping_mismatch",
+        "v0_2_action": "Do not model suffixes as specializations unless page text names a specialization."
+      },
+      {
+        "item": "Personal interview text repeated across programmes",
+        "classification": "schema_granularity_difference",
+        "v0_2_action": "Keep as shared application-process evidence; mark as required after requirements are met rather than a standalone entrance test."
+      }
+    ]
+  }
+}

@@ -1,0 +1,926 @@
+{
+  "schema_version": "0.3-llm-native-draft",
+  "method": {
+    "type": "llm_native_official_site_reading",
+    "version": "llm_native_v0_2",
+    "created_at": "2026-05-20T07:29:26Z",
+    "school": "Hochschule Bremen",
+    "agent": {
+      "agent_id": "clean-room-worker-a",
+      "nickname": "Clean-room Worker A",
+      "role": "repo-grounded official-site admissions extraction",
+      "model": "GPT-5 via Codex",
+      "reasoning_effort": "not exposed"
+    },
+    "cost_tracking": {
+      "token_usage": "unavailable",
+      "estimated_usd_cost": "unavailable",
+      "note": "Manual Codex extraction pass; standalone LLM/API token and cost telemetry was not exposed."
+    },
+    "source_files": [
+      "README.md",
+      "DEVELOPMENT_LOG.md",
+      "docs/admissions_schema_v0_2.md",
+      "docs/admissions_output_versions.md",
+      "docs/admissions_llm_native_schema_v0_3.md",
+      "docs/html_review_tool.md",
+      "docs/admissions_extraction_harness.md",
+      "docs/prompts/admissions_llm_native_v0_2_prompt.md",
+      "outputs/v0_3/hochschule_bremen_admissions.json",
+      "outputs/v0_4/hochschule_bremen_admissions.json"
+    ],
+    "prompt_file": "docs/prompts/admissions_llm_native_v0_2_prompt.md",
+    "source_urls": [
+      "https://www.hs-bremen.de/en/",
+      "https://www.hs-bremen.de/en/study/programmes/",
+      "https://www.hs-bremen.de/en/study/before/application-and-admission/",
+      "https://www.hs-bremen.de/en/study/before/application-and-admission/admission-requirements/",
+      "https://www.hs-bremen.de/en/study/degree-programme/computer-science-msc/",
+      "https://www.hs-bremen.de/en/study/degree-programme/architecture-ba/",
+      "https://www.hs-bremen.de/en/study/degree-programme/applied-therapeutic-sciences-in-speech-and-language-pathology-logopedics-physiotherapy-bsc/",
+      "https://www.hs-bremen.de/en/study/degree-programme/international-degree-programme-in-global-management-ba/",
+      "https://www.hs-bremen.de/en/study/degree-programme/cooperative-international-degree-programme-in-midwifery-bsc/",
+      "https://www.hs-bremen.de/en/study/degree-programme/international-degree-programme-in-nursing-bsc/",
+      "https://www.hs-bremen.de/en/study/degree-programme/trade-and-retail-management-ba/",
+      "https://www.hs-bremen.de/en/study/degree-programme/aviation-systems-engineering-and-management-beng/",
+      "https://www.hs-bremen.de/en/study/degree-programme/social-work-ba/",
+      "https://www.hs-bremen.de/en/study/degree-programme/global-management-mba/",
+      "https://www.hs-bremen.de/en/study/degree-programme/dual-study-programme-social-work-ba/",
+      "https://www.hs-bremen.de/en/study/degree-programme/practice-research-and-innovation-in-social-work-ma/"
+    ],
+    "workflow": [
+      "Read required repo documentation and v0.2 prompt/schema contract.",
+      "Used v0.3 and v0.4 crawler files as candidate recall surfaces only.",
+      "Checked targeted official Hochschule Bremen pages where live official text was available.",
+      "Kept broad v0.4 programme recall but lowered confidence for records not individually live-verified in this pass.",
+      "Rejected generic/shared crawler facts where they were not programme-specific."
+    ],
+    "limitations": [
+      "The allowed v0.4 Hochschule Bremen crawler file could not be parsed as JSON in PowerShell or Python, so it was used only as line-level candidate evidence.",
+      "The v0.4 crawler found many HSB programme pages, but this clean-room pass did not exhaustively live-read every page.",
+      "Central application and admission pages contain shared requirements; several fields remain medium confidence to avoid over-attaching shared text to every programme.",
+      "IGC/Graduate Center programmes linked off host are outside this Hochschule Bremen file and were not imported."
+    ],
+    "elapsed_time_seconds": "not exposed",
+    "format_note": "Matches the repo v0.3 LLM-native contract with v0.2 gap-repair method metadata."
+  },
+  "school": {
+    "name": "Hochschule Bremen",
+    "url": "https://www.hs-bremen.de/en/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university"
+  },
+  "retrieved_at": "2026-05-20T07:29:26Z",
+  "programs": [
+    {
+      "school": {
+        "name": "Hochschule Bremen",
+        "url": "https://www.hs-bremen.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Computer Science",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://www.hs-bremen.de/en/study/degree-programme/computer-science-msc/",
+        "campus": null,
+        "language_of_instruction": [
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": "optional dual study mode",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "First professionally qualifying degree in computer science, mathematics, or another relevant field.",
+          "minimum_ects": 210,
+          "recognized_institution": null,
+          "minimum_grade": "2.5 or ECTS grade A to B",
+          "notes": [
+            "Official page states 210 ECTS and possible recognition of external achievements."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "computer science, mathematics, or relevant field",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "German",
+            "minimum_score": "native speaker or C1 for universities",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": null,
+        "documents": [],
+        "conditional_paths": [
+          "External achievements may be recognized for admission."
+        ],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Winter semester: 01 June until 15 July",
+          "Summer semester: 15 December until 15 January"
+        ],
+        "intakes": [
+          "Winter semester",
+          "Summer semester"
+        ],
+        "application_channel": "HSB online application / international applications",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.hs-bremen.de/en/study/degree-programme/computer-science-msc/",
+            "source_text": "Official page lists Computer Science M.Sc., Master of Science, winter/summer starts, 90 credits, German instruction, 210 ECTS prior degree, grade 2.5 or ECTS A-B, and German C1/native-speaker requirement.",
+            "retrieved_at": "2026-05-20T07:29:26Z",
+            "confidence": "high",
+            "review_note": "Live official page read during v0.2 pass."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Overview / Admission requirements",
+          "source_url": "https://www.hs-bremen.de/en/study/degree-programme/computer-science-msc/",
+          "text": "Degree Master of Science; start winter and summer; application periods 01 June-15 July and 15 December-15 January; admission requires 210 ECTS in computer science, mathematics or relevant fields, grade 2.5 or ECTS A-B, and German native speaker or C1 for universities."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Bremen",
+        "url": "https://www.hs-bremen.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Architecture",
+        "degree": "Bachelor of Arts",
+        "level": "bachelor",
+        "url": "https://www.hs-bremen.de/en/study/degree-programme/architecture-ba/",
+        "campus": null,
+        "language_of_instruction": [
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "General higher education entrance qualification, entrance qualification for universities of applied sciences, or placement examination/special admission.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "German",
+            "minimum_score": "native speaker or C1 for universities",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Artistic-design aptitude test",
+            "requirement": "required",
+            "notes": "Official programme page lists the aptitude test under admission requirements."
+          }
+        ],
+        "work_experience": null,
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Winter semester: 01 June until 15 July"
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": "HSB online application / international applications",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.hs-bremen.de/en/study/degree-programme/architecture-ba/",
+            "source_text": "Official page lists Architecture B.A., Bachelor of Arts, winter start, 180 credits, German instruction, and admission requirements including higher education entrance qualification, artistic-design aptitude test, and German C1/native-speaker language skills.",
+            "retrieved_at": "2026-05-20T07:29:26Z",
+            "confidence": "high",
+            "review_note": "Live official page read during v0.2 pass."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Overview / Admission requirements",
+          "source_url": "https://www.hs-bremen.de/en/study/degree-programme/architecture-ba/",
+          "text": "Degree Bachelor of Arts; application period 01 June until 15 July; admission requires higher education entrance qualification or equivalent route, artistic-design aptitude test, and German native speaker or C1 for universities."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Hochschule Bremen",
+        "url": "https://www.hs-bremen.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Applied Therapeutic Sciences in Speech and Language Pathology (Logopedics) / Physiotherapy",
+        "degree": "Bachelor of Science",
+        "level": "bachelor",
+        "url": "https://www.hs-bremen.de/en/study/degree-programme/applied-therapeutic-sciences-in-speech-and-language-pathology-logopedics-physiotherapy-bsc/",
+        "campus": null,
+        "language_of_instruction": [
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "General higher education entrance qualification plus clinical-practice qualification pathway.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Candidate official/crawler evidence says German-qualified applicants need an initial certificate of clinical practice.",
+            "International applicants need at least three years of undergraduate education or an initial university degree in Speech and Language Pathology or Physiotherapy."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "speech and language pathology/logopedics or physiotherapy clinical qualification",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "German",
+            "minimum_score": "native speaker or C1 for universities",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": null,
+        "documents": [],
+        "conditional_paths": [
+          "Transfer of credits from other European higher education institutions may be possible after registration."
+        ],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Winter semester application period"
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": "HSB online application / international applications",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.hs-bremen.de/en/study/degree-programme/applied-therapeutic-sciences-in-speech-and-language-pathology-logopedics-physiotherapy-bsc/",
+            "source_text": "Crawler v0.3 raw evidence identifies an HSB B.Sc. programme and states that German-qualified applicants need an initial certificate of clinical practice, while international students need at least three years of undergraduate education or an initial university degree in Speech and Language Pathology or Physiotherapy.",
+            "retrieved_at": "2026-05-17T08:48:02.638993+00:00",
+            "confidence": "medium",
+            "review_note": "Official source text embedded in allowed crawler v0.3 file; not fully live-read in this pass."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Admission requirements",
+          "source_url": "https://www.hs-bremen.de/en/study/degree-programme/applied-therapeutic-sciences-in-speech-and-language-pathology-logopedics-physiotherapy-bsc/",
+          "text": "General higher education entrance qualification. German-qualified applicants require an initial certificate of clinical practice. International students require at least three years of undergraduate education or an initial university degree in Speech and Language Pathology (Logopedics) or Physiotherapy."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "Hochschule Bremen",
+        "url": "https://www.hs-bremen.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International Degree Programme in Global Management",
+        "degree": "Bachelor of Arts",
+        "level": "bachelor",
+        "url": "https://www.hs-bremen.de/en/study/degree-programme/international-degree-programme-in-global-management-ba/",
+        "campus": null,
+        "language_of_instruction": [],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "medium",
+          "degree": "medium",
+          "requirements": "low"
+        }
+      },
+      "requirements": {
+        "academic_background": null,
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": null,
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.hs-bremen.de/en/study/degree-programme/international-degree-programme-in-global-management-ba/",
+            "source_text": "Allowed v0.4 crawler candidate lists this HSB programme URL and title, but detailed programme requirements were not live-verified in this pass.",
+            "retrieved_at": "2026-05-18T16:23:40.692686+00:00",
+            "confidence": "low",
+            "review_note": "Candidate recall from malformed v0.4 file; needs human review before using structured requirements."
+          }
+        ]
+      },
+      "raw_evidence_sections": [],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "Hochschule Bremen",
+        "url": "https://www.hs-bremen.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International Degree Programme in Midwifery",
+        "degree": "Bachelor of Science",
+        "level": "bachelor",
+        "url": "https://www.hs-bremen.de/en/study/degree-programme/cooperative-international-degree-programme-in-midwifery-bsc/",
+        "campus": null,
+        "language_of_instruction": [],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "medium",
+          "degree": "medium",
+          "requirements": "low"
+        }
+      },
+      "requirements": {
+        "academic_background": null,
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "CEFR English",
+            "minimum_score": "B1.2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": null,
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.hs-bremen.de/en/study/degree-programme/cooperative-international-degree-programme-in-midwifery-bsc/",
+            "source_text": "Allowed v0.4 crawler candidate lists this B.Sc. programme URL. Shared FAQ evidence says English level B1.2 must be proven for the International Degree Programme in Midwifery B.Sc.",
+            "retrieved_at": "2026-05-18T16:23:40.692686+00:00",
+            "confidence": "medium",
+            "review_note": "Programme title is candidate-confirmed; language requirement comes from shared FAQ snippet."
+          }
+        ]
+      },
+      "raw_evidence_sections": [],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "Hochschule Bremen",
+        "url": "https://www.hs-bremen.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International Degree Programme in Nursing",
+        "degree": "Bachelor of Science",
+        "level": "bachelor",
+        "url": "https://www.hs-bremen.de/en/study/degree-programme/international-degree-programme-in-nursing-bsc/",
+        "campus": null,
+        "language_of_instruction": [],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "medium",
+          "degree": "medium",
+          "requirements": "low"
+        }
+      },
+      "requirements": {
+        "academic_background": null,
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": null,
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.hs-bremen.de/en/study/degree-programme/international-degree-programme-in-nursing-bsc/",
+            "source_text": "Allowed v0.4 crawler candidate lists this HSB programme URL and title, but detailed programme requirements were not live-verified in this pass.",
+            "retrieved_at": "2026-05-18T16:23:40.692686+00:00",
+            "confidence": "low",
+            "review_note": "Candidate recall from malformed v0.4 file; needs human review before using structured requirements."
+          }
+        ]
+      },
+      "raw_evidence_sections": [],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "Hochschule Bremen",
+        "url": "https://www.hs-bremen.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Trade and Retail Management",
+        "degree": "Bachelor of Arts",
+        "level": "bachelor",
+        "url": "https://www.hs-bremen.de/en/study/degree-programme/trade-and-retail-management-ba/",
+        "campus": null,
+        "language_of_instruction": [],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "medium",
+          "degree": "medium",
+          "requirements": "low"
+        }
+      },
+      "requirements": {
+        "academic_background": null,
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": null,
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.hs-bremen.de/en/study/degree-programme/trade-and-retail-management-ba/",
+            "source_text": "Allowed v0.4 crawler candidate lists this HSB programme URL and title, but detailed programme requirements were not live-verified in this pass.",
+            "retrieved_at": "2026-05-18T16:23:40.692686+00:00",
+            "confidence": "low",
+            "review_note": "Candidate recall from malformed v0.4 file; needs human review before using structured requirements."
+          }
+        ]
+      },
+      "raw_evidence_sections": [],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "Hochschule Bremen",
+        "url": "https://www.hs-bremen.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Aviation Systems Engineering and Management",
+        "degree": "Bachelor of Engineering",
+        "level": "bachelor",
+        "url": "https://www.hs-bremen.de/en/study/degree-programme/aviation-systems-engineering-and-management-beng/",
+        "campus": null,
+        "language_of_instruction": [],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "medium",
+          "degree": "medium",
+          "requirements": "low"
+        }
+      },
+      "requirements": {
+        "academic_background": null,
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": null,
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.hs-bremen.de/en/study/degree-programme/aviation-systems-engineering-and-management-beng/",
+            "source_text": "Allowed v0.4 crawler candidate lists this HSB programme URL and title, but detailed programme requirements were not live-verified in this pass.",
+            "retrieved_at": "2026-05-18T16:23:40.692686+00:00",
+            "confidence": "low",
+            "review_note": "Candidate recall from malformed v0.4 file; needs human review before using structured requirements."
+          }
+        ]
+      },
+      "raw_evidence_sections": [],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "Hochschule Bremen",
+        "url": "https://www.hs-bremen.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Social Work",
+        "degree": "Bachelor of Arts",
+        "level": "bachelor",
+        "url": "https://www.hs-bremen.de/en/study/degree-programme/social-work-ba/",
+        "campus": null,
+        "language_of_instruction": [],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "medium",
+          "degree": "medium",
+          "requirements": "low"
+        }
+      },
+      "requirements": {
+        "academic_background": null,
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": null,
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.hs-bremen.de/en/study/degree-programme/social-work-ba/",
+            "source_text": "Allowed v0.4 crawler candidate lists this HSB programme URL and title, but detailed programme requirements were not live-verified in this pass.",
+            "retrieved_at": "2026-05-18T16:23:40.692686+00:00",
+            "confidence": "low",
+            "review_note": "Candidate recall from malformed v0.4 file; needs human review before using structured requirements."
+          }
+        ]
+      },
+      "raw_evidence_sections": [],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "Hochschule Bremen",
+        "url": "https://www.hs-bremen.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Global Management",
+        "degree": "MBA",
+        "level": "master",
+        "url": "https://www.hs-bremen.de/en/study/degree-programme/global-management-mba/",
+        "campus": null,
+        "language_of_instruction": [],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "medium",
+          "degree": "medium",
+          "requirements": "low"
+        }
+      },
+      "requirements": {
+        "academic_background": null,
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": null,
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.hs-bremen.de/en/study/degree-programme/global-management-mba/",
+            "source_text": "Allowed v0.4 crawler candidate lists this HSB programme URL and title, but detailed programme requirements were not live-verified in this pass.",
+            "retrieved_at": "2026-05-18T16:23:40.692686+00:00",
+            "confidence": "low",
+            "review_note": "Candidate recall from malformed v0.4 file; needs human review before using structured requirements."
+          }
+        ]
+      },
+      "raw_evidence_sections": [],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "Hochschule Bremen",
+        "url": "https://www.hs-bremen.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Dual Study Programme Social Work",
+        "degree": "Bachelor of Arts",
+        "level": "bachelor",
+        "url": "https://www.hs-bremen.de/en/study/degree-programme/dual-study-programme-social-work-ba/",
+        "campus": null,
+        "language_of_instruction": [],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "medium",
+          "degree": "medium",
+          "requirements": "low"
+        }
+      },
+      "requirements": {
+        "academic_background": null,
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": null,
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.hs-bremen.de/en/study/degree-programme/dual-study-programme-social-work-ba/",
+            "source_text": "Allowed v0.4 crawler candidate lists this HSB programme URL and title, but detailed programme requirements were not live-verified in this pass.",
+            "retrieved_at": "2026-05-18T16:23:40.692686+00:00",
+            "confidence": "low",
+            "review_note": "Candidate recall from malformed v0.4 file; needs human review before using structured requirements."
+          }
+        ]
+      },
+      "raw_evidence_sections": [],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "Hochschule Bremen",
+        "url": "https://www.hs-bremen.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Practice Research and Innovation in Social Work",
+        "degree": "Master of Arts",
+        "level": "master",
+        "url": "https://www.hs-bremen.de/en/study/degree-programme/practice-research-and-innovation-in-social-work-ma/",
+        "campus": null,
+        "language_of_instruction": [
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "First professional university degree in social work, social pedagogy, or social management.",
+          "minimum_ects": 210,
+          "recognized_institution": null,
+          "minimum_grade": "2.5",
+          "notes": [
+            "Official page also allows 180 ECTS plus ideally 30 ECTS post-qualification."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "social work, social pedagogy, or social management",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "German",
+            "minimum_score": "native speaker or C1 for universities",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "English",
+            "minimum_score": "knowledge sufficient to study specialist literature",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": 0.75,
+          "relevance": "professional experience in a field of social work including the probationary year required for state recognition",
+          "notes": [
+            "Official page states at least nine months."
+          ]
+        },
+        "documents": [],
+        "conditional_paths": [
+          "180 ECTS plus ideally 30 ECTS post-qualification may satisfy the academic background route."
+        ],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Summer semester: 15 December until 15 January"
+        ],
+        "intakes": [
+          "Summer semester"
+        ],
+        "application_channel": "HSB online application / international applications",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.hs-bremen.de/en/study/degree-programme/practice-research-and-innovation-in-social-work-ma/",
+            "source_text": "Official page lists Practice Research and Innovation in Social Work M.A., Master of Arts, summer start, 90 credits, admission requirement of 210 ECTS or 180 ECTS plus ideally 30 ECTS, grade 2.5, social-work related background, nine months professional experience, English knowledge, and German C1/native-speaker skills.",
+            "retrieved_at": "2026-05-20T07:29:26Z",
+            "confidence": "high",
+            "review_note": "Live official page read during v0.2 pass."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Overview / Admission requirements",
+          "source_url": "https://www.hs-bremen.de/en/study/degree-programme/practice-research-and-innovation-in-social-work-ma/",
+          "text": "Degree Master of Arts; application period 15 December until 15 January; admission requires 210 ECTS or 180 ECTS plus ideally 30 ECTS, grade 2.5, social work/social pedagogy/social management background, at least nine months professional experience in social work, English knowledge, and German native speaker or C1."
+        }
+      ],
+      "needs_human_review": false
+    }
+  ],
+  "llm_review_summary": {
+    "program_count": 12,
+    "key_findings": [
+      {
+        "category": "genuine_llm_omission_candidate",
+        "finding": "Hochschule Bremen v0.4 candidate recall finds 12 on-host degree-programme pages, while v0.3 only had two records.",
+        "impact": "v0.2 expands coverage but marks the unverified candidate-only programme records for human review."
+      },
+      {
+        "category": "schema_granularity_difference",
+        "finding": "Central application/admission pages contain shared application, VPD, German-language, document, and transfer text that should not be copied blindly into every programme.",
+        "impact": "Shared facts are recorded as gaps or low-confidence notes unless programme-level evidence confirms them."
+      },
+      {
+        "category": "crawler_false_positive",
+        "finding": "The v0.4 candidate attached generic campus/navigation text and broad shared work-experience/document snippets to unrelated HSB programmes.",
+        "impact": "Those generic facts are omitted from structured programme fields."
+      },
+      {
+        "category": "unverifiable_from_available_evidence",
+        "finding": "The allowed HSB v0.4 crawler file itself is malformed JSON, so line-level programme recall could be used but not mechanically trusted.",
+        "impact": "Several records carry low-confidence evidence and needs_human_review=true."
+      }
+    ],
+    "known_gaps": [
+      {
+        "category": "unverifiable_from_available_evidence",
+        "gap": "Programme-level requirements for Global Management, Nursing, Trade and Retail Management, Aviation Systems Engineering and Management, Social Work, and Dual Social Work were not fully live-read in this pass.",
+        "next_step": "Use official programme pages to fill raw evidence sections before treating these as high-confidence admissions records."
+      },
+      {
+        "category": "schema_granularity_difference",
+        "gap": "General HSB VPD/uni-assist, German C1, document, and transfer facts need scope rules by applicant type and programme.",
+        "next_step": "Model shared application rules separately or attach them only with explicit programme applicability."
+      }
+    ]
+  }
+}

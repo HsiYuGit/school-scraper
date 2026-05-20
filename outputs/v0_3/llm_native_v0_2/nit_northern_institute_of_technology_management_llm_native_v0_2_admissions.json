@@ -1,0 +1,424 @@
+{
+  "schema_version": "0.3-llm-native-draft",
+  "method": {
+    "type": "llm_native_official_site_reading",
+    "version": "llm_native_v0_2",
+    "created_at": "2026-05-20T07:29:26Z",
+    "school": "NIT Northern Institute of Technology Management",
+    "agent": {
+      "agent_id": "clean-room-worker-a",
+      "nickname": "Clean-room Worker A",
+      "role": "repo-grounded official-site admissions extraction",
+      "model": "GPT-5 via Codex",
+      "reasoning_effort": "not exposed"
+    },
+    "cost_tracking": {
+      "token_usage": "unavailable",
+      "estimated_usd_cost": "unavailable",
+      "note": "Manual Codex extraction pass; standalone LLM/API token and cost telemetry was not exposed."
+    },
+    "source_files": [
+      "README.md",
+      "DEVELOPMENT_LOG.md",
+      "docs/admissions_schema_v0_2.md",
+      "docs/admissions_output_versions.md",
+      "docs/admissions_llm_native_schema_v0_3.md",
+      "docs/html_review_tool.md",
+      "docs/admissions_extraction_harness.md",
+      "docs/prompts/admissions_llm_native_v0_2_prompt.md",
+      "outputs/v0_3/nit_northern_institute_of_technology_management_admissions.json",
+      "outputs/v0_4/nit_northern_institute_of_technology_management_admissions.json"
+    ],
+    "prompt_file": "docs/prompts/admissions_llm_native_v0_2_prompt.md",
+    "source_urls": [
+      "https://www.nithh.org/",
+      "https://www.nithh.org/study-technology-management",
+      "https://www.nithh.org/business-analytics-and-ai",
+      "https://www.nithh.org/admissions"
+    ],
+    "workflow": [
+      "Read required repo documentation and v0.2 prompt/schema contract.",
+      "Used NIT v0.3 and v0.4 crawler files as candidate recall surfaces only.",
+      "Live-read official NIT programme and admissions pages to confirm programme grouping and requirements.",
+      "Kept Technology Management as one programme family with degree/ECTS variants rather than separate single/double-degree top-level records.",
+      "Rejected unscoped GRE/GMAT/German requirements where official NIT evidence did not make them applicable to all NIT programmes."
+    ],
+    "limitations": [
+      "NIT admissions page mixes Technology Management single-degree and double-degree instructions with Business Analytics & AI; applicant-route scope remains important.",
+      "Double-degree TUHH MSc requirements are partly delegated to TUHH pages and are not exhaustively extracted here.",
+      "Application dates on programme pages and admissions page differ by route; this file records both route-specific date ranges with review notes."
+    ],
+    "elapsed_time_seconds": "not exposed",
+    "format_note": "Matches the repo v0.3 LLM-native contract with v0.2 gap-repair method metadata."
+  },
+  "school": {
+    "name": "NIT Northern Institute of Technology Management",
+    "url": "https://www.nithh.org/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "institute"
+  },
+  "retrieved_at": "2026-05-20T07:29:26Z",
+  "programs": [
+    {
+      "school": {
+        "name": "NIT Northern Institute of Technology Management",
+        "url": "https://www.nithh.org/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "institute"
+      },
+      "program": {
+        "name": "Technology Management",
+        "degree": "Master of Business Administration or Master of Arts",
+        "level": "master",
+        "url": "https://www.nithh.org/study-technology-management",
+        "campus": "NIT Building / TUHH campus, Hamburg",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "single-degree and double-degree routes; 90 or 120 ECTS variants",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "high",
+          "application_dates": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor's degree in Engineering, Natural Science, Information or Computer Science for double degree; Engineering, Natural Science, Information or Computer Science or a business-related field for single degree.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": "Good grades in the upper third to quarter",
+          "notes": [
+            "Applicants need a proven record of personal and academic achievement.",
+            "Double-degree applicants must also satisfy the selected TUHH MSc programme requirements."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "Engineering, Natural Science, Information or Computer Science",
+            "minimum_ects": null,
+            "notes": [
+              "Required for the double-degree route."
+            ]
+          },
+          {
+            "subject": "business-related field",
+            "minimum_ects": null,
+            "notes": [
+              "Accepted for the single-degree route."
+            ]
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "90",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL paper-based",
+            "minimum_score": "577",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "IELTS Academic",
+            "minimum_score": "6.5",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "Cambridge Certificate in Advanced English or Proficiency in English",
+            "minimum_score": "accepted",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "telc English C1 or DAAD Language Certificate",
+            "minimum_score": "C1",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Personal interview",
+            "requirement": "required",
+            "notes": "Admissions committee uses supplied documents and a personal interview; promising candidates may be interviewed in person or via Zoom/Teams."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": "Initial professional experience is a plus but not required for admission; 12 months relevant post-bachelor experience affects whether the Technology Management degree is MBA rather than M.A.",
+          "notes": [
+            "Official page says initial professional experience is a plus but not an admission requirement.",
+            "Admissions page says 12 months relevant professional experience after the bachelor's degree is needed for the MBA title; otherwise graduates receive the M.A. in Technology Management."
+          ]
+        },
+        "documents": [
+          "Application form / online application",
+          "CV",
+          "Bachelor's degree certificate or provisional certificate",
+          "University transcript of records",
+          "Proof of English language proficiency",
+          "Statement of purpose",
+          "Proof of work experience if applicable"
+        ],
+        "conditional_paths": [
+          "Single-degree route",
+          "Double-degree route with TUHH MSc",
+          "90 ECTS or 120 ECTS Technology Management route"
+        ],
+        "international_requirements": [
+          "Applicants from China, Mongolia, Vietnam and India may need APS upon enrollment according to the admissions document checklist.",
+          "German TestDaF or DSH is required for TUHH MSc programmes taught in German, not for NIT's English-taught Technology Management coursework itself."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Programme page: October 1, 2024 until September 31, 2025",
+          "Admissions page double master route: December 1 - March 1",
+          "Admissions page single degree / Business Analytics & AI route: October 1 - September 15"
+        ],
+        "intakes": [
+          "October 2025"
+        ],
+        "application_channel": "NIT online application form; double-degree TUHH route integrated into TUHH application process",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Master 90 ECTS: 26,750 EUR",
+          "Master 120 ECTS: +9,750 EUR"
+        ]
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.nithh.org/study-technology-management",
+            "source_text": "Official programme page identifies Master/MBA 90 ECTS and 120 ECTS variants, October 2025 start, MBA or M.A. degree, and 90/120 ECTS credit points.",
+            "retrieved_at": "2026-05-20T07:29:26Z",
+            "confidence": "high",
+            "review_note": "Live official page read during v0.2 pass."
+          },
+          {
+            "source_url": "https://www.nithh.org/study-technology-management",
+            "source_text": "Official requirements say double-degree applicants need Engineering, Natural Science, Information or Computer Science; single-degree applicants may also have a business-related field; good grades, achievement record, high English proficiency, and professional experience as a plus.",
+            "retrieved_at": "2026-05-20T07:29:26Z",
+            "confidence": "high",
+            "review_note": "Live official page read during v0.2 pass."
+          },
+          {
+            "source_url": "https://www.nithh.org/admissions",
+            "source_text": "Admissions page lists English proof options including TOEFL 90 iBT / 577 paper-based, IELTS Academic 6.5, Cambridge CAE/CPE, telc English C1, and DAAD C1; admissions process uses documents and personal interview.",
+            "retrieved_at": "2026-05-20T07:29:26Z",
+            "confidence": "high",
+            "review_note": "Live official admissions page read during v0.2 pass."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "The requirements to study at the NIT",
+          "source_url": "https://www.nithh.org/study-technology-management",
+          "text": "Double Degree: Bachelor's degree in Engineering, Natural Science, Information or Computer Science. Single Degree: Bachelor's degree in Engineering, Natural Science, Information or Computer Science or in a business related field. Good grades in the upper third to quarter, proven record of personal and academic achievement, high level of proficiency in English, and initial professional experience as a plus but not required."
+        },
+        {
+          "heading": "Master in Technology Management overview",
+          "source_url": "https://www.nithh.org/study-technology-management",
+          "text": "Master/MBA 90 ECTS and 120 ECTS routes; start October 2025; application period October 1, 2024 until September 31, 2025; degree Master of Business Administration or Master of Arts when work experience is less than one year; tuition Master 90 ECTS 26,750 EUR and Master 120 ECTS +9,750 EUR."
+        },
+        {
+          "heading": "Proof of English language proficiency and admission process",
+          "source_url": "https://www.nithh.org/admissions",
+          "text": "TOEFL 90 iBT or 577 paper-based, IELTS Academic 6.5, Cambridge Advanced/Proficiency, telc English C1, or DAAD C1; admission committee reviews supplied documents and a personal interview."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "NIT Northern Institute of Technology Management",
+        "url": "https://www.nithh.org/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "institute"
+      },
+      "program": {
+        "name": "Business Analytics & AI",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://www.nithh.org/business-analytics-and-ai",
+        "campus": "NIT Building / TUHH campus, Hamburg",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor's or equivalent degree from a recognized university in engineering, science and technology, business engineering, business administration, or economics.",
+          "minimum_ects": null,
+          "recognized_institution": "recognized university",
+          "minimum_grade": "good previous academic performance",
+          "notes": [
+            "Official page lists business informatics, business mathematics, and business geography as examples within business administration."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "engineering, science and technology, business engineering, business administration, or economics",
+            "minimum_ects": null,
+            "notes": [
+              "Official programme page requirement."
+            ]
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "English proficiency",
+            "minimum_score": "high level of proficiency in English",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "90",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "IELTS Academic",
+            "minimum_score": "6.5",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Personal interview",
+            "requirement": "required",
+            "notes": "Admissions page route for single degree / Business Analytics & AI lists a personal interview after NIT review."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 1,
+          "relevance": "professional experience",
+          "notes": [
+            "Official Business Analytics & AI page states at least one year of professional experience."
+          ]
+        },
+        "documents": [
+          "Application form / online application",
+          "CV",
+          "Bachelor's degree certificate or provisional certificate",
+          "University transcript of records",
+          "Proof of English language proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "Applicants from China, Mongolia, Vietnam and India may need APS upon enrollment according to the admissions document checklist."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Programme page: application possible at any time",
+          "Admissions page single degree / Business Analytics & AI route: October 1 - September 15"
+        ],
+        "intakes": [
+          "October 2026"
+        ],
+        "application_channel": "NIT online application form",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "EUR 7,437.50 per semester"
+        ]
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.nithh.org/business-analytics-and-ai",
+            "source_text": "Official page identifies Master in Business Analytics & AI as a Master of Science, 120 ECTS, October 2026 start, EUR 7,437.50 per semester, and requires a relevant bachelor's/equivalent degree, good academic performance, high English proficiency, and at least one year of professional experience.",
+            "retrieved_at": "2026-05-20T07:29:26Z",
+            "confidence": "high",
+            "review_note": "Live official page read during v0.2 pass."
+          },
+          {
+            "source_url": "https://www.nithh.org/admissions",
+            "source_text": "Admissions page lists English proof options and the single-degree / Business Analytics & AI route as apply from Oct 1 to Sep 15 via online form, wait for reply, then personal interview.",
+            "retrieved_at": "2026-05-20T07:29:26Z",
+            "confidence": "medium",
+            "review_note": "Shared route evidence; date conflicts with programme page's 'application possible at any time'."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "The requirements to study Business Analytics & AI",
+          "source_url": "https://www.nithh.org/business-analytics-and-ai",
+          "text": "Bachelor's or equivalent degree from a recognized university in engineering, science and technology, business engineering, business administration including business informatics, business mathematics and business geography, or economics; good previous academic performance; high level of English; at least one year of professional experience."
+        },
+        {
+          "heading": "Master in Business Analytics & AI overview",
+          "source_url": "https://www.nithh.org/business-analytics-and-ai",
+          "text": "120 ECTS full-time; start October 2026; application possible at any time; degree Master of Science conferred by TUHH; tuition EUR 7,437.50 per semester."
+        }
+      ],
+      "needs_human_review": false
+    }
+  ],
+  "llm_review_summary": {
+    "program_count": 2,
+    "key_findings": [
+      {
+        "category": "naming_or_grouping_mismatch",
+        "finding": "NIT should be represented as two programme families: Technology Management and Business Analytics & AI.",
+        "impact": "The v0.3 crawler's separate single-degree URL record is folded into the Technology Management family rather than duplicated."
+      },
+      {
+        "category": "schema_granularity_difference",
+        "finding": "Technology Management has single-degree/double-degree and 90/120 ECTS routes; these are variants within one programme family.",
+        "impact": "Degree and application fields preserve route distinctions in notes and conditional paths."
+      },
+      {
+        "category": "crawler_false_positive",
+        "finding": "Crawler language extraction attached German DSH/TestDaF to NIT generally, but official admissions text scopes German proficiency to TUHH MSc programmes taught in German.",
+        "impact": "German is kept as an international/double-degree route note, not as a general NIT English-programme language requirement."
+      },
+      {
+        "category": "genuine_llm_omission_candidate",
+        "finding": "Business Analytics & AI is official-confirmed as a Master of Science with 120 ECTS, October 2026 start, one year professional experience, and EUR 7,437.50 per semester.",
+        "impact": "v0.2 keeps it as a full programme record with official evidence."
+      }
+    ],
+    "known_gaps": [
+      {
+        "category": "unverifiable_from_available_evidence",
+        "gap": "Technology Management page says application period until September 31, 2025, which is not a valid calendar date but is preserved as official page text.",
+        "next_step": "Human reviewer should verify the intended final September deadline with NIT."
+      },
+      {
+        "category": "schema_granularity_difference",
+        "gap": "TUHH double-degree MSc admission conditions are delegated to TUHH pages and are not fully extracted here.",
+        "next_step": "A route-aware extraction should attach TUHH MSc prerequisites separately from NIT Technology Management admissions."
+      }
+    ]
+  }
+}

@@ -1,0 +1,1499 @@
+{
+  "schema_version": "0.3-llm-native-draft",
+  "method": {
+    "type": "llm_native_official_site_reading",
+    "created_at": "2026-05-20T00:00:00Z",
+    "school": "International School of Management (ISM)",
+    "agent": {
+      "agent_id": "not exposed",
+      "nickname": "Clean-room Worker D",
+      "role": "worker subagent",
+      "model": "GPT-5 Codex",
+      "reasoning_effort": "medium"
+    },
+    "cost_tracking": {
+      "token_usage": "not exposed; no standalone measured LLM API call was run for this v0.2 repair pass",
+      "estimated_usd_cost": "not available",
+      "note": "Do not estimate unavailable token or dollar cost."
+    },
+    "source_urls": [
+      "https://en.ism.de/full-degree-students/bachelor-programs",
+      "https://en.ism.de/full-degree-students/master-programs",
+      "https://en.ism.de/full-degree-students/mba-programs",
+      "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/overview",
+      "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-finance/overview",
+      "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-data-science-and-business-analytics/overview",
+      "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview",
+      "https://en.ism.de/full-degree-students/master-programs/master-business-intelligence/overview",
+      "https://en.ism.de/full-degree-students/master-programs/master-finance/overview",
+      "https://en.ism.de/full-degree-students/master-programs/master-psychology-management/overview",
+      "https://en.ism.de/full-degree-students/master-programs/marketing-master/overview",
+      "https://en.ism.de/full-degree-students/master-programs/sales-management/overview",
+      "https://en.ism.de/full-degree-students/master-programs/master-logistics/overview",
+      "https://en.ism.de/full-degree-students/master-programs/master-international-business/overview",
+      "https://en.ism.de/full-degree-students/master-programs/pre-master/overview",
+      "https://en.ism.de/full-degree-students/mba-programs/mba-general-management-full-time/overview",
+      "https://en.ism.de/full-degree-students/mba-programs/mba-general-management-part-time/overview"
+    ],
+    "elapsed_time_seconds": "not exposed",
+    "format_note": "Matches the repo v0.3 LLM-native program-level contract; this file is the llm_native_v0_2 gap-repair variant.",
+    "version": "llm_native_v0_2",
+    "source_files": [
+      "README.md",
+      "DEVELOPMENT_LOG.md",
+      "docs/admissions_schema_v0_2.md",
+      "docs/admissions_output_versions.md",
+      "docs/admissions_llm_native_schema_v0_3.md",
+      "docs/html_review_tool.md",
+      "docs/admissions_extraction_harness.md",
+      "docs/prompts/admissions_llm_native_v0_2_prompt.md",
+      "outputs/v0_3/international_school_of_management_ism_admissions.json",
+      "outputs/v0_4/international_school_of_management_ism_admissions.json"
+    ],
+    "prompt_file": "docs/prompts/admissions_llm_native_v0_2_prompt.md",
+    "workflow": "Clean-room v0.2 official-site reading: use repo docs and allowed crawler v0.3/v0.4 candidate evidence only; read official ISM pages directly where available; normalize crawler candidate titles into official catalog names; reject template, listing, and global-language noise.",
+    "limitations": [
+      "No LLM v0.1 answer file was read or used.",
+      "Admissions JSON remains candidate data, not truth.",
+      "No standalone paid LLM/API run was made; token usage and dollar cost are unavailable.",
+      "Some detail pages expose requirements in expandable page sections; where crawler evidence is broad or template-like, records retain medium confidence or human-review notes.",
+      "This focused pass covers the official English bachelor, on-campus English master/pre-master, and MBA pages listed by ISM; German-only and separate distance-learning catalogues are not exhaustively modeled."
+    ]
+  },
+  "school": {
+    "name": "International School of Management (ISM)",
+    "url": "https://en.ism.de/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university"
+  },
+  "retrieved_at": "2026-05-20T00:00:00Z",
+  "programs": [
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International Management",
+        "degree": "Bachelor of Science",
+        "level": "bachelor",
+        "url": "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/overview",
+        "campus": [
+          "Dortmund",
+          "Frankfurt/Main",
+          "Munich",
+          "Hamburg",
+          "Cologne",
+          "Stuttgart",
+          "Berlin",
+          "Distance Learning"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "medium",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "General qualification for German university admission or comparable qualification.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": "No Numerus Clausus or fixed GPA requirement found in reviewed public text.",
+          "notes": [
+            "Pre-check documents include school leaving certificate if available and transcript of records."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "CEFR English",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "English proof may not be needed when high-school medium of instruction was English; otherwise an online English assessment may be used."
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Online admission process",
+            "requirement": "required",
+            "notes": "ISM describes online admission / admission test after pre-check verification."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "School leaving certificate if available",
+          "Transcript of records",
+          "Short CV",
+          "Proof of English language if available or required",
+          "ID card or passport copy",
+          "Letter of motivation for bachelor application"
+        ],
+        "conditional_paths": [
+          "Practical work experience may be considered under certain circumstances for bachelor admission."
+        ],
+        "international_requirements": [
+          "Applicants needing a German study visa should apply around four months to one year before the start semester.",
+          "Visa-sensitive bachelor deadlines found: July 15 for fall term and December 15 for spring term."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "July 15 for fall term for candidates who need a German study visa",
+          "December 15 for spring term for candidates who need a German study visa"
+        ],
+        "intakes": [
+          "Fall term",
+          "Spring term"
+        ],
+        "application_channel": "ISM online application / online admission",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://en.ism.de/full-degree-students/bachelor-programs",
+            "source_text": "Official ISM bachelor listing names B.Sc. International Management among the English on-campus bachelor programs and describes English bachelor admission requirements, B2 English level, no NC/GPA, and visa-sensitive deadlines.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-international-management/overview",
+            "source_text": "Candidate detail-page evidence identifies Bachelor of International Management and lists application documents including transcript, CV, passport/ID, and English proof.",
+            "retrieved_at": "2026-05-18T16:15:06.226831+00:00",
+            "confidence": "medium",
+            "review_note": "Detail-page text came from crawler candidate evidence and should be spot-checked before production use."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://en.ism.de/full-degree-students/bachelor-programs",
+          "heading": "Bachelor programs in English, on-campus",
+          "source_text": "Official listing includes B.Sc. International Management, B.Sc. Finance & Management, and B.Sc. Applied Data Science & Business Analytics."
+        },
+        {
+          "source_url": "https://en.ism.de/full-degree-students/bachelor-programs",
+          "heading": "Entry requirements for bachelor's programs at ISM",
+          "source_text": "Bachelor applicants need a general qualification for German university admission or comparable qualification; no NC or fixed GPA is required; English bachelor programs usually expect B2 English."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Finance & Management",
+        "degree": "Bachelor of Science",
+        "level": "bachelor",
+        "url": "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-finance/overview",
+        "campus": [],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "medium",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "General qualification for German university admission or comparable qualification.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": "No Numerus Clausus or fixed GPA requirement found in reviewed public text.",
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "CEFR English",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "English proof may not be needed when high-school medium of instruction was English."
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Online admission process",
+            "requirement": "required",
+            "notes": "ISM describes online admission / admission test after pre-check verification."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "School leaving certificate if available",
+          "Transcript of records",
+          "Short CV",
+          "Proof of English language if available or required",
+          "ID card or passport copy",
+          "Letter of motivation for bachelor application"
+        ],
+        "conditional_paths": [
+          "Practical work experience may be considered under certain circumstances for bachelor admission."
+        ],
+        "international_requirements": [
+          "Applicants needing a German study visa should apply around four months to one year before the start semester.",
+          "Visa-sensitive bachelor deadlines found: July 15 for fall term and December 15 for spring term."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "July 15 for fall term for candidates who need a German study visa",
+          "December 15 for spring term for candidates who need a German study visa"
+        ],
+        "intakes": [
+          "Fall term",
+          "Spring term"
+        ],
+        "application_channel": "ISM online application / online admission",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://en.ism.de/full-degree-students/bachelor-programs",
+            "source_text": "Official ISM bachelor listing names B.Sc. Finance & Management among English on-campus bachelor programs.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://en.ism.de/full-degree-students/bachelor-programs",
+          "heading": "Bachelor programs in English, on-campus",
+          "source_text": "Official listing includes B.Sc. Finance & Management."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Applied Data Science & Business Analytics",
+        "degree": "Bachelor of Science",
+        "level": "bachelor",
+        "url": "https://en.ism.de/full-degree-students/bachelor-programs/bachelor-data-science-and-business-analytics/overview",
+        "campus": [],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "medium",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "General qualification for German university admission or comparable qualification.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": "No Numerus Clausus or fixed GPA requirement found in reviewed public text.",
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "CEFR English",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "English proof may not be needed when high-school medium of instruction was English."
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Online admission process",
+            "requirement": "required",
+            "notes": "ISM describes online admission / admission test after pre-check verification."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "School leaving certificate if available",
+          "Transcript of records",
+          "Short CV",
+          "Proof of English language if available or required",
+          "ID card or passport copy",
+          "Letter of motivation for bachelor application"
+        ],
+        "conditional_paths": [
+          "Practical work experience may be considered under certain circumstances for bachelor admission."
+        ],
+        "international_requirements": [
+          "Applicants needing a German study visa should apply around four months to one year before the start semester.",
+          "Visa-sensitive bachelor deadlines found: July 15 for fall term and December 15 for spring term."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "July 15 for fall term for candidates who need a German study visa",
+          "December 15 for spring term for candidates who need a German study visa"
+        ],
+        "intakes": [
+          "Fall term",
+          "Spring term"
+        ],
+        "application_channel": "ISM online application / online admission",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://en.ism.de/full-degree-students/bachelor-programs",
+            "source_text": "Official ISM bachelor listing names B.Sc. Applied Data Science & Business Analytics among English on-campus bachelor programs.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://en.ism.de/full-degree-students/bachelor-programs",
+          "heading": "Bachelor programs in English, on-campus",
+          "source_text": "Official listing includes B.Sc. Applied Data Science & Business Analytics."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International Management",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview",
+        "campus": [],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "First degree in economics or a first degree with business-science credits.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Crawler candidate evidence for this ISM detail page states first degree in economics or 30 ECTS in business sciences."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "Economics or business sciences",
+            "minimum_ects": "30 ECTS if the first degree is not in economics",
+            "notes": []
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [
+          {
+            "test": "Case study presentation and online interview",
+            "requirement": "required",
+            "notes": "Crawler candidate evidence describes this as part of the master application and admission process."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "CV",
+          "Letter of motivation",
+          "Transcript of records",
+          "Bachelor degree certificate or current proof",
+          "Application form"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [
+          "Fall term"
+        ],
+        "application_channel": "ISM online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://en.ism.de/full-degree-students/master-programs",
+            "source_text": "Official ISM master listing names M.Sc. International Management among English on-campus master programs.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview",
+            "source_text": "Candidate detail-page evidence states first degree in economics or 30 ECTS in business sciences, and mentions case-study presentation plus online interview.",
+            "retrieved_at": "2026-05-18T16:15:06.226831+00:00",
+            "confidence": "medium",
+            "review_note": "Detail-page admission text should be spot-checked because some ISM sections are expandable."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://en.ism.de/full-degree-students/master-programs",
+          "heading": "Master programs in English in Germany, on-campus",
+          "source_text": "Official listing includes M.Sc. International Management."
+        },
+        {
+          "source_url": "https://en.ism.de/full-degree-students/master-programs/master-international-management/overview",
+          "heading": "Entry requirements candidate section",
+          "source_text": "First degree in economics or with 30 ECTS points in the field of business sciences."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Business Intelligence & Data Science",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://en.ism.de/full-degree-students/master-programs/master-business-intelligence/overview",
+        "campus": [],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Recognized first degree; program-specific quantitative/business prerequisites should be checked on the detail page.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "Business, economics, mathematics, statistics, data science, or related quantitative fields",
+            "minimum_ects": null,
+            "notes": [
+              "Candidate extraction detected subject keywords, but exact ECTS allocation was not sufficiently stable."
+            ]
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [
+          {
+            "test": "Case study presentation and online interview",
+            "requirement": "mentioned_unclear",
+            "notes": "Shared ISM master admission process appears to use case-study presentation and online interview."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Transcript of records",
+          "Bachelor degree certificate or current proof",
+          "English proof",
+          "Application form"
+        ],
+        "conditional_paths": [
+          "Pre-Master may be relevant when quantitative or business prerequisites are insufficient."
+        ],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [
+          "Fall term"
+        ],
+        "application_channel": "ISM online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://en.ism.de/full-degree-students/master-programs",
+            "source_text": "Official ISM master listing names M.Sc. Business Intelligence & Data Science among English on-campus master programs.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://en.ism.de/full-degree-students/master-programs",
+          "heading": "Master programs in English in Germany, on-campus",
+          "source_text": "Official listing includes M.Sc. Business Intelligence & Data Science."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Finance",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://en.ism.de/full-degree-students/master-programs/master-finance/overview",
+        "campus": [],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "First degree in economics or a first degree with business-science credits.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Crawler candidate evidence states first degree in economics or 30 ECTS in business sciences."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "Economics or business sciences",
+            "minimum_ects": "30 ECTS if the first degree is not in economics",
+            "notes": []
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": [
+            "Crawler candidate reference to 35 years was page marketing text and was rejected as crawler_false_positive."
+          ]
+        },
+        "documents": [
+          "Transcript of records",
+          "Application form"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [
+          "Fall term"
+        ],
+        "application_channel": "ISM online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://en.ism.de/full-degree-students/master-programs",
+            "source_text": "Official ISM master listing names M.Sc. Finance among English on-campus master programs.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://en.ism.de/full-degree-students/master-programs/master-finance/overview",
+            "source_text": "Candidate detail-page evidence states first degree in economics or 30 ECTS in business sciences.",
+            "retrieved_at": "2026-05-18T16:15:06.226831+00:00",
+            "confidence": "medium",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://en.ism.de/full-degree-students/master-programs",
+          "heading": "Master programs in English in Germany, on-campus",
+          "source_text": "Official listing includes M.Sc. Finance."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Psychology & Management",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://en.ism.de/full-degree-students/master-programs/master-psychology-management/overview",
+        "campus": [],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "First degree in economics, psychology, related fields, or equivalent.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Candidate detail-page evidence says Pre-Master may prepare applicants when quantitative ECTS are insufficient."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "Economics, psychology, related fields, or economics",
+            "minimum_ects": "30 ECTS in psychology, related fields, or economics when applicable",
+            "notes": []
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Transcript of records",
+          "Bachelor degree certificate or current proof",
+          "English proof",
+          "ID card copy",
+          "Application form"
+        ],
+        "conditional_paths": [
+          "Pre-Master preparation if quantitative ECTS are insufficient"
+        ],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [
+          "Fall term"
+        ],
+        "application_channel": "ISM online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://en.ism.de/full-degree-students/master-programs",
+            "source_text": "Official ISM master listing names M.Sc. Psychology & Management among English on-campus master programs.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://en.ism.de/full-degree-students/master-programs/master-psychology-management/overview",
+            "source_text": "Candidate detail-page evidence states first degree in economics or 30 ECTS in psychology, related fields or economics; Pre-Master may help when quantitative ECTS are insufficient.",
+            "retrieved_at": "2026-05-18T16:15:06.226831+00:00",
+            "confidence": "medium",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://en.ism.de/full-degree-students/master-programs",
+          "heading": "Master programs in English in Germany, on-campus",
+          "source_text": "Official listing includes M.Sc. Psychology & Management."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Strategic Marketing Management",
+        "degree": "Master of Arts",
+        "level": "master",
+        "url": "https://en.ism.de/full-degree-students/master-programs/marketing-master/overview",
+        "campus": [],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Recognized first degree; exact subject/ECTS prerequisites should be checked on the detail page.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "Business, economics, marketing, or related field",
+            "minimum_ects": null,
+            "notes": [
+              "Candidate crawler evidence supports business-related subject context but exact ECTS was not stable enough for a hard value."
+            ]
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Transcript of records",
+          "Application form"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [
+          "Fall term"
+        ],
+        "application_channel": "ISM online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://en.ism.de/full-degree-students/master-programs",
+            "source_text": "Official ISM master listing names M.A. Strategic Marketing Management among English on-campus master programs.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://en.ism.de/full-degree-students/master-programs",
+          "heading": "Master programs in English in Germany, on-campus",
+          "source_text": "Official listing includes M.A. Strategic Marketing Management."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Luxury, Fashion & Sales Management",
+        "degree": "Master of Arts",
+        "level": "master",
+        "url": "https://en.ism.de/full-degree-students/master-programs/sales-management/overview",
+        "campus": [],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "First degree in economics or a first degree with business-science credits.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Candidate detail-page evidence states first degree in economics or 30 ECTS in business sciences."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "Economics or business sciences",
+            "minimum_ects": "30 ECTS if the first degree is not in economics",
+            "notes": []
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Transcript of records",
+          "Application form"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [
+          "Fall term"
+        ],
+        "application_channel": "ISM online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://en.ism.de/full-degree-students/master-programs",
+            "source_text": "Official ISM master listing names M.A. Luxury, Fashion & Sales Management among English on-campus master programs.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://en.ism.de/full-degree-students/master-programs/sales-management/overview",
+            "source_text": "Candidate detail-page evidence identifies the Fashion Management / Luxury and Fashion Management program and states first degree in economics or 30 ECTS in business sciences.",
+            "retrieved_at": "2026-05-18T16:15:06.226831+00:00",
+            "confidence": "medium",
+            "review_note": "Crawler title 'Master Degree in Fashion Management' was normalized to the official list title."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://en.ism.de/full-degree-students/master-programs",
+          "heading": "Master programs in English in Germany, on-campus",
+          "source_text": "Official listing includes M.A. Luxury, Fashion & Sales Management."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International Logistics & Supply Chain Management",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://en.ism.de/full-degree-students/master-programs/master-logistics/overview",
+        "campus": [],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Recognized first degree; exact subject/ECTS prerequisites should be checked on the detail page.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "Business, economics, logistics, supply chain, or related field",
+            "minimum_ects": null,
+            "notes": [
+              "Subject grouping is inferred from official program theme and crawler candidate snippets; exact public ECTS value was not stable in the reviewed evidence."
+            ]
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Transcript of records",
+          "Application form"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [
+          "Fall term"
+        ],
+        "application_channel": "ISM online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://en.ism.de/full-degree-students/master-programs",
+            "source_text": "Official ISM master listing names M.Sc. International Logistics & Supply Chain Management among English on-campus master programs.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://en.ism.de/full-degree-students/master-programs",
+          "heading": "Master programs in English in Germany, on-campus",
+          "source_text": "Official listing includes M.Sc. International Logistics & Supply Chain Management."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International Business",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://en.ism.de/full-degree-students/master-programs/master-international-business/overview",
+        "campus": [],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Non-specialized business master open to graduates from different areas",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Recognized first degree; the program is presented as suitable for graduates from any area who need business expertise.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "CEFR English",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Application form"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "Visa-sensitive deadline may apply; exact master deadline not confirmed in detail-page evidence."
+        ]
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [
+          "Spring term"
+        ],
+        "application_channel": "ISM online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://en.ism.de/full-degree-students/master-programs",
+            "source_text": "Official ISM master listing names M.Sc. International Business and marks it as start in spring.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://en.ism.de/full-degree-students/master-programs/master-international-business/overview",
+            "source_text": "Candidate detail-page evidence says the program is a non-specialized master's for graduates from any area who want to acquire business expertise.",
+            "retrieved_at": "2026-05-18T16:15:06.226831+00:00",
+            "confidence": "medium",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://en.ism.de/full-degree-students/master-programs",
+          "heading": "Master programs in English in Germany, on-campus",
+          "source_text": "Official listing includes M.Sc. International Business (start in spring)."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Pre-Master",
+        "degree": "Pre-Master",
+        "level": "pre-master",
+        "url": "https://en.ism.de/full-degree-students/master-programs/pre-master/overview",
+        "campus": [
+          "Dortmund",
+          "Frankfurt/Main",
+          "Munich",
+          "Berlin"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Business administration preparation for non-business economists",
+        "_confidence": {
+          "name": "high",
+          "degree": "medium",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor degree",
+          "minimum_ects": "at least 180 ECTS",
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Pre-Master is a preparatory semester for applicants needing business administration preparation for ISM master's programs."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Transcript of records",
+          "Bachelor degree certificate",
+          "English proof",
+          "Application form"
+        ],
+        "conditional_paths": [
+          "Pre-Master itself is the conditional preparation path for non-business economists or applicants missing quantitative/business ECTS."
+        ],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [
+          "Spring term"
+        ],
+        "application_channel": "ISM online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://en.ism.de/full-degree-students/master-programs",
+            "source_text": "Official ISM master listing names Pre-Master and marks it as start in spring.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://en.ism.de/full-degree-students/master-programs/pre-master/overview",
+            "source_text": "Candidate detail-page evidence identifies Pre-Master as business administration preparation for non-business economists and lists a bachelor degree of at least 180 ECTS.",
+            "retrieved_at": "2026-05-18T16:15:06.226831+00:00",
+            "confidence": "medium",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://en.ism.de/full-degree-students/master-programs",
+          "heading": "Master programs in English in Germany, on-campus",
+          "source_text": "Official listing includes Pre-Master (start in spring)."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "General Management",
+        "degree": "Master of Business Administration",
+        "level": "mba",
+        "url": "https://en.ism.de/full-degree-students/mba-programs/mba-general-management-full-time/overview",
+        "campus": [],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Full-time; 60 or 90 ECTS tracks",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Successful first bachelor's degree",
+          "minimum_ects": "210 ECTS for the candidate detail-page requirement; MBA itself may be 60 or 90 ECTS",
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "CEFR English",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "IELTS or TOEFL",
+            "minimum_score": "B2-level proof mentioned; numeric score not found in reviewed evidence",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Online admission process",
+            "requirement": "required",
+            "notes": "ISM says the online admission process tests personality, motivation, and skills."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 2,
+          "relevance": "professional experience",
+          "notes": []
+        },
+        "documents": [
+          "Application form"
+        ],
+        "conditional_paths": [
+          "MBA is available as 60 ECTS or 90 ECTS full-time track."
+        ],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "ISM online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://en.ism.de/full-degree-students/mba-programs",
+            "source_text": "Official ISM MBA listing names MBA in General Management full-time, 100% in English.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://en.ism.de/full-degree-students/mba-programs/mba-general-management-full-time/overview",
+            "source_text": "Candidate detail-page evidence says the full-time MBA is available as 60 or 90 ECTS and is designed for graduates with at least two years of professional experience; admission requires a successful first bachelor's degree, 210 ECTS, and English B2 proof.",
+            "retrieved_at": "2026-05-18T16:15:06.226831+00:00",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://en.ism.de/full-degree-students/mba-programs",
+          "heading": "Our MBA Programs",
+          "source_text": "Official listing includes MBA in General Management (full-time, 100% in English)."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "General Management",
+        "degree": "Master of Business Administration",
+        "level": "mba",
+        "url": "https://en.ism.de/full-degree-students/mba-programs/mba-general-management-part-time/overview",
+        "campus": [],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Part-time; 60 or 90 ECTS tracks",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Successful first degree",
+          "minimum_ects": "210 or 240 ECTS depending on study duration",
+          "recognized_institution": null,
+          "minimum_grade": "No Numerus Clausus found in reviewed public text.",
+          "notes": []
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "CEFR English",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Digital application process",
+            "requirement": "required",
+            "notes": "ISM says the digital application process considers personality, motivation, and skills."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 2,
+          "relevance": "professional experience",
+          "notes": []
+        },
+        "documents": [
+          "Application form"
+        ],
+        "conditional_paths": [
+          "MBA is available as 60 ECTS or 90 ECTS part-time track."
+        ],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "ISM online application",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://en.ism.de/full-degree-students/mba-programs",
+            "source_text": "Official ISM MBA listing names MBA in General Management part-time, 100% in English.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://en.ism.de/full-degree-students/mba-programs/mba-general-management-part-time/overview",
+            "source_text": "Candidate detail-page evidence says the part-time MBA requires a successful first degree with 210 or 240 ECTS, at least two years of professional experience, and English B2 proof.",
+            "retrieved_at": "2026-05-18T16:15:06.226831+00:00",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://en.ism.de/full-degree-students/mba-programs",
+          "heading": "Our MBA Programs",
+          "source_text": "Official listing includes MBA in General Management (part-time, 100% in English)."
+        }
+      ],
+      "needs_human_review": false
+    }
+  ],
+  "llm_review_summary": {
+    "program_count": 14,
+    "key_findings": [
+      "ISM v0.3 crawler produced zero program records, while v0.4 exposed official programme detail pages and the current official ISM listing confirms 3 English bachelor, 9 on-campus English master/pre-master, and 2 MBA records.",
+      "Crawler titles were normalized to official catalog names, for example 'Overview Bachelor International Management' became 'International Management' and 'Master Degree in Fashion Management' became 'Luxury, Fashion & Sales Management'.",
+      "Global page text caused crawler language noise; v0.2 uses English for the modeled English-program catalogue and does not import unrelated German-program language snippets.",
+      "MBA work-experience and English B2 requirements are high-confidence because they appear directly in program-detail candidate evidence and are supported by the official MBA listing."
+    ],
+    "known_gaps": [
+      "Some master detail-page requirement sections may be expandable or partially represented in crawler evidence, so several master records keep medium requirement confidence or needs_human_review.",
+      "Distance-learning English master programs and German-only programs are visible in official listings but were outside this focused v0.2 repair scope.",
+      "Exact campus lists for several master programs were not reliably separated from global campus text in the available evidence.",
+      "Tuition and detailed fee schedules were intentionally not imported from broad crawler fee snippets."
+    ],
+    "gap_classification": [
+      {
+        "item": "ISM v0.3 crawler zero program output",
+        "classification": "genuine_llm_omission_candidate",
+        "v0_2_action": "Use v0.4 candidate recall plus official listing pages to produce 14 reviewed records."
+      },
+      {
+        "item": "Crawler language_of_instruction values 'German, English' across English catalogue records",
+        "classification": "crawler_false_positive",
+        "v0_2_action": "Normalize modeled English catalogue records to English only; do not import global German-program page text."
+      },
+      {
+        "item": "Finance work_experience = 35 years",
+        "classification": "crawler_false_positive",
+        "v0_2_action": "Reject as marketing text about ISM teaching experience, not an applicant requirement."
+      },
+      {
+        "item": "Fashion Management versus Luxury, Fashion & Sales Management",
+        "classification": "naming_or_grouping_mismatch",
+        "v0_2_action": "Use the official master listing title while preserving the detail URL."
+      },
+      {
+        "item": "Online English distance-learning programs",
+        "classification": "schema_granularity_difference",
+        "v0_2_action": "Record as out-of-scope known gap rather than mixing separate online catalogue records into this on-campus focused file."
+      }
+    ]
+  }
+}

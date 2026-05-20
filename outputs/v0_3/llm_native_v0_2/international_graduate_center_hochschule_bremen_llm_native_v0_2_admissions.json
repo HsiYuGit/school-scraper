@@ -1,0 +1,866 @@
+{
+  "schema_version": "0.3-llm-native-draft",
+  "method": {
+    "type": "llm_native_official_site_reading",
+    "created_at": "2026-05-20T00:00:00Z",
+    "school": "International Graduate Center, Hochschule Bremen",
+    "agent": {
+      "agent_id": "not exposed",
+      "nickname": "Clean-room Worker D",
+      "role": "worker subagent",
+      "model": "GPT-5 Codex",
+      "reasoning_effort": "medium"
+    },
+    "cost_tracking": {
+      "token_usage": "not exposed; no standalone measured LLM API call was run for this v0.2 repair pass",
+      "estimated_usd_cost": "not available",
+      "note": "Do not estimate unavailable token or dollar cost."
+    },
+    "source_urls": [
+      "https://www.graduatecenter.org/en/mba-master.html",
+      "https://www.graduatecenter.org/en/application/application.html",
+      "https://www.graduatecenter.org/en/application/requirements.html",
+      "https://www.graduatecenter.org/en/mba-master/international-mba-dual-degree.html",
+      "https://www.graduatecenter.org/en/mba-master/mba-in-logistics-supply-chain-management.html",
+      "https://www.graduatecenter.org/en/mba-master/mba-international-tourism-management.html",
+      "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
+      "https://www.graduatecenter.org/en/mba-master/mba/mba-in-executive-management.html",
+      "https://www.graduatecenter.org/en/mba-master/management-digitalization-and-transformation-ma.html",
+      "https://www.graduatecenter.org/en/mba-master/master-aeronautical-management.html"
+    ],
+    "elapsed_time_seconds": "not exposed",
+    "format_note": "Matches the repo v0.3 LLM-native program-level contract; this file is the llm_native_v0_2 gap-repair variant.",
+    "version": "llm_native_v0_2",
+    "source_files": [
+      "README.md",
+      "DEVELOPMENT_LOG.md",
+      "docs/admissions_schema_v0_2.md",
+      "docs/admissions_output_versions.md",
+      "docs/admissions_llm_native_schema_v0_3.md",
+      "docs/html_review_tool.md",
+      "docs/admissions_extraction_harness.md",
+      "docs/prompts/admissions_llm_native_v0_2_prompt.md",
+      "outputs/v0_3/international_graduate_center_hochschule_bremen_admissions.json",
+      "outputs/v0_4/international_graduate_center_hochschule_bremen_admissions.json"
+    ],
+    "prompt_file": "docs/prompts/admissions_llm_native_v0_2_prompt.md",
+    "workflow": "Clean-room v0.2 official-site reading: use repo docs and allowed crawler v0.3/v0.4 candidate evidence only; read official IGC pages directly where available; normalize crawler candidate titles into stable programme names; reject shared-template and global-language noise.",
+    "limitations": [
+      "No LLM v0.1 answer file was read or used.",
+      "Admissions JSON remains candidate data, not truth.",
+      "No standalone paid LLM/API run was made; token usage and dollar cost are unavailable.",
+      "The IGC listing page confirms the programme set; some programme detail facts are from crawler candidate snippets and should be spot-checked when used for production counselling.",
+      "Central IGC requirements pages include shared requirements, country notes, and document lists; v0.2 records them as shared evidence rather than hard programme-specific facts unless detail-page text supports them."
+    ]
+  },
+  "school": {
+    "name": "International Graduate Center, Hochschule Bremen",
+    "url": "https://www.graduatecenter.org/en/",
+    "country": "Germany",
+    "partner_status": "candidate_from_partner_logo",
+    "school_type": "graduate_center"
+  },
+  "retrieved_at": "2026-05-20T00:00:00Z",
+  "programs": [
+    {
+      "school": {
+        "name": "International Graduate Center, Hochschule Bremen",
+        "url": "https://www.graduatecenter.org/en/",
+        "country": "Germany",
+        "partner_status": "candidate_from_partner_logo",
+        "school_type": "graduate_center"
+      },
+      "program": {
+        "name": "International MBA Dual Degree",
+        "degree": "Master of Business Administration",
+        "level": "mba",
+        "url": "https://www.graduatecenter.org/en/mba-master/international-mba-dual-degree.html",
+        "campus": [
+          "Bremen"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "International double degree",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor degree in a business/economics related subject or equivalent.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Crawler shared requirements also found a 210 ECTS general value, but the detail-page snippet is the stronger programme-specific evidence."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "Business or economics related subject, or equivalent",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": 2,
+          "relevance": "relevant experience after first degree",
+          "notes": []
+        },
+        "documents": [
+          "Copy of passport",
+          "Curriculum vitae",
+          "Letter of motivation",
+          "Degrees and transcripts with English translation when needed",
+          "English language certificate",
+          "Proof of practical experience",
+          "Reference letters or further certificates when applicable"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "APS certificate is not needed for Indian applicants at the first application step.",
+          "Original APS certificate applies to Chinese and Vietnamese applicants where required.",
+          "Applicants needing a visa should allow several weeks for the process."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Application deadline listed on programme page; exact date not captured in available text."
+        ],
+        "intakes": [
+          "October",
+          "February"
+        ],
+        "application_channel": "IGC application portal",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master.html",
+            "source_text": "Official IGC programme listing names International MBA Dual Degree under international MBA programs.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/international-mba-dual-degree.html",
+            "source_text": "Candidate detail-page evidence identifies International MBA: Dual Degree, study start October / February, bachelor degree in a business/economics related subject or equivalent, and two years of relevant experience after first degree.",
+            "retrieved_at": "2026-05-18T16:25:58.226028+00:00",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.graduatecenter.org/en/mba-master.html",
+          "heading": "Our International MBA programs",
+          "source_text": "Official listing includes International MBA Dual Degree."
+        },
+        {
+          "source_url": "https://www.graduatecenter.org/en/mba-master/international-mba-dual-degree.html",
+          "heading": "Requirements",
+          "source_text": "Bachelor's degree in a business / economics related subject or equivalent; a minimum of two years of relevant experience after first degree; language English; three semesters full-time on campus."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "International Graduate Center, Hochschule Bremen",
+        "url": "https://www.graduatecenter.org/en/",
+        "country": "Germany",
+        "partner_status": "candidate_from_partner_logo",
+        "school_type": "graduate_center"
+      },
+      "program": {
+        "name": "MBA International Logistics & Supply Chain Management",
+        "degree": "Master of Business Administration",
+        "level": "mba",
+        "url": "https://www.graduatecenter.org/en/mba-master/mba-in-logistics-supply-chain-management.html",
+        "campus": [
+          "Bremen"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Logistics and supply chain management",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor degree in a business/economics related subject.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Crawler shared requirements also found a 210 ECTS general value, but the detail-page snippet is the stronger programme-specific evidence."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "Business or economics related subject",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": 2,
+          "relevance": "relevant experience after first degree",
+          "notes": []
+        },
+        "documents": [
+          "Copy of passport",
+          "Curriculum vitae",
+          "Letter of motivation",
+          "Degrees and transcripts with English translation when needed",
+          "English language certificate",
+          "Proof of practical experience",
+          "Reference letters or further certificates when applicable"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "APS certificate is not needed for Indian applicants at the first application step.",
+          "Original APS certificate applies to Chinese and Vietnamese applicants where required.",
+          "Applicants needing a visa should allow several weeks for the process."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Application deadline listed on programme page; exact date not captured in available text."
+        ],
+        "intakes": [],
+        "application_channel": "IGC application portal",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master.html",
+            "source_text": "Official IGC programme listing names MBA International Logistics & Supply Chain Management under international MBA programs.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-in-logistics-supply-chain-management.html",
+            "source_text": "Candidate detail-page evidence states bachelor degree in a business/economics related subject, two years of relevant experience after first degree, language English, and three semesters full-time on campus in Bremen.",
+            "retrieved_at": "2026-05-18T16:25:58.226028+00:00",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.graduatecenter.org/en/mba-master.html",
+          "heading": "Our International MBA programs",
+          "source_text": "Official listing includes MBA International Logistics & Supply Chain Management."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "International Graduate Center, Hochschule Bremen",
+        "url": "https://www.graduatecenter.org/en/",
+        "country": "Germany",
+        "partner_status": "candidate_from_partner_logo",
+        "school_type": "graduate_center"
+      },
+      "program": {
+        "name": "MBA International Tourism Management",
+        "degree": "Master of Business Administration",
+        "level": "mba",
+        "url": "https://www.graduatecenter.org/en/mba-master/mba-international-tourism-management.html",
+        "campus": [
+          "Bremen"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "International tourism and hospitality management",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor degree with business-related prior study component.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Detail-page evidence states MBA degree is 90-120 ECTS and requires 10% business-related subjects in prior bachelor studies."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "Business-related subjects in prior bachelor studies",
+            "minimum_ects": "10% of prior bachelor studies",
+            "notes": []
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": 1,
+          "relevance": "relevant experience after first degree",
+          "notes": []
+        },
+        "documents": [
+          "Copy of passport",
+          "Curriculum vitae",
+          "Letter of motivation",
+          "Degrees and transcripts with English translation when needed",
+          "English language certificate",
+          "Proof of practical experience",
+          "Reference letters or further certificates when applicable"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "APS certificate is not needed for Indian applicants at the first application step.",
+          "Original APS certificate applies to Chinese and Vietnamese applicants where required.",
+          "Applicants needing a visa should allow several weeks for the process."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Application deadline listed on programme page; exact date not captured in available text."
+        ],
+        "intakes": [
+          "November",
+          "April"
+        ],
+        "application_channel": "IGC application portal",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master.html",
+            "source_text": "Official IGC programme listing names MBA International Tourism Management under international MBA programs.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-international-tourism-management.html",
+            "source_text": "Candidate detail-page evidence identifies MBA International Tourism Management, 90-120 ECTS, study start November / April, 10% business-related subjects in prior bachelor studies, and one year of relevant experience.",
+            "retrieved_at": "2026-05-18T16:25:58.226028+00:00",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.graduatecenter.org/en/mba-master.html",
+          "heading": "Our International MBA programs",
+          "source_text": "Official listing includes MBA International Tourism Management."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "International Graduate Center, Hochschule Bremen",
+        "url": "https://www.graduatecenter.org/en/",
+        "country": "Germany",
+        "partner_status": "candidate_from_partner_logo",
+        "school_type": "graduate_center"
+      },
+      "program": {
+        "name": "MBA Global Management",
+        "degree": "Master of Business Administration",
+        "level": "mba",
+        "url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
+        "campus": [
+          "Bremen"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Global management",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor degree in a business/economics related subject.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Detail-page evidence states MBA degree is 90-120 ECTS."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "Business or economics related subject",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.5",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "90",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": 1,
+          "relevance": "relevant experience after first degree",
+          "notes": []
+        },
+        "documents": [
+          "Copy of passport",
+          "Curriculum vitae",
+          "Letter of motivation",
+          "Degrees and transcripts with English translation when needed",
+          "English language certificate",
+          "Proof of practical experience",
+          "Reference letters or further certificates when applicable"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "APS certificate is not needed for Indian applicants at the first application step.",
+          "Original APS certificate applies to Chinese and Vietnamese applicants where required.",
+          "Applicants needing a visa should allow several weeks for the process."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Application deadline listed on programme page; exact date not captured in available text."
+        ],
+        "intakes": [
+          "October"
+        ],
+        "application_channel": "IGC application portal",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master.html",
+            "source_text": "Official IGC programme listing names MBA Global Management under international MBA programs.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba-global-management.html",
+            "source_text": "Candidate detail-page evidence identifies MBA Global Management, 90-120 ECTS, October start, bachelor degree in a business/economics related subject, one year of relevant experience, and English proficiency via IELTS 6.5 or TOEFL iBT 90 or equivalent.",
+            "retrieved_at": "2026-05-18T16:25:58.226028+00:00",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.graduatecenter.org/en/mba-master.html",
+          "heading": "Our International MBA programs",
+          "source_text": "Official listing includes MBA Global Management."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "International Graduate Center, Hochschule Bremen",
+        "url": "https://www.graduatecenter.org/en/",
+        "country": "Germany",
+        "partner_status": "candidate_from_partner_logo",
+        "school_type": "graduate_center"
+      },
+      "program": {
+        "name": "MBA in Executive Management",
+        "degree": "Master of Business Administration",
+        "level": "mba",
+        "url": "https://www.graduatecenter.org/en/mba-master/mba/mba-in-executive-management.html",
+        "campus": [
+          "Bremen"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Formerly MBA European/Asian Management; title change subject to approval",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor degree in a primarily non-business related subject.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "The title change from MBA European/Asian Management to MBA in Executive Management is noted as subject to approval by the senatorial authority."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "Primarily non-business related first degree",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": 1,
+          "relevance": "relevant experience after first degree",
+          "notes": []
+        },
+        "documents": [
+          "Copy of passport",
+          "Curriculum vitae",
+          "Letter of motivation",
+          "Degrees and transcripts with English translation when needed",
+          "English language certificate",
+          "Proof of practical experience",
+          "Reference letters or further certificates when applicable"
+        ],
+        "conditional_paths": [
+          "Programme title change is subject to senatorial authority approval."
+        ],
+        "international_requirements": [
+          "APS certificate is not needed for Indian applicants at the first application step.",
+          "Original APS certificate applies to Chinese and Vietnamese applicants where required.",
+          "Applicants needing a visa should allow several weeks for the process."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Application deadline listed on programme page; exact date not captured in available text."
+        ],
+        "intakes": [
+          "November"
+        ],
+        "application_channel": "IGC application portal",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master.html",
+            "source_text": "Official IGC programme listing names MBA in Executive Management under international MBA programs.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/mba/mba-in-executive-management.html",
+            "source_text": "Candidate detail-page evidence says the programme has a new title MBA in Executive Management from WS 26/27 onwards, formerly MBA European/Asian Management, subject to senatorial authority approval; it requires a bachelor degree in a primarily non-business related subject and one year of relevant experience.",
+            "retrieved_at": "2026-05-18T16:25:58.226028+00:00",
+            "confidence": "medium",
+            "review_note": "Title-change status should be checked before production publication."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.graduatecenter.org/en/mba-master.html",
+          "heading": "Our International MBA programs",
+          "source_text": "Official listing includes MBA in Executive Management."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "International Graduate Center, Hochschule Bremen",
+        "url": "https://www.graduatecenter.org/en/",
+        "country": "Germany",
+        "partner_status": "candidate_from_partner_logo",
+        "school_type": "graduate_center"
+      },
+      "program": {
+        "name": "Management - Digitalization and Transformation",
+        "degree": "Master of Arts",
+        "level": "master",
+        "url": "https://www.graduatecenter.org/en/mba-master/management-digitalization-and-transformation-ma.html",
+        "campus": [
+          "Bremen"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Digitalization and transformation",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor degree in business and economics or equivalent.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Programme degree is 90 ECTS."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "Business and economics or equivalent",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": 1,
+          "relevance": "relevant experience after first degree",
+          "notes": []
+        },
+        "documents": [
+          "Copy of passport",
+          "Curriculum vitae",
+          "Letter of motivation",
+          "Degrees and transcripts with English translation when needed",
+          "English language certificate",
+          "Proof of practical experience",
+          "Reference letters or further certificates when applicable"
+        ],
+        "conditional_paths": [
+          "Transfer or lateral entry may apply according to crawler candidate classification, but exact public route requires review."
+        ],
+        "international_requirements": [
+          "APS certificate is not needed for Indian applicants at the first application step.",
+          "Original APS certificate applies to Chinese and Vietnamese applicants where required.",
+          "Applicants needing a visa should allow several weeks for the process."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Application deadline listed on programme page; exact date not captured in available text."
+        ],
+        "intakes": [
+          "November",
+          "April"
+        ],
+        "application_channel": "IGC application portal",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master.html",
+            "source_text": "Official IGC programme listing names Master Management - Digitalization and Transformation under specialized master programs.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/management-digitalization-and-transformation-ma.html",
+            "source_text": "Candidate detail-page evidence identifies Management - Digitalization and Transformation, M.A., 90 ECTS, start November / April, bachelor degree in business and economics or equivalent, and one year of relevant experience.",
+            "retrieved_at": "2026-05-18T16:25:58.226028+00:00",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.graduatecenter.org/en/mba-master.html",
+          "heading": "Our specialized Master programs (various backgrounds)",
+          "source_text": "Official listing includes Master Management - Digitalization and Transformation."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "International Graduate Center, Hochschule Bremen",
+        "url": "https://www.graduatecenter.org/en/",
+        "country": "Germany",
+        "partner_status": "candidate_from_partner_logo",
+        "school_type": "graduate_center"
+      },
+      "program": {
+        "name": "Aeronautical Management",
+        "degree": "Master of Engineering",
+        "level": "master",
+        "url": "https://www.graduatecenter.org/en/mba-master/master-aeronautical-management.html",
+        "campus": [
+          "Bremen"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Aeronautical management for engineers and pilots",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Aviation-related first degree.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "Aviation-related first degree",
+            "minimum_ects": null,
+            "notes": []
+          }
+        ],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": 1,
+          "relevance": "aviation experience as pilot, technical, or maintenance professional",
+          "notes": []
+        },
+        "documents": [
+          "Copy of passport",
+          "Curriculum vitae",
+          "Letter of motivation",
+          "Degrees and transcripts with English translation when needed",
+          "English language certificate",
+          "Proof of practical experience",
+          "Reference letters or further certificates when applicable"
+        ],
+        "conditional_paths": [],
+        "international_requirements": [
+          "APS certificate is not needed for Indian applicants at the first application step.",
+          "Original APS certificate applies to Chinese and Vietnamese applicants where required.",
+          "Applicants needing a visa should allow several weeks for the process."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "May 31, 2026"
+        ],
+        "intakes": [
+          "October"
+        ],
+        "application_channel": "IGC application portal",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master.html",
+            "source_text": "Official IGC programme listing names Master Aeronautical Management under specialized master programs.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          },
+          {
+            "source_url": "https://www.graduatecenter.org/en/mba-master/master-aeronautical-management.html",
+            "source_text": "Candidate detail-page evidence identifies Master Aeronautical Management, Master of Engineering, October start, application deadline May 31, 2026, aviation-related first degree, and at least one year of relevant aviation experience.",
+            "retrieved_at": "2026-05-18T16:25:58.226028+00:00",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.graduatecenter.org/en/mba-master.html",
+          "heading": "Our specialized Master programs (various backgrounds)",
+          "source_text": "Official listing includes Master Aeronautical Management."
+        }
+      ],
+      "needs_human_review": false
+    }
+  ],
+  "llm_review_summary": {
+    "program_count": 7,
+    "key_findings": [
+      "IGC official listing confirms five international MBA/MBA-family programs and two specialized master programs.",
+      "Crawler names were normalized into stable programme names while preserving official detail URLs.",
+      "Crawler global-language noise was rejected; all seven modeled IGC programme detail snippets state Language English or are listed in the English IGC catalogue.",
+      "Shared central documents and APS/visa notes were retained as shared application evidence, while programme-specific academic and work-experience requirements come from detail pages."
+    ],
+    "known_gaps": [
+      "Exact application deadline dates are not exposed in available candidate text for six of seven programs; Aeronautical Management has a captured May 31, 2026 deadline.",
+      "General 210 ECTS values from shared requirement pages may not apply to every MBA program and are not hard-coded unless detail-page evidence supports them.",
+      "Language test score details are only explicitly captured for MBA Global Management in the available evidence; other programs retain English-certificate document requirements without invented scores.",
+      "Executive Management has a title-change approval caveat and remains needs_human_review."
+    ],
+    "gap_classification": [
+      {
+        "item": "IGC v0.3 four-program output versus v0.4 seven-program output",
+        "classification": "genuine_llm_omission_candidate",
+        "v0_2_action": "Add the three additional official v0.4 programme records confirmed by the official IGC listing and detail candidate evidence."
+      },
+      {
+        "item": "Crawler language_of_instruction values 'English, German'",
+        "classification": "crawler_false_positive",
+        "v0_2_action": "Use English only because detail snippets and the English catalogue identify these as English-language programs."
+      },
+      {
+        "item": "IGC programme names with marketing phrases such as 'start your career in Germany' or 'renown universities'",
+        "classification": "naming_or_grouping_mismatch",
+        "v0_2_action": "Normalize to official programme names."
+      },
+      {
+        "item": "Shared 210 ECTS requirement applied to all programmes",
+        "classification": "schema_granularity_difference",
+        "v0_2_action": "Keep as shared/known context but avoid forcing it into every programme-specific academic_background."
+      },
+      {
+        "item": "Application deadline placeholder text on most IGC pages",
+        "classification": "unverifiable_from_available_evidence",
+        "v0_2_action": "Do not invent dates; record exact deadline only for Aeronautical Management where candidate evidence captured May 31, 2026."
+      }
+    ]
+  }
+}

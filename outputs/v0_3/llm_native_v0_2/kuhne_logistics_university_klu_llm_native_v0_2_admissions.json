@@ -1,0 +1,978 @@
+{
+  "schema_version": "0.3-llm-native-draft",
+  "method": {
+    "type": "llm_native_official_site_reading",
+    "created_at": "2026-05-20T00:00:00Z",
+    "school": "Kühne Logistics University (KLU)",
+    "agent": {
+      "agent_id": "not exposed",
+      "nickname": "Clean-room Worker B",
+      "role": "worker subagent",
+      "model": "GPT-5 Codex",
+      "reasoning_effort": "medium"
+    },
+    "cost_tracking": {
+      "token_usage": "not exposed; no standalone measured LLM API call was run for this v0.2 clean-room pass",
+      "estimated_usd_cost": "not available",
+      "note": "Do not estimate unavailable token or dollar cost."
+    },
+    "source_urls": [
+      "https://www.klu.org/",
+      "https://www.klu.org/degree-programs/choose-your-program",
+      "https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+      "https://www.klu.org/programs/study-for-a-master-in-international-management-in-germany",
+      "https://www.klu.org/programs/master-programs/study-for-a-master-in-business-analytics-and-data-science-in-germany",
+      "https://www.klu.org/programs/study-for-a-master-in-global-logistics-and-supply-chain-management-in-germany",
+      "https://www.klu.org/professionals-organizations/mba-leadership-scm",
+      "https://www.klu.org/programs/phd-program",
+      "https://www.klu.org/programs/business-foundations-program",
+      "https://www.klu.org/programs/master-programs/global-logistics-supply-chain-mgmt-vietnam",
+      "https://www.klu.org/programs/faq/faq-undergraduate",
+      "https://www.klu.org/programs/faq/faq-graduate"
+    ],
+    "elapsed_time_seconds": "not exposed",
+    "format_note": "Matches the repo v0.3 LLM-native program-level contract; this file is the llm_native_v0_2 clean-room variant.",
+    "version": "llm_native_v0_2",
+    "source_files": [
+      "README.md",
+      "DEVELOPMENT_LOG.md",
+      "docs/admissions_schema_v0_2.md",
+      "docs/admissions_output_versions.md",
+      "docs/admissions_llm_native_schema_v0_3.md",
+      "docs/html_review_tool.md",
+      "docs/admissions_extraction_harness.md",
+      "docs/prompts/admissions_llm_native_v0_2_prompt.md",
+      "outputs/v0_3/kuhne_logistics_university_klu_admissions.json",
+      "outputs/v0_4/kuhne_logistics_university_klu_admissions.json"
+    ],
+    "prompt_file": "docs/prompts/admissions_llm_native_v0_2_prompt.md",
+    "workflow": "Clean-room official-site reading from allowed repo docs, KLU crawler v0.3/v0.4 candidate JSON, embedded source evidence, and official KLU pages only. Crawler output was treated as recall candidate data and obvious shared-FAQ/template noise was not imported as fact.",
+    "limitations": [
+      "No LLM v0.1 answer file was opened or compared.",
+      "The KLU crawler evidence frequently merges undergraduate, graduate, PhD, and shared FAQ requirements; v0.2 keeps only program-level facts that are visible in official KLU pages or explicit candidate evidence.",
+      "English-test alternatives are shared requirements and may differ by level; program records keep conservative B2/proof-of-English language where the official programme page only states B2.",
+      "Some current official page content was live-read, but no login/application portal was used."
+    ]
+  },
+  "school": {
+    "name": "Kühne Logistics University (KLU)",
+    "url": "https://www.klu.org/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university"
+  },
+  "retrieved_at": "2026-05-20T00:00:00Z",
+  "programs": [
+    {
+      "school": {
+        "name": "Kühne Logistics University (KLU)",
+        "url": "https://www.klu.org/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Business Administration",
+        "degree": "Bachelor of Science",
+        "level": "bachelor",
+        "url": "https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+        "campus": [
+          "Hamburg"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Digital Management & Innovation; International Management; Supply Chain Management; Sustainable Management",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "High school diploma or school leaving certificate qualifying the applicant for admission to German universities.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "The crawler's minimum_grade=180 was rejected as a false positive from unrelated score/points text."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "CEFR English",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "IELTS Academic",
+            "minimum_score": "6.5",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "KLU FAQ evidence indicates other English-proof paths may be accepted."
+            ]
+          },
+          {
+            "test": "TOEFL iBT",
+            "minimum_score": "90",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "KLU FAQ evidence indicates other English-proof paths may be accepted."
+            ]
+          },
+          {
+            "test": "PTE Academic",
+            "minimum_score": "61",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "KLU FAQ evidence indicates other English-proof paths may be accepted."
+            ]
+          },
+          {
+            "test": "Cambridge / Linguaskill",
+            "minimum_score": "180 or equivalent Cambridge grade stated in FAQ candidate evidence",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "Admission interview",
+            "requirement": "required after initial requirement check",
+            "notes": "Programme evidence states applicants meet the admissions team and faculty."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Latest transcript if final school leaving certificate is not yet available",
+          "Final school leaving certificate",
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [
+          "Applicants may apply before receiving the final school leaving certificate and submit it later."
+        ],
+        "international_requirements": [
+          "Applicants from India, China, or Vietnam may need an APS certificate according to shared KLU FAQ evidence."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Early-bird deadline: January 15",
+          "International non-EU applicants: May 31",
+          "European applicants: July 15"
+        ],
+        "intakes": [
+          "September"
+        ],
+        "application_channel": "KLU online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Application fee: EUR 50",
+          "Tuition and financing details are program-page evidence, not an admissions requirement."
+        ]
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+            "source_text": "Official KLU page identifies Business Administration as a BSc programme; admission requirements include a school leaving certificate qualifying for German university admission, English B2, and an interview.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": "Crawler title was normalized from a page title to a programme name."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.klu.org/programs/study-for-a-bachelor-in-business-administration-in-germany",
+          "heading": "Admission Requirements",
+          "source_text": "High school diploma/school leaving certificate qualifying for admission to German universities; English language proficiency B2; interview with admissions team and faculty; latest transcript can be submitted before final certificate."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Kühne Logistics University (KLU)",
+        "url": "https://www.klu.org/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International Management",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://www.klu.org/programs/study-for-a-master-in-international-management-in-germany",
+        "campus": [
+          "Hamburg"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Standard track 120 ECTS or fast track 90 ECTS",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor's degree or equivalent, ideally in business/economics; analytical backgrounds may be considered if they include at least four business courses.",
+          "minimum_ects": "180 ECTS for standard track; 210 ECTS plus one academic term abroad or recognized internship abroad for fast track",
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business courses",
+            "minimum_ects": null,
+            "notes": [
+              "At least four business courses are required when the first degree is from another analytical background."
+            ]
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "CEFR English",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": "Internship is mandatory within the study track, not a prior-admission work-experience requirement.",
+          "notes": []
+        },
+        "documents": [
+          "Latest transcript of records if final bachelor's certificate is not yet available",
+          "Final bachelor's certificate",
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [
+          "Conditional application before final bachelor's certificate is allowed."
+        ],
+        "international_requirements": [
+          "Visa-sensitive applicants should apply before the non-EU deadline because visa processing may take up to two months."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Early-bird deadline: January 15",
+          "International non-EU applicants: May 31",
+          "European applicants: July 15"
+        ],
+        "intakes": [
+          "September"
+        ],
+        "application_channel": "KLU online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Application fee: EUR 50",
+          "Tuition fee shown on official page: EUR 8,200 per semester"
+        ]
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.klu.org/programs/study-for-a-master-in-international-management-in-germany",
+            "source_text": "Official page identifies Master of Science in International Management, English instruction, September start, ECTS tracks, admissions background, B2 English, application deadlines, and EUR 50 application fee.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.klu.org/programs/study-for-a-master-in-international-management-in-germany",
+          "heading": "Admission Requirements",
+          "source_text": "Bachelor's degree or equivalent ideally in business/economics; analytical backgrounds may be considered with at least four business courses; standard track 180 ECTS, fast track 210 ECTS plus international term/internship; English B2; deadlines January 15, May 31, July 15."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Kühne Logistics University (KLU)",
+        "url": "https://www.klu.org/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Business Analytics and Data Science",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://www.klu.org/programs/master-programs/study-for-a-master-in-business-analytics-and-data-science-in-germany",
+        "campus": [
+          "Hamburg"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Standard track 120 ECTS or fast track 90 ECTS",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor's degree or equivalent; crawler evidence indicates analytical/business-related backgrounds are considered.",
+          "minimum_ects": "180 ECTS standard-track / 210 ECTS fast-track pattern is candidate evidence from KLU master pages",
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "The crawler's minimum_grade=4 was not imported because it appears to come from IB/course-grade or unrelated text."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "analytical, quantitative, business, economics, mathematics, business informatics, or related background",
+            "minimum_ects": null,
+            "notes": [
+              "Candidate evidence from KLU master requirement text; programme-specific detailed page should be manually checked before production use."
+            ]
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "CEFR English",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Transcript of records",
+          "Final degree certificate when available",
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [
+          "Conditional application before final bachelor's certificate is allowed according to shared graduate FAQ evidence."
+        ],
+        "international_requirements": [
+          "APS may apply for applicants with degrees from India, China, or Vietnam according to shared KLU FAQ evidence."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Early-bird deadline: January 15",
+          "International non-EU applicants: May 31",
+          "European applicants: July 15"
+        ],
+        "intakes": [
+          "September"
+        ],
+        "application_channel": "KLU online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Application fee: EUR 50"
+        ]
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.klu.org/programs/master-programs/study-for-a-master-in-business-analytics-and-data-science-in-germany",
+            "source_text": "Official/crawler evidence identifies Business Analytics and Data Science as a KLU MSc master programme and groups it with KLU's three master programmes.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "medium",
+            "review_note": "Detailed admissions text was crawler-derived from official page evidence; keep human review."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.klu.org/programs/master-programs/study-for-a-master-in-business-analytics-and-data-science-in-germany",
+          "heading": "Subject-specific requirements Business Analytics and Data Science M.Sc.",
+          "source_text": "Crawler evidence places the programme in KLU master programmes and extracts the shared master admissions pattern; manual page review is recommended for exact subject prerequisites."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "Kühne Logistics University (KLU)",
+        "url": "https://www.klu.org/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Global Logistics and Supply Chain Management",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://www.klu.org/programs/study-for-a-master-in-global-logistics-and-supply-chain-management-in-germany",
+        "campus": [
+          "Hamburg"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "Hamburg/Germany track",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor's degree or equivalent, usually business/economics or another analytical background with sufficient business coursework.",
+          "minimum_ects": "180 ECTS standard-track / 210 ECTS fast-track pattern is candidate evidence from KLU master pages",
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business/economics or analytical field with at least four business courses",
+            "minimum_ects": null,
+            "notes": [
+              "Shared KLU graduate evidence lists examples such as microeconomics, macroeconomics, operations research, accounting, finance, marketing, management, and supply chain management."
+            ]
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "CEFR English",
+            "minimum_score": "B2",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": "Crawler FAQ evidence says work experience is not an admission requirement for MSc programmes, but may be beneficial.",
+          "notes": []
+        },
+        "documents": [
+          "Transcript of records",
+          "Final degree certificate when available",
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [
+          "Conditional application before final bachelor's certificate is allowed according to shared graduate FAQ evidence."
+        ],
+        "international_requirements": [
+          "APS may apply for applicants with degrees from India, China, or Vietnam according to shared KLU FAQ evidence."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Early-bird deadline: January 15",
+          "International non-EU applicants: May 31",
+          "European applicants: July 15"
+        ],
+        "intakes": [
+          "September"
+        ],
+        "application_channel": "KLU online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Application fee: EUR 50"
+        ]
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.klu.org/programs/study-for-a-master-in-global-logistics-and-supply-chain-management-in-germany",
+            "source_text": "Official/crawler evidence identifies the Hamburg Global Logistics and Supply Chain Management MSc; KLU listing also names it as one of the master programmes.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "medium",
+            "review_note": "Detailed admissions text is mostly shared KLU master/FAQ evidence."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.klu.org/programs/study-for-a-master-in-global-logistics-and-supply-chain-management-in-germany",
+          "heading": "Admission Requirements",
+          "source_text": "Crawler evidence identifies the KLU MSc programme and extracts the shared master admissions pattern; exact programme-specific text should be manually verified before production use."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "Kühne Logistics University (KLU)",
+        "url": "https://www.klu.org/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Leadership and Supply Chain Management",
+        "degree": "Master of Business Administration",
+        "level": "mba",
+        "url": "https://www.klu.org/professionals-organizations/mba-leadership-scm",
+        "campus": [
+          "Hamburg"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "part-time for executives",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor's degree with at least 180 ECTS in any subject, or a GMAT score of at least 600.",
+          "minimum_ects": 180,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "The GMAT alternative is treated as an admissions path for applicants without the stated degree/ECTS evidence, based on official/crawler text."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "English proficiency",
+            "minimum_score": null,
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Only required based on background according to candidate programme evidence."
+            ]
+          }
+        ],
+        "test_requirements": [
+          {
+            "test": "GMAT",
+            "requirement": "conditional",
+            "notes": "GMAT score of at least 600 appears as an alternative to the degree/ECTS path in candidate evidence."
+          },
+          {
+            "test": "Interview with Academic Director",
+            "requirement": "required",
+            "notes": "Candidate evidence lists an interview with the Academic Director."
+          }
+        ],
+        "work_experience": {
+          "minimum_years": 3,
+          "relevance": "relevant work experience",
+          "notes": []
+        },
+        "documents": [
+          "Proof of English proficiency if required",
+          "Academic records",
+          "Evidence of work experience"
+        ],
+        "conditional_paths": [
+          "Bachelor degree plus work-experience path or GMAT-based alternative path should be verified in the current admissions form."
+        ],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Early discount deadline candidate evidence: May 31"
+        ],
+        "intakes": [],
+        "application_channel": "Online application / consultation",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Candidate evidence shows tuition fee: EUR 34,200"
+        ]
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.klu.org/professionals-organizations/mba-leadership-scm",
+            "source_text": "Official/crawler evidence identifies the part-time MBA in Leadership and Supply Chain Management and lists bachelor's/ECTS or GMAT, work experience, English proficiency, and Academic Director interview requirements.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": null
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.klu.org/professionals-organizations/mba-leadership-scm",
+          "heading": "Admission requirements",
+          "source_text": "Bachelor's degree with at least 180 ECTS in any subject, or GMAT at least 600; minimum of 3 years relevant work experience; English proficiency if required; interview with Academic Director."
+        }
+      ],
+      "needs_human_review": false
+    },
+    {
+      "school": {
+        "name": "Kühne Logistics University (KLU)",
+        "url": "https://www.klu.org/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "PhD Program",
+        "degree": "Doctor of Philosophy / Dr. rer. pol.",
+        "level": "doctoral",
+        "url": "https://www.klu.org/programs/phd-program",
+        "campus": [
+          "Hamburg"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": "logistics and management research",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Prior qualification sufficient to enter the PhD programme; official page describes PhD research in logistics and management but the available candidate evidence exposes documents more clearly than degree thresholds.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "The crawler's minimum_ects=5 was rejected as a false positive from a course/module ECTS snippet."
+          ]
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "logistics, management, business, industrial engineering, psychology, or related research backgrounds",
+            "minimum_ects": null,
+            "notes": [
+              "Official page states the programme is open to diverse backgrounds including business, industrial engineering, and psychology."
+            ]
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "English proficiency",
+            "minimum_score": null,
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Certificates and transcripts",
+          "Completed application form",
+          "Tabular CV",
+          "Contact details of two professors or teachers for references",
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": "KLU PhD application / scholarship application process",
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.klu.org/programs/phd-program",
+            "source_text": "Official page describes KLU's four-year PhD program in logistics and management; candidate evidence lists certificates, transcripts, application form, CV, reference contacts, and English proof.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "medium",
+            "review_note": "Degree-entry threshold not fully exposed in available evidence."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.klu.org/programs/phd-program",
+          "heading": "Minimum documents for PhD Program",
+          "source_text": "Certificate, transcripts of records, proof of qualifications, completed application form, tabular CV, contact details of two professors/teachers for references, proof of English proficiency."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "Kühne Logistics University (KLU)",
+        "url": "https://www.klu.org/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Business Foundations Program",
+        "degree": "Studienkolleg / pre-degree foundation program",
+        "level": "foundation",
+        "url": "https://www.klu.org/programs/business-foundations-program",
+        "campus": [
+          "Hamburg"
+        ],
+        "language_of_instruction": [
+          "English",
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null,
+        "_confidence": {
+          "name": "high",
+          "degree": "medium",
+          "requirements": "medium"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Foundation pathway for applicants preparing for bachelor-level study; exact prior-qualification rules need manual verification.",
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "The crawler's bachelor's-degree metadata was not imported because this is a pre-degree foundation programme."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "German",
+            "minimum_score": "A1",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          },
+          {
+            "test": "English proficiency",
+            "minimum_score": "B2 candidate evidence",
+            "component_scores": [],
+            "validity": null,
+            "waiver": []
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Transcript",
+          "Degree or school certificate",
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "International non-EU applicants: May 31",
+          "European applicants: July 15"
+        ],
+        "intakes": [],
+        "application_channel": "KLU online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Application fee: EUR 50"
+        ]
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.klu.org/programs/business-foundations-program",
+            "source_text": "Official/crawler evidence identifies the Business Foundations Program as a Studienkolleg/foundation pathway with German A1 and English evidence, plus May 31/July 15 deadlines.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "medium",
+            "review_note": "Keep as a non-degree pathway record, not a bachelor/master degree."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.klu.org/programs/business-foundations-program",
+          "heading": "Admission Requirements",
+          "source_text": "Crawler evidence identifies a Studienkolleg foundation pathway, German A1, English proof, and non-EU/EU application deadlines."
+        }
+      ],
+      "needs_human_review": true
+    },
+    {
+      "school": {
+        "name": "Kühne Logistics University (KLU)",
+        "url": "https://www.klu.org/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Global Logistics and Supply Chain Management",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://www.klu.org/programs/master-programs/global-logistics-supply-chain-mgmt-vietnam",
+        "campus": [
+          "Saigon"
+        ],
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": "Global Logistics and Supply Chain Management",
+        "specialization": "Vietnam / Saigon campus track",
+        "_confidence": {
+          "name": "high",
+          "degree": "high",
+          "requirements": "high"
+        }
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": "Bachelor's degree or equivalent from a recognized university or college.",
+          "minimum_ects": "180 ECTS for admission to the 120 ECTS programme",
+          "recognized_institution": "recognized university or college",
+          "minimum_grade": null,
+          "notes": []
+        },
+        "subject_prerequisites": [
+          {
+            "subject": "business/economics or other analytical fields such as industrial engineering, business informatics, or mathematics",
+            "minimum_ects": null,
+            "notes": [
+              "Other analytical fields may be considered if the bachelor's degree contains at least four business courses."
+            ]
+          }
+        ],
+        "language_requirements": [
+          {
+            "test": "English proficiency",
+            "minimum_score": "B2 / KLU shared graduate English-proof alternatives",
+            "component_scores": [],
+            "validity": null,
+            "waiver": [
+              "Academic degree completed in English may be accepted according to shared FAQ evidence."
+            ]
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": 0,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [
+          "Transcript of records if final degree certificate is not yet available",
+          "Final degree certificate",
+          "Proof of English proficiency"
+        ],
+        "conditional_paths": [
+          "Conditional application with transcript before final degree certificate is available."
+        ],
+        "international_requirements": [
+          "Applicants from outside ASEAN are encouraged to apply by May for visa processing according to candidate page evidence."
+        ]
+      },
+      "application": {
+        "deadlines": [
+          "Start of application period: November 1",
+          "Early-bird deadline: January 15",
+          "All applicants: July 15",
+          "Applicants from outside ASEAN encouraged to apply by May"
+        ],
+        "intakes": [],
+        "application_channel": "KLU online application",
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Application fee: EUR 50"
+        ]
+      },
+      "evidence": {
+        "general": [
+          {
+            "source_url": "https://www.klu.org/programs/master-programs/global-logistics-supply-chain-mgmt-vietnam",
+            "source_text": "Official/crawler evidence identifies the Saigon/Vietnam Global Logistics and Supply Chain Management MSc, 120 programme ECTS, 180 admission ECTS, recognized bachelor's degree, business/economics or analytical background with at least four business courses, and July 15 deadline.",
+            "retrieved_at": "2026-05-20T00:00:00Z",
+            "confidence": "high",
+            "review_note": "Modeled separately from Hamburg track because the official URL and campus/admissions deadlines differ."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "source_url": "https://www.klu.org/programs/master-programs/global-logistics-supply-chain-mgmt-vietnam",
+          "heading": "Admission Requirements",
+          "source_text": "Bachelor's degree or equivalent from a recognized university or college; study background in business/economics, or analytical fields with at least four business courses; 120 programme ECTS and 180 ECTS for admission; apply with transcript if final degree certificate is not yet available; start November 1, early-bird January 15, deadline July 15."
+        }
+      ],
+      "needs_human_review": false
+    }
+  ],
+  "llm_review_summary": {
+    "program_count": 8,
+    "key_findings": [
+      "KLU v0.4 recovered eight official programme/pathway URLs, compared with one noisy v0.3 crawler programme record.",
+      "v0.2 normalizes page-title programme names into stable programme names and separates Hamburg/Saigon Global Logistics tracks because admissions evidence and campus differ.",
+      "Shared KLU FAQ language-test alternatives are kept as shared/candidate evidence, while programme pages with only English B2 keep that conservative requirement.",
+      "The MBA record keeps GMAT as conditional/alternative and preserves the 3-year work-experience requirement."
+    ],
+    "known_gaps": [
+      {
+        "item": "KLU master pages share FAQ snippets across programmes",
+        "classification": "schema_granularity_difference",
+        "v0_2_action": "Keep programme-specific facts where visible; mark Business Analytics and Hamburg Global Logistics for human review."
+      },
+      {
+        "item": "Crawler minimum_grade values such as 180 or 4",
+        "classification": "crawler_false_positive",
+        "v0_2_action": "Do not import as GPA/minimum grade."
+      },
+      {
+        "item": "PhD minimum_ects=5",
+        "classification": "crawler_false_positive",
+        "v0_2_action": "Reject as likely course/module ECTS text."
+      },
+      {
+        "item": "Business Foundations Program",
+        "classification": "schema_granularity_difference",
+        "v0_2_action": "Keep as foundation/pre-degree pathway, not as a bachelor/master programme."
+      },
+      {
+        "item": "Campus values such as Campus Life",
+        "classification": "crawler_false_positive",
+        "v0_2_action": "Replace with Hamburg/Saigon only where official context supports it."
+      }
+    ]
+  }
+}
