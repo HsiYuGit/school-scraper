@@ -1,0 +1,682 @@
+{
+  "schema_version": "0.1",
+  "generated_from": "docs/source_scraper_reconnaissance.md",
+  "scope": {
+    "partner_schools_path": "data/partner_schools.json",
+    "programme_scope": "all programmes exposed by each source for the partner school",
+    "no_hidden_filters": [
+      "degree_level",
+      "language_of_instruction",
+      "study_mode",
+      "application_availability"
+    ],
+    "no_official_school_fallback": true
+  },
+  "sources": {
+    "daad": {
+      "label": "DAAD",
+      "base_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/",
+      "access_policy": {
+        "respect_robots_txt": true,
+        "same_source_only": true,
+        "no_login_captcha_bypass": true,
+        "default_timeout_seconds": 15,
+        "default_delay_seconds": 2.0,
+        "notes": [
+          "www2.daad.de/robots.txt returned 404 during reconnaissance; follow the stricter www.daad.de robots policy and crawl-delay."
+        ]
+      },
+      "schools": [
+        {
+          "school_name": "TUM Asia",
+          "school_aliases": [
+            "TUM Asia",
+            "Technical University of Munich Asia",
+            "Technical University of Munich",
+            "Singapore"
+          ],
+          "coverage_status": "source_partial_match",
+          "queries": [
+            "TUM Asia",
+            "Technical University of Munich Singapore"
+          ],
+          "listing_urls": [
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Technical%20University%20of%20Munich&limit=25&offset=0&display=list"
+          ],
+          "detail_urls": [
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7673/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7674/"
+          ],
+          "source_school_ids": [],
+          "notes": [
+            "DAAD search found Technical University of Munich records and Singapore-facing course candidates, but did not confirm the exact TUM Asia school name."
+          ],
+          "future_deepening_candidates": [
+            "Verify whether DAAD Singapore/TUM records map to TUM Asia before extracting all TUM programmes."
+          ]
+        },
+        {
+          "school_name": "Munich Business School",
+          "school_aliases": [
+            "Munich Business School",
+            "MBS"
+          ],
+          "coverage_status": "target_needs_recon",
+          "queries": [
+            "Munich Business School",
+            "MBS Munich"
+          ],
+          "listing_urls": [
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/result/?q=Munich%20Business%20School"
+          ],
+          "detail_urls": [],
+          "source_school_ids": [],
+          "notes": [
+            "DAAD public institution filter listed Munich Business School, but bounded API course matching did not confirm course records."
+          ],
+          "future_deepening_candidates": [
+            "Confirm DAAD institution ID via filter network request."
+          ]
+        },
+        {
+          "school_name": "International School of Management (ISM)",
+          "school_aliases": [
+            "International School of Management (ISM)",
+            "International School of Management",
+            "ISM"
+          ],
+          "coverage_status": "source_partial_match",
+          "queries": [
+            "International School of Management",
+            "ISM"
+          ],
+          "listing_urls": [
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=International%20School%20of%20Management&limit=25&offset=0&display=list"
+          ],
+          "detail_urls": [
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5259/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7068/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9020/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5263/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5265/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5264/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5260/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7090/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6238/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5261/"
+          ],
+          "source_school_ids": [],
+          "notes": [
+            "Bounded DAAD API reconnaissance found 10 International School of Management records."
+          ],
+          "future_deepening_candidates": [
+            "Confirm whether DAAD has additional ISM records beyond International Programmes."
+          ]
+        },
+        {
+          "school_name": "CBS International Business School",
+          "school_aliases": [
+            "CBS International Business School",
+            "CBS University of Applied Sciences",
+            "CBS"
+          ],
+          "coverage_status": "target_needs_recon",
+          "queries": [
+            "CBS International Business School",
+            "CBS University of Applied Sciences"
+          ],
+          "listing_urls": [
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/result/?q=CBS%20International%20Business%20School"
+          ],
+          "detail_urls": [],
+          "source_school_ids": [],
+          "notes": [
+            "Bounded DAAD API exact-name matching did not confirm CBS records."
+          ],
+          "future_deepening_candidates": [
+            "Confirm whether DAAD uses a newer CBS University of Applied Sciences name or a hidden institution ID."
+          ]
+        },
+        {
+          "school_name": "EBS Universität",
+          "school_aliases": [
+            "EBS Universität",
+            "EBS Universität für Wirtschaft und Recht",
+            "EBS University"
+          ],
+          "coverage_status": "source_partial_match",
+          "queries": [
+            "EBS",
+            "EBS Universität für Wirtschaft und Recht"
+          ],
+          "listing_urls": [
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=EBS&limit=25&offset=0&display=list"
+          ],
+          "detail_urls": [
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4080/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/8558/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3937/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/10647/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/8556/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3955/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3938/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3957/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3954/"
+          ],
+          "source_school_ids": [],
+          "notes": [
+            "Bounded DAAD API reconnaissance found EBS academy records; one non-EBS Ludwigshafen result appeared for the broad EBS query and must be excluded later."
+          ],
+          "future_deepening_candidates": [
+            "Use academy-name validation, not only q search text, when scraping EBS."
+          ]
+        },
+        {
+          "school_name": "SRH Universities",
+          "school_aliases": [
+            "SRH Universities",
+            "SRH University",
+            "SRH Distance Learning University"
+          ],
+          "coverage_status": "source_partial_match",
+          "queries": [
+            "SRH",
+            "SRH University"
+          ],
+          "listing_urls": [
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=SRH&limit=100&offset=0&display=list"
+          ],
+          "detail_urls": [
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6217/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3981/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4886/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7801/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7730/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/10502/"
+          ],
+          "source_school_ids": [],
+          "notes": [
+            "Bounded DAAD API reconnaissance found 59 SRH-family records; target remains partial because the partner entry is a group."
+          ],
+          "future_deepening_candidates": [
+            "Define which SRH campuses/entities belong under the Gut-Haode SRH Universities partner scope."
+          ]
+        },
+        {
+          "school_name": "Kühne Logistics University (KLU)",
+          "school_aliases": [
+            "Kühne Logistics University (KLU)",
+            "Kühne Logistics University",
+            "Kuehne Logistics University",
+            "KLU"
+          ],
+          "coverage_status": "target_needs_recon",
+          "queries": [
+            "Kühne Logistics University",
+            "Kuehne Logistics University",
+            "KLU"
+          ],
+          "listing_urls": [
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/result/?q=Kuehne%20Logistics%20University"
+          ],
+          "detail_urls": [],
+          "source_school_ids": [],
+          "notes": [
+            "Bounded DAAD API exact-name matching did not confirm KLU records."
+          ],
+          "future_deepening_candidates": [
+            "Inspect DAAD institution filter/network IDs for KLU aliases."
+          ]
+        },
+        {
+          "school_name": "Hochschule Fresenius",
+          "school_aliases": [
+            "Hochschule Fresenius",
+            "Hochschule Fresenius - University of Applied Sciences"
+          ],
+          "coverage_status": "source_partial_match",
+          "queries": [
+            "Hochschule Fresenius",
+            "Hochschule Fresenius - University of Applied Sciences"
+          ],
+          "listing_urls": [
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Hochschule%20Fresenius&limit=50&offset=0&display=list"
+          ],
+          "detail_urls": [
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9957/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9956/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9955/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9952/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9953/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9954/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9662/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7710/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5617/"
+          ],
+          "source_school_ids": [],
+          "notes": [
+            "Bounded DAAD API reconnaissance found 27 Hochschule Fresenius records."
+          ],
+          "future_deepening_candidates": [
+            "Page through all Fresenius records and confirm duplicate course names by campus."
+          ]
+        },
+        {
+          "school_name": "NIT Northern Institute of Technology Management",
+          "school_aliases": [
+            "NIT Northern Institute of Technology Management",
+            "Northern Institute of Technology Management",
+            "NIT"
+          ],
+          "coverage_status": "target_needs_recon",
+          "queries": [
+            "NIT Northern Institute of Technology Management",
+            "Northern Institute of Technology Management"
+          ],
+          "listing_urls": [
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/result/?q=NIT%20Northern%20Institute%20of%20Technology%20Management"
+          ],
+          "detail_urls": [],
+          "source_school_ids": [],
+          "notes": [
+            "Broad DAAD NIT/Northern text search produced false positives and did not confirm the NIT partner entity."
+          ],
+          "future_deepening_candidates": [
+            "Use institution filter mapping rather than free-text NIT search."
+          ]
+        },
+        {
+          "school_name": "Hochschule Bremen",
+          "school_aliases": [
+            "Hochschule Bremen",
+            "Bremen University of Applied Sciences",
+            "HSB Hochschule Bremen"
+          ],
+          "coverage_status": "source_partial_match",
+          "queries": [
+            "Hochschule Bremen",
+            "Bremen University of Applied Sciences"
+          ],
+          "listing_urls": [
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Bremen%20University%20of%20Applied%20Sciences&limit=50&offset=0&display=list"
+          ],
+          "detail_urls": [
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4409/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5463/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4625/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3812/"
+          ],
+          "source_school_ids": [],
+          "notes": [
+            "DAAD uses the English academy name Bremen University of Applied Sciences for confirmed Hochschule Bremen records."
+          ],
+          "future_deepening_candidates": [
+            "Separate base HSB records from International Graduate Center records during scraper implementation."
+          ]
+        },
+        {
+          "school_name": "ESMT Berlin",
+          "school_aliases": [
+            "ESMT Berlin",
+            "European School of Management and Technology"
+          ],
+          "coverage_status": "target_needs_recon",
+          "queries": [
+            "ESMT Berlin",
+            "European School of Management and Technology"
+          ],
+          "listing_urls": [
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/result/?q=ESMT%20Berlin"
+          ],
+          "detail_urls": [],
+          "source_school_ids": [],
+          "notes": [
+            "Bounded DAAD API exact-name matching did not confirm ESMT records."
+          ],
+          "future_deepening_candidates": [
+            "Confirm whether ESMT records are absent, renamed, or outside DAAD International Programmes."
+          ]
+        },
+        {
+          "school_name": "International Graduate Center, Hochschule Bremen",
+          "school_aliases": [
+            "International Graduate Center, Hochschule Bremen",
+            "International Graduate Center",
+            "IGC",
+            "Bremen University of Applied Sciences"
+          ],
+          "coverage_status": "source_partial_match",
+          "queries": [
+            "International Graduate Center Bremen",
+            "IGC Hochschule Bremen",
+            "Bremen University of Applied Sciences MBA"
+          ],
+          "listing_urls": [
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Bremen%20University%20of%20Applied%20Sciences%20MBA&limit=50&offset=0&display=list"
+          ],
+          "detail_urls": [
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4625/",
+            "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3812/"
+          ],
+          "source_school_ids": [],
+          "notes": [
+            "IGC-specific DAAD records appear to be represented through Bremen University of Applied Sciences; exact source-school identity remains partial."
+          ],
+          "future_deepening_candidates": [
+            "Confirm IGC programme names and source institution mapping from DAAD detail pages."
+          ]
+        }
+      ]
+    },
+    "my_german_university": {
+      "label": "My German University",
+      "base_url": "https://www.mygermanuniversity.com/",
+      "access_policy": {
+        "respect_robots_txt": true,
+        "same_source_only": true,
+        "no_login_captcha_bypass": true,
+        "default_timeout_seconds": 15,
+        "default_delay_seconds": 1.0,
+        "notes": [
+          "Direct robots/page fetches returned Cloudflare managed-challenge HTML during reconnaissance; do not bypass challenges."
+        ]
+      },
+      "schools": [
+        {
+          "school_name": "TUM Asia",
+          "school_aliases": [
+            "TUM Asia",
+            "Technical University of Munich Asia",
+            "Technical University of Munich Singapore"
+          ],
+          "coverage_status": "source_no_match",
+          "queries": [
+            "TUM Asia",
+            "Technical University of Munich Asia"
+          ],
+          "listing_urls": [],
+          "detail_urls": [],
+          "source_school_ids": [],
+          "notes": [
+            "No My German University source target was confirmed for Singapore-based TUM Asia in Task 1."
+          ],
+          "future_deepening_candidates": [
+            "Confirm whether MGU includes TUM Asia separately or only German TUM campuses."
+          ]
+        },
+        {
+          "school_name": "Munich Business School",
+          "school_aliases": [
+            "Munich Business School",
+            "MBS"
+          ],
+          "coverage_status": "target_seeded",
+          "queries": [
+            "Munich Business School"
+          ],
+          "listing_urls": [
+            "https://www.mygermanuniversity.com/universities/Munich-Business-School",
+            "https://www.mygermanuniversity.com/universities/Munich-Business-School/study-programs"
+          ],
+          "detail_urls": [
+            "https://www.mygermanuniversity.com/master/international-business/1691"
+          ],
+          "source_school_ids": [],
+          "notes": [
+            "Search-indexed MGU profile reports 8 courses and a confirmed programme detail URL ending in numeric record ID 1691."
+          ],
+          "future_deepening_candidates": [
+            "Extract all 8 MBS programme detail IDs when direct access is allowed."
+          ]
+        },
+        {
+          "school_name": "International School of Management (ISM)",
+          "school_aliases": [
+            "International School of Management (ISM)",
+            "International School of Management",
+            "ISM"
+          ],
+          "coverage_status": "target_seeded",
+          "queries": [
+            "International School of Management ISM"
+          ],
+          "listing_urls": [
+            "https://www.mygermanuniversity.com/universities/International-School-of-Management-ISM",
+            "https://www.mygermanuniversity.com/universities/International-School-of-Management-ISM/study-programs"
+          ],
+          "detail_urls": [],
+          "source_school_ids": [],
+          "notes": [
+            "Search-indexed MGU profile reports 55 programmes."
+          ],
+          "future_deepening_candidates": [
+            "Confirm programme pagination and collect all detail IDs."
+          ]
+        },
+        {
+          "school_name": "CBS International Business School",
+          "school_aliases": [
+            "CBS International Business School",
+            "CBS University of Applied Sciences",
+            "CBS"
+          ],
+          "coverage_status": "target_seeded",
+          "queries": [
+            "CBS International Business School",
+            "CBS University of Applied Sciences"
+          ],
+          "listing_urls": [
+            "https://www.mygermanuniversity.com/universities/CBS-University-of-Applied-Sciences",
+            "https://www.mygermanuniversity.com/universities/CBS-University-of-Applied-Sciences/study-programs"
+          ],
+          "detail_urls": [],
+          "source_school_ids": [],
+          "notes": [
+            "MGU appears to use the current CBS University of Applied Sciences slug while page text still references CBS International Business School."
+          ],
+          "future_deepening_candidates": [
+            "Confirm all study-program listing pagination for CBS."
+          ]
+        },
+        {
+          "school_name": "EBS Universität",
+          "school_aliases": [
+            "EBS Universität",
+            "EBS University",
+            "EBS Universität für Wirtschaft und Recht"
+          ],
+          "coverage_status": "target_seeded",
+          "queries": [
+            "EBS University",
+            "EBS Universität"
+          ],
+          "listing_urls": [
+            "https://www.mygermanuniversity.com/universities/EBS-University",
+            "https://www.mygermanuniversity.com/universities/EBS-University/study-programs"
+          ],
+          "detail_urls": [],
+          "source_school_ids": [],
+          "notes": [
+            "Search-indexed MGU profile reports 12 courses."
+          ],
+          "future_deepening_candidates": [
+            "Collect all EBS programme detail IDs."
+          ]
+        },
+        {
+          "school_name": "SRH Universities",
+          "school_aliases": [
+            "SRH Universities",
+            "SRH University",
+            "SRH Fernhochschule"
+          ],
+          "coverage_status": "source_partial_match",
+          "queries": [
+            "SRH University",
+            "SRH Universities"
+          ],
+          "listing_urls": [
+            "https://www.mygermanuniversity.com/universities/SRH-University",
+            "https://www.mygermanuniversity.com/universities/SRH-University/study-programs"
+          ],
+          "detail_urls": [],
+          "source_school_ids": [],
+          "notes": [
+            "MGU has at least one SRH University profile with 171 programmes and separate SRH-distance entities; partner group scope needs explicit handling."
+          ],
+          "future_deepening_candidates": [
+            "Define SRH group boundaries and whether SRH Fernhochschule belongs in the same partner output."
+          ]
+        },
+        {
+          "school_name": "Kühne Logistics University (KLU)",
+          "school_aliases": [
+            "Kühne Logistics University (KLU)",
+            "Kühne Logistics University",
+            "Kuehne Logistics University",
+            "KLU"
+          ],
+          "coverage_status": "target_seeded",
+          "queries": [
+            "Kuehne Logistics University",
+            "Kühne Logistics University"
+          ],
+          "listing_urls": [
+            "https://www.mygermanuniversity.com/universities/Kuehne-Logistics-University",
+            "https://www.mygermanuniversity.com/universities/Kuehne-Logistics-University/study-programs"
+          ],
+          "detail_urls": [],
+          "source_school_ids": [],
+          "notes": [
+            "Search-indexed MGU pages show KLU subject and master listings."
+          ],
+          "future_deepening_candidates": [
+            "Confirm whether MGU university profile reports all KLU bachelor, master, MBA, PhD, and executive programmes or only degree programmes."
+          ]
+        },
+        {
+          "school_name": "Hochschule Fresenius",
+          "school_aliases": [
+            "Hochschule Fresenius",
+            "Hochschule Fresenius - University of Applied Sciences"
+          ],
+          "coverage_status": "target_seeded",
+          "queries": [
+            "Hochschule Fresenius"
+          ],
+          "listing_urls": [
+            "https://www.mygermanuniversity.com/universities/Hochschule-Fresenius-University-of-Applied-Sciences",
+            "https://www.mygermanuniversity.com/universities/Hochschule-Fresenius-University-of-Applied-Sciences/study-programs"
+          ],
+          "detail_urls": [],
+          "source_school_ids": [],
+          "notes": [
+            "Search-indexed MGU profile reports 45 programmes and paginated study-program pages."
+          ],
+          "future_deepening_candidates": [
+            "Verify `page=<n>` pagination through all Fresenius listing pages."
+          ]
+        },
+        {
+          "school_name": "NIT Northern Institute of Technology Management",
+          "school_aliases": [
+            "NIT Northern Institute of Technology Management",
+            "Northern Institute of Technology Management",
+            "NIT"
+          ],
+          "coverage_status": "target_seeded",
+          "queries": [
+            "NIT Northern Institute of Technology Management"
+          ],
+          "listing_urls": [
+            "https://www.mygermanuniversity.com/universities/NIT-Northern-Institute-of-Technology-Management",
+            "https://www.mygermanuniversity.com/universities/NIT-Northern-Institute-of-Technology-Management/study-programs"
+          ],
+          "detail_urls": [],
+          "source_school_ids": [],
+          "notes": [
+            "Search-indexed MGU listing reports 4 programmes."
+          ],
+          "future_deepening_candidates": [
+            "Confirm NIT programme detail IDs and whether TUHH-linked dual-degree paths are represented separately."
+          ]
+        },
+        {
+          "school_name": "Hochschule Bremen",
+          "school_aliases": [
+            "Hochschule Bremen",
+            "HSB Hochschule Bremen – City University of Applied Sciences",
+            "HSB Hochschule Bremen",
+            "Bremen University of Applied Sciences"
+          ],
+          "coverage_status": "target_seeded",
+          "queries": [
+            "Hochschule Bremen",
+            "HSB Hochschule Bremen"
+          ],
+          "listing_urls": [
+            "https://www.mygermanuniversity.com/universities/HSB-Hochschule-Bremen-%E2%80%93-City-University-of-Applied-Sciences",
+            "https://www.mygermanuniversity.com/universities/HSB-Hochschule-Bremen-%E2%80%93-City-University-of-Applied-Sciences/study-programs"
+          ],
+          "detail_urls": [],
+          "source_school_ids": [],
+          "notes": [
+            "Search-indexed MGU profile reports 77 programmes and page-numbered listing URLs."
+          ],
+          "future_deepening_candidates": [
+            "Page through all HSB listing pages and separate base HSB from IGC records."
+          ]
+        },
+        {
+          "school_name": "ESMT Berlin",
+          "school_aliases": [
+            "ESMT Berlin",
+            "European School of Management and Technology"
+          ],
+          "coverage_status": "target_seeded",
+          "queries": [
+            "ESMT Berlin"
+          ],
+          "listing_urls": [
+            "https://www.mygermanuniversity.com/universities/ESMT-Berlin",
+            "https://www.mygermanuniversity.com/universities/ESMT-Berlin/study-programs"
+          ],
+          "detail_urls": [],
+          "source_school_ids": [],
+          "notes": [
+            "Search-indexed MGU profile reports 8 programmes."
+          ],
+          "future_deepening_candidates": [
+            "Collect all ESMT programme IDs from the study-program listing."
+          ]
+        },
+        {
+          "school_name": "International Graduate Center, Hochschule Bremen",
+          "school_aliases": [
+            "International Graduate Center, Hochschule Bremen",
+            "International Graduate Center",
+            "IGC",
+            "International Graduate Center (IGC)"
+          ],
+          "coverage_status": "target_seeded",
+          "queries": [
+            "International Graduate Center IGC",
+            "IGC Bremen"
+          ],
+          "listing_urls": [
+            "https://www.mygermanuniversity.com/universities/International-Graduate-Center-IGC",
+            "https://www.mygermanuniversity.com/universities/International-Graduate-Center-IGC/study-programs"
+          ],
+          "detail_urls": [],
+          "source_school_ids": [],
+          "notes": [
+            "Search-indexed MGU profile reports 10 programmes for IGC."
+          ],
+          "future_deepening_candidates": [
+            "Confirm overlap and separation between IGC and HSB Hochschule Bremen source records."
+          ]
+        }
+      ]
+    }
+  }
+}

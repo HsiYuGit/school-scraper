@@ -1,5 +1,13 @@
 # 開發日誌
 
+## 2026-05-24
+
+### Source scraper reconnaissance planning
+
+- Recorded DAAD and My German University source mechanics in `docs/source_scraper_reconnaissance.md`.
+- Added `data/source_scraper_targets.json` as the stable 12-school source target map for later DAAD/MGU scrapers.
+- Preserved all-program scope: degree, language, study mode, and application availability are metadata only, not extraction filters.
+
 ## 2026-05-15
 
 ### 工作規劃

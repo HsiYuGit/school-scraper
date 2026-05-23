@@ -46,6 +46,49 @@ class AdmissionExtractionTest(unittest.TestCase):
         self.assertEqual(len(seeds), 12)
         self.assertEqual(slugify("Kühne Logistics University (KLU)"), "kuhne_logistics_university_klu")
 
+    def test_source_scraper_targets_cover_all_partner_schools(self):
+        root = Path(__file__).parents[1]
+        partners = json.loads((root / "data" / "partner_schools.json").read_text(encoding="utf-8"))["schools"]
+        targets_path = root / "data" / "source_scraper_targets.json"
+        self.assertTrue(targets_path.exists())
+        targets = json.loads(targets_path.read_text(encoding="utf-8"))
+
+        self.assertEqual(targets["schema_version"], "0.1")
+        self.assertEqual(targets["generated_from"], "docs/source_scraper_reconnaissance.md")
+        self.assertEqual(targets["scope"]["partner_schools_path"], "data/partner_schools.json")
+        self.assertTrue(targets["scope"]["no_official_school_fallback"])
+        self.assertEqual(
+            [
+                "degree_level",
+                "language_of_instruction",
+                "study_mode",
+                "application_availability",
+            ],
+            targets["scope"]["no_hidden_filters"],
+        )
+        self.assertEqual({"daad", "my_german_university"}, set(targets["sources"]))
+        for source_name, source in targets["sources"].items():
+            self.assertIn("base_url", source)
+            self.assertIn("access_policy", source)
+            self.assertEqual(len(source["schools"]), 12, source_name)
+            for field in (
+                "respect_robots_txt",
+                "same_source_only",
+                "no_login_captcha_bypass",
+                "default_timeout_seconds",
+                "default_delay_seconds",
+            ):
+                self.assertIn(field, source["access_policy"], source_name)
+            self.assertEqual({item["name"] for item in partners}, {item["school_name"] for item in source["schools"]}, source_name)
+            for school in source["schools"]:
+                self.assertIn(school["coverage_status"], {
+                    "target_seeded",
+                    "target_needs_recon",
+                    "source_no_match",
+                    "source_partial_match",
+                })
+                self.assertTrue(school.get("queries") or school.get("listing_urls") or school.get("detail_urls") or school["coverage_status"] == "source_no_match")
+
     def test_extracts_requirement_section_from_program_page(self):
         page = Page(
             url="https://example.edu/programs/msc-management",
