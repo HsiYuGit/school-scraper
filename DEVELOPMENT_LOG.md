@@ -8,6 +8,12 @@
 - Added `data/source_scraper_targets.json` as the stable 12-school source target map for later DAAD/MGU scrapers.
 - Preserved all-program scope: degree, language, study mode, and application availability are metadata only, not extraction filters.
 
+### Shared source-scraper contract helpers
+
+- Added `scripts/source_scraper_common.py` for source-specific scraper contract output, evidence, coverage statuses, and source-specific extension fields.
+- Added tests to protect source output compatibility with the existing admissions review model.
+- Hardened the source output builder so returned JSON payloads do not reuse mutable caller-owned input objects.
+
 ## 2026-05-15
 
 ### 工作規劃

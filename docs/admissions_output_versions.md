@@ -1,5 +1,11 @@
 # Admissions output versions
 
+## Source platform outputs
+
+`outputs/source_daad/` and `outputs/source_mgu/` are reserved for source-specific admissions outputs. These files use `schema_version = 0.4-source`, keep the shared programme contract, and add source metadata such as `source_platform`, `source_record_id`, `source_listing_url`, `source_detail_url`, `source_coverage`, and per-programme `source_specific`.
+
+Coverage statuses with `source_coverage.warning = true` must be surfaced in the dashboard because they can mean missed programmes.
+
 本專案從 2026-05-17 起保留 admissions crawler 的版本化輸出，避免後續重跑覆蓋掉可比較的舊結果。
 
 ## v0.2 snapshot

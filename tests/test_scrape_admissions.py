@@ -11,6 +11,13 @@ from scripts.crawl_partner_schools import classify_validation_status, slugify
 from scripts.compare_admissions_outputs import render_comparison
 from scripts.render_admissions_dashboard import main as render_dashboard_main
 from scripts.render_admissions_html import render_file
+from scripts.source_scraper_common import (
+    COVERAGE_STATUSES,
+    SourceProgram,
+    build_source_output,
+    coverage_warning,
+    source_slug,
+)
 from scripts.scrape_admissions import (
     Page,
     RobotPolicy,
@@ -88,6 +95,119 @@ class AdmissionExtractionTest(unittest.TestCase):
                     "source_partial_match",
                 })
                 self.assertTrue(school.get("queries") or school.get("listing_urls") or school.get("detail_urls") or school["coverage_status"] == "source_no_match")
+
+    def test_source_common_preserves_contract_and_source_specific(self):
+        program = SourceProgram(
+            source_record_id="daad-w7513",
+            source_listing_url="https://www.daad.de/example-list",
+            source_detail_url="https://www.daad.de/example-detail",
+            name="Master International Business",
+            degree="MA",
+            level="master",
+            language_of_instruction=["English"],
+            requirements={"language_requirements": [{"test": "IELTS", "minimum_score": "6.5"}]},
+            application={"deadlines": ["15 July"], "fees": ["EUR 50 application fee"]},
+            evidence_key="language_requirements",
+            evidence_text="IELTS 6.5",
+            source_specific={"daad_subject_group": "Business"},
+            needs_human_review=False,
+        )
+        output = build_source_output(
+            source_platform="daad",
+            source_label="DAAD",
+            school={"name": "Munich Business School", "url": "https://www.munich-business-school.de/en/"},
+            programmes=[program],
+            coverage_status="complete_within_configured_targets",
+            limitation_notes=[],
+            future_deepening_candidates=[],
+        )
+
+        self.assertEqual(output["schema_version"], "0.4-source")
+        self.assertEqual(output["source_platform"], "daad")
+        self.assertEqual(output["source_coverage"]["status"], "complete_within_configured_targets")
+        self.assertEqual(output["programs"][0]["program"]["name"], "Master International Business")
+        self.assertIn("requirements", output["programs"][0])
+        self.assertEqual(output["programs"][0]["source_specific"]["daad_subject_group"], "Business")
+        self.assertEqual(output["programs"][0]["source_record_id"], "daad-w7513")
+
+    def test_source_output_does_not_reuse_mutable_input_objects(self):
+        school = {
+            "name": "Munich Business School",
+            "url": "https://www.munich-business-school.de/en/",
+            "aliases": ["MBS"],
+        }
+        limitation_notes = ["Only first page inspected"]
+        future_deepening_candidates = [{"strategy": "inspect_endpoint", "params": {"limit": 20}}]
+        program = SourceProgram(
+            source_record_id="daad-w7513",
+            source_listing_url="https://www.daad.de/example-list",
+            source_detail_url="https://www.daad.de/example-detail",
+            name="Master International Business",
+            language_of_instruction=["English"],
+            requirements={
+                "language_requirements": [{"test": "IELTS", "scores": ["6.5"]}],
+                "academic_background": {"notes": ["business degree"]},
+            },
+            application={
+                "deadlines": ["15 July"],
+                "fees": [{"amount": "EUR 50", "notes": ["application fee"]}],
+            },
+            source_specific={
+                "daad_subject_group": "Business",
+                "badges": [{"name": "international", "tags": ["daad"]}],
+            },
+        )
+
+        output = build_source_output(
+            source_platform="daad",
+            source_label="DAAD",
+            school=school,
+            programmes=[program],
+            coverage_status="source_partial_match",
+            limitation_notes=limitation_notes,
+            future_deepening_candidates=future_deepening_candidates,
+        )
+        record = output["programs"][0]
+
+        output["school"]["aliases"].append("Top-level mutation")
+        record["school"]["aliases"].append("Record mutation")
+        record["program"]["language_of_instruction"].append("German")
+        record["requirements"]["language_requirements"][0]["scores"].append("7.0")
+        record["requirements"]["academic_background"]["notes"].append("mutated note")
+        record["application"]["deadlines"].append("1 August")
+        record["application"]["fees"][0]["notes"].append("mutated fee")
+        record["source_specific"]["badges"][0]["tags"].append("mutated tag")
+        output["source_coverage"]["limitation_notes"].append("mutated limitation")
+        output["source_coverage"]["future_deepening_candidates"][0]["params"]["limit"] = 99
+
+        self.assertEqual(school["aliases"], ["MBS"])
+        self.assertEqual(program.language_of_instruction, ["English"])
+        self.assertEqual(program.requirements["language_requirements"][0]["scores"], ["6.5"])
+        self.assertEqual(program.requirements["academic_background"]["notes"], ["business degree"])
+        self.assertEqual(program.application["deadlines"], ["15 July"])
+        self.assertEqual(program.application["fees"][0]["notes"], ["application fee"])
+        self.assertEqual(program.source_specific["badges"][0]["tags"], ["daad"])
+        self.assertEqual(limitation_notes, ["Only first page inspected"])
+        self.assertEqual(future_deepening_candidates[0]["params"]["limit"], 20)
+
+    def test_source_output_rejects_unknown_coverage_status(self):
+        with self.assertRaises(ValueError):
+            build_source_output(
+                source_platform="daad",
+                source_label="DAAD",
+                school={"name": "Example School"},
+                programmes=[],
+                coverage_status="not_a_real_status",
+                limitation_notes=[],
+                future_deepening_candidates=[],
+            )
+
+    def test_source_coverage_warning_marks_possible_missed_programmes(self):
+        self.assertTrue(coverage_warning("bounded_search_limit_reached"))
+        self.assertTrue(coverage_warning("source_partial_match"))
+        self.assertFalse(coverage_warning("complete_within_configured_targets"))
+        self.assertIn("robots_blocked", COVERAGE_STATUSES)
+        self.assertEqual(source_slug("My German University"), "my_german_university")
 
     def test_extracts_requirement_section_from_program_page(self):
         page = Page(
