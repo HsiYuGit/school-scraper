@@ -1,0 +1,171 @@
+{
+  "schema_version": "0.1",
+  "source_platform": "my_german_university",
+  "school_count": 12,
+  "programs_extracted": 0,
+  "status_counts": {
+    "source_no_match": 1,
+    "source_limited": 11
+  },
+  "warning_statuses": [
+    "source_limited",
+    "source_no_match"
+  ],
+  "schools": [
+    {
+      "school": "TUM Asia",
+      "source_platform": "my_german_university",
+      "output_path": "outputs\\source_mgu\\tum_asia_admissions.json",
+      "coverage_status": "source_no_match",
+      "warning": true,
+      "programs_extracted": 0,
+      "limitation_notes": [
+        "No MGU source target was confirmed for TUM Asia; no school-official fallback attempted."
+      ]
+    },
+    {
+      "school": "Munich Business School",
+      "source_platform": "my_german_university",
+      "output_path": "outputs\\source_mgu\\munich_business_school_admissions.json",
+      "coverage_status": "source_limited",
+      "warning": true,
+      "programs_extracted": 0,
+      "limitation_notes": [
+        "Configured MGU target is target_seeded; configured source URLs may not cover every programme exposed by MGU.",
+        "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/Munich-Business-School: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>",
+        "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/Munich-Business-School/study-programs: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>",
+        "Could not fetch MGU detail https://www.mygermanuniversity.com/master/international-business/1691: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>"
+      ]
+    },
+    {
+      "school": "International School of Management (ISM)",
+      "source_platform": "my_german_university",
+      "output_path": "outputs\\source_mgu\\international_school_of_management_ism_admissions.json",
+      "coverage_status": "source_limited",
+      "warning": true,
+      "programs_extracted": 0,
+      "limitation_notes": [
+        "Configured MGU target is target_seeded; configured source URLs may not cover every programme exposed by MGU.",
+        "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/International-School-of-Management-ISM: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>",
+        "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/International-School-of-Management-ISM/study-programs: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>"
+      ]
+    },
+    {
+      "school": "CBS International Business School",
+      "source_platform": "my_german_university",
+      "output_path": "outputs\\source_mgu\\cbs_international_business_school_admissions.json",
+      "coverage_status": "source_limited",
+      "warning": true,
+      "programs_extracted": 0,
+      "limitation_notes": [
+        "Configured MGU target is target_seeded; configured source URLs may not cover every programme exposed by MGU.",
+        "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/CBS-University-of-Applied-Sciences: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>",
+        "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/CBS-University-of-Applied-Sciences/study-programs: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>"
+      ]
+    },
+    {
+      "school": "EBS Universität",
+      "source_platform": "my_german_university",
+      "output_path": "outputs\\source_mgu\\ebs_universitat_admissions.json",
+      "coverage_status": "source_limited",
+      "warning": true,
+      "programs_extracted": 0,
+      "limitation_notes": [
+        "Configured MGU target is target_seeded; configured source URLs may not cover every programme exposed by MGU.",
+        "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/EBS-University: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>",
+        "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/EBS-University/study-programs: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>"
+      ]
+    },
+    {
+      "school": "SRH Universities",
+      "source_platform": "my_german_university",
+      "output_path": "outputs\\source_mgu\\srh_universities_admissions.json",
+      "coverage_status": "source_limited",
+      "warning": true,
+      "programs_extracted": 0,
+      "limitation_notes": [
+        "Configured MGU target is source_partial_match; configured source URLs may not cover every programme exposed by MGU.",
+        "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/SRH-University: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>",
+        "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/SRH-University/study-programs: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>"
+      ]
+    },
+    {
+      "school": "Kühne Logistics University (KLU)",
+      "source_platform": "my_german_university",
+      "output_path": "outputs\\source_mgu\\kuhne_logistics_university_klu_admissions.json",
+      "coverage_status": "source_limited",
+      "warning": true,
+      "programs_extracted": 0,
+      "limitation_notes": [
+        "Configured MGU target is target_seeded; configured source URLs may not cover every programme exposed by MGU.",
+        "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/Kuehne-Logistics-University: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>",
+        "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/Kuehne-Logistics-University/study-programs: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>"
+      ]
+    },
+    {
+      "school": "Hochschule Fresenius",
+      "source_platform": "my_german_university",
+      "output_path": "outputs\\source_mgu\\hochschule_fresenius_admissions.json",
+      "coverage_status": "source_limited",
+      "warning": true,
+      "programs_extracted": 0,
+      "limitation_notes": [
+        "Configured MGU target is target_seeded; configured source URLs may not cover every programme exposed by MGU.",
+        "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/Hochschule-Fresenius-University-of-Applied-Sciences: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>",
+        "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/Hochschule-Fresenius-University-of-Applied-Sciences/study-programs: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>"
+      ]
+    },
+    {
+      "school": "NIT Northern Institute of Technology Management",
+      "source_platform": "my_german_university",
+      "output_path": "outputs\\source_mgu\\nit_northern_institute_of_technology_management_admissions.json",
+      "coverage_status": "source_limited",
+      "warning": true,
+      "programs_extracted": 0,
+      "limitation_notes": [
+        "Configured MGU target is target_seeded; configured source URLs may not cover every programme exposed by MGU.",
+        "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/NIT-Northern-Institute-of-Technology-Management: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>",
+        "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/NIT-Northern-Institute-of-Technology-Management/study-programs: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>"
+      ]
+    },
+    {
+      "school": "Hochschule Bremen",
+      "source_platform": "my_german_university",
+      "output_path": "outputs\\source_mgu\\hochschule_bremen_admissions.json",
+      "coverage_status": "source_limited",
+      "warning": true,
+      "programs_extracted": 0,
+      "limitation_notes": [
+        "Configured MGU target is target_seeded; configured source URLs may not cover every programme exposed by MGU.",
+        "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/HSB-Hochschule-Bremen-%E2%80%93-City-University-of-Applied-Sciences: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>",
+        "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/HSB-Hochschule-Bremen-%E2%80%93-City-University-of-Applied-Sciences/study-programs: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>"
+      ]
+    },
+    {
+      "school": "ESMT Berlin",
+      "source_platform": "my_german_university",
+      "output_path": "outputs\\source_mgu\\esmt_berlin_admissions.json",
+      "coverage_status": "source_limited",
+      "warning": true,
+      "programs_extracted": 0,
+      "limitation_notes": [
+        "Configured MGU target is target_seeded; configured source URLs may not cover every programme exposed by MGU.",
+        "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/ESMT-Berlin: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>",
+        "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/ESMT-Berlin/study-programs: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>"
+      ]
+    },
+    {
+      "school": "International Graduate Center, Hochschule Bremen",
+      "source_platform": "my_german_university",
+      "output_path": "outputs\\source_mgu\\international_graduate_center_hochschule_bremen_admissions.json",
+      "coverage_status": "source_limited",
+      "warning": true,
+      "programs_extracted": 0,
+      "limitation_notes": [
+        "Configured MGU target is target_seeded; configured source URLs may not cover every programme exposed by MGU.",
+        "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/International-Graduate-Center-IGC: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>",
+        "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/International-Graduate-Center-IGC/study-programs: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>"
+      ]
+    }
+  ]
+}

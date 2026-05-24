@@ -244,6 +244,38 @@ class AdmissionExtractionTest(unittest.TestCase):
         self.assertIn("6,000 EUR per semester", programme.application["fees"])
         self.assertEqual(programme.source_specific["source_platform"], "daad")
 
+    def test_mgu_detail_parser_preserves_source_specific_fields(self):
+        from scripts.scrape_mgu_admissions import parse_mgu_detail
+
+        html = """
+        <html><body>
+          <h1>Innovation and Entrepreneurship</h1>
+          <span>Master of Arts</span>
+          <section><h2>Overview</h2>
+            <p>Teaching language: English</p>
+            <p>Duration: 4 semesters</p>
+            <p>Tuition fees: 5,000 EUR per semester</p>
+          </section>
+          <section><h2>Admission Requirements</h2>
+            <p>Applicants need a Bachelor's degree and proof of English, e.g. IELTS 6.5.</p>
+          </section>
+        </body></html>
+        """
+
+        programme = parse_mgu_detail(
+            html,
+            detail_url="https://www.mygermanuniversity.com/master/innovation-and-entrepreneurship/1692",
+            listing_url="https://www.mygermanuniversity.com/universities/Munich-Business-School",
+            record_id="1692",
+        )
+
+        self.assertEqual(programme.source_record_id, "1692")
+        self.assertEqual(programme.name, "Innovation and Entrepreneurship")
+        self.assertEqual(programme.level, "master")
+        self.assertIn("English", programme.language_of_instruction)
+        self.assertIn("duration", programme.source_specific)
+        self.assertIn("5,000 EUR per semester", programme.application["fees"])
+
     def test_daad_detail_parser_ignores_page_chrome_and_section_tabs(self):
         from scripts.scrape_daad_admissions import parse_daad_detail
 
@@ -370,6 +402,99 @@ class AdmissionExtractionTest(unittest.TestCase):
         self.assertTrue(output["source_coverage"]["warning"])
         self.assertEqual(output["programs"], [])
         self.assertIn("Could not fetch DAAD detail", output["source_coverage"]["limitation_notes"][0])
+
+    def test_mgu_listing_cloudflare_challenge_stays_warning_visible(self):
+        from scripts.scrape_mgu_admissions import scrape_target
+
+        target = {
+            "school_name": "Example School",
+            "coverage_status": "target_seeded",
+            "listing_urls": [
+                "https://www.mygermanuniversity.com/universities/Example-School/study-programs"
+            ],
+            "detail_urls": [],
+            "future_deepening_candidates": [],
+        }
+        partner = {
+            "name": "Example School",
+            "official_url": "https://example.edu/",
+            "country": "Germany",
+            "partner_status": "test",
+            "school_type": "university",
+        }
+        args = SimpleNamespace(user_agent="test-agent", timeout=1, delay=0)
+        challenge_html = "<html><head><meta name='robots' content='noindex,nofollow'></head><body>Cloudflare managed challenge</body></html>"
+
+        with mock.patch("scripts.scrape_mgu_admissions.fetch_text", return_value=challenge_html):
+            output = scrape_target(target, partner, args)
+
+        self.assertEqual(output["source_coverage"]["status"], "js_gated")
+        self.assertTrue(output["source_coverage"]["warning"])
+        self.assertEqual(output["programs"], [])
+        self.assertTrue(output["source_coverage"]["limitation_notes"])
+        self.assertIn("Cloudflare/JavaScript-gated", output["source_coverage"]["limitation_notes"][-1])
+
+    def test_mgu_configured_target_fetch_failure_stays_warning_visible(self):
+        from scripts.scrape_mgu_admissions import scrape_target
+
+        target = {
+            "school_name": "Example School",
+            "coverage_status": "target_seeded",
+            "listing_urls": [],
+            "detail_urls": [
+                "https://www.mygermanuniversity.com/master/example-programme/9999"
+            ],
+            "future_deepening_candidates": [],
+        }
+        partner = {
+            "name": "Example School",
+            "official_url": "https://example.edu/",
+            "country": "Germany",
+            "partner_status": "test",
+            "school_type": "university",
+        }
+        args = SimpleNamespace(user_agent="test-agent", timeout=1, delay=0)
+
+        with mock.patch(
+            "scripts.scrape_mgu_admissions.fetch_text",
+            side_effect=urllib.error.URLError("connection refused"),
+        ):
+            output = scrape_target(target, partner, args)
+
+        self.assertEqual(output["source_coverage"]["status"], "source_limited")
+        self.assertTrue(output["source_coverage"]["warning"])
+        self.assertEqual(output["programs"], [])
+        self.assertTrue(output["source_coverage"]["limitation_notes"])
+        self.assertIn("Could not fetch MGU detail", output["source_coverage"]["limitation_notes"][-1])
+
+    def test_mgu_source_no_match_without_urls_stays_warning_visible_without_fetch(self):
+        from scripts.scrape_mgu_admissions import scrape_target
+
+        target = {
+            "school_name": "Example School",
+            "coverage_status": "source_no_match",
+            "listing_urls": [],
+            "detail_urls": [],
+            "future_deepening_candidates": [],
+        }
+        partner = {
+            "name": "Example School",
+            "official_url": "https://example.edu/",
+            "country": "Germany",
+            "partner_status": "test",
+            "school_type": "university",
+        }
+        args = SimpleNamespace(user_agent="test-agent", timeout=1, delay=0)
+
+        with mock.patch("scripts.scrape_mgu_admissions.fetch_text") as fetch_mock:
+            output = scrape_target(target, partner, args)
+
+        fetch_mock.assert_not_called()
+        self.assertEqual(output["source_coverage"]["status"], "source_no_match")
+        self.assertTrue(output["source_coverage"]["warning"])
+        self.assertEqual(output["programs"], [])
+        self.assertTrue(output["source_coverage"]["limitation_notes"])
+        self.assertIn("No MGU source target was confirmed", output["source_coverage"]["limitation_notes"][0])
 
     def test_source_daad_outputs_have_no_chrome_in_core_fields(self):
         root = Path(__file__).parents[1]

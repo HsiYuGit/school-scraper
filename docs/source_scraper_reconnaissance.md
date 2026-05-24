@@ -58,6 +58,12 @@ Date: 2026-05-24
 - Detail-only fields: Detail pages expose programme name, degree, language, application deadlines, duration/start, tuition fees, mode of admission, application channel, study mode, registration/tuition details, and potentially admission requirements and downloadable information packages.
 - JavaScript/browser clues: Direct `curl` access to robots and pages returned Cloudflare managed-challenge HTML. The public pages are visible through search-index snapshots, but a first scraper must treat direct HTML collection as Cloudflare/JS-gated unless browser/network access proves otherwise. Map widgets are gated by user interaction and should not be loaded.
 - Access limits: Do not bypass Cloudflare, login, cookies, CAPTCHA, or JavaScript challenges. Do not use school official-site fallback. If robots cannot be read because of Cloudflare, scraper outputs must surface `js_gated` or `source_limited` rather than silently treating coverage as complete.
+- Task 4 implementation mechanics:
+  - `scripts/scrape_mgu_admissions.py` only fetches configured My German University listing/detail URLs from `data/source_scraper_targets.json`; it does not fall back to school official websites.
+  - The parser keeps MGU-specific fields in `source_specific`, including `duration` and `raw_blocks`, while mapping programme name, degree/level, language, IELTS, deadlines, and fees into the shared source admissions contract where present.
+  - The scraper detects Cloudflare/JavaScript challenge markers in returned HTML and writes `js_gated` warning outputs instead of attempting bypass.
+  - The completed local run on 2026-05-24 could not connect to MGU source URLs (`WinError 10061`) and therefore produced 12 warning-visible outputs: one `source_no_match` for TUM Asia and 11 `source_limited` files for configured MGU targets.
+  - A network-approved retry reached some pages but timed out before a complete 12-school manifest could be written; final outputs were regenerated from the completed bounded run so the manifest and per-school files remain consistent.
 - Future deepening candidates:
   - Use an allowed browser session to inspect StudyFinder network calls and confirm whether a public JSON endpoint exists.
   - Confirm pagination exhaustiveness for `/study-programs?page=<n>` pages and the page size per university.

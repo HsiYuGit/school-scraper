@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.4-source",
+  "source_platform": "my_german_university",
+  "source_label": "My German University",
+  "school": {
+    "name": "Kühne Logistics University (KLU)",
+    "url": "https://www.klu.org/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university"
+  },
+  "retrieved_at": "2026-05-24T13:13:28.423072+00:00",
+  "source_coverage": {
+    "status": "source_limited",
+    "warning": true,
+    "programs_extracted": 0,
+    "limitation_notes": [
+      "Configured MGU target is target_seeded; configured source URLs may not cover every programme exposed by MGU.",
+      "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/Kuehne-Logistics-University: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>",
+      "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/Kuehne-Logistics-University/study-programs: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>"
+    ],
+    "future_deepening_candidates": [
+      {
+        "note": "Confirm whether MGU university profile reports all KLU bachelor, master, MBA, PhD, and executive programmes or only degree programmes."
+      },
+      {
+        "strategy": "inspect_allowed_browser_network",
+        "reason": "MGU direct HTML access can be Cloudflare/JavaScript-gated; later work may confirm a public endpoint without bypassing access controls."
+      }
+    ]
+  },
+  "programs": [],
+  "skipped": []
+}

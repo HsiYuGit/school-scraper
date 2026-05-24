@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.4-source",
+  "source_platform": "my_german_university",
+  "source_label": "My German University",
+  "school": {
+    "name": "TUM Asia",
+    "url": "https://tum-asia.edu.sg/",
+    "country": "Singapore",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university_partner"
+  },
+  "retrieved_at": "2026-05-24T13:12:49.836332+00:00",
+  "source_coverage": {
+    "status": "source_no_match",
+    "warning": true,
+    "programs_extracted": 0,
+    "limitation_notes": [
+      "No MGU source target was confirmed for TUM Asia; no school-official fallback attempted."
+    ],
+    "future_deepening_candidates": [
+      {
+        "note": "Confirm whether MGU includes TUM Asia separately or only German TUM campuses."
+      },
+      {
+        "strategy": "inspect_allowed_browser_network",
+        "reason": "MGU direct HTML access can be Cloudflare/JavaScript-gated; later work may confirm a public endpoint without bypassing access controls."
+      }
+    ]
+  },
+  "programs": [],
+  "skipped": []
+}

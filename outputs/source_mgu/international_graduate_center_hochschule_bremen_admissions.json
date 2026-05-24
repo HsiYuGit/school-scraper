@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.4-source",
+  "source_platform": "my_german_university",
+  "source_label": "My German University",
+  "school": {
+    "name": "International Graduate Center, Hochschule Bremen",
+    "url": "https://www.graduatecenter.org/en/",
+    "country": "Germany",
+    "partner_status": "candidate_from_partner_logo",
+    "school_type": "graduate_center"
+  },
+  "retrieved_at": "2026-05-24T13:13:58.790393+00:00",
+  "source_coverage": {
+    "status": "source_limited",
+    "warning": true,
+    "programs_extracted": 0,
+    "limitation_notes": [
+      "Configured MGU target is target_seeded; configured source URLs may not cover every programme exposed by MGU.",
+      "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/International-Graduate-Center-IGC: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>",
+      "Could not fetch MGU listing https://www.mygermanuniversity.com/universities/International-Graduate-Center-IGC/study-programs: URLError: <urlopen error [WinError 10061] 無法連線，因為目標電腦拒絕連線。>"
+    ],
+    "future_deepening_candidates": [
+      {
+        "note": "Confirm overlap and separation between IGC and HSB Hochschule Bremen source records."
+      },
+      {
+        "strategy": "inspect_allowed_browser_network",
+        "reason": "MGU direct HTML access can be Cloudflare/JavaScript-gated; later work may confirm a public endpoint without bypassing access controls."
+      }
+    ]
+  },
+  "programs": [],
+  "skipped": []
+}

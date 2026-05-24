@@ -26,6 +26,15 @@
 - Extended DAAD parser hardening to normalized requirements notes, keeping page chrome/tab headings out of promoted contract fields while preserving raw trace blocks for review.
 - Centralized DAAD throttling through a shared fetch session so listing fetches, first detail fetches, later details, and cross-target transitions all respect the configured delay.
 
+### My German University source admissions scraper
+
+- Added `scripts/scrape_mgu_admissions.py` with an MGU-specific detail parser, source-pure URL allowlist, Cloudflare/JavaScript challenge detection, and warning-visible no-fallback outputs.
+- Added a parser regression test to preserve MGU source fields such as `duration`, `raw_blocks`, source record IDs, teaching language, fees, and inferred programme level.
+- Generated 12 MGU source output files plus `outputs/source_mgu/source_mgu_manifest.json`.
+- The completed local run extracted 0 programme records: one `source_no_match` output for TUM Asia and 11 `source_limited` outputs caused by direct connection refusals to MGU source URLs.
+- A network-approved retry reached some MGU pages but timed out before a complete 12-school manifest could be written, so the final committed outputs were regenerated from the completed bounded run and keep every potentially missed programme warning-visible.
+- No MGU output uses school official-site fallback; degree, language, and study mode remain metadata only.
+
 ## 2026-05-15
 
 ### 工作規劃
