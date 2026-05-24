@@ -1,0 +1,1500 @@
+{
+  "schema_version": "0.4-source",
+  "source_platform": "daad",
+  "source_label": "DAAD",
+  "school": {
+    "name": "International School of Management (ISM)",
+    "url": "https://en.ism.de/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university"
+  },
+  "retrieved_at": "2026-05-24T12:41:14.111449+00:00",
+  "source_coverage": {
+    "status": "source_partial_match",
+    "warning": true,
+    "programs_extracted": 10,
+    "limitation_notes": [
+      "Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=International+School+of+Management&limit=100&offset=0&display=list: limit=100 offset=0.",
+      "Configured DAAD target is source_partial_match; configured queries and detail URLs may not cover every programme exposed by DAAD."
+    ],
+    "future_deepening_candidates": [
+      {
+        "note": "Confirm whether DAAD has additional ISM records beyond International Programmes."
+      }
+    ]
+  },
+  "programs": [
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Bachelor of International Management",
+        "degree": "Bachelor of Science in International Management BSc",
+        "level": "bachelor",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5259/",
+        "campus": "Dortmund",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Bachelor of International Management Bachelor of International Management Bachelor of Science in International Management BSc For all other applicants , the admission period ends at the latest in August (winter semester) or February (summer semester). The International Management Bachelor's programme offers a practical approach to teaching and learning and a great deal of internationality and creative freedom . Business studies, economics, global procurement management, strategic marketing, strategic international management, corporate organisation and controlling – the broad subject area gives Bachelor's students a comprehensive insight into the exciting field of international management practices. Depending on the individual interests and strengths, students can specialise in a subject area such as international marketing, international management, global supply chains, consulting, controlling, or people's management during the course of studies. Besides practical projects and excursions , an internship of 20 weeks is integrated into your studies, through which you will deepen and expand the knowledge and skills you have already acquired. Projects with partners in Germany and abroad In order to fully prepare you for a career in international management, in this Bachelor's programme Academic admission requirements The ISM Bachelor's programmes are designed for applicants who have achieved a general qualification for university admission (\"Allgemeine Hochschulreife\") or a qualification for admission to universities of applied sciences (\"Fachhochschulreife\"). The programmes do not have a numerus clausus (no NC). All applicants applying for a Bachelor's programme at the ISM are required to pass an online entrance examination. The ISM's admission process for Bachelor's takes place online and involves Language requirements For all other applicants , the admission period ends at the latest in August (winter semester) or February (summer semester). ISM has an online application process. Learn how to apply for this Bachelor's programme here . Study Advisor Bachelor's Programmes"
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Application periods are flexible, you can apply up to one year in advance . This programme starts each semester."
+        ],
+        "intakes": [
+          "Winter and summer semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "5,970 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5259/",
+            "source_text": "Bachelor of International Management Bachelor of International Management Bachelor of Science in International Management BSc For all other applicants , the admission period ends at the latest in August (winter semester) or February (summer semester). The International Management Bachelor's programme offers a practical approach to teaching and learning and a great deal of internationality and creative freedom . Business studies, economics, global procurement management, strategic marketing, stra",
+            "retrieved_at": "2026-05-24T12:41:14.111449+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5259/",
+          "text": "Bachelor of International Management Bachelor of International Management Bachelor of Science in International Management BSc For all other applicants , the admission period ends at the latest in August (winter semester) or February (summer semester). The International Management Bachelor's programme offers a practical approach to teaching and learning and a great deal of internationality and creative freedom . Business studies, economics, global procurement management, strategic marketing, strategic international management, corporate organisation and controlling – the broad subject area gives Bachelor's students a comprehensive insight into the exciting field of international management practices. Depending on the individual interests and strengths, students can specialise in a subject area such as international marketing, international management, global supply chains, consulting, controlling, or people's management during the course of studies. Besides practical projects and excursions , an internship of 20 weeks is integrated into your studies, through which you will deepen and expand the knowledge and skills you have already acquired. Projects with partners in Germany and abroad In order to fully prepare you for a career in international management, in this Bachelor's programme Academic admission requirements The ISM Bachelor's programmes are designed for applicants who have achieved a general qualification for university admission (\"Allgemeine Hochschulreife\") or a qualification for admission to universities of applied sciences (\"Fachhochschulreife\"). The programmes do not have a numerus clausus (no NC). All applicants applying for a Bachelor's programme at the ISM are required to pass an online entrance examination. The ISM's admission process for Bachelor's takes place online and involves Language requirements For all other applicants , the admission period ends at the latest in August (winter semester) or February (summer semester). ISM has an online application process. Learn how to apply for this Bachelor's programme here . Study Advisor Bachelor's Programmes"
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "5259",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=International%20School%20of%20Management&limit=25&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5259/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter and summer semester",
+        "programme_duration": "6 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "Bachelor of International Management - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Bachelor of International Management Bachelor of International Management",
+          "International School of Management (ISM) • Dortmund",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "Degree",
+          "Bachelor of Science in International Management BSc",
+          "Course location",
+          "Dortmund",
+          "Teaching language",
+          "English",
+          "Languages",
+          "Courses are held in English .",
+          "Optionally, students can take German language courses or French, Italian or Spanish.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "6 semesters",
+          "Beginning",
+          "Winter and summer semester",
+          "Additional information on beginning, duration and mode of study",
+          "This programme can be started in spring or winter semesters . The programme is offered in English only or in German with 30% English modules (check German language version).",
+          "Programme duration is six semesters (regular) or seven semesters (with Global Track option where a second semester abroad is possible).",
+          "Application deadline",
+          "Application periods are flexible, you can apply up to one year in advance . This programme starts each semester.",
+          "Applicants who require a visa for Germany must submit their application documents by the following deadlines :",
+          "for start in summer semester: 15 December (start in March)",
+          "for start in winter semester: 15 July (start in September)",
+          "For all other applicants , the admission period ends at the latest in August (winter semester) or February (summer semester).",
+          "Tuition fees per semester in EUR",
+          "5,970 EUR",
+          "Additional information on tuition fees",
+          "Tuition fee per semester",
+          "5,970 EUR",
+          "Upon agreement with university, monthly payments are also possible.",
+          "One-time enrolment fee",
+          "EU & EEA (European Economic Area) students: 600 EUR",
+          "Non-EU students: 1,500 EUR",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "The International Management Bachelor's programme offers a practical approach to teaching and learning and a great deal of internationality and creative freedom . Business studies, economics, global procurement management, strategic marketing, strategic international management, corporate organisation and controlling – the broad subject area gives Bachelor's students a comprehensive insight into the exciting field of international management practices. Depending on the individual interests and strengths, students can specialise in a subject area such as international marketing, international management, global supply chains, consulting, controlling, or people's management during the course of studies.",
+          "In the lectures, students will learn about topics such as how international marketing works, how to negotiate with business partners from different cultures or how a company can grow and stay globally competitive.",
+          "With a degree in Business Management, you’ll graduate prepared to take on exciting opportunities in different industries and roles all across the global business world.",
+          "This course of study is offered at all ISM locations in Dortmund, Berlin, Frankfurt/Main, Munich, Hamburg, Cologne and Stuttgart. For more details, visit the website or contact the study advisors."
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Bachelor's in Finance & Management",
+        "degree": "Bachelor of Science in Finance & Management, BSc",
+        "level": "bachelor",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7068/",
+        "campus": "Frankfurt am Main",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Bachelor's in Finance & Management Bachelor's in Finance & Management Bachelor of Science in Finance & Management, BSc For all other applicants , the admission period ends at the latest in August (winter semester) or February (summer semester). During your Bachelor's in Finance and Management, you will acquire the basics of business administration as well as specific knowledge of the global financial sector . In the Bachelor's programme, you’ll build solid knowledge in key areas like corporate finance, financial management, and reporting. You will be taught to analyse complex business models and processes on the basis of numbers, making you a specialist in national and international companies. You will get to know financial products and learn how companies operate on the global capital market today. In your final two semesters, you’ll dive deeper into advanced topics such as controlling, consulting projects, mergers & acquisitions, and international financial management, including portfolio and asset management. Info: Your studies include practical projects with real clients , company excursions and a 20-week internship that will enable you to deepen and expand the knowledge and skills you have already acquired. Projects with partners in Germany and abroad In order to fully prepare you for a career in finance, in this Bachelor's programme Bachelor's students participate in a total of 20 weeks of internships, including ten weeks abroad. Academic admission requirements The ISM Bachelor's programmes are designed for applicants who have achieved a general qualification for university admission (\"Allgemeine Hochschulreife\") or a qualification for admission to universities of applied sciences (\"Fachhochschulreife\"). The programmes do not have a numerus clausus (no NC). All applicants for a Bachelor's programme at the ISM are required to pass an online entrance process . ISM's admission process takes place online and involves Applying online for admission and uploading application documents (school leaving certificate including transcript of records (if available), brief CV, letter of motivation) Language requirements An English language certificate is not necessary, the language level will be tested as part of the admission test (see above). For all other applicants , the admission period ends at the latest in August (winter semester) or February (summer semester). The ISM has an online application process. Learn how to apply for this Bachelor's programme here . Study Advisor Bachelor's Programmes"
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Aplication times are flexible, you can apply up to one year in advance. This programme starts each semester."
+        ],
+        "intakes": [
+          "Winter and summer semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "5,970 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7068/",
+            "source_text": "Bachelor's in Finance & Management Bachelor's in Finance & Management Bachelor of Science in Finance & Management, BSc For all other applicants , the admission period ends at the latest in August (winter semester) or February (summer semester). During your Bachelor's in Finance and Management, you will acquire the basics of business administration as well as specific knowledge of the global financial sector . In the Bachelor's programme, you’ll build solid knowledge in key areas like corporate f",
+            "retrieved_at": "2026-05-24T12:41:14.111449+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7068/",
+          "text": "Bachelor's in Finance & Management Bachelor's in Finance & Management Bachelor of Science in Finance & Management, BSc For all other applicants , the admission period ends at the latest in August (winter semester) or February (summer semester). During your Bachelor's in Finance and Management, you will acquire the basics of business administration as well as specific knowledge of the global financial sector . In the Bachelor's programme, you’ll build solid knowledge in key areas like corporate finance, financial management, and reporting. You will be taught to analyse complex business models and processes on the basis of numbers, making you a specialist in national and international companies. You will get to know financial products and learn how companies operate on the global capital market today. In your final two semesters, you’ll dive deeper into advanced topics such as controlling, consulting projects, mergers & acquisitions, and international financial management, including portfolio and asset management. Info: Your studies include practical projects with real clients , company excursions and a 20-week internship that will enable you to deepen and expand the knowledge and skills you have already acquired. Projects with partners in Germany and abroad In order to fully prepare you for a career in finance, in this Bachelor's programme Bachelor's students participate in a total of 20 weeks of internships, including ten weeks abroad. Academic admission requirements The ISM Bachelor's programmes are designed for applicants who have achieved a general qualification for university admission (\"Allgemeine Hochschulreife\") or a qualification for admission to universities of applied sciences (\"Fachhochschulreife\"). The programmes do not have a numerus clausus (no NC). All applicants for a Bachelor's programme at the ISM are required to pass an online entrance process . ISM's admission process takes place online and involves Applying online for admission and uploading application documents (school leaving certificate including transcript of records (if available), brief CV, letter of motivation) Language requirements An English language certificate is not necessary, the language level will be tested as part of the admission test (see above). For all other applicants , the admission period ends at the latest in August (winter semester) or February (summer semester). The ISM has an online application process. Learn how to apply for this Bachelor's programme here . Study Advisor Bachelor's Programmes"
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "7068",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=International%20School%20of%20Management&limit=25&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7068/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter and summer semester",
+        "programme_duration": "6 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "Bachelor's in Finance & Management - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Bachelor's in Finance & Management Bachelor's in Finance & Management",
+          "International School of Management (ISM) • Frankfurt am Main",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "Degree",
+          "Bachelor of Science in Finance & Management, BSc",
+          "Course location",
+          "Frankfurt am Main",
+          "Teaching language",
+          "English",
+          "Languages",
+          "Courses are held in English .",
+          "Optionally, students can take German language courses or French, Italian or Spanish.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "6 semesters",
+          "Beginning",
+          "Winter and summer semester",
+          "Additional information on beginning, duration and mode of study",
+          "The programme duration is six semesters (regular) or seven semesters (with Global Track option where a second semester abroad is possible).",
+          "Application deadline",
+          "Aplication times are flexible, you can apply up to one year in advance. This programme starts each semester.",
+          "Applicants who require a visa for Germany must submit their application documents by the following deadlines:",
+          "for start in summer semester: 15 December (start in March)",
+          "for start in winter semester: 15 July (start end of September)",
+          "For all other applicants , the admission period ends at the latest in August (winter semester) or February (summer semester).",
+          "Tuition fees per semester in EUR",
+          "5,970 EUR",
+          "Additional information on tuition fees",
+          "Tuition fee per semester",
+          "5,970 EUR",
+          "Upon agreement with the university, monthly payments are also possible.",
+          "One-time enrolment fee",
+          "EU & EEA (European Economic Area) students: 600 EUR",
+          "Non-EU students: 1,500 EUR",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "During your Bachelor's in Finance and Management, you will acquire the basics of business administration as well as specific knowledge of the global financial sector .",
+          "In the Bachelor's programme, you’ll build solid knowledge in key areas like corporate finance, financial management, and reporting. You will be taught to analyse complex business models and processes on the basis of numbers, making you a specialist in national and international companies. You will get to know financial products and learn how companies operate on the global capital market today. In your final two semesters, you’ll dive deeper into advanced topics such as controlling, consulting projects, mergers & acquisitions, and international financial management, including portfolio and asset management.",
+          "Depending on your strengths and interests, you will set your individual focus in the fifth and sixth semesters . A semester abroad at one of ISM's over 190 partner universities is integrated in your studies as well as 20 weeks of internships, as well as highly practical teaching by lecturers who are experts from the business and financial world.",
+          "This course is generally offered at our locations in Frankfurt/Main, Dortmund, Munich, Cologne and Berlin . Get more information from the website or contact a study advisor.",
+          "Did you know:"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "BSc in Applied Data Science & Business Analytics",
+        "degree": "Bachelor of Science in Applied Data Science & Business Analytics, BSc",
+        "level": "bachelor",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9020/",
+        "campus": "Frankfurt am Main",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Bachelor of Science in Applied Data Science & Business Analytics, BSc For all other applicants, the admission period ends at the latest in August (winter semester) or February (summer semester). This Bachelor's degree programme is offered at our locations in Frankfurt am Main, Munich, Dortmund and Hamburg. Your studies include company excursions, practical projects with real-world clients and a 20-week internship that will enable you to deepen and expand the knowledge and skills you have already acquired. Projects with partners in Germany and abroad In order to fully prepare you for a career in data science, in this Bachelor's in Data Science All study programmes are very practice-oriented. Bachelor's students participate in a total of 20 weeks of internships , including ten weeks abroad, as well as practical projects with companies. Academic admission requirements The ISM Bachelor's programmes are designed for applicants who have achieved a general qualification for university admission (\"Allgemeine Hochschulreife\") or a qualification for admission to universities of applied sciences (\"Fachhochschulreife\"). The programmes do not have a numerus clausus (NO NC) All applicants applying for a Bachelor's programme at the ISM are required to pass an online entrance process . ISM's admission process takes place online and involves Applying online for admission and uploading application documents (school leaving certificate including transcript of records (if available), brief CV, letter of motivation) Language requirements An English language certificate is not necessary, the language level will be tested as part of admission test (see above). For all other applicants, the admission period ends at the latest in August (winter semester) or February (summer semester). Study Advisor Bachelor's Programmes"
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Application periods are flexible, you can apply up to one year in advance. This programme starts each semester , in spring and in winter."
+        ],
+        "intakes": [
+          "Winter and summer semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "5,970 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9020/",
+            "source_text": "Bachelor of Science in Applied Data Science & Business Analytics, BSc For all other applicants, the admission period ends at the latest in August (winter semester) or February (summer semester). This Bachelor's degree programme is offered at our locations in Frankfurt am Main, Munich, Dortmund and Hamburg. Your studies include company excursions, practical projects with real-world clients and a 20-week internship that will enable you to deepen and expand the knowledge and skills you have already",
+            "retrieved_at": "2026-05-24T12:41:14.111449+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9020/",
+          "text": "Bachelor of Science in Applied Data Science & Business Analytics, BSc For all other applicants, the admission period ends at the latest in August (winter semester) or February (summer semester). This Bachelor's degree programme is offered at our locations in Frankfurt am Main, Munich, Dortmund and Hamburg. Your studies include company excursions, practical projects with real-world clients and a 20-week internship that will enable you to deepen and expand the knowledge and skills you have already acquired. Projects with partners in Germany and abroad In order to fully prepare you for a career in data science, in this Bachelor's in Data Science All study programmes are very practice-oriented. Bachelor's students participate in a total of 20 weeks of internships , including ten weeks abroad, as well as practical projects with companies. Academic admission requirements The ISM Bachelor's programmes are designed for applicants who have achieved a general qualification for university admission (\"Allgemeine Hochschulreife\") or a qualification for admission to universities of applied sciences (\"Fachhochschulreife\"). The programmes do not have a numerus clausus (NO NC) All applicants applying for a Bachelor's programme at the ISM are required to pass an online entrance process . ISM's admission process takes place online and involves Applying online for admission and uploading application documents (school leaving certificate including transcript of records (if available), brief CV, letter of motivation) Language requirements An English language certificate is not necessary, the language level will be tested as part of admission test (see above). For all other applicants, the admission period ends at the latest in August (winter semester) or February (summer semester). Study Advisor Bachelor's Programmes"
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "9020",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=International%20School%20of%20Management&limit=25&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9020/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter and summer semester",
+        "programme_duration": "6 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "BSc in Applied Data Science & Business Analytics - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "BSc in Applied Data Science & Business Analytics BSc in Applied Data Science & Business Analytics",
+          "International School of Management (ISM) • Frankfurt am Main",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "Degree",
+          "Bachelor of Science in Applied Data Science & Business Analytics, BSc",
+          "Course location",
+          "Frankfurt am Main",
+          "Teaching language",
+          "English",
+          "Languages",
+          "Courses are held in English .",
+          "Optionally, students can take German language courses or French, Italian or Spanish.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "6 semesters",
+          "Beginning",
+          "Winter and summer semester",
+          "Additional information on beginning, duration and mode of study",
+          "Programme duration is six semesters (regular) or seven semesters (with Global Track option where a second semester abroad is possible).",
+          "The programme is offered in Frankfurt am Main, Munich, Dortmund and Hamburg.",
+          "Application deadline",
+          "Application periods are flexible, you can apply up to one year in advance. This programme starts each semester , in spring and in winter.",
+          "Applicants who require a visa for Germany must submit their application documents by the following deadlines:",
+          "for start in summer semester: 15 December (start in March)",
+          "for start in winter semester: 15 July (start end of September)",
+          "For all other applicants, the admission period ends at the latest in August (winter semester) or February (summer semester).",
+          "Tuition fees per semester in EUR",
+          "5,970 EUR",
+          "Additional information on tuition fees",
+          "Tuition fee per semester",
+          "5,970 EUR",
+          "Upon agreement with university, monthly payments are also possible.",
+          "One-time enrolment fee",
+          "EU & EEA (European Economic Area) students: 600 EUR",
+          "Non-EU students: 1,500 EUR",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "Do you love data analysis, machine learning and mathematical methods ? Then the BSc in Data Science and Business Analytics programme at the International School of Management (ISM) is for you.",
+          "With this Data Science degree programme, you will be able to acquire exciting knowledge in the fields of computer science, business and digital transformation tools. Whether programming tools, data analytics, business intelligence or artificial intelligence – the BSc Applied Data Science & Business Analytics will give you an understanding of a wide range of data science topics by combining business fundamentals with current trends and the challenges of Big Data.",
+          "This Bachelor's degree programme is offered at our locations in Frankfurt am Main, Munich, Dortmund and Hamburg.",
+          "The programme is also internationally AACSB accredited and includes : a semester abroad at a partner university in Europe or overseas, practical teaching by lecturers who are experts and IT managers in the real business world, 20 weeks of compulsory internships, workshops and company excursions to practice your learned skills and prepare you optimally for your future career."
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International Business (MSc)",
+        "degree": "Master of Science in International Business, MSc",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5263/",
+        "campus": "Dortmund",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": 180,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master of Science in International Business, MSc For all other applicants, the admission period is more flexible and ends in February at the latest. You can apply up to one year in advance (admission test result is valid for one year). Combined Master's degree / PhD programme The Master of Science in International Business can be combined with every undergraduate degree course , regardless of what the students have studied before, and is therefore aimed specifically at engineers, IT graduates, communication experts, and humanities graduates who wish to study business administration at Master's level and with an international, highly practical emphasis. The Master's course covers important areas of business education such as business law, international marketing, production, procurement or financial management. In combination with your first degree, you will have an exceptional range of specific knowledge and the soft skills that will make you particularly attractive for employers, thus broadening your career prospects. Semester 4: Master's thesis Twelve weeks of internship, in addition to practical study projects with companies or study excursions Academic admission requirements A successfully completed Bachelor's degree with at least 180 ECTS points Submission of the online application form and uploading documents online: Bachelor's degree certificate (if available), transcript of records, CV, letter of motivation, English language certificate of level B2, etc. Admission process The admission process consists of preparing a brief case study presentation and an online interview. You are expected to present the results of your case study on the day of the admissions test. Language requirements TOEFL (at least a score of 80, Internet-based) or IELTS (at least 6.0) or at least 30 ECTS in an English-language higher education programme or For all other applicants, the admission period is more flexible and ends in February at the latest. You can apply up to one year in advance (admission test result is valid for one year). ISM has an online application process. Learn how to apply for this Master's programme here . Study Advisor Master's Programmes"
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Applicants who require a visa for Germany must submit their application documents by the following deadline"
+        ],
+        "intakes": [
+          "Summer semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "6,480 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5263/",
+            "source_text": "Master of Science in International Business, MSc For all other applicants, the admission period is more flexible and ends in February at the latest. You can apply up to one year in advance (admission test result is valid for one year). Combined Master's degree / PhD programme The Master of Science in International Business can be combined with every undergraduate degree course , regardless of what the students have studied before, and is therefore aimed specifically at engineers, IT graduates, c",
+            "retrieved_at": "2026-05-24T12:41:14.111449+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5263/",
+          "text": "Master of Science in International Business, MSc For all other applicants, the admission period is more flexible and ends in February at the latest. You can apply up to one year in advance (admission test result is valid for one year). Combined Master's degree / PhD programme The Master of Science in International Business can be combined with every undergraduate degree course , regardless of what the students have studied before, and is therefore aimed specifically at engineers, IT graduates, communication experts, and humanities graduates who wish to study business administration at Master's level and with an international, highly practical emphasis. The Master's course covers important areas of business education such as business law, international marketing, production, procurement or financial management. In combination with your first degree, you will have an exceptional range of specific knowledge and the soft skills that will make you particularly attractive for employers, thus broadening your career prospects. Semester 4: Master's thesis Twelve weeks of internship, in addition to practical study projects with companies or study excursions Academic admission requirements A successfully completed Bachelor's degree with at least 180 ECTS points Submission of the online application form and uploading documents online: Bachelor's degree certificate (if available), transcript of records, CV, letter of motivation, English language certificate of level B2, etc. Admission process The admission process consists of preparing a brief case study presentation and an online interview. You are expected to present the results of your case study on the day of the admissions test. Language requirements TOEFL (at least a score of 80, Internet-based) or IELTS (at least 6.0) or at least 30 ECTS in an English-language higher education programme or For all other applicants, the admission period is more flexible and ends in February at the latest. You can apply up to one year in advance (admission test result is valid for one year). ISM has an online application process. Learn how to apply for this Master's programme here . Study Advisor Master's Programmes"
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "5263",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=International%20School%20of%20Management&limit=25&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5263/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Summer semester",
+        "programme_duration": "4 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "International Business (MSc) - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "International Business (MSc) International Business (MSc)",
+          "International School of Management (ISM) • Dortmund",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "Degree",
+          "Master of Science in International Business, MSc",
+          "Course location",
+          "Dortmund",
+          "Teaching language",
+          "English",
+          "Languages",
+          "Courses are held in English. Optionally, German language courses are available, for different language levels.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "4 semesters",
+          "Beginning",
+          "Summer semester",
+          "Additional information on beginning, duration and mode of study",
+          "This course of study is offered at our locations in Dortmund, Frankfurt/Main, Munich and Berlin.",
+          "Application deadline",
+          "Applicants who require a visa for Germany must submit their application documents by the following deadline:",
+          "15 December (The semester starts in March.)",
+          "For all other applicants, the admission period is more flexible and ends in February at the latest.",
+          "You can apply up to one year in advance (admission test result is valid for one year).",
+          "Tuition fees per semester in EUR",
+          "6,480 EUR",
+          "Additional information on tuition fees",
+          "6,480 EUR per semester",
+          "Monthly payments are also possible upon approval by university.",
+          "One-time enrolment fees",
+          "EU & EEA (European Economic Area) students: 600 EUR",
+          "Non-EU students: 1,500 EUR",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "The Master of Science in International Business can be combined with every undergraduate degree course , regardless of what the students have studied before, and is therefore aimed specifically at engineers, IT graduates, communication experts, and humanities graduates who wish to study business administration at Master's level and with an international, highly practical emphasis.",
+          "The Master's course covers important areas of business education such as business law, international marketing, production, procurement or financial management. In combination with your first degree, you will have an exceptional range of specific knowledge and the soft skills that will make you particularly attractive for employers, thus broadening your career prospects.",
+          "Did you know?",
+          "ISM was the first German private university of applied sciences to be internationally AACSB accredited – only around six percent of business schools worldwide are AACSB accredited, an internationally-recognised mark of quality for excellence in teaching, research, and social impact.",
+          "Course organisation",
+          "Semester 1: Focus on the principles of business administration, comprehensive insight into financial reporting and taxation, necessary quantitative methods to successfully run a business such as business mathematics and statistics"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "MA in Luxury, Fashion & Sales Management",
+        "degree": "Master of Arts in Luxury, Fashion & Sales Management",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5265/",
+        "campus": "München",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": 210,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master of Arts in Luxury, Fashion & Sales Management For all other applicants, the admission period ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year). Combined Master's degree / PhD programme This Master’s programme combines business administration knowledge with a specific emphasis on fashion management and marketing, retail, purchasing or sales in the luxury and consumer goods industries . The main focus of the course is on the fashion industry. However, the luxury goods sector covers a much broader range of products, from the furniture industry to the automotive industry. This programme can be started in the winter semester only (end of September) and is offered in English. The regular duration of four semesters can be shortened to three semesters if, for example, you bring 210 ECTS from your Bachelor's studies (check the Fast Track option). Semester 4: Master's thesis Projects with partners in Germany and abroad In order to fully prepare you for a career in the international business world of luxury and fashion sales, in this Master's programme Academic admission requirements The prerequisites for admission to this Master's programme are as follows a successfully completed Bachelor's degree with at least 180 ECTS points at least 30 ECTS credits from a course of study in economics, business psychology or media or communication studies Admission process The online admission process consists of a case study presentation and an interview. Language requirements TOEFL (at least a score of 80, Internet-based) or IELTS (at least 6.0) or at least 30 ECTS in an English-language higher education programme or For all other applicants, the admission period ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year). ISM has an online application process. Learn how to apply for this Master's programme here . Study Advisor Master's Programmes"
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Applicants who require a visa for studying in Germany must submit their application documents by the following deadline"
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "6,480 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5265/",
+            "source_text": "Master of Arts in Luxury, Fashion & Sales Management For all other applicants, the admission period ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year). Combined Master's degree / PhD programme This Master’s programme combines business administration knowledge with a specific emphasis on fashion management and marketing, retail, purchasing or sales in the luxury and consumer goods industries . The main focus of the course is on the ",
+            "retrieved_at": "2026-05-24T12:41:14.111449+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5265/",
+          "text": "Master of Arts in Luxury, Fashion & Sales Management For all other applicants, the admission period ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year). Combined Master's degree / PhD programme This Master’s programme combines business administration knowledge with a specific emphasis on fashion management and marketing, retail, purchasing or sales in the luxury and consumer goods industries . The main focus of the course is on the fashion industry. However, the luxury goods sector covers a much broader range of products, from the furniture industry to the automotive industry. This programme can be started in the winter semester only (end of September) and is offered in English. The regular duration of four semesters can be shortened to three semesters if, for example, you bring 210 ECTS from your Bachelor's studies (check the Fast Track option). Semester 4: Master's thesis Projects with partners in Germany and abroad In order to fully prepare you for a career in the international business world of luxury and fashion sales, in this Master's programme Academic admission requirements The prerequisites for admission to this Master's programme are as follows a successfully completed Bachelor's degree with at least 180 ECTS points at least 30 ECTS credits from a course of study in economics, business psychology or media or communication studies Admission process The online admission process consists of a case study presentation and an interview. Language requirements TOEFL (at least a score of 80, Internet-based) or IELTS (at least 6.0) or at least 30 ECTS in an English-language higher education programme or For all other applicants, the admission period ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year). ISM has an online application process. Learn how to apply for this Master's programme here . Study Advisor Master's Programmes"
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "5265",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=International%20School%20of%20Management&limit=25&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5265/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "4 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "MA in Luxury, Fashion & Sales Management - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "MA in Luxury, Fashion & Sales Management MA in Luxury, Fashion & Sales Management",
+          "International School of Management (ISM) • München",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "Degree",
+          "Master of Arts in Luxury, Fashion & Sales Management",
+          "Course location",
+          "München",
+          "Teaching language",
+          "English",
+          "Languages",
+          "Courses are held in English.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "4 semesters",
+          "Beginning",
+          "Winter semester",
+          "Additional information on beginning, duration and mode of study",
+          "This course of study is offered at our locations in Munich and Berlin.",
+          "Application deadline",
+          "Applicants who require a visa for studying in Germany must submit their application documents by the following deadline:",
+          "15 July (The semester starts in September.)",
+          "For all other applicants, the admission period ends at the latest in August.",
+          "You can apply up to one year in advance (admission test result is valid for one year).",
+          "Tuition fees per semester in EUR",
+          "6,480 EUR",
+          "Additional information on tuition fees",
+          "Tuition fees per semester:",
+          "6,480 EUR",
+          "Monthly payments are also possible upon request and agreement with university.",
+          "One-time enrolment fee",
+          "EU & EEA (European Economic Area) students: 600 EUR",
+          "Non-EU students: 1,500 EUR",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "Yes",
+          "Description/content",
+          "This Master’s programme combines business administration knowledge with a specific emphasis on fashion management and marketing, retail, purchasing or sales in the luxury and consumer goods industries . The main focus of the course is on the fashion industry. However, the luxury goods sector covers a much broader range of products, from the furniture industry to the automotive industry.",
+          "Students get to know the complex value chains as well as different sales and action concepts. E-commerce plays just as important a role as classic retail structures. The programme is rounded off by content in marketing and brand management .",
+          "This programme can be started in the winter semester only (end of September) and is offered in English. The regular duration of four semesters can be shortened to three semesters if, for example, you bring 210 ECTS from your Bachelor's studies (check the Fast Track option).",
+          "The programme is internationally AACSB accredited and includes a semester abroad at a partner university in Europe or overseas, practical teaching by lecturers who are experts and managers in the real business world, twelve weeks of compulsory internships, workshops and company excursions to practice your learned skills and prepare you optimally for your future career. Optionally, students can receive a second, accredited double degree from a partner university of the ISM abroad, in France, United States, Spain, Australia, etc.",
+          "Course organisation"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "MA in Strategic Marketing Management",
+        "degree": "Master of Arts in Strategic Marketing Management (MA)",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5264/",
+        "campus": "Berlin",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": 180,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master of Arts in Strategic Marketing Management (MA) For all other applicants, the admission period ends at the latest in August. The admission test is valid for one year and students can thus apply up to one year in advance. Combined Master's degree / PhD programme In the Master's in Strategic Marketing Management, you will learn to analyse dynamic framework conditions in globalised markets and to develop promising strategies through qualitative and quantitative analyses. During your studies, you will benefit from the intensive exchange with experts from the business world and implement your own projects. In order to fully prepare you for a career in international data science, in this Master's programme Semester 4: Master's thesis Practice-oriented lectures, consulting projects and a twelve-week practical phase are important components of the course. In addition, students have the possibility to complete an international double degree. Projects with partners in Germany and abroad Academic admission requirements A successfully completed Bachelor's degree with at least 180 ECTS points and examinations must be at least 30 ECTS points in the field of business sciences Submission of the online application form and uploading of certain documents (Bachelor's degree certificate (if available), transcript of records, CV, letter of motivation, English language certificate of level B2) Admission process The admission process takes place online and consists of preparing a brief case study presentation and an interview with the programme director. Language requirements TOEFL (at least a score of 80, Internet-based) or IELTS (at least 6.0) or at least 30 ECTS in an English-language higher education programme or For all other applicants, the admission period ends at the latest in August. The admission test is valid for one year and students can thus apply up to one year in advance. ISM has an online application process. Learn how to apply for this Master's programme here . Study Advisor Master's Programmes"
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Applicants who require a visa for studying in Germany must submit their application documents by the following deadline"
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "6,480 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5264/",
+            "source_text": "Master of Arts in Strategic Marketing Management (MA) For all other applicants, the admission period ends at the latest in August. The admission test is valid for one year and students can thus apply up to one year in advance. Combined Master's degree / PhD programme In the Master's in Strategic Marketing Management, you will learn to analyse dynamic framework conditions in globalised markets and to develop promising strategies through qualitative and quantitative analyses. During your studies, ",
+            "retrieved_at": "2026-05-24T12:41:14.111449+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5264/",
+          "text": "Master of Arts in Strategic Marketing Management (MA) For all other applicants, the admission period ends at the latest in August. The admission test is valid for one year and students can thus apply up to one year in advance. Combined Master's degree / PhD programme In the Master's in Strategic Marketing Management, you will learn to analyse dynamic framework conditions in globalised markets and to develop promising strategies through qualitative and quantitative analyses. During your studies, you will benefit from the intensive exchange with experts from the business world and implement your own projects. In order to fully prepare you for a career in international data science, in this Master's programme Semester 4: Master's thesis Practice-oriented lectures, consulting projects and a twelve-week practical phase are important components of the course. In addition, students have the possibility to complete an international double degree. Projects with partners in Germany and abroad Academic admission requirements A successfully completed Bachelor's degree with at least 180 ECTS points and examinations must be at least 30 ECTS points in the field of business sciences Submission of the online application form and uploading of certain documents (Bachelor's degree certificate (if available), transcript of records, CV, letter of motivation, English language certificate of level B2) Admission process The admission process takes place online and consists of preparing a brief case study presentation and an interview with the programme director. Language requirements TOEFL (at least a score of 80, Internet-based) or IELTS (at least 6.0) or at least 30 ECTS in an English-language higher education programme or For all other applicants, the admission period ends at the latest in August. The admission test is valid for one year and students can thus apply up to one year in advance. ISM has an online application process. Learn how to apply for this Master's programme here . Study Advisor Master's Programmes"
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "5264",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=International%20School%20of%20Management&limit=25&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5264/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "4 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "MA in Strategic Marketing Management - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "MA in Strategic Marketing Management MA in Strategic Marketing Management",
+          "International School of Management (ISM) • Berlin",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "Degree",
+          "Master of Arts in Strategic Marketing Management (MA)",
+          "Course location",
+          "Berlin",
+          "Teaching language",
+          "English",
+          "Languages",
+          "Courses are held in English.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "4 semesters",
+          "Beginning",
+          "Winter semester",
+          "Additional information on beginning, duration and mode of study",
+          "This programme is offered at our locations in Munich, Berlin and Dortmund.",
+          "Application deadline",
+          "Applicants who require a visa for studying in Germany must submit their application documents by the following deadline:",
+          "15 July (Semester starts in September.)",
+          "For all other applicants, the admission period ends at the latest in August.",
+          "The admission test is valid for one year and students can thus apply up to one year in advance.",
+          "Tuition fees per semester in EUR",
+          "6,480 EUR",
+          "Additional information on tuition fees",
+          "6,480 EUR per semester",
+          "Monthly payments are also available upon agreement with university.",
+          "One-time enrolment fee",
+          "EU & EEA (European Economic Area) students: 600 EUR",
+          "Non-EU students: 1,500 EUR",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "Yes",
+          "Description/content",
+          "In the Master's in Strategic Marketing Management, you will learn to analyse dynamic framework conditions in globalised markets and to develop promising strategies through qualitative and quantitative analyses. During your studies, you will benefit from the intensive exchange with experts from the business world and implement your own projects.",
+          "The MA Strategic Marketing Management prepares you for a career in international marketing . You will be able to derive promising marketing strategies from the findings of market research and the specifications of corporate management as well as to plan and control them in a goal-oriented manner.",
+          "In order to fully prepare you for a career in international data science, in this Master's programme:",
+          "You’ll spend a semester abroad at one of the 190+ partner universities around the world.",
+          "Optionally, you can opt for the Double Degree at a partner university abroad and graduate with two degrees at the same time.",
+          "The programme is also internationally AACSB accredited, ISM being the first German private university of applied sciences that received the prestigious AACSB accreditation in 2024."
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master in International Management",
+        "degree": "Master of Science in International Management, MSc",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5260/",
+        "campus": "Dortmund",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": 210,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master in International Management Master in International Management Master of Science in International Management, MSc This Master's programme is offered at our campuses in Dortmund, Frankfurt/Main, Munich, Berlin, Hamburg, Cologne and Stuttgart . The regular duration of four semesters can be shortened to three semesters if, for example, you bring 210 ECTS from your Bachelor's studies (with the Fast Track option). For all other applicants, the admission period ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year). Combined Master's degree / PhD programme The full-time Master’s in International Management at the International School of Management (ISM) combines management theory, analytics, and practical application in a dynamic and interdisciplinary way. Alongside core business management courses, you’ll have the chance to tailor your studies by choosing specialisation modules - whether in accounting & finance, marketing, or operations management. This flexibility ensures you gain the broad range of skills needed to succeed as a future leader in companies and international organisations. Semester 4: Master's thesis Practice-oriented lectures, consulting projects and a twelve-week practical phase are important components of the course. Furthermore, students have the possibility to complete an international double degree. Projects with partners in Germany and abroad In order to fully prepare you for a career in international management, in this Master's programme Academic admission requirements A successfully completed Bachelor's degree with at least 180 ECTS points or an equivalent course of study at a university or university of applied sciences or a foreign higher education institution of corresponding rank You bring at least 30 ECTS credits in the field of economics. Submission of the online application form and uploading certain documents (Bachelor's degree certificate (if available), transcript of records, CV, letter of motivation, English language certificate of level B2) Admission process: The admission process consists of preparing a brief case study presentation and an online interview. Language requirements TOEFL (at least a score of 80, Internet-based) or IELTS (at least 6.0) or at least 30 ECTS in an English-language higher education programme or For all other applicants, the admission period ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year). Study Advisor Master's Programmes"
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Applicants who require a visa for Germany must submit their application documents by the following deadline"
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "6,480 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5260/",
+            "source_text": "Master in International Management Master in International Management Master of Science in International Management, MSc This Master's programme is offered at our campuses in Dortmund, Frankfurt/Main, Munich, Berlin, Hamburg, Cologne and Stuttgart . The regular duration of four semesters can be shortened to three semesters if, for example, you bring 210 ECTS from your Bachelor's studies (with the Fast Track option). For all other applicants, the admission period ends at the latest in August. You",
+            "retrieved_at": "2026-05-24T12:41:14.111449+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5260/",
+          "text": "Master in International Management Master in International Management Master of Science in International Management, MSc This Master's programme is offered at our campuses in Dortmund, Frankfurt/Main, Munich, Berlin, Hamburg, Cologne and Stuttgart . The regular duration of four semesters can be shortened to three semesters if, for example, you bring 210 ECTS from your Bachelor's studies (with the Fast Track option). For all other applicants, the admission period ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year). Combined Master's degree / PhD programme The full-time Master’s in International Management at the International School of Management (ISM) combines management theory, analytics, and practical application in a dynamic and interdisciplinary way. Alongside core business management courses, you’ll have the chance to tailor your studies by choosing specialisation modules - whether in accounting & finance, marketing, or operations management. This flexibility ensures you gain the broad range of skills needed to succeed as a future leader in companies and international organisations. Semester 4: Master's thesis Practice-oriented lectures, consulting projects and a twelve-week practical phase are important components of the course. Furthermore, students have the possibility to complete an international double degree. Projects with partners in Germany and abroad In order to fully prepare you for a career in international management, in this Master's programme Academic admission requirements A successfully completed Bachelor's degree with at least 180 ECTS points or an equivalent course of study at a university or university of applied sciences or a foreign higher education institution of corresponding rank You bring at least 30 ECTS credits in the field of economics. Submission of the online application form and uploading certain documents (Bachelor's degree certificate (if available), transcript of records, CV, letter of motivation, English language certificate of level B2) Admission process: The admission process consists of preparing a brief case study presentation and an online interview. Language requirements TOEFL (at least a score of 80, Internet-based) or IELTS (at least 6.0) or at least 30 ECTS in an English-language higher education programme or For all other applicants, the admission period ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year). Study Advisor Master's Programmes"
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "5260",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=International%20School%20of%20Management&limit=25&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5260/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "4 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "Master in International Management - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Master in International Management Master in International Management",
+          "International School of Management (ISM) • Dortmund",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "Degree",
+          "Master of Science in International Management, MSc",
+          "Course location",
+          "Dortmund",
+          "Teaching language",
+          "English",
+          "Languages",
+          "Courses are held in English.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "4 semesters",
+          "Beginning",
+          "Winter semester",
+          "Additional information on beginning, duration and mode of study",
+          "This Master's programme is offered at our campuses in Dortmund, Frankfurt/Main, Munich, Berlin, Hamburg, Cologne and Stuttgart .",
+          "This programme can be started in winter semester only (end of September) and is offered in English .",
+          "The regular duration of four semesters can be shortened to three semesters if, for example, you bring 210 ECTS from your Bachelor's studies (with the Fast Track option).",
+          "Application deadline",
+          "Applicants who require a visa for Germany must submit their application documents by the following deadline:",
+          "15 July (for a start at the end of September)",
+          "For all other applicants, the admission period ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year).",
+          "Tuition fees per semester in EUR",
+          "6,480 EUR",
+          "Additional information on tuition fees",
+          "Tuition fees per semester",
+          "6,480 EUR",
+          "One-time enrolment fees",
+          "EU & EEA (European Economic Area) students: 600 EUR",
+          "Non-EU students: 1,500 EUR",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "Yes",
+          "Description/content",
+          "The full-time Master’s in International Management at the International School of Management (ISM) combines management theory, analytics, and practical application in a dynamic and interdisciplinary way. Alongside core business management courses, you’ll have the chance to tailor your studies by choosing specialisation modules - whether in accounting & finance, marketing, or operations management. This flexibility ensures you gain the broad range of skills needed to succeed as a future leader in companies and international organisations.",
+          "Real-world learning i s at the heart of the programme: integrated case studies, study trips, and internships with leading companies give you valuable hands-on experience. You’ll strengthen your problem-solving abilities, build professional networks and soft skills necessary for managing international teams and demonstrate your potential across different business field, significantly boosting your career opportunities after graduation.",
+          "Did you know:",
+          "ISM is internationally AACSB accredited – only around six percent of business schools worldwide are AACSB accredited, an internationally-recognised mark of quality for excellence in teaching, research, and social impact.",
+          "Course organisation"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "MBA in General Management",
+        "degree": "Master of Business Administration in General Management (MBA)",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7090/",
+        "campus": "München",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": 30,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master of Business Administration in General Management (MBA) For all other applicants , the admission period is more flexible and ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year). 8,700 EUR per trimester + 1,200 EUR Master's thesis fee Combined Master's degree / PhD programme 8,700 EUR per trimester + 1,200 EUR Master's thesis fee Academic admission requirements The admission process takes place online and consists of a personal online interview in English and preparing a brief case study presentation. Start the process by filling out the online application form and uploading your application documents. The aim is to assess the applicants' motivation and suitability for their professional and private life as well as their English language skills. To the admission form Language requirements English certificate – at least level B2 according to European reference framework (must not be older than two years), e.g. TOEFL (at least 80 points Internet-based), IELTS (6.0 or better), or at least 30 ECTS in an English-language university programme or For all other applicants , the admission period is more flexible and ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year)."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "The standard period of study for the full-time MBA is three trimesters plus the thesis ."
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "8,700 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7090/",
+            "source_text": "Master of Business Administration in General Management (MBA) For all other applicants , the admission period is more flexible and ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year). 8,700 EUR per trimester + 1,200 EUR Master's thesis fee Combined Master's degree / PhD programme 8,700 EUR per trimester + 1,200 EUR Master's thesis fee Academic admission requirements The admission process takes place online and consists of a personal",
+            "retrieved_at": "2026-05-24T12:41:14.111449+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7090/",
+          "text": "Master of Business Administration in General Management (MBA) For all other applicants , the admission period is more flexible and ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year). 8,700 EUR per trimester + 1,200 EUR Master's thesis fee Combined Master's degree / PhD programme 8,700 EUR per trimester + 1,200 EUR Master's thesis fee Academic admission requirements The admission process takes place online and consists of a personal online interview in English and preparing a brief case study presentation. Start the process by filling out the online application form and uploading your application documents. The aim is to assess the applicants' motivation and suitability for their professional and private life as well as their English language skills. To the admission form Language requirements English certificate – at least level B2 according to European reference framework (must not be older than two years), e.g. TOEFL (at least 80 points Internet-based), IELTS (6.0 or better), or at least 30 ECTS in an English-language university programme or For all other applicants , the admission period is more flexible and ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year)."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "7090",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=International%20School%20of%20Management&limit=25&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7090/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "3 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "MBA in General Management - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "MBA in General Management MBA in General Management",
+          "International School of Management (ISM) • München",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "Degree",
+          "Master of Business Administration in General Management (MBA)",
+          "Course location",
+          "München",
+          "Teaching language",
+          "English",
+          "Languages",
+          "Courses are held in English.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "3 semesters",
+          "Beginning",
+          "Winter semester",
+          "Additional information on beginning, duration and mode of study",
+          "This course of study is offered at our locations in Munich and Berlin.",
+          "Application deadline",
+          "The standard period of study for the full-time MBA is three trimesters plus the thesis .",
+          "Applicants who require a visa for studying in Germany must submit their application documents by the following deadline:",
+          "15 July (semester starts end of September)",
+          "For all other applicants , the admission period is more flexible and ends at the latest in August.",
+          "You can apply up to one year in advance (admission test result is valid for one year).",
+          "Tuition fees per semester in EUR",
+          "8,700 EUR",
+          "Additional information on tuition fees",
+          "8,700 EUR per trimester + 1,200 EUR Master's thesis fee",
+          "Monthly payments are also possible.",
+          "One-time enrolment fee:",
+          "EU & EEA students: 600 EUR",
+          "Non-EU students: 1,500 EUR",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "Would you like to qualify for management positions in the economy and complete a course of study with high practical relevance, a personal coach and modules abroad? Then the MBA programme in General Management at ISM is the right thing for you. You will specifically expand your business and management knowledge and transfer it into professional practice.",
+          "The MBA programme is offered entirely in English , and it includes a stay abroad in Spain, in Barcelona . In addition, the MBA programme provides you with the advantage of being supervised by a professional coach during the course of your studies. You will work on your soft skills and optimise your leadership qualities, all while developing a career growing strategy and building your personal network.",
+          "This MBA is offered at our campuses in Berlin and Munich and can be started in winter semester only (end of September).",
+          "Internationally AACSB accredited and Top Tier Position in the Global MBA Ranking – In the worldwide MBA university ranking, ISM achieved a top tier position for the third year in a row. ISM convinced – as one of only five awarded German business schools – with its quality teaching and practical relevance. Unique to ISM are the integrated modules abroad and the intensive professional coaching of MBA students.",
+          "Course organisation"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "MSc in Business Intelligence & Data Science",
+        "degree": "Master of Science in Business Intelligence & Data Science, MSc",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6238/",
+        "campus": "München",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": 210,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master of Science in Business Intelligence & Data Science, MSc The regular duration of four semester can be shortened to three semesters if, for example, you bring 210 ECTS from your Bachelor's studies (check the option Fast Track). For all other applicants, the admission period ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year). Combined Master's degree / PhD programme The Master of Science in Business Intelligence & Data Science at ISM combines two exciting disciplines: Business Administration and Data Science . It provides comprehensive methodological knowledge for well-founded data analysis as well as for intelligent and automatic data evaluation and usage. The combination with consulting aspects is what makes the course so special. In addition to IT topics, students also have lessons in company analysis and practical consulting projects . Thus graduates can make important predictions for an enterprise and are significantly involved in achieving business goals more effectively. This Master's degree programme is offered at our locations in Dortmund, Munich, Hamburg and Stuttgart. Semester 1-2: Deepening business management knowledge and comprehensive methodological skills for intelligent data retrieval and analysis, including big data projects that focus on agile project management and scientific methods Semester 4: Master's thesis Practical projects and an integrated internship provide the necessary practical relevance and, in combination with a semester abroad and the possibility of an international double degree , create optimal conditions for entering the international job market. Projects with partners in Germany and abroad In order to fully prepare you for a career in international data science, in this Master's programme Academic admission requirements A successfully completed Bachelor's degree, with at least 180 ECTS points, with at least 15 ECTS credits from the field of business (e.g. business administration, economics, business information systems; or related fields) of those credits or in addition to those credits at least 10 ECTS credits in quantitative courses (e.g. mathematics, statistics, computer science, technology, market research, econometrics; or related fields) Qualified professional experience both in business and in quantitative fields can be used to compensate for a lack of subject-specific ECTS points. submission of the online application form and uploading of certain documents (Bachelor's degree certificate (if available), transcript of records, CV, letter of motivation, English language certificate of level B2) Admission process The admission process consists of preparing a brief case study presentation and an online interview. You are expected to present the results of your case study on the day of the admissions test. To the admission form Language requirements TOEFL (at least a score of 80, Internet-based) or IELTS (at least 6.0) or at least 30 ECTS in an English-language higher education programme or For all other applicants, the admission period ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year). Study Advisor Master's Programmes"
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Applicants who require a visa for studying in Germany must submit their application documents by the following deadline"
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "6,480 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6238/",
+            "source_text": "Master of Science in Business Intelligence & Data Science, MSc The regular duration of four semester can be shortened to three semesters if, for example, you bring 210 ECTS from your Bachelor's studies (check the option Fast Track). For all other applicants, the admission period ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year). Combined Master's degree / PhD programme The Master of Science in Business Intelligence & Data Science ",
+            "retrieved_at": "2026-05-24T12:41:14.111449+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6238/",
+          "text": "Master of Science in Business Intelligence & Data Science, MSc The regular duration of four semester can be shortened to three semesters if, for example, you bring 210 ECTS from your Bachelor's studies (check the option Fast Track). For all other applicants, the admission period ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year). Combined Master's degree / PhD programme The Master of Science in Business Intelligence & Data Science at ISM combines two exciting disciplines: Business Administration and Data Science . It provides comprehensive methodological knowledge for well-founded data analysis as well as for intelligent and automatic data evaluation and usage. The combination with consulting aspects is what makes the course so special. In addition to IT topics, students also have lessons in company analysis and practical consulting projects . Thus graduates can make important predictions for an enterprise and are significantly involved in achieving business goals more effectively. This Master's degree programme is offered at our locations in Dortmund, Munich, Hamburg and Stuttgart. Semester 1-2: Deepening business management knowledge and comprehensive methodological skills for intelligent data retrieval and analysis, including big data projects that focus on agile project management and scientific methods Semester 4: Master's thesis Practical projects and an integrated internship provide the necessary practical relevance and, in combination with a semester abroad and the possibility of an international double degree , create optimal conditions for entering the international job market. Projects with partners in Germany and abroad In order to fully prepare you for a career in international data science, in this Master's programme Academic admission requirements A successfully completed Bachelor's degree, with at least 180 ECTS points, with at least 15 ECTS credits from the field of business (e.g. business administration, economics, business information systems; or related fields) of those credits or in addition to those credits at least 10 ECTS credits in quantitative courses (e.g. mathematics, statistics, computer science, technology, market research, econometrics; or related fields) Qualified professional experience both in business and in quantitative fields can be used to compensate for a lack of subject-specific ECTS points. submission of the online application form and uploading of certain documents (Bachelor's degree certificate (if available), transcript of records, CV, letter of motivation, English language certificate of level B2) Admission process The admission process consists of preparing a brief case study presentation and an online interview. You are expected to present the results of your case study on the day of the admissions test. To the admission form Language requirements TOEFL (at least a score of 80, Internet-based) or IELTS (at least 6.0) or at least 30 ECTS in an English-language higher education programme or For all other applicants, the admission period ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year). Study Advisor Master's Programmes"
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "6238",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=International%20School%20of%20Management&limit=25&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6238/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "4 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "MSc in Business Intelligence & Data Science - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "MSc in Business Intelligence & Data Science MSc in Business Intelligence & Data Science",
+          "International School of Management (ISM) • München",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "Degree",
+          "Master of Science in Business Intelligence & Data Science, MSc",
+          "Course location",
+          "München",
+          "Teaching language",
+          "English",
+          "Languages",
+          "Courses are held in English .",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "4 semesters",
+          "Beginning",
+          "Winter semester",
+          "Additional information on beginning, duration and mode of study",
+          "This course of study is offered at our locations in Dortmund, Munich, Hamburg and Stuttgart.",
+          "The regular duration of four semester can be shortened to three semesters if, for example, you bring 210 ECTS from your Bachelor's studies (check the option Fast Track).",
+          "Application deadline",
+          "Applicants who require a visa for studying in Germany must submit their application documents by the following deadline:",
+          "15 July (The semester starts in September.)",
+          "For all other applicants, the admission period ends at the latest in August.",
+          "You can apply up to one year in advance (admission test result is valid for one year).",
+          "Tuition fees per semester in EUR",
+          "6,480 EUR",
+          "Additional information on tuition fees",
+          "6,480 EUR per semester",
+          "Monthly payments are also available upon agreement with university.",
+          "One-time enrolment fee",
+          "EU & EEA (European Economic Area) students: 600 EUR",
+          "Non-EU students: 1,500 EUR",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "Yes",
+          "Description/content",
+          "The Master of Science in Business Intelligence & Data Science at ISM combines two exciting disciplines: Business Administration and Data Science . It provides comprehensive methodological knowledge for well-founded data analysis as well as for intelligent and automatic data evaluation and usage.",
+          "The combination with consulting aspects is what makes the course so special. In addition to IT topics, students also have lessons in company analysis and practical consulting projects . Thus graduates can make important predictions for an enterprise and are significantly involved in achieving business goals more effectively.",
+          "This Master's degree programme is offered at our locations in Dortmund, Munich, Hamburg and Stuttgart.",
+          "The programme is also internationally AACSB accredited and includes: a semester abroad at a partner university in Europe or overseas, practical teaching by lecturers who are experts and IT managers in the real business world, twelve weeks of compulsory internships, workshops and company excursions to practice your learned skills and prepare you optimally for your future career. Optionally, students can receive a second, accredited double degree from a partner university of the ISM abroad.",
+          "Course organisation"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "International School of Management (ISM)",
+        "url": "https://en.ism.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "MSc International Logistics & Supply Chain Management",
+        "degree": "Master of Science in International Logistics & Supply Chain Management (MSc)",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5261/",
+        "campus": "Frankfurt am Main",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": 180,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master of Science in International Logistics & Supply Chain Management (MSc) For all other applicants, the admission period ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year). Combined Master's degree / PhD programme You will benefit from lecturers from the most renowned logistics and consulting companies as well as from ISM's involvement in projects with logistics companies , such as an international research centre for sustainable logistics and mobility. This excellent network gives you access to practical projects and valuable contacts in the industry. Semester 4: Master's thesis Projects with partners in Germany and abroad Academic admission requirements A successfully completed Bachelor's degree with at least 180 ECTS points or an equivalent course of study at a university or university of applied sciences or a foreign higher education institution of corresponding rank Examinations must be at least 30 ECTS points in the field of business sciences. Submission of the online application form and uploading certain documents (Bachelor's degree certificate (if available), transcript of records, CV, letter of motivation, English language certificate of level B2) Successful participation in an online admission process Admission process The admission process consists of preparing a brief case study presentation and an online interview with the programme director. Language requirements TOEFL (at least a score of 80, Internet-based) or IELTS (at least 6.0) or at least 30 ECTS in an English-language higher education programme or For all other applicants, the admission period ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year). ISM has an online application process. Learn how to apply for this Master's programme here . Study Advisor Master's Programmes"
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Applicants who require a visa for studying in Germany must submit their application documents by the following deadline"
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "6,480 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5261/",
+            "source_text": "Master of Science in International Logistics & Supply Chain Management (MSc) For all other applicants, the admission period ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year). Combined Master's degree / PhD programme You will benefit from lecturers from the most renowned logistics and consulting companies as well as from ISM's involvement in projects with logistics companies , such as an international research centre for sustainabl",
+            "retrieved_at": "2026-05-24T12:41:14.111449+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5261/",
+          "text": "Master of Science in International Logistics & Supply Chain Management (MSc) For all other applicants, the admission period ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year). Combined Master's degree / PhD programme You will benefit from lecturers from the most renowned logistics and consulting companies as well as from ISM's involvement in projects with logistics companies , such as an international research centre for sustainable logistics and mobility. This excellent network gives you access to practical projects and valuable contacts in the industry. Semester 4: Master's thesis Projects with partners in Germany and abroad Academic admission requirements A successfully completed Bachelor's degree with at least 180 ECTS points or an equivalent course of study at a university or university of applied sciences or a foreign higher education institution of corresponding rank Examinations must be at least 30 ECTS points in the field of business sciences. Submission of the online application form and uploading certain documents (Bachelor's degree certificate (if available), transcript of records, CV, letter of motivation, English language certificate of level B2) Successful participation in an online admission process Admission process The admission process consists of preparing a brief case study presentation and an online interview with the programme director. Language requirements TOEFL (at least a score of 80, Internet-based) or IELTS (at least 6.0) or at least 30 ECTS in an English-language higher education programme or For all other applicants, the admission period ends at the latest in August. You can apply up to one year in advance (admission test result is valid for one year). ISM has an online application process. Learn how to apply for this Master's programme here . Study Advisor Master's Programmes"
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "5261",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=International%20School%20of%20Management&limit=25&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5261/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "4 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "MSc International Logistics & Supply Chain Management - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "MSc International Logistics & Supply Chain Management MSc Logistics & Supply Chain Management",
+          "International School of Management (ISM) • Frankfurt am Main",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "Degree",
+          "Master of Science in International Logistics & Supply Chain Management (MSc)",
+          "Course location",
+          "Frankfurt am Main",
+          "Teaching language",
+          "English",
+          "Languages",
+          "Courses are held in English.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "4 semesters",
+          "Beginning",
+          "Winter semester",
+          "Additional information on beginning, duration and mode of study",
+          "This programme is offered at our locations in Frankfurt/Main and Hamburg.",
+          "Application deadline",
+          "Applicants who require a visa for studying in Germany must submit their application documents by the following deadline:",
+          "15 July (Semester starts in September.)",
+          "For all other applicants, the admission period ends at the latest in August.",
+          "You can apply up to one year in advance (admission test result is valid for one year).",
+          "Tuition fees per semester in EUR",
+          "6,480 EUR",
+          "Additional information on tuition fees",
+          "6,480 EUR per semester",
+          "Monthly payments are also available upon agreement with university.",
+          "One-time enrolment fee",
+          "EU & EEA (European Economic Area) students: 600 EUR",
+          "Non-EU students: 1,500 EUR",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "Yes",
+          "Description/content",
+          "The Logistics & Supply Chain Management programme at ISM focuses on business management methods and skills in international logistics and supply chain management . You will be taught to analyse strategic and operative problems, develop solution concepts and apply them effectively in business practice.",
+          "You will benefit from lecturers from the most renowned logistics and consulting companies as well as from ISM's involvement in projects with logistics companies , such as an international research centre for sustainable logistics and mobility. This excellent network gives you access to practical projects and valuable contacts in the industry.",
+          "In order to fully prepare you for a career in international supply chain management, in this programme:",
+          "You’ll spend a semester abroad at one of the 190+ ISM partner universities around the world.",
+          "Optionally, you can opt for the double degree at a partner university and graduate with two degrees at the same time.",
+          "ISM is the first German private university of applied sciences that was internationally AACSB accredited in 2024 – only around six percent of business schools worldwide are AACSB accredited, an internationally-recognised mark of quality for excellence in teaching, research, and social impact."
+        ]
+      }
+    }
+  ],
+  "skipped": []
+}

@@ -1,0 +1,623 @@
+{
+  "schema_version": "0.4-source",
+  "source_platform": "daad",
+  "source_label": "DAAD",
+  "school": {
+    "name": "Hochschule Bremen",
+    "url": "https://www.hs-bremen.de/en/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university"
+  },
+  "retrieved_at": "2026-05-24T12:49:50.123415+00:00",
+  "source_coverage": {
+    "status": "source_partial_match",
+    "warning": true,
+    "programs_extracted": 4,
+    "limitation_notes": [
+      "Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Bremen+University+of+Applied+Sciences&limit=100&offset=0&display=list: limit=100 offset=0.",
+      "Configured DAAD target is source_partial_match; configured queries and detail URLs may not cover every programme exposed by DAAD."
+    ],
+    "future_deepening_candidates": [
+      {
+        "note": "Separate base HSB records from International Graduate Center records during scraper implementation."
+      }
+    ]
+  },
+  "programs": [
+    {
+      "school": {
+        "name": "Hochschule Bremen",
+        "url": "https://www.hs-bremen.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International Degree Programme in Ship Management – Nautical Sciences",
+        "degree": "Bachelor of Science",
+        "level": "bachelor",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4409/",
+        "campus": "Bremen",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": 30,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Bachelor of Science All classes and examinations are held in English. German proficiency isn't required for admission. Students must reach certain levels of German during the programme and be at a B2 German level to participate in the final exams to gain the Certificate of Competency. Courses to achieve this level of German are offered as extra courses in cooperation with the Language Centre of Hochschule Bremen and the University of Bremen. There are also German courses offered by other organisations. The international degree programme in Ship Management is a full-time study programme. The curriculum reflects the provisions of the International Convention on Standards of Training, Certification and Watchkeeping (STCW Convention) as amended. The subjects build up the competencies to take over the duties on the operational and management level as deck officer and shipmaster. Students will acquire core competencies in the following subjects ISMN 1.1. Navigation Basics (6 ECTS) ISMN 1.2. Human Element (6 ECTS) ISMN 1.3. Blue Sciences (6 ECTS) ISMN 1.4. Ship Technology (6 ECTS) ISMN 1.5. Maritime Economics (6 ECTS) ISMN 2.1. Navigation Systems / Informatics (6 ECTS) ISMN 2.2. Ship Manoeuvring (6 ECTS) ISMN 2.3. Tanker Shipping & Operations (6 ECTS) ISMN 2.4. Ship Stability, Trim & Strength (6 ECTS) ISMN 2.5. Shipping Law & Environmental Liability (6 ECTS) ISMN 3.1. Practical Semester – internship at sea (30 ECTS) ISMN 4.1. Applied Navigation (6 ECTS) ISMN 4.2. Watchkeeping (6 ECTS) ISMN 4.3. Dangerous Cargo (6 ECTS) ISMN 4.4. Ship Engineering (6 ECTS) ISMN 4.5. Transport Law & Claim Handling (6 ECTS) ISMN 5.1. Marine Communication (6 ECTS) ISMN 5.2. ARPA/ECDIS (6 ECTS) ISMN 5.3. Dry Cargo Operations (6 ECTS) ISMN 5.4. Ship Automation & Digitalisation (6 ECTS) ISMN 5.5. Maritime Human Resources (6 ECTS) ISMN 6.1. Practical Semester – internship at sea (30 ECTS) ISMN 7.1. Maritime Meteorology (6 ECTS) ISMN 7.2. Applied Ship Handling (6 ECTS) ISMN 7.3. Elective I (Special Ships) (6 ECTS) ISMN 7.4. Safety & Security Management (6 ECTS) ISMN 7.5. Fleet Management (6 ECTS) ISMN 8.1. Ship Command (6 ECTS) ISMN 8.2. Applied Bridge Management (12 ECTS) ISMN 8.3. Elective II (Maritime Management) (6 ECTS) ISMN 8.4. Bachelor's Thesis (6 ECTS) Academic admission requirements Academic admission requirements include one of the following scholastic assessment test / special admission Language requirements In keeping with its official mandate, the Hochschule Bremen, City University of Applied Sciences is involved in numerous research and development projects and operates research institutions in all areas, with a commitment to continual further expansion of these activities."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "15 July for the winter semester 15 January for the summer semester"
+        ],
+        "intakes": [
+          "Winter and summer semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "None"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4409/",
+            "source_text": "Bachelor of Science All classes and examinations are held in English. German proficiency isn't required for admission. Students must reach certain levels of German during the programme and be at a B2 German level to participate in the final exams to gain the Certificate of Competency. Courses to achieve this level of German are offered as extra courses in cooperation with the Language Centre of Hochschule Bremen and the University of Bremen. There are also German courses offered by other organis",
+            "retrieved_at": "2026-05-24T12:49:50.123415+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4409/",
+          "text": "Bachelor of Science All classes and examinations are held in English. German proficiency isn't required for admission. Students must reach certain levels of German during the programme and be at a B2 German level to participate in the final exams to gain the Certificate of Competency. Courses to achieve this level of German are offered as extra courses in cooperation with the Language Centre of Hochschule Bremen and the University of Bremen. There are also German courses offered by other organisations. The international degree programme in Ship Management is a full-time study programme. The curriculum reflects the provisions of the International Convention on Standards of Training, Certification and Watchkeeping (STCW Convention) as amended. The subjects build up the competencies to take over the duties on the operational and management level as deck officer and shipmaster. Students will acquire core competencies in the following subjects ISMN 1.1. Navigation Basics (6 ECTS) ISMN 1.2. Human Element (6 ECTS) ISMN 1.3. Blue Sciences (6 ECTS) ISMN 1.4. Ship Technology (6 ECTS) ISMN 1.5. Maritime Economics (6 ECTS) ISMN 2.1. Navigation Systems / Informatics (6 ECTS) ISMN 2.2. Ship Manoeuvring (6 ECTS) ISMN 2.3. Tanker Shipping & Operations (6 ECTS) ISMN 2.4. Ship Stability, Trim & Strength (6 ECTS) ISMN 2.5. Shipping Law & Environmental Liability (6 ECTS) ISMN 3.1. Practical Semester – internship at sea (30 ECTS) ISMN 4.1. Applied Navigation (6 ECTS) ISMN 4.2. Watchkeeping (6 ECTS) ISMN 4.3. Dangerous Cargo (6 ECTS) ISMN 4.4. Ship Engineering (6 ECTS) ISMN 4.5. Transport Law & Claim Handling (6 ECTS) ISMN 5.1. Marine Communication (6 ECTS) ISMN 5.2. ARPA/ECDIS (6 ECTS) ISMN 5.3. Dry Cargo Operations (6 ECTS) ISMN 5.4. Ship Automation & Digitalisation (6 ECTS) ISMN 5.5. Maritime Human Resources (6 ECTS) ISMN 6.1. Practical Semester – internship at sea (30 ECTS) ISMN 7.1. Maritime Meteorology (6 ECTS) ISMN 7.2. Applied Ship Handling (6 ECTS) ISMN 7.3. Elective I (Special Ships) (6 ECTS) ISMN 7.4. Safety & Security Management (6 ECTS) ISMN 7.5. Fleet Management (6 ECTS) ISMN 8.1. Ship Command (6 ECTS) ISMN 8.2. Applied Bridge Management (12 ECTS) ISMN 8.3. Elective II (Maritime Management) (6 ECTS) ISMN 8.4. Bachelor's Thesis (6 ECTS) Academic admission requirements Academic admission requirements include one of the following scholastic assessment test / special admission Language requirements In keeping with its official mandate, the Hochschule Bremen, City University of Applied Sciences is involved in numerous research and development projects and operates research institutions in all areas, with a commitment to continual further expansion of these activities."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "4409",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Bremen%20University%20of%20Applied%20Sciences&limit=50&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4409/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter and summer semester",
+        "programme_duration": "8 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "International Degree Programme in Ship Management – Nautical Sciences - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "International Degree Programme in Ship Management – Nautical Sciences International Ship Management – Nautical Sciences (ISMN)",
+          "Bremen University of Applied Sciences • Bremen",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Bachelor of Science",
+          "Course location",
+          "Bremen",
+          "Teaching language",
+          "English",
+          "Languages",
+          "All classes and examinations are held in English. German proficiency isn't required for admission. Students must reach certain levels of German during the programme and be at a B2 German level to participate in the final exams to gain the Certificate of Competency. Courses to achieve this level of German are offered as extra courses in cooperation with the Language Centre of Hochschule Bremen and the University of Bremen. There are also German courses offered by other organisations.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "8 semesters",
+          "Beginning",
+          "Winter and summer semester",
+          "Additional information on beginning, duration and mode of study",
+          "Full-time on-site study programme",
+          "Application deadline",
+          "15 July for the winter semester 15 January for the summer semester",
+          "Always check the application deadlines here: https://www.hs-bremen.de/en/study/degree-programme/international-degree-programme-in-ship-management-nautical-sciences-bsc/ .",
+          "Tuition fees per semester in EUR",
+          "None",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "The international degree programme in Ship Management is a full-time study programme. The curriculum reflects the provisions of the International Convention on Standards of Training, Certification and Watchkeeping (STCW Convention) as amended. The subjects build up the competencies to take over the duties on the operational and management level as deck officer and shipmaster. Students will acquire core competencies in the following subjects:",
+          "Navigation, Marine Communication & Ship Command, Watchkeeping",
+          "Manoeuvring & Ship Handling",
+          "Cargo Handling & Ship's Stability",
+          "Ship's Technology & Engineering",
+          "Maritime Digitalisation",
+          "Maritime Safety and Security",
+          "Maritime Economics & Law",
+          "To graduate with a BSc, at least one practical semester (six months) on board a sea-going vessel is required. When graduating with twelve months of on-board training, a German STCW Certificate of Competence by the German Flag State Administration will be issued.",
+          "The graduates will also have many job opportunities in the maritime industry ashore, e.g. in shipping companies, port and cargo services, marine suppliers and IT companies, administration, the energy sector, training and education.",
+          "Course organisation",
+          "Semester One:",
+          "ISMN 1.1. Navigation Basics (6 ECTS) ISMN 1.2. Human Element (6 ECTS) ISMN 1.3. Blue Sciences (6 ECTS) ISMN 1.4. Ship Technology (6 ECTS) ISMN 1.5. Maritime Economics (6 ECTS)",
+          "Semester Two:",
+          "ISMN 2.1. Navigation Systems / Informatics (6 ECTS) ISMN 2.2. Ship Manoeuvring (6 ECTS) ISMN 2.3. Tanker Shipping & Operations (6 ECTS) ISMN 2.4. Ship Stability, Trim & Strength (6 ECTS) ISMN 2.5. Shipping Law & Environmental Liability (6 ECTS)"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "Hochschule Bremen",
+        "url": "https://www.hs-bremen.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International Degree Programme – Shipping and Chartering BA",
+        "degree": "Bachelor of Arts",
+        "level": "bachelor",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5463/",
+        "campus": "Bremen",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Bachelor of Arts All courses are taught in English. The Bachelor's thesis must also be written in English. Please see: https://www.hs-bremen.de/en/study/before/application-and-admission/ . The Shipping and Chartering (ISSC) international degree programme is an interdisciplinary programme combining areas of maritime economy, nautical and technology, maritime management, and maritime law. The interdisciplinary nature of the curriculum reflects the interdisciplinary nature of the maritime industry. It aims to impart fundamental and specialist knowledge as well as methodological and analytical skills to ISSC graduates, thus preparing them for executive roles in the complex, international, and interconnected world of the maritime industry. The ISSC curriculum devotes six semesters to modules covering maritime business related to subjects including maritime economics, management, accounting, ship finance and chartering, Furthermore, the curriculum ensures that ISSC graduates possess broad knowledge of laws relevant to the maritime industry: shipping law and environmental regulation, commercial law, carriage of goods by sea and transport law, charter parties, marine insurance, and maritime arbitration. These subjects are complemented by modules in the areas of ship technology, port economics, dangerous goods, safety and security as well as emergency management. Since 2019, the ISSC study programme has been part of the Blue Sciences Cooperation of Studies and Research. Through the Blue Sciences joint modules offering, ISSC students have opportunities to further strengthen their competences in the areas of blue economy, environmental aspects of marine use, intelligent maritime logistics and maritime environmental management systems. All modules are taught in English. The Bachelor's thesis is also required to be written in English. Projects with partners in Germany and abroad Academic admission requirements Academic admission requirements include one of the following classification test / special admission Language requirements Please see: https://www.hs-bremen.de/en/study/before/application-and-admission/ . If you earned your higher education entrance qualification abroad and meet the admission requirements and the language qualifications , first apply for the \"Vorprüfungsdokumentation\" (VPD) at uni-assist.de before applying to Bremen University of Applied Sciences (HSB) via CampInO with the VPD. Information for prospective international students: https://www.hs-bremen.de/en/study/before/application-and-admission/international-applications/"
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Please see: https://www.hs-bremen.de/en/study/before/application-and-admission/ ."
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "None"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5463/",
+            "source_text": "Bachelor of Arts All courses are taught in English. The Bachelor's thesis must also be written in English. Please see: https://www.hs-bremen.de/en/study/before/application-and-admission/ . The Shipping and Chartering (ISSC) international degree programme is an interdisciplinary programme combining areas of maritime economy, nautical and technology, maritime management, and maritime law. The interdisciplinary nature of the curriculum reflects the interdisciplinary nature of the maritime industry.",
+            "retrieved_at": "2026-05-24T12:49:50.123415+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5463/",
+          "text": "Bachelor of Arts All courses are taught in English. The Bachelor's thesis must also be written in English. Please see: https://www.hs-bremen.de/en/study/before/application-and-admission/ . The Shipping and Chartering (ISSC) international degree programme is an interdisciplinary programme combining areas of maritime economy, nautical and technology, maritime management, and maritime law. The interdisciplinary nature of the curriculum reflects the interdisciplinary nature of the maritime industry. It aims to impart fundamental and specialist knowledge as well as methodological and analytical skills to ISSC graduates, thus preparing them for executive roles in the complex, international, and interconnected world of the maritime industry. The ISSC curriculum devotes six semesters to modules covering maritime business related to subjects including maritime economics, management, accounting, ship finance and chartering, Furthermore, the curriculum ensures that ISSC graduates possess broad knowledge of laws relevant to the maritime industry: shipping law and environmental regulation, commercial law, carriage of goods by sea and transport law, charter parties, marine insurance, and maritime arbitration. These subjects are complemented by modules in the areas of ship technology, port economics, dangerous goods, safety and security as well as emergency management. Since 2019, the ISSC study programme has been part of the Blue Sciences Cooperation of Studies and Research. Through the Blue Sciences joint modules offering, ISSC students have opportunities to further strengthen their competences in the areas of blue economy, environmental aspects of marine use, intelligent maritime logistics and maritime environmental management systems. All modules are taught in English. The Bachelor's thesis is also required to be written in English. Projects with partners in Germany and abroad Academic admission requirements Academic admission requirements include one of the following classification test / special admission Language requirements Please see: https://www.hs-bremen.de/en/study/before/application-and-admission/ . If you earned your higher education entrance qualification abroad and meet the admission requirements and the language qualifications , first apply for the \"Vorprüfungsdokumentation\" (VPD) at uni-assist.de before applying to Bremen University of Applied Sciences (HSB) via CampInO with the VPD. Information for prospective international students: https://www.hs-bremen.de/en/study/before/application-and-admission/international-applications/"
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "5463",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Bremen%20University%20of%20Applied%20Sciences&limit=50&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5463/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "7 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "International Degree Programme – Shipping and Chartering BA - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "International Degree Programme – Shipping and Chartering BA Shipping and Chartering",
+          "Bremen University of Applied Sciences • Bremen",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "Degree",
+          "Bachelor of Arts",
+          "Course location",
+          "Bremen",
+          "Teaching language",
+          "English",
+          "Languages",
+          "All courses are taught in English. The Bachelor's thesis must also be written in English.",
+          "Programme duration",
+          "7 semesters",
+          "Beginning",
+          "Winter semester",
+          "Application deadline",
+          "Please see: https://www.hs-bremen.de/en/study/before/application-and-admission/ .",
+          "Tuition fees per semester in EUR",
+          "None",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "The Shipping and Chartering (ISSC) international degree programme is an interdisciplinary programme combining areas of maritime economy, nautical and technology, maritime management, and maritime law. The interdisciplinary nature of the curriculum reflects the interdisciplinary nature of the maritime industry. It aims to impart fundamental and specialist knowledge as well as methodological and analytical skills to ISSC graduates, thus preparing them for executive roles in the complex, international, and interconnected world of the maritime industry.",
+          "The ISSC curriculum devotes six semesters to modules covering maritime business related to subjects including maritime economics, management, accounting, ship finance and chartering, Furthermore, the curriculum ensures that ISSC graduates possess broad knowledge of laws relevant to the maritime industry: shipping law and environmental regulation, commercial law, carriage of goods by sea and transport law, charter parties, marine insurance, and maritime arbitration. These subjects are complemented by modules in the areas of ship technology, port economics, dangerous goods, safety and security as well as emergency management.",
+          "The fifth semester is dedicated to a mandatory internship (practical placement period) in a maritime business or transport enterprise abroad. International students may be allowed to undertake the mandatory internship in Germany.",
+          "Since 2019, the ISSC study programme has been part of the Blue Sciences Cooperation of Studies and Research. Through the Blue Sciences joint modules offering, ISSC students have opportunities to further strengthen their competences in the areas of blue economy, environmental aspects of marine use, intelligent maritime logistics and maritime environmental management systems.",
+          "All modules are taught in English. The Bachelor's thesis is also required to be written in English.",
+          "Course organisation",
+          "PDF Download",
+          "International elements",
+          "Projects with partners in Germany and abroad",
+          "International guest lecturers",
+          "International comparisons and thematic reference to the international context",
+          "Diverse intercultural background of students",
+          "International students constitute about half of the student body of the study programme. Many students come from countries in Asia, Africa, Latin America, and Europe.",
+          "Integrated internships",
+          "Mandatory internship abroad in the fifth semester International students are allowed to undertake the mandatory internship in Germany.",
+          "Course-specific, integrated German language courses",
+          "No",
+          "Course-specific, integrated English language courses",
+          "No",
+          "Tuition fees per semester in EUR",
+          "None"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "Hochschule Bremen",
+        "url": "https://www.hs-bremen.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International MBA (Dual Degree) - Focus International Marketing",
+        "degree": "Dual degree from two universities: MBA and/or Master's degree",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4625/",
+        "campus": "Bremen",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Dual degree from two universities: MBA and/or Master's degree Third semester: Master's thesis Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university) Combined Master's degree / PhD programme In the first semester, students study the core modules at the International Graduate Center of the Hochschule Bremen City University of Applied Sciences in Germany. In the second and third semesters, students switch to the University of València, Spain for their specialisation and the Master's thesis in International Marketing. Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university) Academic admission requirements Language requirements Very good English language skills are required; applicants must provide proof of English proficiency with TOEFL (Test of English as a Foreign Language) 90 iBT points or IELTS (International English Language Testing System) 6.5 points. Given that this is a one-year, full-time Master's programme with an intense study period and high workload, it is advisable not to work during the course of study. (In general, students from European Union countries are not required to have a work permit to work during their course of study. Students from countries outside the European Union may work 120 full days or 240 half days over the course of one year without a work permit. A special permit is required to work more than that.)"
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Please check the university's website ."
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university)"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4625/",
+            "source_text": "Dual degree from two universities: MBA and/or Master's degree Third semester: Master's thesis Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university) Combined Master's degree / PhD programme In the first semester, students study the core modules at the International Graduate Center of the Hochschule Bremen City University of Applied Sciences in Germany. In the second and third semesters, students switch to the University of València, Spain for t",
+            "retrieved_at": "2026-05-24T12:49:50.123415+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4625/",
+          "text": "Dual degree from two universities: MBA and/or Master's degree Third semester: Master's thesis Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university) Combined Master's degree / PhD programme In the first semester, students study the core modules at the International Graduate Center of the Hochschule Bremen City University of Applied Sciences in Germany. In the second and third semesters, students switch to the University of València, Spain for their specialisation and the Master's thesis in International Marketing. Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university) Academic admission requirements Language requirements Very good English language skills are required; applicants must provide proof of English proficiency with TOEFL (Test of English as a Foreign Language) 90 iBT points or IELTS (International English Language Testing System) 6.5 points. Given that this is a one-year, full-time Master's programme with an intense study period and high workload, it is advisable not to work during the course of study. (In general, students from European Union countries are not required to have a work permit to work during their course of study. Students from countries outside the European Union may work 120 full days or 240 half days over the course of one year without a work permit. A special permit is required to work more than that.)"
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "4625",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Bremen%20University%20of%20Applied%20Sciences&limit=50&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4625/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "2 semesters, 3 semesters",
+        "study_mode": "Fully on-site with voluntary online elements",
+        "quality_flags": [],
+        "raw_blocks": [
+          "International MBA (Dual Degree) - Focus International Marketing - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "International MBA (Dual Degree) - Focus International Marketing International MBA (Dual Degree) - Focus International Marketing",
+          "Bremen University of Applied Sciences • Bremen",
+          "Overview",
+          "Course details",
+          "Online learning",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "Degree",
+          "Dual degree from two universities: MBA and/or Master's degree",
+          "Course location",
+          "Bremen",
+          "In cooperation with",
+          "International Business School Alliance (IBSA)",
+          "University of North Carolina Wilmington, Cameron School of Business, USA",
+          "ESSCA School of Management, Paris, France",
+          "University of València, Facultat d'Economia, Spai",
+          "Teaching language",
+          "English",
+          "Languages",
+          "All courses are taught in English.",
+          "Full-time / part-time",
+          "full-time",
+          "Mode of study",
+          "Fully on-site with voluntary online elements",
+          "Programme duration",
+          "2 semesters, 3 semesters",
+          "Beginning",
+          "Winter semester",
+          "Additional information on beginning, duration and mode of study",
+          "The programme starts in October.",
+          "First semester: October – January",
+          "Second semester: January/February – June/July",
+          "Third semester: Master's thesis",
+          "Fast-track option available (complete the entire programme within two semesters)",
+          "Application deadline",
+          "Please check the university's website .",
+          "Tuition fees per semester in EUR",
+          "Yes",
+          "Additional information on tuition fees",
+          "Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university)",
+          "Prices can be found here .",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "Yes",
+          "Description/content"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "Hochschule Bremen",
+        "url": "https://www.hs-bremen.de/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "International MBA (Dual Degree) Programme",
+        "degree": "Dual degree from two universities: International MBA and/or Master's degree",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3812/",
+        "campus": "Bremen",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Dual degree from two universities: International MBA and/or Master's degree Third semester: Master's thesis Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university) Combined Master's degree / PhD programme In the first semester, students study the core modules of the dual degree programme either at one of our partner universities of the International Business School Alliance (IBSA) or with us. For the specialisation and the Master's thesis, they move to a second IBSA university and country (see list above). The core modules are identical at each partner university. Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university) Academic admission requirements Language requirements Very good English language skills are required; applicants must provide proof of English proficiency with TOEFL 90 points (iBT) or IELTS 6.5 points. https://www.graduatecenter.org/en/admission-support/online-application.html As this is a one-year full-time Master's programme, and due to the intense study period and high workload, it is not recommended to work during the course of study. (In general, students from European Union countries are not required to have a work permit to work during their course of study. Students from countries outside the European Union may work 120 full days or 240 half days over the course of one year without a work permit. A special permit is required to work more than that.) The International Graduate Center (IGC) was founded by Hochschule Bremen City University of Applied Sciences (HSB) as an interdisciplinary Graduate School for Management and Leadership. For applicants with a first university degree, the IGC offers several non-consecutive MBA and Master's degrees in the area of international and European business and management. All full-time courses are taught entirely in English."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.5"
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Please check the university's website ."
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university)"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3812/",
+            "source_text": "Dual degree from two universities: International MBA and/or Master's degree Third semester: Master's thesis Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university) Combined Master's degree / PhD programme In the first semester, students study the core modules of the dual degree programme either at one of our partner universities of the International Business School Alliance (IBSA) or with us. For the specialisation and the Master's thesis, they ",
+            "retrieved_at": "2026-05-24T12:49:50.123415+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3812/",
+          "text": "Dual degree from two universities: International MBA and/or Master's degree Third semester: Master's thesis Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university) Combined Master's degree / PhD programme In the first semester, students study the core modules of the dual degree programme either at one of our partner universities of the International Business School Alliance (IBSA) or with us. For the specialisation and the Master's thesis, they move to a second IBSA university and country (see list above). The core modules are identical at each partner university. Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university) Academic admission requirements Language requirements Very good English language skills are required; applicants must provide proof of English proficiency with TOEFL 90 points (iBT) or IELTS 6.5 points. https://www.graduatecenter.org/en/admission-support/online-application.html As this is a one-year full-time Master's programme, and due to the intense study period and high workload, it is not recommended to work during the course of study. (In general, students from European Union countries are not required to have a work permit to work during their course of study. Students from countries outside the European Union may work 120 full days or 240 half days over the course of one year without a work permit. A special permit is required to work more than that.) The International Graduate Center (IGC) was founded by Hochschule Bremen City University of Applied Sciences (HSB) as an interdisciplinary Graduate School for Management and Leadership. For applicants with a first university degree, the IGC offers several non-consecutive MBA and Master's degrees in the area of international and European business and management. All full-time courses are taught entirely in English."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "3812",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Bremen%20University%20of%20Applied%20Sciences&limit=50&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3812/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "2 semesters, 3 semesters",
+        "study_mode": "Fully on-site with voluntary online elements",
+        "quality_flags": [],
+        "raw_blocks": [
+          "International MBA (Dual Degree) Programme - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "International MBA (Dual Degree) Programme International MBA (Dual Degree) Programme",
+          "Bremen University of Applied Sciences • Bremen",
+          "Gallery",
+          "Overview",
+          "Course details",
+          "Online learning",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Dual degree from two universities: International MBA and/or Master's degree",
+          "Course location",
+          "Bremen",
+          "In cooperation with",
+          "International Business School Alliance (IBSA)",
+          "University of North Carolina Wilmington, Cameron School of Business, USA",
+          "ESSCA School of Management, Paris, France",
+          "University of València, Facultat d'Economia, Spain",
+          "Teaching language",
+          "English",
+          "Languages",
+          "English only",
+          "Full-time / part-time",
+          "full-time",
+          "Mode of study",
+          "Fully on-site with voluntary online elements",
+          "Programme duration",
+          "2 semesters, 3 semesters",
+          "Beginning",
+          "Winter semester",
+          "Additional information on beginning, duration and mode of study",
+          "The programme starts in October.",
+          "First semester: October–January",
+          "Second semester: January/February–June/July",
+          "Third semester: Master's thesis",
+          "Fast track option available (complete entire programme within two semesters)",
+          "Application deadline",
+          "Please check the university's website .",
+          "Tuition fees per semester in EUR",
+          "Yes",
+          "Additional information on tuition fees",
+          "Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university)",
+          "Prices can be found here .",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme"
+        ]
+      }
+    }
+  ],
+  "skipped": []
+}

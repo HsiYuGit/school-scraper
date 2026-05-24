@@ -1,0 +1,1349 @@
+{
+  "schema_version": "0.4-source",
+  "source_platform": "daad",
+  "source_label": "DAAD",
+  "school": {
+    "name": "EBS Universität",
+    "url": "https://www.ebs.edu/en/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university"
+  },
+  "retrieved_at": "2026-05-24T12:42:17.106736+00:00",
+  "source_coverage": {
+    "status": "source_partial_match",
+    "warning": true,
+    "programs_extracted": 9,
+    "limitation_notes": [
+      "Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=EBS&limit=100&offset=0&display=list: limit=100 offset=0.",
+      "Configured DAAD target is source_partial_match; configured queries and detail URLs may not cover every programme exposed by DAAD."
+    ],
+    "future_deepening_candidates": [
+      {
+        "note": "Use academy-name validation, not only q search text, when scraping EBS."
+      }
+    ]
+  },
+  "programs": [
+    {
+      "school": {
+        "name": "EBS Universität",
+        "url": "https://www.ebs.edu/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Bachelor's in Business Studies (BSc)",
+        "degree": "Bachelor of Science in Business Studies",
+        "level": "bachelor",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4080/",
+        "campus": "Oestrich-Winkel",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Bachelor's in Business Studies (BSc) Bachelor's in Business Studies Bachelor of Science in Business Studies Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September We focus on the quality of teaching. For the Bachelor's in Business study programme at EBS, you need to plan for the following investment . The compulsory courses consist of all essential areas of business administration and economics. Teaching is interdisciplinary and based on the modular-integrative concept. We combine related subjects into networked teaching units (modules), linking methods and theory with specialist applications (integration). In this way, you can quickly recognise the sense and benefit of methods and theories and will acquire knowledge more easily and sustainably. Academic Writing, Effective Communication, and Personal Mastery Bachelor's thesis Business studies with a degree from EBS Universität – you spend five semesters at EBS Universität and one semester abroad. Optionally, the programme can be extended by a seventh semester to increase the ECTS to be earned to 210. You will spend the first part of your studies at EBS Universität and then transfer to one of our partner universities for the second part of your studies. This will give you a Bachelor of Science degree from EBS and a degree from your university abroad. A distinctive feature of the Bachelor in Business Studies at EBS is that you can study according to your interests, goals and talent already in the Bachelor's programme. You decide on a specific focus in the fifth semester. Projects with partners in Germany and abroad Students who choose the international dual degree option spend three semesters at a partner university abroad. In addition to the EBS Bachelor's degree, these students earn the corresponding degree from their partner university. We focus on the quality of teaching. For the Bachelor's in Business study programme at EBS, you need to plan for the following investment . Academic admission requirements Language requirements Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Nestled in the picturesque town of Oestrich-Winkel near the financial hub of Frankfurt, EBS offers a unique academic experience beyond education; it's your gateway to a world of opportunity and personal growth. With an international focus and a strong network, our Master's programmes are designed to elevate your skills and career prospects."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "EBS Universität conducts a holistic selection process. We assess your scores in the context of your overall profile, professional experience and background."
+        ],
+        "intakes": [
+          "Winter and summer semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "We focus on the quality of teaching. For the Bachelor's in Business study programme at EBS, you need to plan for the following investment ."
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4080/",
+            "source_text": "Bachelor's in Business Studies (BSc) Bachelor's in Business Studies Bachelor of Science in Business Studies Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September We focus on the quality of teaching. For the Bachelor's in Business study programme at EBS, you need to plan for the following investment . The compulsory courses consist of all essential areas of business administration and ",
+            "retrieved_at": "2026-05-24T12:42:17.106736+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4080/",
+          "text": "Bachelor's in Business Studies (BSc) Bachelor's in Business Studies Bachelor of Science in Business Studies Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September We focus on the quality of teaching. For the Bachelor's in Business study programme at EBS, you need to plan for the following investment . The compulsory courses consist of all essential areas of business administration and economics. Teaching is interdisciplinary and based on the modular-integrative concept. We combine related subjects into networked teaching units (modules), linking methods and theory with specialist applications (integration). In this way, you can quickly recognise the sense and benefit of methods and theories and will acquire knowledge more easily and sustainably. Academic Writing, Effective Communication, and Personal Mastery Bachelor's thesis Business studies with a degree from EBS Universität – you spend five semesters at EBS Universität and one semester abroad. Optionally, the programme can be extended by a seventh semester to increase the ECTS to be earned to 210. You will spend the first part of your studies at EBS Universität and then transfer to one of our partner universities for the second part of your studies. This will give you a Bachelor of Science degree from EBS and a degree from your university abroad. A distinctive feature of the Bachelor in Business Studies at EBS is that you can study according to your interests, goals and talent already in the Bachelor's programme. You decide on a specific focus in the fifth semester. Projects with partners in Germany and abroad Students who choose the international dual degree option spend three semesters at a partner university abroad. In addition to the EBS Bachelor's degree, these students earn the corresponding degree from their partner university. We focus on the quality of teaching. For the Bachelor's in Business study programme at EBS, you need to plan for the following investment . Academic admission requirements Language requirements Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Nestled in the picturesque town of Oestrich-Winkel near the financial hub of Frankfurt, EBS offers a unique academic experience beyond education; it's your gateway to a world of opportunity and personal growth. With an international focus and a strong network, our Master's programmes are designed to elevate your skills and career prospects."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "4080",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=EBS&limit=25&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4080/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter and summer semester",
+        "programme_duration": "6 semesters",
+        "study_mode": "Fully on-site with voluntary online elements",
+        "quality_flags": [],
+        "raw_blocks": [
+          "Bachelor's in Business Studies (BSc) - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Bachelor's in Business Studies (BSc) Bachelor's in Business Studies",
+          "EBS Universität für Wirtschaft und Recht • Oestrich-Winkel",
+          "Gallery",
+          "Overview",
+          "Course details",
+          "Online learning",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Bachelor of Science in Business Studies",
+          "Course location",
+          "Oestrich-Winkel",
+          "Teaching language",
+          "English",
+          "Languages",
+          "The programme follows international standards and is therefore 100% in English .",
+          "In addition, our EBS Language Center offers a wide range of opportunities to broaden your language and intercultural horizons.",
+          "Full-time / part-time",
+          "full-time",
+          "Mode of study",
+          "Fully on-site with voluntary online elements",
+          "Programme duration",
+          "6 semesters",
+          "Beginning",
+          "Winter and summer semester",
+          "Additional information on beginning, duration and mode of study",
+          "You start your six semesters with a two-week Onboarding Project. In your second year, you will spend at least one semester at one of our 200 partner universities abroad. If you choose the dual degree option, you study for three semesters at EBS and three at a partner university. During the summer months, internships are planned, optionally also abroad. We offer language courses (including country specifics and culture) in preparation for your time abroad.",
+          "The programme takes place entirely on-site. Should the situation require it, the courses can also take place in hybrid form in individual cases.",
+          "Application deadline",
+          "EBS Universität conducts a holistic selection process. We assess your scores in the context of your overall profile, professional experience and background.",
+          "There are no application deadlines at EBS; however, early application is particularly recommended for international candidates and scholarship seekers.",
+          "Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September",
+          "Please apply well in advance, considering the visa process duration in your home country.",
+          "Tuition fees per semester in EUR",
+          "Yes",
+          "Additional information on tuition fees",
+          "We focus on the quality of teaching. For the Bachelor's in Business study programme at EBS, you need to plan for the following investment .",
+          "Total tuition fees: 54,480 EUR",
+          "Joint degree / double degree programme",
+          "Yes",
+          "Description/content",
+          "The compulsory courses consist of all essential areas of business administration and economics. Teaching is interdisciplinary and based on the modular-integrative concept. We combine related subjects into networked teaching units (modules), linking methods and theory with specialist applications (integration). In this way, you can quickly recognise the sense and benefit of methods and theories and will acquire knowledge more easily and sustainably.",
+          "Study year one:",
+          "Initial Practice Project ( EBS Onboarding Project )",
+          "Introduction to Management and Business Studies"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "EBS Universität",
+        "url": "https://www.ebs.edu/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Bachelor's in Law, Politics and Economics (BA)",
+        "degree": "Bachelor of Arts in Law, Politics and Economics",
+        "level": "bachelor",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/8558/",
+        "campus": "Oestrich-Winkel",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Bachelor's in Law, Politics and Economics (BA) Bachelor's in Law, Politics and Economics Bachelor of Arts in Law, Politics and Economics The programme comprises three years of study and is divided into law, political science and business administration. You will start your studies with an intensive introduction to the disciplines of law, political science and economics. In the second year, you will focus on expanding your personal and professional skills. In the third year, you will spend a semester at one of our 200 partner universities abroad. During the summer months, internships (eight weeks in total) are scheduled, optionally also abroad. To prepare for the semester abroad, we offer language courses (including country and culture). The programme ends with the Bachelor's thesis. Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September We focus on the quality of teaching. For the Bachelor in Law, Politics and Economics study programme at EBS, you need to plan for the following investment The Law, Politics, and Economics programme combines subjects from three disciplines and combines them with an international orientation. The combination of these perspectives enables graduates to take on leadership tasks and social responsibility in a highly dynamic environment. We enable them to independently penetrate complex structures and to think in new ways, as well as to permanently review and specifically further develop acquired specialist knowledge. During the summer months, internships (eight weeks in total) are scheduled, optionally also abroad. To prepare for the semester abroad, we offer language courses (including country and culture). The programme ends with the Bachelor's thesis. Projects with partners in Germany and abroad We focus on the quality of teaching. For the Bachelor in Law, Politics and Economics study programme at EBS, you need to plan for the following investment Academic admission requirements Language requirements Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Nestled in the picturesque town of Oestrich-Winkel near the financial hub of Frankfurt, EBS offers a unique academic experience beyond education; it's your gateway to a world of opportunity and personal growth. With an international focus and a strong network, our Master's programmes are designed to elevate your skills and career prospects."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "EBS Universität conducts a holistic selection process. We assess your scores in the context of your overall profile, professional experience and background."
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "We focus on the quality of teaching. For the Bachelor in Law, Politics and Economics study programme at EBS, you need to plan for the following investment"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/8558/",
+            "source_text": "Bachelor's in Law, Politics and Economics (BA) Bachelor's in Law, Politics and Economics Bachelor of Arts in Law, Politics and Economics The programme comprises three years of study and is divided into law, political science and business administration. You will start your studies with an intensive introduction to the disciplines of law, political science and economics. In the second year, you will focus on expanding your personal and professional skills. In the third year, you will spend a seme",
+            "retrieved_at": "2026-05-24T12:42:17.106736+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/8558/",
+          "text": "Bachelor's in Law, Politics and Economics (BA) Bachelor's in Law, Politics and Economics Bachelor of Arts in Law, Politics and Economics The programme comprises three years of study and is divided into law, political science and business administration. You will start your studies with an intensive introduction to the disciplines of law, political science and economics. In the second year, you will focus on expanding your personal and professional skills. In the third year, you will spend a semester at one of our 200 partner universities abroad. During the summer months, internships (eight weeks in total) are scheduled, optionally also abroad. To prepare for the semester abroad, we offer language courses (including country and culture). The programme ends with the Bachelor's thesis. Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September We focus on the quality of teaching. For the Bachelor in Law, Politics and Economics study programme at EBS, you need to plan for the following investment The Law, Politics, and Economics programme combines subjects from three disciplines and combines them with an international orientation. The combination of these perspectives enables graduates to take on leadership tasks and social responsibility in a highly dynamic environment. We enable them to independently penetrate complex structures and to think in new ways, as well as to permanently review and specifically further develop acquired specialist knowledge. During the summer months, internships (eight weeks in total) are scheduled, optionally also abroad. To prepare for the semester abroad, we offer language courses (including country and culture). The programme ends with the Bachelor's thesis. Projects with partners in Germany and abroad We focus on the quality of teaching. For the Bachelor in Law, Politics and Economics study programme at EBS, you need to plan for the following investment Academic admission requirements Language requirements Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Nestled in the picturesque town of Oestrich-Winkel near the financial hub of Frankfurt, EBS offers a unique academic experience beyond education; it's your gateway to a world of opportunity and personal growth. With an international focus and a strong network, our Master's programmes are designed to elevate your skills and career prospects."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "8558",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=EBS&limit=25&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/8558/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "6 semesters",
+        "study_mode": "Fully on-site with voluntary online elements",
+        "quality_flags": [],
+        "raw_blocks": [
+          "Bachelor's in Law, Politics and Economics (BA) - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Bachelor's in Law, Politics and Economics (BA) Bachelor's in Law, Politics and Economics",
+          "EBS Universität für Wirtschaft und Recht • Oestrich-Winkel",
+          "Gallery",
+          "Overview",
+          "Course details",
+          "Online learning",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Bachelor of Arts in Law, Politics and Economics",
+          "Course location",
+          "Oestrich-Winkel",
+          "Teaching language",
+          "English",
+          "Languages",
+          "The programme follows international standards and is therefore 100% in English .",
+          "In addition, our EBS Language Center offers a wide range of opportunities to broaden your language and intercultural horizons.",
+          "Full-time / part-time",
+          "full-time",
+          "Mode of study",
+          "Fully on-site with voluntary online elements",
+          "Programme duration",
+          "6 semesters",
+          "Beginning",
+          "Winter semester",
+          "Additional information on beginning, duration and mode of study",
+          "The programme comprises three years of study and is divided into law, political science and business administration. You will start your studies with an intensive introduction to the disciplines of law, political science and economics. In the second year, you will focus on expanding your personal and professional skills. In the third year, you will spend a semester at one of our 200 partner universities abroad. During the summer months, internships (eight weeks in total) are scheduled, optionally also abroad. To prepare for the semester abroad, we offer language courses (including country and culture). The programme ends with the Bachelor's thesis.",
+          "Application deadline",
+          "EBS Universität conducts a holistic selection process. We assess your scores in the context of your overall profile, professional experience and background.",
+          "There are no application deadlines at EBS; however, early application is particularly recommended for international candidates and scholarship seekers.",
+          "Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September",
+          "Please apply well in advance, considering the visa process duration in your home country.",
+          "Tuition fees per semester in EUR",
+          "Yes",
+          "Additional information on tuition fees",
+          "We focus on the quality of teaching. For the Bachelor in Law, Politics and Economics study programme at EBS, you need to plan for the following investment:",
+          "Total tuition fees: 54,480 EUR",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "The Law, Politics, and Economics programme combines subjects from three disciplines and combines them with an international orientation. The combination of these perspectives enables graduates to take on leadership tasks and social responsibility in a highly dynamic environment. We enable them to independently penetrate complex structures and to think in new ways, as well as to permanently review and specifically further develop acquired specialist knowledge.",
+          "Modules",
+          "Methodical expertise in law, politics and economics",
+          "Principles of international law and international relationships",
+          "European law and European studies"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "EBS Universität",
+        "url": "https://www.ebs.edu/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Doctoral Programme / EBS Business School",
+        "degree": "Doctor Rerum Politicarum",
+        "level": "doctoral",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3937/",
+        "campus": "Oestrich-Winkel",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "To apply as a doctoral student, applicants need to obtain a promise of doctoral supervision by a senior professor of EBS Business School and then apply to the Doctoral Committee via the Office for Doctoral Studies. The Doctoral Committee decides on the admission of new applicants. Combined Master's degree / PhD programme Research Forum: Developing PhD Research Projects Projects with partners in Germany and abroad Academic admission requirements Applicants must submit a (maximum three-page) proposal for the dissertation project in English that demonstrates relevance and fit to the research topics of EBS Business School. The final admission decision is made by a committee that meets twice a year and consists of the members of the PhD Committee, the Dean of the Business School and the Vice Dean of Research. For full details on the admission process, see PhD Regulations §4. Language requirements English language certificate (C1 certificate or TOEFL test with 100 points minimum) To apply as a doctoral student, applicants need to obtain a promise of doctoral supervision by a senior professor of EBS Business School and then apply to the Doctoral Committee via the Office for Doctoral Studies. The Doctoral Committee decides on the admission of new applicants."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "To apply as a doctoral student, applicants need to obtain a promise of doctoral supervision by a senior professor of EBS Business School and then apply to the Doctoral Committee via the Office for Doctoral Studies. The Doctoral Committee decides on the admission of new applicants."
+        ],
+        "intakes": [
+          "Winter and summer semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "2,280 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3937/",
+            "source_text": "To apply as a doctoral student, applicants need to obtain a promise of doctoral supervision by a senior professor of EBS Business School and then apply to the Doctoral Committee via the Office for Doctoral Studies. The Doctoral Committee decides on the admission of new applicants. Combined Master's degree / PhD programme Research Forum: Developing PhD Research Projects Projects with partners in Germany and abroad Academic admission requirements Applicants must submit a (maximum three-page) propo",
+            "retrieved_at": "2026-05-24T12:42:17.106736+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3937/",
+          "text": "To apply as a doctoral student, applicants need to obtain a promise of doctoral supervision by a senior professor of EBS Business School and then apply to the Doctoral Committee via the Office for Doctoral Studies. The Doctoral Committee decides on the admission of new applicants. Combined Master's degree / PhD programme Research Forum: Developing PhD Research Projects Projects with partners in Germany and abroad Academic admission requirements Applicants must submit a (maximum three-page) proposal for the dissertation project in English that demonstrates relevance and fit to the research topics of EBS Business School. The final admission decision is made by a committee that meets twice a year and consists of the members of the PhD Committee, the Dean of the Business School and the Vice Dean of Research. For full details on the admission process, see PhD Regulations §4. Language requirements English language certificate (C1 certificate or TOEFL test with 100 points minimum) To apply as a doctoral student, applicants need to obtain a promise of doctoral supervision by a senior professor of EBS Business School and then apply to the Doctoral Committee via the Office for Doctoral Studies. The Doctoral Committee decides on the admission of new applicants."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "3937",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=EBS&limit=25&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3937/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter and summer semester",
+        "programme_duration": "4 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "Doctoral Programme / EBS Business School - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Doctoral Programme / EBS Business School Doctoral Programme / EBS Business School",
+          "EBS Universität für Wirtschaft und Recht • Oestrich-Winkel",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "Degree",
+          "Doctor Rerum Politicarum",
+          "Course location",
+          "Oestrich-Winkel",
+          "Teaching language",
+          "English",
+          "Languages",
+          "English",
+          "We support you in developing your knowledge of foreign languages with the EBS Language Center .",
+          "Language courses offered: Arabic, Chinese (Mandarin), German, English, French, Hungarian, Italian, Japanese, Korean, Portuguese, Russian, Spanish",
+          "Programme duration",
+          "4 semesters",
+          "Beginning",
+          "Winter and summer semester",
+          "Application deadline",
+          "To apply as a doctoral student, applicants need to obtain a promise of doctoral supervision by a senior professor of EBS Business School and then apply to the Doctoral Committee via the Office for Doctoral Studies. The Doctoral Committee decides on the admission of new applicants.",
+          "Tuition fees per semester in EUR",
+          "2,280 EUR",
+          "Additional information on tuition fees",
+          "Internal doctoral candidate: no tuition fees External doctoral candidate: 2,280 EUR per semester",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "For the most essential elements of the EBS Doctoral Study Programme , see below:",
+          "Mandatory courses conveying a theoretical and methodological background, supplemented by specialised electives customised to the different fields of research",
+          "Annual proposal defences guarantee regular feedback and involvement of the candidate’s second supervisor in the research process",
+          "Obligatory presentation of a competitive paper at an international scientific conference",
+          "Courses offered in this year’s Doctoral Summer School",
+          "Theoretical Perspectives in Management",
+          "Qualitative Research Methods",
+          "Survey Design and Measurement in Social Science",
+          "Research Forum: Developing PhD Research Projects",
+          "Advanced Econometrics",
+          "Fundamentals of Experimental Design and Analysis",
+          "Introduction to Econometrics",
+          "Course organisation",
+          "The programme consists of two mandatory courses offered every semester and at least four elective courses during the yearly Doctoral Summer School. The teaching language is English. Courses are usually offered as block seminars for two and a half days. Mandatory semi-yearly proposal defences with your supervisors complement the programme to discuss the current state of the doctoral candidate’s research. Besides, at least one presentation has to be given at a worldwide EBS target list conference. Active attendance at three internal research colloquia guarantees constant exchange with other researchers.",
+          "A Diploma supplement will be issued"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "EBS Universität",
+        "url": "https://www.ebs.edu/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "EBS Talent Camp",
+        "degree": null,
+        "level": null,
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/10647/",
+        "campus": "Oestrich-Winkel",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "The EBS Talent Camp 2026 offers you the perfect opportunity to make meaningful use of your summer break and prepare for your academic and professional future. In an inspiring environment, you will work on hands-on projects guided by EBS professors and research assistants. Bachelor's degree Further information on subsequent admission to degree programmes/guaranteed admission To participate in the EBS Talent Camp, you should meet the following requirements Language requirements English is not an admission requirement for the EBS Talent Camp, but participants should already have a good command of English. The programme is conducted entirely in English and is designed for participants from all over the world. Nestled in the picturesque town of Oestrich-Winkel near the financial hub of Frankfurt, EBS offers a unique academic experience beyond education; it's your gateway to a world of opportunity and personal growth. With an international focus and a strong network, our study programmes are designed to elevate your skills and career prospects. Bachelor's degree » Bachelor's in Business Studies (BSc) • EBS Universität für Wirtschaft und Recht • Oestrich-Winkel » Bachelor's in Law, Politics and Economics (BA) • EBS Universität für Wirtschaft und Recht • Oestrich-Winkel Master's degree » Master's in Business Analytics (MSc) • EBS Universität für Wirtschaft und Recht • Oestrich-Winkel » Master's in Finance (MSc) • EBS Universität für Wirtschaft und Recht • Oestrich-Winkel » Master's in Management (MSc) • EBS Universität für Wirtschaft und Recht • Oestrich-Winkel » Master's in Real Estate (MSc) • EBS Universität für Wirtschaft und Recht • Oestrich-Winkel"
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [],
+        "intakes": [],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": []
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/10647/",
+            "source_text": "The EBS Talent Camp 2026 offers you the perfect opportunity to make meaningful use of your summer break and prepare for your academic and professional future. In an inspiring environment, you will work on hands-on projects guided by EBS professors and research assistants. Bachelor's degree Further information on subsequent admission to degree programmes/guaranteed admission To participate in the EBS Talent Camp, you should meet the following requirements Language requirements English is not an a",
+            "retrieved_at": "2026-05-24T12:42:17.106736+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/10647/",
+          "text": "The EBS Talent Camp 2026 offers you the perfect opportunity to make meaningful use of your summer break and prepare for your academic and professional future. In an inspiring environment, you will work on hands-on projects guided by EBS professors and research assistants. Bachelor's degree Further information on subsequent admission to degree programmes/guaranteed admission To participate in the EBS Talent Camp, you should meet the following requirements Language requirements English is not an admission requirement for the EBS Talent Camp, but participants should already have a good command of English. The programme is conducted entirely in English and is designed for participants from all over the world. Nestled in the picturesque town of Oestrich-Winkel near the financial hub of Frankfurt, EBS offers a unique academic experience beyond education; it's your gateway to a world of opportunity and personal growth. With an international focus and a strong network, our study programmes are designed to elevate your skills and career prospects. Bachelor's degree » Bachelor's in Business Studies (BSc) • EBS Universität für Wirtschaft und Recht • Oestrich-Winkel » Bachelor's in Law, Politics and Economics (BA) • EBS Universität für Wirtschaft und Recht • Oestrich-Winkel Master's degree » Master's in Business Analytics (MSc) • EBS Universität für Wirtschaft und Recht • Oestrich-Winkel » Master's in Finance (MSc) • EBS Universität für Wirtschaft und Recht • Oestrich-Winkel » Master's in Management (MSc) • EBS Universität für Wirtschaft und Recht • Oestrich-Winkel » Master's in Real Estate (MSc) • EBS Universität für Wirtschaft und Recht • Oestrich-Winkel"
+        }
+      ],
+      "needs_human_review": true,
+      "source_record_id": "10647",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=EBS&limit=25&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/10647/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": null,
+        "programme_duration": null,
+        "study_mode": null,
+        "quality_flags": [
+          "non_degree_or_certificate_like"
+        ],
+        "raw_blocks": [
+          "EBS Talent Camp - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "EBS Talent Camp EBS Talent Camp",
+          "EBS Universität für Wirtschaft und Recht • Oestrich-Winkel",
+          "Gallery",
+          "Overview",
+          "Course details",
+          "Costs / Requirements / Registration",
+          "Services",
+          "About the university",
+          "Course location",
+          "Oestrich-Winkel",
+          "Teaching language",
+          "English",
+          "Date(s)",
+          "1 July - 4 July 2026 (registration deadline: 19 June 2026)",
+          "Additional information on dates, prices and mode of study",
+          "Start: 1 July 2026",
+          "Duration: four days (including arrival)",
+          "Comprehensive organisation at no extra cost—hotel accommodation and meals are included.",
+          "More information",
+          "Description/content",
+          "The EBS Talent Camp 2026 offers you the perfect opportunity to make meaningful use of your summer break and prepare for your academic and professional future. In an inspiring environment, you will work on hands-on projects guided by EBS professors and research assistants.",
+          "Over the course of our three-day Summer School, you will attend introductory lectures in the fields of business and law and tackle exciting case studies focused on the key topic of Artificial Intelligence. Along the way, you will sharpen your analytical thinking, enhance your presentation skills, and deepen your foundational knowledge in management and legal studies—all within the forward-looking contexts of sustainability and artificial intelligence.",
+          "Talks by inspiring guest speakers and a variety of organised leisure activities give you the chance to build your first professional contacts, explore the region, and gain an authentic insight into student life at EBS Universität.",
+          "Course components",
+          "General preparation for studies",
+          "Intercultural training",
+          "Excursions",
+          "Do course participants have student status?",
+          "No",
+          "Does this course involve taking the university entrance examination or does the course specifically prepare students for this examination?",
+          "No",
+          "Preparation for degree programmes",
+          "Bachelor's degree",
+          "State examination",
+          "Preparation for subject groups",
+          "Economic Sciences, Law",
+          "Further information on subsequent admission to degree programmes/guaranteed admission",
+          "Who is it for?",
+          "You are currently attending high school (\"Oberstufe\") or have recently finished and are planning for the future.",
+          "You would like to build on your English skills and use the summer to prepare for your future career by gaining insights into business and law studies.",
+          "To participate in the EBS Talent Camp, you should meet the following requirements:",
+          "Currently enrolled in high school or finished",
+          "At least 16 years old",
+          "Letter of motivation",
+          "Register now!",
+          "Costs",
+          "You will get a comprehensively organised three-day programme at no extra cost — hotel accommodation and meals are included."
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "EBS Universität",
+        "url": "https://www.ebs.edu/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master's in Business Analytics (MSc)",
+        "degree": "Master of Science in Business Analytics",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/8556/",
+        "campus": "Oestrich-Winkel",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": 120,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master's in Business Analytics (MSc) Master's in Business Analytics Master of Science in Business Analytics The programme comprises four semesters (120 ECTS) and can be started each year in the autumn or spring semesters. With the appropriate qualifications, the programme can be shortened to two semesters (accelerated track | 60 ECTS). With an additional semester abroad (dual degree option), you have the opportunity to acquire a double degree. Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Combined Master's degree / PhD programme The Master's in Business Analytics programme is divided into different stages. At the beginning of the programme, we will prepare you for your future research work and support you in the further development of your leadership skills. Building on this, you will deal with the essential issues of your field, consolidate newly acquired knowledge and grow as a leader. We have designed the EBS Master's programmes to be flexible, depending on your level of knowledge, skills and goals. Accelerate your career. If you meet the relevant requirements and have already gained experience abroad, you can shorten the Master's programme to two semesters. You can obtain another international degree (MBA or Master's) in addition to your EBS degree. Extend your study abroad at one of our partner universities by one semester and receive a double degree. In this way, you will gain more expertise in a broader international context, and you will increase your global market value. Projects with partners in Germany and abroad Semester Abroad Track (120 ECTS) Practice Track (120 ECTS) Academic admission requirements A Bachelor’s degree and transcripts in any field of study with at least 180 ECTS or an equivalent recognised qualification. A valid GMAT (either classic or new Focus edition – scores will be based on GMAC's percentile tables), GRE, Business Admissions Test (BAT), EBSgrad Test, Common Admissions Test (CAT) If your application documents meet our admission requirements, we will invite you to an individual interview. During this interview, we will assess your motivation and social skills. The decisive factors are your motivation to perform and learn, your social communication profile, your willingness to take on social responsibility, and your initiative. Language requirements TOEFL iBT score min. 95 IELTS min. band score 7 Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Nestled in the picturesque town of Oestrich-Winkel near the financial hub of Frankfurt, EBS offers a unique academic experience beyond education; it's your gateway to a world of opportunity and personal growth. With an international focus and a strong network, our Master's programmes are designed to elevate your skills and career prospects."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "EBS Universität conducts a holistic selection process. We assess your scores in the context of your overall profile, professional experience and background."
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Semester Abroad Track | Practice Track: 33,780 EUR in total"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/8556/",
+            "source_text": "Master's in Business Analytics (MSc) Master's in Business Analytics Master of Science in Business Analytics The programme comprises four semesters (120 ECTS) and can be started each year in the autumn or spring semesters. With the appropriate qualifications, the programme can be shortened to two semesters (accelerated track | 60 ECTS). With an additional semester abroad (dual degree option), you have the opportunity to acquire a double degree. Application recommendation for non-EU applicants wit",
+            "retrieved_at": "2026-05-24T12:42:17.106736+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/8556/",
+          "text": "Master's in Business Analytics (MSc) Master's in Business Analytics Master of Science in Business Analytics The programme comprises four semesters (120 ECTS) and can be started each year in the autumn or spring semesters. With the appropriate qualifications, the programme can be shortened to two semesters (accelerated track | 60 ECTS). With an additional semester abroad (dual degree option), you have the opportunity to acquire a double degree. Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Combined Master's degree / PhD programme The Master's in Business Analytics programme is divided into different stages. At the beginning of the programme, we will prepare you for your future research work and support you in the further development of your leadership skills. Building on this, you will deal with the essential issues of your field, consolidate newly acquired knowledge and grow as a leader. We have designed the EBS Master's programmes to be flexible, depending on your level of knowledge, skills and goals. Accelerate your career. If you meet the relevant requirements and have already gained experience abroad, you can shorten the Master's programme to two semesters. You can obtain another international degree (MBA or Master's) in addition to your EBS degree. Extend your study abroad at one of our partner universities by one semester and receive a double degree. In this way, you will gain more expertise in a broader international context, and you will increase your global market value. Projects with partners in Germany and abroad Semester Abroad Track (120 ECTS) Practice Track (120 ECTS) Academic admission requirements A Bachelor’s degree and transcripts in any field of study with at least 180 ECTS or an equivalent recognised qualification. A valid GMAT (either classic or new Focus edition – scores will be based on GMAC's percentile tables), GRE, Business Admissions Test (BAT), EBSgrad Test, Common Admissions Test (CAT) If your application documents meet our admission requirements, we will invite you to an individual interview. During this interview, we will assess your motivation and social skills. The decisive factors are your motivation to perform and learn, your social communication profile, your willingness to take on social responsibility, and your initiative. Language requirements TOEFL iBT score min. 95 IELTS min. band score 7 Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Nestled in the picturesque town of Oestrich-Winkel near the financial hub of Frankfurt, EBS offers a unique academic experience beyond education; it's your gateway to a world of opportunity and personal growth. With an international focus and a strong network, our Master's programmes are designed to elevate your skills and career prospects."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "8556",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=EBS&limit=25&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/8556/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "2 semesters, 4 semesters",
+        "study_mode": "Fully on-site with voluntary online elements",
+        "quality_flags": [],
+        "raw_blocks": [
+          "Master's in Business Analytics (MSc) - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Master's in Business Analytics (MSc) Master's in Business Analytics",
+          "EBS Universität für Wirtschaft und Recht • Oestrich-Winkel",
+          "Gallery",
+          "Overview",
+          "Course details",
+          "Online learning",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Master of Science in Business Analytics",
+          "Course location",
+          "Oestrich-Winkel",
+          "Teaching language",
+          "English",
+          "Languages",
+          "The programme follows international standards and is therefore 100% in English .",
+          "In addition, our EBS Language Center offers a wide range of opportunities to broaden your language and intercultural horizons.",
+          "Full-time / part-time",
+          "full-time",
+          "Mode of study",
+          "Fully on-site with voluntary online elements",
+          "Programme duration",
+          "2 semesters, 4 semesters",
+          "Beginning",
+          "Winter semester",
+          "Additional information on beginning, duration and mode of study",
+          "The programme comprises four semesters (120 ECTS) and can be started each year in the autumn or spring semesters. With the appropriate qualifications, the programme can be shortened to two semesters (accelerated track | 60 ECTS). With an additional semester abroad (dual degree option), you have the opportunity to acquire a double degree.",
+          "The programme takes place entirely on site. Should the situation require it, the courses can also take place in hybrid form in individual cases.",
+          "Application deadline",
+          "EBS Universität conducts a holistic selection process. We assess your scores in the context of your overall profile, professional experience and background.",
+          "There are no application deadlines at EBS; however, early application is particularly recommended for international candidates and scholarship seekers.",
+          "Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September",
+          "Please apply well in advance, considering the duration of the visa process in your home country.",
+          "Tuition fees per semester in EUR",
+          "Yes",
+          "Additional information on tuition fees",
+          "Semester Abroad Track | Practice Track: 33,780 EUR in total",
+          "Accelerated Track: 27,830 EUR in total",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "Yes",
+          "Description/content",
+          "The Master's in Business Analytics programme is divided into different stages. At the beginning of the programme, we will prepare you for your future research work and support you in the further development of your leadership skills. Building on this, you will deal with the essential issues of your field, consolidate newly acquired knowledge and grow as a leader.",
+          "Core Modules"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "EBS Universität",
+        "url": "https://www.ebs.edu/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master's in Finance (MSc)",
+        "degree": "Master of Science in Finance",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3955/",
+        "campus": "Oestrich-Winkel",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": 120,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master's in Finance (MSc) Master's in Finance Master of Science in Finance The programme comprises four semesters (120 ECTS) and can be started each year in the autumn semester or spring semester. The programme can be shortened to two semesters (accelerated track | 60 ECTS) with the appropriate qualifications. With an additional semester abroad (dual degree option), you have the opportunity to acquire a double degree. Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Combined Master's degree / PhD programme The Master's in Finance programme is divided into different stages. At the beginning of the programme, we prepare you for your future research work and support you in the further development of your leadership skills. Building on this, you will deal with the essential issues of your field, consolidate newly acquired knowledge and grow as a leader. Mega Projects – Finance, Risk & Society The programme comprises four semesters and concludes with a Master’s thesis – often in cooperation with a company. The last semester is reserved for your stay abroad at one of our more than 200 partner universities. Every person is different: several ways to do a Master’s degree at EBS Universität We have designed the EBS Master's programmes to be flexible, depending on your level of knowledge, skills and goals. Take the study path that best suits you and your circumstances If applicants meet the relevant requirements (Bachelor's degree with 240 ECTS) and have already gained experience abroad, they can shorten the Master's programme to two semesters. Projects with partners in Germany and abroad Semester Abroad Track (120 ECTS) Practice Track (120 ECTS) Academic admission requirements A Bachelor’s degree and transcripts in any field of study with at least 180 ECTS or an equivalent recognised qualification A valid GMAT (either classic or new Focus edition – scores will be based on GMAC's percentile tables), GRE, Business Admissions Test (BAT), EBSgrad Test, Common Admissions Test (CAT) If your application documents meet our admission requirements, we will invite you to an individual interview. During this interview, we will assess your motivation and social skills. The decisive factors are your motivation to perform and learn, your social communication profile, your willingness to take on social responsibility, and your initiative. Language requirements TOEFL iBT score min. 95 IELTS min. band score 7 Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Nestled in the picturesque town of Oestrich-Winkel near the financial hub of Frankfurt, EBS offers a unique academic experience beyond education; it's your gateway to a world of opportunity and personal growth. With an international focus and a strong network, our Master's programmes are designed to elevate your skills and career prospects."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "EBS Universität conducts a holistic selection process. We assess the above minimum scores in the context of your overall profile, professional experience and background."
+        ],
+        "intakes": [
+          "Winter and summer semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Semester Abroad Track | Practice Track: 33,780 EUR in total"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3955/",
+            "source_text": "Master's in Finance (MSc) Master's in Finance Master of Science in Finance The programme comprises four semesters (120 ECTS) and can be started each year in the autumn semester or spring semester. The programme can be shortened to two semesters (accelerated track | 60 ECTS) with the appropriate qualifications. With an additional semester abroad (dual degree option), you have the opportunity to acquire a double degree. Application recommendation for non-EU applicants with visa requirements: To st",
+            "retrieved_at": "2026-05-24T12:42:17.106736+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3955/",
+          "text": "Master's in Finance (MSc) Master's in Finance Master of Science in Finance The programme comprises four semesters (120 ECTS) and can be started each year in the autumn semester or spring semester. The programme can be shortened to two semesters (accelerated track | 60 ECTS) with the appropriate qualifications. With an additional semester abroad (dual degree option), you have the opportunity to acquire a double degree. Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Combined Master's degree / PhD programme The Master's in Finance programme is divided into different stages. At the beginning of the programme, we prepare you for your future research work and support you in the further development of your leadership skills. Building on this, you will deal with the essential issues of your field, consolidate newly acquired knowledge and grow as a leader. Mega Projects – Finance, Risk & Society The programme comprises four semesters and concludes with a Master’s thesis – often in cooperation with a company. The last semester is reserved for your stay abroad at one of our more than 200 partner universities. Every person is different: several ways to do a Master’s degree at EBS Universität We have designed the EBS Master's programmes to be flexible, depending on your level of knowledge, skills and goals. Take the study path that best suits you and your circumstances If applicants meet the relevant requirements (Bachelor's degree with 240 ECTS) and have already gained experience abroad, they can shorten the Master's programme to two semesters. Projects with partners in Germany and abroad Semester Abroad Track (120 ECTS) Practice Track (120 ECTS) Academic admission requirements A Bachelor’s degree and transcripts in any field of study with at least 180 ECTS or an equivalent recognised qualification A valid GMAT (either classic or new Focus edition – scores will be based on GMAC's percentile tables), GRE, Business Admissions Test (BAT), EBSgrad Test, Common Admissions Test (CAT) If your application documents meet our admission requirements, we will invite you to an individual interview. During this interview, we will assess your motivation and social skills. The decisive factors are your motivation to perform and learn, your social communication profile, your willingness to take on social responsibility, and your initiative. Language requirements TOEFL iBT score min. 95 IELTS min. band score 7 Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Nestled in the picturesque town of Oestrich-Winkel near the financial hub of Frankfurt, EBS offers a unique academic experience beyond education; it's your gateway to a world of opportunity and personal growth. With an international focus and a strong network, our Master's programmes are designed to elevate your skills and career prospects."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "3955",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=EBS&limit=25&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3955/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter and summer semester",
+        "programme_duration": "2 semesters, 4 semesters",
+        "study_mode": "Fully on-site with voluntary online elements",
+        "quality_flags": [],
+        "raw_blocks": [
+          "Master's in Finance (MSc) - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Master's in Finance (MSc) Master's in Finance",
+          "EBS Universität für Wirtschaft und Recht • Oestrich-Winkel",
+          "Gallery",
+          "Overview",
+          "Course details",
+          "Online learning",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Master of Science in Finance",
+          "Course location",
+          "Oestrich-Winkel",
+          "Teaching language",
+          "English",
+          "Languages",
+          "The programme follows international standards and is therefore 100% in English .",
+          "In addition, our EBS Language Center offers a wide range of opportunities to broaden your language and intercultural horizons.",
+          "Full-time / part-time",
+          "full-time",
+          "Mode of study",
+          "Fully on-site with voluntary online elements",
+          "Programme duration",
+          "2 semesters, 4 semesters",
+          "Beginning",
+          "Winter and summer semester",
+          "Additional information on beginning, duration and mode of study",
+          "The programme comprises four semesters (120 ECTS) and can be started each year in the autumn semester or spring semester. The programme can be shortened to two semesters (accelerated track | 60 ECTS) with the appropriate qualifications. With an additional semester abroad (dual degree option), you have the opportunity to acquire a double degree.",
+          "The programme takes place entirely on site. Should the situation require it, the courses can also take place in hybrid form in individual cases.",
+          "Application deadline",
+          "EBS Universität conducts a holistic selection process. We assess the above minimum scores in the context of your overall profile, professional experience and background.",
+          "There are no application deadlines at EBS; however, early application is particularly recommended for international candidates and scholarship seekers.",
+          "Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September",
+          "Please apply well in advance, considering the visa process duration in your home country.",
+          "Tuition fees per semester in EUR",
+          "Yes",
+          "Additional information on tuition fees",
+          "Semester Abroad Track | Practice Track: 33,780 EUR in total",
+          "Accelerated Track: 27,830 EUR in total",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "Yes",
+          "Description/content",
+          "The Master's in Finance programme is divided into different stages. At the beginning of the programme, we prepare you for your future research work and support you in the further development of your leadership skills. Building on this, you will deal with the essential issues of your field, consolidate newly acquired knowledge and grow as a leader.",
+          "Core Modules"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "EBS Universität",
+        "url": "https://www.ebs.edu/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master's in Management (MSc)",
+        "degree": "Master of Science in Management",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3938/",
+        "campus": "Oestrich-Winkel",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": 120,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master's in Management (MSc) Master's in Management Master of Science in Management The programme comprises four semesters (120 ECTS) and can be started each year in the autumn semester or spring semester. The programme can be shortened to two semesters (accelerated track | 60 ECTS) with the appropriate qualifications. With an additional semester abroad (dual degree option), you have the opportunity to acquire a double degree. Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Combined Master's degree / PhD programme With the Master in Management programme, all doors are open to you. Graduates take on leadership positions in a wide variety of areas: as a management consultant, business developer, successor in a family business, founder or business partner. The programme comprises four semesters and concludes with a Master’s thesis – often in cooperation with a company. The last semester is reserved for your stay abroad at one of our more than 200 partner universities. Every person is different: several ways to do a Master’s degree at EBS Universität We have designed the EBS Master's programmes to be flexible, depending on your level of knowledge, skills and goals. Take the study path that best suits you and your circumstances If applicants meet the relevant requirements (Bachelor's degree with 240 ECTS) and have already gained experience abroad, they can shorten the Master's programme to two semesters. Projects with partners in Germany and abroad Semester Abroad Track (120 ECTS) Practice Track (120 ECTS) Academic admission requirements A Bachelor’s degree and transcripts in any field of study with at least 180 ECTS or an equivalent recognised qualification A valid GMAT (either classic or new Focus edition – scores will be based on GMAC's percentile tables), GRE, Business Admissions Test (BAT), EBSgrad Test, Common Admissions Test (CAT). If your application documents meet our admission requirements, we will invite you to an individual interview. During this interview, we will assess your motivation and social skills. The decisive factors are your motivation to perform and learn, your social communication profile, your willingness to take on social responsibility and your initiative. Language requirements TOEFL iBT score min. 95 IELTS min. band score 7 Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Nestled in the picturesque town of Oestrich-Winkel near the financial hub of Frankfurt, EBS offers a unique academic experience beyond education; it's your gateway to a world of opportunity and personal growth. With an international focus and a strong network, our Master's programmes are designed to elevate your skills and career prospects."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "EBS Universität conducts a holistic selection process. We assess your scores in the context of your overall profile, professional experience and background."
+        ],
+        "intakes": [
+          "Winter and summer semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Semester Abroad Track | Practice Track: 33,780 EUR in total"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3938/",
+            "source_text": "Master's in Management (MSc) Master's in Management Master of Science in Management The programme comprises four semesters (120 ECTS) and can be started each year in the autumn semester or spring semester. The programme can be shortened to two semesters (accelerated track | 60 ECTS) with the appropriate qualifications. With an additional semester abroad (dual degree option), you have the opportunity to acquire a double degree. Application recommendation for non-EU applicants with visa requiremen",
+            "retrieved_at": "2026-05-24T12:42:17.106736+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3938/",
+          "text": "Master's in Management (MSc) Master's in Management Master of Science in Management The programme comprises four semesters (120 ECTS) and can be started each year in the autumn semester or spring semester. The programme can be shortened to two semesters (accelerated track | 60 ECTS) with the appropriate qualifications. With an additional semester abroad (dual degree option), you have the opportunity to acquire a double degree. Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Combined Master's degree / PhD programme With the Master in Management programme, all doors are open to you. Graduates take on leadership positions in a wide variety of areas: as a management consultant, business developer, successor in a family business, founder or business partner. The programme comprises four semesters and concludes with a Master’s thesis – often in cooperation with a company. The last semester is reserved for your stay abroad at one of our more than 200 partner universities. Every person is different: several ways to do a Master’s degree at EBS Universität We have designed the EBS Master's programmes to be flexible, depending on your level of knowledge, skills and goals. Take the study path that best suits you and your circumstances If applicants meet the relevant requirements (Bachelor's degree with 240 ECTS) and have already gained experience abroad, they can shorten the Master's programme to two semesters. Projects with partners in Germany and abroad Semester Abroad Track (120 ECTS) Practice Track (120 ECTS) Academic admission requirements A Bachelor’s degree and transcripts in any field of study with at least 180 ECTS or an equivalent recognised qualification A valid GMAT (either classic or new Focus edition – scores will be based on GMAC's percentile tables), GRE, Business Admissions Test (BAT), EBSgrad Test, Common Admissions Test (CAT). If your application documents meet our admission requirements, we will invite you to an individual interview. During this interview, we will assess your motivation and social skills. The decisive factors are your motivation to perform and learn, your social communication profile, your willingness to take on social responsibility and your initiative. Language requirements TOEFL iBT score min. 95 IELTS min. band score 7 Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Nestled in the picturesque town of Oestrich-Winkel near the financial hub of Frankfurt, EBS offers a unique academic experience beyond education; it's your gateway to a world of opportunity and personal growth. With an international focus and a strong network, our Master's programmes are designed to elevate your skills and career prospects."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "3938",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=EBS&limit=25&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3938/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter and summer semester",
+        "programme_duration": "2 semesters, 4 semesters",
+        "study_mode": "Fully on-site with voluntary online elements",
+        "quality_flags": [],
+        "raw_blocks": [
+          "Master's in Management (MSc) - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Master's in Management (MSc) Master's in Management",
+          "EBS Universität für Wirtschaft und Recht • Oestrich-Winkel",
+          "Gallery",
+          "Overview",
+          "Course details",
+          "Online learning",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Master of Science in Management",
+          "Course location",
+          "Oestrich-Winkel",
+          "Teaching language",
+          "English",
+          "Languages",
+          "The programme follows international standards and is therefore 100% in English .",
+          "Students on the German Track attend compulsory German language courses .",
+          "In addition, our EBS Language Center offers a wide range of opportunities to broaden your language and intercultural horizons.",
+          "Full-time / part-time",
+          "full-time",
+          "Mode of study",
+          "Fully on-site with voluntary online elements",
+          "Programme duration",
+          "2 semesters, 4 semesters",
+          "Beginning",
+          "Winter and summer semester",
+          "Additional information on beginning, duration and mode of study",
+          "The programme comprises four semesters (120 ECTS) and can be started each year in the autumn semester or spring semester. The programme can be shortened to two semesters (accelerated track | 60 ECTS) with the appropriate qualifications. With an additional semester abroad (dual degree option), you have the opportunity to acquire a double degree.",
+          "The programme takes place entirely on site. Should the situation require it, the courses can also take place in hybrid form in individual cases.",
+          "Application deadline",
+          "EBS Universität conducts a holistic selection process. We assess your scores in the context of your overall profile, professional experience and background.",
+          "There are no application deadlines at EBS; however, early application is particularly recommended for international candidates and scholarship seekers.",
+          "Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September",
+          "Please apply well in advance, considering the visa process duration in your home country.",
+          "Tuition fees per semester in EUR",
+          "Yes",
+          "Additional information on tuition fees",
+          "Semester Abroad Track | Practice Track: 33,780 EUR in total",
+          "Accelerated Track: 27,830 EUR in total",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "Yes",
+          "Description/content",
+          "The study programme is divided into different units. The basic modules prepare you for your future project activities, and you develop your leadership skills systematically. In the elective modules, you will deal with the essential issues of executive management. Project work with real-life cases will allow you to consolidate your newly acquired expertise and grow as a leader."
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "EBS Universität",
+        "url": "https://www.ebs.edu/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Master's in Real Estate (MSc)",
+        "degree": "Master of Science in Real Estate",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3957/",
+        "campus": "Oestrich-Winkel",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": 120,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master's in Real Estate (MSc) Master's in Real Estate Master of Science in Real Estate The programme comprises four semesters (120 ECTS) and can be started each year in the autumn semester or spring semester. The programme can be shortened to two semesters (accelerated track | 60 ECTS) with the appropriate qualifications. With an additional semester abroad (dual degree option), you have the opportunity to acquire a double degree. Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Combined Master's degree / PhD programme The Master's in Real Estate programme is divided into different stages. At the beginning of the programme, we prepare you for your future research work and support you in the further development of your leadership skills. Building on this, you will deal with the essential issues of your field, consolidate newly acquired knowledge and grow as a leader. We have designed the EBS Master's programmes to be flexible, depending on your level of knowledge, skills and goals. Accelerated Track Accelerate your career. If you meet the relevant requirements and have already gained experience abroad, you can shorten the Master's programme to two semesters. Dual Degree You can obtain another international degree (MBA or Master's) in addition to your EBS degree. Extend your study abroad at one of our partner universities by one semester and receive a double degree. In this way, you will gain more expertise in a broader international context, and you will increase your global market value. Projects with partners in Germany and abroad Semester Abroad Track (120 ECTS) Practice Track (120 ECTS) Academic admission requirements A Bachelor’s degree and transcripts in any field of study with at least 180 ECTS or an equivalent recognised qualification A valid GMAT (either classic or new Focus edition – scores will be based on GMAC's percentile tables), GRE, Business Admissions Test (BAT), EBSgrad Test, Common Admissions Test (CAT) If your application documents meet our admission requirements, we will invite you to an individual interview. During this interview, we will assess your motivation and social skills. The decisive factors are your motivation to perform and learn, your social communication profile, your willingness to take on social responsibility, and your initiative. Language requirements TOEFL iBT score min. 95 IELTS min. band score 7 Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Nestled in the picturesque town of Oestrich-Winkel near the financial hub of Frankfurt, EBS offers a unique academic experience beyond education; it's your gateway to a world of opportunity and personal growth. With an international focus and a strong network, our Master's programmes are designed to elevate your skills and career prospects."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "EBS Universität conducts a holistic selection process. We assess your scores in the context of your overall profile, professional experience and background."
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Semester Abroad Track | Practice Track: 33,780 EUR in total"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3957/",
+            "source_text": "Master's in Real Estate (MSc) Master's in Real Estate Master of Science in Real Estate The programme comprises four semesters (120 ECTS) and can be started each year in the autumn semester or spring semester. The programme can be shortened to two semesters (accelerated track | 60 ECTS) with the appropriate qualifications. With an additional semester abroad (dual degree option), you have the opportunity to acquire a double degree. Application recommendation for non-EU applicants with visa require",
+            "retrieved_at": "2026-05-24T12:42:17.106736+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3957/",
+          "text": "Master's in Real Estate (MSc) Master's in Real Estate Master of Science in Real Estate The programme comprises four semesters (120 ECTS) and can be started each year in the autumn semester or spring semester. The programme can be shortened to two semesters (accelerated track | 60 ECTS) with the appropriate qualifications. With an additional semester abroad (dual degree option), you have the opportunity to acquire a double degree. Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Combined Master's degree / PhD programme The Master's in Real Estate programme is divided into different stages. At the beginning of the programme, we prepare you for your future research work and support you in the further development of your leadership skills. Building on this, you will deal with the essential issues of your field, consolidate newly acquired knowledge and grow as a leader. We have designed the EBS Master's programmes to be flexible, depending on your level of knowledge, skills and goals. Accelerated Track Accelerate your career. If you meet the relevant requirements and have already gained experience abroad, you can shorten the Master's programme to two semesters. Dual Degree You can obtain another international degree (MBA or Master's) in addition to your EBS degree. Extend your study abroad at one of our partner universities by one semester and receive a double degree. In this way, you will gain more expertise in a broader international context, and you will increase your global market value. Projects with partners in Germany and abroad Semester Abroad Track (120 ECTS) Practice Track (120 ECTS) Academic admission requirements A Bachelor’s degree and transcripts in any field of study with at least 180 ECTS or an equivalent recognised qualification A valid GMAT (either classic or new Focus edition – scores will be based on GMAC's percentile tables), GRE, Business Admissions Test (BAT), EBSgrad Test, Common Admissions Test (CAT) If your application documents meet our admission requirements, we will invite you to an individual interview. During this interview, we will assess your motivation and social skills. The decisive factors are your motivation to perform and learn, your social communication profile, your willingness to take on social responsibility, and your initiative. Language requirements TOEFL iBT score min. 95 IELTS min. band score 7 Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Nestled in the picturesque town of Oestrich-Winkel near the financial hub of Frankfurt, EBS offers a unique academic experience beyond education; it's your gateway to a world of opportunity and personal growth. With an international focus and a strong network, our Master's programmes are designed to elevate your skills and career prospects."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "3957",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=EBS&limit=25&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3957/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "2 semesters, 4 semesters",
+        "study_mode": "Fully on-site with voluntary online elements",
+        "quality_flags": [],
+        "raw_blocks": [
+          "Master's in Real Estate (MSc) - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Master's in Real Estate (MSc) Master's in Real Estate",
+          "EBS Universität für Wirtschaft und Recht • Oestrich-Winkel",
+          "Gallery",
+          "Overview",
+          "Course details",
+          "Online learning",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Master of Science in Real Estate",
+          "Course location",
+          "Oestrich-Winkel",
+          "Teaching language",
+          "English",
+          "Languages",
+          "The programme follows international standards and is therefore 100% in English .",
+          "In addition, our EBS Language Center offers a wide range of opportunities to broaden your language and intercultural horizons.",
+          "Full-time / part-time",
+          "full-time",
+          "Mode of study",
+          "Fully on-site with voluntary online elements",
+          "Programme duration",
+          "2 semesters, 4 semesters",
+          "Beginning",
+          "Winter semester",
+          "Additional information on beginning, duration and mode of study",
+          "The programme comprises four semesters (120 ECTS) and can be started each year in the autumn semester or spring semester. The programme can be shortened to two semesters (accelerated track | 60 ECTS) with the appropriate qualifications. With an additional semester abroad (dual degree option), you have the opportunity to acquire a double degree.",
+          "The programme takes place entirely on site in the vibrant city of Hamburg. Should the situation require it, the courses can also take place in hybrid form in individual cases.",
+          "Application deadline",
+          "EBS Universität conducts a holistic selection process. We assess your scores in the context of your overall profile, professional experience and background.",
+          "There are no application deadlines at EBS; however, early application is particularly recommended for international candidates and scholarship seekers.",
+          "Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September",
+          "Please apply well in advance, considering the duration of the visa process in your home country.",
+          "Tuition fees per semester in EUR",
+          "Yes",
+          "Additional information on tuition fees",
+          "Semester Abroad Track | Practice Track: 33,780 EUR in total",
+          "Accelerated Track: 27,830 EUR in total",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "Yes",
+          "Description/content",
+          "The Master's in Real Estate programme is divided into different stages. At the beginning of the programme, we prepare you for your future research work and support you in the further development of your leadership skills. Building on this, you will deal with the essential issues of your field, consolidate newly acquired knowledge and grow as a leader.",
+          "Core Modules"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "EBS Universität",
+        "url": "https://www.ebs.edu/en/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "MBA (full-time or part-time)",
+        "degree": "Master of Business Administration",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3954/",
+        "campus": "Oestrich-Winkel",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": 180,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master of Business Administration Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Combined Master's degree / PhD programme Credits will be earned through case studies, project work, and written examinations. The Master's thesis is usually written during the third semester. Projects with partners in Germany and abroad You will also have the chance to gain maximum international experience during your studies in the MBA full-time . If you extend your study time by another semester at one of our partner universities, you will not only obtain the MBA of EBS Universität, but you will also be conferred the degree (Master or MBA) of the chosen university. Academic admission requirements A Bachelor’s degree and transcripts in any field of study with at least 180 ECTS or an equivalent recognised qualification A valid GMAT (either classic or new Focus edition – scores will be based on GMAC's percentile tables), GRE, Business Admissions Test (BAT), EBSgrad Test, Common Admissions Test (CAT) If your application documents meet our admission requirements, we will invite you to an individual interview. During this interview, we will assess your motivation and social skills. The decisive factors are your motivation to perform and learn, your social communication profile, your willingness to take on social responsibility, and your initiative. Language requirements TOEFL iBT score min. 95 IELTS min. band score 7 Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Nestled in the picturesque town of Oestrich-Winkel near the financial hub of Frankfurt, EBS offers a unique academic experience beyond education; it's your gateway to a world of opportunity and personal growth. With an international focus and a strong network, our Master's programmes are designed to elevate your skills and career prospects."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "EBS Universität conducts a holistic selection process. We assess your scores in the context of your overall profile, professional experience and background."
+        ],
+        "intakes": [
+          "Winter and summer semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "We focus on the quality of teaching. EBS Universität stands for one of the best management education programmes in the entire German-speaking world. You need to plan the following investment for the MBA full-time at EBS"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3954/",
+            "source_text": "Master of Business Administration Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Combined Master's degree / PhD programme Credits will be earned through case studies, project work, and written examinations. The Master's thesis is usually written during the third semester. Projects with partners in Germany and abroad You will also have the chance to gain maximum international ex",
+            "retrieved_at": "2026-05-24T12:42:17.106736+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3954/",
+          "text": "Master of Business Administration Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Combined Master's degree / PhD programme Credits will be earned through case studies, project work, and written examinations. The Master's thesis is usually written during the third semester. Projects with partners in Germany and abroad You will also have the chance to gain maximum international experience during your studies in the MBA full-time . If you extend your study time by another semester at one of our partner universities, you will not only obtain the MBA of EBS Universität, but you will also be conferred the degree (Master or MBA) of the chosen university. Academic admission requirements A Bachelor’s degree and transcripts in any field of study with at least 180 ECTS or an equivalent recognised qualification A valid GMAT (either classic or new Focus edition – scores will be based on GMAC's percentile tables), GRE, Business Admissions Test (BAT), EBSgrad Test, Common Admissions Test (CAT) If your application documents meet our admission requirements, we will invite you to an individual interview. During this interview, we will assess your motivation and social skills. The decisive factors are your motivation to perform and learn, your social communication profile, your willingness to take on social responsibility, and your initiative. Language requirements TOEFL iBT score min. 95 IELTS min. band score 7 Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September Nestled in the picturesque town of Oestrich-Winkel near the financial hub of Frankfurt, EBS offers a unique academic experience beyond education; it's your gateway to a world of opportunity and personal growth. With an international focus and a strong network, our Master's programmes are designed to elevate your skills and career prospects."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "3954",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=EBS&limit=25&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3954/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter and summer semester",
+        "programme_duration": "2 semesters, 4 semesters",
+        "study_mode": "Fully on-site with voluntary online elements",
+        "quality_flags": [],
+        "raw_blocks": [
+          "MBA (full-time or part-time) - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "MBA (full-time or part-time) MBA (full-time or part-time)",
+          "EBS Universität für Wirtschaft und Recht • Oestrich-Winkel",
+          "Gallery",
+          "Overview",
+          "Course details",
+          "Online learning",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Master of Business Administration",
+          "Course location",
+          "Oestrich-Winkel",
+          "Teaching language",
+          "English",
+          "Languages",
+          "The programme follows international standards and is therefore 100% in English .",
+          "In addition, our EBS Language Center offers a wide range of opportunities to broaden your language and intercultural horizons.",
+          "Full-time / part-time",
+          "full-time",
+          "part-time (study alongside work)",
+          "Mode of study",
+          "Fully on-site with voluntary online elements",
+          "Programme duration",
+          "2 semesters, 4 semesters",
+          "Beginning",
+          "Winter and summer semester",
+          "Additional information on beginning, duration and mode of study",
+          "The MBA programme at EBS Universität offers you two attractive study options.",
+          "MBA, full-time: The MBA takes two semesters and offers you an efficient way to achieve your career goals.",
+          "MBA, part-time: With this version of the EBS MBA, you have the opportunity to extend your studies to four semesters .",
+          "The programme takes place entirely on site. Should the situation require it, the courses can also take place in hybrid form in individual cases.",
+          "Application deadline",
+          "EBS Universität conducts a holistic selection process. We assess your scores in the context of your overall profile, professional experience and background.",
+          "There are no application deadlines at EBS. However, early application is particularly recommended for international candidates and scholarship seekers.",
+          "Application recommendation for non-EU applicants with visa requirements: To start in the autumn semester: end of May To start in the spring semester: end of September",
+          "Please apply well in advance, considering the visa process duration in your home country.",
+          "Tuition fees per semester in EUR",
+          "Yes",
+          "Additional information on tuition fees",
+          "We focus on the quality of teaching. EBS Universität stands for one of the best management education programmes in the entire German-speaking world. You need to plan the following investment for the MBA full-time at EBS:",
+          "Total tuition fees: 29,780 EUR",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "Yes"
+        ]
+      }
+    }
+  ],
+  "skipped": []
+}

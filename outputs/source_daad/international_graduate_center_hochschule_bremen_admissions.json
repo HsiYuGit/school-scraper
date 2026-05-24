@@ -1,0 +1,329 @@
+{
+  "schema_version": "0.4-source",
+  "source_platform": "daad",
+  "source_label": "DAAD",
+  "school": {
+    "name": "International Graduate Center, Hochschule Bremen",
+    "url": "https://www.graduatecenter.org/en/",
+    "country": "Germany",
+    "partner_status": "candidate_from_partner_logo",
+    "school_type": "graduate_center"
+  },
+  "retrieved_at": "2026-05-24T12:50:17.542324+00:00",
+  "source_coverage": {
+    "status": "source_partial_match",
+    "warning": true,
+    "programs_extracted": 2,
+    "limitation_notes": [
+      "Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Bremen+University+of+Applied+Sciences+MBA&limit=100&offset=0&display=list: limit=100 offset=0.",
+      "Configured DAAD target is source_partial_match; configured queries and detail URLs may not cover every programme exposed by DAAD."
+    ],
+    "future_deepening_candidates": [
+      {
+        "note": "Confirm IGC programme names and source institution mapping from DAAD detail pages."
+      }
+    ]
+  },
+  "programs": [
+    {
+      "school": {
+        "name": "International Graduate Center, Hochschule Bremen",
+        "url": "https://www.graduatecenter.org/en/",
+        "country": "Germany",
+        "partner_status": "candidate_from_partner_logo",
+        "school_type": "graduate_center"
+      },
+      "program": {
+        "name": "International MBA (Dual Degree) - Focus International Marketing",
+        "degree": "Dual degree from two universities: MBA and/or Master's degree",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4625/",
+        "campus": "Bremen",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Dual degree from two universities: MBA and/or Master's degree Third semester: Master's thesis Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university) Combined Master's degree / PhD programme In the first semester, students study the core modules at the International Graduate Center of the Hochschule Bremen City University of Applied Sciences in Germany. In the second and third semesters, students switch to the University of València, Spain for their specialisation and the Master's thesis in International Marketing. Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university) Academic admission requirements Language requirements Very good English language skills are required; applicants must provide proof of English proficiency with TOEFL (Test of English as a Foreign Language) 90 iBT points or IELTS (International English Language Testing System) 6.5 points. Given that this is a one-year, full-time Master's programme with an intense study period and high workload, it is advisable not to work during the course of study. (In general, students from European Union countries are not required to have a work permit to work during their course of study. Students from countries outside the European Union may work 120 full days or 240 half days over the course of one year without a work permit. A special permit is required to work more than that.)"
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Please check the university's website ."
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university)"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4625/",
+            "source_text": "Dual degree from two universities: MBA and/or Master's degree Third semester: Master's thesis Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university) Combined Master's degree / PhD programme In the first semester, students study the core modules at the International Graduate Center of the Hochschule Bremen City University of Applied Sciences in Germany. In the second and third semesters, students switch to the University of València, Spain for t",
+            "retrieved_at": "2026-05-24T12:50:17.542324+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4625/",
+          "text": "Dual degree from two universities: MBA and/or Master's degree Third semester: Master's thesis Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university) Combined Master's degree / PhD programme In the first semester, students study the core modules at the International Graduate Center of the Hochschule Bremen City University of Applied Sciences in Germany. In the second and third semesters, students switch to the University of València, Spain for their specialisation and the Master's thesis in International Marketing. Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university) Academic admission requirements Language requirements Very good English language skills are required; applicants must provide proof of English proficiency with TOEFL (Test of English as a Foreign Language) 90 iBT points or IELTS (International English Language Testing System) 6.5 points. Given that this is a one-year, full-time Master's programme with an intense study period and high workload, it is advisable not to work during the course of study. (In general, students from European Union countries are not required to have a work permit to work during their course of study. Students from countries outside the European Union may work 120 full days or 240 half days over the course of one year without a work permit. A special permit is required to work more than that.)"
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "4625",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Bremen%20University%20of%20Applied%20Sciences%20MBA&limit=50&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4625/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "2 semesters, 3 semesters",
+        "study_mode": "Fully on-site with voluntary online elements",
+        "quality_flags": [],
+        "raw_blocks": [
+          "International MBA (Dual Degree) - Focus International Marketing - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "International MBA (Dual Degree) - Focus International Marketing International MBA (Dual Degree) - Focus International Marketing",
+          "Bremen University of Applied Sciences • Bremen",
+          "Overview",
+          "Course details",
+          "Online learning",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "Degree",
+          "Dual degree from two universities: MBA and/or Master's degree",
+          "Course location",
+          "Bremen",
+          "In cooperation with",
+          "International Business School Alliance (IBSA)",
+          "University of North Carolina Wilmington, Cameron School of Business, USA",
+          "ESSCA School of Management, Paris, France",
+          "University of València, Facultat d'Economia, Spai",
+          "Teaching language",
+          "English",
+          "Languages",
+          "All courses are taught in English.",
+          "Full-time / part-time",
+          "full-time",
+          "Mode of study",
+          "Fully on-site with voluntary online elements",
+          "Programme duration",
+          "2 semesters, 3 semesters",
+          "Beginning",
+          "Winter semester",
+          "Additional information on beginning, duration and mode of study",
+          "The programme starts in October.",
+          "First semester: October – January",
+          "Second semester: January/February – June/July",
+          "Third semester: Master's thesis",
+          "Fast-track option available (complete the entire programme within two semesters)",
+          "Application deadline",
+          "Please check the university's website .",
+          "Tuition fees per semester in EUR",
+          "Yes",
+          "Additional information on tuition fees",
+          "Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university)",
+          "Prices can be found here .",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "Yes",
+          "Description/content"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "International Graduate Center, Hochschule Bremen",
+        "url": "https://www.graduatecenter.org/en/",
+        "country": "Germany",
+        "partner_status": "candidate_from_partner_logo",
+        "school_type": "graduate_center"
+      },
+      "program": {
+        "name": "International MBA (Dual Degree) Programme",
+        "degree": "Dual degree from two universities: International MBA and/or Master's degree",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3812/",
+        "campus": "Bremen",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Dual degree from two universities: International MBA and/or Master's degree Third semester: Master's thesis Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university) Combined Master's degree / PhD programme In the first semester, students study the core modules of the dual degree programme either at one of our partner universities of the International Business School Alliance (IBSA) or with us. For the specialisation and the Master's thesis, they move to a second IBSA university and country (see list above). The core modules are identical at each partner university. Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university) Academic admission requirements Language requirements Very good English language skills are required; applicants must provide proof of English proficiency with TOEFL 90 points (iBT) or IELTS 6.5 points. https://www.graduatecenter.org/en/admission-support/online-application.html As this is a one-year full-time Master's programme, and due to the intense study period and high workload, it is not recommended to work during the course of study. (In general, students from European Union countries are not required to have a work permit to work during their course of study. Students from countries outside the European Union may work 120 full days or 240 half days over the course of one year without a work permit. A special permit is required to work more than that.) The International Graduate Center (IGC) was founded by Hochschule Bremen City University of Applied Sciences (HSB) as an interdisciplinary Graduate School for Management and Leadership. For applicants with a first university degree, the IGC offers several non-consecutive MBA and Master's degrees in the area of international and European business and management. All full-time courses are taught entirely in English."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.5"
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Please check the university's website ."
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university)"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3812/",
+            "source_text": "Dual degree from two universities: International MBA and/or Master's degree Third semester: Master's thesis Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university) Combined Master's degree / PhD programme In the first semester, students study the core modules of the dual degree programme either at one of our partner universities of the International Business School Alliance (IBSA) or with us. For the specialisation and the Master's thesis, they ",
+            "retrieved_at": "2026-05-24T12:50:17.542324+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3812/",
+          "text": "Dual degree from two universities: International MBA and/or Master's degree Third semester: Master's thesis Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university) Combined Master's degree / PhD programme In the first semester, students study the core modules of the dual degree programme either at one of our partner universities of the International Business School Alliance (IBSA) or with us. For the specialisation and the Master's thesis, they move to a second IBSA university and country (see list above). The core modules are identical at each partner university. Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university) Academic admission requirements Language requirements Very good English language skills are required; applicants must provide proof of English proficiency with TOEFL 90 points (iBT) or IELTS 6.5 points. https://www.graduatecenter.org/en/admission-support/online-application.html As this is a one-year full-time Master's programme, and due to the intense study period and high workload, it is not recommended to work during the course of study. (In general, students from European Union countries are not required to have a work permit to work during their course of study. Students from countries outside the European Union may work 120 full days or 240 half days over the course of one year without a work permit. A special permit is required to work more than that.) The International Graduate Center (IGC) was founded by Hochschule Bremen City University of Applied Sciences (HSB) as an interdisciplinary Graduate School for Management and Leadership. For applicants with a first university degree, the IGC offers several non-consecutive MBA and Master's degrees in the area of international and European business and management. All full-time courses are taught entirely in English."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "3812",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Bremen%20University%20of%20Applied%20Sciences%20MBA&limit=50&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3812/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "2 semesters, 3 semesters",
+        "study_mode": "Fully on-site with voluntary online elements",
+        "quality_flags": [],
+        "raw_blocks": [
+          "International MBA (Dual Degree) Programme - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "International MBA (Dual Degree) Programme International MBA (Dual Degree) Programme",
+          "Bremen University of Applied Sciences • Bremen",
+          "Gallery",
+          "Overview",
+          "Course details",
+          "Online learning",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Dual degree from two universities: International MBA and/or Master's degree",
+          "Course location",
+          "Bremen",
+          "In cooperation with",
+          "International Business School Alliance (IBSA)",
+          "University of North Carolina Wilmington, Cameron School of Business, USA",
+          "ESSCA School of Management, Paris, France",
+          "University of València, Facultat d'Economia, Spain",
+          "Teaching language",
+          "English",
+          "Languages",
+          "English only",
+          "Full-time / part-time",
+          "full-time",
+          "Mode of study",
+          "Fully on-site with voluntary online elements",
+          "Programme duration",
+          "2 semesters, 3 semesters",
+          "Beginning",
+          "Winter semester",
+          "Additional information on beginning, duration and mode of study",
+          "The programme starts in October.",
+          "First semester: October–January",
+          "Second semester: January/February–June/July",
+          "Third semester: Master's thesis",
+          "Fast track option available (complete entire programme within two semesters)",
+          "Application deadline",
+          "Please check the university's website .",
+          "Tuition fees per semester in EUR",
+          "Yes",
+          "Additional information on tuition fees",
+          "Approx. 17,900 EUR for the two Master's degrees and the entire programme (depending on partner university)",
+          "Prices can be found here .",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme"
+        ]
+      }
+    }
+  ],
+  "skipped": []
+}

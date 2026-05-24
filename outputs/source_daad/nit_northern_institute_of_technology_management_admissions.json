@@ -1,0 +1,486 @@
+{
+  "schema_version": "0.4-source",
+  "source_platform": "daad",
+  "source_label": "DAAD",
+  "school": {
+    "name": "NIT Northern Institute of Technology Management",
+    "url": "https://www.nithh.de/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "institute"
+  },
+  "retrieved_at": "2026-05-24T12:49:18.442494+00:00",
+  "source_coverage": {
+    "status": "source_partial_match",
+    "warning": true,
+    "programs_extracted": 3,
+    "limitation_notes": [
+      "Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=NIT+Northern+Institute+of+Technology+Management&limit=100&offset=0&display=list: limit=100 offset=0.",
+      "Configured DAAD target is target_needs_recon; configured queries and detail URLs may not cover every programme exposed by DAAD."
+    ],
+    "future_deepening_candidates": [
+      {
+        "note": "Use institution filter mapping rather than free-text NIT search."
+      }
+    ]
+  },
+  "programs": [
+    {
+      "school": {
+        "name": "NIT Northern Institute of Technology Management",
+        "url": "https://www.nithh.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "institute"
+      },
+      "program": {
+        "name": "Advanced and Computational Mathematics – International Master's Programme",
+        "degree": "Master of Science in Mathematics",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4770/",
+        "campus": "Chemnitz",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": 120,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Advanced and Computational Mathematics – International Master's Programme Advanced and Computational Mathematics Master of Science in Mathematics Courses are held in English (100%). Participants can choose to write the Master's thesis in English or German. Combined Master's degree / PhD programme Learn how mathematics can solve real-world problems and go beyond academic challenges. The Advanced and Computational Mathematics Master's programme trains individuals to unlock their full potential, enabling groundbreaking achievements in both academic and practical working fields. Students prepare for an impactful career by mastering the mathematics that drives innovation in today's tech-driven world. Additionally, students will participate in a seminar and complete their studies with a Master's thesis in their specialisation. Moreover, they will have the opportunity to learn languages, including mandatory German courses. The curriculum extends over four semesters, during which you must acquire 120 ECTS credits. Throughout the programme, current topics in applied mathematics and pure mathematics are taught in comprehensive lecture series by internationally renowned scientists. All lecture topics are discussed in depth in tutorial classes, ensuring that you receive continuous feedback regarding your academic performance. Upon admission to the programme, you can already start an online course in your home country, which will be continued in Chemnitz and be credited accordingly. This approach ensures that you do not lose precious time in the event of delays in obtaining your student visa. During the first semester, you will gain a solid foundation in advanced mathematics (29 ECTS covered by four courses). Starting in the second semester, according to your personal interests, you will select your field of specialisation: Advanced Pure Mathematics, Computational Mathematics, or Data Science, where you will gain state-of-the-art expertise and earn at least 38 ECTS. In preparation for your Master's thesis, you will participate in a seminar (8 ECTS) during the third semester. Finally, during the fourth semester, you will write your Master's thesis (30 ECTS) on a subject from your field of specialisation under the guidance and supervision of a professor from the Faculty of Mathematics. In addition to courses in mathematics, you may earn up to 15 ECTS in language courses (5 ECTS per course). Upon completion of the programme, you will have German proficiency at an A2 level, which, depending on your background, will require you to obtain up to 10 ECTS in German courses. The degree of Master of Science (MSc) will be awarded upon successful completion of the programme. During the programme, oral exams will be taken at the end of each semester. All students have to pay a semester contribution of approx. 330 EUR. This fee also covers the semester ticket, which permits you to use buses and trams in Chemnitz as well as regional trains throughout Germany during the semester. International students will receive the bank account details after admission, with which they can transfer the semester contribution. However, the fee can also be paid after arrival in Chemnitz (by German bank card or transfer). Academic admission requirements Language requirements IELTS 5.5 TOEFL iBT (Internet-based test): 72 points TOEFL ITP Level 1: 543 points Starting your studies in a new country can be challenging, especially when visa processing delays prevent a timely arrival. To support new students in the Master’s programme in Advanced and Computational Mathematics at Chemnitz University of Technology, a mentorship programme is offered. Experienced students from the same programme act as mentors, organising regular online meetings to help new students navigate their studies from day one — even before arriving in Chemnitz. Through this programme, they will The university combines engineering and natural sciences as well as mathematics with humanities, social sciences and economics . At the junctures, unique degree programmes are created alongside pioneering research projects. These include, for example, sensor technology and cognitive psychology, computer science for humanities and social scientists, and the degree programme MINT: Mathematics, Computer Science and Natural Sciences with Applications in Technology. As of the 2025/2026 winter semester, the university offers about 100 degree programmes . A particular hallmark is the high degree of interdisciplinarity."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "5.5"
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "15 July for the following winter semester 15 January for the following summer semester"
+        ],
+        "intakes": [
+          "Winter and summer semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "None"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4770/",
+            "source_text": "Advanced and Computational Mathematics – International Master's Programme Advanced and Computational Mathematics Master of Science in Mathematics Courses are held in English (100%). Participants can choose to write the Master's thesis in English or German. Combined Master's degree / PhD programme Learn how mathematics can solve real-world problems and go beyond academic challenges. The Advanced and Computational Mathematics Master's programme trains individuals to unlock their full potential, en",
+            "retrieved_at": "2026-05-24T12:49:18.442494+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4770/",
+          "text": "Advanced and Computational Mathematics – International Master's Programme Advanced and Computational Mathematics Master of Science in Mathematics Courses are held in English (100%). Participants can choose to write the Master's thesis in English or German. Combined Master's degree / PhD programme Learn how mathematics can solve real-world problems and go beyond academic challenges. The Advanced and Computational Mathematics Master's programme trains individuals to unlock their full potential, enabling groundbreaking achievements in both academic and practical working fields. Students prepare for an impactful career by mastering the mathematics that drives innovation in today's tech-driven world. Additionally, students will participate in a seminar and complete their studies with a Master's thesis in their specialisation. Moreover, they will have the opportunity to learn languages, including mandatory German courses. The curriculum extends over four semesters, during which you must acquire 120 ECTS credits. Throughout the programme, current topics in applied mathematics and pure mathematics are taught in comprehensive lecture series by internationally renowned scientists. All lecture topics are discussed in depth in tutorial classes, ensuring that you receive continuous feedback regarding your academic performance. Upon admission to the programme, you can already start an online course in your home country, which will be continued in Chemnitz and be credited accordingly. This approach ensures that you do not lose precious time in the event of delays in obtaining your student visa. During the first semester, you will gain a solid foundation in advanced mathematics (29 ECTS covered by four courses). Starting in the second semester, according to your personal interests, you will select your field of specialisation: Advanced Pure Mathematics, Computational Mathematics, or Data Science, where you will gain state-of-the-art expertise and earn at least 38 ECTS. In preparation for your Master's thesis, you will participate in a seminar (8 ECTS) during the third semester. Finally, during the fourth semester, you will write your Master's thesis (30 ECTS) on a subject from your field of specialisation under the guidance and supervision of a professor from the Faculty of Mathematics. In addition to courses in mathematics, you may earn up to 15 ECTS in language courses (5 ECTS per course). Upon completion of the programme, you will have German proficiency at an A2 level, which, depending on your background, will require you to obtain up to 10 ECTS in German courses. The degree of Master of Science (MSc) will be awarded upon successful completion of the programme. During the programme, oral exams will be taken at the end of each semester. All students have to pay a semester contribution of approx. 330 EUR. This fee also covers the semester ticket, which permits you to use buses and trams in Chemnitz as well as regional trains throughout Germany during the semester. International students will receive the bank account details after admission, with which they can transfer the semester contribution. However, the fee can also be paid after arrival in Chemnitz (by German bank card or transfer). Academic admission requirements Language requirements IELTS 5.5 TOEFL iBT (Internet-based test): 72 points TOEFL ITP Level 1: 543 points Starting your studies in a new country can be challenging, especially when visa processing delays prevent a timely arrival. To support new students in the Master’s programme in Advanced and Computational Mathematics at Chemnitz University of Technology, a mentorship programme is offered. Experienced students from the same programme act as mentors, organising regular online meetings to help new students navigate their studies from day one — even before arriving in Chemnitz. Through this programme, they will The university combines engineering and natural sciences as well as mathematics with humanities, social sciences and economics . At the junctures, unique degree programmes are created alongside pioneering research projects. These include, for example, sensor technology and cognitive psychology, computer science for humanities and social scientists, and the degree programme MINT: Mathematics, Computer Science and Natural Sciences with Applications in Technology. As of the 2025/2026 winter semester, the university offers about 100 degree programmes . A particular hallmark is the high degree of interdisciplinarity."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "4770",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=NIT+Northern+Institute+of+Technology+Management&limit=100&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4770/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter and summer semester",
+        "programme_duration": "4 semesters",
+        "study_mode": "Less than 50% online",
+        "quality_flags": [],
+        "raw_blocks": [
+          "Advanced and Computational Mathematics – International Master's Programme - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Advanced and Computational Mathematics – International Master's Programme Advanced and Computational Mathematics",
+          "Chemnitz University of Technology • Chemnitz",
+          "Gallery",
+          "Overview",
+          "Course details",
+          "Online learning",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Master of Science in Mathematics",
+          "Course location",
+          "Chemnitz",
+          "Teaching language",
+          "English",
+          "Languages",
+          "Courses are held in English (100%). Participants can choose to write the Master's thesis in English or German.",
+          "Chemnitz University of Technology offers German language courses for students from abroad. Upon successful completion of these courses, students are awarded a certificate.",
+          "Full-time / part-time",
+          "full-time",
+          "Mode of study",
+          "Less than 50% online",
+          "Programme duration",
+          "4 semesters",
+          "Beginning",
+          "Winter and summer semester",
+          "Additional information on beginning, duration and mode of study",
+          "Only parts of the first-semester curriculum can be studied online. The exams to be taken after the lecture period cannot be taken online, but only in person. Students must be present at the university location no later than the end of the first semester.",
+          "Application deadline",
+          "15 July for the following winter semester 15 January for the following summer semester",
+          "All documents (see course website) have to be submitted by the deadline via https://www.eduapplication.de/ . Please start your application as early as possible.",
+          "International applicants are very welcome!",
+          "Tuition fees per semester in EUR",
+          "None",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "Learn how mathematics can solve real-world problems and go beyond academic challenges. The Advanced and Computational Mathematics Master's programme trains individuals to unlock their full potential, enabling groundbreaking achievements in both academic and practical working fields. Students prepare for an impactful career by mastering the mathematics that drives innovation in today's tech-driven world.",
+          "The programme starts with a solid foundation in advanced mathematics. In the second semester, students gain expertise in one of three fields of specialisation:",
+          "Advanced Pure Mathematics",
+          "Computational Mathematics",
+          "Data Sciences",
+          "Additionally, students will participate in a seminar and complete their studies with a Master's thesis in their specialisation. Moreover, they will have the opportunity to learn languages, including mandatory German courses.",
+          "Outstanding achievers may also qualify for the PhD programme in the Faculty of Mathematics, paving the way for careers in scientific research and academia."
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "NIT Northern Institute of Technology Management",
+        "url": "https://www.nithh.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "institute"
+      },
+      "program": {
+        "name": "Advanced Functional Materials",
+        "degree": "Master of Science (MSc)",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4695/",
+        "campus": "Chemnitz",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master of Science (MSc) Combined Master's degree / PhD programme The advanced chemical and physical aspects of modern materials and the transfer of skills in synthesis, development, analysis and manufacturing of functional materials are the key issues of the Master's degree programme in Advanced Functional Materials. The interdisciplinary programme is offered by the Faculty of Natural Sciences and is based on courses in materials chemistry and materials physics. The research-oriented extension and intensification of physical and chemical knowledge is completed by advanced courses in modern research fields including the lab-oriented modules, which include a research project and the Master's thesis. Aspects of Modern Optics All students have to pay a semester contribution of approx. 330 EUR. This fee also covers the semester ticket, which permits you to use buses and trams in Chemnitz as well as regional trains throughout Germany during the semester. International students will receive the bank account details after admission, with which they can transfer the semester contribution. However, the fee can also be paid after arrival in Chemnitz (by German bank card or transfer). Academic admission requirements In general, a university Bachelor's degree in Physics, Chemistry or Materials Science is required. Degrees from universities other than Chemnitz University of Technology are to be checked by a board of examiners on the basis of the record of study. The applicant is to provide this record of study. The applicants must have basic lab experience. Language requirements IELTS 5.5 TOEFL iBT (Internet-based test): 72 points TOEFL ITP Level 1: 543 points The university combines engineering and natural sciences as well as mathematics with humanities, social sciences and economics . At the junctures, unique degree programmes are created alongside pioneering research projects. These include, for example, sensor technology and cognitive psychology, computer science for humanities and social scientists, and the degree programme MINT: Mathematics, Computer Science and Natural Sciences with Applications in Technology. As of the 2025/2026 winter semester, the university offers about 100 degree programmes . A particular hallmark is the high degree of interdisciplinarity."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "5.5"
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "15 January for the following summer semester"
+        ],
+        "intakes": [
+          "Winter and summer semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "None"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4695/",
+            "source_text": "Master of Science (MSc) Combined Master's degree / PhD programme The advanced chemical and physical aspects of modern materials and the transfer of skills in synthesis, development, analysis and manufacturing of functional materials are the key issues of the Master's degree programme in Advanced Functional Materials. The interdisciplinary programme is offered by the Faculty of Natural Sciences and is based on courses in materials chemistry and materials physics. The research-oriented extension a",
+            "retrieved_at": "2026-05-24T12:49:18.442494+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4695/",
+          "text": "Master of Science (MSc) Combined Master's degree / PhD programme The advanced chemical and physical aspects of modern materials and the transfer of skills in synthesis, development, analysis and manufacturing of functional materials are the key issues of the Master's degree programme in Advanced Functional Materials. The interdisciplinary programme is offered by the Faculty of Natural Sciences and is based on courses in materials chemistry and materials physics. The research-oriented extension and intensification of physical and chemical knowledge is completed by advanced courses in modern research fields including the lab-oriented modules, which include a research project and the Master's thesis. Aspects of Modern Optics All students have to pay a semester contribution of approx. 330 EUR. This fee also covers the semester ticket, which permits you to use buses and trams in Chemnitz as well as regional trains throughout Germany during the semester. International students will receive the bank account details after admission, with which they can transfer the semester contribution. However, the fee can also be paid after arrival in Chemnitz (by German bank card or transfer). Academic admission requirements In general, a university Bachelor's degree in Physics, Chemistry or Materials Science is required. Degrees from universities other than Chemnitz University of Technology are to be checked by a board of examiners on the basis of the record of study. The applicant is to provide this record of study. The applicants must have basic lab experience. Language requirements IELTS 5.5 TOEFL iBT (Internet-based test): 72 points TOEFL ITP Level 1: 543 points The university combines engineering and natural sciences as well as mathematics with humanities, social sciences and economics . At the junctures, unique degree programmes are created alongside pioneering research projects. These include, for example, sensor technology and cognitive psychology, computer science for humanities and social scientists, and the degree programme MINT: Mathematics, Computer Science and Natural Sciences with Applications in Technology. As of the 2025/2026 winter semester, the university offers about 100 degree programmes . A particular hallmark is the high degree of interdisciplinarity."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "4695",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=NIT+Northern+Institute+of+Technology+Management&limit=100&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4695/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter and summer semester",
+        "programme_duration": "4 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "Advanced Functional Materials - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Advanced Functional Materials Advanced Functional Materials",
+          "Chemnitz University of Technology • Chemnitz",
+          "Gallery",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Master of Science (MSc)",
+          "Course location",
+          "Chemnitz",
+          "Teaching language",
+          "English",
+          "Languages",
+          "Obligatory courses are held in English. Additional elective courses that are taught in German are available.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "4 semesters",
+          "Beginning",
+          "Winter and summer semester",
+          "Application deadline",
+          "15 January for the following summer semester",
+          "15 July for the following winter semester",
+          "Tuition fees per semester in EUR",
+          "None",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "The advanced chemical and physical aspects of modern materials and the transfer of skills in synthesis, development, analysis and manufacturing of functional materials are the key issues of the Master's degree programme in Advanced Functional Materials. The interdisciplinary programme is offered by the Faculty of Natural Sciences and is based on courses in materials chemistry and materials physics. The research-oriented extension and intensification of physical and chemical knowledge is completed by advanced courses in modern research fields including the lab-oriented modules, which include a research project and the Master's thesis.",
+          "Course organisation",
+          "Mandatory Basic Modules The mandatory basic modules (first to third semesters) are taught in English.",
+          "Advanced Concepts in Chemistry and Physics",
+          "Synthetic Methods in Chemistry",
+          "Material Characterisation",
+          "Surfaces, Thin Films and Interfaces",
+          "Sustainable Production Technologies",
+          "Semiconductor Physics – Nano Structures",
+          "Facets of Material Science",
+          "Physics of Solar Cells",
+          "Research project",
+          "Soft skills",
+          "\"Deutsch als Fremdsprache\" (German as a foreign language) I and II (A1/A2)*"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "NIT Northern Institute of Technology Management",
+        "url": "https://www.nithh.de/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "institute"
+      },
+      "program": {
+        "name": "Advanced Manufacturing – Mechanical Engineering and Production",
+        "degree": "Master of Science in Advanced Manufacturing",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7612/",
+        "campus": "Chemnitz",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": 18,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master of Science in Advanced Manufacturing 15 July for admission to start in October of the same year Combined Master's degree / PhD programme This English-taught, research-driven, and interdisciplinary Master’s programme is offered by the Faculty of Mechanical Engineering at Chemnitz University of Technology. It is designed to equip students with cutting-edge scientific methods, knowledge, and skills related to innovative technologies and advanced manufacturing processes. The programme embodies and reflects the core competencies of Chemnitz University of Technology, preparing graduates to shape the future of modern manufacturing. The Master's in Advanced Manufacturing is a two-year (four semesters) programme. You will start right away in the first semester into various manufacturing technologies. The course on research methods equips you with the skills to excel in an academic environment and makes you familiar with the foundations of what is called the modern scientific method. In your first semester, you will gain a first of different future-oriented manufacturing methods and relate them to current questions regarding the availability of resources. Based on the scientific and methodological abilities acquired, second-year students work on their own research topics in an academic or industrial context and complete their studies with the Master's thesis. The Master's thesis covers the whole last semester. Master's thesis (semester 4) Projects with partners in Germany and abroad All students have to pay a semester contribution of approx. 330 EUR. This fee also covers the semester ticket, which permits you to use buses and trams in Chemnitz as well as regional trains throughout Germany during the semester. International students will receive the bank account details after admission, with which they can transfer the semester contribution. However, the fee can also be paid after arrival in Chemnitz (by German bank card or transfer). Academic admission requirements The admission requirements for the Master's programme in Advanced Manufacturing are fulfilled by students who have acquired a first professional qualification in an engineering or natural science degree programme and, additionally, in-depth scientific knowledge in the following fields Special mathematical methods of engineering, totalling at least 18 ECTS and including the topics of Fourier transforms, regression calculation, probability and mathematical statistics Scientific and engineering data processing, totalling at least 12 ECTS and including the topics of CAD, CAS, numerical simulation and data acquisition as well as multiphysics simulation and practical experience Metrology and control engineering, totalling at least 8 ECTS and including the topics of sensors, actuators and digital methods of manufacturing New materials for engineering, totalling at least 8 ECTS and including the topics of polymers, metals, composites, matrix systems and functional properties In-depth theoretical basics of engineering, in a total of at least 12 ECTS and including the subjects of engineering mechanics, design, manufacturing and fluid dynamics Resource-efficient manufacturing concepts, totalling at least 8 ECTS and including the topics of technical and natural cycles and networks, system optimisation and energy concepts The Examination Board decides on the admission of the applicants. Language requirements IELTS 5.5 TOEFL iBT (Internet-based test): 72 points TOEFL ITP Level 1: 543 points It is also possible to take an online course before the semester starts (440 EUR fee, details in the admission letter). 15 July for admission to start in October of the same year The university combines engineering and natural sciences as well as mathematics with humanities, social sciences and economics . At the junctures, unique degree programmes are created alongside pioneering research projects. These include, for example, sensor technology and cognitive psychology, computer science for humanities and social scientists, and the degree programme MINT: Mathematics, Computer Science and Natural Sciences with Applications in Technology. As of the 2025/2026 winter semester, the university offers about 100 degree programmes . A particular hallmark is the high degree of interdisciplinarity."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "5.5"
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "15 July for admission to start in October of the same year"
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "None"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7612/",
+            "source_text": "Master of Science in Advanced Manufacturing 15 July for admission to start in October of the same year Combined Master's degree / PhD programme This English-taught, research-driven, and interdisciplinary Master’s programme is offered by the Faculty of Mechanical Engineering at Chemnitz University of Technology. It is designed to equip students with cutting-edge scientific methods, knowledge, and skills related to innovative technologies and advanced manufacturing processes. The programme embodie",
+            "retrieved_at": "2026-05-24T12:49:18.442494+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7612/",
+          "text": "Master of Science in Advanced Manufacturing 15 July for admission to start in October of the same year Combined Master's degree / PhD programme This English-taught, research-driven, and interdisciplinary Master’s programme is offered by the Faculty of Mechanical Engineering at Chemnitz University of Technology. It is designed to equip students with cutting-edge scientific methods, knowledge, and skills related to innovative technologies and advanced manufacturing processes. The programme embodies and reflects the core competencies of Chemnitz University of Technology, preparing graduates to shape the future of modern manufacturing. The Master's in Advanced Manufacturing is a two-year (four semesters) programme. You will start right away in the first semester into various manufacturing technologies. The course on research methods equips you with the skills to excel in an academic environment and makes you familiar with the foundations of what is called the modern scientific method. In your first semester, you will gain a first of different future-oriented manufacturing methods and relate them to current questions regarding the availability of resources. Based on the scientific and methodological abilities acquired, second-year students work on their own research topics in an academic or industrial context and complete their studies with the Master's thesis. The Master's thesis covers the whole last semester. Master's thesis (semester 4) Projects with partners in Germany and abroad All students have to pay a semester contribution of approx. 330 EUR. This fee also covers the semester ticket, which permits you to use buses and trams in Chemnitz as well as regional trains throughout Germany during the semester. International students will receive the bank account details after admission, with which they can transfer the semester contribution. However, the fee can also be paid after arrival in Chemnitz (by German bank card or transfer). Academic admission requirements The admission requirements for the Master's programme in Advanced Manufacturing are fulfilled by students who have acquired a first professional qualification in an engineering or natural science degree programme and, additionally, in-depth scientific knowledge in the following fields Special mathematical methods of engineering, totalling at least 18 ECTS and including the topics of Fourier transforms, regression calculation, probability and mathematical statistics Scientific and engineering data processing, totalling at least 12 ECTS and including the topics of CAD, CAS, numerical simulation and data acquisition as well as multiphysics simulation and practical experience Metrology and control engineering, totalling at least 8 ECTS and including the topics of sensors, actuators and digital methods of manufacturing New materials for engineering, totalling at least 8 ECTS and including the topics of polymers, metals, composites, matrix systems and functional properties In-depth theoretical basics of engineering, in a total of at least 12 ECTS and including the subjects of engineering mechanics, design, manufacturing and fluid dynamics Resource-efficient manufacturing concepts, totalling at least 8 ECTS and including the topics of technical and natural cycles and networks, system optimisation and energy concepts The Examination Board decides on the admission of the applicants. Language requirements IELTS 5.5 TOEFL iBT (Internet-based test): 72 points TOEFL ITP Level 1: 543 points It is also possible to take an online course before the semester starts (440 EUR fee, details in the admission letter). 15 July for admission to start in October of the same year The university combines engineering and natural sciences as well as mathematics with humanities, social sciences and economics . At the junctures, unique degree programmes are created alongside pioneering research projects. These include, for example, sensor technology and cognitive psychology, computer science for humanities and social scientists, and the degree programme MINT: Mathematics, Computer Science and Natural Sciences with Applications in Technology. As of the 2025/2026 winter semester, the university offers about 100 degree programmes . A particular hallmark is the high degree of interdisciplinarity."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "7612",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=NIT+Northern+Institute+of+Technology+Management&limit=100&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7612/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "4 semesters",
+        "study_mode": "Less than 50% online",
+        "quality_flags": [],
+        "raw_blocks": [
+          "Advanced Manufacturing – Mechanical Engineering and Production - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Advanced Manufacturing – Mechanical Engineering and Production Advanced Manufacturing",
+          "Chemnitz University of Technology • Chemnitz",
+          "Gallery",
+          "Overview",
+          "Course details",
+          "Online learning",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Master of Science in Advanced Manufacturing",
+          "Course location",
+          "Chemnitz",
+          "Teaching language",
+          "English",
+          "Languages",
+          "Courses are taught in English.",
+          "Full-time / part-time",
+          "full-time",
+          "Mode of study",
+          "Less than 50% online",
+          "Programme duration",
+          "4 semesters",
+          "Beginning",
+          "Winter semester",
+          "Additional information on beginning, duration and mode of study",
+          "We provide individual support for students experiencing visa issues. There are online courses for the first semester available, so that you can already begin your studies from abroad.",
+          "Application deadline",
+          "15 July for admission to start in October of the same year",
+          "Tuition fees per semester in EUR",
+          "None",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "This English-taught, research-driven, and interdisciplinary Master’s programme is offered by the Faculty of Mechanical Engineering at Chemnitz University of Technology. It is designed to equip students with cutting-edge scientific methods, knowledge, and skills related to innovative technologies and advanced manufacturing processes. The programme embodies and reflects the core competencies of Chemnitz University of Technology, preparing graduates to shape the future of modern manufacturing.",
+          "Improving your soft skills will help you make responsible decisions based on multiple perspectives, e.g. political developments, geographical constellations and regional economics. At Chemnitz University of Technology, you will benefit from a long-established tradition of excellent research and teaching in mechanical engineering, natural sciences, human factors and economics. During the integrated internships, you will build strong ties with innovation leaders in industry and business.",
+          "By its four profile areas, which include \"Hybrid Technologies\", \"Printed Functionalities\", \"Work Design and Sustainability Management\" and \"Production Systems\", the degree programme is oriented towards the research key areas of Chemnitz University of Technology in a transdisciplinary, faculty-overarching and future-oriented way. In addition, the students also acquire intercultural competencies due to the international and heterogeneous character of the degree programme.",
+          "Course organisation",
+          "The Master's in Advanced Manufacturing is a two-year (four semesters) programme. You will start right away in the first semester into various manufacturing technologies. The course on research methods equips you with the skills to excel in an academic environment and makes you familiar with the foundations of what is called the modern scientific method. In your first semester, you will gain a first overview of different future-oriented manufacturing methods and relate them to current questions regarding the availability of resources.",
+          "We offer four major profiles and a large variety of options, so that you can design your studies according to your individual preferences and the required skills for you desired area of work. We expect our students to become excellent in their knowledge, critical in their reflection of (not only!) the scientific world and valuable contributors for the best of all people. This starts with taking decisions about your future profile!",
+          "The profiles cover the topics Hybrid Technologies (Fiber-Reinforced Composite Materials, Lightweight Design, Simulation and Optimisation), Printed Functionalities (Additive Manufacturing, Printed Electronics, Functional Inks), Work Design and Sustainability Management (Industrial Engineering, Man-Machine-Environment-Interaction, Sustainability, Life-Cycle Assessment), and Smart Production (Energy Efficient Production, Sensors, Data and Automation, Sustainable Supply Chains).",
+          "The in-depth engineering knowledge is applied to a challenging real-life task, provided by our industrial partners. This applied engineering project (third semester) is one of many opportunities to present your skills and personality to potential employers.",
+          "Based on the scientific and methodological abilities acquired, second-year students work on their own research topics in an academic or industrial context and complete their studies with the Master's thesis. The Master's thesis covers the whole last semester.",
+          "Summary: The structure of the programme is as follows:"
+        ]
+      }
+    }
+  ],
+  "skipped": []
+}

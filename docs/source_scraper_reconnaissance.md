@@ -21,6 +21,16 @@ Date: 2026-05-24
 - Detail-only fields: Detail pages expose richer sections such as degree, course location, teaching-language prose, full-time/part-time mode, programme duration, beginning, application deadlines, course details, costs/funding, requirements/registration, and services. Example DAAD detail record `5259` shows degree, location, teaching language, duration, beginning, and visa-sensitive deadlines in the HTML detail page.
 - JavaScript/browser clues: The search page renders a usable filter shell and page controls in HTML. The detail page was readable without executing JavaScript, though tabs/previous-next controls are present. The result list appears backed by the JSON endpoint rather than only static HTML.
 - Access limits: Respect DAAD robots and crawl-delay; do not use disallowed `hec-fetch-offset` URLs, internal app paths, login-only areas, PDFs, or aggressive full-site scans. Treat `www2.daad.de` robots ambiguity conservatively by following the stricter main `www.daad.de` policy and using bounded API/page requests.
+- Task 3 implementation mechanics:
+  - `scripts/scrape_daad_admissions.py` uses the DAAD search JSON path with bounded `limit=100&offset=0&display=list` requests, then fetches same-source `/detail/<numeric_id>/` pages.
+  - Detail pages remained readable as HTML and did not require JavaScript execution for the first-pass contract fields.
+  - Detail record IDs can be extracted from `/detail/<numeric_id>/` URLs when the listing record ID is unavailable.
+  - The 2026-05-24 live run produced 104 programme records: TUM Asia 8, ISM 10, EBS 9, SRH 59, Hochschule Fresenius 9, NIT 3, Hochschule Bremen 4, and IGC Bremen 2.
+  - Munich Business School, CBS International Business School, Kuehne Logistics University, and ESMT Berlin produced `source_limited` outputs under the configured DAAD query/detail targets; no school-official fallback was attempted.
+  - All DAAD outputs remain warning-marked because the configured targets are `source_partial_match` or `target_needs_recon`, so the manifest cannot claim exhaustive source coverage.
+  - Parser hardening after review removes DAAD page chrome such as `DAADREMOVE_JS` and skip links from programme names, rejects navigation/tab headings such as `Requirements / Registration` as structured fees or deadlines, and cleans the promoted requirements notes before writing them into the normalized contract.
+  - Certificate-like and short-course-like records, including summer/camp/training records, are retained for all-program source visibility but marked with `needs_human_review = true` and `source_specific.quality_flags`.
+  - The scraper now records the bounded listing window (`limit=100 offset=0`) in per-school limitation notes and defaults to DAAD's documented two-second crawl delay unless a caller explicitly overrides it. A shared DAAD fetch session applies that delay before every fetch after the first, including listing-to-detail and cross-target transitions.
 - Future deepening candidates:
   - Build and verify the `ins[]` institution ID map from the public filter UI or network requests.
   - Confirm DAAD course-type mapping and whether all source-visible partner records require `International Programmes` or also the broader `all-degree-programmes` database.

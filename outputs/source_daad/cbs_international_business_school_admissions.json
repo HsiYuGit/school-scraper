@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.4-source",
+  "source_platform": "daad",
+  "source_label": "DAAD",
+  "school": {
+    "name": "CBS International Business School",
+    "url": "https://www.cbs.de/en/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university"
+  },
+  "retrieved_at": "2026-05-24T12:41:19.838215+00:00",
+  "source_coverage": {
+    "status": "source_limited",
+    "warning": true,
+    "programs_extracted": 0,
+    "limitation_notes": [
+      "Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=CBS+International+Business+School&limit=100&offset=0&display=list: limit=100 offset=0.",
+      "Configured DAAD target is target_needs_recon; configured queries and detail URLs may not cover every programme exposed by DAAD."
+    ],
+    "future_deepening_candidates": [
+      {
+        "note": "Confirm whether DAAD uses a newer CBS University of Applied Sciences name or a hidden institution ID."
+      }
+    ]
+  },
+  "programs": [],
+  "skipped": []
+}

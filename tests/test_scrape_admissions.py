@@ -209,6 +209,201 @@ class AdmissionExtractionTest(unittest.TestCase):
         self.assertIn("robots_blocked", COVERAGE_STATUSES)
         self.assertEqual(source_slug("My German University"), "my_german_university")
 
+    def test_daad_detail_parser_extracts_contract_programme(self):
+        from scripts.scrape_daad_admissions import parse_daad_detail
+
+        html = """
+        <html><body>
+          <h1>Master International Business</h1>
+          <dl>
+            <dt>Degree</dt><dd>Master of Arts</dd>
+            <dt>Course language</dt><dd>English</dd>
+            <dt>Beginning</dt><dd>Winter semester</dd>
+            <dt>Application deadline</dt><dd>15 July</dd>
+            <dt>Tuition fees</dt><dd>6,000 EUR per semester</dd>
+          </dl>
+          <section><h2>Admission requirements</h2>
+            <p>Bachelor degree with 180 ECTS and proof of English language proficiency IELTS 6.5.</p>
+          </section>
+        </body></html>
+        """
+
+        programme = parse_daad_detail(
+            html,
+            detail_url="https://www.daad.de/example?w=w7513",
+            listing_url="https://www.daad.de/search",
+            record_id="w7513",
+        )
+
+        self.assertEqual(programme.source_record_id, "w7513")
+        self.assertEqual(programme.name, "Master International Business")
+        self.assertEqual(programme.degree, "Master of Arts")
+        self.assertEqual(programme.level, "master")
+        self.assertIn("English", programme.language_of_instruction)
+        self.assertIn("15 July", programme.application["deadlines"])
+        self.assertIn("6,000 EUR per semester", programme.application["fees"])
+        self.assertEqual(programme.source_specific["source_platform"], "daad")
+
+    def test_daad_detail_parser_ignores_page_chrome_and_section_tabs(self):
+        from scripts.scrape_daad_admissions import parse_daad_detail
+
+        html = """
+        <html><body>
+          <title>Bachelor's in Business Studies (BSc) - International Programmes - DAADREMOVE_JS Skip to main content</title>
+          <a>Skip to main content</a>
+          <nav><p>Services</p><p>International Programmes 2025/2026</p><p>Home Back Previous Next</p></nav>
+          <h1>Bachelor's in Business Studies (BSc)</h1>
+          <p>EBS University - Oestrich-Winkel</p>
+          <ul>
+            <li>Overview</li>
+            <li>Course details</li>
+            <li>Costs / Funding</li>
+            <li>Requirements / Registration</li>
+            <li>Services</li>
+          </ul>
+          <dl>
+            <dt>Degree</dt><dd>Bachelor of Science in Business Studies</dd>
+            <dt>Course location</dt><dd>Oestrich-Winkel</dd>
+            <dt>Teaching language</dt><dd>English</dd>
+            <dt>Beginning</dt><dd>Winter and summer semester</dd>
+            <dt>Application deadline</dt>
+            <dd>There are no application deadlines at EBS; early application is recommended.</dd>
+            <dt>Tuition fees per semester in EUR</dt><dd>Yes</dd>
+            <dt>Additional information on tuition fees</dt><dd>Total tuition fees: 54,480 EUR</dd>
+          </dl>
+          <section><h2>Requirements / Registration</h2>
+            <p>Admission requirements include a recognised school-leaving certificate and proof of English.</p>
+          </section>
+        </body></html>
+        """
+
+        programme = parse_daad_detail(
+            html,
+            detail_url="https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4080/",
+            listing_url="https://www2.daad.de/search",
+            record_id=None,
+        )
+
+        self.assertEqual(programme.source_record_id, "4080")
+        self.assertEqual(programme.name, "Bachelor's in Business Studies (BSc)")
+        self.assertNotIn("DAADREMOVE_JS", programme.name)
+        self.assertNotIn("Skip to main content", programme.name)
+        self.assertNotIn("Requirements / Registration", programme.application["deadlines"])
+        self.assertNotIn("Requirements / Registration", programme.application["fees"])
+        self.assertIn("Total tuition fees: 54,480 EUR", programme.application["fees"])
+        requirement_notes = programme.requirements["academic_background"]["notes"]
+        self.assertTrue(requirement_notes)
+        for note in requirement_notes:
+            self.assertNotIn("DAADREMOVE_JS", note)
+            self.assertNotIn("Skip to main content", note)
+            self.assertNotIn("Requirements / Registration", note)
+        self.assertFalse(programme.needs_human_review)
+
+    def test_daad_detail_parser_review_marks_certificate_like_records(self):
+        from scripts.scrape_daad_admissions import parse_daad_detail
+
+        html = """
+        <html><body>
+          <title>Solar Summer Team-up! - International Programmes - DAADREMOVE_JS Skip to main content</title>
+          <h1>Solar Summer Team-up!</h1>
+          <dl>
+            <dt>Degree</dt><dd>Certificate of participation</dd>
+            <dt>Teaching language</dt><dd>English</dd>
+          </dl>
+          <section><h2>Admission requirements</h2>
+            <p>Admission is open to advanced students with relevant experience.</p>
+          </section>
+        </body></html>
+        """
+
+        programme = parse_daad_detail(
+            html,
+            detail_url="https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/10000/",
+            listing_url="https://www2.daad.de/search",
+            record_id=None,
+        )
+
+        self.assertEqual(programme.name, "Solar Summer Team-up!")
+        self.assertTrue(programme.needs_human_review)
+        self.assertIn("non_degree_or_certificate_like", programme.source_specific["quality_flags"])
+
+    def test_daad_fetch_session_throttles_every_fetch_after_first(self):
+        from scripts.scrape_daad_admissions import DaadFetchSession
+
+        with (
+            mock.patch("scripts.scrape_daad_admissions.fetch_text", return_value="ok") as fetch_mock,
+            mock.patch("scripts.scrape_daad_admissions.time.sleep") as sleep_mock,
+        ):
+            session = DaadFetchSession(user_agent="test-agent", timeout=1, delay=2.0)
+            self.assertEqual(session.fetch("https://www2.daad.de/first"), "ok")
+            self.assertEqual(session.fetch("https://www2.daad.de/second"), "ok")
+            self.assertEqual(session.fetch("https://www2.daad.de/third"), "ok")
+
+        self.assertEqual(fetch_mock.call_count, 3)
+        self.assertEqual([call.args[0] for call in sleep_mock.call_args_list], [2.0, 2.0])
+
+    def test_daad_scraper_fetch_failure_stays_warning_visible(self):
+        from scripts.scrape_daad_admissions import scrape_target
+
+        target = {
+            "school_name": "Example School",
+            "coverage_status": "target_seeded",
+            "listing_urls": [],
+            "detail_urls": [
+                "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9999/"
+            ],
+            "future_deepening_candidates": [],
+        }
+        partner = {
+            "name": "Example School",
+            "official_url": "https://example.edu/",
+            "country": "Germany",
+            "partner_status": "test",
+            "school_type": "university",
+        }
+        args = SimpleNamespace(user_agent="test-agent", timeout=1, delay=0)
+
+        with mock.patch("scripts.scrape_daad_admissions.fetch_text", side_effect=TimeoutError("timed out")):
+            output = scrape_target(target, partner, args)
+
+        self.assertEqual(output["source_coverage"]["status"], "source_limited")
+        self.assertTrue(output["source_coverage"]["warning"])
+        self.assertEqual(output["programs"], [])
+        self.assertIn("Could not fetch DAAD detail", output["source_coverage"]["limitation_notes"][0])
+
+    def test_source_daad_outputs_have_no_chrome_in_core_fields(self):
+        root = Path(__file__).parents[1]
+        output_dir = root / "outputs" / "source_daad"
+        if not output_dir.exists():
+            self.skipTest("No DAAD source outputs available.")
+
+        forbidden = (
+            "DAADREMOVE_JS",
+            "Skip to main content",
+            "Requirements / Registration",
+            "Course details",
+            "Overview",
+            "Costs / Funding",
+            "Contact",
+        )
+        offenders = []
+        for path in sorted(output_dir.glob("*_admissions.json")):
+            if path.name == "source_daad_manifest.json":
+                continue
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            for index, record in enumerate(payload.get("programs", [])):
+                core_values = [
+                    record.get("program", {}).get("name") or "",
+                    *(record.get("application", {}).get("deadlines") or []),
+                    *(record.get("application", {}).get("fees") or []),
+                    *(record.get("requirements", {}).get("academic_background", {}).get("notes") or []),
+                ]
+                for value in core_values:
+                    if any(token in value for token in forbidden):
+                        offenders.append((path.name, index, value))
+
+        self.assertEqual([], offenders[:5])
+
     def test_extracts_requirement_section_from_program_page(self):
         page = Page(
             url="https://example.edu/programs/msc-management",

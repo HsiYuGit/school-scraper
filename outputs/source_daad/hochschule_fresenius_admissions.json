@@ -1,0 +1,1368 @@
+{
+  "schema_version": "0.4-source",
+  "source_platform": "daad",
+  "source_label": "DAAD",
+  "school": {
+    "name": "Hochschule Fresenius",
+    "url": "https://www.hs-fresenius.com/",
+    "country": "Germany",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university"
+  },
+  "retrieved_at": "2026-05-24T12:48:54.626918+00:00",
+  "source_coverage": {
+    "status": "source_partial_match",
+    "warning": true,
+    "programs_extracted": 9,
+    "limitation_notes": [
+      "Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Hochschule+Fresenius&limit=100&offset=0&display=list: limit=100 offset=0.",
+      "Configured DAAD target is source_partial_match; configured queries and detail URLs may not cover every programme exposed by DAAD."
+    ],
+    "future_deepening_candidates": [
+      {
+        "note": "Page through all Fresenius records and confirm duplicate course names by campus."
+      }
+    ]
+  },
+  "programs": [
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Bioanalytical Chemistry and Pharmaceutical Analysis (MSc)",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9957/",
+        "campus": "Idstein",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master of Science Combined Master's degree / PhD programme In the Master’s programme, you will gain in-depth and specialised knowledge in analytical chemistry, bioanalysis, and quality assurance, focusing on pharmaceutical analysis, clinical analysis, and forensics. This programme combines theoretical concepts with practical applications, preparing you for various professional roles in international settings. Key topics in your curriculum include Our study programmes prepare students for the demands of globally operating companies and qualify them for entry-level positions in all relevant fields in those companies. Regular feedback from cooperation partners indicates that our Bachelor's and Master's programmes meet market requirements. We have a network of 556 cooperation partners from business, science and politics. Academic admission requirements To be admitted to the Master’s programme in Bioanalytical Chemistry and Pharmaceutical Analysis (MSc) at Fresenius University of Applied Sciences, you need to have a Bachelor's degree with at least 180 credit points or an equivalent qualification in a chemistry-related discipline (e.g. analytical chemistry, pharmacy, or biology). Language requirements You should be a native English speaker or demonstrate proficiency with an 85 on the TOEFL iBT, an IELTS score of 6.0, or a minimum grade B in the Cambridge Certificate of Advanced English. We are Hochschule Fresenius University of Applied Sciences. Since 1848, we have been training the next generation of specialists and managers. Our Bachelor's or Master's degree programmes, professional training, advanced education, or the completion of various certificate programmes will help you achieve your professional career dreams."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0"
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Applications are possible all year round."
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "5,400 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9957/",
+            "source_text": "Master of Science Combined Master's degree / PhD programme In the Master’s programme, you will gain in-depth and specialised knowledge in analytical chemistry, bioanalysis, and quality assurance, focusing on pharmaceutical analysis, clinical analysis, and forensics. This programme combines theoretical concepts with practical applications, preparing you for various professional roles in international settings. Key topics in your curriculum include Our study programmes prepare students for the dem",
+            "retrieved_at": "2026-05-24T12:48:54.626918+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9957/",
+          "text": "Master of Science Combined Master's degree / PhD programme In the Master’s programme, you will gain in-depth and specialised knowledge in analytical chemistry, bioanalysis, and quality assurance, focusing on pharmaceutical analysis, clinical analysis, and forensics. This programme combines theoretical concepts with practical applications, preparing you for various professional roles in international settings. Key topics in your curriculum include Our study programmes prepare students for the demands of globally operating companies and qualify them for entry-level positions in all relevant fields in those companies. Regular feedback from cooperation partners indicates that our Bachelor's and Master's programmes meet market requirements. We have a network of 556 cooperation partners from business, science and politics. Academic admission requirements To be admitted to the Master’s programme in Bioanalytical Chemistry and Pharmaceutical Analysis (MSc) at Fresenius University of Applied Sciences, you need to have a Bachelor's degree with at least 180 credit points or an equivalent qualification in a chemistry-related discipline (e.g. analytical chemistry, pharmacy, or biology). Language requirements You should be a native English speaker or demonstrate proficiency with an 85 on the TOEFL iBT, an IELTS score of 6.0, or a minimum grade B in the Cambridge Certificate of Advanced English. We are Hochschule Fresenius University of Applied Sciences. Since 1848, we have been training the next generation of specialists and managers. Our Bachelor's or Master's degree programmes, professional training, advanced education, or the completion of various certificate programmes will help you achieve your professional career dreams."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "9957",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Hochschule%20Fresenius&limit=50&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9957/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "4 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "Bioanalytical Chemistry and Pharmaceutical Analysis (MSc) - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Bioanalytical Chemistry and Pharmaceutical Analysis (MSc) Bioanalytical Chemistry and Pharmaceutical Analysis (MSc)",
+          "Hochschule Fresenius - University of Applied Sciences • Idstein",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Master of Science",
+          "Course location",
+          "Idstein",
+          "Teaching language",
+          "English",
+          "Languages",
+          "All courses are held in English.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "4 semesters",
+          "Beginning",
+          "Winter semester",
+          "Application deadline",
+          "Applications are possible all year round.",
+          "Tuition fees per semester in EUR",
+          "5,400 EUR",
+          "Additional information on tuition fees",
+          "900 EUR per month",
+          "595 EUR registration fee",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "In the Master’s programme, you will gain in-depth and specialised knowledge in analytical chemistry, bioanalysis, and quality assurance, focusing on pharmaceutical analysis, clinical analysis, and forensics. This programme combines theoretical concepts with practical applications, preparing you for various professional roles in international settings. Key topics in your curriculum include:",
+          "Analysis of biomolecules",
+          "Pharmacology and toxicology",
+          "Clinical and biochemical analysis",
+          "Methods of structural analysis",
+          "Analytical Data Science and pharmacophore models",
+          "Lab course on forensics, food and pharmaceutical analysis",
+          "Advanced analysis methods including large molecule separation",
+          "Pharmaceutical analysis and drug discovery",
+          "Our study programmes prepare students for the demands of globally operating companies and qualify them for entry-level positions in all relevant fields in those companies. Regular feedback from cooperation partners indicates that our Bachelor's and Master's programmes meet market requirements. We have a network of 556 cooperation partners from business, science and politics.",
+          "Course organisation",
+          "You have the flexibility to tailor your programme to align with your specific interests. Depending on your academic background and professional experience, you can choose to study four semesters for an intensive specialisation that meets your career goals, graduate in just one year through a fast track option, or pursue part-time studies over three semesters.",
+          "Course-specific, integrated German language courses"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Biochemical Engineering (MEng)",
+        "degree": "Master of Engineering",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9956/",
+        "campus": "Idstein",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master of Engineering Combined Master's degree / PhD programme The Master’s programme in Biochemical Engineering (MEng) provides essential knowledge in chemical and biochemical engineering, mechanical process engineering, and reaction kinetics. You will engage in independent scientific projects and learn to apply engineering practices while adhering to GMP and regulatory standards pertinent to (bio)chemical processes. Additionally, you'll gain practical expertise in analytical methods and acquire advanced engineering methodologies relevant to industrial settings. Key topics in your programme include Our study programmes prepare students for the demands of globally operating companies and qualify them for entry-level positions in all relevant fields in those companies. Regular feedback from cooperation partners indicates that our Bachelor's and Master's programmes meet market requirements. We have a network of 556 cooperation partners from business, science and politics. You have the opportunity to customise your programme to suit your personal interests. Based on your academic background and professional experience, you can choose to study over four semesters for an in-depth specialisation that caters to your career objectives, or you can opt for an accelerated one-year track to graduate more quickly. For more information on the fast track Master’s programme, click here: https://www.hs-fresenius.com/study-programs/biochemical-engineering-fast-track-master/ . Academic admission requirements To be eligible for the Master’s programme in Biochemical Engineering (MSc) at Fresenius University of Applied Sciences, you must meet certain requirements. You should have a Bachelor’s degree with a minimum of 180 credit points or an equivalent qualification in a chemistry-related area (such as analytical chemistry, chemistry, pharmacy, physics, or biology). Language requirements You need to be either a native English speaker or demonstrate proficiency with a TOEFL iBT score of at least 85, an IELTS score of 6.0, or a Cambridge Certificate of Advanced English with a minimum grade of B. We are Hochschule Fresenius University of Applied Sciences. Since 1848, we have been training the next generation of specialists and managers. Our Bachelor's or Master's degree programmes, professional training, advanced education, or the completion of various certificate programmes will help you achieve your professional career dreams."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0"
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Applications are possible all year round."
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "5,280 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9956/",
+            "source_text": "Master of Engineering Combined Master's degree / PhD programme The Master’s programme in Biochemical Engineering (MEng) provides essential knowledge in chemical and biochemical engineering, mechanical process engineering, and reaction kinetics. You will engage in independent scientific projects and learn to apply engineering practices while adhering to GMP and regulatory standards pertinent to (bio)chemical processes. Additionally, you'll gain practical expertise in analytical methods and acquir",
+            "retrieved_at": "2026-05-24T12:48:54.626918+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9956/",
+          "text": "Master of Engineering Combined Master's degree / PhD programme The Master’s programme in Biochemical Engineering (MEng) provides essential knowledge in chemical and biochemical engineering, mechanical process engineering, and reaction kinetics. You will engage in independent scientific projects and learn to apply engineering practices while adhering to GMP and regulatory standards pertinent to (bio)chemical processes. Additionally, you'll gain practical expertise in analytical methods and acquire advanced engineering methodologies relevant to industrial settings. Key topics in your programme include Our study programmes prepare students for the demands of globally operating companies and qualify them for entry-level positions in all relevant fields in those companies. Regular feedback from cooperation partners indicates that our Bachelor's and Master's programmes meet market requirements. We have a network of 556 cooperation partners from business, science and politics. You have the opportunity to customise your programme to suit your personal interests. Based on your academic background and professional experience, you can choose to study over four semesters for an in-depth specialisation that caters to your career objectives, or you can opt for an accelerated one-year track to graduate more quickly. For more information on the fast track Master’s programme, click here: https://www.hs-fresenius.com/study-programs/biochemical-engineering-fast-track-master/ . Academic admission requirements To be eligible for the Master’s programme in Biochemical Engineering (MSc) at Fresenius University of Applied Sciences, you must meet certain requirements. You should have a Bachelor’s degree with a minimum of 180 credit points or an equivalent qualification in a chemistry-related area (such as analytical chemistry, chemistry, pharmacy, physics, or biology). Language requirements You need to be either a native English speaker or demonstrate proficiency with a TOEFL iBT score of at least 85, an IELTS score of 6.0, or a Cambridge Certificate of Advanced English with a minimum grade of B. We are Hochschule Fresenius University of Applied Sciences. Since 1848, we have been training the next generation of specialists and managers. Our Bachelor's or Master's degree programmes, professional training, advanced education, or the completion of various certificate programmes will help you achieve your professional career dreams."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "9956",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Hochschule%20Fresenius&limit=50&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9956/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "4 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "Biochemical Engineering (MEng) - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Biochemical Engineering (MEng) Biochemical Engineering (MEng)",
+          "Hochschule Fresenius - University of Applied Sciences • Idstein",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Master of Engineering",
+          "Course location",
+          "Idstein",
+          "Teaching language",
+          "English",
+          "Languages",
+          "All courses are held in English.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "4 semesters",
+          "Beginning",
+          "Winter semester",
+          "Application deadline",
+          "Applications are possible all year round.",
+          "Tuition fees per semester in EUR",
+          "5,280 EUR",
+          "Additional information on tuition fees",
+          "880 EUR per month",
+          "595 EUR registration fee",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "The Master’s programme in Biochemical Engineering (MEng) provides essential knowledge in chemical and biochemical engineering, mechanical process engineering, and reaction kinetics. You will engage in independent scientific projects and learn to apply engineering practices while adhering to GMP and regulatory standards pertinent to (bio)chemical processes. Additionally, you'll gain practical expertise in analytical methods and acquire advanced engineering methodologies relevant to industrial settings. Key topics in your programme include:",
+          "Biochemical Process Engineering",
+          "Mechanical Process Engineering and Fluid Mechanics",
+          "Biomedical and Statistical Data Science",
+          "Thermal Process Engineering",
+          "Process Optimisation and Statistical Design of Experiments",
+          "Business Administration for Chemists",
+          "Upstream and Downstream Processing",
+          "Good Manufacturing Practice and Regulatory Affairs",
+          "Our study programmes prepare students for the demands of globally operating companies and qualify them for entry-level positions in all relevant fields in those companies. Regular feedback from cooperation partners indicates that our Bachelor's and Master's programmes meet market requirements. We have a network of 556 cooperation partners from business, science and politics.",
+          "Course organisation",
+          "You have the opportunity to customise your programme to suit your personal interests. Based on your academic background and professional experience, you can choose to study over four semesters for an in-depth specialisation that caters to your career objectives, or you can opt for an accelerated one-year track to graduate more quickly. For more information on the fast track Master’s programme, click here: https://www.hs-fresenius.com/study-programs/biochemical-engineering-fast-track-master/ .",
+          "Course-specific, integrated German language courses"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Biomedicine (MSc)",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9955/",
+        "campus": "Idstein",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master of Science Combined Master's degree / PhD programme In the Master’s programme, you will integrate your knowledge of biomedicine, genetics, and clinical research while designing and conducting independent research projects. You will develop skills to analyse complex biological data using statistical and bioinformatics tools, tackle challenging research questions, and contribute to scientific advancements. This programme prepares you for clinical studies, biotechnological innovations, and collaborative work with physicians and scientists. Key topics include Our study programmes prepare students for the demands of globally operating companies and qualify them for entry-level positions in all relevant fields in those companies. Regular feedback from cooperation partners indicates that our Bachelor's and Master's programmes meet market requirements. We have a network of 556 cooperation partners from business, science and politics. You have the flexibility to customise your programme to align with your unique interests. Based on your academic background and professional experience, you can choose between studying for four semesters to gain an in-depth specialisation that supports your career aspirations, or you can opt for an accelerated one-year graduation path. For further details about the fast track Master's programme, click here: https://www.hs-fresenius.com/study-programs/biomedicine-fast-track-master/ . Academic admission requirements To gain admission to the Master’s programme in Biomedicine (MSc) at Fresenius University of Applied Sciences, you need to provide a Bachelor’s degree with at least 180 credit points in a relevant field, such as biology, biochemistry, or medicine. Language requirements You should be a native English speaker or provide proof of proficiency through an 85 on the TOEFL iBT, an IELTS score of 6.0, or a minimum grade B in the Cambridge Certificate of Advanced English. We are Hochschule Fresenius University of Applied Sciences. Since 1848, we have been training the next generation of specialists and managers. Our Bachelor's or Master's degree programmes, professional training, advanced education, or the completion of various certificate programmes will help you achieve your professional career dreams."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [
+          {
+            "test": "IELTS",
+            "minimum_score": "6.0"
+          }
+        ],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Applications are possible all year round."
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "5,280 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9955/",
+            "source_text": "Master of Science Combined Master's degree / PhD programme In the Master’s programme, you will integrate your knowledge of biomedicine, genetics, and clinical research while designing and conducting independent research projects. You will develop skills to analyse complex biological data using statistical and bioinformatics tools, tackle challenging research questions, and contribute to scientific advancements. This programme prepares you for clinical studies, biotechnological innovations, and c",
+            "retrieved_at": "2026-05-24T12:48:54.626918+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9955/",
+          "text": "Master of Science Combined Master's degree / PhD programme In the Master’s programme, you will integrate your knowledge of biomedicine, genetics, and clinical research while designing and conducting independent research projects. You will develop skills to analyse complex biological data using statistical and bioinformatics tools, tackle challenging research questions, and contribute to scientific advancements. This programme prepares you for clinical studies, biotechnological innovations, and collaborative work with physicians and scientists. Key topics include Our study programmes prepare students for the demands of globally operating companies and qualify them for entry-level positions in all relevant fields in those companies. Regular feedback from cooperation partners indicates that our Bachelor's and Master's programmes meet market requirements. We have a network of 556 cooperation partners from business, science and politics. You have the flexibility to customise your programme to align with your unique interests. Based on your academic background and professional experience, you can choose between studying for four semesters to gain an in-depth specialisation that supports your career aspirations, or you can opt for an accelerated one-year graduation path. For further details about the fast track Master's programme, click here: https://www.hs-fresenius.com/study-programs/biomedicine-fast-track-master/ . Academic admission requirements To gain admission to the Master’s programme in Biomedicine (MSc) at Fresenius University of Applied Sciences, you need to provide a Bachelor’s degree with at least 180 credit points in a relevant field, such as biology, biochemistry, or medicine. Language requirements You should be a native English speaker or provide proof of proficiency through an 85 on the TOEFL iBT, an IELTS score of 6.0, or a minimum grade B in the Cambridge Certificate of Advanced English. We are Hochschule Fresenius University of Applied Sciences. Since 1848, we have been training the next generation of specialists and managers. Our Bachelor's or Master's degree programmes, professional training, advanced education, or the completion of various certificate programmes will help you achieve your professional career dreams."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "9955",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Hochschule%20Fresenius&limit=50&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9955/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "4 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "Biomedicine (MSc) - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Biomedicine (MSc) Biomedicine (MSc)",
+          "Hochschule Fresenius - University of Applied Sciences • Idstein",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Master of Science",
+          "Course location",
+          "Idstein",
+          "Teaching language",
+          "English",
+          "Languages",
+          "All courses are held in English.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "4 semesters",
+          "Beginning",
+          "Winter semester",
+          "Application deadline",
+          "Applications are possible all year round.",
+          "Tuition fees per semester in EUR",
+          "5,280 EUR",
+          "Additional information on tuition fees",
+          "880 EUR per month",
+          "595 EUR registration fee",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "In the Master’s programme, you will integrate your knowledge of biomedicine, genetics, and clinical research while designing and conducting independent research projects. You will develop skills to analyse complex biological data using statistical and bioinformatics tools, tackle challenging research questions, and contribute to scientific advancements. This programme prepares you for clinical studies, biotechnological innovations, and collaborative work with physicians and scientists. Key topics include:",
+          "Regulatory Affairs and Ethics in Biomedicine",
+          "Cell Signalling Pathways",
+          "Endocrine and Immune System",
+          "Bioinformatics",
+          "Medicinal Microbiology – Bacteria and Parasites",
+          "Hematology and Hemostaseology",
+          "Cardiovascular and Neurological Disorders – Cellular and Molecular Translational Research",
+          "Molecular Pathology of Cancer – Immunology, Disease Models and Discovery of Cancer Biomarkers",
+          "Our study programmes prepare students for the demands of globally operating companies and qualify them for entry-level positions in all relevant fields in those companies. Regular feedback from cooperation partners indicates that our Bachelor's and Master's programmes meet market requirements. We have a network of 556 cooperation partners from business, science and politics.",
+          "Course organisation",
+          "You have the flexibility to customise your programme to align with your unique interests. Based on your academic background and professional experience, you can choose between studying for four semesters to gain an in-depth specialisation that supports your career aspirations, or you can opt for an accelerated one-year graduation path. For further details about the fast track Master's programme, click here: https://www.hs-fresenius.com/study-programs/biomedicine-fast-track-master/ .",
+          "Course-specific, integrated German language courses"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Computer Science (BSc)",
+        "degree": "Bachelor of Science",
+        "level": "bachelor",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9952/",
+        "campus": "Köln",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": 60,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Bachelor of Science The Bachelor of Science in Computer Science programme is designed to teach you how to use computer science to solve real-world problems. You'll learn a structured approach to engineering systems, focusing on the steps of analysing, planning, designing, and building complex computer systems. You'll also discover how to organise the development process effectively. Moreover, you will gain practical knowledge about modern operating systems, computer architecture, and networks. This knowledge will empower you to create projects and manage technology-related processes in a business setting. At the start of your Bachelor’s degree programme, you will engage in introductory courses covering computer science and programming languages as well as essential subjects in mathematics and statistics, which are fundamental to various fields within computer science. Furthermore, the programme will encompass studies in artificial intelligence, algorithms, data structures, data science, and data analytics. Among the key topics you will explore are Our study programmes prepare students for the demands of globally operating companies and qualify them for entry-level positions in all relevant fields in those companies. Regular feedback from cooperation partners indicates that our Bachelor's and Master's programmes meet market requirements. We have a network of 556 cooperation partners from business, science and politics. In the fourth and fifth semesters, you will have the chance to concentrate on two specialisations based on your personal interests. This allows you to further customise your studies and gain a deeper understanding of the subjects that interest you most. You can select from the following specialisations Academic admission requirements Language requirements TOEFL (minimum 80 points internet-based) IELTS (minimum 6.5) minimum 60 ECTS from an English-taught Bachelor's programme We are Hochschule Fresenius University of Applied Sciences. Since 1848, we have been training the next generation of specialists and managers. Our Bachelor's or Master's degree programmes, professional training, advanced education, or the completion of various certificate programmes will help you achieve your professional career dreams."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Applications are possible all year round."
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "5,700 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9952/",
+            "source_text": "Bachelor of Science The Bachelor of Science in Computer Science programme is designed to teach you how to use computer science to solve real-world problems. You'll learn a structured approach to engineering systems, focusing on the steps of analysing, planning, designing, and building complex computer systems. You'll also discover how to organise the development process effectively. Moreover, you will gain practical knowledge about modern operating systems, computer architecture, and networks. T",
+            "retrieved_at": "2026-05-24T12:48:54.626918+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9952/",
+          "text": "Bachelor of Science The Bachelor of Science in Computer Science programme is designed to teach you how to use computer science to solve real-world problems. You'll learn a structured approach to engineering systems, focusing on the steps of analysing, planning, designing, and building complex computer systems. You'll also discover how to organise the development process effectively. Moreover, you will gain practical knowledge about modern operating systems, computer architecture, and networks. This knowledge will empower you to create projects and manage technology-related processes in a business setting. At the start of your Bachelor’s degree programme, you will engage in introductory courses covering computer science and programming languages as well as essential subjects in mathematics and statistics, which are fundamental to various fields within computer science. Furthermore, the programme will encompass studies in artificial intelligence, algorithms, data structures, data science, and data analytics. Among the key topics you will explore are Our study programmes prepare students for the demands of globally operating companies and qualify them for entry-level positions in all relevant fields in those companies. Regular feedback from cooperation partners indicates that our Bachelor's and Master's programmes meet market requirements. We have a network of 556 cooperation partners from business, science and politics. In the fourth and fifth semesters, you will have the chance to concentrate on two specialisations based on your personal interests. This allows you to further customise your studies and gain a deeper understanding of the subjects that interest you most. You can select from the following specialisations Academic admission requirements Language requirements TOEFL (minimum 80 points internet-based) IELTS (minimum 6.5) minimum 60 ECTS from an English-taught Bachelor's programme We are Hochschule Fresenius University of Applied Sciences. Since 1848, we have been training the next generation of specialists and managers. Our Bachelor's or Master's degree programmes, professional training, advanced education, or the completion of various certificate programmes will help you achieve your professional career dreams."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "9952",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Hochschule%20Fresenius&limit=50&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9952/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "6 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "Computer Science (BSc) - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Computer Science (BSc) Computer Science (BSc)",
+          "Hochschule Fresenius - University of Applied Sciences • Köln",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Bachelor of Science",
+          "Course location",
+          "Köln",
+          "Teaching language",
+          "English",
+          "Languages",
+          "Courses are held in English.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "6 semesters",
+          "Beginning",
+          "Winter semester",
+          "Application deadline",
+          "Applications are possible all year round.",
+          "Tuition fees per semester in EUR",
+          "5,700 EUR",
+          "Additional information on tuition fees",
+          "950 EUR per month + 70 EUR per month (non-EU)",
+          "595 EUR registration fee",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "The Bachelor of Science in Computer Science programme is designed to teach you how to use computer science to solve real-world problems. You'll learn a structured approach to engineering systems, focusing on the steps of analysing, planning, designing, and building complex computer systems. You'll also discover how to organise the development process effectively. Moreover, you will gain practical knowledge about modern operating systems, computer architecture, and networks. This knowledge will empower you to create projects and manage technology-related processes in a business setting.",
+          "At the start of your Bachelor’s degree programme, you will engage in introductory courses covering computer science and programming languages as well as essential subjects in mathematics and statistics, which are fundamental to various fields within computer science. Furthermore, the programme will encompass studies in artificial intelligence, algorithms, data structures, data science, and data analytics. Among the key topics you will explore are:",
+          "Data Bases and Information Systems",
+          "Cloud Computing",
+          "Software Engineering",
+          "Computer Networks",
+          "Automata, Computability, and Complexity",
+          "UX & Web Technology",
+          "Information Security and Data Protection",
+          "Our study programmes prepare students for the demands of globally operating companies and qualify them for entry-level positions in all relevant fields in those companies. Regular feedback from cooperation partners indicates that our Bachelor's and Master's programmes meet market requirements. We have a network of 556 cooperation partners from business, science and politics.",
+          "Course organisation",
+          "In the fourth and fifth semesters, you will have the chance to concentrate on two specialisations based on your personal interests. This allows you to further customise your studies and gain a deeper understanding of the subjects that interest you most. You can select from the following specialisations:",
+          "Cyber Security",
+          "Artificial Intelligence & Machine Learning",
+          "Software Engineering"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Computer Science (MSc)",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9953/",
+        "campus": "Köln",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": 60,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master of Science Combined Master's degree / PhD programme The Master’s programme in Computer Science (MSc) enables you to critically evaluate the security of computer systems and creatively utilise technological innovations in the field. You will enhance your knowledge of formal methods, algorithms, and applied computer science techniques, particularly in Cyber Security and Artificial Intelligence. The programme emphasises designing, implementing, and using methods in cryptography and related security areas, alongside adapting modern AI techniques for data analysis, planning, and applications. Additionally, you will develop project management skills to effectively implement security measures in organisations. Courses also provide insights into the life in Germany and its work culture. Topics of study include Our study programmes prepare students for the demands of globally operating companies and qualify them for entry-level positions in all relevant fields in those companies. Regular feedback from cooperation partners indicates that our Bachelor's and Master's programmes meet market requirements. We have a network of 556 cooperation partners from business, science and politics. Specialisation: In the Master's programme in Computer Science (MSc), the primary focus lies on Cyber Security and Artificial Intelligence. You will develop competencies in both fields, with the option to specialise in one as you advance in your studies, allowing you to tailor your education to your interests and career aspirations. Academic admission requirements To get admission to the Master’s programme in Computer Science (MSc) at Hochschule Fresenius, you need to fulfil the following requirements a completed Bachelor’s degree with at least 180 credit points In your Bachelor's degree, you must have earned at least 60 credit points in computer science, software engineering, information technology, or another related field, with a minimum of 60 credit points in computer science-related subjects such as mathematics, programming, design, and software architecture. Language requirements TOEFL (minimum 80 points Internet-based) IELTS (minimum 6.5) minimum 60 ECTS from an English-taught Bachelor's programme We are Hochschule Fresenius University of Applied Sciences. Since 1848, we have been training the next generation of specialists and managers. Our Bachelor's or Master's degree programmes, professional training, advanced education, or the completion of various certificate programmes will help you achieve your professional career dreams."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Applications are possible all year round."
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "5,280 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9953/",
+            "source_text": "Master of Science Combined Master's degree / PhD programme The Master’s programme in Computer Science (MSc) enables you to critically evaluate the security of computer systems and creatively utilise technological innovations in the field. You will enhance your knowledge of formal methods, algorithms, and applied computer science techniques, particularly in Cyber Security and Artificial Intelligence. The programme emphasises designing, implementing, and using methods in cryptography and related s",
+            "retrieved_at": "2026-05-24T12:48:54.626918+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9953/",
+          "text": "Master of Science Combined Master's degree / PhD programme The Master’s programme in Computer Science (MSc) enables you to critically evaluate the security of computer systems and creatively utilise technological innovations in the field. You will enhance your knowledge of formal methods, algorithms, and applied computer science techniques, particularly in Cyber Security and Artificial Intelligence. The programme emphasises designing, implementing, and using methods in cryptography and related security areas, alongside adapting modern AI techniques for data analysis, planning, and applications. Additionally, you will develop project management skills to effectively implement security measures in organisations. Courses also provide insights into the life in Germany and its work culture. Topics of study include Our study programmes prepare students for the demands of globally operating companies and qualify them for entry-level positions in all relevant fields in those companies. Regular feedback from cooperation partners indicates that our Bachelor's and Master's programmes meet market requirements. We have a network of 556 cooperation partners from business, science and politics. Specialisation: In the Master's programme in Computer Science (MSc), the primary focus lies on Cyber Security and Artificial Intelligence. You will develop competencies in both fields, with the option to specialise in one as you advance in your studies, allowing you to tailor your education to your interests and career aspirations. Academic admission requirements To get admission to the Master’s programme in Computer Science (MSc) at Hochschule Fresenius, you need to fulfil the following requirements a completed Bachelor’s degree with at least 180 credit points In your Bachelor's degree, you must have earned at least 60 credit points in computer science, software engineering, information technology, or another related field, with a minimum of 60 credit points in computer science-related subjects such as mathematics, programming, design, and software architecture. Language requirements TOEFL (minimum 80 points Internet-based) IELTS (minimum 6.5) minimum 60 ECTS from an English-taught Bachelor's programme We are Hochschule Fresenius University of Applied Sciences. Since 1848, we have been training the next generation of specialists and managers. Our Bachelor's or Master's degree programmes, professional training, advanced education, or the completion of various certificate programmes will help you achieve your professional career dreams."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "9953",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Hochschule%20Fresenius&limit=50&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9953/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "4 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "Computer Science (MSc) - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Computer Science (MSc) Computer Science (MSc)",
+          "Hochschule Fresenius - University of Applied Sciences • Köln",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Master of Science",
+          "Course location",
+          "Köln",
+          "Teaching language",
+          "English",
+          "Languages",
+          "All courses are held in English.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "4 semesters",
+          "Beginning",
+          "Winter semester",
+          "Application deadline",
+          "Applications are possible all year round.",
+          "Tuition fees per semester in EUR",
+          "5,280 EUR",
+          "Additional information on tuition fees",
+          "Please note: Tuition fees for non-EU nationals may vary. Please consult our international team for further information by using this form .",
+          "Registration fee: 595 EUR",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "The Master’s programme in Computer Science (MSc) enables you to critically evaluate the security of computer systems and creatively utilise technological innovations in the field. You will enhance your knowledge of formal methods, algorithms, and applied computer science techniques, particularly in Cyber Security and Artificial Intelligence. The programme emphasises designing, implementing, and using methods in cryptography and related security areas, alongside adapting modern AI techniques for data analysis, planning, and applications. Additionally, you will develop project management skills to effectively implement security measures in organisations. Courses also provide insights into the life in Germany and its work culture. Topics of study include:",
+          "Cyber Attacks & Threat Management",
+          "Intelligent Systems",
+          "Machine Learning",
+          "IIOT / Intro to Python",
+          "Enterprise Security Architecture",
+          "Security Governance, IT Law & Compliance",
+          "Project AI / Cyber Security",
+          "Architecture and process management",
+          "Our study programmes prepare students for the demands of globally operating companies and qualify them for entry-level positions in all relevant fields in those companies. Regular feedback from cooperation partners indicates that our Bachelor's and Master's programmes meet market requirements. We have a network of 556 cooperation partners from business, science and politics.",
+          "Course organisation",
+          "Specialisation: In the Master's programme in Computer Science (MSc), the primary focus lies on Cyber Security and Artificial Intelligence. You will develop competencies in both fields, with the option to specialise in one as you advance in your studies, allowing you to tailor your education to your interests and career aspirations.",
+          "Description of other international elements"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Computer Science (MSc)",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9954/",
+        "campus": "Berlin",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": 60,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master of Science Combined Master's degree / PhD programme The Master’s programme in Computer Science (MSc) enables you to critically evaluate the security of computer systems and creatively utilise technological innovations in the field. You will enhance your knowledge of formal methods, algorithms, and applied computer science techniques, particularly in Cyber Security and Artificial Intelligence. The programme emphasises designing, implementing, and using methods in cryptography and related security areas, alongside adapting modern AI techniques for data analysis, planning, and applications. Additionally, you will develop project management skills to effectively implement security measures in organisations. Courses also provide insights into the life in Germany and its work culture. Topics of study include Our study programmes prepare students for the demands of globally operating companies and qualify them for entry-level positions in all relevant fields in those companies. Regular feedback from cooperation partners indicates that our Bachelor's and Master's programmes meet market requirements. We have a network of 556 cooperation partners from business, science and politics. Specialisation: In the Master’s programme in Computer Science (MSc), the primary focus lies on Cyber Security and Artificial Intelligence. You will develop competencies in both fields, with the option to specialise in one as you advance in your studies, allowing you to tailor your education to your interests and career aspirations. Academic admission requirements To receive admission to the Master’s programme in Computer Science (MSc) at Hochschule Fresenius, you need to fulfil the following requirements a completed Bachelor’s degree with at least 180 credit points In your Bachelor's degree, you must have earned at least 60 credit points in computer science, software engineering, information technology, or another related field, with a minimum of 60 credit points in computer science-related subjects such as mathematics, programming, design, and software architecture. Language requirements TOEFL (minimum 80 points Internet-based) IELTS (minimum 6.5) minimum 60 ECTS from an English-taught Bachelor's programme We are Hochschule Fresenius University of Applied Sciences. Since 1848, we have been training the next generation of specialists and managers. Our Bachelor's or Master's degree programmes, professional training, advanced education, or the completion of various certificate programmes will help you achieve your professional career dreams."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Applications are possible all year round."
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "5,280 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9954/",
+            "source_text": "Master of Science Combined Master's degree / PhD programme The Master’s programme in Computer Science (MSc) enables you to critically evaluate the security of computer systems and creatively utilise technological innovations in the field. You will enhance your knowledge of formal methods, algorithms, and applied computer science techniques, particularly in Cyber Security and Artificial Intelligence. The programme emphasises designing, implementing, and using methods in cryptography and related s",
+            "retrieved_at": "2026-05-24T12:48:54.626918+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9954/",
+          "text": "Master of Science Combined Master's degree / PhD programme The Master’s programme in Computer Science (MSc) enables you to critically evaluate the security of computer systems and creatively utilise technological innovations in the field. You will enhance your knowledge of formal methods, algorithms, and applied computer science techniques, particularly in Cyber Security and Artificial Intelligence. The programme emphasises designing, implementing, and using methods in cryptography and related security areas, alongside adapting modern AI techniques for data analysis, planning, and applications. Additionally, you will develop project management skills to effectively implement security measures in organisations. Courses also provide insights into the life in Germany and its work culture. Topics of study include Our study programmes prepare students for the demands of globally operating companies and qualify them for entry-level positions in all relevant fields in those companies. Regular feedback from cooperation partners indicates that our Bachelor's and Master's programmes meet market requirements. We have a network of 556 cooperation partners from business, science and politics. Specialisation: In the Master’s programme in Computer Science (MSc), the primary focus lies on Cyber Security and Artificial Intelligence. You will develop competencies in both fields, with the option to specialise in one as you advance in your studies, allowing you to tailor your education to your interests and career aspirations. Academic admission requirements To receive admission to the Master’s programme in Computer Science (MSc) at Hochschule Fresenius, you need to fulfil the following requirements a completed Bachelor’s degree with at least 180 credit points In your Bachelor's degree, you must have earned at least 60 credit points in computer science, software engineering, information technology, or another related field, with a minimum of 60 credit points in computer science-related subjects such as mathematics, programming, design, and software architecture. Language requirements TOEFL (minimum 80 points Internet-based) IELTS (minimum 6.5) minimum 60 ECTS from an English-taught Bachelor's programme We are Hochschule Fresenius University of Applied Sciences. Since 1848, we have been training the next generation of specialists and managers. Our Bachelor's or Master's degree programmes, professional training, advanced education, or the completion of various certificate programmes will help you achieve your professional career dreams."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "9954",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Hochschule%20Fresenius&limit=50&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9954/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "4 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "Computer Science (MSc) - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Computer Science (MSc) Computer Science (MSc)",
+          "Hochschule Fresenius - University of Applied Sciences • Berlin",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Master of Science",
+          "Course location",
+          "Berlin",
+          "Teaching language",
+          "English",
+          "Languages",
+          "All courses are held in English.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "4 semesters",
+          "Beginning",
+          "Winter semester",
+          "Application deadline",
+          "Applications are possible all year round.",
+          "Tuition fees per semester in EUR",
+          "5,280 EUR",
+          "Additional information on tuition fees",
+          "Please note: Tuition fees for non-EU nationals may vary. Please consult our international team for further information by using this form .",
+          "Registration fee: 595 EUR",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "The Master’s programme in Computer Science (MSc) enables you to critically evaluate the security of computer systems and creatively utilise technological innovations in the field. You will enhance your knowledge of formal methods, algorithms, and applied computer science techniques, particularly in Cyber Security and Artificial Intelligence. The programme emphasises designing, implementing, and using methods in cryptography and related security areas, alongside adapting modern AI techniques for data analysis, planning, and applications. Additionally, you will develop project management skills to effectively implement security measures in organisations. Courses also provide insights into the life in Germany and its work culture. Topics of study include:",
+          "Cyber Attacks & Threat Management",
+          "Intelligent Systems",
+          "Machine Learning",
+          "IIOT / Intro to Python",
+          "Enterprise Security Architecture",
+          "Security Governance, IT Law & Compliance",
+          "Project AI / Cyber Security",
+          "Architecture and Process Management",
+          "Our study programmes prepare students for the demands of globally operating companies and qualify them for entry-level positions in all relevant fields in those companies. Regular feedback from cooperation partners indicates that our Bachelor's and Master's programmes meet market requirements. We have a network of 556 cooperation partners from business, science and politics.",
+          "Course organisation",
+          "Specialisation: In the Master’s programme in Computer Science (MSc), the primary focus lies on Cyber Security and Artificial Intelligence. You will develop competencies in both fields, with the option to specialise in one as you advance in your studies, allowing you to tailor your education to your interests and career aspirations.",
+          "Description of other international elements"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "E-Commerce & Logistics (MSc)",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9662/",
+        "campus": "Köln",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": 60,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master of Science Combined Master's degree / PhD programme The e-commerce industry has steadily evolved into a crucial sales avenue for businesses worldwide, with cross-border transactions gaining prominence alongside domestic online retail. Our Master’s programme in E-Commerce & Logistics (MSc) offers an in-depth exploration of these sectors, highlighting their symbiotic relationship and operational nuances. Application: Delve into practical aspects such as IT solutions and operational management within e-commerce. Strengthen: Conclude your studies by mastering techniques to fortify online retail and supply chain management, including digital marketing and service relationships. In the customizable third semester of your Master’s programme in E-Commerce & Logistics (MSc), you’ll deepen your individual interests and build your academic profile by choosing elective modules such as Academic admission requirements Admission to the Master’s programme in E-Commerce & Logistics (MSc) at Hochschule Fresenius requires A Bachelor’s degree with a minimum of 180 credit points At least 60 credit points in business or economics during your Bachelor's studies If you haven't completed your Bachelor’s yet, you can begin your Master’s while wrapping up your Bachelor’s, provided you've attained at least 80 percent of the credit points by enrolment. Language requirements TOEFL (minimum 80 points Internet-based) IELTS (minimum 6.5) minimum of 60 ECTS from a Bachelor's programme conducted in English We are Hochschule Fresenius University of Applied Sciences. Since 1848, we have been training the next generation of specialists and managers. Our Bachelor's or Master's degree programmes, professional training, advanced education, or the completion of various certificate programmes will help you achieve your professional career dreams."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "It is possible to submit applications all year round."
+        ],
+        "intakes": [
+          "Winter and summer semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "5,280 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9662/",
+            "source_text": "Master of Science Combined Master's degree / PhD programme The e-commerce industry has steadily evolved into a crucial sales avenue for businesses worldwide, with cross-border transactions gaining prominence alongside domestic online retail. Our Master’s programme in E-Commerce & Logistics (MSc) offers an in-depth exploration of these sectors, highlighting their symbiotic relationship and operational nuances. Application: Delve into practical aspects such as IT solutions and operational manageme",
+            "retrieved_at": "2026-05-24T12:48:54.626918+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9662/",
+          "text": "Master of Science Combined Master's degree / PhD programme The e-commerce industry has steadily evolved into a crucial sales avenue for businesses worldwide, with cross-border transactions gaining prominence alongside domestic online retail. Our Master’s programme in E-Commerce & Logistics (MSc) offers an in-depth exploration of these sectors, highlighting their symbiotic relationship and operational nuances. Application: Delve into practical aspects such as IT solutions and operational management within e-commerce. Strengthen: Conclude your studies by mastering techniques to fortify online retail and supply chain management, including digital marketing and service relationships. In the customizable third semester of your Master’s programme in E-Commerce & Logistics (MSc), you’ll deepen your individual interests and build your academic profile by choosing elective modules such as Academic admission requirements Admission to the Master’s programme in E-Commerce & Logistics (MSc) at Hochschule Fresenius requires A Bachelor’s degree with a minimum of 180 credit points At least 60 credit points in business or economics during your Bachelor's studies If you haven't completed your Bachelor’s yet, you can begin your Master’s while wrapping up your Bachelor’s, provided you've attained at least 80 percent of the credit points by enrolment. Language requirements TOEFL (minimum 80 points Internet-based) IELTS (minimum 6.5) minimum of 60 ECTS from a Bachelor's programme conducted in English We are Hochschule Fresenius University of Applied Sciences. Since 1848, we have been training the next generation of specialists and managers. Our Bachelor's or Master's degree programmes, professional training, advanced education, or the completion of various certificate programmes will help you achieve your professional career dreams."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "9662",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Hochschule%20Fresenius&limit=50&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9662/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter and summer semester",
+        "programme_duration": "4 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "E-Commerce & Logistics (MSc) - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "E-Commerce & Logistics (MSc) E-Commerce & Logistics (MSc)",
+          "Hochschule Fresenius - University of Applied Sciences • Köln",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Master of Science",
+          "Course location",
+          "Köln",
+          "Teaching language",
+          "English",
+          "Languages",
+          "All courses are held in English.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "4 semesters",
+          "Beginning",
+          "Winter and summer semester",
+          "Application deadline",
+          "It is possible to submit applications all year round.",
+          "Tuition fees per semester in EUR",
+          "5,280 EUR",
+          "Additional information on tuition fees",
+          "880 EUR per month + 70 EUR per month (non-EU) 595 EUR registration fee",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "The e-commerce industry has steadily evolved into a crucial sales avenue for businesses worldwide, with cross-border transactions gaining prominence alongside domestic online retail. Our Master’s programme in E-Commerce & Logistics (MSc) offers an in-depth exploration of these sectors, highlighting their symbiotic relationship and operational nuances.",
+          "Spanning four semesters, the programme offers considerable flexibility, enabling you to commence your studies in either the winter or summer semester. Moreover, you'll have the opportunity to tailor your academic journey, whether through elective courses or internships, allowing you to refine your academic profile. By the conclusion of the programme, you will attain a total of 120 credit points. All instruction is conducted in English, ensuring accessibility for international students.",
+          "Course organisation",
+          "This programme integrates a strong foundation in business administration and economics with specialised studies in e-commerce and logistics. Alongside core coursework, you'll enhance your intercultural and language competencies while having the flexibility to tailor your education through elective modules and practical experiences like internships or studying abroad.",
+          "Structured around the M-A-P-S framework:",
+          "Markets: Explore the fundamentals of the e-commerce and logistics landscape.",
+          "Application: Delve into practical aspects such as IT solutions and operational management within e-commerce.",
+          "Progress: Advance your understanding with strategies for optimising e-commerce enterprises, focusing on portfolio design and digital channel management.",
+          "Strengthen: Conclude your studies by mastering techniques to fortify online retail and supply chain management, including digital marketing and service relationships.",
+          "In the customizable third semester of your Master’s programme in E-Commerce & Logistics (MSc), you’ll deepen your individual interests and build your academic profile by choosing elective modules such as:",
+          "Strategic Marketing & Brand Management",
+          "Corporate Finance",
+          "Sustainability Management & CSR in a Global Context",
+          "Consumer Behaviour & Psychology"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Fashion & Design Management (BA)",
+        "degree": "Bachelor of Arts",
+        "level": "bachelor",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7710/",
+        "campus": "Berlin",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Bachelor of Arts Academic admission requirements Admission requirements Language requirements Berlin: The thriving German capital is not only the centre of political influence. It is also a hub and hot spot for culture and media, and it is one of the top international IT cities. Berlin is renowned for its exceptional variety of attractions, its flourishing cultural scene, and its energetic yet relaxed pace. With a population of around 3.5 million, it is Germany's largest city. Berliners are known for their liberal, cosmopolitan, and unconventional attitudes. There is no other city that bridges past and future quite like Berlin. A vast number of sights recount the city's history, while it is also home to all the major government agencies and buildings, including the historic Reichstag, which houses the \"Bundestag\", Germany's parliament. This contrast between historic monuments and contemporary architecture, between traditional and modern, is just one of the many aspects that make this city so unique. Berlin is also a magnet for artistic, creative, and unconventional individuals. In Berlin, there is also room to slow down and enjoy the finer things of life. It is the greenest European capital, with spacious parks, forests, and lakes. The rhythm of the city combines pulsating urban energy with grace. In the summer, Berliners live outdoors – in the beach bars, cafés, and open-air cinemas and theatres, where they can make the most of the sun and the longer evenings."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Possible all year round"
+        ],
+        "intakes": [
+          "Winter and summer semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "4,500 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7710/",
+            "source_text": "Bachelor of Arts Academic admission requirements Admission requirements Language requirements Berlin: The thriving German capital is not only the centre of political influence. It is also a hub and hot spot for culture and media, and it is one of the top international IT cities. Berlin is renowned for its exceptional variety of attractions, its flourishing cultural scene, and its energetic yet relaxed pace. With a population of around 3.5 million, it is Germany's largest city. Berliners are know",
+            "retrieved_at": "2026-05-24T12:48:54.626918+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7710/",
+          "text": "Bachelor of Arts Academic admission requirements Admission requirements Language requirements Berlin: The thriving German capital is not only the centre of political influence. It is also a hub and hot spot for culture and media, and it is one of the top international IT cities. Berlin is renowned for its exceptional variety of attractions, its flourishing cultural scene, and its energetic yet relaxed pace. With a population of around 3.5 million, it is Germany's largest city. Berliners are known for their liberal, cosmopolitan, and unconventional attitudes. There is no other city that bridges past and future quite like Berlin. A vast number of sights recount the city's history, while it is also home to all the major government agencies and buildings, including the historic Reichstag, which houses the \"Bundestag\", Germany's parliament. This contrast between historic monuments and contemporary architecture, between traditional and modern, is just one of the many aspects that make this city so unique. Berlin is also a magnet for artistic, creative, and unconventional individuals. In Berlin, there is also room to slow down and enjoy the finer things of life. It is the greenest European capital, with spacious parks, forests, and lakes. The rhythm of the city combines pulsating urban energy with grace. In the summer, Berliners live outdoors – in the beach bars, cafés, and open-air cinemas and theatres, where they can make the most of the sun and the longer evenings."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "7710",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Hochschule%20Fresenius&limit=50&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7710/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter and summer semester",
+        "programme_duration": "7 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "Fashion & Design Management (BA) - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Fashion & Design Management (BA) Fashion & Design Management (BA)",
+          "Hochschule Fresenius - University of Applied Sciences • Berlin",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Bachelor of Arts",
+          "Course location",
+          "Berlin",
+          "Teaching language",
+          "English",
+          "Languages",
+          "Courses are held in English.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "7 semesters",
+          "Beginning",
+          "Winter and summer semester",
+          "Application deadline",
+          "Possible all year round",
+          "Tuition fees per semester in EUR",
+          "4,500 EUR",
+          "Additional information on tuition fees",
+          "4,500 EUR tuition fee per semester for EU students",
+          "4,920 EUR tuition fee per semester for non-EU students",
+          "595 EUR one-time registration fee",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "FOCUSING ON THE FASHION, DESIGN, AND LIFESTYLE SECTOR, THIS STUDY PROGRAMME COMBINES FASHION-SPECIFIC SKILLS WITH BUSINESS KNOW-HOW.",
+          "Fashion and design may feed on creativity and passion, but they also require product knowledge and an understanding of economic processes. The AMD (Akademie Mode & Design) study programme in Fashion & Design Management (BA) combines extensive product know-how with the basic principles of business.",
+          "Course organisation",
+          "PDF Download",
+          "A Diploma supplement will be issued",
+          "Yes",
+          "Integrated internships",
+          "An internship of six months is to be completed during the fourth semester.",
+          "Course-specific, integrated German language courses",
+          "Yes",
+          "Course-specific, integrated English language courses",
+          "No",
+          "Tuition fees per semester in EUR",
+          "4,500 EUR"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "Hochschule Fresenius",
+        "url": "https://www.hs-fresenius.com/",
+        "country": "Germany",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university"
+      },
+      "program": {
+        "name": "Fashion Design (BA)",
+        "degree": "Bachelor of Arts",
+        "level": "bachelor",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5617/",
+        "campus": "Berlin",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Bachelor of Arts FASHION DESIGN - TREND RESEARCH - PATTERN MAKING - PRODUCTION TECHNIQUES - TEXTILE TECHNOLOGY - NEW TEXTILE MATERIALS - TECHNICAL DRAWING - CAD GRAFIS - HISTORY OF CLOTHING - FASHION THEORY - ETHNIC DRESS / TRANSCULTURAL FASHION - ARTISTIC PRESENTATION FORMATS - FASHION MARKETING - PROJECTS The seven-semester study programme covers practical, artistic, and theoretical aspects. Providing individual support and promoting personal skills take top priority. Establish industry contacts from an early stage: Cooperation with fashion companies and cultural institutions as well as an internship are important parts of the study programme. Specialist English skills will help you to launch your career on the international fashion scene. Seventh semester: Bachelor's thesis Academic admission requirements Admission requirements Language requirements Berlin: The thriving German capital is not only the centre of political influence. It is also a hub and hot spot for culture and media, and it is one of the top international IT cities. Berlin is renowned for its exceptional variety of attractions, its flourishing cultural scene, and its energetic yet relaxed pace. With a population of around 3.5 million, it is Germany's largest city. Berliners are known for their liberal, cosmopolitan, and unconventional attitudes. There is no other city that bridges past and future quite like Berlin. A vast number of sights recount the city's history, while it is also home to all the major government agencies and buildings, including the historic Reichstag, which houses the \"Bundestag\", Germany's parliament. This contrast between historic monuments and contemporary architecture, between traditional and modern, is just one of the many aspects that make this city so unique. Berlin is also a magnet for artistic, creative, and unconventional individuals. In Berlin, there is also room to slow down and enjoy the finer things of life. It is the greenest European capital, with spacious parks, forests, and lakes. The rhythm of the city combines pulsating urban energy with grace. In the summer, Berliners live outdoors - in the beach bars, cafés, and open-air cinemas and theatres, where they can make the most of the sun and the longer evenings."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Possible all year round"
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "4,500 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5617/",
+            "source_text": "Bachelor of Arts FASHION DESIGN - TREND RESEARCH - PATTERN MAKING - PRODUCTION TECHNIQUES - TEXTILE TECHNOLOGY - NEW TEXTILE MATERIALS - TECHNICAL DRAWING - CAD GRAFIS - HISTORY OF CLOTHING - FASHION THEORY - ETHNIC DRESS / TRANSCULTURAL FASHION - ARTISTIC PRESENTATION FORMATS - FASHION MARKETING - PROJECTS The seven-semester study programme covers practical, artistic, and theoretical aspects. Providing individual support and promoting personal skills take top priority. Establish industry contac",
+            "retrieved_at": "2026-05-24T12:48:54.626918+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5617/",
+          "text": "Bachelor of Arts FASHION DESIGN - TREND RESEARCH - PATTERN MAKING - PRODUCTION TECHNIQUES - TEXTILE TECHNOLOGY - NEW TEXTILE MATERIALS - TECHNICAL DRAWING - CAD GRAFIS - HISTORY OF CLOTHING - FASHION THEORY - ETHNIC DRESS / TRANSCULTURAL FASHION - ARTISTIC PRESENTATION FORMATS - FASHION MARKETING - PROJECTS The seven-semester study programme covers practical, artistic, and theoretical aspects. Providing individual support and promoting personal skills take top priority. Establish industry contacts from an early stage: Cooperation with fashion companies and cultural institutions as well as an internship are important parts of the study programme. Specialist English skills will help you to launch your career on the international fashion scene. Seventh semester: Bachelor's thesis Academic admission requirements Admission requirements Language requirements Berlin: The thriving German capital is not only the centre of political influence. It is also a hub and hot spot for culture and media, and it is one of the top international IT cities. Berlin is renowned for its exceptional variety of attractions, its flourishing cultural scene, and its energetic yet relaxed pace. With a population of around 3.5 million, it is Germany's largest city. Berliners are known for their liberal, cosmopolitan, and unconventional attitudes. There is no other city that bridges past and future quite like Berlin. A vast number of sights recount the city's history, while it is also home to all the major government agencies and buildings, including the historic Reichstag, which houses the \"Bundestag\", Germany's parliament. This contrast between historic monuments and contemporary architecture, between traditional and modern, is just one of the many aspects that make this city so unique. Berlin is also a magnet for artistic, creative, and unconventional individuals. In Berlin, there is also room to slow down and enjoy the finer things of life. It is the greenest European capital, with spacious parks, forests, and lakes. The rhythm of the city combines pulsating urban energy with grace. In the summer, Berliners live outdoors - in the beach bars, cafés, and open-air cinemas and theatres, where they can make the most of the sun and the longer evenings."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "5617",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Hochschule%20Fresenius&limit=50&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5617/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "7 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "Fashion Design (BA) - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Fashion Design (BA) Fashion Design (BA)",
+          "Hochschule Fresenius - University of Applied Sciences • Berlin",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Bachelor of Arts",
+          "Course location",
+          "Berlin",
+          "Teaching language",
+          "English",
+          "Languages",
+          "Courses are held in English.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "7 semesters",
+          "Beginning",
+          "Winter semester",
+          "Application deadline",
+          "Possible all year round",
+          "Tuition fees per semester in EUR",
+          "4,500 EUR",
+          "Additional information on tuition fees",
+          "4,500 EUR tuition fee per semester for EU students",
+          "4,920 EUR tuition fee per semester for non-EU students",
+          "595 EUR one-time registration fee",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "FASHION DESIGN - TREND RESEARCH - PATTERN MAKING - PRODUCTION TECHNIQUES - TEXTILE TECHNOLOGY - NEW TEXTILE MATERIALS - TECHNICAL DRAWING - CAD GRAFIS - HISTORY OF CLOTHING - FASHION THEORY - ETHNIC DRESS / TRANSCULTURAL FASHION - ARTISTIC PRESENTATION FORMATS - FASHION MARKETING - PROJECTS",
+          "In the English-language Fashion Design (BA) study programme, you will acquire creative, manual, and technical skills and learn to use interdisciplinary thinking to design progressive collections. In addition to a high degree of creativity, one of the most important traits for up-and-coming designers is a sensitivity to social, cultural, and economic factors. The programme focuses on international developments and how they influence the fashion industry.",
+          "The seven-semester study programme covers practical, artistic, and theoretical aspects. Providing individual support and promoting personal skills take top priority. Establish industry contacts from an early stage: Cooperation with fashion companies and cultural institutions as well as an internship are important parts of the study programme. Specialist English skills will help you to launch your career on the international fashion scene.",
+          "Course organisation",
+          "First and second semester: Modules Introduction, Forms + Lines I-II, Materials + Realisation I-II, Design + Presentation I-II",
+          "Third and fourth semester: Modules Production + Techniques, Concept + Design I-II, Materials + Realisation III, Visualisation + Presentation I-II, Concept + Technology I, compulsory elective modules",
+          "Fifth semester: Internship (six months)",
+          "Sixth semester: Modules Design + Identity, Concept + Technology II, compulsory elective modules",
+          "Seventh semester: Bachelor's thesis",
+          "PDF Download",
+          "A Diploma supplement will be issued",
+          "Yes",
+          "Integrated internships",
+          "An internship of six months is to be completed during the fifth semester."
+        ]
+      }
+    }
+  ],
+  "skipped": []
+}

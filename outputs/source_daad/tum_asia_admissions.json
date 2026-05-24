@@ -1,0 +1,1206 @@
+{
+  "schema_version": "0.4-source",
+  "source_platform": "daad",
+  "source_label": "DAAD",
+  "school": {
+    "name": "TUM Asia",
+    "url": "https://tum-asia.edu.sg/",
+    "country": "Singapore",
+    "partner_status": "confirmed_from_offer_text",
+    "school_type": "university_partner"
+  },
+  "retrieved_at": "2026-05-24T12:40:04.736842+00:00",
+  "source_coverage": {
+    "status": "source_partial_match",
+    "warning": true,
+    "programs_extracted": 8,
+    "limitation_notes": [
+      "Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Technical+University+of+Munich&limit=100&offset=0&display=list: limit=100 offset=0.",
+      "Configured DAAD target is source_partial_match; configured queries and detail URLs may not cover every programme exposed by DAAD."
+    ],
+    "future_deepening_candidates": [
+      {
+        "note": "Verify whether DAAD Singapore/TUM records map to TUM Asia before extracting all TUM programmes."
+      }
+    ]
+  },
+  "programs": [
+    {
+      "school": {
+        "name": "TUM Asia",
+        "url": "https://tum-asia.edu.sg/",
+        "country": "Singapore",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_partner"
+      },
+      "program": {
+        "name": "Bachelor of Engineering (BEng Hons) in Chemical Engineering",
+        "degree": "Bachelor of Engineering (BEng Hons) in Chemical Engineering",
+        "level": "bachelor",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7673/",
+        "campus": "Singapore",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Bachelor of Engineering (BEng Hons) in Chemical Engineering Bachelor of Engineering (BEng Hons) in Chemical Engineering Participants must write their Bachelor's theses in English. The Bachelor of Engineering with Honours in Chemical Engineering is a four-year programme jointly offered by SIT and TUM. It is the first and only programme in Singapore designed to equip aspiring chemical engineers with cutting-edge Industry 4.0 skillsets, preparing them to meet the evolving needs of the chemical industry. This Bachelor’s degree addresses the growing manpower demands of both the local and global chemical sectors by providing students with advanced training in data engineering and additive manufacturing. Through intensive laboratory experiments and in-depth analysis, students gain the practical skills and knowledge needed to excel in the dynamic field of chemical engineering. Projects with partners in Germany and abroad https://www.singaporetech.edu.sg/admissions/financial-aid Academic admission requirements Language requirements Obtain a pass in General Paper or Knowledge & Inquiry in the same sitting, while satisfying: \"Mother Tongue Language\" (MTL)* requirements. *GCE A Level / IB applicants need to fulfil the language requirements as stipulated by the German higher education system. *GCE A Level applicants must have taken two language subjects, out of which one must be at H1 to fulfil the language requirements as stipulated by the German higher education system. For further inquiries on the language requirements, please TUM Asia Admission Office at admission@tum-asia.edu.sg . admission@tum-asia.edu.sg www.tum-asia.edu.sg"
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Mid-March"
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "https://www.singaporetech.edu.sg/undergraduate-programmes/chemical-engineering-and-food-technology/chemical-engineering-tum#fees-and-finances"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7673/",
+            "source_text": "Bachelor of Engineering (BEng Hons) in Chemical Engineering Bachelor of Engineering (BEng Hons) in Chemical Engineering Participants must write their Bachelor's theses in English. The Bachelor of Engineering with Honours in Chemical Engineering is a four-year programme jointly offered by SIT and TUM. It is the first and only programme in Singapore designed to equip aspiring chemical engineers with cutting-edge Industry 4.0 skillsets, preparing them to meet the evolving needs of the chemical indu",
+            "retrieved_at": "2026-05-24T12:40:04.736842+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7673/",
+          "text": "Bachelor of Engineering (BEng Hons) in Chemical Engineering Bachelor of Engineering (BEng Hons) in Chemical Engineering Participants must write their Bachelor's theses in English. The Bachelor of Engineering with Honours in Chemical Engineering is a four-year programme jointly offered by SIT and TUM. It is the first and only programme in Singapore designed to equip aspiring chemical engineers with cutting-edge Industry 4.0 skillsets, preparing them to meet the evolving needs of the chemical industry. This Bachelor’s degree addresses the growing manpower demands of both the local and global chemical sectors by providing students with advanced training in data engineering and additive manufacturing. Through intensive laboratory experiments and in-depth analysis, students gain the practical skills and knowledge needed to excel in the dynamic field of chemical engineering. Projects with partners in Germany and abroad https://www.singaporetech.edu.sg/admissions/financial-aid Academic admission requirements Language requirements Obtain a pass in General Paper or Knowledge & Inquiry in the same sitting, while satisfying: \"Mother Tongue Language\" (MTL)* requirements. *GCE A Level / IB applicants need to fulfil the language requirements as stipulated by the German higher education system. *GCE A Level applicants must have taken two language subjects, out of which one must be at H1 to fulfil the language requirements as stipulated by the German higher education system. For further inquiries on the language requirements, please TUM Asia Admission Office at admission@tum-asia.edu.sg . admission@tum-asia.edu.sg www.tum-asia.edu.sg"
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "7673",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Technical%20University%20of%20Munich&limit=25&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7673/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "8 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "Bachelor of Engineering (BEng Hons) in Chemical Engineering - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Bachelor of Engineering (BEng Hons) in Chemical Engineering Bachelor of Engineering (BEng Hons) in Chemical Engineering",
+          "Technical University of Munich • Singapore",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "Degree",
+          "Bachelor of Engineering (BEng Hons) in Chemical Engineering",
+          "Course location",
+          "Singapore",
+          "In cooperation with",
+          "Singapore Institute of Technology (SIT)",
+          "Teaching language",
+          "English",
+          "Languages",
+          "Courses are held in English (100%) only.",
+          "Participants must write their Bachelor's theses in English.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "8 semesters",
+          "Beginning",
+          "Winter semester",
+          "Application deadline",
+          "Mid-March",
+          "Tuition fees per semester in EUR",
+          "Yes",
+          "Additional information on tuition fees",
+          "https://www.singaporetech.edu.sg/undergraduate-programmes/chemical-engineering-and-food-technology/chemical-engineering-tum#fees-and-finances",
+          "Joint degree / double degree programme",
+          "Yes",
+          "Description/content",
+          "The Bachelor of Engineering with Honours in Chemical Engineering is a four-year programme jointly offered by SIT and TUM. It is the first and only programme in Singapore designed to equip aspiring chemical engineers with cutting-edge Industry 4.0 skillsets, preparing them to meet the evolving needs of the chemical industry.",
+          "This Bachelor’s degree addresses the growing manpower demands of both the local and global chemical sectors by providing students with advanced training in data engineering and additive manufacturing. Through intensive laboratory experiments and in-depth analysis, students gain the practical skills and knowledge needed to excel in the dynamic field of chemical engineering.",
+          "Course organisation",
+          "All theoretical and practical modules will be held in Singapore.",
+          "All coursework is conducted in English, and students will be taught by German and Singaporean lecturers.",
+          "PDF Download",
+          "International elements",
+          "International guest lecturers",
+          "Language training provided",
+          "Training in intercultural skills",
+          "Courses are led with foreign partners",
+          "Projects with partners in Germany and abroad",
+          "International comparisons and thematic reference to the international context",
+          "Content-related regional focus"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "TUM Asia",
+        "url": "https://tum-asia.edu.sg/",
+        "country": "Singapore",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_partner"
+      },
+      "program": {
+        "name": "Bachelor of Engineering with Honours in Electronics and Data Engineering",
+        "degree": "Bachelor of Engineering with Honours in Electronics and Data Engineering",
+        "level": "bachelor",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7674/",
+        "campus": "Singapore",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Bachelor of Engineering with Honours in Electronics and Data Engineering Bachelor of Engineering in Electronics and Data Engineering The Bachelor of Engineering with Honours in Electronics and Data Engineering is a four-year programme jointly offered by SIT and TUM. This unique degree blends electronics and data engineering, preparing students with the essential skills needed for the rapidly evolving digital workforce. Projects with partners in Germany and abroad https://www.singaporetech.edu.sg/admissions/financial-aid Academic admission requirements Language requirements Obtain a pass in General Paper or Knowledge & Inquiry in the same sitting, while satisfying \"Mother Tongue Language\" (MTL)* requirements *GCE A-Level / IB applicants need to fulfil the language requirements as stipulated by the German Higher Education System. *GCE A-Level applicants must have taken two language subjects, out of which one must be at H1 to fulfil the language requirements as stipulated by the German Higher Education System. For further inquiries on the language requirements, please TUM Asia Admission Office at admission@tum-asia.edu.sg . admission@tum-asia.edu.sg www.tum-asia.edu.sg"
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Mid-March"
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "https://www.singaporetech.edu.sg/undergraduate-programmes/electronics-and-data-engineering#fees-and-finances"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7674/",
+            "source_text": "Bachelor of Engineering with Honours in Electronics and Data Engineering Bachelor of Engineering in Electronics and Data Engineering The Bachelor of Engineering with Honours in Electronics and Data Engineering is a four-year programme jointly offered by SIT and TUM. This unique degree blends electronics and data engineering, preparing students with the essential skills needed for the rapidly evolving digital workforce. Projects with partners in Germany and abroad https://www.singaporetech.edu.sg",
+            "retrieved_at": "2026-05-24T12:40:04.736842+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7674/",
+          "text": "Bachelor of Engineering with Honours in Electronics and Data Engineering Bachelor of Engineering in Electronics and Data Engineering The Bachelor of Engineering with Honours in Electronics and Data Engineering is a four-year programme jointly offered by SIT and TUM. This unique degree blends electronics and data engineering, preparing students with the essential skills needed for the rapidly evolving digital workforce. Projects with partners in Germany and abroad https://www.singaporetech.edu.sg/admissions/financial-aid Academic admission requirements Language requirements Obtain a pass in General Paper or Knowledge & Inquiry in the same sitting, while satisfying \"Mother Tongue Language\" (MTL)* requirements *GCE A-Level / IB applicants need to fulfil the language requirements as stipulated by the German Higher Education System. *GCE A-Level applicants must have taken two language subjects, out of which one must be at H1 to fulfil the language requirements as stipulated by the German Higher Education System. For further inquiries on the language requirements, please TUM Asia Admission Office at admission@tum-asia.edu.sg . admission@tum-asia.edu.sg www.tum-asia.edu.sg"
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "7674",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Technical%20University%20of%20Munich&limit=25&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7674/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "8 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "Bachelor of Engineering with Honours in Electronics and Data Engineering - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Bachelor of Engineering with Honours in Electronics and Data Engineering Bachelor of Engineering in Electronics and Data Engineering",
+          "Technical University of Munich • Singapore",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "Degree",
+          "Bachelor of Engineering with Honours in Electronics and Data Engineering",
+          "Course location",
+          "Singapore",
+          "In cooperation with",
+          "Singapore Institute of Technology (SIT)",
+          "Teaching language",
+          "English",
+          "Languages",
+          "Courses are held in English (100%) only.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "8 semesters",
+          "Beginning",
+          "Winter semester",
+          "Application deadline",
+          "Mid-March",
+          "Tuition fees per semester in EUR",
+          "Yes",
+          "Additional information on tuition fees",
+          "https://www.singaporetech.edu.sg/undergraduate-programmes/electronics-and-data-engineering#fees-and-finances",
+          "Joint degree / double degree programme",
+          "Yes",
+          "Description/content",
+          "The Bachelor of Engineering with Honours in Electronics and Data Engineering is a four-year programme jointly offered by SIT and TUM. This unique degree blends electronics and data engineering, preparing students with the essential skills needed for the rapidly evolving digital workforce.",
+          "Graduates will gain in-depth knowledge of semiconductor physics, circuit design, and advanced mathematics for data science and machine learning. Building on TUM's expertise in semiconductor physics, circuit design, sensors, and power electronics, students will be equipped to apply cutting-edge digital technologies, driving innovation in the electronics and semiconductor manufacturing sectors.",
+          "Course organisation",
+          "All theoretical and practical modules will take place in Singapore.",
+          "All coursework will be conducted in English, and students will be taught by German and Singaporean lecturers.",
+          "PDF Download",
+          "International elements",
+          "International guest lecturers",
+          "Language training provided",
+          "Training in intercultural skills",
+          "Courses are led with foreign partners",
+          "Projects with partners in Germany and abroad",
+          "International comparisons and thematic reference to the international context",
+          "Content-related regional focus",
+          "Integrated internships"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "TUM Asia",
+        "url": "https://tum-asia.edu.sg/",
+        "country": "Singapore",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_partner"
+      },
+      "program": {
+        "name": "Aerospace (MSc)",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6141/",
+        "campus": "Garching b. München",
+        "language_of_instruction": [
+          "German"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master of Science Courses are held in English (70%) and German (30%). Participants can choose to write their Master's theses in either language. Please refer to the step-by-step instructions for the application: https://www.tum.de/en/studies/application/master/application-master . Combined Master's degree / PhD programme The main subject areas of the Master's programme Aerospace are Academic admission requirements Language requirements More details: https://www.tum.de/en/studies/application/application-info-portal/admission-requirements/language-certificates Please refer to the step-by-step instructions for the application: https://www.tum.de/en/studies/application/master/application-master ."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "1 April to 31 May (applications for the winter semester)"
+        ],
+        "intakes": [
+          "Winter and summer semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "6,000 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6141/",
+            "source_text": "Master of Science Courses are held in English (70%) and German (30%). Participants can choose to write their Master's theses in either language. Please refer to the step-by-step instructions for the application: https://www.tum.de/en/studies/application/master/application-master . Combined Master's degree / PhD programme The main subject areas of the Master's programme Aerospace are Academic admission requirements Language requirements More details: https://www.tum.de/en/studies/application/appl",
+            "retrieved_at": "2026-05-24T12:40:04.736842+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6141/",
+          "text": "Master of Science Courses are held in English (70%) and German (30%). Participants can choose to write their Master's theses in either language. Please refer to the step-by-step instructions for the application: https://www.tum.de/en/studies/application/master/application-master . Combined Master's degree / PhD programme The main subject areas of the Master's programme Aerospace are Academic admission requirements Language requirements More details: https://www.tum.de/en/studies/application/application-info-portal/admission-requirements/language-certificates Please refer to the step-by-step instructions for the application: https://www.tum.de/en/studies/application/master/application-master ."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "6141",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Technical+University+of+Munich&limit=100&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6141/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter and summer semester",
+        "programme_duration": "4 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "Aerospace (MSc) - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Aerospace (MSc) Aerospace (MSc)",
+          "Technical University of Munich • Garching b. München",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "Degree",
+          "Master of Science",
+          "Course location",
+          "Garching b. München",
+          "Teaching language",
+          "German",
+          "English",
+          "Languages",
+          "Courses are held in English (70%) and German (30%). Participants can choose to write their Master's theses in either language.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "4 semesters",
+          "Beginning",
+          "Winter and summer semester",
+          "Additional information on beginning, duration and mode of study",
+          "More detailed information is available in our course wiki system: https://collab.dvb.bayern/x/D9dfB .",
+          "Application deadline",
+          "1 April to 31 May (applications for the winter semester)",
+          "1 September to 30 November (applications for the summer semester)",
+          "Please refer to the step-by-step instructions for the application: https://www.tum.de/en/studies/application/master/application-master .",
+          "Tuition fees per semester in EUR",
+          "6,000 EUR",
+          "Additional information on tuition fees",
+          "Please refer to the following website for more information on tuition fees at TUM: https://www.tum.de/en/studies/fees/tuition .",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "Yes",
+          "Description/content",
+          "The main subject areas of the Master's programme Aerospace are:",
+          "Integrated systems (e.g. design of an aircraft, spacecraft or helicopter)",
+          "Propulsion systems (e.g. motor, flight power unit and gas turbine, and space craft power unit)",
+          "Fluid dynamics / aerodynamics (aerodynamics of aircraft, aeroelastics, and aeroacoustics)",
+          "Structure (e.g. finite elements, design and construction of composite structures, and fibre-, matrix- and composite materials as well as their characteristics)",
+          "Dynamics/control (e.g. helicopter flight physics, orbit mechanics, and flight mechanics)",
+          "Course organisation",
+          "For details about the course organisation (structure and curriculum), please refer to the course wiki: https://collab.dvb.bayern/x/YNdfB .",
+          "A Diploma supplement will be issued",
+          "Yes"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "TUM Asia",
+        "url": "https://tum-asia.edu.sg/",
+        "country": "Singapore",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_partner"
+      },
+      "program": {
+        "name": "Agricultural Biosciences",
+        "degree": "Master of Science (MSc)",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6527/",
+        "campus": "Freising",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master of Science (MSc) Combined Master's degree / PhD programme How can we secure the world's food supply? How can we preserve natural resources and mitigate the effects of climate change? Agricultural biosciences offer solutions to major societal challenges. They can make significant contributions to securing food supplies, preserving natural resources, and mitigating the effects of climate change. In contrast to other Master's programmes that have a specialised view on basic research and distinguish between plant and animal science, we at TUM believe that a generic approach is more timely, as many biological mechanisms are shared between plants and animals. A strong focus on molecular and computational methods reflects the TUM strategy to value innovation as the basis for knowledge. The MSc Agricultural Biosciences programme deals with different organisms, namely plants, animals and microbes. The programme takes advantage of the synergistic effects created by integrated studies on plant and animal species teaching generic as well as specific biological concepts, methods and tools. It reflects the high level of innovation in agricultural biosciences and prepares graduates for a multi-path career, allowing for flexibility and migration in the job market. have developed your own competencies for navigating in a changing environment and managing complex projects The fourth semester is devoted to preparing the Master's thesis, which concludes the study programme. In their theses, students identify and address a research question in the Agricultural Biosciences by choosing and implementing appropriate molecular, experimental or data methods. The thesis will serve to raise your professional profile. For more information, you can also watch our video : \"Agricultural Biosciences – What makes this international Master’s programme so unique?\" Qualification requirements: academic achievement and aptitude, social engagement, a sense of responsibility and special circumstances such as physical handicaps or a minority status Qualification requirements: Good academic record (merit), proven need (low income) Academic admission requirements Admittance to the Master's programme requires a Bachelor of Science degree of at least six semesters awarded by a German or foreign university, or at least an equivalent degree in the field of life sciences with a focus on plant and/or animal sciences. In particular, this degree should be from a study programme in Agricultural Sciences, Horticultural Sciences, Life Sciences Biology or Molecular Biotechnology, or it should be from a comparable study programme. Language requirements Required English language proficiency: TOEFL with at least 88 points or IELTS with at least 6.5 points The Technical University of Munich (TUM) is one of Europe’s leading universities in research and teaching. As the entrepreneurial university, it doesn’t just seek to understand the world – it sets out to improve it. TUM’s unparalleled range of disciplines covers engineering and natural sciences, life sciences and medicine, management and social sciences – a combination found nowhere else in Europe. TUM leverages this enormous potential by intensively and intelligently combining the different subjects. This inspires modern fields of research and teaching extending from bioengineering to machine intelligence. At the same time, TUM links technological questions closely with social, political and ethical issues. Agricultural Biosciences – What makes this international Master’s programme so unique? The TUM School of Life Sciences has developed a unique international Master's programme in Agricultural Biosciences. This new course of study uniquely combines the different disciplines of animal and plant sciences and creates excellent conditions for committed young scientists. Come and join us. Study Agricultural Biosciences. You can make a difference!"
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Application period: From 1 January to 31 May (for the following winter semester)"
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Varied"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6527/",
+            "source_text": "Master of Science (MSc) Combined Master's degree / PhD programme How can we secure the world's food supply? How can we preserve natural resources and mitigate the effects of climate change? Agricultural biosciences offer solutions to major societal challenges. They can make significant contributions to securing food supplies, preserving natural resources, and mitigating the effects of climate change. In contrast to other Master's programmes that have a specialised view on basic research and dist",
+            "retrieved_at": "2026-05-24T12:40:04.736842+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6527/",
+          "text": "Master of Science (MSc) Combined Master's degree / PhD programme How can we secure the world's food supply? How can we preserve natural resources and mitigate the effects of climate change? Agricultural biosciences offer solutions to major societal challenges. They can make significant contributions to securing food supplies, preserving natural resources, and mitigating the effects of climate change. In contrast to other Master's programmes that have a specialised view on basic research and distinguish between plant and animal science, we at TUM believe that a generic approach is more timely, as many biological mechanisms are shared between plants and animals. A strong focus on molecular and computational methods reflects the TUM strategy to value innovation as the basis for knowledge. The MSc Agricultural Biosciences programme deals with different organisms, namely plants, animals and microbes. The programme takes advantage of the synergistic effects created by integrated studies on plant and animal species teaching generic as well as specific biological concepts, methods and tools. It reflects the high level of innovation in agricultural biosciences and prepares graduates for a multi-path career, allowing for flexibility and migration in the job market. have developed your own competencies for navigating in a changing environment and managing complex projects The fourth semester is devoted to preparing the Master's thesis, which concludes the study programme. In their theses, students identify and address a research question in the Agricultural Biosciences by choosing and implementing appropriate molecular, experimental or data methods. The thesis will serve to raise your professional profile. For more information, you can also watch our video : \"Agricultural Biosciences – What makes this international Master’s programme so unique?\" Qualification requirements: academic achievement and aptitude, social engagement, a sense of responsibility and special circumstances such as physical handicaps or a minority status Qualification requirements: Good academic record (merit), proven need (low income) Academic admission requirements Admittance to the Master's programme requires a Bachelor of Science degree of at least six semesters awarded by a German or foreign university, or at least an equivalent degree in the field of life sciences with a focus on plant and/or animal sciences. In particular, this degree should be from a study programme in Agricultural Sciences, Horticultural Sciences, Life Sciences Biology or Molecular Biotechnology, or it should be from a comparable study programme. Language requirements Required English language proficiency: TOEFL with at least 88 points or IELTS with at least 6.5 points The Technical University of Munich (TUM) is one of Europe’s leading universities in research and teaching. As the entrepreneurial university, it doesn’t just seek to understand the world – it sets out to improve it. TUM’s unparalleled range of disciplines covers engineering and natural sciences, life sciences and medicine, management and social sciences – a combination found nowhere else in Europe. TUM leverages this enormous potential by intensively and intelligently combining the different subjects. This inspires modern fields of research and teaching extending from bioengineering to machine intelligence. At the same time, TUM links technological questions closely with social, political and ethical issues. Agricultural Biosciences – What makes this international Master’s programme so unique? The TUM School of Life Sciences has developed a unique international Master's programme in Agricultural Biosciences. This new course of study uniquely combines the different disciplines of animal and plant sciences and creates excellent conditions for committed young scientists. Come and join us. Study Agricultural Biosciences. You can make a difference!"
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "6527",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Technical+University+of+Munich&limit=100&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6527/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "4 semesters",
+        "study_mode": "Fully on-site with voluntary online elements",
+        "quality_flags": [],
+        "raw_blocks": [
+          "Agricultural Biosciences - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Agricultural Biosciences Agricultural Biosciences",
+          "Technical University of Munich • Freising",
+          "Gallery",
+          "Overview",
+          "Course details",
+          "Online learning",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Master of Science (MSc)",
+          "Course location",
+          "Freising",
+          "Teaching language",
+          "English",
+          "Languages",
+          "English",
+          "Full-time / part-time",
+          "full-time",
+          "Mode of study",
+          "Fully on-site with voluntary online elements",
+          "Programme duration",
+          "4 semesters",
+          "Beginning",
+          "Winter semester",
+          "Application deadline",
+          "Application period: From 1 January to 31 May (for the following winter semester)",
+          "For international students , we strongly recommend to apply as early as possible, ideally before 31 March.",
+          "Tuition fees per semester in EUR",
+          "Varied",
+          "Additional information on tuition fees",
+          "More information on tuition fees at TUM: https://www.tum.de/en/studies/fees/tuition .",
+          "Many international students can have their fees waived or receive scholarships to finance them. You can find all information on waivers and scholarships here. Please check which scholarship or waiver could fit you.",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "How can we secure the world's food supply? How can we preserve natural resources and mitigate the effects of climate change?",
+          "By studying Agricultural Biosciences at the TUM School of Life Sciences, you will become an expert with a set of skills needed to address these and other important challenges of our time. The MSc Agricultural Biosciences programme offers courses in biological disciplines relevant for crop and livestock production. It integrates molecular, biochemical, physiological, genetic and genomic knowledge as well as quantitative and computational approaches in a unique, interdisciplinary agricultural programme.",
+          "Are you interested in enhancing your knowledge and skills for a future in the rapidly evolving field of agricultural science?",
+          "Agricultural biosciences offer solutions to major societal challenges. They can make significant contributions to securing food supplies, preserving natural resources, and mitigating the effects of climate change.",
+          "The Agricultural Biosciences international study programme focuses on basic biological research for an efficient and environmentally-friendly agricultural production of crop and livestock species . It aims to understand crop and livestock species from the level of cells up to the whole organism and populations.",
+          "In contrast to other Master's programmes that have a specialised view on basic research and distinguish between plant and animal science, we at TUM believe that a generic approach is more timely, as many biological mechanisms are shared between plants and animals. A strong focus on molecular and computational methods reflects the TUM strategy to value innovation as the basis for knowledge.",
+          "The MSc Agricultural Biosciences programme deals with different organisms, namely plants, animals and microbes. The programme takes advantage of the synergistic effects created by integrated studies on plant and animal species teaching generic as well as specific biological concepts, methods and tools. It reflects the high level of innovation in agricultural biosciences and prepares graduates for a multi-path career, allowing for flexibility and migration in the job market.",
+          "As a graduate, you will..."
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "TUM Asia",
+        "url": "https://tum-asia.edu.sg/",
+        "country": "Singapore",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_partner"
+      },
+      "program": {
+        "name": "AgriFood Economics, Policy and Regulation",
+        "degree": "Master of Science (MSc)",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9177/",
+        "campus": "Freising",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master of Science (MSc) Combined Master's degree / PhD programme The Master's degree programme in AgriFood Economics, Policy and Regulation, which is taught in English, gives you the interdisciplinary and cross-cultural skills you need to find effective and cooperative answers to these major social issues. The degree programme offers a unique combination of agricultural policy with an interdisciplinary approach that takes ecological and socio-economic aspects into account. During the degree programme, you will deal intensively with the current challenges in the agricultural and food sectors. How do digital technologies influence our agriculture? How can resources be better utilised, and what can sustainable regional production and marketing principles look like? You can combine your basic scientific knowledge from the field of agricultural and horticultural sciences and your fundamental knowledge of empirical research methods with specific industry-relevant knowledge from business and politics. If you have a background in economics or political science, you can combine this with knowledge of the ecological and technological aspects of agriculture. You will complete your degree programme in the fourth semester with a Master's thesis . Requirements: academic achievement and aptitude, social engagement, a sense of responsibility and special circumstances such as physical handicaps or a minority status Requirements: Good academic record (merit), proven need (low income) Academic admission requirements The prerequisite for the application is that you hold a qualified Bachelor's degree of at least six semesters or an equivalent degree in agricultural and horticultural sciences, political science, economics and business administration or a comparable course of study, which you have acquired at a German or foreign university. Language requirements Knowledge of the English language : Students whose native language or language of instruction is not English must demonstrate proficiency through an acknowledged language test such as the Test of English as a Foreign Language (TOEFL, with a minimum of 88 points), the International English Language Testing System (IELTS, with a minimum of 6.5 points), or the Cambridge Main Suite of English Examinations. The Technical University of Munich (TUM) is one of Europe’s leading universities in research and teaching. As the entrepreneurial university, it doesn’t just seek to understand the world – it sets out to improve it. TUM’s unparalleled range of disciplines covers engineering and natural sciences, life sciences and medicine, management and social sciences – a combination found nowhere else in Europe. TUM leverages this enormous potential by intensively and intelligently combining the different subjects. This inspires modern fields of research and teaching extending from bioengineering to machine intelligence. At the same time, TUM links technological questions closely with social, political and ethical issues."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Application period: from 1 January to 31 May (for the following winter semester)"
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "Varied"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9177/",
+            "source_text": "Master of Science (MSc) Combined Master's degree / PhD programme The Master's degree programme in AgriFood Economics, Policy and Regulation, which is taught in English, gives you the interdisciplinary and cross-cultural skills you need to find effective and cooperative answers to these major social issues. The degree programme offers a unique combination of agricultural policy with an interdisciplinary approach that takes ecological and socio-economic aspects into account. During the degree prog",
+            "retrieved_at": "2026-05-24T12:40:04.736842+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9177/",
+          "text": "Master of Science (MSc) Combined Master's degree / PhD programme The Master's degree programme in AgriFood Economics, Policy and Regulation, which is taught in English, gives you the interdisciplinary and cross-cultural skills you need to find effective and cooperative answers to these major social issues. The degree programme offers a unique combination of agricultural policy with an interdisciplinary approach that takes ecological and socio-economic aspects into account. During the degree programme, you will deal intensively with the current challenges in the agricultural and food sectors. How do digital technologies influence our agriculture? How can resources be better utilised, and what can sustainable regional production and marketing principles look like? You can combine your basic scientific knowledge from the field of agricultural and horticultural sciences and your fundamental knowledge of empirical research methods with specific industry-relevant knowledge from business and politics. If you have a background in economics or political science, you can combine this with knowledge of the ecological and technological aspects of agriculture. You will complete your degree programme in the fourth semester with a Master's thesis . Requirements: academic achievement and aptitude, social engagement, a sense of responsibility and special circumstances such as physical handicaps or a minority status Requirements: Good academic record (merit), proven need (low income) Academic admission requirements The prerequisite for the application is that you hold a qualified Bachelor's degree of at least six semesters or an equivalent degree in agricultural and horticultural sciences, political science, economics and business administration or a comparable course of study, which you have acquired at a German or foreign university. Language requirements Knowledge of the English language : Students whose native language or language of instruction is not English must demonstrate proficiency through an acknowledged language test such as the Test of English as a Foreign Language (TOEFL, with a minimum of 88 points), the International English Language Testing System (IELTS, with a minimum of 6.5 points), or the Cambridge Main Suite of English Examinations. The Technical University of Munich (TUM) is one of Europe’s leading universities in research and teaching. As the entrepreneurial university, it doesn’t just seek to understand the world – it sets out to improve it. TUM’s unparalleled range of disciplines covers engineering and natural sciences, life sciences and medicine, management and social sciences – a combination found nowhere else in Europe. TUM leverages this enormous potential by intensively and intelligently combining the different subjects. This inspires modern fields of research and teaching extending from bioengineering to machine intelligence. At the same time, TUM links technological questions closely with social, political and ethical issues."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "9177",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Technical+University+of+Munich&limit=100&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9177/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "4 semesters",
+        "study_mode": "Fully on-site with voluntary online elements",
+        "quality_flags": [],
+        "raw_blocks": [
+          "AgriFood Economics, Policy and Regulation - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "AgriFood Economics, Policy and Regulation AgriFood Economics, Policy and Regulation",
+          "Technical University of Munich • Freising",
+          "Gallery",
+          "Overview",
+          "Course details",
+          "Online learning",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Master of Science (MSc)",
+          "Course location",
+          "Freising",
+          "Teaching language",
+          "English",
+          "Languages",
+          "Courses are held in English.",
+          "Full-time / part-time",
+          "full-time",
+          "Mode of study",
+          "Fully on-site with voluntary online elements",
+          "Programme duration",
+          "4 semesters",
+          "Beginning",
+          "Winter semester",
+          "Application deadline",
+          "Application period: from 1 January to 31 May (for the following winter semester)",
+          "For international students , we strongly recommend to apply as early as possible, ideally before 31 March.",
+          "Tuition fees per semester in EUR",
+          "Varied",
+          "Additional information on tuition fees",
+          "More information on tuition fees: https://www.tum.de/en/studies/fees/tuition .",
+          "Many international students can have their fees waived or receive scholarships to finance them. You can find all information on waivers and scholarships here. Please check which scholarship or waiver could fit you.",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "There are many areas of conflict in the international agricultural and food sector. How can biodiversity be preserved despite climate change and, at the same time, support economic and sustainable development in poorer countries? How can food security be ensured for a growing world population while still maintaining fair supply chains?",
+          "The international integration of agricultural markets and policymaking at the multinational level characterises the environment for producers, processors, and other players in the sector. Would you like to understand the international interdependencies?",
+          "The Master's degree programme in AgriFood Economics, Policy and Regulation, which is taught in English, gives you the interdisciplinary and cross-cultural skills you need to find effective and cooperative answers to these major social issues.",
+          "Why study in this degree programme in particular?",
+          "The degree programme offers a unique combination of agricultural policy with an interdisciplinary approach that takes ecological and socio-economic aspects into account.",
+          "You will deal intensively with the complexity of the AgriFood sector, which is characterised by close interactions between biological, technological, economic, social, and political-legal challenges and systems.",
+          "During the degree programme, you will deal intensively with the current challenges in the agricultural and food sectors. How do digital technologies influence our agriculture? How can resources be better utilised, and what can sustainable regional production and marketing principles look like? You can combine your basic scientific knowledge from the field of agricultural and horticultural sciences and your fundamental knowledge of empirical research methods with specific industry-relevant knowledge from business and politics. If you have a background in economics or political science, you can combine this with knowledge of the ecological and technological aspects of agriculture.",
+          "No other degree programme offers you these interdisciplinary opportunities – it is unique in Europe."
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "TUM Asia",
+        "url": "https://tum-asia.edu.sg/",
+        "country": "Singapore",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_partner"
+      },
+      "program": {
+        "name": "AI in Biomedicine",
+        "degree": "Master of Science (MSc)",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/10676/",
+        "campus": "Garching b. München",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master of Science (MSc) Combined Master's degree / PhD programme The Elite Master's programme AI in Biomedicine (AIBM) bridges the gap between computer science, engineering, and medicine to train future generations of AI experts who combine deep technical expertise in cutting-edge AI techniques with domain knowledge about biomedical applications. AIBM is a research-oriented two-year graduate programme, with an optional Research Excellence Certificate, offered at the Technical University of Munich in cooperation with Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU). It is designed to prepare students for careers in academic research and high-impact industrial innovation. The programme emphasises independent scientific thinking, methodological rigour, and the ability to contribute to the advancement of AI technologies in biomedicine. The AIBM programme is designed as a two-year full time Master's programme (120 credits), with an optional Research Excellence Certificate (REC, additional 30 credits). Each academic year consists of two semesters. The curriculum will be divided into four main topics: Foundations of AI courses offer knowledge about algorithmic and mathematical aspects of AI, while Applications of AI in Biomedicine and Healthcare courses introduce students to AI implementations in the medical and health sectors. Additionally, students will choose a Focus Subject to gain in-depth insights into foundations and/or applications of AI. Finally, the Cross-Cutting Themes topic enables students to gain skills in entrepreneurship & innovation, science communication, public and patient engagement. The curriculum is rounded off by the Master's thesis at TUM or FAU, or at one of our academic or industry partners. Research Excellence Certificate (REC) : Students can earn at least 30 credits in addition to the curriculum to graduate with the REC. For this, the students will select an additional cross-cutting themes course as well as a second focus subject with an additional elective course, an additional seminar and an additional research project. Students completing the additional REC (120 credits + 30 credits) will be awarded a Master’s degree (MSc) in AI in Biomedicine with the special grade \"with Honours\". Projects with partners in Germany and abroad Through external research projects and Master's theses as well as colloquia and excursions, AIBM students establish contacts with research institutions and companies both within and outside of Germany. They develop advanced international competencies and exhibit a high degree of intercultural awareness, including the ability to recognise and navigate diverse cultural norms and expectations. They are trained to identify potential sources of conflict in interdisciplinary collaboration, including differing expectations, ethical concerns, and societal sensitivities related to the use of AI in medicine. Academic admission requirements The selection process is based on an aptitude assessment, which is a two-stage process designed to evaluate the applicants' suitability for the specific requirements of the Master's programme. Applicants are expected to have a sufficient background in areas such as mathematics, machine learning, and programming and should hold or be on track to achieve one of the following qualifications or their equivalent Language requirements Test of English as Foreign Language / TOEFL International English Language Testing System/ IELTS Further information about language requirements is available at: https://www.tum.de/en/studies/application/application-info-portal/admission-requirements/language-certificates . For any questions regarding the application process and programme requirements, please : app-msaibm.asa@xcit.tum.de ."
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "Applications are open from 1 February to 31 May each year."
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "6,000 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/10676/",
+            "source_text": "Master of Science (MSc) Combined Master's degree / PhD programme The Elite Master's programme AI in Biomedicine (AIBM) bridges the gap between computer science, engineering, and medicine to train future generations of AI experts who combine deep technical expertise in cutting-edge AI techniques with domain knowledge about biomedical applications. AIBM is a research-oriented two-year graduate programme, with an optional Research Excellence Certificate, offered at the Technical University of Munic",
+            "retrieved_at": "2026-05-24T12:40:04.736842+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/10676/",
+          "text": "Master of Science (MSc) Combined Master's degree / PhD programme The Elite Master's programme AI in Biomedicine (AIBM) bridges the gap between computer science, engineering, and medicine to train future generations of AI experts who combine deep technical expertise in cutting-edge AI techniques with domain knowledge about biomedical applications. AIBM is a research-oriented two-year graduate programme, with an optional Research Excellence Certificate, offered at the Technical University of Munich in cooperation with Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU). It is designed to prepare students for careers in academic research and high-impact industrial innovation. The programme emphasises independent scientific thinking, methodological rigour, and the ability to contribute to the advancement of AI technologies in biomedicine. The AIBM programme is designed as a two-year full time Master's programme (120 credits), with an optional Research Excellence Certificate (REC, additional 30 credits). Each academic year consists of two semesters. The curriculum will be divided into four main topics: Foundations of AI courses offer knowledge about algorithmic and mathematical aspects of AI, while Applications of AI in Biomedicine and Healthcare courses introduce students to AI implementations in the medical and health sectors. Additionally, students will choose a Focus Subject to gain in-depth insights into foundations and/or applications of AI. Finally, the Cross-Cutting Themes topic enables students to gain skills in entrepreneurship & innovation, science communication, public and patient engagement. The curriculum is rounded off by the Master's thesis at TUM or FAU, or at one of our academic or industry partners. Research Excellence Certificate (REC) : Students can earn at least 30 credits in addition to the curriculum to graduate with the REC. For this, the students will select an additional cross-cutting themes course as well as a second focus subject with an additional elective course, an additional seminar and an additional research project. Students completing the additional REC (120 credits + 30 credits) will be awarded a Master’s degree (MSc) in AI in Biomedicine with the special grade \"with Honours\". Projects with partners in Germany and abroad Through external research projects and Master's theses as well as colloquia and excursions, AIBM students establish contacts with research institutions and companies both within and outside of Germany. They develop advanced international competencies and exhibit a high degree of intercultural awareness, including the ability to recognise and navigate diverse cultural norms and expectations. They are trained to identify potential sources of conflict in interdisciplinary collaboration, including differing expectations, ethical concerns, and societal sensitivities related to the use of AI in medicine. Academic admission requirements The selection process is based on an aptitude assessment, which is a two-stage process designed to evaluate the applicants' suitability for the specific requirements of the Master's programme. Applicants are expected to have a sufficient background in areas such as mathematics, machine learning, and programming and should hold or be on track to achieve one of the following qualifications or their equivalent Language requirements Test of English as Foreign Language / TOEFL International English Language Testing System/ IELTS Further information about language requirements is available at: https://www.tum.de/en/studies/application/application-info-portal/admission-requirements/language-certificates . For any questions regarding the application process and programme requirements, please : app-msaibm.asa@xcit.tum.de ."
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "10676",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Technical+University+of+Munich&limit=100&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/10676/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "4 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "AI in Biomedicine - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "AI in Biomedicine AI in Biomedicine",
+          "Technical University of Munich • Garching b. München",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "Degree",
+          "Master of Science (MSc)",
+          "Course location",
+          "Garching b. München",
+          "In cooperation with",
+          "Elite Network of Bavaria (Elitenetzwerk Bayern) and Friedrich-Alexander-Universität Erlangen-Nürnberg",
+          "Teaching language",
+          "English",
+          "Languages",
+          "All courses are taught in English (100%).",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "4 semesters",
+          "Beginning",
+          "Winter semester",
+          "Application deadline",
+          "Applications are open from 1 February to 31 May each year.",
+          "For non-EU applicants, we strongly recommend to apply by 15 March.",
+          "Tuition fees per semester in EUR",
+          "6,000 EUR",
+          "Additional information on tuition fees",
+          "Please refer to the following website for more information on tuition fees at TUM: https://www.tum.de/en/studies/fees/tuition .",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "Artificial Intelligence (AI) is rapidly transforming medicine, from diagnostics and drug discovery to personalised treatment and healthcare delivery. AI supports innovation in medicine and biotechnology, accelerates the development of new therapies and medical devices, and contributes to sustainable improvements in healthcare systems.",
+          "The Elite Master's programme AI in Biomedicine (AIBM) bridges the gap between computer science, engineering, and medicine to train future generations of AI experts who combine deep technical expertise in cutting-edge AI techniques with domain knowledge about biomedical applications. AIBM is a research-oriented two-year graduate programme, with an optional Research Excellence Certificate, offered at the Technical University of Munich in cooperation with Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU). It is designed to prepare students for careers in academic research and high-impact industrial innovation. The programme emphasises independent scientific thinking, methodological rigour, and the ability to contribute to the advancement of AI technologies in biomedicine.",
+          "The technical themes of the AIBM programme span the full landscape of AI, machine learning, data science, and related topics, such as Trustworthy AI that is accepted and adopted by clinicians, patients and citizens; Human-Centered AI that enables personalisation and effective collaboration between humans and AI to improve healthcare outcomes; and Multi-Modal and Generative AI that leverages emerging capabilities of AI systems to learn from complex data and generate new, meaningful samples.",
+          "Course organisation",
+          "The AIBM programme is designed as a two-year full time Master's programme (120 credits), with an optional Research Excellence Certificate (REC, additional 30 credits). Each academic year consists of two semesters.",
+          "The curriculum will be divided into four main topics: Foundations of AI courses offer knowledge about algorithmic and mathematical aspects of AI, while Applications of AI in Biomedicine and Healthcare courses introduce students to AI implementations in the medical and health sectors. Additionally, students will choose a Focus Subject to gain in-depth insights into foundations and/or applications of AI. Finally, the Cross-Cutting Themes topic enables students to gain skills in entrepreneurship & innovation, science communication, public and patient engagement. The curriculum is rounded off by the Master's thesis at TUM or FAU, or at one of our academic or industry partners.",
+          "Research Excellence Certificate (REC) : Students can earn at least 30 credits in addition to the curriculum to graduate with the REC. For this, the students will select an additional cross-cutting themes course as well as a second focus subject with an additional elective course, an additional seminar and an additional research project. Students completing the additional REC (120 credits + 30 credits) will be awarded a Master’s degree (MSc) in AI in Biomedicine with the special grade \"with Honours\".",
+          "International elements",
+          "Projects with partners in Germany and abroad",
+          "International guest lecturers",
+          "Specialist literature in other languages",
+          "International comparisons and thematic reference to the international context"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "TUM Asia",
+        "url": "https://tum-asia.edu.sg/",
+        "country": "Singapore",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_partner"
+      },
+      "program": {
+        "name": "AI in Society",
+        "degree": "Master of Science",
+        "level": "master",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9617/",
+        "campus": "München",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Master of Science Combined Master's degree / PhD programme “AI in Society” is a highly interdisciplinary study programme , focusing on mitigating biases in AI, enhancing user-dependent explainability and interpretability as well as ensuring data privacy and security. It also emphasises the importance of equitable access to AI technologies and fostering a competitive AI ecosystem. By exposing students to legal, ethical, and policy aspects of artificial intelligence, the programme prepares them to shape regulations and governance frameworks, assess potential risks , and contribute to responsible, ethical, and inclusive AI applications . Especially the current developments in AI (e.g. in the realm of generative AI for generating texts, speech, images, and videos) call for an interdisciplinary oversight supported by social scientists who understand the workings, limitations, and potential impact of such AI solutions. Projects with partners in Germany and abroad Academic admission requirements A qualified Bachelor’s degree of at least six semesters obtained at a domestic or foreign university at least five credits worth of modules from mathematics or statistics passed during Bachelor’s studies a practical project worth at least 18 credits completed during Bachelor’s studies Language requirements"
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "31 May"
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "4,000 EUR"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9617/",
+            "source_text": "Master of Science Combined Master's degree / PhD programme “AI in Society” is a highly interdisciplinary study programme , focusing on mitigating biases in AI, enhancing user-dependent explainability and interpretability as well as ensuring data privacy and security. It also emphasises the importance of equitable access to AI technologies and fostering a competitive AI ecosystem. By exposing students to legal, ethical, and policy aspects of artificial intelligence, the programme prepares them to",
+            "retrieved_at": "2026-05-24T12:40:04.736842+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9617/",
+          "text": "Master of Science Combined Master's degree / PhD programme “AI in Society” is a highly interdisciplinary study programme , focusing on mitigating biases in AI, enhancing user-dependent explainability and interpretability as well as ensuring data privacy and security. It also emphasises the importance of equitable access to AI technologies and fostering a competitive AI ecosystem. By exposing students to legal, ethical, and policy aspects of artificial intelligence, the programme prepares them to shape regulations and governance frameworks, assess potential risks , and contribute to responsible, ethical, and inclusive AI applications . Especially the current developments in AI (e.g. in the realm of generative AI for generating texts, speech, images, and videos) call for an interdisciplinary oversight supported by social scientists who understand the workings, limitations, and potential impact of such AI solutions. Projects with partners in Germany and abroad Academic admission requirements A qualified Bachelor’s degree of at least six semesters obtained at a domestic or foreign university at least five credits worth of modules from mathematics or statistics passed during Bachelor’s studies a practical project worth at least 18 credits completed during Bachelor’s studies Language requirements"
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "9617",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Technical+University+of+Munich&limit=100&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/9617/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "4 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "AI in Society - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "AI in Society AI in Society",
+          "Technical University of Munich • München",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "Degree",
+          "Master of Science",
+          "Course location",
+          "München",
+          "Teaching language",
+          "English",
+          "Languages",
+          "All courses are held in English.",
+          "Full-time / part-time",
+          "full-time",
+          "Programme duration",
+          "4 semesters",
+          "Beginning",
+          "Winter semester",
+          "Application deadline",
+          "31 May",
+          "Tuition fees per semester in EUR",
+          "4,000 EUR",
+          "Additional information on tuition fees",
+          "Please refer to the following website for more information on tuition fees at TUM: https://www.tum.de/en/studies/fees/tuition .",
+          "Combined Master's degree / PhD programme",
+          "No",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "“AI in Society” is a highly interdisciplinary study programme , focusing on mitigating biases in AI, enhancing user-dependent explainability and interpretability as well as ensuring data privacy and security. It also emphasises the importance of equitable access to AI technologies and fostering a competitive AI ecosystem. By exposing students to legal, ethical, and policy aspects of artificial intelligence, the programme prepares them to shape regulations and governance frameworks, assess potential risks , and contribute to responsible, ethical, and inclusive AI applications . Especially the current developments in AI (e.g. in the realm of generative AI for generating texts, speech, images, and videos) call for an interdisciplinary oversight supported by social scientists who understand the workings, limitations, and potential impact of such AI solutions.",
+          "Course organisation",
+          "PDF Download",
+          "International elements",
+          "Language training provided",
+          "Projects with partners in Germany and abroad",
+          "Integrated/optional study abroad unit(s)",
+          "Integrated/optional study abroad unit(s)",
+          "For going abroad during your studies in AI in Society, please refer to the following website: https://www.international.tum.de/en/global/going-abroad/ .",
+          "Course-specific, integrated German language courses",
+          "No",
+          "Course-specific, integrated English language courses",
+          "No",
+          "Tuition fees per semester in EUR",
+          "4,000 EUR"
+        ]
+      }
+    },
+    {
+      "school": {
+        "name": "TUM Asia",
+        "url": "https://tum-asia.edu.sg/",
+        "country": "Singapore",
+        "partner_status": "confirmed_from_offer_text",
+        "school_type": "university_partner"
+      },
+      "program": {
+        "name": "Bachelor in Management & Data Science (BSc) – Heilbronn",
+        "degree": "Bachelor of Science in Management & Data Science",
+        "level": "bachelor",
+        "url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5704/",
+        "campus": "Heilbronn",
+        "language_of_instruction": [
+          "English"
+        ],
+        "parent_program": null,
+        "specialization": null
+      },
+      "requirements": {
+        "academic_background": {
+          "degree_level": null,
+          "minimum_ects": null,
+          "recognized_institution": null,
+          "minimum_grade": null,
+          "notes": [
+            "Bachelor in Management & Data Science (BSc) – Heilbronn Bachelor in Management & Data Science (BSc) – Heilbronn Bachelor of Science in Management & Data Science In the Bachelor's in Management & Data Science, data science aspects permeate all management modules. The Bachelor's programme in Management & Data Science offers a fully-fledged management education in which traditional business management content (such as accounting, logistics and marketing) is learned and reflected upon in the context of data science. Students in the Bachelor's in Management & Data Science are therefore ideally equipped to take on management tasks in this era of digital change. They learn how personal, corporate and social data can be utilised for the benefit of people, companies and society. The potential use of technologies and data in the ecological field (e.g. in climate protection) also plays an important role. Overall, the Bachelor's in Management & Data Science offers a unique combination of management skills and data science to successfully master the challenges of digital transformation. In the sixth semester, two further elective modules (12 credits), a module on communication and intercultural competencies (six credits) and the Bachelor's thesis (12 credits), consisting of a scientific paper and a Bachelor's colloquium, are planned. Projects with partners in Germany and abroad Academic admission requirements To qualify for the Bachelor's in Management & Data Science at the TUM Heilbronn campus, applicants need to provide Detailed information about the application procedure can be found here: https://www.mgt.tum.de/programs/bachelor-management-data-science/how-to-apply . Language requirements For studying the Bachelor's in Management & Data Science at the TUM Heilbronn campus, you do not have to provide any language proficiency certificate. Admissions Office"
+          ]
+        },
+        "subject_prerequisites": [],
+        "language_requirements": [],
+        "test_requirements": [],
+        "work_experience": {
+          "minimum_years": null,
+          "relevance": null,
+          "notes": []
+        },
+        "documents": [],
+        "conditional_paths": [],
+        "international_requirements": []
+      },
+      "application": {
+        "deadlines": [
+          "The application period runs every year from 15 May until 15 July for the following winter semester."
+        ],
+        "intakes": [
+          "Winter semester"
+        ],
+        "application_channel": null,
+        "uni_assist_or_vpd": null,
+        "fees": [
+          "None"
+        ]
+      },
+      "evidence": {
+        "daad_detail": [
+          {
+            "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5704/",
+            "source_text": "Bachelor in Management & Data Science (BSc) – Heilbronn Bachelor in Management & Data Science (BSc) – Heilbronn Bachelor of Science in Management & Data Science In the Bachelor's in Management & Data Science, data science aspects permeate all management modules. The Bachelor's programme in Management & Data Science offers a fully-fledged management education in which traditional business management content (such as accounting, logistics and marketing) is learned and reflected upon in the context",
+            "retrieved_at": "2026-05-24T12:40:04.736842+00:00",
+            "confidence": "medium",
+            "review_note": "Source-platform extraction."
+          }
+        ]
+      },
+      "raw_evidence_sections": [
+        {
+          "heading": "Source platform record",
+          "source_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5704/",
+          "text": "Bachelor in Management & Data Science (BSc) – Heilbronn Bachelor in Management & Data Science (BSc) – Heilbronn Bachelor of Science in Management & Data Science In the Bachelor's in Management & Data Science, data science aspects permeate all management modules. The Bachelor's programme in Management & Data Science offers a fully-fledged management education in which traditional business management content (such as accounting, logistics and marketing) is learned and reflected upon in the context of data science. Students in the Bachelor's in Management & Data Science are therefore ideally equipped to take on management tasks in this era of digital change. They learn how personal, corporate and social data can be utilised for the benefit of people, companies and society. The potential use of technologies and data in the ecological field (e.g. in climate protection) also plays an important role. Overall, the Bachelor's in Management & Data Science offers a unique combination of management skills and data science to successfully master the challenges of digital transformation. In the sixth semester, two further elective modules (12 credits), a module on communication and intercultural competencies (six credits) and the Bachelor's thesis (12 credits), consisting of a scientific paper and a Bachelor's colloquium, are planned. Projects with partners in Germany and abroad Academic admission requirements To qualify for the Bachelor's in Management & Data Science at the TUM Heilbronn campus, applicants need to provide Detailed information about the application procedure can be found here: https://www.mgt.tum.de/programs/bachelor-management-data-science/how-to-apply . Language requirements For studying the Bachelor's in Management & Data Science at the TUM Heilbronn campus, you do not have to provide any language proficiency certificate. Admissions Office"
+        }
+      ],
+      "needs_human_review": false,
+      "source_record_id": "5704",
+      "source_listing_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Technical+University+of+Munich&limit=100&offset=0&display=list",
+      "source_detail_url": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5704/",
+      "source_specific": {
+        "source_platform": "daad",
+        "beginning": "Winter semester",
+        "programme_duration": "6 semesters",
+        "study_mode": null,
+        "quality_flags": [],
+        "raw_blocks": [
+          "Bachelor in Management & Data Science (BSc) – Heilbronn - International Programmes - DAADREMOVE_JS Skip to main content",
+          "Services",
+          "More information on daad.de More info",
+          "CHE University Ranking",
+          "DAAD database on admission requirements",
+          "Applying",
+          "Help and Advice",
+          "0",
+          "0",
+          "International Programmes 2025/2026",
+          "©",
+          "pagination",
+          "Home Back Previous Next",
+          "Bachelor in Management & Data Science (BSc) – Heilbronn Bachelor in Management & Data Science (BSc) – Heilbronn",
+          "Technical University of Munich • Heilbronn",
+          "Gallery",
+          "Overview",
+          "Course details",
+          "Costs / Funding",
+          "Requirements / Registration",
+          "Services",
+          "About the university",
+          "Degree",
+          "Bachelor of Science in Management & Data Science",
+          "Course location",
+          "Heilbronn",
+          "Teaching language",
+          "English",
+          "Languages",
+          "English is the only language of instruction.",
+          "Programme duration",
+          "6 semesters",
+          "Beginning",
+          "Winter semester",
+          "Application deadline",
+          "The application period runs every year from 15 May until 15 July for the following winter semester.",
+          "Tuition fees per semester in EUR",
+          "None",
+          "Joint degree / double degree programme",
+          "No",
+          "Description/content",
+          "In the Bachelor's in Management & Data Science, data science aspects permeate all management modules. The Bachelor's programme in Management & Data Science offers a fully-fledged management education in which traditional business management content (such as accounting, logistics and marketing) is learned and reflected upon in the context of data science.",
+          "Technological developments such as artificial intelligence, big data and machine learning are viewed holistically from the perspective of technology designers and users. This is done along economic, social and ethical standards and criteria, including compatibility with fundamental rights and the promotion of the Sustainable Development Goals (SDGs). Students acquire a strong mathematical foundation and attend several basic computer science courses at the TUM School of Computation, Information and Technology at the TUM Heilbronn campus.",
+          "Students in the Bachelor's in Management & Data Science are therefore ideally equipped to take on management tasks in this era of digital change. They learn how personal, corporate and social data can be utilised for the benefit of people, companies and society. The potential use of technologies and data in the ecological field (e.g. in climate protection) also plays an important role.",
+          "Overall, the Bachelor's in Management & Data Science offers a unique combination of management skills and data science to successfully master the challenges of digital transformation.",
+          "Course organisation",
+          "In the first four semesters, students are introduced to business administration (39 credits), economics (12 credits), law (six credits) and quantitative basics (27 credits) as well as technical basics in the field of data science (36 credits). All courses are compulsory modules.",
+          "The fifth semester comprises the individually arranged project study (12 credits) and three elective modules (18 credits). It is designed as a \"mobility window\" and gives students the opportunity to complete a semester-long study abroad programme.",
+          "In the sixth semester, two further elective modules (12 credits), a module on communication and intercultural competencies (six credits) and the Bachelor's thesis (12 credits), consisting of a scientific paper and a Bachelor's colloquium, are planned.",
+          "A Diploma supplement will be issued",
+          "Yes",
+          "International elements",
+          "Language training provided",
+          "Training in intercultural skills",
+          "Projects with partners in Germany and abroad",
+          "Opportunities for students to work abroad",
+          "International comparisons and thematic reference to the international context",
+          "Content-related regional focus",
+          "Integrated internships",
+          "Internships are optional. While we cannot directly arrange an internship for you, we will provide a wide range of support services, e.g. job board, workshop with corporate partners, career events, etc."
+        ]
+      }
+    }
+  ],
+  "skipped": []
+}

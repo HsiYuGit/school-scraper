@@ -14,6 +14,18 @@
 - Added tests to protect source output compatibility with the existing admissions review model.
 - Hardened the source output builder so returned JSON payloads do not reuse mutable caller-owned input objects.
 
+### DAAD source admissions scraper
+
+- Added `scripts/scrape_daad_admissions.py` with a fixture-tested DAAD detail parser and bounded DAAD-only collection from the public search JSON and detail-page paths.
+- Generated 12 DAAD source output files plus `outputs/source_daad/source_daad_manifest.json`.
+- Live DAAD run extracted 104 programme records across the configured partner targets; all outputs remain warning-marked as `source_partial_match` or `source_limited` because the configured targets are not proven exhaustive.
+- Recorded DAAD run mechanics and remaining source-coverage limits in `docs/source_scraper_reconnaissance.md`.
+- Hardened DAAD detail parsing so page chrome and tab labels do not enter programme names, deadlines, or fees.
+- Marked certificate-like and short-course-like DAAD records for human review instead of treating broad admission text as clean extraction.
+- Updated DAAD outputs and manifest limitation notes to show the bounded `limit=100 offset=0` listing window and switched the default DAAD delay to two seconds.
+- Extended DAAD parser hardening to normalized requirements notes, keeping page chrome/tab headings out of promoted contract fields while preserving raw trace blocks for review.
+- Centralized DAAD throttling through a shared fetch session so listing fetches, first detail fetches, later details, and cross-target transitions all respect the configured delay.
+
 ## 2026-05-15
 
 ### 工作規劃
