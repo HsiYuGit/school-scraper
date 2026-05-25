@@ -226,6 +226,26 @@ def render_summary(payload: dict[str, Any]) -> str:
                 "</section>",
             ]
         )
+    if payload.get("source_coverage") or payload.get("source_platform"):
+        coverage = payload.get("source_coverage", {})
+        body.extend(
+            [
+                "<section>",
+                "<h2>Source Coverage</h2>",
+                render_meta_grid(
+                    {
+                        "source_platform": payload.get("source_platform"),
+                        "source_label": payload.get("source_label"),
+                        "status": coverage.get("status"),
+                        "warning": coverage.get("warning"),
+                        "programs_extracted": coverage.get("programs_extracted"),
+                        "limitations": coverage.get("limitation_notes"),
+                        "future_deepening_candidates": coverage.get("future_deepening_candidates"),
+                    }
+                ),
+                "</section>",
+            ]
+        )
     return "".join(body)
 
 
@@ -305,6 +325,18 @@ def render_program(program_record: dict[str, Any], index: int) -> str:
     program = program_record.get("program", {})
     needs_review = program_record.get("needs_human_review")
     review_badge = '<span class="badge warn">Needs human review</span>' if needs_review else ""
+    source_meta = ""
+    source_meta_items = {
+        "source_record_id": program_record.get("source_record_id"),
+        "source_listing_url": program_record.get("source_listing_url"),
+        "source_detail_url": program_record.get("source_detail_url"),
+        "source_specific": program_record.get("source_specific"),
+    }
+    if any(value not in (None, "", [], {}) for value in source_meta_items.values()):
+        source_meta = (
+            "<h3>Source Metadata</h3>"
+            + render_meta_grid(source_meta_items)
+        )
     return "".join(
         [
             "<article>",
@@ -325,6 +357,7 @@ def render_program(program_record: dict[str, Any], index: int) -> str:
                     "specialization": program.get("specialization"),
                 }
             ),
+            source_meta,
             "<h3>Requirements</h3>",
             format_value(program_record.get("requirements", {})),
             render_application(program_record.get("application", {})),
@@ -362,6 +395,58 @@ def render_admissions(payload: dict[str, Any], source_path: Path) -> str:
         ]
     )
     return page(title, body)
+
+
+def is_source_manifest(payload: dict[str, Any]) -> bool:
+    return "schools" in payload and (
+        payload.get("source_platform") or payload.get("warning_statuses") or payload.get("status_counts")
+    )
+
+
+def render_source_manifest(payload: dict[str, Any], source_path: Path) -> str:
+    rows = []
+    for school in payload.get("schools", []):
+        output_path = school.get("output_path")
+        html_name = Path(output_path).with_suffix(".html").name if output_path else ""
+        link = f'<a href="{escape(html_name)}">{escape(school.get("school"))}</a>' if html_name else escape(school.get("school"))
+        rows.append(
+            "<tr>"
+            f"<td>{link}</td>"
+            f"<td>{escape(school.get('source_platform') or payload.get('source_platform'))}</td>"
+            f"<td>{escape(school.get('coverage_status'))}</td>"
+            f"<td>{format_value(school.get('warning'))}</td>"
+            f"<td>{escape(school.get('programs_extracted'))}</td>"
+            f"<td>{format_value(school.get('limitation_notes'))}</td>"
+            "</tr>"
+        )
+    body = "".join(
+        [
+            "<header>",
+            "<h1>Source Manifest</h1>",
+            f"<p>Generated from {escape(source_path.name)}.</p>",
+            "</header>",
+            "<main><section>",
+            "<h2>Summary</h2>",
+            render_meta_grid(
+                {
+                    "source_platform": payload.get("source_platform"),
+                    "schema_version": payload.get("schema_version"),
+                    "school_count": payload.get("school_count"),
+                    "programs_extracted": payload.get("programs_extracted"),
+                    "status_counts": payload.get("status_counts"),
+                    "warning_statuses": payload.get("warning_statuses"),
+                }
+            ),
+            "</section><section>",
+            "<h2>Schools</h2>",
+            "<table><thead><tr><th>School</th><th>Source Platform</th><th>Source Coverage Status</th><th>Warning</th><th>Programs</th><th>Limitation Notes</th></tr></thead>",
+            f"<tbody>{''.join(rows)}</tbody></table>",
+            "</section><section><details><summary>Full source manifest JSON</summary>",
+            f"<pre>{json_pre(payload)}</pre>",
+            "</details></section></main>",
+        ]
+    )
+    return page("Source manifest", body)
 
 
 def render_manifest(payload: dict[str, Any], source_path: Path) -> str:
@@ -423,6 +508,8 @@ def render_file(path: Path, output_dir: Path) -> Path:
     payload = load_json(path)
     if "programs" in payload:
         content = render_admissions(payload, path)
+    elif is_source_manifest(payload):
+        content = render_source_manifest(payload, path)
     elif "schools" in payload:
         content = render_manifest(payload, path)
     else:

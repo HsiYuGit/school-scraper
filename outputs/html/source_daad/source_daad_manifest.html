@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Source manifest</title>
+<style>:root {
+  color-scheme: light;
+  --bg: #f7f8fb;
+  --panel: #ffffff;
+  --ink: #1d2433;
+  --muted: #647084;
+  --line: #d9dfeb;
+  --accent: #0f766e;
+  --warn: #b45309;
+  --soft: #eef7f5;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Arial, "Noto Sans", sans-serif;
+  line-height: 1.5;
+}
+a { color: var(--accent); overflow-wrap: anywhere; }
+header {
+  background: #0f172a;
+  color: #fff;
+  padding: 28px clamp(20px, 5vw, 56px);
+}
+header p { color: #cbd5e1; margin: 8px 0 0; }
+main { max-width: 1180px; margin: 0 auto; padding: 24px; }
+section, article {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin: 0 0 18px;
+  padding: 18px;
+}
+h1, h2, h3 { line-height: 1.2; margin: 0 0 12px; }
+h1 { font-size: 30px; }
+h2 { font-size: 22px; }
+h3 { font-size: 18px; }
+.meta-grid, .stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+.cell, .stat {
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 10px;
+}
+.label {
+  color: var(--muted);
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.value { font-weight: 600; overflow-wrap: anywhere; }
+.badge {
+  background: var(--soft);
+  border: 1px solid #b7ddd5;
+  border-radius: 999px;
+  color: #115e59;
+  display: inline-block;
+  font-size: 12px;
+  margin: 2px 4px 2px 0;
+  padding: 2px 8px;
+}
+.badge.warn {
+  background: #fff7ed;
+  border-color: #fed7aa;
+  color: var(--warn);
+}
+table {
+  border-collapse: collapse;
+  margin: 10px 0;
+  width: 100%;
+}
+th, td {
+  border: 1px solid var(--line);
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+th { background: #f1f5f9; }
+details {
+  border-top: 1px solid var(--line);
+  margin-top: 12px;
+  padding-top: 12px;
+}
+summary { cursor: pointer; font-weight: 700; }
+pre {
+  background: #111827;
+  border-radius: 6px;
+  color: #e5e7eb;
+  max-height: 320px;
+  overflow: auto;
+  padding: 12px;
+  white-space: pre-wrap;
+}
+.program-header {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.program-title { min-width: 0; }
+.small { color: var(--muted); font-size: 13px; }
+ul { margin: 8px 0 0; padding-left: 20px; }</style>
+</head>
+<body>
+<header><h1>Source Manifest</h1><p>Generated from source_daad_manifest.json.</p></header><main><section><h2>Summary</h2><div class="meta-grid"><div class="cell"><span class="label">source_platform</span><span class="value">daad</span></div><div class="cell"><span class="label">schema_version</span><span class="value">0.1</span></div><div class="cell"><span class="label">school_count</span><span class="value">12</span></div><div class="cell"><span class="label">programs_extracted</span><span class="value">104</span></div><div class="cell"><span class="label">status_counts</span><span class="value"><table><tr><th>source_partial_match</th><td>8</td></tr><tr><th>source_limited</th><td>4</td></tr></table></span></div><div class="cell"><span class="label">warning_statuses</span><span class="value"><span class="badge">source_limited</span> <span class="badge">source_partial_match</span></span></div></div></section><section><h2>Schools</h2><table><thead><tr><th>School</th><th>Source Platform</th><th>Source Coverage Status</th><th>Warning</th><th>Programs</th><th>Limitation Notes</th></tr></thead><tbody><tr><td><a href="tum_asia_admissions.html">TUM Asia</a></td><td>daad</td><td>source_partial_match</td><td>Yes</td><td>8</td><td><span class="badge">Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Technical+University+of+Munich&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.</span> <span class="badge">Configured DAAD target is source_partial_match; configured queries and detail URLs may not cover every programme exposed by DAAD.</span></td></tr><tr><td><a href="munich_business_school_admissions.html">Munich Business School</a></td><td>daad</td><td>source_limited</td><td>Yes</td><td>0</td><td><span class="badge">Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Munich+Business+School&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.</span> <span class="badge">Configured DAAD target is target_needs_recon; configured queries and detail URLs may not cover every programme exposed by DAAD.</span></td></tr><tr><td><a href="international_school_of_management_ism_admissions.html">International School of Management (ISM)</a></td><td>daad</td><td>source_partial_match</td><td>Yes</td><td>10</td><td><span class="badge">Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=International+School+of+Management&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.</span> <span class="badge">Configured DAAD target is source_partial_match; configured queries and detail URLs may not cover every programme exposed by DAAD.</span></td></tr><tr><td><a href="cbs_international_business_school_admissions.html">CBS International Business School</a></td><td>daad</td><td>source_limited</td><td>Yes</td><td>0</td><td><span class="badge">Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=CBS+International+Business+School&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.</span> <span class="badge">Configured DAAD target is target_needs_recon; configured queries and detail URLs may not cover every programme exposed by DAAD.</span></td></tr><tr><td><a href="ebs_universitat_admissions.html">EBS Universität</a></td><td>daad</td><td>source_partial_match</td><td>Yes</td><td>9</td><td><span class="badge">Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=EBS&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.</span> <span class="badge">Configured DAAD target is source_partial_match; configured queries and detail URLs may not cover every programme exposed by DAAD.</span></td></tr><tr><td><a href="srh_universities_admissions.html">SRH Universities</a></td><td>daad</td><td>source_partial_match</td><td>Yes</td><td>59</td><td><span class="badge">Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=SRH&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.</span> <span class="badge">Configured DAAD target is source_partial_match; configured queries and detail URLs may not cover every programme exposed by DAAD.</span></td></tr><tr><td><a href="kuhne_logistics_university_klu_admissions.html">Kühne Logistics University (KLU)</a></td><td>daad</td><td>source_limited</td><td>Yes</td><td>0</td><td><span class="badge">Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Kuehne+Logistics+University&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.</span> <span class="badge">Configured DAAD target is target_needs_recon; configured queries and detail URLs may not cover every programme exposed by DAAD.</span></td></tr><tr><td><a href="hochschule_fresenius_admissions.html">Hochschule Fresenius</a></td><td>daad</td><td>source_partial_match</td><td>Yes</td><td>9</td><td><span class="badge">Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Hochschule+Fresenius&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.</span> <span class="badge">Configured DAAD target is source_partial_match; configured queries and detail URLs may not cover every programme exposed by DAAD.</span></td></tr><tr><td><a href="nit_northern_institute_of_technology_management_admissions.html">NIT Northern Institute of Technology Management</a></td><td>daad</td><td>source_partial_match</td><td>Yes</td><td>3</td><td><span class="badge">Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=NIT+Northern+Institute+of+Technology+Management&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.</span> <span class="badge">Configured DAAD target is target_needs_recon; configured queries and detail URLs may not cover every programme exposed by DAAD.</span></td></tr><tr><td><a href="hochschule_bremen_admissions.html">Hochschule Bremen</a></td><td>daad</td><td>source_partial_match</td><td>Yes</td><td>4</td><td><span class="badge">Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Bremen+University+of+Applied+Sciences&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.</span> <span class="badge">Configured DAAD target is source_partial_match; configured queries and detail URLs may not cover every programme exposed by DAAD.</span></td></tr><tr><td><a href="esmt_berlin_admissions.html">ESMT Berlin</a></td><td>daad</td><td>source_limited</td><td>Yes</td><td>0</td><td><span class="badge">Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=ESMT+Berlin&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.</span> <span class="badge">Configured DAAD target is target_needs_recon; configured queries and detail URLs may not cover every programme exposed by DAAD.</span></td></tr><tr><td><a href="international_graduate_center_hochschule_bremen_admissions.html">International Graduate Center, Hochschule Bremen</a></td><td>daad</td><td>source_partial_match</td><td>Yes</td><td>2</td><td><span class="badge">Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Bremen+University+of+Applied+Sciences+MBA&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.</span> <span class="badge">Configured DAAD target is source_partial_match; configured queries and detail URLs may not cover every programme exposed by DAAD.</span></td></tr></tbody></table></section><section><details><summary>Full source manifest JSON</summary><pre>{
+  &quot;schema_version&quot;: &quot;0.1&quot;,
+  &quot;source_platform&quot;: &quot;daad&quot;,
+  &quot;school_count&quot;: 12,
+  &quot;programs_extracted&quot;: 104,
+  &quot;status_counts&quot;: {
+    &quot;source_partial_match&quot;: 8,
+    &quot;source_limited&quot;: 4
+  },
+  &quot;warning_statuses&quot;: [
+    &quot;source_limited&quot;,
+    &quot;source_partial_match&quot;
+  ],
+  &quot;schools&quot;: [
+    {
+      &quot;school&quot;: &quot;TUM Asia&quot;,
+      &quot;source_platform&quot;: &quot;daad&quot;,
+      &quot;output_path&quot;: &quot;outputs\\source_daad\\tum_asia_admissions.json&quot;,
+      &quot;coverage_status&quot;: &quot;source_partial_match&quot;,
+      &quot;warning&quot;: true,
+      &quot;programs_extracted&quot;: 8,
+      &quot;limitation_notes&quot;: [
+        &quot;Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Technical+University+of+Munich&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.&quot;,
+        &quot;Configured DAAD target is source_partial_match; configured queries and detail URLs may not cover every programme exposed by DAAD.&quot;
+      ]
+    },
+    {
+      &quot;school&quot;: &quot;Munich Business School&quot;,
+      &quot;source_platform&quot;: &quot;daad&quot;,
+      &quot;output_path&quot;: &quot;outputs\\source_daad\\munich_business_school_admissions.json&quot;,
+      &quot;coverage_status&quot;: &quot;source_limited&quot;,
+      &quot;warning&quot;: true,
+      &quot;programs_extracted&quot;: 0,
+      &quot;limitation_notes&quot;: [
+        &quot;Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Munich+Business+School&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.&quot;,
+        &quot;Configured DAAD target is target_needs_recon; configured queries and detail URLs may not cover every programme exposed by DAAD.&quot;
+      ]
+    },
+    {
+      &quot;school&quot;: &quot;International School of Management (ISM)&quot;,
+      &quot;source_platform&quot;: &quot;daad&quot;,
+      &quot;output_path&quot;: &quot;outputs\\source_daad\\international_school_of_management_ism_admissions.json&quot;,
+      &quot;coverage_status&quot;: &quot;source_partial_match&quot;,
+      &quot;warning&quot;: true,
+      &quot;programs_extracted&quot;: 10,
+      &quot;limitation_notes&quot;: [
+        &quot;Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=International+School+of+Management&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.&quot;,
+        &quot;Configured DAAD target is source_partial_match; configured queries and detail URLs may not cover every programme exposed by DAAD.&quot;
+      ]
+    },
+    {
+      &quot;school&quot;: &quot;CBS International Business School&quot;,
+      &quot;source_platform&quot;: &quot;daad&quot;,
+      &quot;output_path&quot;: &quot;outputs\\source_daad\\cbs_international_business_school_admissions.json&quot;,
+      &quot;coverage_status&quot;: &quot;source_limited&quot;,
+      &quot;warning&quot;: true,
+      &quot;programs_extracted&quot;: 0,
+      &quot;limitation_notes&quot;: [
+        &quot;Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=CBS+International+Business+School&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.&quot;,
+        &quot;Configured DAAD target is target_needs_recon; configured queries and detail URLs may not cover every programme exposed by DAAD.&quot;
+      ]
+    },
+    {
+      &quot;school&quot;: &quot;EBS Universität&quot;,
+      &quot;source_platform&quot;: &quot;daad&quot;,
+      &quot;output_path&quot;: &quot;outputs\\source_daad\\ebs_universitat_admissions.json&quot;,
+      &quot;coverage_status&quot;: &quot;source_partial_match&quot;,
+      &quot;warning&quot;: true,
+      &quot;programs_extracted&quot;: 9,
+      &quot;limitation_notes&quot;: [
+        &quot;Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=EBS&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.&quot;,
+        &quot;Configured DAAD target is source_partial_match; configured queries and detail URLs may not cover every programme exposed by DAAD.&quot;
+      ]
+    },
+    {
+      &quot;school&quot;: &quot;SRH Universities&quot;,
+      &quot;source_platform&quot;: &quot;daad&quot;,
+      &quot;output_path&quot;: &quot;outputs\\source_daad\\srh_universities_admissions.json&quot;,
+      &quot;coverage_status&quot;: &quot;source_partial_match&quot;,
+      &quot;warning&quot;: true,
+      &quot;programs_extracted&quot;: 59,
+      &quot;limitation_notes&quot;: [
+        &quot;Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=SRH&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.&quot;,
+        &quot;Configured DAAD target is source_partial_match; configured queries and detail URLs may not cover every programme exposed by DAAD.&quot;
+      ]
+    },
+    {
+      &quot;school&quot;: &quot;Kühne Logistics University (KLU)&quot;,
+      &quot;source_platform&quot;: &quot;daad&quot;,
+      &quot;output_path&quot;: &quot;outputs\\source_daad\\kuhne_logistics_university_klu_admissions.json&quot;,
+      &quot;coverage_status&quot;: &quot;source_limited&quot;,
+      &quot;warning&quot;: true,
+      &quot;programs_extracted&quot;: 0,
+      &quot;limitation_notes&quot;: [
+        &quot;Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Kuehne+Logistics+University&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.&quot;,
+        &quot;Configured DAAD target is target_needs_recon; configured queries and detail URLs may not cover every programme exposed by DAAD.&quot;
+      ]
+    },
+    {
+      &quot;school&quot;: &quot;Hochschule Fresenius&quot;,
+      &quot;source_platform&quot;: &quot;daad&quot;,
+      &quot;output_path&quot;: &quot;outputs\\source_daad\\hochschule_fresenius_admissions.json&quot;,
+      &quot;coverage_status&quot;: &quot;source_partial_match&quot;,
+      &quot;warning&quot;: true,
+      &quot;programs_extracted&quot;: 9,
+      &quot;limitation_notes&quot;: [
+        &quot;Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Hochschule+Fresenius&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.&quot;,
+        &quot;Configured DAAD target is source_partial_match; configured queries and detail URLs may not cover every programme exposed by DAAD.&quot;
+      ]
+    },
+    {
+      &quot;school&quot;: &quot;NIT Northern Institute of Technology Management&quot;,
+      &quot;source_platform&quot;: &quot;daad&quot;,
+      &quot;output_path&quot;: &quot;outputs\\source_daad\\nit_northern_institute_of_technology_management_admissions.json&quot;,
+      &quot;coverage_status&quot;: &quot;source_partial_match&quot;,
+      &quot;warning&quot;: true,
+      &quot;programs_extracted&quot;: 3,
+      &quot;limitation_notes&quot;: [
+        &quot;Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=NIT+Northern+Institute+of+Technology+Management&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.&quot;,
+        &quot;Configured DAAD target is target_needs_recon; configured queries and detail URLs may not cover every programme exposed by DAAD.&quot;
+      ]
+    },
+    {
+      &quot;school&quot;: &quot;Hochschule Bremen&quot;,
+      &quot;source_platform&quot;: &quot;daad&quot;,
+      &quot;output_path&quot;: &quot;outputs\\source_daad\\hochschule_bremen_admissions.json&quot;,
+      &quot;coverage_status&quot;: &quot;source_partial_match&quot;,
+      &quot;warning&quot;: true,
+      &quot;programs_extracted&quot;: 4,
+      &quot;limitation_notes&quot;: [
+        &quot;Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Bremen+University+of+Applied+Sciences&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.&quot;,
+        &quot;Configured DAAD target is source_partial_match; configured queries and detail URLs may not cover every programme exposed by DAAD.&quot;
+      ]
+    },
+    {
+      &quot;school&quot;: &quot;ESMT Berlin&quot;,
+      &quot;source_platform&quot;: &quot;daad&quot;,
+      &quot;output_path&quot;: &quot;outputs\\source_daad\\esmt_berlin_admissions.json&quot;,
+      &quot;coverage_status&quot;: &quot;source_limited&quot;,
+      &quot;warning&quot;: true,
+      &quot;programs_extracted&quot;: 0,
+      &quot;limitation_notes&quot;: [
+        &quot;Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=ESMT+Berlin&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.&quot;,
+        &quot;Configured DAAD target is target_needs_recon; configured queries and detail URLs may not cover every programme exposed by DAAD.&quot;
+      ]
+    },
+    {
+      &quot;school&quot;: &quot;International Graduate Center, Hochschule Bremen&quot;,
+      &quot;source_platform&quot;: &quot;daad&quot;,
+      &quot;output_path&quot;: &quot;outputs\\source_daad\\international_graduate_center_hochschule_bremen_admissions.json&quot;,
+      &quot;coverage_status&quot;: &quot;source_partial_match&quot;,
+      &quot;warning&quot;: true,
+      &quot;programs_extracted&quot;: 2,
+      &quot;limitation_notes&quot;: [
+        &quot;Bounded DAAD listing window inspected for https://www2.daad.de/deutschland/studienangebote/international-programmes/api/solr/en/search.json?q=Bremen+University+of+Applied+Sciences+MBA&amp;limit=100&amp;offset=0&amp;display=list: limit=100 offset=0.&quot;,
+        &quot;Configured DAAD target is source_partial_match; configured queries and detail URLs may not cover every programme exposed by DAAD.&quot;
+      ]
+    }
+  ]
+}</pre></details></section></main>
+</body>
+</html>

@@ -1012,6 +1012,158 @@ class AdmissionExtractionTest(unittest.TestCase):
         output_path.unlink()
         output_dir.rmdir()
 
+    def test_renders_source_coverage_warning_to_html(self):
+        from scripts.source_scraper_common import SourceProgram, build_source_output
+
+        root = Path(__file__).parents[1]
+        output_dir = root / "outputs" / "_test_html_source"
+        if output_dir.exists():
+            shutil.rmtree(output_dir)
+
+        payload = build_source_output(
+            source_platform="daad",
+            source_label="DAAD",
+            school={"name": "Example School", "url": "https://example.edu/"},
+            programmes=[
+                SourceProgram(
+                    source_record_id="x1",
+                    source_listing_url="https://daad.example/list",
+                    source_detail_url="https://daad.example/detail",
+                    name="Example Programme",
+                    evidence_text="IELTS 6.5",
+                    source_specific={"raw_duration": "4 semesters"},
+                )
+            ],
+            coverage_status="bounded_search_limit_reached",
+            limitation_notes=["Only first 20 search records inspected."],
+            future_deepening_candidates=[
+                {"strategy": "inspect_public_endpoint", "reason": "Load-more request observed."}
+            ],
+        )
+        source_path = output_dir / "example_source.json"
+        output_dir.mkdir(parents=True)
+        source_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+        html_path = render_file(source_path, output_dir)
+        html = html_path.read_text(encoding="utf-8")
+
+        self.assertIn("Source Coverage", html)
+        self.assertIn("bounded_search_limit_reached", html)
+        self.assertIn("Only first 20 search records inspected.", html)
+        self.assertIn("source_specific", html)
+
+        shutil.rmtree(output_dir)
+
+    def test_renders_source_manifest_warnings_to_html(self):
+        root = Path(__file__).parents[1]
+        output_dir = root / "outputs" / "_test_html_source_manifest"
+        if output_dir.exists():
+            shutil.rmtree(output_dir)
+
+        payload = {
+            "schema_version": "0.1",
+            "source_platform": "daad",
+            "school_count": 2,
+            "programs_extracted": 1,
+            "status_counts": {
+                "source_partial_match": 1,
+                "source_limited": 1,
+            },
+            "warning_statuses": ["source_limited", "source_partial_match"],
+            "schools": [
+                {
+                    "school": "Example Complete School",
+                    "source_platform": "daad",
+                    "output_path": "outputs\\source_daad\\example_complete_school_admissions.json",
+                    "coverage_status": "source_partial_match",
+                    "warning": True,
+                    "programs_extracted": 1,
+                    "limitation_notes": ["Only the first source result page was inspected."],
+                },
+                {
+                    "school": "Example Limited School",
+                    "source_platform": "daad",
+                    "output_path": "outputs\\source_daad\\example_limited_school_admissions.json",
+                    "coverage_status": "source_limited",
+                    "warning": True,
+                    "programs_extracted": 0,
+                    "limitation_notes": ["Configured source target is incomplete."],
+                },
+            ],
+        }
+        manifest_path = output_dir / "source_daad_manifest.json"
+        output_dir.mkdir(parents=True)
+        manifest_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+        output_path = render_file(manifest_path, output_dir)
+        html = output_path.read_text(encoding="utf-8")
+
+        self.assertIn("Source Manifest", html)
+        self.assertIn("daad", html)
+        self.assertIn("source_limited", html)
+        self.assertIn("source_partial_match", html)
+        self.assertIn("Only the first source result page was inspected.", html)
+        self.assertIn("Configured source target is incomplete.", html)
+        self.assertNotIn("Partner School Crawl Manifest", html)
+
+        shutil.rmtree(output_dir)
+
+    def test_renders_source_metadata_when_only_source_urls_exist(self):
+        root = Path(__file__).parents[1]
+        output_dir = root / "outputs" / "_test_html_source_urls"
+        if output_dir.exists():
+            shutil.rmtree(output_dir)
+
+        payload = {
+            "schema_version": "0.4-source",
+            "source_platform": "daad",
+            "source_label": "DAAD",
+            "school": {"name": "Example School", "url": "https://example.edu/"},
+            "source_coverage": {
+                "status": "source_partial_match",
+                "warning": True,
+                "programs_extracted": 1,
+                "limitation_notes": [],
+                "future_deepening_candidates": [],
+            },
+            "programs": [
+                {
+                    "school": {"name": "Example School", "url": "https://example.edu/"},
+                    "program": {
+                        "name": "URL Only Programme",
+                        "degree": "MSc",
+                        "level": "master",
+                        "url": "https://daad.example/detail",
+                        "campus": None,
+                        "language_of_instruction": ["English"],
+                        "parent_program": None,
+                        "specialization": None,
+                    },
+                    "requirements": {},
+                    "application": {},
+                    "evidence": {},
+                    "raw_evidence_sections": [],
+                    "needs_human_review": True,
+                    "source_listing_url": "https://daad.example/list",
+                    "source_detail_url": "https://daad.example/detail",
+                }
+            ],
+        }
+        source_path = output_dir / "url_only_source.json"
+        output_dir.mkdir(parents=True)
+        source_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+        html_path = render_file(source_path, output_dir)
+        html = html_path.read_text(encoding="utf-8")
+
+        self.assertIn("Source Metadata", html)
+        self.assertIn("source_listing_url", html)
+        self.assertIn("https://daad.example/list", html)
+        self.assertIn("source_detail_url", html)
+        self.assertIn("https://daad.example/detail", html)
+
+        shutil.rmtree(output_dir)
+
     def test_renders_manifest_as_index(self):
         root = Path(__file__).parents[1]
         manifest_path = root / "outputs" / "partner_school_crawl_manifest.json"

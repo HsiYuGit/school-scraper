@@ -35,6 +35,10 @@
 - A network-approved retry reached some MGU pages but timed out before a complete 12-school manifest could be written, so the final committed outputs were regenerated from the completed bounded run and keep every potentially missed programme warning-visible.
 - No MGU output uses school official-site fallback; degree, language, and study mode remain metadata only.
 
+### Source HTML review pages
+
+- Extended admissions HTML review pages for DAAD and My German University outputs so source coverage warnings, limitation notes, future deepening candidates, source record URLs, and source-specific fields are visible during review.
+
 ## 2026-05-15
 
 ### 工作規劃

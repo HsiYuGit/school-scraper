@@ -42,6 +42,10 @@ Management study modes into one program family.
 python scripts\render_admissions_html.py outputs\munich_business_school_admissions.json --out-dir outputs\html
 ```
 
+## Source platform review pages
+
+Source platform outputs render under `outputs/html/source_daad/` and `outputs/html/source_mgu/`. Pages include a Source Coverage section. Any warning status such as `bounded_search_limit_reached`, `source_partial_match`, `source_no_match`, `js_gated`, or `robots_blocked` must be treated as possible missed coverage during dashboard review.
+
 ## What to review in HTML
 
 - School metadata, crawl limits, robots status, and crawl summary.
