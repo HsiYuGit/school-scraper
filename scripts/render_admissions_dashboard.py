@@ -12,6 +12,7 @@ from typing import Any, Iterable
 
 try:
     from compare_admissions_outputs import (
+        build_strategy_matrix,
         count_language_tests,
         count_test_requirements,
         render_comparison,
@@ -26,6 +27,7 @@ try:
     )
 except ModuleNotFoundError:
     from scripts.compare_admissions_outputs import (
+        build_strategy_matrix,
         count_language_tests,
         count_test_requirements,
         render_comparison,
@@ -90,6 +92,12 @@ def render_reviews(outputs_dir: Path, html_dir: Path) -> list[Path]:
         if llm_dir.exists():
             target_dir = html_dir / "v0_3" / llm_name
             for path in sorted(llm_dir.glob("*.json")):
+                rendered.append(render_file(path, target_dir))
+    for source_name in ("source_daad", "source_mgu"):
+        source_dir = outputs_dir / source_name
+        if source_dir.exists():
+            target_dir = html_dir / source_name
+            for path in sorted(source_dir.glob("*.json")):
                 rendered.append(render_file(path, target_dir))
     return rendered
 
@@ -254,6 +262,84 @@ def render_pairwise_comparisons(
     return rendered
 
 
+def warning_badges(warnings: list[str]) -> str:
+    return "".join(f'<span class="badge warn">{escape(warning)}</span>' for warning in warnings)
+
+
+def render_strategy_matrix_page(name: str, strategies: dict[str, dict[str, Any]]) -> str:
+    matrix = build_strategy_matrix(strategies)
+    warnings = matrix["coverage_warnings"]
+    warning_items = "".join(f"<li>{escape(warning)}</li>" for warning in warnings) or '<li><span class="small">None</span></li>'
+    rows = []
+    for row in matrix["programmes"]:
+        rows.append(
+            "<tr>"
+            f"<td>{escape(row['status'])}</td>"
+            f"<td>{format_value(row['present_in'])}</td>"
+            f"<td>{escape(row['key'])}</td>"
+            f"<td>{format_value(row.get('record_counts'))}</td>"
+            "</tr>"
+        )
+    strategy_json = {
+        "strategies": strategies,
+        "matrix": matrix,
+    }
+    body = "".join(
+        [
+            "<header>",
+            f"<h1>{escape(name)}: strategy comparison</h1>",
+            "<p>Official crawler, official LLM, DAAD, and My German University outputs where available.</p>",
+            "</header>",
+            "<main>",
+            "<section><h2>Coverage Warnings</h2>",
+            f"<ul>{warning_items}</ul>",
+            "</section>",
+            "<section><h2>Programme Matching</h2>",
+            "<table><thead><tr><th>Status</th><th>Present In</th><th>Programme Key</th><th>Record Counts</th></tr></thead>",
+            f"<tbody>{''.join(rows)}</tbody></table>",
+            "</section>",
+            "<section><h2>Full Strategy JSON</h2>",
+            "<details><summary>Payloads</summary>",
+            f"<pre>{escape(json.dumps(strategy_json, ensure_ascii=False, indent=2))}</pre>",
+            "</details></section>",
+            "</main>",
+        ]
+    )
+    return page(f"{name}: strategy comparison", body)
+
+
+def render_strategy_matrix_pages(outputs_dir: Path, html_dir: Path) -> list[dict[str, Any]]:
+    strategy_roots = {
+        "official_crawler": outputs_dir / "v0_4",
+        "official_llm": outputs_dir / "v0_3" / "llm_native_v0_2",
+        "daad": outputs_dir / "source_daad",
+        "mgu": outputs_dir / "source_mgu",
+    }
+    indexes = {strategy: index_by_school(root) for strategy, root in strategy_roots.items()}
+    names = sorted({name for paths in indexes.values() for name in paths})
+    output_dir = html_dir / "comparisons" / "strategy_matrix"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    rendered: list[dict[str, Any]] = []
+    for name in names:
+        strategies = {
+            strategy: load_json(paths[name])
+            for strategy, paths in indexes.items()
+            if name in paths
+        }
+        matrix = build_strategy_matrix(strategies)
+        output_path = output_dir / f"{slugify(name)}.html"
+        output_path.write_text(render_strategy_matrix_page(name, strategies) + "\n", encoding="utf-8")
+        rendered.append(
+            {
+                "school": name,
+                "path": output_path,
+                "coverage_warnings": matrix["coverage_warnings"],
+                "strategy_count": len(strategies),
+            }
+        )
+    return rendered
+
+
 def link(path: Path, html_dir: Path, label: str) -> str:
     return f'<a href="{escape(path.relative_to(html_dir).as_posix())}">{escape(label)}</a>'
 
@@ -265,16 +351,28 @@ def render_dashboard_index(
     llm_pages: list[Path],
     llm_v0_2_pages: list[Path],
     crawler_llm_v0_2_pages: list[Path],
+    strategy_pages: list[dict[str, Any]],
 ) -> Path:
     v2_paths = index_by_school(outputs_dir / "v0_2")
     v3_paths = index_by_school(outputs_dir / "v0_3")
     v4_paths = index_by_school(outputs_dir / "v0_4")
     llm_paths = index_by_school(outputs_dir / "v0_3" / "llm_native")
     llm_v0_2_paths = index_by_school(outputs_dir / "v0_3" / "llm_native_v0_2")
+    source_daad_paths = index_by_school(outputs_dir / "source_daad")
+    source_mgu_paths = index_by_school(outputs_dir / "source_mgu")
     llm_page_by_slug = {path.stem: path for path in llm_pages}
     llm_v0_2_page_by_slug = {path.stem: path for path in llm_v0_2_pages}
     crawler_llm_v0_2_page_by_slug = {path.stem: path for path in crawler_llm_v0_2_pages}
-    names = sorted(set(v2_paths) | set(v3_paths) | set(v4_paths) | set(llm_paths) | set(llm_v0_2_paths))
+    strategy_page_by_slug = {path_info["path"].stem: path_info for path_info in strategy_pages}
+    names = sorted(
+        set(v2_paths)
+        | set(v3_paths)
+        | set(v4_paths)
+        | set(llm_paths)
+        | set(llm_v0_2_paths)
+        | set(source_daad_paths)
+        | set(source_mgu_paths)
+    )
     rows = []
     for name in names:
         slug = slugify(name)
@@ -283,15 +381,20 @@ def render_dashboard_index(
         v4_link = link(html_dir / "v0_4" / f"{v4_paths[name].stem}.html", html_dir, "v0.4") if name in v4_paths else ""
         llm_link = link(html_dir / "v0_3" / "llm_native" / f"{llm_paths[name].stem}.html", html_dir, "LLM v0.1") if name in llm_paths else ""
         llm_v0_2_link = link(html_dir / "v0_3" / "llm_native_v0_2" / f"{llm_v0_2_paths[name].stem}.html", html_dir, "LLM v0.2") if name in llm_v0_2_paths else ""
+        source_daad_link = link(html_dir / "source_daad" / f"{source_daad_paths[name].stem}.html", html_dir, "DAAD (source_daad)") if name in source_daad_paths else ""
+        source_mgu_link = link(html_dir / "source_mgu" / f"{source_mgu_paths[name].stem}.html", html_dir, "My German University (source_mgu)") if name in source_mgu_paths else ""
         compare_link = link(llm_page_by_slug[slug], html_dir, "v0.3 vs LLM v0.1") if slug in llm_page_by_slug else ""
         llm_v0_2_compare = link(llm_v0_2_page_by_slug[slug], html_dir, "LLM v0.1 vs v0.2") if slug in llm_v0_2_page_by_slug else ""
         crawler_llm_v0_2_compare = link(crawler_llm_v0_2_page_by_slug[slug], html_dir, "v0.4 vs LLM v0.2") if slug in crawler_llm_v0_2_page_by_slug else ""
+        strategy_info = strategy_page_by_slug.get(slug)
+        strategy_link = link(strategy_info["path"], html_dir, "Strategy comparison") if strategy_info else ""
+        warnings = warning_badges(strategy_info["coverage_warnings"]) if strategy_info else ""
         rows.append(
             "<tr>"
             f"<td>{escape(name)}</td>"
             f"<td>{v2_link}</td><td>{v3_link}</td><td>{v4_link}</td>"
-            f"<td>{llm_link}</td><td>{llm_v0_2_link}</td>"
-            f"<td>{compare_link}</td><td>{llm_v0_2_compare}</td><td>{crawler_llm_v0_2_compare}</td>"
+            f"<td>{llm_link}</td><td>{llm_v0_2_link}</td><td>{source_daad_link}</td><td>{source_mgu_link}</td>"
+            f"<td>{compare_link}</td><td>{llm_v0_2_compare}</td><td>{crawler_llm_v0_2_compare}</td><td>{strategy_link}</td><td>{warnings}</td>"
             "</tr>"
         )
     body = "".join(
@@ -307,15 +410,19 @@ def render_dashboard_index(
                     "v0.4 schools": len(v4_paths),
                     "LLM v0.1 schools": len(llm_paths),
                     "LLM v0.2 schools": len(llm_v0_2_paths),
+                    "source_daad schools": len(source_daad_paths),
+                    "source_mgu schools": len(source_mgu_paths),
+                    "strategy comparison pages": len(strategy_pages),
                 }
             ),
             "</section><section><h2>Comparison Reports</h2><ul>",
             f"<li>{link(version_pages['v0_2_vs_v0_3'], html_dir, 'v0.2 vs v0.3 crawler improvement')}</li>",
             f"<li>{link(version_pages['v0_3_vs_v0_4'], html_dir, 'v0.3 vs v0.4 crawler improvement')}</li>",
+            f"<li>{link(strategy_pages[0]['path'], html_dir, 'Strategy comparison pages') if strategy_pages else 'Strategy comparison pages'}</li>",
             "</ul></section><section><h2>Schools</h2>",
             "<table><thead><tr><th>School</th><th>v0.2 Review</th><th>v0.3 Review</th><th>v0.4 Review</th>"
-            "<th>LLM v0.1 Review</th><th>LLM v0.2 Review</th><th>v0.3 vs LLM v0.1</th>"
-            "<th>LLM v0.1 vs v0.2</th><th>v0.4 vs LLM v0.2</th></tr></thead>",
+            "<th>LLM v0.1 Review</th><th>LLM v0.2 Review</th><th>DAAD (source_daad)</th><th>My German University (source_mgu)</th><th>v0.3 vs LLM v0.1</th>"
+            "<th>LLM v0.1 vs v0.2</th><th>v0.4 vs LLM v0.2</th><th>Strategy comparison</th><th>Warnings</th></tr></thead>",
             f"<tbody>{''.join(rows)}</tbody></table></section></main>",
         ]
     )
@@ -361,7 +468,16 @@ def main(argv: Iterable[str] | None = None) -> int:
         "v0.4 crawler output",
         "LLM v0.2 output",
     )
-    index = render_dashboard_index(outputs_dir, html_dir, version_pages, llm_pages, llm_v0_2_pages, crawler_llm_v0_2_pages)
+    strategy_pages = render_strategy_matrix_pages(outputs_dir, html_dir)
+    index = render_dashboard_index(
+        outputs_dir,
+        html_dir,
+        version_pages,
+        llm_pages,
+        llm_v0_2_pages,
+        crawler_llm_v0_2_pages,
+        strategy_pages,
+    )
     result = {
         "generated_at": dt.datetime.now(dt.UTC).isoformat(),
         "index": str(index),
@@ -369,6 +485,7 @@ def main(argv: Iterable[str] | None = None) -> int:
         "llm_comparison_pages": len(llm_pages),
         "llm_v0_2_comparison_pages": len(llm_v0_2_pages),
         "v0_4_vs_llm_v0_2_pages": len(crawler_llm_v0_2_pages),
+        "strategy_matrix_pages": len(strategy_pages),
         "version_comparisons": {key: str(path) for key, path in version_pages.items()},
     }
     print(json.dumps(result, ensure_ascii=False, indent=2))

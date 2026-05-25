@@ -1194,7 +1194,13 @@ class AdmissionExtractionTest(unittest.TestCase):
             self.assertIn("v0.3 vs v0.4 crawler improvement", html)
             self.assertIn("LLM v0.1 vs v0.2", html)
             self.assertIn("v0.4 vs LLM v0.2", html)
+            self.assertIn("Strategy comparison", html)
+            self.assertIn("DAAD", html)
+            self.assertIn("My German University", html)
+            self.assertIn("source_daad", html)
+            self.assertIn("source_mgu", html)
             self.assertTrue((output_dir / "comparisons" / "v0_3_vs_v0_4.html").exists())
+            self.assertTrue((output_dir / "comparisons" / "strategy_matrix").exists())
             expected_llm_v0_2 = len(list((root / "outputs" / "v0_3" / "llm_native_v0_2").glob("*.json")))
             self.assertEqual(expected_llm_v0_2, len(list((output_dir / "comparisons" / "llm_v0_1_vs_v0_2").glob("*.html"))))
             self.assertEqual(expected_llm_v0_2, len(list((output_dir / "comparisons" / "v0_4_vs_llm_v0_2").glob("*.html"))))
@@ -1203,6 +1209,135 @@ class AdmissionExtractionTest(unittest.TestCase):
         finally:
             if output_dir.exists():
                 shutil.rmtree(output_dir)
+
+    def test_strategy_comparison_labels_only_in_sources(self):
+        from scripts.compare_admissions_outputs import build_strategy_matrix
+
+        official = {
+            "school": {"name": "Example School"},
+            "programs": [
+                {
+                    "program": {
+                        "name": "Shared Programme",
+                        "degree": "MSc",
+                        "level": "master",
+                        "url": "https://official/shared",
+                    },
+                    "requirements": {},
+                    "application": {},
+                    "needs_human_review": False,
+                }
+            ],
+        }
+        daad = {
+            "school": {"name": "Example School"},
+            "source_coverage": {"status": "bounded_search_limit_reached", "warning": True},
+            "programs": [
+                {
+                    "program": {
+                        "name": "Shared Programme",
+                        "degree": "MSc",
+                        "level": "master",
+                        "url": "https://daad/shared",
+                    },
+                    "source_record_id": "d1",
+                    "requirements": {},
+                    "application": {},
+                    "needs_human_review": False,
+                },
+                {
+                    "program": {
+                        "name": "DAAD Only",
+                        "degree": "BA",
+                        "level": "bachelor",
+                        "url": "https://daad/only",
+                    },
+                    "source_record_id": "d2",
+                    "requirements": {},
+                    "application": {},
+                    "needs_human_review": True,
+                },
+            ],
+        }
+
+        matrix = build_strategy_matrix({"official_crawler": official, "daad": daad})
+
+        statuses = {row["status"] for row in matrix["programmes"]}
+        self.assertIn("matched", statuses)
+        self.assertIn("only_in_daad", statuses)
+        self.assertIn("bounded_search_limit_reached", matrix["coverage_warnings"])
+
+    def test_strategy_matrix_preserves_duplicate_same_strategy_records(self):
+        from scripts.compare_admissions_outputs import build_strategy_matrix
+
+        daad = {
+            "school": {"name": "Example School"},
+            "programs": [
+                {
+                    "program": {
+                        "name": "Duplicate Source Programme",
+                        "degree": "MSc",
+                        "level": "master",
+                        "url": "https://daad/detail/42-a",
+                    },
+                    "source_record_id": "42",
+                    "requirements": {},
+                    "application": {},
+                    "needs_human_review": False,
+                },
+                {
+                    "program": {
+                        "name": "Duplicate Source Programme",
+                        "degree": "MSc",
+                        "level": "master",
+                        "url": "https://daad/detail/42-b",
+                    },
+                    "source_record_id": "42",
+                    "requirements": {},
+                    "application": {},
+                    "needs_human_review": True,
+                },
+            ],
+        }
+
+        matrix = build_strategy_matrix({"daad": daad})
+        row = next(item for item in matrix["programmes"] if item["key"] == "id:daad:42")
+
+        self.assertEqual(row["status"], "only_in_daad")
+        self.assertEqual(row["record_counts"], {"daad": 2})
+        self.assertEqual([record["program"]["url"] for record in row["records"]["daad"]], [
+            "https://daad/detail/42-a",
+            "https://daad/detail/42-b",
+        ])
+
+    def test_strategy_matrix_namespaces_source_record_ids_by_strategy(self):
+        from scripts.compare_admissions_outputs import build_strategy_matrix
+
+        daad = {
+            "school": {"name": "Example School"},
+            "programs": [
+                {
+                    "program": {"name": "DAAD Programme", "degree": "MSc", "level": "master"},
+                    "source_record_id": "100",
+                }
+            ],
+        }
+        mgu = {
+            "school": {"name": "Example School"},
+            "programs": [
+                {
+                    "program": {"name": "MGU Programme", "degree": "MSc", "level": "master"},
+                    "source_record_id": "100",
+                }
+            ],
+        }
+
+        matrix = build_strategy_matrix({"daad": daad, "mgu": mgu})
+        keys = {row["key"] for row in matrix["programmes"]}
+
+        self.assertIn("id:daad:100", keys)
+        self.assertIn("id:mgu:100", keys)
+        self.assertNotIn("id:100", keys)
 
     def test_zero_program_manifest_status_is_broken_or_review(self):
         status = classify_validation_status(

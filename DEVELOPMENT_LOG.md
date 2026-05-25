@@ -269,3 +269,12 @@ python scripts\scrape_admissions.py "https://www.munich-business-school.de/en/" 
 - `python -m unittest tests.test_scrape_admissions`：29 tests passed。
 - `python -m py_compile scripts\render_admissions_dashboard.py scripts\render_admissions_html.py scripts\compare_admissions_outputs.py`：通過。
 - In-app Browser 嘗試開啟 `file://` dashboard 時被 Browser URL policy 阻擋；未使用 workaround，改以 static render/link/content checks 作為本輪 HTML 驗證。
+
+## 2026-05-26
+
+### Source strategy dashboard
+
+- Added cross-strategy comparison pages for official crawler, official LLM, DAAD, and My German University.
+- Dashboard warning badges now surface source statuses that can indicate missed programme coverage.
+- Fixed strategy-matrix grouping so same-strategy duplicate programme records are preserved as lists instead of overwritten, with strategy-namespaced source ID keys and record counts visible on comparison pages.
+- Dashboard source links now show both human-readable source labels and route identifiers, such as `DAAD (source_daad)` and `My German University (source_mgu)`.

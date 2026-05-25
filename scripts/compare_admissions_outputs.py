@@ -38,6 +38,75 @@ def normalized_program_names(payload: dict[str, Any]) -> set[str]:
     return {name.lower().strip() for name in program_names(payload)}
 
 
+def _normalized_text(value: Any) -> str:
+    return " ".join(str(value or "").lower().split())
+
+
+def semantic_program_key(record: dict[str, Any]) -> str:
+    program = record.get("program", {})
+    name = _normalized_text(program.get("name"))
+    degree = _normalized_text(program.get("degree"))
+    level = _normalized_text(program.get("level"))
+    return "name:" + " ".join(f"{name} {degree} {level}".split())
+
+
+def normalize_program_key(record: dict[str, Any], strategy_name: str | None = None) -> str:
+    source_id = _normalized_text(record.get("source_record_id"))
+    if source_id:
+        source_specific = record.get("source_specific", {})
+        source_platform = source_specific.get("source_platform") if isinstance(source_specific, dict) else None
+        namespace = _normalized_text(strategy_name or record.get("source_platform") or source_platform)
+        if namespace:
+            return f"id:{namespace}:{source_id}"
+        return f"id:{source_id}"
+    return semantic_program_key(record)
+
+
+def build_strategy_matrix(strategies: dict[str, dict[str, Any]]) -> dict[str, Any]:
+    coverage_warnings: list[str] = []
+    records: list[tuple[str, dict[str, Any], str, str]] = []
+    semantic_counts: dict[str, set[str]] = {}
+    for strategy_name, payload in strategies.items():
+        coverage = payload.get("source_coverage", {})
+        if coverage.get("warning") and coverage.get("status"):
+            coverage_warnings.append(str(coverage["status"]))
+        for record in payload.get("programs", []):
+            semantic_key = semantic_program_key(record)
+            record_key = normalize_program_key(record, strategy_name)
+            semantic_counts.setdefault(semantic_key, set()).add(strategy_name)
+            records.append((strategy_name, record, record_key, semantic_key))
+
+    grouped: dict[str, dict[str, Any]] = {}
+    for strategy_name, record, record_key, semantic_key in records:
+        key = semantic_key if len(semantic_counts.get(semantic_key, set())) > 1 else record_key
+        grouped.setdefault(key, {"records": {}})
+        grouped[key]["records"].setdefault(strategy_name, []).append(record)
+
+    programmes: list[dict[str, Any]] = []
+    strategy_names = set(strategies)
+    for key, item in sorted(grouped.items()):
+        present = set(item["records"])
+        if len(present) == 1:
+            status = f"only_in_{next(iter(present))}"
+        elif present == strategy_names:
+            status = "matched"
+        else:
+            status = "partially_matched"
+        programmes.append(
+            {
+                "key": key,
+                "status": status,
+                "present_in": sorted(present),
+                "record_counts": {
+                    strategy_name: len(records)
+                    for strategy_name, records in sorted(item["records"].items())
+                },
+                "records": item["records"],
+            }
+        )
+    return {"coverage_warnings": sorted(set(coverage_warnings)), "programmes": programmes}
+
+
 def language_tests(program: dict[str, Any]) -> list[str]:
     values = []
     for item in program.get("requirements", {}).get("language_requirements", []) or []:

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admissions Review Dashboard</title>
+<style>:root {
+  color-scheme: light;
+  --bg: #f7f8fb;
+  --panel: #ffffff;
+  --ink: #1d2433;
+  --muted: #647084;
+  --line: #d9dfeb;
+  --accent: #0f766e;
+  --warn: #b45309;
+  --soft: #eef7f5;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Arial, "Noto Sans", sans-serif;
+  line-height: 1.5;
+}
+a { color: var(--accent); overflow-wrap: anywhere; }
+header {
+  background: #0f172a;
+  color: #fff;
+  padding: 28px clamp(20px, 5vw, 56px);
+}
+header p { color: #cbd5e1; margin: 8px 0 0; }
+main { max-width: 1180px; margin: 0 auto; padding: 24px; }
+section, article {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin: 0 0 18px;
+  padding: 18px;
+}
+h1, h2, h3 { line-height: 1.2; margin: 0 0 12px; }
+h1 { font-size: 30px; }
+h2 { font-size: 22px; }
+h3 { font-size: 18px; }
+.meta-grid, .stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+.cell, .stat {
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 10px;
+}
+.label {
+  color: var(--muted);
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.value { font-weight: 600; overflow-wrap: anywhere; }
+.badge {
+  background: var(--soft);
+  border: 1px solid #b7ddd5;
+  border-radius: 999px;
+  color: #115e59;
+  display: inline-block;
+  font-size: 12px;
+  margin: 2px 4px 2px 0;
+  padding: 2px 8px;
+}
+.badge.warn {
+  background: #fff7ed;
+  border-color: #fed7aa;
+  color: var(--warn);
+}
+table {
+  border-collapse: collapse;
+  margin: 10px 0;
+  width: 100%;
+}
+th, td {
+  border: 1px solid var(--line);
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+th { background: #f1f5f9; }
+details {
+  border-top: 1px solid var(--line);
+  margin-top: 12px;
+  padding-top: 12px;
+}
+summary { cursor: pointer; font-weight: 700; }
+pre {
+  background: #111827;
+  border-radius: 6px;
+  color: #e5e7eb;
+  max-height: 320px;
+  overflow: auto;
+  padding: 12px;
+  white-space: pre-wrap;
+}
+.program-header {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.program-title { min-width: 0; }
+.small { color: var(--muted); font-size: 13px; }
+ul { margin: 8px 0 0; padding-left: 20px; }</style>
+</head>
+<body>
+<header><h1>Admissions Review Dashboard</h1><p>Versioned crawler outputs, LLM-native readings, and comparison pages.</p></header><main><section><div class="meta-grid"><div class="cell"><span class="label">generated_at</span><span class="value">2026-05-25T17:56:16.371565+00:00</span></div><div class="cell"><span class="label">v0.2 schools</span><span class="value">12</span></div><div class="cell"><span class="label">v0.3 schools</span><span class="value">12</span></div><div class="cell"><span class="label">v0.4 schools</span><span class="value">12</span></div><div class="cell"><span class="label">LLM v0.1 schools</span><span class="value">12</span></div><div class="cell"><span class="label">LLM v0.2 schools</span><span class="value">12</span></div><div class="cell"><span class="label">source_daad schools</span><span class="value">12</span></div><div class="cell"><span class="label">source_mgu schools</span><span class="value">12</span></div><div class="cell"><span class="label">strategy comparison pages</span><span class="value">12</span></div></div></section><section><h2>Comparison Reports</h2><ul><li><a href="comparisons/v0_2_vs_v0_3.html">v0.2 vs v0.3 crawler improvement</a></li><li><a href="comparisons/v0_3_vs_v0_4.html">v0.3 vs v0.4 crawler improvement</a></li><li><a href="comparisons/strategy_matrix/cbs_international_business_school.html">Strategy comparison pages</a></li></ul></section><section><h2>Schools</h2><table><thead><tr><th>School</th><th>v0.2 Review</th><th>v0.3 Review</th><th>v0.4 Review</th><th>LLM v0.1 Review</th><th>LLM v0.2 Review</th><th>DAAD (source_daad)</th><th>My German University (source_mgu)</th><th>v0.3 vs LLM v0.1</th><th>LLM v0.1 vs v0.2</th><th>v0.4 vs LLM v0.2</th><th>Strategy comparison</th><th>Warnings</th></tr></thead><tbody><tr><td>CBS International Business School</td><td><a href="v0_2/cbs_international_business_school_admissions.html">v0.2</a></td><td><a href="v0_3/cbs_international_business_school_admissions.html">v0.3</a></td><td><a href="v0_4/cbs_international_business_school_admissions.html">v0.4</a></td><td><a href="v0_3/llm_native/cbs_international_business_school_llm_native_admissions.html">LLM v0.1</a></td><td><a href="v0_3/llm_native_v0_2/cbs_international_business_school_llm_native_v0_2_admissions.html">LLM v0.2</a></td><td><a href="source_daad/cbs_international_business_school_admissions.html">DAAD (source_daad)</a></td><td><a href="source_mgu/cbs_international_business_school_admissions.html">My German University (source_mgu)</a></td><td><a href="comparisons/v0_3_vs_llm/cbs_international_business_school.html">v0.3 vs LLM v0.1</a></td><td><a href="comparisons/llm_v0_1_vs_v0_2/cbs_international_business_school.html">LLM v0.1 vs v0.2</a></td><td><a href="comparisons/v0_4_vs_llm_v0_2/cbs_international_business_school.html">v0.4 vs LLM v0.2</a></td><td><a href="comparisons/strategy_matrix/cbs_international_business_school.html">Strategy comparison</a></td><td><span class="badge warn">source_limited</span></td></tr><tr><td>EBS Universität</td><td><a href="v0_2/ebs_universitat_admissions.html">v0.2</a></td><td><a href="v0_3/ebs_universitat_admissions.html">v0.3</a></td><td><a href="v0_4/ebs_universitat_admissions.html">v0.4</a></td><td><a href="v0_3/llm_native/ebs_universitat_llm_native_admissions.html">LLM v0.1</a></td><td><a href="v0_3/llm_native_v0_2/ebs_universitat_llm_native_v0_2_admissions.html">LLM v0.2</a></td><td><a href="source_daad/ebs_universitat_admissions.html">DAAD (source_daad)</a></td><td><a href="source_mgu/ebs_universitat_admissions.html">My German University (source_mgu)</a></td><td><a href="comparisons/v0_3_vs_llm/ebs_universitat.html">v0.3 vs LLM v0.1</a></td><td><a href="comparisons/llm_v0_1_vs_v0_2/ebs_universitat.html">LLM v0.1 vs v0.2</a></td><td><a href="comparisons/v0_4_vs_llm_v0_2/ebs_universitat.html">v0.4 vs LLM v0.2</a></td><td><a href="comparisons/strategy_matrix/ebs_universitat.html">Strategy comparison</a></td><td><span class="badge warn">source_limited</span><span class="badge warn">source_partial_match</span></td></tr><tr><td>ESMT Berlin</td><td><a href="v0_2/esmt_berlin_admissions.html">v0.2</a></td><td><a href="v0_3/esmt_berlin_admissions.html">v0.3</a></td><td><a href="v0_4/esmt_berlin_admissions.html">v0.4</a></td><td><a href="v0_3/llm_native/esmt_berlin_llm_native_admissions.html">LLM v0.1</a></td><td><a href="v0_3/llm_native_v0_2/esmt_berlin_llm_native_v0_2_admissions.html">LLM v0.2</a></td><td><a href="source_daad/esmt_berlin_admissions.html">DAAD (source_daad)</a></td><td><a href="source_mgu/esmt_berlin_admissions.html">My German University (source_mgu)</a></td><td><a href="comparisons/v0_3_vs_llm/esmt_berlin.html">v0.3 vs LLM v0.1</a></td><td><a href="comparisons/llm_v0_1_vs_v0_2/esmt_berlin.html">LLM v0.1 vs v0.2</a></td><td><a href="comparisons/v0_4_vs_llm_v0_2/esmt_berlin.html">v0.4 vs LLM v0.2</a></td><td><a href="comparisons/strategy_matrix/esmt_berlin.html">Strategy comparison</a></td><td><span class="badge warn">source_limited</span></td></tr><tr><td>Hochschule Bremen</td><td><a href="v0_2/hochschule_bremen_admissions.html">v0.2</a></td><td><a href="v0_3/hochschule_bremen_admissions.html">v0.3</a></td><td><a href="v0_4/hochschule_bremen_admissions.html">v0.4</a></td><td><a href="v0_3/llm_native/hochschule_bremen_llm_native_admissions.html">LLM v0.1</a></td><td><a href="v0_3/llm_native_v0_2/hochschule_bremen_llm_native_v0_2_admissions.html">LLM v0.2</a></td><td><a href="source_daad/hochschule_bremen_admissions.html">DAAD (source_daad)</a></td><td><a href="source_mgu/hochschule_bremen_admissions.html">My German University (source_mgu)</a></td><td><a href="comparisons/v0_3_vs_llm/hochschule_bremen.html">v0.3 vs LLM v0.1</a></td><td><a href="comparisons/llm_v0_1_vs_v0_2/hochschule_bremen.html">LLM v0.1 vs v0.2</a></td><td><a href="comparisons/v0_4_vs_llm_v0_2/hochschule_bremen.html">v0.4 vs LLM v0.2</a></td><td><a href="comparisons/strategy_matrix/hochschule_bremen.html">Strategy comparison</a></td><td><span class="badge warn">source_limited</span><span class="badge warn">source_partial_match</span></td></tr><tr><td>Hochschule Fresenius</td><td><a href="v0_2/hochschule_fresenius_admissions.html">v0.2</a></td><td><a href="v0_3/hochschule_fresenius_admissions.html">v0.3</a></td><td><a href="v0_4/hochschule_fresenius_admissions.html">v0.4</a></td><td><a href="v0_3/llm_native/hochschule_fresenius_llm_native_admissions.html">LLM v0.1</a></td><td><a href="v0_3/llm_native_v0_2/hochschule_fresenius_llm_native_v0_2_admissions.html">LLM v0.2</a></td><td><a href="source_daad/hochschule_fresenius_admissions.html">DAAD (source_daad)</a></td><td><a href="source_mgu/hochschule_fresenius_admissions.html">My German University (source_mgu)</a></td><td><a href="comparisons/v0_3_vs_llm/hochschule_fresenius.html">v0.3 vs LLM v0.1</a></td><td><a href="comparisons/llm_v0_1_vs_v0_2/hochschule_fresenius.html">LLM v0.1 vs v0.2</a></td><td><a href="comparisons/v0_4_vs_llm_v0_2/hochschule_fresenius.html">v0.4 vs LLM v0.2</a></td><td><a href="comparisons/strategy_matrix/hochschule_fresenius.html">Strategy comparison</a></td><td><span class="badge warn">source_limited</span><span class="badge warn">source_partial_match</span></td></tr><tr><td>International Graduate Center, Hochschule Bremen</td><td><a href="v0_2/international_graduate_center_hochschule_bremen_admissions.html">v0.2</a></td><td><a href="v0_3/international_graduate_center_hochschule_bremen_admissions.html">v0.3</a></td><td><a href="v0_4/international_graduate_center_hochschule_bremen_admissions.html">v0.4</a></td><td><a href="v0_3/llm_native/international_graduate_center_hochschule_bremen_llm_native_admissions.html">LLM v0.1</a></td><td><a href="v0_3/llm_native_v0_2/international_graduate_center_hochschule_bremen_llm_native_v0_2_admissions.html">LLM v0.2</a></td><td><a href="source_daad/international_graduate_center_hochschule_bremen_admissions.html">DAAD (source_daad)</a></td><td><a href="source_mgu/international_graduate_center_hochschule_bremen_admissions.html">My German University (source_mgu)</a></td><td><a href="comparisons/v0_3_vs_llm/international_graduate_center_hochschule_bremen.html">v0.3 vs LLM v0.1</a></td><td><a href="comparisons/llm_v0_1_vs_v0_2/international_graduate_center_hochschule_bremen.html">LLM v0.1 vs v0.2</a></td><td><a href="comparisons/v0_4_vs_llm_v0_2/international_graduate_center_hochschule_bremen.html">v0.4 vs LLM v0.2</a></td><td><a href="comparisons/strategy_matrix/international_graduate_center_hochschule_bremen.html">Strategy comparison</a></td><td><span class="badge warn">source_limited</span><span class="badge warn">source_partial_match</span></td></tr><tr><td>International School of Management (ISM)</td><td><a href="v0_2/international_school_of_management_ism_admissions.html">v0.2</a></td><td><a href="v0_3/international_school_of_management_ism_admissions.html">v0.3</a></td><td><a href="v0_4/international_school_of_management_ism_admissions.html">v0.4</a></td><td><a href="v0_3/llm_native/international_school_of_management_ism_llm_native_admissions.html">LLM v0.1</a></td><td><a href="v0_3/llm_native_v0_2/international_school_of_management_ism_llm_native_v0_2_admissions.html">LLM v0.2</a></td><td><a href="source_daad/international_school_of_management_ism_admissions.html">DAAD (source_daad)</a></td><td><a href="source_mgu/international_school_of_management_ism_admissions.html">My German University (source_mgu)</a></td><td><a href="comparisons/v0_3_vs_llm/international_school_of_management_ism.html">v0.3 vs LLM v0.1</a></td><td><a href="comparisons/llm_v0_1_vs_v0_2/international_school_of_management_ism.html">LLM v0.1 vs v0.2</a></td><td><a href="comparisons/v0_4_vs_llm_v0_2/international_school_of_management_ism.html">v0.4 vs LLM v0.2</a></td><td><a href="comparisons/strategy_matrix/international_school_of_management_ism.html">Strategy comparison</a></td><td><span class="badge warn">source_limited</span><span class="badge warn">source_partial_match</span></td></tr><tr><td>Kühne Logistics University (KLU)</td><td><a href="v0_2/kuhne_logistics_university_klu_admissions.html">v0.2</a></td><td><a href="v0_3/kuhne_logistics_university_klu_admissions.html">v0.3</a></td><td><a href="v0_4/kuhne_logistics_university_klu_admissions.html">v0.4</a></td><td><a href="v0_3/llm_native/kuhne_logistics_university_klu_llm_native_admissions.html">LLM v0.1</a></td><td><a href="v0_3/llm_native_v0_2/kuhne_logistics_university_klu_llm_native_v0_2_admissions.html">LLM v0.2</a></td><td><a href="source_daad/kuhne_logistics_university_klu_admissions.html">DAAD (source_daad)</a></td><td><a href="source_mgu/kuhne_logistics_university_klu_admissions.html">My German University (source_mgu)</a></td><td><a href="comparisons/v0_3_vs_llm/kuhne_logistics_university_klu.html">v0.3 vs LLM v0.1</a></td><td><a href="comparisons/llm_v0_1_vs_v0_2/kuhne_logistics_university_klu.html">LLM v0.1 vs v0.2</a></td><td><a href="comparisons/v0_4_vs_llm_v0_2/kuhne_logistics_university_klu.html">v0.4 vs LLM v0.2</a></td><td><a href="comparisons/strategy_matrix/kuhne_logistics_university_klu.html">Strategy comparison</a></td><td><span class="badge warn">source_limited</span></td></tr><tr><td>Munich Business School</td><td><a href="v0_2/munich_business_school_admissions.html">v0.2</a></td><td><a href="v0_3/munich_business_school_admissions.html">v0.3</a></td><td><a href="v0_4/munich_business_school_admissions.html">v0.4</a></td><td><a href="v0_3/llm_native/munich_business_school_llm_native_admissions.html">LLM v0.1</a></td><td><a href="v0_3/llm_native_v0_2/munich_business_school_llm_native_v0_2_admissions.html">LLM v0.2</a></td><td><a href="source_daad/munich_business_school_admissions.html">DAAD (source_daad)</a></td><td><a href="source_mgu/munich_business_school_admissions.html">My German University (source_mgu)</a></td><td><a href="comparisons/v0_3_vs_llm/munich_business_school.html">v0.3 vs LLM v0.1</a></td><td><a href="comparisons/llm_v0_1_vs_v0_2/munich_business_school.html">LLM v0.1 vs v0.2</a></td><td><a href="comparisons/v0_4_vs_llm_v0_2/munich_business_school.html">v0.4 vs LLM v0.2</a></td><td><a href="comparisons/strategy_matrix/munich_business_school.html">Strategy comparison</a></td><td><span class="badge warn">source_limited</span></td></tr><tr><td>NIT Northern Institute of Technology Management</td><td><a href="v0_2/nit_northern_institute_of_technology_management_admissions.html">v0.2</a></td><td><a href="v0_3/nit_northern_institute_of_technology_management_admissions.html">v0.3</a></td><td><a href="v0_4/nit_northern_institute_of_technology_management_admissions.html">v0.4</a></td><td><a href="v0_3/llm_native/nit_llm_native_admissions.html">LLM v0.1</a></td><td><a href="v0_3/llm_native_v0_2/nit_northern_institute_of_technology_management_llm_native_v0_2_admissions.html">LLM v0.2</a></td><td><a href="source_daad/nit_northern_institute_of_technology_management_admissions.html">DAAD (source_daad)</a></td><td><a href="source_mgu/nit_northern_institute_of_technology_management_admissions.html">My German University (source_mgu)</a></td><td><a href="comparisons/v0_3_vs_llm/nit_northern_institute_of_technology_management.html">v0.3 vs LLM v0.1</a></td><td><a href="comparisons/llm_v0_1_vs_v0_2/nit_northern_institute_of_technology_management.html">LLM v0.1 vs v0.2</a></td><td><a href="comparisons/v0_4_vs_llm_v0_2/nit_northern_institute_of_technology_management.html">v0.4 vs LLM v0.2</a></td><td><a href="comparisons/strategy_matrix/nit_northern_institute_of_technology_management.html">Strategy comparison</a></td><td><span class="badge warn">source_limited</span><span class="badge warn">source_partial_match</span></td></tr><tr><td>SRH Universities</td><td><a href="v0_2/srh_universities_admissions.html">v0.2</a></td><td><a href="v0_3/srh_universities_admissions.html">v0.3</a></td><td><a href="v0_4/srh_universities_admissions.html">v0.4</a></td><td><a href="v0_3/llm_native/srh_universities_llm_native_admissions.html">LLM v0.1</a></td><td><a href="v0_3/llm_native_v0_2/srh_universities_llm_native_v0_2_admissions.html">LLM v0.2</a></td><td><a href="source_daad/srh_universities_admissions.html">DAAD (source_daad)</a></td><td><a href="source_mgu/srh_universities_admissions.html">My German University (source_mgu)</a></td><td><a href="comparisons/v0_3_vs_llm/srh_universities.html">v0.3 vs LLM v0.1</a></td><td><a href="comparisons/llm_v0_1_vs_v0_2/srh_universities.html">LLM v0.1 vs v0.2</a></td><td><a href="comparisons/v0_4_vs_llm_v0_2/srh_universities.html">v0.4 vs LLM v0.2</a></td><td><a href="comparisons/strategy_matrix/srh_universities.html">Strategy comparison</a></td><td><span class="badge warn">source_limited</span><span class="badge warn">source_partial_match</span></td></tr><tr><td>TUM Asia</td><td><a href="v0_2/tum_asia_admissions.html">v0.2</a></td><td><a href="v0_3/tum_asia_admissions.html">v0.3</a></td><td><a href="v0_4/tum_asia_admissions.html">v0.4</a></td><td><a href="v0_3/llm_native/tum_asia_llm_native_admissions.html">LLM v0.1</a></td><td><a href="v0_3/llm_native_v0_2/tum_asia_llm_native_v0_2_admissions.html">LLM v0.2</a></td><td><a href="source_daad/tum_asia_admissions.html">DAAD (source_daad)</a></td><td><a href="source_mgu/tum_asia_admissions.html">My German University (source_mgu)</a></td><td><a href="comparisons/v0_3_vs_llm/tum_asia.html">v0.3 vs LLM v0.1</a></td><td><a href="comparisons/llm_v0_1_vs_v0_2/tum_asia.html">LLM v0.1 vs v0.2</a></td><td><a href="comparisons/v0_4_vs_llm_v0_2/tum_asia.html">v0.4 vs LLM v0.2</a></td><td><a href="comparisons/strategy_matrix/tum_asia.html">Strategy comparison</a></td><td><span class="badge warn">source_no_match</span><span class="badge warn">source_partial_match</span></td></tr></tbody></table></section></main>
+</body>
+</html>

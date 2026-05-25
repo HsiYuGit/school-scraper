@@ -46,6 +46,11 @@ python scripts\render_admissions_html.py outputs\munich_business_school_admissio
 
 Source platform outputs render under `outputs/html/source_daad/` and `outputs/html/source_mgu/`. Pages include a Source Coverage section. Any warning status such as `bounded_search_limit_reached`, `source_partial_match`, `source_no_match`, `js_gated`, or `robots_blocked` must be treated as possible missed coverage during dashboard review.
 
+## Cross-strategy comparison
+
+The dashboard includes strategy comparison pages under `outputs/html/comparisons/strategy_matrix/`. Each page compares official crawler, official LLM, DAAD, and My German University where available. The index labels source review columns as `DAAD (source_daad)` and `My German University (source_mgu)` so client-facing names and route identifiers are both visible. The comparison labels programmes as matched, partially matched, or only-in-strategy and surfaces source coverage warnings before programme details.
+Source record IDs are treated as strategy-local identifiers in the matrix, so ID keys include the strategy namespace. When one strategy contributes multiple records to the same programme key, the page preserves the full record list and shows per-strategy record counts.
+
 ## What to review in HTML
 
 - School metadata, crawl limits, robots status, and crawl summary.
